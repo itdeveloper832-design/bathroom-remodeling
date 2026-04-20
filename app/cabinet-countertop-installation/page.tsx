@@ -13,6 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
   title: "Cabinet & Countertop Installation Chandler AZ",
@@ -43,24 +44,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
-  {
-    question: "How much does cabinet and countertop installation cost in Chandler?",
-    answer: "Cabinet and countertop installation in Chandler typically costs $2,000-$8,000 depending on materials and scope. Laminate countertops with stock cabinets start around $2,000, while granite or quartz with custom cabinetry can exceed $8,000. We provide free detailed estimates."
-  },
-  {
-    question: "What countertop materials do you install?",
-    answer: "We install all countertop materials including granite, quartz, marble, quartzite, solid surface, and laminate. Our team helps you choose the best material for your budget, style, and bathroom needs."
-  },
-  {
-    question: "How long does cabinet and countertop installation take?",
-    answer: "Most bathroom cabinet and countertop installations are completed in 1-3 days. Simple vanity replacements take 1 day, while custom installations with templating may take 2-3 days. Countertop fabrication adds 1-2 weeks lead time."
-  },
-  {
-    question: "Do you remove and dispose of old cabinets and countertops?",
-    answer: "Yes! We handle complete removal of your old vanity, cabinets, and countertops including proper disposal. We protect your floors and walls during removal and leave your bathroom clean."
-  }
-];
+const faqs = serviceContent["cabinet-countertop-installation"].faqs;
 
 const chandlerLocation = {
   lat: 33.3062,
@@ -68,6 +52,7 @@ const chandlerLocation = {
 };
 
 export default function CabinetCountertopInstallationPage() {
+  const serviceData = serviceContent["cabinet-countertop-installation"];
   return (
     <>
       <ServiceSchema
@@ -130,74 +115,21 @@ export default function CabinetCountertopInstallationPage() {
         <IssuesSolved
           title="Issues We Solve with Cabinet & Countertop Installation"
           subtitle="Common Problems Fixed"
-          description="We address common bathroom storage and surface challenges with professional installation."
-          issues={[
-            {
-              problem: "Outdated vanity cabinets with worn finishes and broken hardware.",
-              solution: "Fresh, modern cabinets with quality hardware and durable finishes.",
-            },
-            {
-              problem: "Stained, chipped, or dated laminate countertops.",
-              solution: "Premium stone or quartz countertops that resist stains and damage.",
-            },
-            {
-              problem: "Lack of storage causing cluttered bathroom surfaces.",
-              solution: "Custom cabinet configurations with organized drawers and shelving.",
-            },
-            {
-              problem: "Poorly aligned countertops with visible gaps and seams.",
-              solution: "Professional templating and installation for seamless results.",
-            },
-            {
-              problem: "Mismatched cabinets and countertops that clash.",
-              solution: "Coordinated material selection for cohesive bathroom design.",
-            },
-          ]}
+          description="We address the most common cabinet and countertop challenges Chandler homeowners face."
+          issues={serviceData.issues}
         />
 
         <Benefits
           title="Benefits of Professional Cabinet & Countertop Installation"
           subtitle="Why Choose Us"
-          benefits={[
-            {
-              icon: "Layout",
-              title: "Better Storage",
-              description: "Custom cabinets maximize storage with organized drawer systems.",
-            },
-            {
-              icon: "Sparkles",
-              title: "Premium Materials",
-              description: "Granite, quartz, and marble surfaces that last for decades.",
-            },
-            {
-              icon: "Ruler",
-              title: "Perfect Fit",
-              description: "Precise templating ensures seamless installation and alignment.",
-            },
-            {
-              icon: "TrendingUp",
-              title: "Added Value",
-              description: "Quality countertops and cabinets significantly increase home value.",
-            },
-            {
-              icon: "ShieldCheck",
-              title: "Warranty Coverage",
-              description: "Professional installation backed by workmanship warranty.",
-            },
-          ]}
+          benefits={serviceData.benefits}
         />
 
         <Tips
           title="Cabinet & Countertop Tips"
           subtitle="Care & Maintenance"
           description="Expert tips to maintain your new cabinets and countertops for lasting beauty."
-          tips={[
-            "Seal natural stone countertops annually to protect against stains and etching.",
-            "Use trivets and cutting boards to protect countertop surfaces from heat and scratches.",
-            "Clean countertops daily with pH-neutral cleaners - avoid harsh chemicals.",
-            "Wipe cabinet doors with a damp cloth and dry immediately to prevent moisture damage.",
-            "Check and tighten cabinet hardware every 6 months to prevent loosening.",
-          ]}
+          tips={serviceData.tips}
         />
 
         <ServiceCTA 

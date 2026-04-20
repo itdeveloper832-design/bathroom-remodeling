@@ -9,6 +9,7 @@ import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
   title: "Bathroom Flooring Installation Chandler AZ | Professional Services",
@@ -22,12 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
-  { question: "What is the best flooring for bathrooms?", answer: "Porcelain tile, luxury vinyl plank, and natural stone are excellent choices. These materials resist moisture and are easy to clean." },
-  { question: "How much does bathroom flooring installation cost?", answer: "Bathroom flooring installation costs $5-$15 per square foot depending on material and complexity." },
-  { question: "How long does installation take?", answer: "Most bathroom flooring installations take 2-4 days depending on size and complexity." },
-  { question: "Do you install heated bathroom floors?", answer: "Yes! We install radiant floor heating systems under tile and stone flooring for added comfort." }
-];
+const faqs = serviceContent["bathroom-flooring-installation"].faqs;
 
 const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
 

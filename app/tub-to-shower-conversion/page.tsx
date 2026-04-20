@@ -13,6 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
   title: "Tub to Shower Conversion Chandler AZ | Best Price",
@@ -43,32 +44,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
-  {
-    question: "What is the tub to shower conversion cost in Chandler AZ?",
-    answer: "Tub to shower conversion cost in Chandler AZ ranges from $5,000-$15,000. Affordable tub to shower conversion starts around $5,000, while best tub to shower conversion with custom features exceeds $15,000. Get your free tub to shower conversion quote today!"
-  },
-  {
-    question: "How do I hire tub to shower conversion contractor in Chandler AZ?",
-    answer: "To hire tub to shower conversion contractor in Chandler AZ, contact us for a free tub to shower conversion estimate. Our professional tub to shower conversion services include consultation, design, and installation. We're the best tub to shower conversion company in Chandler AZ."
-  },
-  {
-    question: "What is bathtub to shower conversion price in Chandler AZ?",
-    answer: "Bathtub to shower conversion price in Chandler AZ varies by scope. Affordable bathtub to shower conversion starts at $5,000. Our bathtub to shower conversion services include professional installation and free bathtub to shower conversion estimate."
-  },
-  {
-    question: "Do you offer affordable tub to shower conversion in Chandler AZ?",
-    answer: "Yes! We offer affordable tub to shower conversion in Chandler AZ with flexible financing. Our tub to shower conversion services include budget-friendly options. Get your tub to shower conversion quote for transparent pricing!"
-  },
-  {
-    question: "Are you professional bathtub to shower conversion contractors in Chandler AZ?",
-    answer: "Yes! We're professional bathtub to shower conversion contractors in Chandler AZ with 15+ years experience. Our bathtub to shower conversion installation services are fully licensed and insured. Contact us for bathtub to shower conversion near me!"
-  },
-  {
-    question: "What tub to shower conversion services do you offer in Chandler AZ?",
-    answer: "Our tub to shower conversion services in Chandler AZ include: complete tub to shower conversion, bathtub to shower conversion installation, walk-in shower conversion, and tub removal. Company tub to shower conversion services available!"
-  }
-];
+const faqs = serviceContent["tub-to-shower-conversion"].faqs;
 
 const chandlerLocation = {
   lat: 33.3062,
@@ -76,6 +52,7 @@ const chandlerLocation = {
 };
 
 export default function TubToShowerConversionPage() {
+  const serviceData = serviceContent["tub-to-shower-conversion"];
   return (
     <>
       <ServiceSchema
@@ -138,74 +115,21 @@ export default function TubToShowerConversionPage() {
         <IssuesSolved
           title="Issues We Solve with Tub to Shower Conversion"
           subtitle="Common Problems Fixed"
-          description="We solve common bathroom challenges through professional tub to shower conversions."
-          issues={[
-            {
-              problem: "Unused bathtubs taking up valuable bathroom space.",
-              solution: "Convert to a spacious walk-in shower that utilizes the space more efficiently.",
-            },
-            {
-              problem: "Difficult tub entry for seniors or those with mobility issues.",
-              solution: "Barrier-free walk-in showers with optional grab bars and seating.",
-            },
-            {
-              problem: "Outdated tub-shower combos that look dated.",
-              solution: "Modern walk-in shower designs with contemporary tile and glass.",
-            },
-            {
-              problem: "Mold and mildew buildup in old tub surrounds.",
-              solution: "Fresh, properly waterproofed surfaces that resist mold growth.",
-            },
-            {
-              problem: "Small bathrooms that feel cramped.",
-              solution: "Open shower designs with frameless glass that visually expand the space.",
-            },
-          ]}
+          description="We address the most common conversion challenges Chandler homeowners face."
+          issues={serviceData.issues}
         />
 
         <Benefits
-          title="Benefits of Tub to Shower Conversion in Chandler"
+          title="Benefits of Tub to Shower Conversion"
           subtitle="Why Convert Your Tub"
-          benefits={[
-            {
-              icon: "Layout",
-              title: "More Space",
-              description: "Walk-in showers often feel larger and more open than tub-shower combos.",
-            },
-            {
-              icon: "Accessibility",
-              title: "Easier Access",
-              description: "Step-in or curbless entry is safer and more convenient for all ages.",
-            },
-            {
-              icon: "Sparkles",
-              title: "Modern Look",
-              description: "Contemporary shower designs update your bathroom instantly.",
-            },
-            {
-              icon: "Timer",
-              title: "Quick Showers",
-              description: "Walk-in showers are more practical for busy daily routines.",
-            },
-            {
-              icon: "TrendingUp",
-              title: "Home Value",
-              description: "Modern showers are highly desirable to today's home buyers.",
-            },
-          ]}
+          benefits={serviceData.benefits}
         />
 
         <Tips
           title="Tub to Shower Conversion Tips"
           subtitle="Planning Your Conversion"
           description="Expert advice for planning and maintaining your new walk-in shower after conversion."
-          tips={[
-            "Keep at least one bathtub in your home if you have young children or plan to sell.",
-            "Consider a curbless design for maximum accessibility and modern aesthetics.",
-            "Choose slip-resistant tile for the shower floor to prevent accidents.",
-            "Install a built-in niche for shampoo and soap storage to keep surfaces clear.",
-            "Add a handheld showerhead for flexibility and easier cleaning.",
-          ]}
+          tips={serviceData.tips}
         />
 
         <ServiceCTA 

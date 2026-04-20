@@ -13,6 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
   title: "Bathtub to Shower Conversion Chandler AZ | Best",
@@ -43,28 +44,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
-  {
-    question: "What is the bathtub to shower conversion cost in Chandler AZ?",
-    answer: "Bathtub to shower conversion cost in Chandler AZ ranges from $5,000-$15,000. Affordable bathtub to shower conversion starts at $5,000. Professional bathtub to shower conversion with custom features exceeds $15,000. Get your free bathtub to shower conversion estimate!"
-  },
-  {
-    question: "Do you offer bathtub to shower conversion services in Chandler AZ?",
-    answer: "Yes! We offer complete bathtub to shower conversion services in Chandler AZ. Our bathtub to shower conversion installation includes tub removal, plumbing, and walk-in shower installation. Hire bathtub to shower conversion contractor today!"
-  },
-  {
-    question: "Are you professional bathtub to shower conversion contractors in Chandler AZ?",
-    answer: "Yes! We're professional bathtub to shower conversion contractors in Chandler AZ with 15+ years experience. Company bathtub to shower conversion services are fully licensed and insured. Best bathtub to shower conversion near me!"
-  },
-  {
-    question: "What is the bathtub to shower conversion price in Chandler AZ?",
-    answer: "Bathtub to shower conversion price in Chandler AZ varies by scope. Affordable bathtub to shower conversion options available. Get your bathtub to shower conversion quote for transparent pricing and bathtub to shower conversion estimate!"
-  },
-  {
-    question: "Do you offer affordable bathtub to shower conversion in Chandler AZ?",
-    answer: "Yes! We offer affordable bathtub to shower conversion in Chandler AZ with flexible financing. Our bathtub to shower conversion services include budget-friendly options. Contact us for bathtub to shower conversion near me Chandler AZ!"
-  }
-];
+const faqs = serviceContent["bathtub-remodeling"].faqs;
 
 const chandlerLocation = {
   lat: 33.3062,
@@ -72,6 +52,7 @@ const chandlerLocation = {
 };
 
 export default function BathtubRemodelingPage() {
+  const serviceData = serviceContent["bathtub-remodeling"];
   return (
     <>
       <ServiceSchema
@@ -135,73 +116,20 @@ export default function BathtubRemodelingPage() {
           title="Issues We Solve with Bathtub Remodeling"
           subtitle="Common Problems Fixed"
           description="We address the most common bathtub remodeling challenges Chandler homeowners face."
-          issues={[
-            {
-              problem: "Old, stained, or cracked bathtubs that look outdated.",
-              solution: "Modern bathtub installations with fresh finishes and contemporary designs.",
-            },
-            {
-              problem: "Uncomfortable tub depth or awkward positioning.",
-              solution: "Ergonomic tub selection with proper depth and positioning for comfort.",
-            },
-            {
-              problem: "Leaking tubs causing water damage.",
-              solution: "Professional waterproofing and sealed installations to prevent leaks.",
-            },
-            {
-              problem: "Limited storage around the bathtub area.",
-              solution: "Built-in niches and coordinated storage solutions for bathing essentials.",
-            },
-            {
-              problem: "Mismatched fixtures and outdated hardware.",
-              solution: "Coordinated fixture packages that complement your bathroom design.",
-            },
-          ]}
+          issues={serviceData.issues}
         />
 
         <Benefits
           title="Benefits of Bathtub Remodeling in Chandler"
           subtitle="Why It Matters"
-          benefits={[
-            {
-              icon: "Bath",
-              title: "Luxury Comfort",
-              description: "Modern tubs with ergonomic designs for ultimate relaxation and comfort.",
-            },
-            {
-              icon: "ShieldCheck",
-              title: "Leak Protection",
-              description: "Professional waterproofing and sealed installations prevent water damage.",
-            },
-            {
-              icon: "Sparkles",
-              title: "Modern Aesthetics",
-              description: "Contemporary tub designs that enhance your bathroom's visual appeal.",
-            },
-            {
-              icon: "TrendingUp",
-              title: "Increased Home Value",
-              description: "Quality bathtub remodeling adds significant value to your Chandler home.",
-            },
-            {
-              icon: "Timer",
-              title: "Quick Installation",
-              description: "Efficient remodeling process minimizes disruption to your daily routine.",
-            },
-          ]}
+          benefits={serviceData.benefits}
         />
 
         <Tips
           title="Bathtub Remodeling Tips & Maintenance"
           subtitle="Keep It Looking New"
           description="Expert tips to maintain your newly remodeled bathtub and extend its lifespan."
-          tips={[
-            "Use non-abrasive cleaners to protect enamel and acrylic finishes from scratches.",
-            "Inspect caulk lines quarterly and reapply at the apron and corners as needed.",
-            "Add slip-resistant mats or textured surfaces for safety, especially for seniors and children.",
-            "Run warm water before filling to preheat the tub surface for longer heat retention.",
-            "Choose WaterSense fixtures to reduce water usage without compromising performance.",
-          ]}
+          tips={serviceData.tips}
         />
 
         <ServiceCTA 

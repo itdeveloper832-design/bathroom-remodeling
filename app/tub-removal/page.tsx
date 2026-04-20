@@ -13,6 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
   title: "Tub Removal Chandler AZ | Bathtub Removal Service",
@@ -43,24 +44,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
-  {
-    question: "How much does bathtub removal cost in Chandler?",
-    answer: "Bathtub removal in Chandler typically costs $300-$1,000 depending on tub type, accessibility, and disposal needs. Cast iron tubs cost more to remove due to weight. Our quotes include removal, hauling, and basic floor preparation."
-  },
-  {
-    question: "How long does tub removal take?",
-    answer: "Most bathtub removals are completed in 2-4 hours. Cast iron tubs may take longer due to their weight. We disconnect plumbing, remove the tub, and prepare the area for your next project phase."
-  },
-  {
-    question: "Do you cap the plumbing after tub removal?",
-    answer: "Yes! We properly cap all plumbing lines after tub removal to prevent water damage. If you're converting to a shower, we can prepare the plumbing for your new installation."
-  },
-  {
-    question: "What happens to the floor after tub removal?",
-    answer: "After removing the tub, we inspect and repair the subfloor as needed. We can prepare the surface for tile, shower pan installation, or whatever your renovation requires."
-  }
-];
+const faqs = serviceContent["tub-removal"].faqs;
 
 const chandlerLocation = {
   lat: 33.3062,
@@ -68,6 +52,7 @@ const chandlerLocation = {
 };
 
 export default function TubRemovalPage() {
+  const serviceData = serviceContent["tub-removal"];
   return (
     <>
       <ServiceSchema
@@ -128,76 +113,23 @@ export default function TubRemovalPage() {
         />
 
         <IssuesSolved
-          title="Issues We Solve with Tub Removal"
+          title="Issues We Solve with Professional Tub Removal"
           subtitle="Common Problems Fixed"
-          description="We handle the challenging aspects of tub removal that most homeowners cannot do themselves."
-          issues={[
-            {
-              problem: "Heavy cast iron tubs that are impossible to move alone.",
-              solution: "Professional extraction with proper equipment and trained personnel.",
-            },
-            {
-              problem: "Complex plumbing connections that need proper disconnection.",
-              solution: "Licensed plumbers ensure safe disconnection and proper capping.",
-            },
-            {
-              problem: "Old tubs sealed with layers of caulk and adhesive.",
-              solution: "Careful removal without damaging surrounding tile or walls.",
-            },
-            {
-              problem: "Disposal challenges for large, heavy bathtubs.",
-              solution: "Complete hauling and proper disposal included in our service.",
-            },
-            {
-              problem: "Uncertainty about subfloor condition under the tub.",
-              solution: "Thorough inspection and repair recommendations after removal.",
-            },
-          ]}
+          description="We address the most common tub removal challenges Chandler homeowners face."
+          issues={serviceData.issues}
         />
 
         <Benefits
-          title="Benefits of Professional Tub Removal in Chandler"
+          title="Benefits of Professional Tub Removal"
           subtitle="Why Hire Professionals"
-          benefits={[
-            {
-              icon: "ShieldCheck",
-              title: "Safe Removal",
-              description: "Avoid injury and property damage with professional extraction.",
-            },
-            {
-              icon: "Wrench",
-              title: "Proper Plumbing",
-              description: "Licensed plumbers ensure connections are safely capped.",
-            },
-            {
-              icon: "Timer",
-              title: "Fast Service",
-              description: "Complete removal in hours, not days of DIY struggle.",
-            },
-            {
-              icon: "Trash2",
-              title: "Full Disposal",
-              description: "We haul away the tub and all debris from your property.",
-            },
-            {
-              icon: "Layout",
-              title: "Ready for Reno",
-              description: "Floor prepared and ready for your next renovation phase.",
-            },
-          ]}
+          benefits={serviceData.benefits}
         />
 
         <Tips
           title="Tub Removal Planning Tips"
           subtitle="Before You Start"
           description="Important considerations before scheduling your bathtub removal service."
-          tips={[
-            "Know your tub material - cast iron, steel, fiberglass, or acrylic affects removal approach.",
-            "Plan what replaces the tub before removal to coordinate plumbing modifications.",
-            "Clear the bathroom of toiletries, towels, and decor before our team arrives.",
-            "Ensure we have clear access through doorways and hallways for tub extraction.",
-            "Consider keeping at least one tub in your home for resale value if applicable.",
-          ]}
+          tips={serviceData.tips}
         />
 
         <ServiceCTA 

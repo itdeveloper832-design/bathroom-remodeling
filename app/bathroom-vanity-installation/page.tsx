@@ -13,6 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
   title: "Bathroom Vanity Installation Chandler AZ | Pro",
@@ -43,28 +44,13 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
-  {
-    question: "How much does bathroom vanity installation cost in Chandler?",
-    answer: "Bathroom vanity installation in Chandler costs $500-$2,000 for labor, plus the vanity cost. Standard installations range from $1,200-$4,000 total, while custom double vanities can exceed $5,000. We provide free estimates including all materials and labor."
-  },
-  {
-    question: "Can you install double sink vanities?",
-    answer: "Yes! We install single and double sink vanities in all styles including freestanding, wall-mounted, and traditional cabinets. We handle all plumbing connections, countertop installation, and finishing work."
-  },
-  {
-    question: "Do you remove and dispose of old vanities?",
-    answer: "Absolutely! We carefully remove your old vanity, disconnect plumbing, and haul away all debris. We protect your floors and walls during removal and leave your bathroom clean."
-  },
-  {
-    question: "How long does vanity installation take?",
-    answer: "Most vanity installations are completed in 1 day. Simple vanity swaps take 4-6 hours, while installations requiring plumbing modifications may take 1-2 days. We work efficiently to minimize disruption."
-  }
-];
+const faqs = serviceContent["bathroom-vanity-installation"].faqs;
 
 const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
 
 export default function BathroomVanityInstallationPage() {
+  const vanityData = serviceContent["bathroom-vanity-installation"];
+  
   return (
     <>
       <ServiceSchema
@@ -103,38 +89,21 @@ export default function BathroomVanityInstallationPage() {
           title="Issues We Solve with Bathroom Vanity Installation"
           subtitle="Common Problems Fixed"
           description="We address the most common vanity installation challenges Chandler homeowners face."
-          issues={[
-            { problem: "Limited storage causing cluttered countertops.", solution: "Custom vanity layouts with organized drawers and smart storage solutions." },
-            { problem: "Old vanities with damaged finishes or loose hardware.", solution: "New vanities with durable finishes and quality hardware that withstand moisture." },
-            { problem: "Misaligned plumbing causing installation issues.", solution: "Professional plumbing adjustments for perfect vanity fit and function." },
-            { problem: "Uncomfortable vanity heights for daily use.", solution: "Ergonomic height planning for comfortable grooming and bathroom use." },
-            { problem: "Fixtures that don't match bathroom design.", solution: "Coordinated vanity, faucet, and hardware selections for cohesive bathroom style." },
-          ]}
+          issues={vanityData.issues}
         />
 
         <Benefits
-          title="Benefits of Professional Vanity Installation in Chandler"
-          subtitle="Why It Matters"
-          benefits={[
-            { icon: "Layout", title: "Better Organization", description: "Custom storage solutions and organized layouts for improved bathroom functionality." },
-            { icon: "Sparkles", title: "Professional Finish", description: "Expert installation with aligned countertops, sealed connections, and polished details." },
-            { icon: "ShieldCheck", title: "Durable Installation", description: "Proper mounting, waterproofing, and quality materials for long-lasting performance." },
-            { icon: "TrendingUp", title: "Increased Home Value", description: "Quality vanity installation adds significant value to your Chandler home." },
-            { icon: "Timer", title: "Efficient Installation", description: "Quick, professional installation that minimizes disruption to your routine." },
-          ]}
+          title="Benefits of Professional Vanity Installation"
+          subtitle="Why Upgrade Your Vanity"
+          description="Discover how professional vanity installation transforms your bathroom's functionality and style."
+          benefits={vanityData.benefits}
         />
 
         <Tips
-          title="Bathroom Vanity Installation Tips & Maintenance"
-          subtitle="Keep It Looking New"
-          description="Expert tips to maintain your newly installed vanity and maximize its lifespan."
-          tips={[
-            "Choose moisture-resistant materials and finishes for Arizona's humidity variations.",
-            "Add drawer organizers to keep grooming items organized and easily accessible.",
-            "Install backsplashes to protect walls from water splashes and simplify cleaning.",
-            "Select faucets with adequate reach to minimize water splatter on countertops.",
-            "Seal around sinks and backsplashes annually to prevent water damage to cabinets.",
-          ]}
+          title="Expert Vanity Installation Tips"
+          subtitle="Professional Insights"
+          description="Smart strategies to maintain and maximize your newly installed vanity."
+          tips={vanityData.tips}
         />
 
         <ServiceCTA title="Ready for professional vanity installation in Chandler?" description="Get expert consultation, quality materials, and professional installation for your perfect bathroom vanity." />

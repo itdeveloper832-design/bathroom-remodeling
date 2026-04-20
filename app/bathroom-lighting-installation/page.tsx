@@ -9,6 +9,7 @@ import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
   title: "Bathroom Lighting Installation Chandler AZ | LED Fixtures",
@@ -22,12 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
-  { question: "What type of lighting is best for bathrooms?", answer: "LED vanity lights and recessed ceiling lights work best. We recommend layered lighting with task lighting for grooming and ambient lighting for overall illumination." },
-  { question: "How much does bathroom lighting installation cost?", answer: "Bathroom lighting installation costs $200-$800 per fixture depending on complexity. Complete upgrades typically range from $800-$2,500 including materials and labor." },
-  { question: "Do you install dimmer switches?", answer: "Yes! We install dimmer switches compatible with LED lights for adjustable ambiance and energy savings." },
-  { question: "Can you install lighting in shower areas?", answer: "Absolutely! We install moisture-rated recessed lights specifically designed for wet bathroom locations." }
-];
+const faqs = serviceContent["bathroom-lighting-installation"].faqs;
 
 const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
 

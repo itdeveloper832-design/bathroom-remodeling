@@ -13,6 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
   title: "Walk In Shower Installation Chandler AZ | Best",
@@ -43,32 +44,7 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
-  {
-    question: "What is the walk in shower installation price in Chandler AZ?",
-    answer: "Walk in shower installation price in Chandler AZ ranges from $4,000-$12,000. Affordable walk in shower installation starts around $4,000. Best walk in shower installation with custom features exceeds $12,000. Get your free walk in shower installation estimate today!"
-  },
-  {
-    question: "How do I hire walk in shower installation contractor in Chandler AZ?",
-    answer: "To hire walk in shower installation contractor in Chandler AZ, contact us for a free walk in shower installation quote. Our professional walk in shower installation services include consultation, design, and installation. We're the best walk in shower installation company in Chandler AZ."
-  },
-  {
-    question: "What is the walk in shower installation cost in Chandler AZ?",
-    answer: "Walk in shower installation cost in Chandler AZ varies by scope. Our walk in shower installation services include affordable options. Get your walk in shower installation estimate for transparent pricing and walk in shower installation quote!"
-  },
-  {
-    question: "Do you offer affordable walk in shower installation in Chandler AZ?",
-    answer: "Yes! We offer affordable walk in shower installation in Chandler AZ with flexible financing. Our walk in shower installation services include budget-friendly options. Contact us for walk in shower installation near me Chandler AZ!"
-  },
-  {
-    question: "Are you professional walk in shower installation contractors in Chandler AZ?",
-    answer: "Yes! We're professional walk in shower installation contractors in Chandler AZ with 15+ years experience. Company walk in shower installation services are fully licensed and insured. Best walk in shower installation near me!"
-  },
-  {
-    question: "What walk in shower installation services do you offer in Chandler AZ?",
-    answer: "Our walk in shower installation services in Chandler AZ include: complete walk in shower installation, barrier-free shower installation, ADA-compliant showers, and custom walk-in shower designs. Walk in shower installation company services available!"
-  }
-];
+const faqs = serviceContent["walk-in-showers"].faqs;
 
 const chandlerLocation = {
   lat: 33.3062,
@@ -76,6 +52,7 @@ const chandlerLocation = {
 };
 
 export default function WalkInShowersPage() {
+  const serviceData = serviceContent["walk-in-showers"];
   return (
     <>
       <ServiceSchema
@@ -138,74 +115,21 @@ export default function WalkInShowersPage() {
         <IssuesSolved
           title="Issues We Solve with Walk-In Showers"
           subtitle="Common Problems Fixed"
-          description="We address the most common bathroom challenges that walk-in showers solve for Chandler homeowners."
-          issues={[
-            {
-              problem: "Difficult bathtub entry for seniors or those with mobility issues.",
-              solution: "Barrier-free, curbless walk-in showers with optional grab bars and built-in seating.",
-            },
-            {
-              problem: "Cramped shower stalls that feel claustrophobic.",
-              solution: "Spacious walk-in designs with frameless glass that open up the bathroom visually.",
-            },
-            {
-              problem: "Outdated shower-tub combos that waste space.",
-              solution: "Modern walk-in shower conversions that maximize usable bathroom space.",
-            },
-            {
-              problem: "Poor drainage causing standing water and mold growth.",
-              solution: "Properly sloped floors with linear drains for efficient water removal.",
-            },
-            {
-              problem: "Slippery shower floors creating safety hazards.",
-              solution: "Slip-resistant tile options and textured surfaces for safe footing.",
-            },
-          ]}
+          description="We address the most common design and installation challenges Chandler homeowners face."
+          issues={serviceData.issues}
         />
 
         <Benefits
-          title="Benefits of Walk-In Showers in Chandler"
+          title="Benefits of Walk-In Showers"
           subtitle="Why Choose Walk-In Showers"
-          benefits={[
-            {
-              icon: "Accessibility",
-              title: "Easy Access",
-              description: "Barrier-free entry makes showering safer and more comfortable for all ages.",
-            },
-            {
-              icon: "Sparkles",
-              title: "Modern Aesthetics",
-              description: "Frameless glass and clean lines create a spa-like, contemporary look.",
-            },
-            {
-              icon: "Layout",
-              title: "Space Efficiency",
-              description: "Open designs make bathrooms feel larger and more spacious.",
-            },
-            {
-              icon: "TrendingUp",
-              title: "Increased Home Value",
-              description: "Walk-in showers are highly desirable features that boost property value.",
-            },
-            {
-              icon: "Timer",
-              title: "Easy Maintenance",
-              description: "Fewer crevices and seamless surfaces make cleaning quick and simple.",
-            },
-          ]}
+          benefits={serviceData.benefits}
         />
 
         <Tips
           title="Walk-In Shower Tips & Maintenance"
           subtitle="Keep It Looking New"
           description="Expert tips to maintain your walk-in shower and extend its lifespan in Chandler's climate."
-          tips={[
-            "Squeegee glass doors after each use to prevent water spots and mineral buildup.",
-            "Use a daily shower spray to prevent soap scum and mildew formation.",
-            "Clean grout lines monthly with a pH-neutral cleaner to maintain appearance.",
-            "Check caulk seals quarterly and reapply as needed to prevent water damage.",
-            "Run the bathroom exhaust fan during and after showers to reduce humidity.",
-          ]}
+          tips={serviceData.tips}
         />
 
         <ServiceCTA 

@@ -13,6 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
   title: "Small Bathroom Remodel Cost Chandler AZ | Expert",
@@ -46,13 +47,13 @@ export const metadata: Metadata = {
 const faqs = [
   { question: "How much does small bathroom remodel cost in Chandler AZ?", answer: "Small bathroom remodel cost in Chandler AZ typically ranges $8,000-$20,000. Affordable small bathroom remodel cost starts around $8,000 for basic updates, while professional small bathroom remodel services with luxury finishes can exceed $20,000. Get your free bathroom remodel estimate!" },
   { question: "What makes your small bathroom remodeling services the best in Chandler AZ?", answer: "We're the best small bathroom remodel contractors in Chandler AZ with 15+ years experience. Our licensed bathroom remodeling contractors specialize in space-maximizing designs, affordable small bathroom remodel cost, and professional bathroom installation services." },
-  { question: "Can you add storage in a small bathroom remodel in Chandler?", answer: "Yes! Our local small bathroom remodel cost includes creative storage solutions. We specialize in built-in niches, floating shelves, vanity storage, and recessed medicine cabinets. Our professional small bathroom remodel services maximize every square foot." },
-  { question: "How long does small bathroom remodeling take in Chandler AZ?", answer: "Small bathroom remodeling in Chandler AZ typically takes 1-3 weeks. Same day bathroom remodeling contractors available for quick updates. Our professional bathroom remodel services are efficient while maintaining top rated quality standards." }
-];
+const faqs = serviceContent["small-bathroom-remodeling"].faqs;
 
 const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
 
 export default function SmallBathroomRemodelingPage() {
+  const smallBathData = serviceContent["small-bathroom-remodeling"];
+  
   return (
     <>
       <ServiceSchema serviceName="Small Bathroom Remodeling in Chandler, Arizona" serviceDescription="Professional small bathroom remodeling in Chandler, Arizona. Space-saving designs, storage solutions, and modern fixtures." serviceUrl={`${siteConfig.url}/small-bathroom-remodeling`} />
@@ -82,36 +83,19 @@ export default function SmallBathroomRemodelingPage() {
           title="Issues We Solve with Small Bathroom Remodeling"
           subtitle="Common Problems Fixed"
           description="We address the most common small bathroom challenges Chandler homeowners face."
-          issues={[
-            { problem: "Cramped layout making the bathroom feel claustrophobic.", solution: "Open design concepts with glass, mirrors, and light colors to create spacious feel." },
-            { problem: "Insufficient storage causing clutter and disorganization.", solution: "Built-in storage solutions, floating vanities, and creative storage niches." },
-            { problem: "Poor lighting making the space feel dark and small.", solution: "Layered lighting design with recessed lights, vanity lighting, and natural light optimization." },
-            { problem: "Outdated fixtures that overwhelm the small space.", solution: "Appropriately scaled fixtures and space-saving designs that fit the room proportions." },
-            { problem: "Inefficient layout wasting valuable square footage.", solution: "Optimized layout planning that maximizes functionality within limited space." }
-          ]}
+          issues={smallBathData.issues}
         />
         <Benefits
-          title="Benefits of Small Bathroom Remodeling in Chandler"
-          subtitle="Why It Matters"
-          benefits={[
-            { icon: "Layout", title: "Maximized Space", description: "Smart design solutions make small bathrooms feel larger and more functional." },
-            { icon: "Sparkles", title: "Modern Aesthetics", description: "Contemporary designs and finishes create a fresh, updated appearance." },
-            { icon: "Timer", title: "Improved Efficiency", description: "Better layout and storage solutions streamline daily routines." },
-            { icon: "TrendingUp", title: "Increased Home Value", description: "Well-designed small bathrooms add significant value to your Chandler home." },
-            { icon: "ShieldCheck", title: "Quality Materials", description: "Durable, space-appropriate materials that withstand daily use in compact spaces." }
-          ]}
+          title="Benefits of Small Bathroom Remodeling"
+          subtitle="Why Remodel Your Small Bathroom"
+          description="Discover how professional small bathroom remodeling maximizes space and adds value to your home."
+          benefits={smallBathData.benefits}
         />
         <Tips
-          title="Small Bathroom Remodeling Tips & Maintenance"
-          subtitle="Keep It Looking Spacious"
-          description="Expert tips to maintain your newly remodeled small bathroom and maximize its impact."
-          tips={[
-            "Use light colors and reflective surfaces to maintain the spacious feel of your remodel.",
-            "Keep countertops clutter-free by utilizing built-in storage and organizational systems.",
-            "Clean mirrors and glass surfaces regularly to maintain brightness and openness.",
-            "Use consistent materials and colors throughout to create visual continuity.",
-            "Maximize natural light with appropriate window treatments and strategic mirror placement."
-          ]}
+          title="Expert Small Bathroom Remodeling Tips"
+          subtitle="Professional Insights"
+          description="Smart strategies to maintain and maximize your newly remodeled small bathroom."
+          tips={smallBathData.tips}
         />
         <ServiceCTA title="Ready for small bathroom remodeling in Chandler?" description="Get expert space-maximizing design, smart storage solutions, and professional installation for your small bathroom." />
         <ServiceFAQ faqs={faqs} />

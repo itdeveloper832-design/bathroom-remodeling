@@ -113,9 +113,11 @@ export default function Testimonials() {
                 <div className="relative w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-primary/20">
                   <Image
                     src={testimonials[currentIndex].image}
-                    alt={testimonials[currentIndex].name}
+                    alt={`${testimonials[currentIndex].name} - testimonial`}
                     fill
                     className="object-cover"
+                    loading="lazy"
+                    quality={75}
                   />
                 </div>
               </div>
@@ -152,9 +154,10 @@ export default function Testimonials() {
                 variant="outline"
                 size="icon"
                 onClick={prevTestimonial}
-                className="rounded-full border-border hover:border-primary hover:bg-primary hover:text-primary-foreground"
+                className="rounded-full border-border hover:border-primary hover:bg-primary hover:text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2"
+                aria-label="Previous testimonial"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-5 h-5" aria-hidden="true" />
                 <span className="sr-only">Previous testimonial</span>
               </Button>
               <div className="flex gap-2">
@@ -173,9 +176,10 @@ export default function Testimonials() {
                 variant="outline"
                 size="icon"
                 onClick={nextTestimonial}
-                className="rounded-full border-border hover:border-primary hover:bg-primary hover:text-primary-foreground"
+                className="rounded-full border-border hover:border-primary hover:bg-primary hover:text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2"
+                aria-label="Next testimonial"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-5 h-5" aria-hidden="true" />
                 <span className="sr-only">Next testimonial</span>
               </Button>
             </div>

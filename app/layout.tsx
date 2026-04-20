@@ -3,6 +3,15 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/site-config'
 import './globals.css'
 
+// Preload critical fonts
+const geistSans = `
+@font-face {
+  font-family: 'system-ui';
+  font-weight: 400;
+  font-style: normal;
+}
+`
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -48,7 +57,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
-    canonical: siteConfig.url,
+    alternates: { canonical: siteConfig.url },
   },
   verification: {
     google: 'your-google-verification-code',
@@ -70,14 +79,16 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
-        {/* Preload critical fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Critical performance optimizations - Resource Hints */}
+        <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
         
-        {/* DNS Prefetch for external resources */}
-        <link rel="dns-prefetch" href="//images.unsplash.com" />
+        {/* Preload critical LCP image with fetchpriority */}
+        <link rel="preload" fetchPriority="high" href="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp" as="image" type="image/webp" />
+        <link rel="preload" fetchPriority="high" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-img-YR6kfZbkdkF5uYQFqCorpsvJK4opSO.jpg" as="image" type="image/jpeg" />
         
         {/* Canonical URL */}
         <link rel="canonical" href={siteConfig.url} />
@@ -166,7 +177,8 @@ export default function RootLayout({
       <body className="font-sans antialiased bg-background text-foreground" suppressHydrationWarning>
         {children}
       </body>
-      <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
+      {/* Defer Vercel analytics - not critical for rendering */}
+      <Script src="/_vercel/insights/script.js" strategy="lazyOnload" />
     </html>
   )
 }

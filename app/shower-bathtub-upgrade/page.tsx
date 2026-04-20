@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/shower-bathtub-upgrade-hero.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/shower-bathtub-upgrade`,
+    alternates: { canonical: `${siteConfig.url}/shower-bathtub-upgrade` },
   },
 };
 

@@ -205,7 +205,7 @@ export default function AdminDashboardPage() {
                     </div>
                     <div className="text-xs text-muted-foreground flex items-center gap-1">
                       <TrendingUp className="h-3 w-3" />
-                      {post.views || 0} views
+                      {post.readTime || 0} min read
                     </div>
                   </Link>
                 ))}

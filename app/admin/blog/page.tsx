@@ -86,7 +86,6 @@ export default function AdminBlogPage() {
                   <TableHead>Post</TableHead>
                   <TableHead>Category</TableHead>
                   <TableHead>Status</TableHead>
-                  <TableHead>Views</TableHead>
                   <TableHead>Date</TableHead>
                   <TableHead className="w-12"></TableHead>
                 </TableRow>
@@ -119,9 +118,6 @@ export default function AdminBlogPage() {
                       <Badge variant={post.status === "published" ? "default" : "secondary"}>
                         {post.status}
                       </Badge>
-                    </TableCell>
-                    <TableCell>
-                      <span className="text-sm text-muted-foreground">{post.views || 0}</span>
                     </TableCell>
                     <TableCell>
                       <div className="flex items-center gap-1 text-xs text-muted-foreground">

@@ -36,9 +36,9 @@ export default function AdminTestimonialsPage() {
     name: "",
     location: "",
     rating: 5,
-    text: "",
+    content: "",
     service: "",
-    imageUrl: "",
+    image: "",
     featured: false,
   })
 
@@ -81,9 +81,9 @@ export default function AdminTestimonialsPage() {
       name: "",
       location: "",
       rating: 5,
-      text: "",
+      content: "",
       service: "",
-      imageUrl: "",
+      image: "",
       featured: false,
     })
   }
@@ -94,10 +94,10 @@ export default function AdminTestimonialsPage() {
       name: testimonial.name,
       location: testimonial.location || "",
       rating: testimonial.rating,
-      text: testimonial.text,
+      content: testimonial.content,
       service: testimonial.service || "",
-      imageUrl: testimonial.imageUrl || "",
-      featured: testimonial.featured,
+      image: testimonial.image || "",
+      featured: testimonial.featured || false,
     })
     setDialogOpen(true)
   }
@@ -170,21 +170,21 @@ export default function AdminTestimonialsPage() {
                 </div>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="text">Review Text</Label>
+                <Label htmlFor="content">Review Text</Label>
                 <Textarea
-                  id="text"
-                  value={formData.text}
-                  onChange={(e) => setFormData({ ...formData, text: e.target.value })}
+                  id="content"
+                  value={formData.content}
+                  onChange={(e) => setFormData({ ...formData, content: e.target.value })}
                   placeholder="Customer review..."
                   rows={4}
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="imageUrl">Customer Photo URL (optional)</Label>
+                <Label htmlFor="image">Customer Photo URL (optional)</Label>
                 <Input
-                  id="imageUrl"
-                  value={formData.imageUrl}
-                  onChange={(e) => setFormData({ ...formData, imageUrl: e.target.value })}
+                  id="image"
+                  value={formData.image}
+                  onChange={(e) => setFormData({ ...formData, image: e.target.value })}
                   placeholder="https://..."
                 />
               </div>
@@ -230,7 +230,7 @@ export default function AdminTestimonialsPage() {
                     </TableCell>
                     <TableCell>
                       <p className="text-sm text-muted-foreground line-clamp-2 max-w-md">
-                        {testimonial.text}
+                        {testimonial.content}
                       </p>
                     </TableCell>
                     <TableCell>

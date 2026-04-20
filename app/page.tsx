@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
@@ -6,53 +7,63 @@ import TrustBadges from "@/components/home/trust-badges";
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
-// Lazy load below-the-fold components
-const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"), { 
-  loading: () => <div className="h-96" />,
-  ssr: true 
-});
-const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"), { 
-  loading: () => <div className="h-96" />,
+export const metadata: Metadata = {
+  title: "Best Bathroom Remodeling Contractors Chandler AZ | Free Quote",
+  description: "Professional bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel services, licensed & insured. Get your free bathroom remodel estimate today!",
+  openGraph: {
+    title: "Best Bathroom Remodeling Contractors Chandler AZ",
+    description: "Professional bathroom remodeling contractors Chandler AZ. Free bathroom remodel quote!",
+    type: "website",
+  },
+};
+
+// Lazy load below-the-fold components for better code splitting
+const AboutPreview = dynamic(() => import("@/components/home/about-preview"), { 
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
 const ServicesGrid = dynamic(() => import("@/components/home/services-grid"), { 
-  loading: () => <div className="h-96" />,
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
-const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), { 
-  loading: () => <div className="h-96" />,
-  ssr: true 
-});
-const ProcessSection = dynamic(() => import("@/components/home/process-section"), { 
-  loading: () => <div className="h-96" />,
+const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"), { 
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
 const Testimonials = dynamic(() => import("@/components/home/testimonials"), { 
-  loading: () => <div className="h-96" />,
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
-const AboutPreview = dynamic(() => import("@/components/home/about-preview"), { 
-  loading: () => <div className="h-96" />,
+const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"), { 
+  loading: () => <div className="h-80" />,
+  ssr: true 
+});
+const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), { 
+  loading: () => <div className="h-80" />,
+  ssr: true 
+});
+const ProcessSection = dynamic(() => import("@/components/home/process-section"), { 
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
 const ServiceAreas = dynamic(() => import("@/components/home/service-areas"), { 
-  loading: () => <div className="h-96" />,
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
 const Financing = dynamic(() => import("@/components/home/financing"), { 
-  loading: () => <div className="h-96" />,
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
 const FAQ = dynamic(() => import("@/components/home/faq"), { 
-  loading: () => <div className="h-96" />,
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
 const BlogPreview = dynamic(() => import("@/components/home/blog-preview"), { 
-  loading: () => <div className="h-96" />,
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
 const ContactSection = dynamic(() => import("@/components/home/contact-section"), { 
-  loading: () => <div className="h-96" />,
+  loading: () => <div className="h-80" />,
   ssr: true 
 });
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"), { 
@@ -89,7 +100,7 @@ export default function HomePage() {
       <LocalBusinessSchema />
       <FAQSchema faqs={homeFaqs} />
       <Header />
-      <main>
+      <main role="main">
         <Hero />
         <TrustBadges />
         <AboutPreview />

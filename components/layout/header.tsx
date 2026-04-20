@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { bathroomServices } from "@/lib/bathroom-services";
@@ -18,10 +19,17 @@ export function Header() {
   const servicesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 20);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -46,16 +54,17 @@ export function Header() {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex flex-col hover:scale-102 transition-transform duration-200">
-              <span className="font-serif text-2xl lg:text-3xl font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors">
-                Chandler
-              </span>
-              <span className="text-xs tracking-[0.2em] uppercase text-muted-foreground -mt-1">
-                Bathroom Remodeling
-              </span>
-            </div>
+          {/* Logo - Accessible - Responsive */}
+          <Link href="/" className="flex items-center hover:scale-105 transition-transform duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-img-YR6kfZbkdkF5uYQFqCorpsvJK4opSO.jpg"
+              alt="ARZ Home Remodeling Logo"
+              width={280}
+              height={80}
+              priority
+              className="h-14 sm:h-16 md:h-18 lg:h-20 w-auto"
+              style={{ maxWidth: "280px", height: "auto" }}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -64,7 +73,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full"
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1"
               >
                 {item.name}
               </Link>
@@ -143,7 +152,7 @@ export function Header() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium py-2 border-b border-border text-foreground"
+                  className="text-lg font-medium py-2 border-b border-border text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 block rounded px-2"
                 >
                   {item.name}
                 </Link>
@@ -189,12 +198,13 @@ export function Header() {
       )}
     </header>
 
-    {/* Mobile Sticky Call Button */}
+    {/* Mobile Sticky Call Button - Accessible */}
     <a
       href={`tel:${siteConfig.phone}`}
-      className="lg:hidden fixed bottom-4 right-4 z-50 flex items-center gap-2 px-6 py-3 bg-black text-white font-bold rounded-full shadow-2xl active:scale-95 transition-transform duration-200 animate-in slide-in-from-bottom-4"
+      className="lg:hidden fixed bottom-4 right-4 z-50 flex items-center gap-2 px-6 py-3 bg-black text-white font-bold rounded-full shadow-2xl active:scale-95 transition-transform duration-200 animate-in slide-in-from-bottom-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+      aria-label={`Call us at ${siteConfig.phone}`}
     >
-      <Phone className="w-5 h-5" />
+      <Phone className="w-5 h-5" aria-hidden="true" />
       Call Now
     </a>
     </>

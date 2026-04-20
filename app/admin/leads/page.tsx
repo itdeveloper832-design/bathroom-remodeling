@@ -181,8 +181,8 @@ export default function AdminLeadsPage() {
                           <DropdownMenuItem onClick={() => handleStatusChange(lead.id, "contacted")}>
                             <Phone className="mr-2 h-4 w-4" /> Mark as Contacted
                           </DropdownMenuItem>
-                          <DropdownMenuItem onClick={() => handleStatusChange(lead.id, "qualified")}>
-                            <Check className="mr-2 h-4 w-4" /> Mark as Qualified
+                          <DropdownMenuItem onClick={() => handleStatusChange(lead.id, "converted")}>
+                            <Check className="mr-2 h-4 w-4" /> Mark as Converted
                           </DropdownMenuItem>
                           <DropdownMenuItem onClick={() => handleStatusChange(lead.id, "closed")}>
                             <X className="mr-2 h-4 w-4" /> Mark as Closed

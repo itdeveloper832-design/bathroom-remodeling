@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/blog`,
+    alternates: { canonical: `${siteConfig.url}/blog` },
   },
 }
 

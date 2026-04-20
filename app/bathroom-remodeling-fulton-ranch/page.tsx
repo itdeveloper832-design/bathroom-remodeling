@@ -2,9 +2,6 @@ import { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import ServiceHero from "@/components/service-hero";
-import IssuesSolved from "@/components/issues-solved";
-import Benefits from "@/components/benefits";
-import Tips from "@/components/tips";
 import ProcessSection from "@/components/home/process-section";
 import Testimonials from "@/components/home/testimonials";
 import ServiceCTA from "@/components/service-cta";
@@ -14,7 +11,6 @@ import CustomFAQ from "@/components/custom-faq";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { bathroomRemodelingAreas } from "@/lib/bathroom-remodeling-areas";
-import { Grid3X3, TrendingUp, DollarSign, Clock, Shield, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Bathroom Remodeling Fulton Ranch Chandler AZ",
@@ -61,16 +57,12 @@ export default function FultonRanchBathroomRemodelingPage() {
       <FAQSchema faqs={schemaFaqs} />
       <Header />
       <main>
-        <ServiceHero title={areaData.heroTitle} subtitle={areaData.heroSubtitle} description={areaData.heroDescription} image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop" breadcrumbs={breadcrumbs} />
+        <ServiceHero title={areaData.heroTitle} description={areaData.heroDescription} backgroundImage="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop" />
         <AreaIntro title={areaData.introSection.title} description={areaData.introSection.description} trustSignals={areaData.localTrustSignals} />
-        <IssuesSolved title="Problems We Solve" subtitle="Common Bathroom Issues" description="We understand the frustrations that come with an outdated or dysfunctional bathroom. Here's how we address common challenges." issues={issues} />
-        <Benefits title="Benefits of Bathroom Remodeling" subtitle="Why Remodel?" />
         <AreaBenefits benefits={areaData.areaBenefits} />
-        <Tips title="Bathroom Remodeling Tips" subtitle="Expert Advice" description="Planning a bathroom remodel? Keep these expert tips in mind to ensure a successful project." tips={tips} />
         <ProcessSection />
         <Testimonials />
         <CustomFAQ title={`Frequently Asked Questions About Bathroom Remodeling in ${areaData.areaName}`} description={`Get answers to questions about our bathroom remodeling services specifically for ${areaData.areaName} homeowners.`} faqs={areaData.areaFaqs} />
-        <ServiceCTA title={`Ready to Transform Your ${areaData.areaName} Bathroom?`} description={`Schedule your free in-home consultation today. Our design experts will help you create the perfect bathroom for your ${areaData.areaName} home and budget.`} />
       </main>
       <Footer />
     </>

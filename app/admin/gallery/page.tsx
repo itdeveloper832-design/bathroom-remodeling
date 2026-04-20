@@ -103,7 +103,7 @@ export default function AdminGalleryPage() {
       category: item.category,
       beforeImage: item.beforeImage || "",
       afterImage: item.afterImage || "",
-      featured: item.featured,
+      featured: item.featured || false,
     })
     setDialogOpen(true)
   }

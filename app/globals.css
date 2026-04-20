@@ -2,6 +2,37 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* CRITICAL RENDERING PATH OPTIMIZATIONS */
+/* Use system fonts - no network requests needed */
+@font-face {
+  font-family: 'system-ui';
+  font-display: swap;
+  src: system-ui;
+}
+
+/* Optimize rendering performance */
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "kern" 1;
+}
+
+/* Prevent CLS (Cumulative Layout Shift) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Reserve space for images to prevent CLS */
+img[data-aspect-ratio] {
+  aspect-ratio: var(--aspect-ratio);
+}
+
+/* Prevent layout shift from scrollbars */
+html {
+  scrollbar-gutter: stable;
+}
+
 :root {
   /* Luxury Remodeling Color Palette */
   --background: oklch(0.97 0.005 85); /* Warm off-white */

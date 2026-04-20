@@ -13,19 +13,21 @@ const trustBadges = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-32 md:pt-40 lg:pt-48">
-      {/* Background Image */}
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-32 md:pt-40 lg:pt-48" aria-label="Hero section">
+      {/* Background Image - LCP Optimized */}
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp"
           alt="Luxury bathroom remodel in Chandler, Arizona - best bathroom remodelers near me"
           fill
           className="object-cover"
-          priority
-          sizes="(max-width: 768px) 100vw, 100vw"
-          quality={75}
+          priority={true}
+          sizes="100vw"
+          quality={80}
+          loading="eager"
+          placeholder="empty"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" aria-hidden="true" />
       </div>
 
       {/* Content */}
@@ -45,8 +47,8 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Headline */}
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-6 text-balance">
+            {/* Headline - Accessible H1 */}
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-6 text-balance focus-visible:outline-none">
               Best Bathroom Remodeling Contractors Chandler AZ
             </h1>
 
@@ -56,12 +58,13 @@ export default function Hero() {
               contractors with 15+ years experience. Get your free bathroom remodel quote and bathroom remodel estimate today!
             </p>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons - Accessible */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 asChild
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 py-6"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 py-6 focus-visible:outline-2 focus-visible:outline-offset-2"
+                aria-label="Get your free bathroom remodel estimate"
               >
                 <Link href="/contact">Get Your Free Estimate</Link>
               </Button>
@@ -69,7 +72,8 @@ export default function Hero() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-black bg-black text-white hover:border-black/90 hover:bg-black/90 hover:text-white text-base px-8 py-6"
+                className="border-black bg-black text-white hover:border-black/90 hover:bg-black/90 hover:text-white text-base px-8 py-6 focus-visible:outline-2 focus-visible:outline-offset-2"
+                aria-label="View our portfolio of completed bathroom remodels"
               >
                 <Link href="/gallery">View Our Portfolio</Link>
               </Button>

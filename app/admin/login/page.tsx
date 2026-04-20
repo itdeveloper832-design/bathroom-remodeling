@@ -1,54 +1,65 @@
-"use client"
+'use client';
 
-import { useState, useEffect } from "react"
-import { useRouter } from "next/navigation"
-import { useAuth } from "@/lib/auth-context"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { siteConfig } from "@/lib/site-config"
-import { Loader2, Lock } from "lucide-react"
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { siteConfig } from '@/lib/site-config';
+import { Loader2, Lock, AlertCircle, ShieldCheck } from 'lucide-react';
 
+/**
+ * SECURE ADMIN LOGIN PAGE
+ * 
+ * Security Features:
+ * ✓ Credentials sent only to server (never logged/stored client-side)
+ * ✓ HTTP-only session cookies (inaccessible to JavaScript/DevTools)
+ * ✓ No sensitive data in localStorage or sessionStorage
+ * ✓ Passwords hashed with PBKDF2 on server
+ * ✓ HTTPS-only in production
+ * ✓ CSRF protection built-in
+ */
 export default function AdminLoginPage() {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [error, setError] = useState("")
-  const [isLoading, setIsLoading] = useState(false)
-  const { user, loading, signIn } = useAuth()
-  const router = useRouter()
+  const router = useRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    if (!loading && user) {
-      router.push("/admin/dashboard")
-    }
-  }, [user, loading, router])
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setError("")
-    setIsLoading(true)
+  async function handleLogin(e: React.FormEvent) {
+    e.preventDefault();
+    setError('');
+    setLoading(true);
 
     try {
-      await signIn(email, password)
-      router.push("/admin/dashboard")
-    } catch (err) {
-      if (err instanceof Error && err.message.includes("Access denied")) {
-        setError("Access denied. You are not authorized to access the admin panel.")
-      } else {
-        setError("Invalid email or password. Please try again.")
-      }
-    } finally {
-      setIsLoading(false)
-    }
-  }
+      // Send credentials to secure server endpoint
+      const response = await fetch('/api/admin/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include', // Include HTTP-only cookies
+        body: JSON.stringify({ email, password }),
+      });
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-secondary">
-        <Loader2 className="h-8 w-8 animate-spin text-primary" />
-      </div>
-    )
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.error || 'Login failed');
+        return;
+      }
+
+      // Clear sensitive data from memory
+      setEmail('');
+      setPassword('');
+
+      // Redirect to dashboard (HTTP-only session cookie is sent automatically)
+      router.push('/admin/dashboard');
+    } catch (err) {
+      console.error('[LOGIN_ERROR]', err);
+      setError('An error occurred. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -59,12 +70,19 @@ export default function AdminLoginPage() {
             <Lock className="h-6 w-6 text-primary" />
           </div>
           <CardTitle className="text-2xl font-serif">{siteConfig.name}</CardTitle>
-          <CardDescription>Admin Dashboard Login</CardDescription>
+          <CardDescription>Secure Admin Dashboard Login</CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          {error && (
+            <div className="mb-4 p-3 rounded-lg bg-destructive/10 border border-destructive/20 flex gap-2">
+              <AlertCircle className="w-4 h-4 text-destructive mt-0.5 flex-shrink-0" />
+              <p className="text-xs text-destructive">{error}</p>
+            </div>
+          )}
+
+          <form onSubmit={handleLogin} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">Email Address</Label>
               <Input
                 id="email"
                 type="email"
@@ -72,35 +90,53 @@ export default function AdminLoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                autoComplete="email"
               />
             </div>
+
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
               <Input
                 id="password"
                 type="password"
-                placeholder="Enter your password"
+                placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
+                autoComplete="current-password"
               />
             </div>
-            {error && (
-              <p className="text-sm text-destructive">{error}</p>
-            )}
-            <Button type="submit" className="w-full" disabled={isLoading}>
-              {isLoading ? (
+
+            <Button 
+              type="submit" 
+              className="w-full" 
+              disabled={loading || !email || !password}
+            >
+              {loading ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                   Signing in...
                 </>
               ) : (
-                "Sign In"
+                'Sign In'
               )}
             </Button>
           </form>
+
+          <div className="mt-6 p-3 rounded-lg bg-primary/5 border border-primary/10">
+            <div className="flex gap-2 mb-2">
+              <ShieldCheck className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+              <p className="text-xs font-medium text-primary">Security Protected</p>
+            </div>
+            <ul className="text-xs text-muted-foreground space-y-1 ml-6">
+              <li>✓ Encrypted transmission</li>
+              <li>✓ HTTP-only cookies</li>
+              <li>✓ Password never logged</li>
+              <li>✓ Server-side validation</li>
+            </ul>
+          </div>
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }

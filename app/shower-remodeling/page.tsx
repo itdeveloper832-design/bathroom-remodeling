@@ -130,7 +130,6 @@ export default function ShowerRemodelingPage() {
           title="Expert Shower Remodeling Tips"
           subtitle="Professional Insights"
           description="Smart strategies to make the most of your shower remodeling project."
-          tips={showerData.tips}
         />
 
         <ServiceCTA 

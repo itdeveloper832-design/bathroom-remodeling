@@ -44,9 +44,6 @@ export const metadata: Metadata = {
   },
 };
 
-const faqs = [
-  { question: "How much does small bathroom remodel cost in Chandler AZ?", answer: "Small bathroom remodel cost in Chandler AZ typically ranges $8,000-$20,000. Affordable small bathroom remodel cost starts around $8,000 for basic updates, while professional small bathroom remodel services with luxury finishes can exceed $20,000. Get your free bathroom remodel estimate!" },
-  { question: "What makes your small bathroom remodeling services the best in Chandler AZ?", answer: "We're the best small bathroom remodel contractors in Chandler AZ with 15+ years experience. Our licensed bathroom remodeling contractors specialize in space-maximizing designs, affordable small bathroom remodel cost, and professional bathroom installation services." },
 const faqs = serviceContent["small-bathroom-remodeling"].faqs;
 
 const chandlerLocation = { lat: 33.3062, lng: -111.8413 };

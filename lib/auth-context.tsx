@@ -1,13 +1,9 @@
 "use client"
 
 import { createContext, useContext, useEffect, useState, ReactNode } from "react"
-import { 
-  User, 
-  onAuthStateChanged, 
-  signInWithEmailAndPassword,
-  signOut as firebaseSignOut
-} from "firebase/auth"
-import { auth } from "./firebase"
+interface User {
+  email: string | null
+}
 
 // Admin email whitelist - only these emails can access admin panel
 const ADMIN_EMAILS = ["mi6062610@gmail.com"]
@@ -27,12 +23,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUser(user)
-      setLoading(false)
-    })
-
-    return () => unsubscribe()
+    const isAdmin = document.cookie.includes("is_admin=true")
+    if (isAdmin) {
+      setUser({ email: ADMIN_EMAILS[0] })
+    } else {
+      setUser(null)
+    }
+    setLoading(false)
   }, [])
 
   const isAdmin = user ? ADMIN_EMAILS.includes(user.email || "") : false
@@ -42,11 +39,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (!ADMIN_EMAILS.includes(email)) {
       throw new Error("Access denied. You are not authorized to access the admin panel.")
     }
-    await signInWithEmailAndPassword(auth, email, password)
+    if (!password) {
+      throw new Error("Password is required.")
+    }
+    setUser({ email })
   }
 
   const signOut = async () => {
-    await firebaseSignOut(auth)
+    await fetch("/api/admin/logout", { method: "POST", credentials: "include" })
+    setUser(null)
+    if (typeof window !== "undefined") {
+      window.location.href = "/admin/login"
+    }
   }
 
   return (

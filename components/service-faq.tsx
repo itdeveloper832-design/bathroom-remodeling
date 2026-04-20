@@ -33,9 +33,20 @@ const faqs = [
   }
 ];
 
-export default function ServiceFAQ() {
+interface ServiceFAQProps {
+  title?: string;
+  description?: string;
+  faqs?: Array<{ question: string; answer: string }>;
+}
+
+export default function ServiceFAQ({
+  title = "Frequently Asked Questions",
+  description = "Get answers to common questions about our bathroom remodeling services.",
+  faqs: customFaqs,
+}: ServiceFAQProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const faqsToRender = customFaqs ?? faqs;
 
   return (
     <section ref={ref} className="py-20 lg:py-32 bg-background">
@@ -48,10 +59,10 @@ export default function ServiceFAQ() {
             className="text-center mb-16"
           >
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-foreground">
-              Frequently Asked Questions
+              {title}
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Get answers to common questions about our bathroom remodeling services.
+              {description}
             </p>
           </motion.div>
 
@@ -61,7 +72,7 @@ export default function ServiceFAQ() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Accordion type="single" collapsible className="w-full">
-              {faqs.map((faq, index) => (
+              {faqsToRender.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
                   <AccordionTrigger className="text-left">
                     {faq.question}

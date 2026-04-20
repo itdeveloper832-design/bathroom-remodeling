@@ -116,22 +116,19 @@ export default function AdminSettingsPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>Firebase Configuration</CardTitle>
+            <CardTitle>Data Mode</CardTitle>
             <CardDescription>
-              Database and authentication settings
+              Current storage and authentication behavior
             </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground mb-4">
-              To configure Firebase, set the following environment variables:
+              Firebase has been removed. The site now runs without external database dependencies.
             </p>
             <div className="bg-muted p-4 rounded-lg font-mono text-xs space-y-1">
-              <p>NEXT_PUBLIC_FIREBASE_API_KEY</p>
-              <p>NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN</p>
-              <p>NEXT_PUBLIC_FIREBASE_PROJECT_ID</p>
-              <p>NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET</p>
-              <p>NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID</p>
-              <p>NEXT_PUBLIC_FIREBASE_APP_ID</p>
+              <p>Public website forms run in local-only mode.</p>
+              <p>Admin data actions use in-memory fallback data.</p>
+              <p>No Firebase environment variables are required.</p>
             </div>
           </CardContent>
         </Card>

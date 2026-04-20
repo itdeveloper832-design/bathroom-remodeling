@@ -22,10 +22,16 @@ async function getPostData(slug: string): Promise<BlogPost | null> {
   
   // Check if this is the default blog post
   if (slug === defaultBlogPost.slug) {
+    const fallbackKeywords = (defaultBlogPost as { metaKeywords?: string }).metaKeywords
+      ?.split(",")
+      .map((keyword) => keyword.trim())
+      .filter(Boolean) ?? [];
+
     return {
       ...defaultBlogPost,
       id: "default-post",
       readTime: 12,
+      keywords: fallbackKeywords,
     }
   }
   return null

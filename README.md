@@ -19,7 +19,7 @@ This is a complete Next.js 16 website for a bathroom and kitchen remodeling busi
 - ✅ Internal linking mesh for SEO
 - ✅ Mobile-responsive design
 - ✅ Fast static generation
-- ✅ Firebase integration for blog/gallery/testimonials
+- ✅ Local in-memory data fallback for blog/gallery/testimonials
 
 ---
 

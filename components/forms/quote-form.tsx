@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { db } from "@/lib/firebase";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export function QuoteForm() {
@@ -39,11 +37,11 @@ export function QuoteForm() {
       service: formData.get("service") as string,
       message: formData.get("message") as string,
       type: "quote",
-      createdAt: serverTimestamp(),
+      createdAt: new Date().toISOString(),
     };
 
     try {
-      await addDoc(collection(db, "quotes"), data);
+      console.info("Quote form submission", data);
       setSuccess(true);
       e.currentTarget.reset();
       setWordCount(0);

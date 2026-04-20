@@ -1,24 +1,7 @@
 "use server";
 
-import { db } from "@/lib/firebase";
-import {
-  collection,
-  doc,
-  getDocs,
-  getDoc,
-  addDoc,
-  updateDoc,
-  deleteDoc,
-  query,
-  where,
-  orderBy,
-  limit,
-  Timestamp,
-} from "firebase/firestore";
 import type { BlogPost, Category } from "@/lib/types";
-
-const POSTS_COLLECTION = "posts";
-const CATEGORIES_COLLECTION = "categories";
+import { defaultBlogPost, secondBlogPost } from "@/lib/seed-blog";
 
 function generateSlug(title: string): string {
   return title
@@ -29,201 +12,88 @@ function generateSlug(title: string): string {
     .trim();
 }
 
-// ============ POSTS ============
+const basePosts: BlogPost[] = [defaultBlogPost, secondBlogPost].map((post, index) => ({
+  id: `post-${index + 1}`,
+  title: post.title,
+  slug: post.slug,
+  content: post.content,
+  excerpt: post.excerpt,
+  featuredImage: post.featuredImage,
+  category: post.category,
+  author: post.author,
+  status: post.status,
+  metaTitle: post.metaTitle,
+  metaDescription: post.metaDescription,
+  keywords: post.metaKeywords.split(",").map((keyword) => keyword.trim()).filter(Boolean),
+  tags: post.tags,
+  readTime: 12,
+  publishedAt: post.publishedAt,
+  createdAt: post.createdAt,
+  updatedAt: post.updatedAt,
+}));
+
+let inMemoryPosts: BlogPost[] = [...basePosts];
+let inMemoryCategories: Category[] = [
+  { id: "cat-1", name: "Bathroom Remodeling", slug: "bathroom-remodeling", description: "Bathroom remodeling guides and advice." },
+  { id: "cat-2", name: "Design Trends", slug: "design-trends", description: "Latest design trends and inspiration." },
+];
 
 export async function getPosts(): Promise<BlogPost[]> {
-  try {
-    const postsRef = collection(db, POSTS_COLLECTION);
-    const q = query(postsRef, orderBy("createdAt", "desc"));
-    const snapshot = await getDocs(q);
-
-    return snapshot.docs.map((doc) => {
-      const data = doc.data();
-      return {
-        id: doc.id,
-        ...data,
-        createdAt: data.createdAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-        updatedAt: data.updatedAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-        publishedAt: data.publishedAt?.toDate?.()?.toISOString() || null,
-      } as BlogPost;
-    });
-  } catch (error) {
-    console.error("Error fetching posts:", error);
-    return [];
-  }
+  return [...inMemoryPosts].sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
 }
 
 export async function getPublishedPosts(): Promise<BlogPost[]> {
-  try {
-    const postsRef = collection(db, POSTS_COLLECTION);
-    const q = query(
-      postsRef,
-      where("status", "==", "published"),
-      orderBy("createdAt", "desc")
-    );
-    const snapshot = await getDocs(q);
-
-    return snapshot.docs.map((doc) => {
-      const data = doc.data();
-      return {
-        id: doc.id,
-        ...data,
-        createdAt: data.createdAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-        updatedAt: data.updatedAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-        publishedAt: data.publishedAt?.toDate?.()?.toISOString() || null,
-      } as BlogPost;
-    });
-  } catch (error) {
-    console.error("Error fetching published posts:", error);
-    return [];
-  }
+  return (await getPosts()).filter((post) => post.status === "published");
 }
 
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
-  try {
-    const postsRef = collection(db, POSTS_COLLECTION);
-    const q = query(postsRef, where("slug", "==", slug), limit(1));
-    const snapshot = await getDocs(q);
-
-    if (snapshot.empty) {
-      return null;
-    }
-
-    const doc = snapshot.docs[0];
-    const data = doc.data();
-
-    return {
-      id: doc.id,
-      ...data,
-      createdAt: data.createdAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-      updatedAt: data.updatedAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-      publishedAt: data.publishedAt?.toDate?.()?.toISOString() || null,
-    } as BlogPost;
-  } catch (error) {
-    console.error("Error fetching post by slug:", error);
-    return null;
-  }
+  return inMemoryPosts.find((post) => post.slug === slug) ?? null;
 }
 
 export async function getPostById(id: string): Promise<BlogPost | null> {
-  try {
-    const docRef = doc(db, POSTS_COLLECTION, id);
-    const docSnap = await getDoc(docRef);
-
-    if (!docSnap.exists()) {
-      return null;
-    }
-
-    const data = docSnap.data();
-    return {
-      id: docSnap.id,
-      ...data,
-      createdAt: data.createdAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-      updatedAt: data.updatedAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-      publishedAt: data.publishedAt?.toDate?.()?.toISOString() || null,
-    } as BlogPost;
-  } catch (error) {
-    console.error("Error fetching post by ID:", error);
-    return null;
-  }
+  return inMemoryPosts.find((post) => post.id === id) ?? null;
 }
 
 export async function getRelatedPosts(category: string, excludeId: string, maxPosts: number = 3): Promise<BlogPost[]> {
-  try {
-    const postsRef = collection(db, POSTS_COLLECTION);
-    const q = query(
-      postsRef,
-      where("status", "==", "published"),
-      where("category", "==", category),
-      orderBy("createdAt", "desc"),
-      limit(maxPosts + 1)
-    );
-    const snapshot = await getDocs(q);
-
-    return snapshot.docs
-      .filter(doc => doc.id !== excludeId)
-      .slice(0, maxPosts)
-      .map((doc) => {
-        const data = doc.data();
-        return {
-          id: doc.id,
-          ...data,
-          createdAt: data.createdAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-          updatedAt: data.updatedAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-          publishedAt: data.publishedAt?.toDate?.()?.toISOString() || null,
-        } as BlogPost;
-      });
-  } catch (error) {
-    console.error("Error fetching related posts:", error);
-    return [];
-  }
+  return (await getPublishedPosts())
+    .filter((post) => post.category === category && post.id !== excludeId)
+    .slice(0, maxPosts);
 }
 
 export async function createPost(
   data: Omit<BlogPost, "id" | "createdAt" | "updatedAt">
 ): Promise<{ success: boolean; id?: string; error?: string }> {
-  try {
-    const slug = data.slug || generateSlug(data.title);
-    
-    // Check if slug already exists
-    const existing = await getPostBySlug(slug);
-    if (existing) {
-      return { success: false, error: "A post with this slug already exists" };
-    }
-
-    const postsRef = collection(db, POSTS_COLLECTION);
-    const docRef = await addDoc(postsRef, {
-      ...data,
-      slug,
-      createdAt: Timestamp.now(),
-      updatedAt: Timestamp.now(),
-      publishedAt: data.status === "published" ? Timestamp.now() : null,
-    });
-
-    return { success: true, id: docRef.id };
-  } catch (error) {
-    console.error("Error creating post:", error);
-    return { success: false, error: "Failed to create post" };
+  const slug = data.slug || generateSlug(data.title);
+  const existing = await getPostBySlug(slug);
+  if (existing) {
+    return { success: false, error: "A post with this slug already exists" };
   }
+  const id = `post-${Date.now()}`;
+  const now = new Date().toISOString();
+  inMemoryPosts.push({
+    ...(data as BlogPost),
+    id,
+    slug,
+    createdAt: now,
+    updatedAt: now,
+    publishedAt: data.status === "published" ? now : null,
+  });
+  return { success: true, id };
 }
 
 export async function updatePost(
   id: string,
   data: Partial<Omit<BlogPost, "id" | "createdAt">>
 ): Promise<{ success: boolean; error?: string }> {
-  try {
-    const docRef = doc(db, POSTS_COLLECTION, id);
-    
-    const updateData: Record<string, unknown> = {
-      ...data,
-      updatedAt: Timestamp.now(),
-    };
-
-    // If title is being updated, regenerate slug
-    if (data.title && data.slug) {
-      const existing = await getPostBySlug(data.slug);
-      if (existing && existing.id !== id) {
-        return { success: false, error: "A post with this slug already exists" };
-      }
-    }
-
-    await updateDoc(docRef, updateData);
-    return { success: true };
-  } catch (error) {
-    console.error("Error updating post:", error);
-    return { success: false, error: "Failed to update post" };
-  }
+  inMemoryPosts = inMemoryPosts.map((post) =>
+    post.id === id ? { ...post, ...data, updatedAt: new Date().toISOString() } : post
+  );
+  return { success: true };
 }
 
 export async function deletePost(id: string): Promise<{ success: boolean; error?: string }> {
-  try {
-    const docRef = doc(db, POSTS_COLLECTION, id);
-    await deleteDoc(docRef);
-    return { success: true };
-  } catch (error) {
-    console.error("Error deleting post:", error);
-    return { success: false, error: "Failed to delete post" };
-  }
+  inMemoryPosts = inMemoryPosts.filter((post) => post.id !== id);
+  return { success: true };
 }
 
 // Alias for admin pages
@@ -233,105 +103,52 @@ export async function updatePostStatus(
   id: string,
   status: "draft" | "published"
 ): Promise<{ success: boolean; error?: string }> {
-  try {
-    const docRef = doc(db, POSTS_COLLECTION, id);
-    await updateDoc(docRef, { 
-      status, 
-      updatedAt: Timestamp.now(),
-      publishedAt: status === "published" ? Timestamp.now() : null 
-    });
-    return { success: true };
-  } catch (error) {
-    console.error("Error updating post status:", error);
-    return { success: false, error: "Failed to update post status" };
-  }
+  inMemoryPosts = inMemoryPosts.map((post) =>
+    post.id === id
+      ? {
+          ...post,
+          status,
+          updatedAt: new Date().toISOString(),
+          publishedAt: status === "published" ? new Date().toISOString() : null,
+        }
+      : post
+  );
+  return { success: true };
 }
 
 export async function getPostsCount(): Promise<number> {
-  try {
-    const postsRef = collection(db, POSTS_COLLECTION);
-    const snapshot = await getDocs(postsRef);
-    return snapshot.size;
-  } catch (error) {
-    console.error("Error getting posts count:", error);
-    return 0;
-  }
+  return inMemoryPosts.length;
 }
 
 export async function getRecentPosts(maxPosts: number = 5): Promise<BlogPost[]> {
-  try {
-    const postsRef = collection(db, POSTS_COLLECTION);
-    const q = query(postsRef, orderBy("createdAt", "desc"), limit(maxPosts));
-    const snapshot = await getDocs(q);
-
-    return snapshot.docs.map((doc) => {
-      const data = doc.data();
-      return {
-        id: doc.id,
-        ...data,
-        createdAt: data.createdAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-        updatedAt: data.updatedAt?.toDate?.()?.toISOString() || new Date().toISOString(),
-        publishedAt: data.publishedAt?.toDate?.()?.toISOString() || null,
-      } as BlogPost;
-    });
-  } catch (error) {
-    console.error("Error fetching recent posts:", error);
-    return [];
-  }
+  return (await getPosts()).slice(0, maxPosts);
 }
 
 // ============ CATEGORIES ============
 
 export async function getCategories(): Promise<Category[]> {
-  try {
-    const categoriesRef = collection(db, CATEGORIES_COLLECTION);
-    const q = query(categoriesRef, orderBy("name", "asc"));
-    const snapshot = await getDocs(q);
-
-    return snapshot.docs.map((doc) => ({
-      id: doc.id,
-      ...doc.data(),
-    })) as Category[];
-  } catch (error) {
-    console.error("Error fetching categories:", error);
-    return [];
-  }
+  return [...inMemoryCategories];
 }
 
 export async function createCategory(
   data: Omit<Category, "id">
 ): Promise<{ success: boolean; id?: string; error?: string }> {
-  try {
-    const categoriesRef = collection(db, CATEGORIES_COLLECTION);
-    const docRef = await addDoc(categoriesRef, data);
-    return { success: true, id: docRef.id };
-  } catch (error) {
-    console.error("Error creating category:", error);
-    return { success: false, error: "Failed to create category" };
-  }
+  const id = `cat-${Date.now()}`;
+  inMemoryCategories.push({ id, ...data });
+  return { success: true, id };
 }
 
 export async function updateCategory(
   id: string,
   data: Partial<Omit<Category, "id">>
 ): Promise<{ success: boolean; error?: string }> {
-  try {
-    const docRef = doc(db, CATEGORIES_COLLECTION, id);
-    await updateDoc(docRef, data);
-    return { success: true };
-  } catch (error) {
-    console.error("Error updating category:", error);
-    return { success: false, error: "Failed to update category" };
-  }
+  inMemoryCategories = inMemoryCategories.map((category) =>
+    category.id === id ? { ...category, ...data } : category
+  );
+  return { success: true };
 }
 
 export async function deleteCategory(id: string): Promise<{ success: boolean; error?: string }> {
-  try {
-    const docRef = doc(db, CATEGORIES_COLLECTION, id);
-    await deleteDoc(docRef);
-    return { success: true };
-  } catch (error) {
-    console.error("Error deleting category:", error);
-    return { success: false, error: "Failed to delete category" };
-  }
+  inMemoryCategories = inMemoryCategories.filter((category) => category.id !== id);
+  return { success: true };
 }

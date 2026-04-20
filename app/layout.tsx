@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
-    alternates: { canonical: siteConfig.url },
+    canonical: siteConfig.url,
   },
   verification: {
     google: 'your-google-verification-code',

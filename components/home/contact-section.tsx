@@ -15,8 +15,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { db } from "@/lib/firebase";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { siteConfig } from "@/lib/site-config";
 import { bathroomServices } from "@/lib/bathroom-services";
 
@@ -40,12 +38,13 @@ export default function ContactSection() {
       service: formData.get("service") as string,
       message: formData.get("message") as string,
       type: "contact",
-      createdAt: serverTimestamp(),
+      createdAt: new Date().toISOString(),
     };
 
     try {
-      await addDoc(collection(db, "quotes"), data);
+      console.info("Contact form submission", data);
       setIsSubmitted(true);
+      e.currentTarget.reset();
     } catch (error) {
       console.error("Error submitting contact form:", error);
       setError("Failed to submit form. Please try again or call us directly.");

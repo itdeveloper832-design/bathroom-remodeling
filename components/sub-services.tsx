@@ -5,7 +5,15 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Droplets, Lightbulb, Grid3X3, RectangleHorizontal, Bath, Accessibility } from "lucide-react";
+import {
+  Droplets,
+  Lightbulb,
+  Grid3X3,
+  RectangleHorizontal,
+  Bath,
+  Accessibility,
+  type LucideIcon,
+} from "lucide-react";
 
 const services = [
   {
@@ -46,9 +54,29 @@ const services = [
   }
 ];
 
-export default function SubServices() {
+type SubServiceItem = {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  href?: string;
+};
+
+interface SubServicesProps {
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  services?: SubServiceItem[];
+}
+
+export default function SubServices({
+  title = "Our Specialized Services",
+  subtitle,
+  description = "From complete remodels to specific upgrades, we offer comprehensive bathroom services.",
+  services: customServices,
+}: SubServicesProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const servicesToRender = customServices ?? services;
 
   return (
     <section ref={ref} className="py-20 lg:py-32 bg-muted/30">
@@ -60,18 +88,23 @@ export default function SubServices() {
             transition={{ duration: 0.5 }}
             className="text-center mb-16"
           >
+            {subtitle && (
+              <p className="text-primary text-sm font-medium tracking-wider uppercase mb-4">
+                {subtitle}
+              </p>
+            )}
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-foreground">
-              Our Specialized Services
+              {title}
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              From complete remodels to specific upgrades, we offer comprehensive bathroom services.
+              {description}
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+            {servicesToRender.map((service, index) => (
               <motion.div
-                key={service.title}
+                key={`${service.title}-${index}`}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -87,7 +120,7 @@ export default function SubServices() {
                   {service.description}
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <Link href={service.href}>Learn More</Link>
+                  <Link href={service.href ?? "/services"}>Learn More</Link>
                 </Button>
               </motion.div>
             ))}

@@ -7,7 +7,15 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 
-export default function ServiceCTA() {
+interface ServiceCTAProps {
+  title?: string;
+  description?: string;
+}
+
+export default function ServiceCTA({
+  title = "Ready to Transform Your Bathroom?",
+  description = "Get your free consultation today and discover how we can create the bathroom of your dreams.",
+}: ServiceCTAProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -21,7 +29,7 @@ export default function ServiceCTA() {
             transition={{ duration: 0.5 }}
             className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-primary-foreground"
           >
-            Ready to Transform Your Bathroom?
+            {title}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -29,7 +37,7 @@ export default function ServiceCTA() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto"
           >
-            Get your free consultation today and discover how we can create the bathroom of your dreams.
+            {description}
           </motion.p>
           
           <motion.div

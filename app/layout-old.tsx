@@ -46,7 +46,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  canonical: siteConfig.url,
+  alternates: {
+    canonical: siteConfig.url,
+  },
 }
 
 export const viewport: Viewport = {

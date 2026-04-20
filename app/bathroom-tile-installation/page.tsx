@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/tile-installation-hero.jpg`],
   },
   alternates: {
-    alternates: { canonical: `${siteConfig.url}/bathroom-tile-installation` },
+    canonical: `${siteConfig.url}/bathroom-tile-installation`,
   },
 };
 

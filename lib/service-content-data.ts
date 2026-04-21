@@ -14,11 +14,7 @@ export interface ServiceContentData {
     problem: string;
     solution: string;
   }>;
-  tips: Array<{
-    title: string;
-    description: string;
-    icon?: string;
-  }>;
+  tips: string[];
   faqs: Array<{
     question: string;
     answer: string;
@@ -72,26 +68,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Plan for Future Accessibility",
-        description: "Consider grab bars, walk-in showers, and accessible vanities that work for all ages and abilities.",
-        icon: "Accessibility",
-      },
-      {
-        title: "Invest in Quality Ventilation",
-        description: "Proper exhaust fans and humidity control are essential for preventing mold and extending fixture life.",
-        icon: "Wind",
-      },
-      {
-        title: "Choose Durable, Water-Resistant Materials",
-        description: "Porcelain tiles, engineered stone, and epoxy-coated fixtures resist moisture and last decades.",
-        icon: "Shield",
-      },
-      {
-        title: "Create Storage During Design Phase",
-        description: "Plan cabinets, niches, and organizers before construction to maximize functionality and style.",
-        icon: "Box",
-      },
+      "Plan for Future Accessibility: Consider grab bars, walk-in showers, and accessible vanities that work for all ages and abilities.",
+      "Invest in Quality Ventilation: Proper exhaust fans and humidity control are essential for preventing mold and extending fixture life.",
+      "Choose Durable, Water-Resistant Materials: Porcelain tiles, engineered stone, and epoxy-coated fixtures resist moisture and last decades.",
+      "Create Storage During Design Phase: Plan cabinets, niches, and organizers before construction to maximize functionality and style.",
     ],
     faqs: [
       {
@@ -168,26 +148,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Waterproofing is Critical",
-        description: "Invest in full waterproofing systems with membrane underlayment, not just tile and grout.",
-        icon: "Droplets",
-      },
-      {
-        title: "Choose Textured Tile for Safety",
-        description: "Anti-slip tile reduces accidents and provides better grip in wet shower environments.",
-        icon: "AlertTriangle",
-      },
-      {
-        title: "Plan for Niche Storage",
-        description: "Built-in shower niches eliminate clutter and provide functional storage without taking space.",
-        icon: "Box",
-      },
-      {
-        title: "Select Low-Maintenance Fixtures",
-        description: "Stainless steel and coated finishes resist water spots and require minimal cleaning effort.",
-        icon: "Clock",
-      },
+      "Waterproofing is Critical: Invest in full waterproofing systems with membrane underlayment, not just tile and grout.",
+      "Choose Textured Tile for Safety: Anti-slip tile reduces accidents and provides better grip in wet shower environments.",
+      "Plan for Niche Storage: Built-in shower niches eliminate clutter and provide functional storage without taking space.",
+      "Select Low-Maintenance Fixtures: Stainless steel and coated finishes resist water spots and require minimal cleaning effort.",
     ],
     faqs: [
       {
@@ -260,26 +224,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Go Vertical for Storage",
-        description: "Use wall space above toilets, shelving, and tall cabinets to maximize storage without taking floor space.",
-        icon: "TrendingUp",
-      },
-      {
-        title: "Light Colors Expand the Space",
-        description: "White, light gray, and pale blue tiles and paint reflect light and make small bathrooms feel larger.",
-        icon: "Lightbulb",
-      },
-      {
-        title: "Floating Vanities Create Airflow",
-        description: "Wall-mounted sinks create visual space below and make cleaning floors easier in tight bathrooms.",
-        icon: "Wind",
-      },
-      {
-        title: "Recessed Shelves Over Surface Shelving",
-        description: "Built-in niches and recessed shelves provide storage without protruding into the room and breaking up space.",
-        icon: "Box",
-      },
+      "Go Vertical for Storage: Use wall space above toilets, shelving, and tall cabinets to maximize storage without taking floor space.",
+      "Light Colors Expand the Space: White, light gray, and pale blue tiles and paint reflect light and make small bathrooms feel larger.",
+      "Floating Vanities Create Airflow: Wall-mounted sinks create visual space below and make cleaning floors easier in tight bathrooms.",
+      "Recessed Shelves Over Surface Shelving: Built-in niches and recessed shelves provide storage without protruding into the room and breaking up space.",
     ],
     faqs: [
       {
@@ -352,26 +300,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Invest in Proper Substrate",
-        description: "Concrete backer board and waterproofing membranes are essential for tile longevity in wet areas.",
-        icon: "Shield",
-      },
-      {
-        title: "Quality Grout Makes a Difference",
-        description: "Premium epoxy or urethane grout resists stains, mold, and moisture better than standard cement grout.",
-        icon: "Sparkles",
-      },
-      {
-        title: "Plan Complex Patterns in Advance",
-        description: "Herringbone and diagonal patterns require precise measurement and layout planning to minimize cuts.",
-        icon: "Ruler",
-      },
-      {
-        title: "Seal Natural Stone Immediately",
-        description: "Porous stones like marble and travertine must be sealed immediately after installation to prevent staining.",
-        icon: "Shield",
-      },
+      "Invest in Proper Substrate: Concrete backer board and waterproofing membranes are essential for tile longevity in wet areas.",
+      "Quality Grout Makes a Difference: Premium epoxy or urethane grout resists stains, mold, and moisture better than standard cement grout.",
+      "Plan Complex Patterns in Advance: Herringbone and diagonal patterns require precise measurement and layout planning to minimize cuts.",
+      "Seal Natural Stone Immediately: Porous stones like marble and travertine must be sealed immediately after installation to prevent staining.",
     ],
     faqs: [
       {
@@ -444,26 +376,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Choose Quartz for Durability",
-        description: "Engineered quartz is non-porous, stain-resistant, and requires minimal maintenance compared to natural stone.",
-        icon: "Shield",
-      },
-      {
-        title: "Add Under-Mount Sinks",
-        description: "Under-mount sinks provide cleaner lines, easier countertop cleaning, and more usable counter space.",
-        icon: "Droplets",
-      },
-      {
-        title: "Install Task Lighting",
-        description: "Vanity lights on both sides of mirrors eliminate shadows for better grooming and makeup application.",
-        icon: "Lightbulb",
-      },
-      {
-        title: "Include Drawer Organizers",
-        description: "Custom drawer dividers and organizers keep grooming items accessible and reduce daily clutter.",
-        icon: "Box",
-      },
+      "Choose Quartz for Durability: Engineered quartz is non-porous, stain-resistant, and requires minimal maintenance compared to natural stone.",
+      "Add Under-Mount Sinks: Under-mount sinks provide cleaner lines, easier countertop cleaning, and more usable counter space.",
+      "Install Task Lighting: Vanity lights on both sides of mirrors eliminate shadows for better grooming and makeup application.",
+      "Include Drawer Organizers: Custom drawer dividers and organizers keep grooming items accessible and reduce daily clutter.",
     ],
     faqs: [
       {
@@ -536,26 +452,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Consider Freestanding Tubs for Drama",
-        description: "Modern freestanding soaking tubs create a luxurious focal point and offer deeper soaking depths.",
-        icon: "Sparkles",
-      },
-      {
-        title: "Jetted Tubs Require Professional Installation",
-        description: "Air/water jets need electrical connections and specialized plumbing—hire professionals to ensure safety.",
-        icon: "Zap",
-      },
-      {
-        title: "Acrylic Tubs Are Budget-Friendly & Durable",
-        description: "Acrylic offers excellent durability, is easy to clean, and costs less than cast iron or stone.",
-        icon: "DollarSign",
-      },
-      {
-        title: "Install Grab Bars During Tub Installation",
-        description: "Add safety grab bars during installation for accessibility and to support family members of all ages.",
-        icon: "Shield",
-      },
+      "Consider Freestanding Tubs for Drama: Modern freestanding soaking tubs create a luxurious focal point and offer deeper soaking depths.",
+      "Jetted Tubs Require Professional Installation: Air/water jets need electrical connections and specialized plumbing—hire professionals to ensure safety.",
+      "Acrylic Tubs Are Budget-Friendly & Durable: Acrylic offers excellent durability, is easy to clean, and costs less than cast iron or stone.",
+      "Install Grab Bars During Tub Installation: Add safety grab bars during installation for accessibility and to support family members of all ages.",
     ],
     faqs: [
       {
@@ -621,7 +521,6 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         problem: "Cold water swings during showers",
         solution: "Install thermostatic mixing valves that maintain consistent temperature automatically.",
-        icon: "Zap",
       },
       {
         problem: "Outdated finishes clashing with new bathroom design",
@@ -629,26 +528,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Choose Eco-Friendly Low-Flow Fixtures",
-        description: "Modern low-flow showerheads deliver excellent coverage while reducing water waste and utility bills.",
-        icon: "Leaf",
-      },
-      {
-        title: "Thermostatic Valves Provide Comfort & Safety",
-        description: "These valves prevent scalding by maintaining preset temperatures, protecting young children and elderly.",
-        icon: "Zap",
-      },
-      {
-        title: "Match Fixtures to Your Home's Design",
-        description: "Choose finishes that complement your home's interior style—polished, brushed, or matte options.",
-        icon: "Palette",
-      },
-      {
-        title: "Install Quality Trim Rings",
-        description: "Proper trim rings create clean transitions between fixtures and walls for a professional appearance.",
-        icon: "Sparkles",
-      },
+      "Choose Eco-Friendly Low-Flow Fixtures: Modern low-flow showerheads deliver excellent coverage while reducing water waste and utility bills.",
+      "Thermostatic Valves Provide Comfort & Safety: These valves prevent scalding by maintaining preset temperatures, protecting young children and elderly.",
+      "Match Fixtures to Your Home's Design: Choose finishes that complement your home's interior style—polished, brushed, or matte options.",
+      "Install Quality Trim Rings: Proper trim rings create clean transitions between fixtures and walls for a professional appearance.",
     ],
     faqs: [
       {
@@ -721,26 +604,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Plan Drainage Carefully",
-        description: "Shower floors must slope properly toward drains to prevent pooling. Professional installation is essential.",
-        icon: "Wind",
-      },
-      {
-        title: "Install Grab Bars for Safety",
-        description: "Grab bars in showers prevent slips and provide essential safety for elderly or mobility-limited users.",
-        icon: "Shield",
-      },
-      {
-        title: "Choose Anti-Slip Flooring",
-        description: "Textured tile or specialized coatings reduce slipping risk in wet shower environments.",
-        icon: "AlertTriangle",
-      },
-      {
-        title: "Consider Waterproofing Before Finishing",
-        description: "Proper waterproofing membranes protect subfloors from leaks—this investment pays for itself.",
-        icon: "Shield",
-      },
+      "Plan Drainage Carefully: Shower floors must slope properly toward drains to prevent pooling. Professional installation is essential.",
+      "Install Grab Bars for Safety: Grab bars in showers prevent slips and provide essential safety for elderly or mobility-limited users.",
+      "Choose Anti-Slip Flooring: Textured tile or specialized coatings reduce slipping risk in wet shower environments.",
+      "Consider Waterproofing Before Finishing: Proper waterproofing membranes protect subfloors from leaks—this investment pays for itself.",
     ],
     faqs: [
       {
@@ -813,26 +680,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Install a Linear Drain",
-        description: "Linear or trench drains handle water flow better than point drains and look sleek in modern showers.",
-        icon: "Wind",
-      },
-      {
-        title: "Use Niche Storage",
-        description: "Built-in niches keep shampoo and soap organized without cluttering the floor.",
-        icon: "Box",
-      },
-      {
-        title: "Half-Glass Enclosures Work Great",
-        description: "Glass dividers contain some water splash while maintaining the open feel of walk-in designs.",
-        icon: "Sparkles",
-      },
-      {
-        title: "Large Format Tile Looks Modern",
-        description: "12x24 or 24x24 tiles create clean lines and fewer grout joints in walk-in showers.",
-        icon: "Ruler",
-      },
+      "Install a Linear Drain: Linear or trench drains handle water flow better than point drains and look sleek in modern showers.",
+      "Use Niche Storage: Built-in niches keep shampoo and soap organized without cluttering the floor.",
+      "Half-Glass Enclosures Work Great: Glass dividers contain some water splash while maintaining the open feel of walk-in designs.",
+      "Large Format Tile Looks Modern: 12x24 or 24x24 tiles create clean lines and fewer grout joints in walk-in showers.",
     ],
     faqs: [
       {
@@ -905,26 +756,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Choose Quartz for Low Maintenance",
-        description: "Non-porous quartz never needs sealing, resists stains, and requires only simple cleaning.",
-        icon: "Clock",
-      },
-      {
-        title: "Install Under-Mount Lighting",
-        description: "Under-cabinet lights improve visibility and create modern ambiance in your kitchen.",
-        icon: "Lightbulb",
-      },
-      {
-        title: "Use Soft-Close Drawers",
-        description: "Soft-close hardware prevents slamming, extends cabinet life, and provides quiet operation.",
-        icon: "Wind",
-      },
-      {
-        title: "Plan Counter Organization",
-        description: "Custom dividers and organizers keep countertops clean while maintaining accessibility.",
-        icon: "Box",
-      },
+      "Choose Quartz for Low Maintenance: Non-porous quartz never needs sealing, resists stains, and requires only simple cleaning.",
+      "Install Under-Mount Lighting: Under-cabinet lights improve visibility and create modern ambiance in your kitchen.",
+      "Use Soft-Close Drawers: Soft-close hardware prevents slamming, extends cabinet life, and provides quiet operation.",
+      "Plan Counter Organization: Custom dividers and organizers keep countertops clean while maintaining accessibility.",
     ],
     faqs: [
       {
@@ -997,26 +832,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Porcelain Tile is Best for Bathrooms",
-        description: "Non-porous porcelain won't absorb water or harbor mold, making it ideal for wet areas.",
-        icon: "Shield",
-      },
-      {
-        title: "Use Large Format Tiles",
-        description: "12x24 or 24x24 tiles have fewer grout lines, making cleaning easier and showers more waterproof.",
-        icon: "Wind",
-      },
-      {
-        title: "Epoxy Grout Outperforms Cement",
-        description: "Epoxy grout resists mold, staining, and moisture much better than standard cement grout.",
-        icon: "Sparkles",
-      },
-      {
-        title: "Heated Floors Add Luxury",
-        description: "Radiant floor heating provides comfort and helps prevent mold by drying floors quickly.",
-        icon: "Zap",
-      },
+      "Porcelain Tile is Best for Bathrooms: Non-porous porcelain won't absorb water or harbor mold, making it ideal for wet areas.",
+      "Use Large Format Tiles: 12x24 or 24x24 tiles have fewer grout lines, making cleaning easier and showers more waterproof.",
+      "Epoxy Grout Outperforms Cement: Epoxy grout resists mold, staining, and moisture much better than standard cement grout.",
+      "Heated Floors Add Luxury: Radiant floor heating provides comfort and helps prevent mold by drying floors quickly.",
     ],
     faqs: [
       {
@@ -1081,7 +900,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
       {
         problem: "Poor quality lighting highlighting skin imperfections",
-        description: "Vanity lights positioned correctly provide flattering, shadow-free illumination.",
+        solution: "Vanity lights positioned correctly provide flattering, shadow-free illumination.",
       },
       {
         problem: "High electric bills from inefficient lighting",
@@ -1089,26 +908,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Mount Vanity Lights at Eye Level",
-        description: "Lights positioned at 65-75 inches above floor provide optimal illumination for grooming.",
-        icon: "Ruler",
-      },
-      {
-        title: "Use 3000K Color Temperature",
-        description: "Warm white (3000K) LED light is flattering for skin tone and creates relaxing ambiance.",
-        icon: "Lightbulb",
-      },
-      {
-        title: "Add Dimmer Controls",
-        description: "Dimmers let you adjust lighting for different times of day and create spa-like atmosphere.",
-        icon: "Zap",
-      },
-      {
-        title: "Install Ventilation Fans with Lights",
-        description: "Combination fan-light units save space while providing ventilation and illumination.",
-        icon: "Wind",
-      },
+      "Mount Vanity Lights at Eye Level: Lights positioned at 65-75 inches above floor provide optimal illumination for grooming.",
+      "Use 3000K Color Temperature: Warm white (3000K) LED light is flattering for skin tone and creates relaxing ambiance.",
+      "Add Dimmer Controls: Dimmers let you adjust lighting for different times of day and create spa-like atmosphere.",
+      "Install Ventilation Fans with Lights: Combination fan-light units save space while providing ventilation and illumination.",
     ],
     faqs: [
       {
@@ -1181,26 +984,10 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
     tips: [
-      {
-        title: "Plan Replacement Design Before Removal",
-        description: "Determine what replaces the tub before removal to maximize space efficiency.",
-        icon: "Palette",
-      },
-      {
-        title: "Consider Plumbing Modifications",
-        description: "Tub removal frees plumbing that can be redirected for new shower configurations.",
-        icon: "Wind",
-      },
-      {
-        title: "Repair Subfloor if Damaged",
-        description: "Inspect subfloor during removal and repair any water damage before installing new features.",
-        icon: "Shield",
-      },
-      {
-        title: "Keep One Tub for Families",
-        description: "In multi-bathroom homes, removing one tub is fine if another remains for bathing.",
-        icon: "Droplets",
-      },
+      "Plan Replacement Design Before Removal: Determine what replaces the tub before removal to maximize space efficiency.",
+      "Consider Plumbing Modifications: Tub removal frees plumbing that can be redirected for new shower configurations.",
+      "Repair Subfloor if Damaged: Inspect subfloor during removal and repair any water damage before installing new features.",
+      "Keep One Tub for Families: In multi-bathroom homes, removing one tub is fine if another remains for bathing.",
     ],
     faqs: [
       {

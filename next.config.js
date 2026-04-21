@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Output configuration for cPanel deployment
+  output: 'standalone',
+
   // Image Optimization - Critical for LCP
   images: {
     remotePatterns: [

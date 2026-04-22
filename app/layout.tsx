@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     canonical: siteConfig.url,
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'FFV2ndN2ia6STi_P5mni2D73Ec1dbptXHNQuIVIl3YA',
   },
 }
 

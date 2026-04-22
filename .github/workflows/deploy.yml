@@ -31,6 +31,6 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
-          server-dir: /public_html/
+          server-dir: /
           state-name: .ftp-deploy-sync-state.json
           dangerous-clean-slate: false

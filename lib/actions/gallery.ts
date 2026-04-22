@@ -1,5 +1,3 @@
-"use server";
-
 import { GalleryItem } from "@/lib/types";
 import { defaultGalleryItems } from "@/lib/seed-blog";
 

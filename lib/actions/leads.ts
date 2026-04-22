@@ -1,5 +1,3 @@
-"use server";
-
 import { Lead } from "@/lib/types";
 
 let inMemoryLeads: Lead[] = [];
@@ -36,7 +34,6 @@ export async function deleteLead(id: string): Promise<{ success: boolean; error?
   return { success: true };
 }
 
-// Aliases for admin pages
 export const getAllLeads = getLeads;
 
 export async function getLeadsCount(): Promise<number> {

@@ -1,41 +1,33 @@
-name: Deploy to cPanel
+name: Deploy to FTP
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v2
         with:
-          node-version: '22'
+          version: 10
 
-      - name: Install pnpm
-        run: npm install -g pnpm
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build Next.js
-        run: pnpm build
-
-      - name: Deploy to cPanel via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - uses: actions/setup-node@v4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./.next/
-          server-dir: /arzhomeremodeling.com/
-          protocol: ftp
-          port: 21
-          timeout: 60000
-          log-level: verbose
+          node-version: '20'
+          cache: 'pnpm'
+
+      - run: pnpm install
+      - run: pnpm run build
+
+      - name: Upload to FTP
+        uses: milanmk/actions-file-deployer@master
+        with:
+          remote-url: ${{ secrets.FTP_URL }}
+          remote-user: ${{ secrets.FTP_USER }}
+          remote-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./out/
+          remote-dir: ./public_html/
+          state-name: .ftp-deploy-sync-state.json

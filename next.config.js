@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Output configuration for cPanel deployment
-  output: 'standalone',
+  // Output configuration for static FTP deployment
+  output: 'export',
 
-  // Image Optimization - Critical for LCP
+  // Image Optimization - disable for static export
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -17,18 +18,6 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
-    formats: ['image/avif', 'image/webp'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 31536000,
-    dangerouslyAllowSVG: true,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  },
-
-  // Performance: Enable SWR caching with aggressive buffering
-  onDemandEntries: {
-    maxInactiveAge: 120 * 60 * 1000,
-    pagesBufferLength: 8,
   },
 
   // Compression
@@ -37,62 +26,6 @@ const nextConfig = {
   // Performance optimizations for Next.js 16+
   experimental: {
     optimizePackageImports: ['@/components/ui', '@/lib'],
-  },
-
-  // Headers for aggressive caching and performance
-  async headers() {
-    return [
-      {
-        source: '/images/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-      {
-        source: '/_next/static/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-      {
-        source: '/fonts/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-      {
-        source: '/((?!api|admin|_next/static|_next/image).*)',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=0, s-maxage=86400, stale-while-revalidate=604800',
-          },
-        ],
-      },
-    ];
-  },
-
-  // Redirects for SEO
-  async redirects() {
-    return [];
-  },
-
-  // Rewrites
-  async rewrites() {
-    return {
-      beforeFiles: [],
-      afterFiles: [],
-      fallback: [],
-    };
   },
 
   // Production optimizations

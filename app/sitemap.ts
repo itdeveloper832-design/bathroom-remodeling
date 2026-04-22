@@ -1,10 +1,11 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/site-config'
-import { getPublishedPosts } from '@/lib/actions/blog'
 import { getAllAreaSlugs } from '@/lib/bathroom-remodeling-areas'
-import { chandlerLocations, generateAllLocationSlugs } from '@/lib/chandler-locations'
+import { generateAllLocationSlugs } from '@/lib/chandler-locations'
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export const dynamic = 'force-static'
+
+export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url
   
   // Static pages
@@ -104,14 +105,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   })
 
-  // Blog posts
-  const posts = await getPublishedPosts()
-  const blogEntries = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.updatedAt || post.createdAt),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }))
+  // Blog posts - static list (can be updated manually)
+  const blogEntries = [
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+  ]
 
   return [
     ...staticEntries,

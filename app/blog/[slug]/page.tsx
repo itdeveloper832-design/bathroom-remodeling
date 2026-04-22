@@ -16,11 +16,12 @@ interface BlogPostPageProps {
   params: Promise<{ slug: string }>
 }
 
+export async function generateStaticParams() {
+  return [{ slug: "bathroom-remodeling-tips" }]
+}
+
 async function getPostData(slug: string): Promise<BlogPost | null> {
-  const post = await getPostBySlug(slug)
-  if (post) return post
-  
-  // Check if this is the default blog post
+  // For static export, only return default blog post
   if (slug === defaultBlogPost.slug) {
     const fallbackKeywords = (defaultBlogPost as { metaKeywords?: string }).metaKeywords
       ?.split(",")
@@ -77,7 +78,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound()
   }
 
-  const relatedPosts = await getRelatedPosts(post.category, post.id)
+  const relatedPosts: BlogPost[] = []
 
   return (
     <>

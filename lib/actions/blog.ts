@@ -1,5 +1,3 @@
-"use server";
-
 import type { BlogPost, Category } from "@/lib/types";
 import { defaultBlogPost, secondBlogPost } from "@/lib/seed-blog";
 
@@ -96,7 +94,6 @@ export async function deletePost(id: string): Promise<{ success: boolean; error?
   return { success: true };
 }
 
-// Alias for admin pages
 export const getAllPosts = getPosts;
 
 export async function updatePostStatus(
@@ -123,8 +120,6 @@ export async function getPostsCount(): Promise<number> {
 export async function getRecentPosts(maxPosts: number = 5): Promise<BlogPost[]> {
   return (await getPosts()).slice(0, maxPosts);
 }
-
-// ============ CATEGORIES ============
 
 export async function getCategories(): Promise<Category[]> {
   return [...inMemoryCategories];

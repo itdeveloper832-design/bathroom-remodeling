@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "export": "next build && next export",
+    "export": "next build",
     "deploy:vercel": "vercel --prod",
-    "deploy:netlify": "netlify deploy --prod --dir=.next"
+    "deploy:netlify": "netlify deploy --prod --dir=out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

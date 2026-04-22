@@ -1,5 +1,3 @@
-"use server";
-
 import { Testimonial } from "@/lib/types";
 
 let inMemoryTestimonials: Testimonial[] = [];

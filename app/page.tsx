@@ -98,6 +98,7 @@ export default function HomePage() {
   return (
     <>
       {/* Deployment test - Check if this appears on live site */}
+      {/* ✅ Deployment workflow test - 2024 */}
       <LocalBusinessSchema />
       <FAQSchema faqs={homeFaqs} />
       <Header />

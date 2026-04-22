@@ -61,7 +61,7 @@ export default function ServiceCTA({
               asChild
               size="lg"
               variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="bg-background text-foreground border-primary-foreground hover:bg-background hover:text-primary"
             >
               <Link href="/contact" className="flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />

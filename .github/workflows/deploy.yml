@@ -9,8 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         with:
           version: 10
 
@@ -22,12 +24,13 @@ jobs:
       - run: pnpm install
       - run: pnpm run build
 
-      - name: Upload to FTP
-        uses: milanmk/actions-file-deployer@master
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          remote-url: ${{ secrets.FTP_URL }}
-          remote-user: ${{ secrets.FTP_USER }}
-          remote-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/
-          remote-dir: ./public_html/
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-path: ./out/
+          remote-path: ./public_html/
           state-name: .ftp-deploy-sync-state.json
+          dangerous-clean-slate: false

@@ -57,7 +57,7 @@ export default function FoxCrossingBathroomRemodelingPage() {
       <FAQSchema faqs={schemaFaqs} />
       <Header />
       <main>
-        <ServiceHero title={areaData.heroTitle} description={areaData.heroDescription} backgroundImage="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop" />
+        <ServiceHero title={areaData.heroTitle} description={areaData.heroDescription} backgroundImage="/images/optimized/photo-1552321554-5fefe8c9ef14.webp" />
         <AreaIntro title={areaData.introSection.title} description={areaData.introSection.description} trustSignals={areaData.localTrustSignals} />
         <AreaBenefits benefits={areaData.areaBenefits} />
         <ProcessSection />

@@ -51,7 +51,7 @@ export default function MasterBathPage() {
           title="Master Bathroom Remodel Chandler AZ"
           subtitle="Luxury Master Suite Transformations"
           description="Elevate your daily routine with a stunning master bathroom remodel. We specialize in creating high-end, custom retreats tailored to your vision."
-          image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/optimized/photo-1600607687939-ce8a6c25118c.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Master Bath", url: `${siteConfig.url}/master-bathroom-remodel` }]}
         />
         

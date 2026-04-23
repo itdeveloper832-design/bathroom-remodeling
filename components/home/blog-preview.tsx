@@ -14,7 +14,7 @@ const blogPosts = [
     title: "Top Bathroom Remodeling Trends for 2024",
     excerpt:
       "Discover the latest bathroom design trends transforming homes in Chandler, Arizona, from spa-like showers to smart technology.",
-    image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
     date: "January 15, 2024",
     category: "Trends",
   },
@@ -23,7 +23,7 @@ const blogPosts = [
     title: "How to Choose the Perfect Bathroom Tiles",
     excerpt:
       "A comprehensive guide to selecting tiles that complement your bathroom design, from porcelain to natural stone options.",
-    image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
     date: "January 8, 2024",
     category: "Tips",
   },
@@ -32,7 +32,7 @@ const blogPosts = [
     title: "10 Small Bathroom Remodel Ideas That Maximize Space",
     excerpt:
       "Creative solutions for making the most of your compact bathroom. Learn design tricks that make small spaces feel larger.",
-    image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2669&auto=format&fit=crop",
+    image: "/images/optimized/photo-1620626011761-996317b8d101.webp",
     date: "December 28, 2023",
     category: "Ideas",
   },

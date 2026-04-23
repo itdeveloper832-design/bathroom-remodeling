@@ -73,7 +73,7 @@ export default function TubToShowerConversionPage() {
           title="Best Tub to Shower Conversion Chandler AZ"
           subtitle="Affordable Bathtub to Shower Conversion Cost Chandler AZ"
           description="Professional tub to shower conversion Chandler AZ. Best tub to shower conversion price, affordable bathtub to shower conversion, free tub to shower conversion estimate. Hire tub to shower conversion contractor today!"
-          image="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/optimized/photo-1584622650111-993a426fbf0a.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Tub to Shower Conversion", url: `${siteConfig.url}/tub-to-shower-conversion` },

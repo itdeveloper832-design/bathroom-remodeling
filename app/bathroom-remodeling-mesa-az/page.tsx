@@ -33,7 +33,7 @@ export default function MesaPage() {
           title="Bathroom Remodeling Mesa AZ"
           subtitle="Top-Rated Mesa Bathroom Remodelers"
           description="Bringing our award-winning bathroom remodeling services to homeowners in Mesa, AZ. We deliver high-quality renovations with a focus on craftsmanship."
-          image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Mesa", url: `${siteConfig.url}/bathroom-remodeling-mesa-az` }]}
         />
         

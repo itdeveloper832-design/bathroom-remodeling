@@ -90,7 +90,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         
         {/* Preload critical LCP image with fetchpriority */}
-        <link rel="preload" fetchPriority="high" href="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp" as="image" type="image/webp" />
+        <link rel="preload" fetchPriority="high" href="/images/optimized/photo-1552321554-5fefe8c9ef14.webp" as="image" type="image/webp" />
         <link rel="preload" fetchPriority="high" href="/images/logo-main.png" as="image" type="image/png" />
         
         {/* Canonical URL */}

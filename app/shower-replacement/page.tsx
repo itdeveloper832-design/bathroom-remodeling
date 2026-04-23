@@ -67,7 +67,7 @@ export default function ShowerReplacementPage() {
           title="Shower Replacement Chandler AZ | All Parts"
           subtitle="Shower Valve, Handle, Door & Pan Replacement Chandler AZ"
           description="Professional shower replacement Chandler AZ. Shower valve replacement, shower handle replacement, shower door replacement, shower pan replacement, shower drain replacement. Free estimates!"
-          image="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/optimized/photo-1620626011761-996317b8d101.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Shower Replacement", url: `${siteConfig.url}/shower-replacement` },

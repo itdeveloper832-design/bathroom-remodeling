@@ -67,7 +67,7 @@ export default function CabinetCountertopInstallationPage() {
           title="Cabinet & Countertop Installation in Chandler, Arizona"
           subtitle="Professional Vanity & Countertop Services in Chandler AZ"
           description="Upgrade your bathroom with custom cabinets and premium countertops in granite, quartz, or marble with expert installation."
-          image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/optimized/photo-1600607687939-ce8a6c25118c.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Cabinet & Countertop Installation", url: `${siteConfig.url}/cabinet-countertop-installation` },

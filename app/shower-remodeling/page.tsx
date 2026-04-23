@@ -68,7 +68,7 @@ export default function ShowerRemodelingPage() {
           title="Best Shower Remodel Services Chandler AZ"
           subtitle="Professional Shower Remodel Contractor Chandler AZ"
           description="Best shower remodel services Chandler AZ. Affordable shower remodel cost, professional shower remodel installation, shower remodel contractor. Get your free shower remodel estimate today!"
-          image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Shower Remodeling", url: `${siteConfig.url}/shower-remodeling` },

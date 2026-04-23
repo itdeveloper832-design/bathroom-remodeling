@@ -80,7 +80,7 @@ export default function AccessibilityPage() {
           title="Handicap Accessible Bathroom Chandler AZ"
           subtitle="Safe & ADA-Compliant Remodeling"
           description="Transform your bathroom into a safe, accessible sanctuary with our professional handicap accessible remodeling services in Chandler, AZ."
-          image="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/optimized/photo-1584622650111-993a426fbf0a.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Accessibility", url: `${siteConfig.url}/handicap-accessible-bathroom-chandler` }]}
         />
         <ServiceProcess

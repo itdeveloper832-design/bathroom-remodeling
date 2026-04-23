@@ -37,7 +37,7 @@ export default function BathroomLightingInstallationPage() {
         <ServiceHero
           title="Bathroom Lighting Installation in Chandler, Arizona"
           description="Professional lighting installation with modern LED fixtures, vanity lights, and expert electrical work for beautiful, functional bathrooms."
-          backgroundImage="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          backgroundImage="/images/optimized/photo-1584622650111-993a426fbf0a.webp"
         />
         
         <ServiceFAQ />

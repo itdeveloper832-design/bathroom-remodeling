@@ -49,7 +49,7 @@ export default function CostPage() {
           title="Bathroom Remodeling Cost Chandler AZ"
           subtitle="Pricing Guide & Estimates"
           description="Get a clear understanding of bathroom remodeling costs in Chandler, AZ. We provide transparent pricing and flexible financing options."
-          image="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Cost Guide", url: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az` }]}
         />
         

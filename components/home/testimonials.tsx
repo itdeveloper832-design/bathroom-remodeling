@@ -16,7 +16,7 @@ const testimonials = [
     service: "Bathroom Remodel",
     content:
       "The team exceeded our expectations in every way. Our master bathroom went from dated and cramped to a spa-like retreat. The attention to detail was remarkable, and they finished on time and on budget.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1494790108377-be9c29b29330.webp",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const testimonials = [
     service: "Bathtub Replacement",
     content:
       "From the initial consultation to the final walkthrough, the experience was seamless. They replaced our old bathtub with a sleek new install that instantly made the room feel cleaner, brighter, and easier to use.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1472099645785-5658abf4ff4e.webp",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const testimonials = [
     service: "Shower Conversion",
     content:
       "We converted our old tub to a beautiful walk-in shower, and I couldn't be happier. The frameless glass and rainfall showerhead make it feel like a luxury hotel. Highly recommend!",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1580489944761-15a19d654956.webp",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const testimonials = [
     service: "Full Bathroom Remodel",
     content:
       "Professional from start to finish. The team communicated clearly throughout the project and delivered exactly what they promised. Our guest bathroom is now the highlight of our home!",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1507003211169-0a1dd7228f2d.webp",
   },
 ];
 

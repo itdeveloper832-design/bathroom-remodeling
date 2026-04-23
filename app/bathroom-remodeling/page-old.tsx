@@ -37,7 +37,7 @@ const subServices = [
     title: "Shower Remodeling",
     description:
       "Upgrade your shower with a layout, finish palette, and fixture package tailored to your bathroom. From frameless glass to premium tilework, we create showers that feel elevated and easy to maintain.",
-    image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
     features: [
       "Frameless glass enclosures",
       "Custom tile layouts and accent details",
@@ -52,7 +52,7 @@ const subServices = [
     title: "Bathtub Installation",
     description:
       "Install a new bathtub that fits your routine and bathroom footprint. We handle placement, finish coordination, and all of the details needed for a clean, polished installation.",
-    image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
     features: [
       "Freestanding and alcove tub options",
       "New drain and plumbing connections",
@@ -67,7 +67,7 @@ const subServices = [
     title: "Bathtub Replacement",
     description:
       "Replace aging, stained, or uncomfortable tubs with updated bathtub solutions that improve appearance, performance, and day-to-day comfort.",
-    image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2669&auto=format&fit=crop",
+    image: "/images/optimized/photo-1620626011761-996317b8d101.webp",
     features: [
       "Removal of outdated tubs",
       "Updated replacement options",
@@ -82,7 +82,7 @@ const subServices = [
     title: "Walk-in Shower Installation",
     description:
       "Create a more open, accessible bathing experience with a walk-in shower designed around your space, preferred features, and safety needs.",
-    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1584622650111-993a426fbf0a.webp",
     features: [
       "Low-threshold and curbless options",
       "Custom glass enclosures",
@@ -97,7 +97,7 @@ const subServices = [
     title: "Bathroom Tile Installation",
     description:
       "Enhance your bathroom with tile installation that balances durability, moisture resistance, and style. We install tile across shower walls, backsplashes, and wet-area surfaces.",
-    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=2576&auto=format&fit=crop",
+    image: "/images/optimized/photo-1507089947368-19c1da9775ae.webp",
     features: [
       "Porcelain, ceramic, and natural stone options",
       "Custom layouts and accent patterns",
@@ -112,7 +112,7 @@ const subServices = [
     title: "Bathroom Vanity Installation",
     description:
       "Install a bathroom vanity that improves storage, workflow, and visual balance. We coordinate cabinet size, countertop selection, sink setup, and hardware details.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2574&auto=format&fit=crop",
+    image: "/images/optimized/photo-1600607687939-ce8a6c25118c.webp",
     features: [
       "Single and double vanity layouts",
       "Quartz, stone, and solid-surface tops",
@@ -228,7 +228,7 @@ export default function BathroomRemodelingPage() {
           title="Best Bathroom Remodeling Company in Chandler, Arizona"
           subtitle="Best Bathroom Remodelers Near Me"
           description="Looking for bathroom remodelers near me? Create the bathroom of your dreams with our comprehensive remodeling services in Chandler. From showers and tubs to tile, vanities, lighting, sinks, flooring, and plumbing upgrades, we deliver stunning results. Bathroom remodel financing near me available."
-          image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop"
+          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={breadcrumbs}
         />
         <SubServices

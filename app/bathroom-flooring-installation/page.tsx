@@ -37,7 +37,7 @@ export default function BathroomFlooringInstallationPage() {
         <ServiceHero
           title="Bathroom Flooring Installation in Chandler, Arizona"
           description="Professional bathroom flooring installation with waterproof materials, expert craftsmanship, and durable finishes for your Chandler home."
-          backgroundImage="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          backgroundImage="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
         />
         
         <ServiceFAQ />

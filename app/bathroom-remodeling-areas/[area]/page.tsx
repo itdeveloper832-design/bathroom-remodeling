@@ -44,7 +44,7 @@ export default function AreaPage() {
         <ServiceHero
           title={areaData.heroTitle}
           description={areaData.heroDescription}
-          backgroundImage="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop"
+          backgroundImage="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
         />
         <AreaIntro
           title={areaData.introSection.title}

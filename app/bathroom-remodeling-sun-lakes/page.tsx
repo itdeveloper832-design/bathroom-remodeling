@@ -90,7 +90,7 @@ export default function SunLakesBathroomRemodelingPage() {
           title={areaData.heroTitle}
           subtitle={areaData.heroSubtitle}
           description={areaData.heroDescription}
-          image="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop"
+          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={breadcrumbs}
         />
         <AreaIntro

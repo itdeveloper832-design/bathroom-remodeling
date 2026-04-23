@@ -17,7 +17,7 @@ export default function Hero() {
       {/* Background Image - LCP Optimized */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp"
+          src="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           alt="Modern master bathroom remodeling project in Chandler AZ"
           fill
           className="object-cover"

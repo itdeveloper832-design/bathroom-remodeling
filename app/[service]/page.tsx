@@ -216,7 +216,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Upgrade to a watertight, spa-inspired shower with premium tilework, glass, and fixtures tailored to your Chandler home.",
       image:
-        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1600&auto=format&fit=crop&fm=webp",
+        "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
     },
     content: {
       intro:
@@ -378,7 +378,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Install a new bathtub with proper leveling, plumbing connections, and finished trim so your Chandler bathroom feels complete.",
       image:
-        "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop&fm=webp",
+        "/images/optimized/photo-1600566752355-35792bedcfea.webp",
     },
     content: {
       intro:
@@ -538,7 +538,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Swap outdated tubs for modern, comfortable replacements with clean removal, plumbing updates, and fresh finishes.",
       image:
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1600&auto=format&fit=crop&fm=webp",
+        "/images/optimized/photo-1620626011761-996317b8d101.webp",
     },
     content: {
       intro:
@@ -698,7 +698,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Create an open, safer walk-in shower with slip-resistant materials, glass, and storage tailored to your Chandler home.",
       image:
-        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600&auto=format&fit=crop&fm=webp",
+        "/images/optimized/photo-1584622650111-993a426fbf0a.webp",
     },
     content: {
       intro:
@@ -858,7 +858,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Precision tile installation for shower walls, floors, and backsplashes that stay aligned, sealed, and beautiful.",
       image:
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop&fm=webp",
+        "/images/optimized/photo-1507089947368-19c1da9775ae.webp",
     },
     content: {
       intro:
@@ -1018,7 +1018,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Install a vanity that improves storage, workflow, and style with aligned plumbing, countertops, and lighting.",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop&fm=webp",
+        "/images/optimized/photo-1600607687939-ce8a6c25118c.webp",
     },
     content: {
       intro:

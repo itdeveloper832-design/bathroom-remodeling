@@ -67,7 +67,7 @@ export default function BathroomTileInstallationPage() {
           title="Bathroom Tile Installation in Chandler, Arizona"
           subtitle="Expert Tile Installation in Chandler AZ"
           description="Professional bathroom tile installation with waterproof systems, precision craftsmanship, and premium materials for lasting beauty."
-          image="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1600&auto=format&fit=crop&fm=webp"
+          image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Bathroom Tile Installation", url: `${siteConfig.url}/bathroom-tile-installation` }]}
         />
         <ServiceProcess

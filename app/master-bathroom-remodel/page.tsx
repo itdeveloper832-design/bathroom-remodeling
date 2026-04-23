@@ -70,7 +70,7 @@ export default function MasterBathPage() {
           title="Complementary Services"
           subtitle="Complete Transformations"
           description="We handle every aspect of your master bath project, from tile to custom vanities."
-          services={otherServices}
+          services={otherServices.map(s => s.name)}
         />
 
         <ServiceCTA title="Ready to design your dream master bath?" description="Schedule a free design consultation today and let us bring your luxury vision to life." />

@@ -1,9 +1,0 @@
-1:"$Sreact.fragment"
-2:I[966863,["/_next/static/chunks/073f9a8cd1eb88e2.js","/_next/static/chunks/c7a9dcf83f6f0796.js"],"ClientPageRoot"]
-3:I[402496,["/_next/static/chunks/0bb15849c4ecadf9.js","/_next/static/chunks/e5e2ed6fcfb42ebc.js","/_next/static/chunks/8e14ec824c461f29.js","/_next/static/chunks/2bd1097824713ac5.js","/_next/static/chunks/294db264a30f0ac6.js","/_next/static/chunks/e83ea518decf1531.js"],"default"]
-6:I[735417,["/_next/static/chunks/073f9a8cd1eb88e2.js","/_next/static/chunks/c7a9dcf83f6f0796.js"],"OutletBoundary"]
-7:"$Sreact.suspense"
-0:{"buildId":"KkwUuHul-6_6AwvrbbEJe","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{"area":"downtown-chandler"},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/e5e2ed6fcfb42ebc.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/8e14ec824c461f29.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/2bd1097824713ac5.js","async":true}],["$","script","script-3",{"src":"/_next/static/chunks/294db264a30f0ac6.js","async":true}],["$","script","script-4",{"src":"/_next/static/chunks/e83ea518decf1531.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
-4:{}
-5:{"area":"downtown-chandler"}
-8:null

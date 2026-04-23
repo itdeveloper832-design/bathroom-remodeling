@@ -84,7 +84,7 @@ export default function CostPage() {
           title="Services Included in Our Estimates"
           subtitle="What We Offer"
           description="Every estimate includes professional project management and high-quality materials."
-          services={otherServices}
+          services={otherServices.map(s => s.name)}
         />
 
         <ServiceCTA title="Need a custom estimate for your project?" description="Contact us today for a free, no-obligation in-home consultation and detailed pricing estimate." />

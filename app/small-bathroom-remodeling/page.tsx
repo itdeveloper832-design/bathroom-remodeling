@@ -106,7 +106,7 @@ export default function SmallBathroomRemodelingPage() {
           title="Other Space-Saving Solutions"
           subtitle="More Upgrades"
           description="From vanity updates to custom tile, we can maximize every inch of your bathroom."
-          services={otherServices}
+          services={otherServices.map(s => s.name)}
         />
 
         <ServiceFAQ faqs={faqs} />

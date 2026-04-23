@@ -147,7 +147,7 @@ export default function TubToShowerConversionPage() {
           title="Explore Other Services"
           subtitle="More Solutions"
           description="We provide a full suite of bathroom remodeling services in Chandler."
-          services={otherServices}
+          services={otherServices.map(s => s.name)}
         />
 
         <ServiceFAQ faqs={faqs} />

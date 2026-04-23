@@ -147,7 +147,7 @@ export default function BathtubRemodelingPage() {
           title="Other Bathroom Services in Chandler"
           subtitle="More Options"
           description="Looking for something else? We offer a variety of bathroom remodeling solutions."
-          services={otherServices}
+          services={otherServices.map(s => s.name)}
         />
 
         <ServiceFAQ faqs={faqs} />

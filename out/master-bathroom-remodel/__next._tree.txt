@@ -1,0 +1,4 @@
+:HL["/_next/static/chunks/b70cd62647d3782e.css","style"]
+:HL["https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp","image",{"type":"image/webp","fetchPriority":"high"}]
+:HL["/images/logo-main.png","image",{"type":"image/png","fetchPriority":"high"}]
+0:{"buildId":"rsSgbpO19gakC1gQy83ak","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"master-bathroom-remodel","paramType":null,"paramKey":"master-bathroom-remodel","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

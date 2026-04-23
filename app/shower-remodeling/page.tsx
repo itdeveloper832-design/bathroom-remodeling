@@ -143,7 +143,7 @@ export default function ShowerRemodelingPage() {
           title="Explore Other Bathroom Services"
           subtitle="More Solutions"
           description="We offer a full range of bathroom remodeling services beyond just showers."
-          services={otherServices}
+          services={otherServices.map(s => s.name)}
         />
 
         <ServiceFAQ faqs={faqs} />

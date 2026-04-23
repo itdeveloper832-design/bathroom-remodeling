@@ -44,9 +44,9 @@ const faqs = [
 ];
 
 const issues = [
-  { title: "Limited Mobility", description: "Standard tubs and high-step showers can be dangerous for those with limited mobility." },
-  { title: "Slippery Surfaces", description: "Outdated flooring and shower bases lack the necessary traction for safety." },
-  { title: "Cramped Layouts", description: "Traditional bathroom layouts often lack the space required for wheelchair or walker access." }
+  { problem: "Limited Mobility", solution: "Standard tubs and high-step showers can be dangerous for those with limited mobility." },
+  { problem: "Slippery Surfaces", solution: "Outdated flooring and shower bases lack the necessary traction for safety." },
+  { problem: "Cramped Layouts", solution: "Traditional bathroom layouts often lack the space required for wheelchair or walker access." }
 ];
 
 const benefitsList = [
@@ -118,7 +118,7 @@ export default function AccessibilityPage() {
           title="Related Bathroom Services"
           subtitle="More Solutions"
           description="Explore other ways we can help improve your Chandler bathroom."
-          services={otherServices}
+          services={otherServices.map(s => s.name)}
         />
 
         <ServiceFAQ faqs={faqs} />

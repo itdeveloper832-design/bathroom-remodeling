@@ -105,7 +105,7 @@ export default function BathroomTileInstallationPage() {
           title="Explore More Bathroom Upgrades"
           subtitle="Complete Solutions"
           description="Beyond tile, we offer full-service bathroom remodeling to transform your home."
-          services={otherServices}
+          services={otherServices.map(s => s.name)}
         />
 
         <ServiceFAQ faqs={faqs} />

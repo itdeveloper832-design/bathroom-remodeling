@@ -118,7 +118,7 @@ export default function BathroomVanityInstallationPage() {
           title="Explore More Bathroom Services"
           subtitle="More Solutions"
           description="From showers to tile work, we provide complete bathroom remodeling solutions in Chandler."
-          services={otherServices}
+          services={otherServices.map(s => s.name)}
         />
 
         <ServiceFAQ faqs={faqs} />

@@ -12,7 +12,8 @@ const services = bathroomServices;
 
 type SubServiceItem = {
   icon: LucideIcon;
-  title: string;
+  title?: string;
+  name?: string;
   description: string;
   href?: string;
 };
@@ -21,7 +22,7 @@ interface SubServicesProps {
   title?: string;
   subtitle?: string;
   description?: string;
-  services?: SubServiceItem[];
+  services?: (SubServiceItem | string)[];
 }
 
 export default function SubServices({
@@ -58,19 +59,28 @@ export default function SubServices({
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {servicesToRender.map((service, index) => (
+            {servicesToRender.map((serviceInput, index) => {
+              const service = typeof serviceInput === 'string'
+                ? bathroomServices.find(s => s.name === serviceInput)
+                : serviceInput;
+                
+              if (!service) return null;
+              
+              const Icon = service.icon as LucideIcon;
+
+              return (
               <motion.div
-                key={`${service.title}-${index}`}
+                key={`${'title' in service ? service.title : (service as any).name}-${index}`}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-background rounded-xl p-6 border border-border hover:shadow-lg transition-shadow"
               >
                 <div className="w-12 h-12 mb-4 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-primary" />
+                  <Icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="font-serif text-xl font-semibold mb-3 text-foreground">
-                  {service.name}
+                  {'title' in service ? service.title : (service as any).name}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                   {service.description}
@@ -79,7 +89,7 @@ export default function SubServices({
                   <Link href={service.href ?? "/services"}>Learn More</Link>
                 </Button>
               </motion.div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

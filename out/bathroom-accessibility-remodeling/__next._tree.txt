@@ -1,4 +1,0 @@
-:HL["/_next/static/chunks/70f4eeda16f51d28.css","style"]
-:HL["https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop&fm=webp","image",{"type":"image/webp","fetchPriority":"high"}]
-:HL["/images/logo-main.png","image",{"type":"image/png","fetchPriority":"high"}]
-0:{"buildId":"KkwUuHul-6_6AwvrbbEJe","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"service","paramType":"d","paramKey":"bathroom-accessibility-remodeling","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

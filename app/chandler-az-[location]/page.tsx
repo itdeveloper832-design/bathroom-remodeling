@@ -23,9 +23,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { location: string };
+  params: Promise<{ location: string }>;
 }): Promise<Metadata> {
-  const location = findLocationBySlug(params.location);
+  const resolvedParams = await params;
+  const location = findLocationBySlug(resolvedParams.location);
   if (!location) return {};
 
   const displayName =
@@ -37,7 +38,7 @@ export async function generateMetadata({
 
   const title = `Bathroom Remodeling in ${displayName}`;
   const description = `Expert bathroom remodeling services in ${displayName}. Licensed contractors with local expertise. Free estimates today.`;
-  const url = `${siteConfig.url}/chandler-az-${params.location}`;
+  const url = `${siteConfig.url}/chandler-az-${resolvedParams.location}`;
 
   return {
     title,
@@ -48,12 +49,13 @@ export async function generateMetadata({
   };
 }
 
-export default function LocationPage({
+export default async function LocationPage({
   params,
 }: {
-  params: { location: string };
+  params: Promise<{ location: string }>;
 }) {
-  const locationSlug = params.location;
+  const resolvedParams = await params;
+  const locationSlug = resolvedParams.location;
   const location = findLocationBySlug(locationSlug);
 
   if (!location) {

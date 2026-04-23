@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { bathroomServices } from "@/lib/bathroom-services";
+import { db } from "@/lib/firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 export function QuoteForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -41,7 +43,8 @@ export function QuoteForm() {
     };
 
     try {
-      console.info("Quote form submission", data);
+      await addDoc(collection(db, "leads"), data);
+      console.info("Quote form submission successful", data);
       setSuccess(true);
       e.currentTarget.reset();
       setWordCount(0);

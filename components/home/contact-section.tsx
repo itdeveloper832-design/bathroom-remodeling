@@ -17,6 +17,8 @@ import {
 } from "@/components/ui/select";
 import { siteConfig } from "@/lib/site-config";
 import { bathroomServices } from "@/lib/bathroom-services";
+import { db } from "@/lib/firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 export default function ContactSection() {
   const ref = useRef(null);
@@ -42,7 +44,8 @@ export default function ContactSection() {
     };
 
     try {
-      console.info("Contact form submission", data);
+      await addDoc(collection(db, "leads"), data);
+      console.info("Contact form submission successful", data);
       setIsSubmitted(true);
       e.currentTarget.reset();
     } catch (error) {

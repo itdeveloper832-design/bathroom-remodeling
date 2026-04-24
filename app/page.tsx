@@ -8,10 +8,10 @@ import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling in Chandler AZ | Free Quote",
+  title: "Bathroom Remodeling in Chandler AZ | Expert Contractors & Free Quote",
   description: "Top-rated bathroom remodeling in Chandler AZ. Licensed experts delivering custom showers, tubs & full renovations. Get a free estimate today!",
   openGraph: {
-    title: "Bathroom Remodeling in Chandler AZ",
+    title: "Bathroom Remodeling in Chandler AZ | Expert Contractors & Free Quote",
     description: "Top-rated bathroom remodeling in Chandler AZ. Licensed experts delivering custom showers, tubs & full renovations. Get a free estimate today!",
     type: "website",
   },
@@ -69,6 +69,10 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
   loading: () => <div className="h-80" />,
   ssr: true 
 });
+const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"), { 
+  loading: () => <div className="h-80" />,
+  ssr: true 
+});
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"), { 
   loading: () => <div className="h-32" />,
   ssr: true 
@@ -117,6 +121,7 @@ export default function HomePage() {
         <ProcessSection />
         <ServiceAreas />
         <Financing />
+        <ComparisonBenefits />
         <FAQ />
         <BlogPreview />
         <ContactSection />

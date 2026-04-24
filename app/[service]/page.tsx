@@ -1171,6 +1171,82 @@ const serviceContent: Record<string, ServiceDetail> = {
       ],
     },
   },
+  "master-bathroom-remodel": {
+    hero: {
+      title: "Master Bathroom Remodeling in Chandler, Arizona",
+      subtitle: "Luxury Master Suite Renovations",
+      description: "Transform your master bath into a luxury retreat with custom showers, dual vanities, and premium finishes.",
+      image: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
+    },
+    content: {
+      intro: "Elevate your home's most private space with our professional master bathroom remodeling in Chandler, AZ. We specialize in high-end transformations that blend luxury with functionality.",
+      sections: [
+        {
+          title: "Luxury Master Bath Features",
+          content: "Our master bath renovations often include custom walk-in showers with multiple heads, freestanding soaking tubs, high-end stone countertops, and intelligent lighting systems."
+        }
+      ]
+    },
+    process: {
+      title: "Master Bath Process",
+      subtitle: "The ARZ Way",
+      description: "Detailed planning for the most important bathroom in your home.",
+      steps: [
+        { number: "01", icon: "Layout", title: "Design Phase", description: "3D rendering and layout optimization for your master suite." }
+      ]
+    },
+    issues: [{ problem: "Cramped, dated master baths.", solution: "Open layouts and modern luxury finishes." }],
+    benefits: [{ icon: "TrendingUp", title: "Max ROI", description: "Master bath remodels offer the highest return on investment in Chandler." }],
+    tips: ["Consider a curbless shower for a more open feel and easier access."],
+    ctas: {
+      midTitle: "Ready for a luxury master bath?",
+      midDescription: "Get a custom design plan and estimate today.",
+      finalTitle: "Best master bathroom remodelers in Chandler.",
+      finalDescription: "Call now for a free in-home consultation."
+    },
+    seo: {
+      title: "Master Bathroom Remodeling Services Chandler AZ | Luxury Renovations",
+      description: "Top-rated master bathroom remodeling in Chandler, AZ. Custom design, luxury showers, and premium finishes by licensed contractors."
+    }
+  },
+  "tub-to-shower-conversion": {
+    hero: {
+      title: "Tub to Shower Conversion in Chandler, AZ",
+      subtitle: "Fast & Modern Conversions",
+      description: "Replace your unused bathtub with a spacious, modern walk-in shower in as little as 3-5 days.",
+      image: "/images/optimized/photo-1584622650111-993a426fbf0a.webp",
+    },
+    content: {
+      intro: "Maximize your bathroom's potential with a tub-to-shower conversion in Chandler. This popular upgrade increases safety and creates a more modern look.",
+      sections: [
+        {
+          title: "Why Convert Your Tub?",
+          content: "Many Chandler homeowners are trading their rarely-used tubs for high-functioning walk-in showers that offer better accessibility and a cleaner aesthetic."
+        }
+      ]
+    },
+    process: {
+      title: "Conversion Process",
+      subtitle: "Quick & Efficient",
+      description: "We handle the removal and new installation seamlessly.",
+      steps: [
+        { number: "01", icon: "Trash2", title: "Tub Removal", description: "Clean removal of your old tub and plumbing assessment." }
+      ]
+    },
+    issues: [{ problem: "Difficult to clean tubs.", solution: "Low-maintenance walk-in shower surrounds." }],
+    benefits: [{ icon: "Accessibility", title: "Safer Entry", description: "Eliminate the trip hazard of high tub walls." }],
+    tips: ["Add a built-in niche for easier organization in your new shower."],
+    ctas: {
+      midTitle: "Ready to convert your tub?",
+      midDescription: "Get a free estimate for your conversion project.",
+      finalTitle: "Expert tub-to-shower conversions in Chandler.",
+      finalDescription: "Call today to schedule your transformation."
+    },
+    seo: {
+      title: "Tub to Shower Conversion Chandler AZ | Walk-in Shower Upgrades",
+      description: "Professional tub-to-shower conversions in Chandler, AZ. Fast installation, accessible designs, and premium tile work by local experts."
+    }
+  }
 };
 
 export function generateStaticParams() {
@@ -1199,24 +1275,10 @@ export async function generateMetadata({
     description,
     keywords: [service.name.toLowerCase(), `${service.name.toLowerCase()} services`, `${service.name.toLowerCase()} contractors`, "chandler arizona", "remodeling contractors"],
     openGraph: {
-      title,
+      title: `${title} | ARZ Home Remodeling`,
       description,
       url,
       type: "website",
-      images: [
-        {
-          url: `${siteConfig.url}/og-image.jpg`,
-          width: 1200,
-          height: 630,
-          alt: service.name,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [`${siteConfig.url}/og-image.jpg`],
     },
     alternates: {
       canonical: url,

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export function Footer() {
@@ -42,13 +42,22 @@ export function Footer() {
                 <Instagram className="w-5 h-5" aria-hidden="true" />
               </a>
               <a
-                href={siteConfig.social.twitter}
+                href="https://youtube.com/arzhomeremodeling"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2"
-                aria-label="Visit our Twitter page"
+                aria-label="Visit our YouTube channel"
               >
-                <Twitter className="w-5 h-5" aria-hidden="true" />
+                <Youtube className="w-5 h-5" aria-hidden="true" />
+              </a>
+              <a
+                href="https://linkedin.com/company/arzhomeremodeling"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2"
+                aria-label="Visit our LinkedIn business page"
+              >
+                <Linkedin className="w-5 h-5" aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -154,12 +163,12 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a
-                  href={`mailto:${siteConfig.email}`}
+                <Link
+                  href="/contact"
                   className="text-background/70 hover:text-primary transition-colors text-sm"
                 >
-                  {siteConfig.email}
-                </a>
+                  Send us an Email
+                </Link>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-primary mt-0.5 shrink-0" />
@@ -170,6 +179,20 @@ export function Footer() {
                 </div>
               </li>
             </ul>
+            
+            {/* Embedded Map */}
+            <div className="mt-8 rounded-xl overflow-hidden border border-background/10 grayscale hover:grayscale-0 transition-all duration-500">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d106645.24749416556!2d-111.9427!3d33.3062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b00f86236319d%3A0x6a0c007c6f000000!2sChandler%2C%20AZ!5e0!3m2!1sen!2sus!4v1714000000000!5m2!1sen!2sus"
+                width="100%"
+                height="150"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Our Location in Chandler AZ"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>

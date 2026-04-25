@@ -17,7 +17,10 @@ interface BlogPostPageProps {
 }
 
 export async function generateStaticParams() {
-  return [{ slug: "bathroom-remodeling-tips" }]
+  return [
+    { slug: "complete-guide-bathroom-remodeling-chandler-arizona" },
+    { slug: "2024-bathroom-design-trends-chandler-arizona" },
+  ];
 }
 
 async function getPostData(slug: string): Promise<BlogPost | null> {

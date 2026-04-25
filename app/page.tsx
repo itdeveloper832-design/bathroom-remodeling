@@ -8,10 +8,10 @@ import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling in Chandler AZ | Expert Contractors & Free Quote",
+  title: "Bathroom Remodeling Chandler AZ | Expert Contractors",
   description: "Top-rated bathroom remodeling in Chandler AZ. Licensed experts delivering custom showers, tubs & full renovations. Get a free estimate today!",
   openGraph: {
-    title: "Bathroom Remodeling in Chandler AZ | Expert Contractors & Free Quote",
+    title: "Bathroom Remodeling Chandler AZ | Expert Contractors",
     description: "Top-rated bathroom remodeling in Chandler AZ. Licensed experts delivering custom showers, tubs & full renovations. Get a free estimate today!",
     type: "website",
   },

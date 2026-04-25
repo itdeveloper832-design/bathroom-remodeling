@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Output configuration for cPanel deployment
-  output: 'standalone',
+  // Output configuration - 'standalone' for cPanel, 'export' for static hosts
+  output: process.env.NEXT_OUTPUT === 'export' ? 'export' : 'standalone',
 
   // Image Optimization - disable for static export
   images: {

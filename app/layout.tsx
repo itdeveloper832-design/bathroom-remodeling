@@ -15,8 +15,8 @@ const geistSans = `
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Bathroom Remodeling in Chandler AZ | Expert Contractors & Free Quote`,
-    template: `%s | ARZ Home Remodeling`
+    default: `Bathroom Remodeling Chandler AZ | Expert Contractors`,
+    template: `%s | ARZ Remodeling`
   },
   description: 'Best bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, licensed bathroom renovation contractors. Free bathroom remodel quote!',
   keywords: ['bathroom remodeling contractors chandler az', 'bathroom remodel cost chandler az', 'bathroom remodel services chandler az', 'hire bathroom remodel contractor chandler az', 'bathroom renovation contractors chandler az', 'best bathroom remodeling contractors chandler az', 'affordable bathroom remodeling contractors chandler az', 'licensed bathroom remodeling contractors chandler az'],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Bathroom Remodeling in Chandler AZ | Expert Contractors & Free Quote`,
+    title: `Bathroom Remodeling Chandler AZ | Expert Contractors`,
     description: 'Best bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, free estimates!',
     images: [
       {
@@ -55,12 +55,6 @@ export const metadata: Metadata = {
     title: `Bathroom Remodeling Contractors Chandler AZ`,
     description: 'Best bathroom remodeling contractors Chandler AZ. Free bathroom remodel quote!',
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
-  },
-  alternates: {
-    canonical: siteConfig.url,
-    languages: {
-      'en-US': siteConfig.url,
-    },
   },
   verification: {
     google: 'FFV2ndN2ia6STi_P5mni2D73Ec1dbptXHNQuIVIl3YA',

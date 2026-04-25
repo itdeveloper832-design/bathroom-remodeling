@@ -37,8 +37,4 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
-# Handle client-side routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Next.js handles its own routing via the @netlify/plugin-nextjs

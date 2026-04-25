@@ -5,11 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:standalone": "next build",
+    "build:export": "SET NEXT_OUTPUT=export&& next build",
     "start": "next start",
     "lint": "eslint .",
-    "export": "next build",
+    "export": "SET NEXT_OUTPUT=export&& next build",
     "deploy:vercel": "vercel --prod",
-    "deploy:netlify": "netlify deploy --prod --dir=out"
+    "deploy:netlify": "SET NEXT_OUTPUT=export&& next build && netlify deploy --prod --dir=out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

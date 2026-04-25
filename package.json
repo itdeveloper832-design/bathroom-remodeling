@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "build:standalone": "next build",
-    "build:export": "SET NEXT_OUTPUT=export&& next build",
+    "build:export": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "export": "SET NEXT_OUTPUT=export&& next build",
+    "export": "next build",
     "deploy:vercel": "vercel --prod",
     "deploy:netlify": "SET NEXT_OUTPUT=export&& next build && netlify deploy --prod --dir=out"
   },

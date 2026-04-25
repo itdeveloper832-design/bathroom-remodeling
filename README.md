@@ -690,7 +690,7 @@ Expected output:
 - **Name:** ARZ Home Remodeling
 - **Phone:** (229) 306-5591
 - **Email:** info@arzhomeremodeling.com
-- **Address:** 123 Main Street, Chandler, AZ 85225
+- **Address:** 6710 W Chicago St, Chandler, AZ 85226
 - **Hours:** Mon-Fri 8AM-6PM, Sat 9AM-4PM, Sun Closed
 
 ### Service Areas

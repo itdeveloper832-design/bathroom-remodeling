@@ -6,14 +6,14 @@ export const siteConfig = {
   phone: "(229) 306-5591",
   email: "info@arzhomeremodeling.com",
   address: {
-    street: "123 Main Street",
+    street: "6710 W Chicago St",
     city: "Chandler",
-    state: "Arizona",
-    zip: "85225",
-    full: "123 Main Street, Chandler, AZ 85225",
+    state: "AZ",
+    zip: "85226",
+    full: "6710 W Chicago St, Chandler, AZ 85226",
     coordinates: {
-      lat: 33.3062,
-      lng: -111.8413,
+      lat: 33.33256,
+      lng: -111.91689,
     },
   },
   hours: {

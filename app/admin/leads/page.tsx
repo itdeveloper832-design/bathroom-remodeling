@@ -29,7 +29,7 @@ import { collection, onSnapshot, query, orderBy } from "firebase/firestore"
 const statusColors: Record<string, string> = {
   new: "bg-blue-100 text-blue-800",
   contacted: "bg-amber-100 text-amber-800",
-  qualified: "bg-green-100 text-green-800",
+  converted: "bg-green-100 text-green-800",
   closed: "bg-gray-100 text-gray-800",
 }
 
@@ -101,7 +101,7 @@ export default function AdminLeadsPage() {
     >
       {/* Filter Tabs */}
       <div className="flex gap-2 mb-6">
-        {["all", "new", "contacted", "qualified", "closed"].map((status) => (
+        {["all", "new", "contacted", "converted", "closed"].map((status) => (
           <Button
             key={status}
             variant={filter === status ? "default" : "outline"}

@@ -183,7 +183,7 @@ export function Footer() {
             {/* Embedded Map */}
             <div className="mt-8 rounded-xl overflow-hidden border border-background/10 grayscale hover:grayscale-0 transition-all duration-500">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d106645.24749416556!2d-111.9427!3d33.3062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b00f86236319d%3A0x6a0c007c6f000000!2sChandler%2C%20AZ!5e0!3m2!1sen!2sus!4v1714000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3334.6838369776056!2d-111.9605964!3d33.3009334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0403f517282b%3A0x64f0a47ba733e83e!2s6710%20W%20Chicago%20St%2C%20Chandler%2C%20AZ%2085226%2C%20USA!5e0!3m2!1sen!2s!4v1777130880103!5m2!1sen!2s"
                 width="100%"
                 height="150"
                 style={{ border: 0 }}

@@ -180,7 +180,7 @@ Ready to start your bathroom remodeling project in Chandler, Arizona? Contact Ch
 
 ---
 
-*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at (480) 555-0123 or visit our showroom to discuss your project.*
+*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at (229) 306-5591 or visit our showroom to discuss your project.*
   `,
   author: "Chandler Bathroom Remodeling Team",
   category: "Bathroom Remodeling",
@@ -370,7 +370,7 @@ Ready to incorporate these 2024 bathroom design trends into your Chandler home? 
 
 ---
 
-*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at (480) 555-0123 to discuss your 2024 bathroom renovation project.*
+*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at (229) 306-5591 to discuss your 2024 bathroom renovation project.*
   `,
   author: "Chandler Bathroom Remodeling Team",
   category: "Design Trends",

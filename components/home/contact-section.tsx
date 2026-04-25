@@ -185,7 +185,7 @@ export default function ContactSection() {
                           id="phone"
                           name="phone"
                           type="tel"
-                          placeholder="(480) 555-0123"
+                          placeholder="(229) 306-5591"
                           required
                           className="bg-background"
                         />

@@ -5,8 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { bathroomServices } from "@/lib/bathroom-services";
-import { db } from "@/lib/firebase";
-import { collection, addDoc } from "firebase/firestore";
+import { createLead } from "@/lib/actions/leads";
 
 export function QuoteForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,31 +37,15 @@ export function QuoteForm() {
       zip: formData.get("zip") as string,
       service: formData.get("service") as string,
       message: formData.get("message") as string,
-      type: "quote",
-      createdAt: new Date().toISOString(),
+      type: "quote" as const,
     };
 
     try {
-      await addDoc(collection(db, "leads"), data);
+      const result = await createLead(data);
       
-      // Send email notification via Firebase Trigger Email extension
-      await addDoc(collection(db, "mail"), {
-        to: "sales@arzhomeremodeling.com",
-        message: {
-          subject: `New Quote Request: ${data.name}`,
-          html: `
-            <h3>New Quote Request Received</h3>
-            <p><strong>Name:</strong> ${data.name}</p>
-            <p><strong>Phone:</strong> ${data.phone}</p>
-            <p><strong>Email:</strong> ${data.email}</p>
-            <p><strong>ZIP:</strong> ${data.zip}</p>
-            <p><strong>Service:</strong> ${data.service}</p>
-            <p><strong>Message:</strong> ${data.message}</p>
-            <hr />
-            <p>This lead has been saved to your admin dashboard.</p>
-          `,
-        },
-      });
+      if (!result.success) {
+        throw new Error(result.error);
+      }
 
       console.info("Quote form submission successful", data);
       setSuccess(true);

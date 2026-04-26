@@ -16,53 +16,12 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { siteConfig } from "@/lib/site-config";
-import { bathroomServices } from "@/lib/bathroom-services";
-import { db } from "@/lib/firebase";
-import { collection, addDoc } from "firebase/firestore";
-
-export default function ContactSection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState("");
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError("");
-    
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name") as string,
-      phone: formData.get("phone") as string,
-      email: formData.get("email") as string,
-      service: formData.get("service") as string,
-      message: formData.get("message") as string,
-      type: "contact",
-      createdAt: new Date().toISOString(),
-    };
-
     try {
-      await addDoc(collection(db, "leads"), data);
-
-      // Trigger email notification
-      await addDoc(collection(db, "mail"), {
-        to: "sales@arzhomeremodeling.com",
-        message: {
-          subject: `New Contact Form Submission: ${data.name}`,
-          html: `
-            <h3>New Contact Form Submission</h3>
-            <p><strong>Name:</strong> ${data.name}</p>
-            <p><strong>Phone:</strong> ${data.phone}</p>
-            <p><strong>Email:</strong> ${data.email}</p>
-            <p><strong>Service:</strong> ${data.service}</p>
-            <p><strong>Message:</strong> ${data.message}</p>
-            <hr />
-            <p>This message has been saved to your admin dashboard.</p>
-          `,
-        },
-      });
+      const result = await createLead(data);
+      
+      if (!result.success) {
+        throw new Error(result.error);
+      }
 
       console.info("Contact form submission successful", data);
       setIsSubmitted(true);

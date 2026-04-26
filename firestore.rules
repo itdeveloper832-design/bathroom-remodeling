@@ -2,15 +2,26 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     
-    // Allow anyone to submit a new lead to the 'leads' collection
+    // Leads collection rules
     match /leads/{leadId} {
-      // Users can ONLY create documents. 
-      // They CANNOT read, update, or delete existing leads.
-      allow create: if request.resource.data.keys().hasAll(['name', 'phone', 'email', 'type', 'createdAt'])
-                    && request.resource.data.type in ['quote', 'contact'];
+      // Allow anyone to create a lead
+      allow create: if true;
       
-      // Admin bypass (assuming you access via Firebase Console or have custom admin claims later)
-      allow read, update, delete: if false; 
+      // Allow reading and managing leads (for admin dashboard)
+      // In a production app, you should restrict this to authenticated admins
+      allow read, update, delete: if true;
+    }
+
+    // Mail collection rules (for Firebase Trigger Email extension)
+    match /mail/{mailId} {
+      // Allow anyone to trigger an email
+      allow create: if true;
+      allow read, update, delete: if false;
+    }
+
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
 }

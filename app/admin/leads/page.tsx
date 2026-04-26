@@ -66,11 +66,13 @@ export default function AdminLeadsPage() {
   }
 
   function exportToCSV() {
-    const headers = ["Name", "Email", "Phone", "Service", "Message", "Status", "Date"]
+    const headers = ["Type", "Name", "Email", "Phone", "ZIP", "Service", "Message", "Status", "Date"]
     const rows = leads.map(lead => [
+      lead.type || "contact",
       lead.name,
       lead.email,
       lead.phone || "",
+      lead.zip || "",
       lead.service || "",
       lead.message?.replace(/,/g, ";") || "",
       lead.status,
@@ -128,7 +130,9 @@ export default function AdminLeadsPage() {
             <Table>
               <TableHeader>
                 <TableRow>
+                  <TableHead>Type</TableHead>
                   <TableHead>Contact</TableHead>
+                  <TableHead>ZIP</TableHead>
                   <TableHead>Service</TableHead>
                   <TableHead>Message</TableHead>
                   <TableHead>Status</TableHead>
@@ -140,9 +144,14 @@ export default function AdminLeadsPage() {
                 {filteredLeads.map((lead) => (
                   <TableRow key={lead.id}>
                     <TableCell>
+                      <Badge variant="outline" className={lead.type === 'quote' ? 'bg-purple-50 text-purple-700 border-purple-200' : 'bg-blue-50 text-blue-700 border-blue-200'}>
+                        {lead.type === 'quote' ? 'Quote' : 'Contact'}
+                      </Badge>
+                    </TableCell>
+                    <TableCell>
                       <div>
                         <p className="font-medium text-foreground">{lead.name}</p>
-                        <div className="flex items-center gap-3 text-xs text-muted-foreground mt-1">
+                        <div className="flex flex-col gap-1 text-xs text-muted-foreground mt-1">
                           <a href={`mailto:${lead.email}`} className="flex items-center gap-1 hover:text-primary">
                             <Mail className="h-3 w-3" />
                             {lead.email}
@@ -155,6 +164,9 @@ export default function AdminLeadsPage() {
                           )}
                         </div>
                       </div>
+                    </TableCell>
+                    <TableCell>
+                      <span className="text-sm font-mono">{lead.zip || "-"}</span>
                     </TableCell>
                     <TableCell>
                       <span className="text-sm">{lead.service || "-"}</span>

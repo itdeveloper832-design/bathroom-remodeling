@@ -101,7 +101,7 @@ export default function RootLayout({
         <meta name="geo.position" content="33.3062;-111.8413" />
         <meta name="ICBM" content="33.3062, -111.8413" />
         
-        {/* Google Tag Manager */}
+        {/* Google Tag Manager - Commented out until valid ID is provided
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -113,8 +113,9 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-XXXXXXX');`,
           }}
         />
+        */}
         
-        {/* Google Analytics (GA4) */}
+        {/* Google Analytics (GA4) - Commented out until valid ID is provided
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
           strategy="afterInteractive"
@@ -131,8 +132,9 @@ export default function RootLayout({
             `,
           }}
         />
+        */}
 
-        {/* Facebook Pixel */}
+        {/* Facebook Pixel - Commented out until valid ID is provided
         <Script
           id="fb-pixel"
           strategy="afterInteractive"
@@ -151,8 +153,9 @@ export default function RootLayout({
             `,
           }}
         />
+        */}
 
-        {/* LinkedIn Insight Tag */}
+        {/* LinkedIn Insight Tag - Commented out until valid ID is provided
         <Script
           id="linkedin-insight"
           strategy="afterInteractive"
@@ -172,6 +175,7 @@ export default function RootLayout({
             `,
           }}
         />
+        */}
 
         {/* Business Schema */}
         <script
@@ -249,7 +253,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased bg-background text-foreground" suppressHydrationWarning>
-        {/* Google Tag Manager (noscript) */}
+        {/* Google Tag Manager (noscript) - Commented out until valid ID is provided
         <noscript>
           <iframe 
             src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
@@ -258,6 +262,7 @@ export default function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
+        */}
         {children}
       </body>
       {/* Defer Vercel analytics - not critical for rendering */}

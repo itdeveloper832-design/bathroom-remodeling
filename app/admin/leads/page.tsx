@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { AdminShell } from "@/components/admin/admin-shell"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -19,12 +19,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { getAllLeads, updateLeadStatus, deleteLead } from "@/lib/actions/leads"
+import { updateLeadStatus, deleteLead } from "@/lib/actions/leads"
 import type { Lead } from "@/lib/types"
-import { MoreHorizontal, Mail, Phone, Calendar, Trash2, Check, Clock, X, Download } from "lucide-react"
-
+import { MoreHorizontal, Mail, Phone, Calendar, Trash2, Check, Clock, X, Download, RefreshCw } from "lucide-react"
 import { db } from "@/lib/firebase"
-import { collection, onSnapshot, query, orderBy } from "firebase/firestore"
+import { collection, getDocs, query, orderBy } from "firebase/firestore"
 
 const statusColors: Record<string, string> = {
   new: "bg-blue-100 text-blue-800",
@@ -38,48 +37,53 @@ export default function AdminLeadsPage() {
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState<string>("all")
 
-  useEffect(() => {
-    const q = query(collection(db, "leads"), orderBy("createdAt", "desc"));
-    const unsubscribe = onSnapshot(q, (snapshot) => {
-      const updatedLeads = snapshot.docs.map(doc => ({
+  const fetchLeads = useCallback(async () => {
+    setLoading(true)
+    try {
+      const q = query(collection(db, "leads"), orderBy("createdAt", "desc"))
+      const snapshot = await getDocs(q)
+      const data = snapshot.docs.map((doc) => ({
         id: doc.id,
-        ...doc.data()
-      })) as Lead[];
-      setLeads(updatedLeads);
-      setLoading(false);
-    }, (error) => {
-      console.error("Error fetching leads real-time:", error);
-      setLoading(false);
-    });
-
-    return () => unsubscribe();
+        ...doc.data(),
+      })) as Lead[]
+      setLeads(data)
+    } catch (error) {
+      console.error("Error fetching leads:", error)
+    } finally {
+      setLoading(false)
+    }
   }, [])
+
+  useEffect(() => {
+    fetchLeads()
+  }, [fetchLeads])
 
   async function handleStatusChange(id: string, status: Lead["status"]) {
     await updateLeadStatus(id, status)
+    await fetchLeads()
   }
 
   async function handleDelete(id: string) {
     if (confirm("Are you sure you want to delete this lead?")) {
       await deleteLead(id)
+      await fetchLeads()
     }
   }
 
   function exportToCSV() {
     const headers = ["Type", "Name", "Email", "Phone", "ZIP", "Service", "Message", "Status", "Date"]
-    const rows = leads.map(lead => [
+    const rows = leads.map((lead) => [
       lead.type || "contact",
       lead.name,
       lead.email,
       lead.phone || "",
       lead.zip || "",
       lead.service || "",
-      lead.message?.replace(/,/g, ";") || "",
+      (lead.message || "").replace(/,/g, ";"),
       lead.status,
-      new Date(lead.createdAt).toLocaleDateString()
+      new Date(lead.createdAt).toLocaleDateString(),
     ])
-    
-    const csv = [headers.join(","), ...rows.map(row => row.join(","))].join("\n")
+    const csv = [headers.join(","), ...rows.map((r) => r.join(","))].join("\n")
     const blob = new Blob([csv], { type: "text/csv" })
     const url = URL.createObjectURL(blob)
     const a = document.createElement("a")
@@ -88,21 +92,27 @@ export default function AdminLeadsPage() {
     a.click()
   }
 
-  const filteredLeads = filter === "all" ? leads : leads.filter(lead => lead.status === filter)
+  const filteredLeads = filter === "all" ? leads : leads.filter((l) => l.status === filter)
 
   return (
-    <AdminShell 
-      title="Leads" 
+    <AdminShell
+      title="Leads"
       description="Manage contact form submissions and inquiries"
       actions={
-        <Button onClick={exportToCSV} variant="outline" size="sm">
-          <Download className="mr-2 h-4 w-4" />
-          Export CSV
-        </Button>
+        <div className="flex gap-2">
+          <Button onClick={fetchLeads} variant="outline" size="sm">
+            <RefreshCw className="mr-2 h-4 w-4" />
+            Refresh
+          </Button>
+          <Button onClick={exportToCSV} variant="outline" size="sm">
+            <Download className="mr-2 h-4 w-4" />
+            Export CSV
+          </Button>
+        </div>
       }
     >
       {/* Filter Tabs */}
-      <div className="flex gap-2 mb-6">
+      <div className="flex gap-2 mb-6 flex-wrap">
         {["all", "new", "contacted", "converted", "closed"].map((status) => (
           <Button
             key={status}
@@ -113,7 +123,7 @@ export default function AdminLeadsPage() {
             {status.charAt(0).toUpperCase() + status.slice(1)}
             {status !== "all" && (
               <span className="ml-2 text-xs">
-                ({leads.filter(l => l.status === status).length})
+                ({leads.filter((l) => l.status === status).length})
               </span>
             )}
           </Button>
@@ -144,20 +154,33 @@ export default function AdminLeadsPage() {
                 {filteredLeads.map((lead) => (
                   <TableRow key={lead.id}>
                     <TableCell>
-                      <Badge variant="outline" className={lead.type === 'quote' ? 'bg-purple-50 text-purple-700 border-purple-200' : 'bg-blue-50 text-blue-700 border-blue-200'}>
-                        {lead.type === 'quote' ? 'Quote' : 'Contact'}
+                      <Badge
+                        variant="outline"
+                        className={
+                          lead.type === "quote"
+                            ? "bg-purple-50 text-purple-700 border-purple-200"
+                            : "bg-blue-50 text-blue-700 border-blue-200"
+                        }
+                      >
+                        {lead.type === "quote" ? "Quote" : "Contact"}
                       </Badge>
                     </TableCell>
                     <TableCell>
                       <div>
                         <p className="font-medium text-foreground">{lead.name}</p>
                         <div className="flex flex-col gap-1 text-xs text-muted-foreground mt-1">
-                          <a href={`mailto:${lead.email}`} className="flex items-center gap-1 hover:text-primary">
+                          <a
+                            href={`mailto:${lead.email}`}
+                            className="flex items-center gap-1 hover:text-primary"
+                          >
                             <Mail className="h-3 w-3" />
                             {lead.email}
                           </a>
                           {lead.phone && (
-                            <a href={`tel:${lead.phone}`} className="flex items-center gap-1 hover:text-primary">
+                            <a
+                              href={`tel:${lead.phone}`}
+                              className="flex items-center gap-1 hover:text-primary"
+                            >
                               <Phone className="h-3 w-3" />
                               {lead.phone}
                             </a>
@@ -207,7 +230,7 @@ export default function AdminLeadsPage() {
                           <DropdownMenuItem onClick={() => handleStatusChange(lead.id, "closed")}>
                             <X className="mr-2 h-4 w-4" /> Mark as Closed
                           </DropdownMenuItem>
-                          <DropdownMenuItem 
+                          <DropdownMenuItem
                             onClick={() => handleDelete(lead.id)}
                             className="text-destructive"
                           >

@@ -5,21 +5,22 @@ import Link from "next/link"
 import { AdminShell } from "@/components/admin/admin-shell"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { getLeadsCount, getRecentLeads } from "@/lib/actions/leads"
 import { getPostsCount, getRecentPosts } from "@/lib/actions/blog"
 import { getTestimonialsCount } from "@/lib/actions/testimonials"
 import { getGalleryCount } from "@/lib/actions/gallery"
 import type { Lead, BlogPost } from "@/lib/types"
-import { 
-  Users, 
-  FileText, 
-  Image, 
-  MessageSquare, 
-  TrendingUp, 
+import {
+  Users,
+  FileText,
+  Image,
+  MessageSquare,
+  TrendingUp,
   Clock,
   ArrowRight,
   Plus
 } from "lucide-react"
+import { db } from "@/lib/firebase"
+import { collection, getDocs, query, orderBy, limit } from "firebase/firestore"
 
 interface DashboardStats {
   leads: number
@@ -35,44 +36,36 @@ export default function AdminDashboardPage() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    async function fetchStaticData() {
-      const [postsCount, testimonialsCount, galleryCount, posts] = await Promise.all([
-        getPostsCount(),
-        getTestimonialsCount(),
-        getGalleryCount(),
-        getRecentPosts(5)
-      ])
-      
-      setStats(prev => ({
-        ...prev,
-        posts: postsCount,
-        testimonials: testimonialsCount,
-        gallery: galleryCount
-      }))
-      setRecentPosts(posts)
+    async function fetchAll() {
+      try {
+        const [postsCount, testimonialsCount, galleryCount, posts] = await Promise.all([
+          getPostsCount(),
+          getTestimonialsCount(),
+          getGalleryCount(),
+          getRecentPosts(5),
+        ])
+
+        // Fetch leads via one-time getDocs (no persistent WebSocket)
+        const leadsQuery = query(collection(db, "leads"), orderBy("createdAt", "desc"), limit(5))
+        const leadsSnapshot = await getDocs(leadsQuery)
+        const leads = leadsSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })) as Lead[]
+
+        setStats({
+          leads: leads.length,
+          posts: postsCount,
+          testimonials: testimonialsCount,
+          gallery: galleryCount,
+        })
+        setRecentLeads(leads)
+        setRecentPosts(posts)
+      } catch (error) {
+        console.error("Error fetching dashboard data:", error)
+      } finally {
+        setLoading(false)
+      }
     }
-    
-    fetchStaticData()
 
-    import("firebase/firestore").then(({ collection, onSnapshot, query, orderBy }) => {
-      import("@/lib/firebase").then(({ db }) => {
-        const q = query(collection(db, "leads"), orderBy("createdAt", "desc"));
-        const unsubscribe = onSnapshot(q, (snapshot) => {
-          const leads = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })) as Lead[];
-          setStats(prev => ({
-            ...prev,
-            leads: leads.length
-          }))
-          setRecentLeads(leads.slice(0, 5));
-          setLoading(false);
-        }, (error) => {
-          console.error("Error fetching leads real-time on dashboard:", error);
-          setLoading(false);
-        });
-
-        return () => unsubscribe();
-      });
-    });
+    fetchAll()
   }, [])
 
   const statCards = [

@@ -16,6 +16,31 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { siteConfig } from "@/lib/site-config";
+import { bathroomServices } from "@/lib/bathroom-services";
+import { createLead } from "@/lib/actions/leads";
+
+export default function ContactSection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError("");
+    
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name") as string,
+      phone: formData.get("phone") as string,
+      email: formData.get("email") as string,
+      service: formData.get("service") as string,
+      message: formData.get("message") as string,
+      type: "contact" as const,
+    };
+
     try {
       const result = await createLead(data);
       

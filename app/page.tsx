@@ -8,11 +8,23 @@ import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Expert Contractors",
-  description: "Top-rated bathroom remodeling in Chandler AZ. Licensed experts delivering custom showers, tubs & full renovations. Get a free estimate today!",
+  title: "Bathroom Remodeling Chandler AZ | Licensed Contractors & Free Estimates",
+  description:
+    "Licensed bathroom remodeling contractors in Chandler, AZ. Bathroom remodel, shower remodeling, bathtub replacement, and tub-to-shower conversion. Free estimates — call (229) 306-5591.",
+  keywords: [
+    "bathroom remodel chandler",
+    "bathroom remodel chandler az",
+    "bathroom remodeling chandler",
+    "bathroom remodeling chandler az",
+    "bath remodel chandler",
+    "home remodel chandler",
+    "remodeling contractors chandler az",
+    "bathroom remodeling contractor phoenix",
+  ],
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ | Expert Contractors",
-    description: "Top-rated bathroom remodeling in Chandler AZ. Licensed experts delivering custom showers, tubs & full renovations. Get a free estimate today!",
+    title: "Bathroom Remodeling Chandler AZ | Licensed Contractors",
+    description:
+      "Licensed bathroom remodeling contractors in Chandler, AZ. Bath remodel, shower remodeling, tub replacement. Free estimates!",
     type: "website",
   },
   alternates: {
@@ -79,25 +91,49 @@ const FinalCTA = dynamic(() => import("@/components/home/final-cta"), {
 });
 
 const homeFaqs = [
+  // HOMEPAGE CLUSTER — bathroom remodel chandler az
   {
-    question: "What types of bathroom remodeling in Chandler AZ do you offer?",
+    question: "What types of bathroom remodeling do you offer in Chandler, AZ?",
     answer:
-      "We provide comprehensive bathroom remodeling in Chandler, including custom shower installations, bathtub replacements, vanity upgrades, and full master bath renovations. Our team handles everything from design to final plumbing and tile work.",
+      "We offer complete bathroom remodeling in Chandler AZ including full bathroom renovations, master bath remodels, vanity installation, tile work, flooring, and lighting upgrades. Our licensed remodeling contractors handle every trade — no subcontractor shuffle.",
   },
   {
-    question: "How much does a bathroom remodel cost in Chandler?",
+    question: "How much does a bathroom remodel cost in Chandler, AZ?",
     answer:
-      "Bathroom remodeling costs in Chandler typically range from $8,000 for basic refreshes to over $30,000 for luxury master suite transformations. We provide detailed, transparent estimates and flexible financing options to fit your budget.",
+      "Bathroom remodel costs in Chandler typically range from $4,500 for a guest bath update to $45,000+ for a full master bath renovation. Tub-to-shower conversions run $6,000–$13,000. We provide free, itemized written estimates before any work begins.",
   },
   {
-    question: "Why choose ARZ Home Remodeling for my project?",
+    question: "Are you licensed remodeling contractors in Chandler, AZ?",
     answer:
-      "With over 15 years of experience specializing in bathroom remodeling in Chandler AZ, we prioritize quality craftsmanship and customer satisfaction. We are proud of our 5-star reputation and our commitment to finishing projects on time and within budget.",
+      "Yes. We are a licensed Arizona contractor serving homeowners across Chandler, Gilbert, Mesa, Tempe, and the East Valley. Every project includes a 2-year workmanship warranty and we pull all required city permits.",
+  },
+  // SHOWER CLUSTER — shower remodeling chandler az
+  {
+    question: "Do you offer shower remodeling in Chandler, AZ?",
+    answer:
+      "Yes. Our shower remodeling in Chandler includes walk-in shower installation, frameless glass enclosures, custom tile work, curbless shower conversions, and shower replacement. We use Schluter waterproofing to prevent leaks in Arizona's extreme temperature swings.",
   },
   {
-    question: "How do I get started with my Chandler bathroom remodel?",
+    question: "How long does shower remodeling take in Chandler?",
     answer:
-      "Getting started is easy! Contact us today to schedule a free in-home consultation. We'll discuss your vision, provide expert design advice, and give you a detailed quote for your project.",
+      "A shower-only remodel in Chandler typically takes 1–2 weeks. A full shower replacement with custom tile and frameless glass takes 2–3 weeks. We provide a firm written timeline before any work starts.",
+  },
+  // BATHTUB CLUSTER — bathtub remodeling chandler az
+  {
+    question: "Do you offer bathtub remodeling and replacement in Chandler, AZ?",
+    answer:
+      "Yes. Our bathtub remodeling services in Chandler include full tub replacement, bathtub-to-shower conversion, soaking tub installation, and jetted tub upgrades. We also specialize in tub-to-shower conversions for unused garden tubs — the most popular service in Chandler homes built 1985–2005.",
+  },
+  {
+    question: "What is the most popular bath remodel project in Chandler homes?",
+    answer:
+      "The tub-to-shower conversion is by far the most requested service in Chandler. Most homes built in the 1990s and early 2000s have a garden tub that goes unused. We remove it, waterproof the substrate, and install a modern walk-in shower — adding usable space and strong resale ROI.",
+  },
+  // SERVICE AREAS
+  {
+    question: "What neighborhoods in Chandler do you serve?",
+    answer:
+      "We serve all of Chandler, AZ including Dobson Ranch, Sun Lakes, Ocotillo, Fulton Ranch, Chandler Heights, Gila Springs, Fox Crossing, and Cooper Commons, plus Gilbert, Mesa, Tempe, and Ahwatukee.",
   },
 ];
 

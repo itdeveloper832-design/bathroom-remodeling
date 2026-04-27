@@ -5,45 +5,49 @@ import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const faqs = [
+  // HOMEPAGE CLUSTER — bathroom remodel chandler az
   {
-    question: "How long does a typical bathroom remodel take in Chandler, Arizona?",
+    question: "What types of bathroom remodeling do you offer in Chandler, AZ?",
     answer:
-      "A standard bathroom remodel typically takes 2-4 weeks depending on the scope of work. Simple updates like replacing fixtures may take just a few days, while complete gut renovations with custom tile work can take 4-6 weeks. We also offer efficient bathroom remodeling in Chandler for quick updates. During your free consultation, we'll provide a detailed timeline specific to your project.",
+      "We offer complete bathroom remodeling in Chandler AZ including full bathroom renovations, master bath remodels, vanity installation, tile work, flooring, and lighting upgrades. Our licensed remodeling contractors handle every trade — no subcontractor shuffle.",
   },
   {
-    question: "What is the cost of bathroom remodeling in Chandler, AZ?",
+    question: "How much does a bathroom remodel cost in Chandler, AZ?",
     answer:
-      "Bathroom remodeling costs vary based on the size of your bathroom and the materials selected. Basic remodels start around $8,000-$15,000, mid-range renovations typically range from $15,000-$30,000, and luxury bathroom remodels can exceed $30,000. We offer affordable bathroom remodel financing to make your dream bathroom a reality. We provide detailed, transparent quotes with no hidden fees.",
+      "Bathroom remodel costs in Chandler range from $4,500 for a guest bath update to $45,000+ for a full master bath renovation. Tub-to-shower conversions run $6,000–$13,000. We provide free, itemized written estimates before any work begins.",
   },
   {
-    question: "Do you offer bathroom remodel financing options?",
+    question: "Are you licensed remodeling contractors in Chandler, AZ?",
     answer:
-      "Yes! We offer flexible bathroom remodel financing options to fit your budget. Our financing plans include low monthly payments, competitive interest rates, and quick approval. During your consultation, we'll discuss all available financing options to help make your bathroom renovation affordable.",
+      "Yes. We are a licensed Arizona contractor serving homeowners across Chandler, Gilbert, Mesa, Tempe, and the East Valley. Every project includes a 2-year workmanship warranty and we pull all required city permits.",
+  },
+  // SHOWER CLUSTER — shower remodeling chandler az
+  {
+    question: "Do you offer shower remodeling in Chandler, AZ?",
+    answer:
+      "Yes. Our shower remodeling in Chandler includes walk-in shower installation, frameless glass enclosures, custom tile work, curbless shower conversions, and shower replacement. We use Schluter waterproofing to prevent leaks in Arizona's extreme temperature swings.",
   },
   {
-    question: "Are you the best choice for bathroom remodeling in Chandler?",
+    question: "How long does shower remodeling take in Chandler?",
     answer:
-      "Chandler Bathroom Remodeling is consistently rated as the best choice in the area by our customers. We're fully licensed (ROC #123456), bonded, and insured for residential remodeling in Arizona. With 15+ years of experience and hundreds of 5-star reviews, we're the top-rated bathroom remodelers in Chandler and the East Valley.",
+      "A shower-only remodel in Chandler typically takes 1–2 weeks. A full shower replacement with custom tile and frameless glass takes 2–3 weeks. We provide a firm written timeline before any work starts.",
+  },
+  // BATHTUB CLUSTER — bathtub remodeling chandler az
+  {
+    question: "Do you offer bathtub remodeling and replacement in Chandler, AZ?",
+    answer:
+      "Yes. Our bathtub remodeling services in Chandler include full tub replacement, bathtub-to-shower conversion, soaking tub installation, and jetted tub upgrades. We specialize in tub-to-shower conversions for unused garden tubs — the most popular service in Chandler homes built 1985–2005.",
   },
   {
-    question: "Do you offer handicap accessible bathroom remodeling?",
+    question: "What is the most popular bath remodel in Chandler homes?",
     answer:
-      "Absolutely! We specialize in handicap accessible bathroom remodeling, creating ADA-compliant bathrooms that are both beautiful and functional. Our accessibility modifications include walk-in tubs, grab bars, roll-in showers, comfort-height toilets, and non-slip flooring. We also offer assistance programs for seniors to help with their remodeling needs.",
+      "The tub-to-shower conversion is by far the most requested service in Chandler. Most homes built in the 1990s and early 2000s have a garden tub that goes unused. We remove it, waterproof the substrate, and install a modern walk-in shower — adding usable space and strong resale ROI.",
   },
+  // SERVICE AREA
   {
-    question: "Do you handle commercial bathroom remodeling projects?",
+    question: "What neighborhoods in Chandler do you serve?",
     answer:
-      "Yes, we are experienced commercial bathroom remodel contractors serving Chandler and surrounding areas. We work with businesses, offices, restaurants, and commercial properties to deliver professional bathroom renovations with minimal disruption to your operations.",
-  },
-  {
-    question: "Can I stay in my home during the bathroom remodel?",
-    answer:
-      "Yes, in most cases you can stay in your home during the remodel. If you have multiple bathrooms, we'll coordinate the work to ensure you always have access to facilities. We take care to minimize dust and disruption, cleaning up daily and protecting your home throughout the process.",
-  },
-  {
-    question: "What areas in Arizona do you serve for bathroom remodeling?",
-    answer:
-      "We primarily serve Chandler, Arizona and nearby East Valley communities including Sun Lakes, Ahwatukee, Tempe, Mesa, and South Phoenix. As the leading bathroom remodelers in the area, we're proud to serve homeowners throughout the region.",
+      "We serve all of Chandler, AZ including Dobson Ranch, Sun Lakes, Ocotillo, Fulton Ranch, Chandler Heights, Gila Springs, Fox Crossing, and Cooper Commons. We also serve Gilbert, Mesa, Tempe, and Ahwatukee.",
   },
 ];
 
@@ -101,11 +105,10 @@ export default function FAQ() {
               FAQ
             </span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground">
-              Frequently Asked Questions
+              Bathroom Remodeling FAQs — Chandler, AZ
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Find answers to common questions about our bathroom 
-              remodeling in Chandler, Arizona.
+              Common questions about bathroom remodeling, shower remodeling, and bathtub remodeling in Chandler, Arizona.
             </p>
           </div>
 

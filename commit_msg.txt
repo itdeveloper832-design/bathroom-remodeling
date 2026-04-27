@@ -1,0 +1,15 @@
+feat: SEO keyword clustering and Chandler AZ landing page
+
+- Add /bathroom-remodeling-chandler-az dedicated landing page (priority 1.0 in sitemap)
+- Upgrade global schema to HomeAndConstructionBusiness with aggregateRating and City areaServed
+- Add 5-service catalog in schema with page URLs
+- Localize shower page keywords to shower remodeling chandler az cluster
+- Localize bathtub page keywords to bathtub remodeling chandler az cluster
+- Upgrade homepage metadata and expand FAQs to 8 questions across 3 keyword clusters
+- Add internal linking sections on shower and bathtub pages
+- Upgrade services-grid H2 to target bathroom remodeling chandler az
+- Upgrade master-bathroom-remodel with full scope content and cost callout
+- Upgrade cost guide with line-item pricing for 4 project types
+- Update home FAQ component with clustered keyword-targeted questions
+
+Build: 64/64 pages, exit code 0

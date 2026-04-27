@@ -10,17 +10,29 @@ import ProcessSection from "@/components/home/process-section";
 import Testimonials from "@/components/home/testimonials";
 import ServiceAreas from "@/components/home/service-areas";
 import ServiceCTA from "@/components/service-cta";
+import ServiceFAQ from "@/components/service-faq";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { serviceContent } from "@/lib/service-content-data";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: 'Bathroom Remodeling Services Chandler AZ | Best Contractors',
-  description: 'Top-rated bathroom remodeling in Chandler AZ. From master bath renovations to custom showers. Get a free design consultation and estimate today!',
-  keywords: ['bathroom remodeling Chandler AZ', 'custom bath renovations', 'master bath upgrades', 'Chandler remodeling contractors', 'bathroom design AZ', 'full bath renovations'],
+  title: 'Bathroom Remodeling Services Chandler AZ | Licensed Contractors',
+  description: 'Top-rated bathroom remodeling in Chandler AZ. Walk-in showers, tub-to-shower conversions, master bath renovations. AZ licensed contractor, 2-year warranty. Free estimates — call (229) 306-5591.',
+  keywords: [
+    'bathroom remodeling Chandler AZ',
+    'custom bath renovations',
+    'master bath upgrades',
+    'Chandler remodeling contractors',
+    'bathroom design AZ',
+    'full bath renovations',
+    'shower remodeling Chandler',
+    'tub to shower conversion Chandler AZ',
+  ],
   openGraph: {
-    title: 'Bathroom Remodeling Services in Chandler AZ | Expert Contractors',
-    description: 'Transform your space with the best bathroom remodeling team in Chandler. Affordable, custom renovations!',
+    title: 'Bathroom Remodeling Services in Chandler AZ | ARZ Home Remodeling',
+    description: 'Transform your space with the best bathroom remodeling team in Chandler. Licensed AZ contractor, fixed pricing, 2-year warranty.',
     url: `${siteConfig.url}/bathroom-remodeling`,
     images: [
       {
@@ -34,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Bathroom Remodeling Services Chandler AZ',
-    description: 'Expert bathroom renovations in Chandler AZ. Affordable, professional!',
+    description: 'Expert bathroom renovations in Chandler AZ. Licensed, fixed pricing, free estimates.',
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
   alternates: {
@@ -59,8 +71,32 @@ export default function BathroomRemodelingPage() {
       <main>
         <ServiceHero
           title="Bathroom Remodeling Services in Chandler AZ"
+          subtitle="Licensed AZ Contractor — Free Estimates"
           description="Looking to upgrade your space? We provide comprehensive bathroom remodeling services tailored to your style and budget. Connect with our local Chandler contractors for a free design consultation and estimate today!"
         />
+
+        {/* CHANDLER-SPECIFIC CTA BANNER */}
+        <section className="py-10 bg-primary">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
+              <div>
+                <p className="text-primary-foreground font-semibold text-lg">
+                  Looking for our Chandler, AZ dedicated page?
+                </p>
+                <p className="text-primary-foreground/75 text-sm mt-1">
+                  Full local content, pricing guide, neighborhood coverage, and Chandler-specific FAQs.
+                </p>
+              </div>
+              <Link
+                href="/bathroom-remodeling-chandler-az"
+                className="inline-flex items-center gap-2 bg-primary-foreground text-primary font-semibold rounded-xl px-6 py-3 hover:bg-primary-foreground/90 transition-colors whitespace-nowrap"
+              >
+                Bathroom Remodeling Chandler AZ <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <SubServices />
         <IssuesSolved
           title="Common Bathroom Issues We Solve"
@@ -83,6 +119,33 @@ export default function BathroomRemodelingPage() {
         <ProcessSection />
         <Testimonials />
         <ServiceAreas />
+
+        {/* INTERNAL LINKING SECTION */}
+        <section className="py-12 bg-secondary">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-2xl font-semibold text-center mb-6 text-foreground">Explore Specific Services</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <Link href="/bathroom-remodeling-chandler-az" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">Chandler Landing Page</p>
+                <p className="text-muted-foreground text-xs mt-1">Full local SEO page</p>
+              </Link>
+              <Link href="/shower-remodeling" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">Shower Remodeling in Chandler</p>
+                <p className="text-muted-foreground text-xs mt-1">Walk-ins, frameless glass</p>
+              </Link>
+              <Link href="/tub-to-shower-conversion" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">Tub-to-Shower Conversion</p>
+                <p className="text-muted-foreground text-xs mt-1">From $6,000</p>
+              </Link>
+              <Link href="/master-bathroom-remodel" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">Master Bathroom Remodel</p>
+                <p className="text-muted-foreground text-xs mt-1">Full-scope renovations</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <ServiceFAQ faqs={serviceFaqs} />
         <ServiceCTA />
       </main>
       <Footer />

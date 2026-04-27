@@ -37,7 +37,7 @@ export default function ServicesGrid() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance"
           >
-            Complete Bathroom Renovation & Remodeling Solutions
+            Bathroom Remodeling Services in Chandler, AZ
           </motion.h2>
           <motion.div
             initial={mounted ? { opacity: 0, y: 20 } : false}
@@ -45,11 +45,11 @@ export default function ServicesGrid() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-muted-foreground text-lg leading-relaxed space-y-4"
           >
-            <p>We specialize in turning outdated, cramped spaces into luxurious retreats. We offer:</p>
+            <p>Licensed remodeling contractors in Chandler offering:</p>
             <ul className="list-disc text-left inline-block space-y-1 ml-4">
-              <li><strong>Master Bath Makeovers:</strong> Full-scale expansions and luxury upgrades.</li>
-              <li><strong>Tub-to-Shower Conversions:</strong> Safe, accessible, and modern shower installations.</li>
-              <li><strong>Custom Vanities & Tile:</strong> High-end finishes that elevate your daily routine.</li>
+              <li><strong>Bath Remodel Chandler AZ:</strong> Full bathroom renovations, vanity, tile, and fixtures.</li>
+              <li><strong>Shower Remodeling Chandler AZ:</strong> Walk-in showers, frameless glass, curbless designs.</li>
+              <li><strong>Bathtub Remodeling Chandler AZ:</strong> Tub replacement, tub-to-shower conversion, soaking tubs.</li>
             </ul>
           </motion.div>
         </div>

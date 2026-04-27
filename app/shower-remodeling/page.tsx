@@ -17,12 +17,27 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Services in Chandler AZ | Local Contractors",
-  description: "Premium shower remodeling services and contractors in Chandler AZ. Walk-in showers, custom tiling, and glass enclosures built to last. Call for a free consultation!",
-  keywords: ["shower remodeling services Chandler", "custom tile contractors AZ", "frameless glass enclosures company", "shower upgrades", "bathroom renovation Chandler contractors", "walk-in showers"],
+  title: "Shower Remodeling Chandler AZ | Walk-In Showers & Shower Replacement",
+  description:
+    "Expert shower remodeling in Chandler AZ. Walk-in shower installation, frameless glass enclosures, shower replacement, and custom tile. Licensed AZ contractor. Free estimates — call (229) 306-5591.",
+  keywords: [
+    // Primary — Shower cluster (localized from phoenix to chandler)
+    "shower remodeling chandler az",
+    "shower remodel chandler az",
+    "shower replacement chandler az",
+    "walk-in shower installation chandler az",
+    "walk-in shower chandler az",
+    "custom shower chandler az",
+    "frameless glass shower chandler az",
+    "shower remodeling contractor chandler az",
+    // Supporting geo signals
+    "bathroom remodeling chandler az",
+    "shower remodel cost chandler az",
+  ],
   openGraph: {
-    title: "Shower Upgrades in Chandler AZ | Premium Services",
-    description: "Expert shower upgrades in Chandler AZ. Affordable luxury, free quotes!",
+    title: "Shower Remodeling Chandler AZ | Walk-In Showers & Custom Tile",
+    description:
+      "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, shower replacement. Licensed contractor. Free estimates!",
     url: `${siteConfig.url}/shower-remodeling`,
     type: "website",
     images: [
@@ -30,14 +45,14 @@ export const metadata: Metadata = {
         url: `${siteConfig.url}/images/shower-remodeling-hero.jpg`,
         width: 1200,
         height: 630,
-        alt: "Custom Showers - Chandler Bathroom Upgrades",
+        alt: "Shower Remodeling Chandler AZ - Walk-In Showers & Custom Tile",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Upgrades in Chandler AZ | Premium Services",
-    description: "Expert shower upgrades in Chandler AZ. Affordable, professional!",
+    title: "Shower Remodeling Chandler AZ | Walk-In Showers",
+    description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Free estimates!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },
   alternates: {
@@ -65,13 +80,13 @@ export default function ShowerRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Shower Remodeling Services in Chandler AZ"
-          subtitle="Premium Custom Shower Installations & Upgrades"
-          description="Transform your daily routine with a stunning new shower. As your trusted local contractors, we provide elegant frameless glass designs, custom tile work, and professional shower remodeling services tailored to your home."
+          title="Shower Remodeling in Chandler, AZ"
+          subtitle="Walk-In Showers, Frameless Glass & Custom Tile"
+          description="Transform your outdated shower into a modern walk-in enclosure. Our Chandler shower remodeling team handles frameless glass, custom tile, curbless designs, and shower replacement with Schluter waterproofing rated for Arizona's climate."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
-            { name: "Shower Remodeling", url: `${siteConfig.url}/shower-remodeling` },
+            { name: "Shower Remodeling Chandler AZ", url: `${siteConfig.url}/shower-remodeling` },
           ]}
         />
 
@@ -148,13 +163,51 @@ export default function ShowerRemodelingPage() {
 
         <ServiceFAQ faqs={faqs} />
 
+        {/* INTERNAL LINKING — Step 6 of SEO strategy */}
+        <section className="py-12 bg-secondary">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-2xl font-semibold text-center mb-6 text-foreground">
+              Related Bathroom Remodeling Services in Chandler
+            </h2>
+            <div className="grid sm:grid-cols-3 gap-4">
+              <a
+                href="/bathroom-remodeling-chandler-az"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
+              >
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
+                  Bathroom Remodeling Chandler AZ
+                </p>
+                <p className="text-muted-foreground text-xs mt-1">Full bathroom renovation services</p>
+              </a>
+              <a
+                href="/bathtub-remodeling"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
+              >
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
+                  Bathtub Remodeling Chandler AZ
+                </p>
+                <p className="text-muted-foreground text-xs mt-1">Tub replacement & tub-to-shower conversion</p>
+              </a>
+              <a
+                href="/tub-to-shower-conversion"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
+              >
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
+                  Tub-to-Shower Conversion
+                </p>
+                <p className="text-muted-foreground text-xs mt-1">Convert unused garden tubs to walk-in showers</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
         <Testimonials />
 
         <ContactSection />
 
         <ServiceCTA 
-          title="Need fast shower upgrades in Chandler, AZ?" 
-          description="Call now for a same-week consultation and clear pricing on your new enclosure." 
+          title="Ready for shower remodeling in Chandler, AZ?" 
+          description="Call now for a same-week consultation and clear pricing on your new walk-in shower." 
         />
       </main>
       <Footer />

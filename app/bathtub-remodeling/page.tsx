@@ -18,12 +18,27 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Bathtub Remodeling Services in Chandler AZ | Local Contractors",
-  description: "Professional bathtub remodeling services in Chandler AZ. Upgrade to a luxury soaking tub or freestanding bath. Browse our portfolio and get a quote!",
-  keywords: ["bathtub remodeling services Chandler", "tub replacement contractors AZ", "freestanding bath installation company", "soaking tub upgrades", "Chandler bathroom contractors", "bathtub to shower conversion services"],
+  title: "Bathtub Remodeling Chandler AZ | Tub Replacement & Tub-to-Shower Conversion",
+  description:
+    "Expert bathtub remodeling in Chandler AZ. Tub replacement, bathtub-to-shower conversion, soaking tub installation. Licensed AZ contractor. Free estimates — call (229) 306-5591.",
+  keywords: [
+    // Primary — Bathtub cluster
+    "bathtub remodeling chandler az",
+    "bathtub remodel chandler az",
+    "tub replacement chandler az",
+    "bathtub replacement chandler az",
+    "bathtub to shower conversion chandler az",
+    "tub to shower conversion chandler az",
+    "soaking tub installation chandler az",
+    "bathtub remodeling contractor chandler az",
+    // Supporting geo signals
+    "bathroom remodeling chandler az",
+    "bathtub remodel cost chandler az",
+  ],
   openGraph: {
-    title: "Bathtub to Shower Conversion Chandler AZ | Best",
-    description: "Best bathtub to shower conversion Chandler AZ. Affordable tub replacement services!",
+    title: "Bathtub Remodeling Chandler AZ | Tub Replacement & Conversion",
+    description:
+      "Expert bathtub remodeling in Chandler AZ. Tub replacement, tub-to-shower conversion, soaking tub installation. Free estimates!",
     url: `${siteConfig.url}/bathtub-remodeling`,
     type: "website",
     images: [
@@ -31,14 +46,14 @@ export const metadata: Metadata = {
         url: `${siteConfig.url}/images/bathtub-remodeling-hero.jpg`,
         width: 1200,
         height: 630,
-        alt: "Bathtub Remodeling - Chandler Bathroom",
+        alt: "Bathtub Remodeling Chandler AZ - Tub Replacement & Conversion",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathtub to Shower Conversion Chandler AZ | Best",
-    description: "Best bathtub to shower conversion Chandler AZ. Premium bath upgrades!",
+    title: "Bathtub Remodeling Chandler AZ | Free Estimates",
+    description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, tub-to-shower conversion. Free estimates!",
     images: [`${siteConfig.url}/images/bathtub-remodeling-hero.jpg`],
   },
   alternates: {
@@ -70,13 +85,13 @@ export default function BathtubRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Bathtub Remodeling Services in Chandler AZ"
-          subtitle="Top-Rated Conversion & Tub Replacement Contractors"
-          description="Transform your outdated bath into a spacious, modern shower. As your trusted local contractors, we provide affordable tub-to-shower conversion services, expert installations, and beautiful designs tailored to your home."
+          title="Bathtub Remodeling in Chandler, AZ"
+          subtitle="Tub Replacement, Bathtub-to-Shower Conversion & Soaking Tubs"
+          description="Ready to replace your outdated bathtub or convert that unused garden tub into a walk-in shower? Our licensed Chandler contractors handle tub removal, tub replacement, soaking tub installation, and tub-to-shower conversions with a fixed price and 2-year warranty."
           image="/images/optimized/photo-1600566752355-35792bedcfea.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
-            { name: "Bathtub Remodeling", url: `${siteConfig.url}/bathtub-remodeling` },
+            { name: "Bathtub Remodeling Chandler AZ", url: `${siteConfig.url}/bathtub-remodeling` },
           ]}
         />
 
@@ -188,6 +203,44 @@ export default function BathtubRemodelingPage() {
           title="Need a tub upgrade in Chandler, AZ?" 
           description="Contact us today for a free consultation and estimate on your new bathing space." 
         />
+
+        {/* INTERNAL LINKING — Step 6 of SEO strategy */}
+        <section className="py-12 bg-secondary">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-2xl font-semibold text-center mb-6 text-foreground">
+              Related Bathroom Services in Chandler
+            </h2>
+            <div className="grid sm:grid-cols-3 gap-4">
+              <a
+                href="/bathroom-remodeling-chandler-az"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
+              >
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
+                  Bathroom Remodeling Chandler AZ
+                </p>
+                <p className="text-muted-foreground text-xs mt-1">Full bathroom renovations — all services</p>
+              </a>
+              <a
+                href="/shower-remodeling"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
+              >
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
+                  Shower Remodeling in Chandler
+                </p>
+                <p className="text-muted-foreground text-xs mt-1">Walk-in showers, frameless glass, custom tile</p>
+              </a>
+              <a
+                href="/tub-to-shower-conversion"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
+              >
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
+                  Tub-to-Shower Conversion
+                </p>
+                <p className="text-muted-foreground text-xs mt-1">Most popular service in Chandler homes</p>
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

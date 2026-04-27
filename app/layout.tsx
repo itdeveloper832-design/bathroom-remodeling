@@ -88,19 +88,19 @@ export default function RootLayout({
         {/* Critical performance optimizations - Resource Hints */}
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
-        
+
         {/* Preload critical LCP image with fetchpriority */}
         <link rel="preload" fetchPriority="high" href="/images/optimized/photo-1552321554-5fefe8c9ef14.webp" as="image" type="image/webp" />
         <link rel="preload" fetchPriority="high" href="/images/logo-main.png" as="image" type="image/png" />
-        
 
-        
+
+
         {/* Additional SEO meta tags */}
         <meta name="geo.region" content="US-AZ" />
         <meta name="geo.placename" content="Chandler" />
         <meta name="geo.position" content="33.3062;-111.8413" />
         <meta name="ICBM" content="33.3062, -111.8413" />
-        
+
         {/* Google Tag Manager - Commented out until valid ID is provided
         <Script
           id="gtm-script"
@@ -114,7 +114,7 @@ export default function RootLayout({
           }}
         />
         */}
-        
+
         {/* Google Analytics (GA4) - Commented out until valid ID is provided
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"

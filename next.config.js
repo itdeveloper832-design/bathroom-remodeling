@@ -1,14 +1,16 @@
+const isExport = process.env.NEXT_OUTPUT === 'export' || process.env.NODE_ENV === 'production' && !process.env.VERCEL;
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Output configuration - 'standalone' is better for performance and image optimization
-  // Switch to 'export' only if your host doesn't support Node.js
-  output: 'standalone',
+  // Output configuration - Dynamic based on deployment target
+  output: isExport ? 'export' : 'standalone',
 
   // Trailing slash ensures static export URLs match canonical tags
   trailingSlash: true,
 
-  // Image Optimization - Enable for better performance
+  // Image Optimization
   images: {
+    unoptimized: isExport,
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {

@@ -56,7 +56,7 @@ export default function FinalCTA() {
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-base px-8 py-6 group"
             >
-              <Link href="/contact">
+              <Link href="/contact/">
                 Schedule Your Free Quote
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>

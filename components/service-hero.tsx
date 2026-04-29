@@ -58,7 +58,7 @@ export default function ServiceHero({
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
-              <Link href="/contact" className="flex items-center gap-2">
+              <Link href="/contact/" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 Call Now
               </Link>
@@ -69,7 +69,7 @@ export default function ServiceHero({
               variant="outline"
               className="border-white bg-white text-primary hover:bg-white/90 hover:text-primary"
             >
-              <Link href="/contact" className="flex items-center gap-2">
+              <Link href="/contact/" className="flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Get Free Quote
               </Link>

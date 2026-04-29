@@ -356,7 +356,7 @@ export default function AboutPage() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg">
-                  <Link href="/contact">
+                  <Link href="/contact/">
                     Get Free Estimate <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>

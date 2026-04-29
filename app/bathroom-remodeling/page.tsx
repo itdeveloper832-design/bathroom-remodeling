@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Bathroom Remodeling Services in Chandler AZ | ARZ Home Remodeling',
     description: 'Transform your space with the best bathroom remodeling team in Chandler. Licensed AZ contractor, fixed pricing, 2-year warranty.',
-    url: `${siteConfig.url}/bathroom-remodeling`,
+    url: `${siteConfig.url}/bathroom-remodeling/`,
     images: [
       {
         url: `${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`,
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/bathroom-remodeling`,
+    canonical: `${siteConfig.url}/bathroom-remodeling/`,
   },
 }
 
@@ -64,7 +64,7 @@ export default function BathroomRemodelingPage() {
       <ServiceSchema
         serviceName="Bathroom Remodeling Services in Chandler, Arizona"
         serviceDescription="Comprehensive renovation services including custom showers, bathtub installation, vanity upgrades, tile work, flooring, and complete bathroom makeovers. Serving Chandler, Arizona and surrounding areas."
-        serviceUrl={`${siteConfig.url}/bathroom-remodeling`}
+        serviceUrl={`${siteConfig.url}/bathroom-remodeling/`}
       />
       <FAQSchema faqs={serviceFaqs} />
       <Header />
@@ -88,7 +88,7 @@ export default function BathroomRemodelingPage() {
                 </p>
               </div>
               <Link
-                href="/bathroom-remodeling-chandler-az"
+                href="/bathroom-remodeling-chandler-az/"
                 className="inline-flex items-center gap-2 bg-primary-foreground text-primary font-semibold rounded-xl px-6 py-3 hover:bg-primary-foreground/90 transition-colors whitespace-nowrap"
               >
                 Bathroom Remodeling Chandler AZ <ArrowRight className="w-4 h-4" />
@@ -125,19 +125,19 @@ export default function BathroomRemodelingPage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-2xl font-semibold text-center mb-6 text-foreground">Explore Specific Services</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <Link href="/bathroom-remodeling-chandler-az" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
+              <Link href="/bathroom-remodeling-chandler-az/" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">Chandler Landing Page</p>
                 <p className="text-muted-foreground text-xs mt-1">Full local SEO page</p>
               </Link>
-              <Link href="/shower-remodeling" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
+              <Link href="/shower-remodeling/" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">Shower Remodeling in Chandler</p>
                 <p className="text-muted-foreground text-xs mt-1">Walk-ins, frameless glass</p>
               </Link>
-              <Link href="/tub-to-shower-conversion" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
+              <Link href="/tub-to-shower-conversion/" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">Tub-to-Shower Conversion</p>
                 <p className="text-muted-foreground text-xs mt-1">From $6,000</p>
               </Link>
-              <Link href="/master-bathroom-remodel" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
+              <Link href="/master-bathroom-remodel/" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">Master Bathroom Remodel</p>
                 <p className="text-muted-foreground text-xs mt-1">Full-scope renovations</p>
               </Link>

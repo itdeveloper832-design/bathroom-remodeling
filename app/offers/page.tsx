@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Special Offers - Bathroom Remodeling",
     description: "Exclusive bathroom remodeling offers and promotions in Chandler, Arizona.",
-    url: `${siteConfig.url}/offers`,
+    url: `${siteConfig.url}/offers/`,
     type: "website",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/offers`,
+    canonical: `${siteConfig.url}/offers/`,
   },
 };
 
@@ -146,7 +146,7 @@ export default function OffersPage() {
                   </div>
 
                   <Button asChild className="w-full bg-primary hover:bg-primary/90">
-                    <Link href="/contact">{offer.cta}</Link>
+                    <Link href="/contact/">{offer.cta}</Link>
                   </Button>
                 </div>
               ))}

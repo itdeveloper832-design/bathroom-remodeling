@@ -43,7 +43,7 @@ export default function ServicesPage() {
                 to complete master bath overhauls. Enjoy affordable, high-quality renovations tailored to your style.
               </p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link href="/contact">Get Free Estimate</Link>
+                <Link href="/contact/">Get Free Estimate</Link>
               </Button>
             </div>
           </div>
@@ -89,10 +89,10 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-                <Link href="/contact">Get Free Estimate</Link>
+                <Link href="/contact/">Get Free Estimate</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                <Link href="/bathroom-remodeling">Learn About Full Remodels</Link>
+                <Link href="/bathroom-remodeling/">Learn About Full Remodels</Link>
               </Button>
             </div>
           </div>

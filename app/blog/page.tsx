@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bathroom Remodeling Blog Chandler AZ | Tips",
     description: "Expert bathroom remodeling tips and design ideas from Chandler, AZ contractors.",
-    url: `${siteConfig.url}/blog`,
+    url: `${siteConfig.url}/blog/`,
     type: "website",
     images: [
       {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/blog`,
+    canonical: `${siteConfig.url}/blog/`,
   },
 }
 

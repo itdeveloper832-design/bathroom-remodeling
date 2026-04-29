@@ -154,7 +154,7 @@ export default function BlogContent() {
                     transition={{ duration: 0.6 }}
                     className="mb-16"
                   >
-                    <Link href={`/blog/${featuredPost.slug}`} className="group block">
+                    <Link href={`/blog/${featuredPost.slug}/`} className="group block">
                       <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div className="relative aspect-[16/10] overflow-hidden rounded-lg">
                           <Image
@@ -214,7 +214,7 @@ export default function BlogContent() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                     >
-                      <Link href={`/blog/${post.slug}`} className="group block">
+                      <Link href={`/blog/${post.slug}/`} className="group block">
                         <div className="relative aspect-[16/10] overflow-hidden rounded-lg mb-4">
                           <Image
                             src={post.featuredImage || "/images/blog-placeholder.jpg"}

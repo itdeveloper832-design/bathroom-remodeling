@@ -355,17 +355,17 @@ const serviceContent: Record<string, ServiceDetail> = {
       services: [
         {
           name: "Walk-in Shower Installation",
-          href: "/walk-in-shower-installation",
+          href: "/walk-in-shower-installation/",
           description: "Accessible, curbless walk-in showers for safer bathing",
         },
         {
           name: "Bathroom Tile Installation",
-          href: "/bathroom-tile-installation",
+          href: "/bathroom-tile-installation/",
           description: "Expert tile work for showers, floors, and walls",
         },
         {
           name: "Bathtub Replacement",
-          href: "/bathtub-replacement",
+          href: "/bathtub-replacement/",
           description: "Convert your old tub to a modern shower",
         },
       ],
@@ -515,17 +515,17 @@ const serviceContent: Record<string, ServiceDetail> = {
       services: [
         {
           name: "Bathtub Replacement",
-          href: "/bathtub-replacement",
+          href: "/bathtub-replacement/",
           description: "Replace your old tub with a modern upgrade",
         },
         {
           name: "Shower Remodeling",
-          href: "/shower-remodeling",
+          href: "/shower-remodeling/",
           description: "Convert your tub to a custom shower",
         },
         {
           name: "Bathroom Tile Installation",
-          href: "/bathroom-tile-installation",
+          href: "/bathroom-tile-installation/",
           description: "Professional tile work for tub surrounds",
         },
       ],
@@ -675,17 +675,17 @@ const serviceContent: Record<string, ServiceDetail> = {
       services: [
         {
           name: "Bathtub Installation",
-          href: "/bathtub-installation",
+          href: "/bathtub-installation/",
           description: "New bathtub installation for remodels",
         },
         {
           name: "Walk-in Shower Installation",
-          href: "/walk-in-shower-installation",
+          href: "/walk-in-shower-installation/",
           description: "Convert your tub to an accessible shower",
         },
         {
           name: "Bathroom Vanity Installation",
-          href: "/bathroom-vanity-installation",
+          href: "/bathroom-vanity-installation/",
           description: "Complete your bathroom update with a new vanity",
         },
       ],
@@ -835,17 +835,17 @@ const serviceContent: Record<string, ServiceDetail> = {
       services: [
         {
           name: "Shower Remodeling",
-          href: "/shower-remodeling",
+          href: "/shower-remodeling/",
           description: "Complete shower renovations and upgrades",
         },
         {
           name: "Bathroom Tile Installation",
-          href: "/bathroom-tile-installation",
+          href: "/bathroom-tile-installation/",
           description: "Slip-resistant tile for walk-in showers",
         },
         {
           name: "Bathtub Replacement",
-          href: "/bathtub-replacement",
+          href: "/bathtub-replacement/",
           description: "Replace your tub with a walk-in shower",
         },
       ],
@@ -995,17 +995,17 @@ const serviceContent: Record<string, ServiceDetail> = {
       services: [
         {
           name: "Shower Remodeling",
-          href: "/shower-remodeling",
+          href: "/shower-remodeling/",
           description: "Custom tile showers with premium finishes",
         },
         {
           name: "Walk-in Shower Installation",
-          href: "/walk-in-shower-installation",
+          href: "/walk-in-shower-installation/",
           description: "Accessible showers with slip-resistant tile",
         },
         {
           name: "Bathroom Vanity Installation",
-          href: "/bathroom-vanity-installation",
+          href: "/bathroom-vanity-installation/",
           description: "Vanity backsplash tile installation",
         },
       ],
@@ -1155,17 +1155,17 @@ const serviceContent: Record<string, ServiceDetail> = {
       services: [
         {
           name: "Bathroom Tile Installation",
-          href: "/bathroom-tile-installation",
+          href: "/bathroom-tile-installation/",
           description: "Tile backsplashes for your new vanity",
         },
         {
           name: "Shower Remodeling",
-          href: "/shower-remodeling",
+          href: "/shower-remodeling/",
           description: "Complete your bathroom with a shower upgrade",
         },
         {
           name: "Bathtub Installation",
-          href: "/bathtub-installation",
+          href: "/bathtub-installation/",
           description: "Coordinate your vanity with a new tub",
         },
       ],

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms of Service - ARZ Home Remodeling",
     description: "Read our terms and conditions for using our services.",
-    url: `${siteConfig.url}/terms-of-service`,
+    url: `${siteConfig.url}/terms-of-service/`,
     type: "website",
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/terms-of-service`,
+    canonical: `${siteConfig.url}/terms-of-service/`,
   },
 }
 

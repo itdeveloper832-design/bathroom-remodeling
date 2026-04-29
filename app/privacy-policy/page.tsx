@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Privacy Policy - ARZ Home Remodeling",
     description: "Learn how we collect, use and protect your personal information.",
-    url: `${siteConfig.url}/privacy-policy`,
+    url: `${siteConfig.url}/privacy-policy/`,
     type: "website",
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/privacy-policy`,
+    canonical: `${siteConfig.url}/privacy-policy/`,
   },
 }
 

@@ -46,7 +46,7 @@ export default function AreaSpecificPages() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link
-                  href={`/bathroom-remodeling-${area.slug}`}
+                  href={`/bathroom-remodeling-${area.slug}/`}
                   className="group relative block h-full rounded-lg border-2 border-primary/20 p-8 transition-all duration-300 hover:border-primary hover:shadow-lg hover:bg-primary/5"
                 >
                   <div className="flex items-center justify-between mb-4">
@@ -76,7 +76,7 @@ export default function AreaSpecificPages() {
               We serve all of Chandler and the surrounding Phoenix area. Contact us today to discuss your bathroom remodeling project.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
             >
               Get in Touch <ArrowRight className="w-4 h-4" />

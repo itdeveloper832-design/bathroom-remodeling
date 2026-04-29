@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
     description:
       "Licensed Chandler bathroom contractors. Walk-in showers, tub conversions, master bath renovations. Free estimates.",
-    url: `${siteConfig.url}/bathroom-remodeling-chandler-az`,
+    url: `${siteConfig.url}/bathroom-remodeling-chandler-az/`,
     type: "website",
     images: [
       {
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/bathroom-remodeling-chandler-az`,
+    canonical: `${siteConfig.url}/bathroom-remodeling-chandler-az/`,
   },
 };
 
@@ -104,21 +104,21 @@ const chandlerFaqs = [
 const services = [
   {
     title: "Walk-In Shower Installation",
-    href: "/shower-remodeling",
+    href: "/shower-remodeling/",
     description:
       "We convert outdated tub/shower combos into open, curbless walk-in showers with frameless glass enclosures, custom tile work, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof installation rated for Arizona's temperature swings.",
     price: "From $6,000",
   },
   {
     title: "Tub-to-Shower Conversion",
-    href: "/tub-to-shower-conversion",
+    href: "/tub-to-shower-conversion/",
     description:
       "One of the most requested services in Chandler — especially in homes with unused garden tubs. We remove the existing tub, properly waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds usable space and strong ROI at resale.",
     price: "$6,000–$13,000",
   },
   {
     title: "Complete Master Bathroom Remodel",
-    href: "/master-bathroom-remodel",
+    href: "/master-bathroom-remodel/",
     description:
       "Our master bath remodels typically include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: 3–5 weeks. We handle all plumbing and electrical coordination — no managing multiple contractors.",
     price: "$18,000–$45,000+",
@@ -202,13 +202,13 @@ export default function ChandlerBathroomRemodelingPage() {
       <ServiceSchema
         serviceName="Bathroom Remodeling in Chandler, Arizona"
         serviceDescription="Licensed bathroom remodeling contractor serving Chandler, AZ. Walk-in shower installation, tub-to-shower conversions, master bath renovations, vanity replacement, and complete bathroom remodels. Serving Dobson Ranch, Sun Lakes, Ocotillo, Fulton Ranch, and all of Chandler."
-        serviceUrl={`${siteConfig.url}/bathroom-remodeling-chandler-az`}
+        serviceUrl={`${siteConfig.url}/bathroom-remodeling-chandler-az/`}
       />
       <FAQSchema faqs={chandlerFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling in Chandler AZ"
         priceRange="$4,500 - $45,000+"
-        url={`${siteConfig.url}/bathroom-remodeling-chandler-az`}
+        url={`${siteConfig.url}/bathroom-remodeling-chandler-az/`}
       />
       <Header />
       <main>
@@ -220,7 +220,7 @@ export default function ChandlerBathroomRemodelingPage() {
           image="/images/optimized/photo-1620626011761-996317b8d101.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
-            { name: "Bathroom Remodeling Chandler AZ", url: `${siteConfig.url}/bathroom-remodeling-chandler-az` },
+            { name: "Bathroom Remodeling Chandler AZ", url: `${siteConfig.url}/bathroom-remodeling-chandler-az/` },
           ]}
         />
 
@@ -241,7 +241,7 @@ export default function ChandlerBathroomRemodelingPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href="/contact" className="flex items-center gap-2">
+                <Link href="/contact/" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   Get a Free Estimate
                 </Link>
@@ -370,7 +370,7 @@ export default function ChandlerBathroomRemodelingPage() {
               ))}
             </div>
             <div className="text-center">
-              <Link href="/bathroom-remodeling-cost-chandler-az" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
+              <Link href="/bathroom-remodeling-cost-chandler-az/" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
                 View our full Chandler cost guide <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -416,10 +416,10 @@ export default function ChandlerBathroomRemodelingPage() {
               ))}
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-              <Link href="/bathroom-remodeling-gilbert-az" className="hover:text-primary transition-colors">Bathroom Remodeling Gilbert AZ →</Link>
-              <Link href="/bathroom-remodeling-mesa-az" className="hover:text-primary transition-colors">Bathroom Remodeling Mesa AZ →</Link>
-              <Link href="/bathroom-remodeling-ocotillo" className="hover:text-primary transition-colors">Ocotillo Bathroom Remodeling →</Link>
-              <Link href="/bathroom-remodeling-sun-lakes" className="hover:text-primary transition-colors">Sun Lakes Bathroom Remodeling →</Link>
+              <Link href="/bathroom-remodeling-gilbert-az/" className="hover:text-primary transition-colors">Bathroom Remodeling Gilbert AZ →</Link>
+              <Link href="/bathroom-remodeling-mesa-az/" className="hover:text-primary transition-colors">Bathroom Remodeling Mesa AZ →</Link>
+              <Link href="/bathroom-remodeling-ocotillo/" className="hover:text-primary transition-colors">Ocotillo Bathroom Remodeling →</Link>
+              <Link href="/bathroom-remodeling-sun-lakes/" className="hover:text-primary transition-colors">Sun Lakes Bathroom Remodeling →</Link>
             </div>
           </div>
         </section>
@@ -429,15 +429,15 @@ export default function ChandlerBathroomRemodelingPage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-2xl font-semibold text-foreground text-center mb-8">Explore Our Services</h2>
             <div className="grid sm:grid-cols-3 gap-4">
-              <Link href="/shower-remodeling" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
+              <Link href="/shower-remodeling/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
                 <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Shower Remodeling in Chandler</p>
                 <p className="text-muted-foreground text-sm mt-1">Walk-ins, frameless glass, custom tile</p>
               </Link>
-              <Link href="/tub-to-shower-conversion" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
+              <Link href="/tub-to-shower-conversion/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
                 <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Tub-to-Shower Conversion</p>
                 <p className="text-muted-foreground text-sm mt-1">Remove the tub, gain a custom shower</p>
               </Link>
-              <Link href="/master-bathroom-remodel" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
+              <Link href="/master-bathroom-remodel/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
                 <p className="font-semibold text-foreground group-hover:text-primary transition-colors">Master Bathroom Remodel</p>
                 <p className="text-muted-foreground text-sm mt-1">Full-scope master suite transformations</p>
               </Link>

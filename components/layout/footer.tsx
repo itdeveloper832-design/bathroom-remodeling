@@ -68,7 +68,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/bathroom-remodeling"
+                  href="/bathroom-remodeling/"
                   className="text-background/70 hover:text-primary transition-colors text-sm"
                 >
                   Bathroom Remodeling Chandler AZ
@@ -76,7 +76,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/shower-remodeling"
+                  href="/shower-remodeling/"
                   className="text-background/70 hover:text-primary transition-colors text-sm"
                 >
                   Shower Remodeling in Chandler
@@ -84,15 +84,15 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/bathtub-replacement"
+                  href="/bathtub-remodeling/"
                   className="text-background/70 hover:text-primary transition-colors text-sm"
                 >
-                  Bathtub Replacement Chandler
+                  Bathtub Remodeling Chandler
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/walk-in-shower-installation"
+                  href="/walk-in-showers/"
                   className="text-background/70 hover:text-primary transition-colors text-sm"
                 >
                   Walk-in Showers Chandler AZ
@@ -100,7 +100,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/bathroom-tile-installation"
+                  href="/bathroom-tile-installation/"
                   className="text-background/70 hover:text-primary transition-colors text-sm"
                 >
                   Bathroom Tile Contractors
@@ -133,7 +133,7 @@ export function Footer() {
               ))}
               <li>
                 <Link
-                  href="/financing"
+                  href="/financing/"
                   className="text-background/70 hover:text-primary transition-colors text-sm"
                 >
                   Financing Options
@@ -220,13 +220,13 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-6">
               <Link
-                href="/privacy-policy"
+                href="/privacy-policy/"
                 className="text-background/50 hover:text-background/70 transition-colors text-sm"
               >
                 Privacy Policy
               </Link>
               <Link
-                href="/terms-of-service"
+                href="/terms-of-service/"
                 className="text-background/50 hover:text-background/70 transition-colors text-sm"
               >
                 Terms of Service

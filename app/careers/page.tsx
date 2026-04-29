@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Careers - Join Our Team",
     description: "Join our growing team in Chandler, Arizona. We're hiring experienced contractors.",
-    url: `${siteConfig.url}/careers`,
+    url: `${siteConfig.url}/careers/`,
     type: "website",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/careers`,
+    canonical: `${siteConfig.url}/careers/`,
   },
 };
 
@@ -123,7 +123,7 @@ export default function CareersPage() {
                   </div>
 
                   <Button asChild className="bg-primary hover:bg-primary/90">
-                    <Link href="/contact">Apply Now</Link>
+                    <Link href="/contact/">Apply Now</Link>
                   </Button>
                 </div>
               ))}

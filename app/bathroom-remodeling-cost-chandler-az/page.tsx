@@ -29,11 +29,11 @@ export const metadata: Metadata = {
     title: "Bathroom Remodeling Cost Chandler AZ | 2024 Pricing Guide",
     description:
       "Transparent bathroom remodeling pricing for Chandler, AZ homeowners. All project types covered.",
-    url: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az`,
+    url: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az/`,
     type: "website",
   },
   alternates: {
-    canonical: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az`,
+    canonical: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az/`,
   },
 };
 
@@ -166,7 +166,7 @@ export default function CostPage() {
       <ServiceSchema
         serviceName="Bathroom Remodeling Cost Guide — Chandler, AZ"
         serviceDescription="Comprehensive bathroom remodeling cost guide for Chandler, AZ homeowners. Transparent pricing for guest bath updates, full remodels, tub-to-shower conversions, and master bathroom renovations."
-        serviceUrl={`${siteConfig.url}/bathroom-remodeling-cost-chandler-az`}
+        serviceUrl={`${siteConfig.url}/bathroom-remodeling-cost-chandler-az/`}
       />
       <FAQSchema faqs={faqs} />
       <Header />
@@ -178,8 +178,8 @@ export default function CostPage() {
           image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
-            { name: "Bathroom Remodeling Chandler AZ", url: `${siteConfig.url}/bathroom-remodeling-chandler-az` },
-            { name: "Cost Guide", url: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az` },
+            { name: "Bathroom Remodeling Chandler AZ", url: `${siteConfig.url}/bathroom-remodeling-chandler-az/` },
+            { name: "Cost Guide", url: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az/` },
           ]}
         />
 
@@ -197,7 +197,7 @@ export default function CostPage() {
               <p className="text-sm text-muted-foreground">
                 All pricing reflects Chandler, AZ market rates including hard water material requirements. We provide{" "}
                 <strong className="text-foreground">free, itemized written estimates</strong> before any work starts.{" "}
-                <Link href="/contact" className="text-primary hover:underline">
+                <Link href="/contact/" className="text-primary hover:underline">
                   Request yours here.
                 </Link>
               </p>
@@ -319,7 +319,7 @@ export default function CostPage() {
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <Link
-                href="/bathroom-remodeling-chandler-az"
+                href="/bathroom-remodeling-chandler-az/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group flex items-center justify-between"
               >
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">
@@ -328,7 +328,7 @@ export default function CostPage() {
                 <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
               </Link>
               <Link
-                href="/tub-to-shower-conversion"
+                href="/tub-to-shower-conversion/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group flex items-center justify-between"
               >
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">
@@ -337,7 +337,7 @@ export default function CostPage() {
                 <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
               </Link>
               <Link
-                href="/master-bathroom-remodel"
+                href="/master-bathroom-remodel/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group flex items-center justify-between"
               >
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">

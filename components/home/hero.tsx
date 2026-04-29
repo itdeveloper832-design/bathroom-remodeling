@@ -68,7 +68,7 @@ export default function Hero() {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 py-6 focus-visible:outline-2 focus-visible:outline-offset-2"
                 aria-label="Get your free bathroom remodel estimate"
               >
-                <Link href="/contact">Get Your Free Estimate</Link>
+                <Link href="/contact/">Get Your Free Estimate</Link>
               </Button>
               <Button
                 asChild
@@ -77,7 +77,7 @@ export default function Hero() {
                 className="border-black bg-black text-white hover:border-black/90 hover:bg-black/90 hover:text-white text-base px-8 py-6 focus-visible:outline-2 focus-visible:outline-offset-2"
                 aria-label="View our portfolio of completed bathroom remodels"
               >
-                <Link href="/gallery">View Our Portfolio</Link>
+                <Link href="/gallery/">View Our Portfolio</Link>
               </Button>
             </div>
           </div>

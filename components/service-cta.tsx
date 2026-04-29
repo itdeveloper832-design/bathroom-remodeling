@@ -52,7 +52,7 @@ export default function ServiceCTA({
               variant="secondary"
               className="bg-background text-foreground hover:bg-background/90"
             >
-              <Link href="/contact" className="flex items-center gap-2">
+              <Link href="/contact/" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 Call Now
               </Link>
@@ -63,7 +63,7 @@ export default function ServiceCTA({
               variant="outline"
               className="bg-background text-foreground border-primary-foreground hover:bg-background hover:text-primary"
             >
-              <Link href="/contact" className="flex items-center gap-2">
+              <Link href="/contact/" className="flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Get Free Quote
               </Link>

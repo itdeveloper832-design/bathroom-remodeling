@@ -88,7 +88,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <BlogArticleJsonLd
         title={post.title}
         description={post.excerpt}
-        url={`${siteConfig.url}/blog/${post.slug}`}
+        url={`${siteConfig.url}/blog/${post.slug}/`}
         image={post.featuredImage || "/images/blog-placeholder.jpg"}
         datePublished={post.publishedAt || post.createdAt}
         dateModified={post.updatedAt}
@@ -101,7 +101,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="container mx-auto px-4 mt-4">
             <div className="max-w-4xl mx-auto">
               <Link 
-                href="/blog" 
+                href="/blog/" 
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
               >
                 <ArrowLeft className="h-4 w-4" />
@@ -207,7 +207,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg">
-                  <Link href="/contact">Get Free Estimate</Link>
+                  <Link href="/contact/">Get Free Estimate</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href={`tel:${siteConfig.phone}`}>Call {siteConfig.phone}</Link>
@@ -229,7 +229,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   {relatedPosts.map((relatedPost) => (
                     <Link 
                       key={relatedPost.id} 
-                      href={`/blog/${relatedPost.slug}`}
+                      href={`/blog/${relatedPost.slug}/`}
                       className="group block"
                     >
                       <div className="relative aspect-[16/10] overflow-hidden rounded-lg mb-4">

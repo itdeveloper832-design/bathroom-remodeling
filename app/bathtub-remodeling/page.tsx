@@ -79,7 +79,7 @@ export default function BathtubRemodelingPage() {
       <ServiceSchema
         serviceName="Bathtub Remodeling in Chandler, Arizona"
         serviceDescription="Expert tub replacements in Chandler, Arizona. Modern installations, luxury upgrades, and professional renovations."
-        serviceUrl={`${siteConfig.url}/bathtub-remodeling`}
+        serviceUrl={`${siteConfig.url}/bathtub-remodeling/`}
       />
       <FAQSchema faqs={faqs} />
       <Header />
@@ -90,8 +90,8 @@ export default function BathtubRemodelingPage() {
           description="Ready to replace your outdated bathtub or convert that unused garden tub into a walk-in shower? Our licensed Chandler contractors handle tub removal, tub replacement, soaking tub installation, and tub-to-shower conversions with a fixed price and 2-year warranty."
           image="/images/optimized/photo-1600566752355-35792bedcfea.webp"
           breadcrumbs={[
-            { name: "Home", url: siteConfig.url },
-            { name: "Bathtub Remodeling Chandler AZ", url: `${siteConfig.url}/bathtub-remodeling` },
+            { name: "Home", url: `${siteConfig.url}/` },
+            { name: "Bathtub Remodeling Chandler AZ", url: `${siteConfig.url}/bathtub-remodeling/` },
           ]}
         />
 
@@ -212,7 +212,7 @@ export default function BathtubRemodelingPage() {
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <a
-                href="/bathroom-remodeling-chandler-az"
+                href="/bathroom-remodeling-chandler-az/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">
@@ -221,7 +221,7 @@ export default function BathtubRemodelingPage() {
                 <p className="text-muted-foreground text-xs mt-1">Full bathroom renovations — all services</p>
               </a>
               <a
-                href="/shower-remodeling"
+                href="/shower-remodeling/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">
@@ -230,7 +230,7 @@ export default function BathtubRemodelingPage() {
                 <p className="text-muted-foreground text-xs mt-1">Walk-in showers, frameless glass, custom tile</p>
               </a>
               <a
-                href="/tub-to-shower-conversion"
+                href="/tub-to-shower-conversion/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bathroom Remodeling Financing Chandler AZ",
     description: "Flexible financing options with low monthly payments and competitive rates for your bathroom project.",
-    url: `${siteConfig.url}/financing`,
+    url: `${siteConfig.url}/financing/`,
     type: "website",
     images: [
       {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/financing`,
+    canonical: `${siteConfig.url}/financing/`,
   },
 }
 
@@ -116,7 +116,7 @@ export default function FinancingPage() {
               </p>
               <div className="mt-8">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/contact">Apply for Financing</Link>
+                  <Link href="/contact/">Apply for Financing</Link>
                 </Button>
               </div>
             </div>
@@ -249,7 +249,7 @@ export default function FinancingPage() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" variant="secondary">
-                  <Link href="/contact">Get Free Estimate</Link>
+                  <Link href="/contact/">Get Free Estimate</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                   <a href={`tel:${siteConfig.phone}`}>Call {siteConfig.phone}</a>

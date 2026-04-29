@@ -66,7 +66,7 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <Button asChild className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-6 font-semibold">
-              <Link href="/contact">Free Estimate</Link>
+              <Link href="/contact/">Free Estimate</Link>
             </Button>
           </div>
 
@@ -111,7 +111,7 @@ export function Header() {
                   {siteConfig.phone}
                 </a>
                 <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/contact">Get Free Estimate</Link>
+                  <Link href="/contact/">Get Free Estimate</Link>
                 </Button>
               </div>
             </nav>

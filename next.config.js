@@ -42,7 +42,6 @@ const nextConfig = {
 
   // Production optimizations
   productionBrowserSourceMaps: false,
-  swcMinify: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },

@@ -1,15 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Output configuration - 'standalone' for cPanel, 'export' for static hosts
-  output: 'export',
+  // Output configuration - 'standalone' is better for performance and image optimization
+  // Switch to 'export' only if your host doesn't support Node.js
+  output: 'standalone',
 
   // Trailing slash ensures static export URLs match canonical tags
-  // Apache serves /page/ (with slash) for index.html files, so canonicals must match
   trailingSlash: true,
 
-  // Image Optimization - disable for static export
+  // Image Optimization - Enable for better performance
   images: {
-    unoptimized: true,
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -22,18 +22,30 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
 
-  // Compression
+  // Compression enabled by default
   compress: true,
 
-  // Performance optimizations for Next.js 16+
+  // Performance optimizations
   experimental: {
-    optimizePackageImports: ['@/components/ui', '@/lib'],
+    optimizePackageImports: [
+      '@/components/ui', 
+      '@/lib',
+      'lucide-react',
+      'framer-motion',
+      'date-fns'
+    ],
   },
 
   // Production optimizations
   productionBrowserSourceMaps: false,
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
 
 
   // Page extensions

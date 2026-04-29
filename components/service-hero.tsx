@@ -1,9 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface ServiceHeroProps {
   title: string;
@@ -24,13 +25,20 @@ export default function ServiceHero({
   const heroImage = image ?? backgroundImage;
 
   return (
-    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32 md:pt-40 lg:pt-48">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
-      <div className="absolute inset-0 bg-black/50" />
+    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32 md:pt-40 lg:pt-48" aria-label={title}>
+      {/* Background Image - LCP Optimized */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={heroImage}
+          alt={title}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+          quality={80}
+        />
+        <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
+      </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center py-16 lg:py-20">

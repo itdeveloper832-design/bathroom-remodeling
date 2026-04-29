@@ -33,60 +33,61 @@ export const metadata: Metadata = {
 };
 
 // Lazy load below-the-fold components for better code splitting
+// Lazy load below-the-fold components for better code splitting
 const AboutPreview = dynamic(() => import("@/components/home/about-preview"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const ServicesGrid = dynamic(() => import("@/components/home/services-grid"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const Testimonials = dynamic(() => import("@/components/home/testimonials"), { 
-  loading: () => <div className="h-80" />,
-  ssr: true 
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
+  ssr: false // Client-side heavy, not critical for initial SEO
 });
 const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), { 
-  loading: () => <div className="h-80" />,
-  ssr: true 
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
+  ssr: false // Heavy image gallery
 });
 const ProcessSection = dynamic(() => import("@/components/home/process-section"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const ServiceAreas = dynamic(() => import("@/components/home/service-areas"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const Financing = dynamic(() => import("@/components/home/financing"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const FAQ = dynamic(() => import("@/components/home/faq"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const BlogPreview = dynamic(() => import("@/components/home/blog-preview"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const ContactSection = dynamic(() => import("@/components/home/contact-section"), { 
-  loading: () => <div className="h-80" />,
-  ssr: true 
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
+  ssr: false // Includes form and complex logic
 });
 const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"), { 
-  loading: () => <div className="h-80" />,
+  loading: () => <div className="h-80 bg-muted animate-pulse" />,
   ssr: true 
 });
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"), { 
-  loading: () => <div className="h-32" />,
+  loading: () => <div className="h-32 bg-muted animate-pulse" />,
   ssr: true 
 });
 

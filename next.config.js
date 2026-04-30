@@ -1,4 +1,4 @@
-const isExport = process.env.NEXT_OUTPUT === 'export';
+const isExport = process.env.NEXT_OUTPUT === 'export' || true; // Defaulting to true for cPanel FTP compatibility
 console.log('Next.js Build Mode:', isExport ? 'export' : 'standalone');
 
 /** @type {import('next').NextConfig} */

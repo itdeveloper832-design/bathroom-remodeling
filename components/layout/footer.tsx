@@ -1,3 +1,5 @@
+"use client";
+
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";

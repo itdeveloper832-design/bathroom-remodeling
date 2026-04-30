@@ -38,7 +38,6 @@ const nextConfig = {
       '@/components/ui', 
       '@/lib',
       'lucide-react',
-      'framer-motion',
       'date-fns'
     ],
   },

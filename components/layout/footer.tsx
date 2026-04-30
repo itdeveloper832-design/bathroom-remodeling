@@ -36,7 +36,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2"
-                aria-label="Visit our Facebook page"
+                aria-label="Follow ARZ Home Remodeling on Facebook"
               >
                 <Facebook className="w-5 h-5" aria-hidden="true" />
               </a>
@@ -45,7 +45,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2"
-                aria-label="Visit our Instagram page"
+                aria-label="Follow ARZ Home Remodeling on Instagram"
               >
                 <Instagram className="w-5 h-5" aria-hidden="true" />
               </a>
@@ -54,7 +54,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2"
-                aria-label="Visit our YouTube channel"
+                aria-label="Watch our remodeling projects on YouTube"
               >
                 <Youtube className="w-5 h-5" aria-hidden="true" />
               </a>
@@ -63,7 +63,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2"
-                aria-label="Visit our LinkedIn business page"
+                aria-label="Connect with ARZ Home Remodeling on LinkedIn"
               >
                 <Linkedin className="w-5 h-5" aria-hidden="true" />
               </a>
@@ -77,7 +77,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/bathroom-remodeling/"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-background/80 hover:text-primary transition-colors text-sm"
                 >
                   Bathroom Remodeling Chandler AZ
                 </Link>
@@ -85,7 +85,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/shower-remodeling/"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-background/80 hover:text-primary transition-colors text-sm"
                 >
                   Shower Remodeling in Chandler
                 </Link>
@@ -93,7 +93,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/bathtub-remodeling/"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-background/80 hover:text-primary transition-colors text-sm"
                 >
                   Bathtub Remodeling Chandler
                 </Link>
@@ -101,7 +101,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/walk-in-showers/"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-background/80 hover:text-primary transition-colors text-sm"
                 >
                   Walk-in Showers Chandler AZ
                 </Link>
@@ -109,7 +109,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/bathroom-tile-installation/"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-background/80 hover:text-primary transition-colors text-sm"
                 >
                   Bathroom Tile Contractors
                 </Link>
@@ -124,7 +124,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-background/80 hover:text-primary transition-colors text-sm"
                 >
                   Bathroom Remodeling in Chandler AZ
                 </Link>
@@ -133,7 +133,7 @@ export function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-background/70 hover:text-primary transition-colors text-sm"
+                    className="text-background/80 hover:text-primary transition-colors text-sm"
                   >
                     {item.name}
                   </Link>
@@ -142,7 +142,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/financing/"
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-background/80 hover:text-primary transition-colors text-sm"
                 >
                   Financing Options
                 </Link>
@@ -156,7 +156,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                <span className="text-background/70 text-sm">
+                <span className="text-background/80 text-sm leading-relaxed">
                   {siteConfig.address.full}
                 </span>
               </li>
@@ -164,7 +164,7 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a
                   href={`tel:${siteConfig.phone}`}
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-background/80 hover:text-primary transition-colors text-sm"
                 >
                   {siteConfig.phone}
                 </a>
@@ -173,14 +173,14 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="text-background/70 hover:text-primary transition-colors text-sm"
+                  className="text-background/80 hover:text-primary transition-colors text-sm"
                 >
                   {siteConfig.email}
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                <div className="text-background/70 text-sm">
+                <div className="text-background/80 text-sm">
                   <p>Mon-Fri: {siteConfig.hours.weekdays}</p>
                   <p>Sat: {siteConfig.hours.saturday}</p>
                   <p>Sun: {siteConfig.hours.sunday}</p>
@@ -198,10 +198,10 @@ export function Footer() {
       <div className="border-t border-background/10">
         <div className="container mx-auto px-4 lg:px-8 py-8">
           <div className="text-center">
-            <h4 className="text-sm font-medium text-background/60 mb-3">
+            <h4 className="text-sm font-medium text-background/70 mb-3">
               Proudly Serving
             </h4>
-            <p className="text-background/70 text-sm">
+            <p className="text-background/80 text-sm leading-relaxed">
               {siteConfig.serviceAreas.join(" • ")}
             </p>
           </div>
@@ -212,25 +212,25 @@ export function Footer() {
       <div className="border-t border-background/10">
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-background/50 text-sm">
+            <p className="text-background/70 text-sm">
               © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <Link
                 href="/privacy-policy/"
-                className="text-background/50 hover:text-background/70 transition-colors text-sm"
+                className="text-background/70 hover:text-background transition-colors text-sm"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/terms-of-service/"
-                className="text-background/50 hover:text-background/70 transition-colors text-sm"
+                className="text-background/70 hover:text-background transition-colors text-sm"
               >
                 Terms of Service
               </Link>
               <Link
                 href="/sitemap.xml"
-                className="text-background/50 hover:text-background/70 transition-colors text-sm"
+                className="text-background/70 hover:text-background transition-colors text-sm"
               >
                 Sitemap
               </Link>
@@ -238,6 +238,7 @@ export function Footer() {
           </div>
         </div>
       </div>
+
     </footer>
   );
 }

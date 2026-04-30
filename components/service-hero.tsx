@@ -1,10 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
-import { motion } from "framer-motion";
 
 interface ServiceHeroProps {
   title: string;
@@ -41,22 +38,17 @@ export default function ServiceHero({
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center py-16 lg:py-20">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto"
-        >
+      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center py-16 lg:py-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <div className="max-w-4xl mx-auto">
           {subtitle && (
-            <p className="text-primary-foreground/90 text-sm uppercase tracking-wider mb-4">
+            <p className="text-primary-foreground text-sm uppercase tracking-wider mb-4 font-medium">
               {subtitle}
             </p>
           )}
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             {title}
           </h1>
-          <p className="text-white/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
             {description}
           </p>
           
@@ -64,10 +56,11 @@ export default function ServiceHero({
             <Button
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground min-w-[200px]"
+              aria-label="Call our bathroom remodeling team"
             >
               <Link href="/contact/" className="flex items-center gap-2">
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5" aria-hidden="true" />
                 Call Now
               </Link>
             </Button>
@@ -75,15 +68,16 @@ export default function ServiceHero({
               asChild
               size="lg"
               variant="outline"
-              className="border-white bg-white text-primary hover:bg-white/90 hover:text-primary"
+              className="border-white bg-white text-primary hover:bg-white/90 hover:text-primary min-w-[200px]"
+              aria-label="Request a free estimate for your project"
             >
               <Link href="/contact/" className="flex items-center gap-2">
-                <MessageCircle className="w-5 h-5" />
+                <MessageCircle className="w-5 h-5" aria-hidden="true" />
                 Get Free Quote
               </Link>
             </Button>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

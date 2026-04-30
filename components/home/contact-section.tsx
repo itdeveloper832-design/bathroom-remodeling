@@ -1,8 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, Send, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,8 +18,6 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import { createLead } from "@/lib/actions/leads";
 
 export default function ContactSection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
@@ -60,15 +56,11 @@ export default function ContactSection() {
   };
 
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-secondary">
+    <section className="py-20 lg:py-32 bg-secondary overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Contact Info Side */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7 }}
-          >
+          <div className="animate-in fade-in slide-in-from-left-4 duration-1000">
             <span className="text-primary text-sm font-medium tracking-wider uppercase">
               Contact Us
             </span>
@@ -84,13 +76,14 @@ export default function ContactSection() {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <Phone className="w-6 h-6 text-primary" />
+                  <Phone className="w-6 h-6 text-primary" aria-hidden="true" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                   <a
                     href={`tel:${siteConfig.phone}`}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 rounded"
+                    aria-label={`Call us at ${siteConfig.phone}`}
                   >
                     {siteConfig.phone}
                   </a>
@@ -99,13 +92,14 @@ export default function ContactSection() {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <Mail className="w-6 h-6 text-primary" />
+                  <Mail className="w-6 h-6 text-primary" aria-hidden="true" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email</h3>
                   <a
                     href={`mailto:${siteConfig.email}`}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 rounded"
+                    aria-label={`Email us at ${siteConfig.email}`}
                   >
                     {siteConfig.email}
                   </a>
@@ -114,7 +108,7 @@ export default function ContactSection() {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <MapPin className="w-6 h-6 text-primary" />
+                  <MapPin className="w-6 h-6 text-primary" aria-hidden="true" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Address</h3>
@@ -124,7 +118,7 @@ export default function ContactSection() {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <Clock className="w-6 h-6 text-primary" />
+                  <Clock className="w-6 h-6 text-primary" aria-hidden="true" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Hours</h3>
@@ -134,19 +128,15 @@ export default function ContactSection() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Form Side */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.2 }}
-          >
-            <div className="bg-card border border-border rounded-2xl p-8 lg:p-10">
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
+            <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 shadow-sm">
               {isSubmitted ? (
                 <div className="text-center py-12">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <Send className="w-8 h-8 text-primary" />
+                    <Send className="w-8 h-8 text-primary" aria-hidden="true" />
                   </div>
                   <h3 className="font-serif text-2xl font-semibold mb-3 text-foreground">
                     Thank You!
@@ -157,6 +147,7 @@ export default function ContactSection() {
                   <Button
                     onClick={() => setIsSubmitted(false)}
                     variant="outline"
+                    aria-label="Send another message"
                   >
                     Send Another Message
                   </Button>
@@ -179,7 +170,7 @@ export default function ContactSection() {
                           name="name"
                           placeholder="John Smith"
                           required
-                          className="bg-background"
+                          className="bg-background h-11"
                         />
                       </div>
                       <div className="space-y-2">
@@ -190,7 +181,7 @@ export default function ContactSection() {
                           type="tel"
                           placeholder="(229) 306-5591"
                           required
-                          className="bg-background"
+                          className="bg-background h-11"
                         />
                       </div>
                     </div>
@@ -203,14 +194,14 @@ export default function ContactSection() {
                         type="email"
                         placeholder="john@example.com"
                         required
-                        className="bg-background"
+                        className="bg-background h-11"
                       />
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="contact-service">Service Interested In</Label>
                       <Select name="service" required>
-                        <SelectTrigger className="bg-background" id="contact-service">
+                        <SelectTrigger className="bg-background h-11" id="contact-service" aria-label="Select a service">
                           <SelectValue placeholder="Select a service" />
                         </SelectTrigger>
                         <SelectContent>
@@ -231,20 +222,21 @@ export default function ContactSection() {
                         name="message"
                         placeholder="Describe your project goals, timeline, and any specific requirements..."
                         rows={4}
-                        className="bg-background resize-none"
+                        className="bg-background resize-none min-h-[120px]"
                         required
                       />
                     </div>
 
                     {error && (
-                      <p className="text-sm text-destructive">{error}</p>
+                      <p className="text-sm text-destructive" role="alert">{error}</p>
                     )}
 
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold h-12"
                       disabled={isSubmitting}
+                      aria-label="Submit your free estimate request"
                     >
                       {isSubmitting ? (
                         <>
@@ -262,7 +254,7 @@ export default function ContactSection() {
                 </>
               )}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -2,11 +2,8 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-
-// Note: Metadata for this page is in app/gallery/layout.tsx
 import { getFeaturedGalleryItems } from "@/lib/actions/gallery"
 import type { GalleryItem } from "@/lib/types"
 import { Button } from "@/components/ui/button"
@@ -30,7 +27,6 @@ export default function GalleryPage() {
   useEffect(() => {
     async function fetchData() {
       const data = await getFeaturedGalleryItems()
-      // If no items from database, use default gallery items
       if (data.length === 0) {
         const defaultItems = defaultGalleryItems.map((item, index) => ({
           ...item,
@@ -72,37 +68,33 @@ export default function GalleryPage() {
       <Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="pt-28 md:pt-40 lg:pt-48 pb-24 md:pb-32 bg-secondary">
+        <section className="pt-28 md:pt-40 lg:pt-48 pb-24 md:pb-32 bg-secondary overflow-hidden">
           <div className="container mx-auto px-4 mt-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl mx-auto text-center"
-            >
+            <div className="max-w-3xl mx-auto text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
               <span className="text-sm font-medium tracking-widest text-primary uppercase">
                 Our Work
               </span>
-              <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance">
+              <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance leading-tight">
                 Project Gallery
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
                 Browse our portfolio of completed bathroom remodeling projects. 
                 Each transformation showcases our commitment to quality and craftsmanship.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
         {/* Category Filter */}
-        <section className="py-8 border-b border-border bg-card sticky top-20 z-30">
+        <section className="py-8 border-b border-border bg-card sticky top-20 z-30 shadow-sm">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center gap-2">
               {categories.map((category) => (
                 <Button
                   key={category.value}
                   variant={selectedCategory === category.value ? "default" : "outline"}
-                  size="sm"
+                  size="default"
+                  className="rounded-full h-10 px-6 font-medium"
                   onClick={() => setSelectedCategory(category.value)}
                 >
                   {category.label}
@@ -119,48 +111,45 @@ export default function GalleryPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[...Array(6)].map((_, i) => (
                   <div key={i} className="animate-pulse">
-                    <div className="aspect-[4/3] bg-muted rounded-lg" />
+                    <div className="aspect-[4/3] bg-muted rounded-xl" />
                   </div>
                 ))}
               </div>
             ) : filteredItems.length === 0 ? (
-              <div className="text-center py-16">
-                <p className="text-lg text-muted-foreground">No projects found in this category.</p>
+              <div className="text-center py-16 animate-in fade-in duration-500">
+                <p className="text-lg text-muted-foreground font-serif">No projects found in this category.</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredItems.map((item, index) => (
-                  <motion.div
+                  <div
                     key={item.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="group cursor-pointer"
+                    className="group cursor-pointer animate-in fade-in slide-in-from-bottom-4"
+                    style={{ animationDelay: `${index * 50}ms`, animationFillMode: 'both' }}
                     onClick={() => setSelectedItem(item)}
                   >
-                    <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-md group-hover:shadow-xl transition-all duration-300">
                       <Image
                         src={item.imageUrl}
                         alt={item.title}
                         fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                        loading="lazy"
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                      <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform">
-                        <h3 className="text-white font-serif font-semibold">{item.title}</h3>
-                        <p className="text-white/80 text-sm capitalize">{item.category}</p>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 className="text-white font-serif text-xl font-semibold leading-tight">{item.title}</h3>
+                        <p className="text-white/80 text-sm capitalize mt-1">{item.category}</p>
                       </div>
                       {(item.beforeImage && item.afterImage) && (
-                        <div className="absolute top-4 right-4">
-                          <span className="px-2 py-1 bg-primary text-primary-foreground text-xs font-medium rounded">
+                        <div className="absolute top-4 right-4 z-10">
+                          <span className="px-3 py-1 bg-primary/90 backdrop-blur-sm text-primary-foreground text-xs font-bold rounded-full shadow-sm">
                             Before/After
                           </span>
                         </div>
                       )}
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             )}
@@ -168,79 +157,83 @@ export default function GalleryPage() {
         </section>
 
         {/* Lightbox Modal */}
-        <AnimatePresence>
-          {selectedItem && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+        {selectedItem && (
+          <div
+            className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center animate-in fade-in duration-300"
+            onClick={() => setSelectedItem(null)}
+          >
+            <button
               onClick={() => setSelectedItem(null)}
+              className="absolute top-6 right-6 p-2 text-white/70 hover:text-white transition-colors z-50 rounded-full bg-white/10 hover:bg-white/20"
+              aria-label="Close lightbox"
             >
+              <X className="h-8 w-8" />
+            </button>
+
+            {currentIndex > 0 && (
               <button
-                onClick={() => setSelectedItem(null)}
-                className="absolute top-4 right-4 p-2 text-white hover:text-primary transition-colors z-10"
+                onClick={(e) => { e.stopPropagation(); handlePrev(); }}
+                className="absolute left-6 p-3 text-white/70 hover:text-white transition-colors z-50 rounded-full bg-white/10 hover:bg-white/20"
+                aria-label="Previous image"
               >
-                <X className="h-8 w-8" />
+                <ChevronLeft className="h-10 w-10" />
               </button>
+            )}
 
-              {currentIndex > 0 && (
-                <button
-                  onClick={(e) => { e.stopPropagation(); handlePrev(); }}
-                  className="absolute left-4 p-2 text-white hover:text-primary transition-colors z-10"
-                >
-                  <ChevronLeft className="h-10 w-10" />
-                </button>
-              )}
-
-              {currentIndex < filteredItems.length - 1 && (
-                <button
-                  onClick={(e) => { e.stopPropagation(); handleNext(); }}
-                  className="absolute right-4 p-2 text-white hover:text-primary transition-colors z-10"
-                >
-                  <ChevronRight className="h-10 w-10" />
-                </button>
-              )}
-
-              <div 
-                className="relative max-w-5xl max-h-[85vh] mx-4"
-                onClick={(e) => e.stopPropagation()}
+            {currentIndex < filteredItems.length - 1 && (
+              <button
+                onClick={(e) => { e.stopPropagation(); handleNext(); }}
+                className="absolute right-6 p-3 text-white/70 hover:text-white transition-colors z-50 rounded-full bg-white/10 hover:bg-white/20"
+                aria-label="Next image"
               >
-                <div className="relative aspect-[4/3]">
-                  <Image
-                    src={
-                      showBefore && selectedItem.beforeImage 
-                        ? selectedItem.beforeImage 
-                        : selectedItem.afterImage || selectedItem.imageUrl
-                    }
-                    alt={selectedItem.title}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
+                <ChevronRight className="h-10 w-10" />
+              </button>
+            )}
 
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                  <h3 className="text-white text-xl font-serif font-semibold">{selectedItem.title}</h3>
-                  {selectedItem.description && (
-                    <p className="text-white/80 mt-2">{selectedItem.description}</p>
-                  )}
+            <div 
+              className="relative w-full max-w-5xl max-h-[90vh] mx-4 animate-in fade-in zoom-in-95 duration-300"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-muted/10 shadow-2xl">
+                <Image
+                  src={
+                    showBefore && selectedItem.beforeImage 
+                      ? selectedItem.beforeImage 
+                      : selectedItem.afterImage || selectedItem.imageUrl
+                  }
+                  alt={selectedItem.title}
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+
+              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                  <div>
+                    <h3 className="text-white text-2xl font-serif font-semibold">{selectedItem.title}</h3>
+                    {selectedItem.description && (
+                      <p className="text-white/80 mt-2 max-w-2xl leading-relaxed">{selectedItem.description}</p>
+                    )}
+                  </div>
                   
                   {selectedItem.beforeImage && selectedItem.afterImage && (
                     <Button
                       variant="outline"
-                      size="sm"
-                      className="mt-4 bg-white/10 border-white/30 text-white hover:bg-white/20"
+                      size="default"
+                      className="bg-white/10 border-white/30 text-white hover:bg-white/20 rounded-full px-6"
                       onClick={() => setShowBefore(!showBefore)}
+                      aria-label={showBefore ? "Show After image" : "Show Before image"}
                     >
-                      <ArrowLeftRight className="mr-2 h-4 w-4" />
+                      <ArrowLeftRight className="mr-2 h-4 w-4" aria-hidden="true" />
                       {showBefore ? "Show After" : "Show Before"}
                     </Button>
                   )}
                 </div>
               </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+            </div>
+          </div>
+        )}
       </main>
       <Footer />
     </>

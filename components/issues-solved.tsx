@@ -1,8 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import { CheckCircle } from "lucide-react";
 
 const issues = [
@@ -27,55 +22,36 @@ export default function IssuesSolved({
   description = "Our expert team addresses common bathroom problems with professional solutions.",
   issues: customIssues,
 }: IssuesSolvedProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const issuesToRender = customIssues ?? issues;
 
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-muted/30">
+    <section className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-foreground"
-          >
+        <div className="max-w-4xl mx-auto text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-foreground">
             {title}
-          </motion.h2>
+          </h2>
           {subtitle && (
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.05 }}
-              className="text-primary text-sm font-medium tracking-wider uppercase mb-4"
-            >
+            <p className="text-primary text-sm font-medium tracking-wider uppercase mb-4">
               {subtitle}
-            </motion.p>
+            </p>
           )}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto"
-          >
+          <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
             {description}
-          </motion.p>
+          </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {issuesToRender.map((issue, index) => (
-              <motion.div
+              <div
                 key={typeof issue === "string" ? issue : issue.problem}
-                initial={{ opacity: 0, x: -20 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex items-center gap-3 p-4 bg-background rounded-lg border border-border"
+                className="flex items-center gap-3 p-4 bg-background rounded-lg border border-border animate-in fade-in slide-in-from-left-4"
+                style={{ animationDelay: `${index * 50}ms`, animationFillMode: 'both' }}
               >
-                <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                <span className="text-foreground">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
+                <span className="text-foreground text-left">
                   {typeof issue === "string" ? issue : `${issue.problem} - ${issue.solution}`}
                 </span>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

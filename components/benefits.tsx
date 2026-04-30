@@ -1,8 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import {
   TrendingUp,
   Heart,
@@ -80,20 +75,13 @@ export default function Benefits({
   description = "Discover the many advantages of investing in a professional bathroom remodel.",
   benefits: customBenefits,
 }: BenefitsProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const benefitsToRender = customBenefits ?? benefits;
 
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-muted/30">
+    <section className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
             {subtitle && (
               <p className="text-primary text-sm font-medium tracking-wider uppercase mb-4">
                 {subtitle}
@@ -105,29 +93,27 @@ export default function Benefits({
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               {description}
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefitsToRender.map((benefit, index) => {
               const Icon = resolveIcon(benefit.icon);
               return (
-                <motion.div
-                key={`${benefit.title}-${index}`}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center bg-background rounded-xl p-6 border border-border"
-              >
-                <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Icon className="w-8 h-8 text-primary" />
+                <div
+                  key={`${benefit.title}-${index}`}
+                  className="text-center bg-background rounded-xl p-6 border border-border animate-in fade-in slide-in-from-bottom-4 duration-700"
+                  style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
+                >
+                  <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Icon className="w-8 h-8 text-primary" aria-hidden="true" />
+                  </div>
+                  <h3 className="font-serif text-xl font-semibold mb-3 text-foreground">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {benefit.description}
+                  </p>
                 </div>
-                <h3 className="font-serif text-xl font-semibold mb-3 text-foreground">
-                  {benefit.title}
-                </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {benefit.description}
-                </p>
-              </motion.div>
               );
             })}
           </div>

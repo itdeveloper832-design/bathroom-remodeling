@@ -1,8 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { bathroomServices } from "@/lib/bathroom-services";
@@ -31,20 +26,13 @@ export default function SubServices({
   description = "From complete remodels to specific upgrades, we offer comprehensive bathroom services.",
   services: customServices,
 }: SubServicesProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const servicesToRender = customServices ?? services;
 
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-muted/30">
+    <section className="py-20 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
             {subtitle && (
               <p className="text-primary text-sm font-medium tracking-wider uppercase mb-4">
                 {subtitle}
@@ -56,7 +44,7 @@ export default function SubServices({
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               {description}
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {servicesToRender.map((serviceInput, index) => {
@@ -67,28 +55,27 @@ export default function SubServices({
               if (!service) return null;
               
               const Icon = service.icon as LucideIcon;
+              const serviceName = 'title' in service ? service.title : (service as any).name;
 
               return (
-              <motion.div
-                key={`${'title' in service ? service.title : (service as any).name}-${index}`}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-background rounded-xl p-6 border border-border hover:shadow-lg transition-shadow"
+              <div
+                key={`${serviceName}-${index}`}
+                className="bg-background rounded-xl p-6 border border-border hover:shadow-lg transition-shadow animate-in fade-in slide-in-from-bottom-4 duration-700"
+                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
               >
                 <div className="w-12 h-12 mb-4 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Icon className="w-6 h-6 text-primary" />
+                  <Icon className="w-6 h-6 text-primary" aria-hidden="true" />
                 </div>
                 <h3 className="font-serif text-xl font-semibold mb-3 text-foreground">
-                  {'title' in service ? service.title : (service as any).name}
+                  {serviceName}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                <Button asChild variant="outline" size="sm">
-                  <Link href={service.href ?? "/services"}>Explore {'title' in service ? service.title : (service as any).name}</Link>
+                <Button asChild variant="outline" size="sm" aria-label={`Explore our ${serviceName} services`}>
+                  <Link href={service.href ?? "/services"}>Explore {serviceName}</Link>
                 </Button>
-              </motion.div>
+              </div>
             )})}
           </div>
         </div>

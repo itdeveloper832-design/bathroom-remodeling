@@ -1,8 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import * as Icons from "lucide-react";
 
 type ProcessStep = {
@@ -20,38 +15,20 @@ interface ServiceProcessProps {
 }
 
 export default function ServiceProcess({ title, subtitle, description, steps }: ServiceProcessProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-foreground text-background">
+    <section className="py-20 lg:py-32 bg-foreground text-background">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
-            className="text-primary text-sm font-medium tracking-wider uppercase"
-          >
+        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <span className="text-primary text-sm font-medium tracking-wider uppercase">
             {subtitle}
-          </motion.span>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-background text-balance"
-          >
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-background text-balance">
             {title}
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-background/70 text-lg leading-relaxed"
-          >
+          </h2>
+          <p className="text-background/70 text-lg leading-relaxed">
             {description}
-          </motion.p>
+          </p>
         </div>
 
         {/* Process Steps */}
@@ -59,12 +36,10 @@ export default function ServiceProcess({ title, subtitle, description, steps }: 
           {steps.map((step, index) => {
             const Icon = (Icons as any)[step.icon];
             return (
-              <motion.div
+              <div
                 key={step.number}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative"
+                className="relative animate-in fade-in slide-in-from-bottom-4"
+                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
               >
                 {/* Connector Line */}
                 {index < steps.length - 1 && (
@@ -90,7 +65,7 @@ export default function ServiceProcess({ title, subtitle, description, steps }: 
                     {step.description}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </div>

@@ -1,8 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -51,8 +49,6 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
@@ -64,44 +60,24 @@ export default function Testimonials() {
   };
 
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-secondary">
+    <section className="py-20 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
-            className="text-primary text-sm font-medium tracking-wider uppercase"
-          >
+        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <span className="text-primary text-sm font-medium tracking-wider uppercase">
             Testimonials
-          </motion.span>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance"
-          >
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
             What Our Clients Say
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-muted-foreground text-lg leading-relaxed"
-          >
+          </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed">
             Don&apos;t just take our word for it. Here&apos;s what homeowners throughout Chandler 
             and the surrounding areas have to say about their experience with our expert bathroom remodeling team.
-          </motion.p>
+          </p>
         </div>
 
         {/* Testimonial Slider */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="max-w-4xl mx-auto"
-        >
+        <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
           <div className="relative bg-card border border-border rounded-2xl p-8 lg:p-12">
             {/* Quote Icon */}
             <Quote className="absolute top-8 right-8 w-12 h-12 text-primary/20" />
@@ -184,7 +160,7 @@ export default function Testimonials() {
               </Button>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

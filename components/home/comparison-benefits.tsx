@@ -1,9 +1,4 @@
-"use client";
-
 import { Check, X, Shield, Clock, TrendingUp, Heart } from "lucide-react";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 
 const benefits = [
   {
@@ -38,38 +33,24 @@ const comparisonData = [
 ];
 
 export default function ComparisonBenefits() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-background">
+    <section className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Benefits Column */}
-          <div>
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              className="text-primary text-sm font-medium tracking-wider uppercase"
-            >
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <span className="text-primary text-sm font-medium tracking-wider uppercase">
               Why Remodel Now?
-            </motion.span>
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.1 }}
-              className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-8 text-foreground"
-            >
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-8 text-foreground">
               The Benefits of Professional Remodeling
-            </motion.h2>
+            </h2>
             <div className="grid sm:grid-cols-2 gap-8">
               {benefits.map((benefit, index) => (
-                <motion.div
+                <div
                   key={benefit.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ delay: 0.2 + (index * 0.1) }}
-                  className="space-y-3"
+                  className="space-y-3 animate-in fade-in slide-in-from-bottom-4"
+                  style={{ animationDelay: `${200 + (index * 100)}ms`, animationFillMode: 'both' }}
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                     <benefit.icon className="w-6 h-6 text-primary" />
@@ -80,18 +61,13 @@ export default function ComparisonBenefits() {
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {benefit.description}
                   </p>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
 
           {/* Comparison Table */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="bg-card border border-border rounded-2xl p-8 lg:p-12 shadow-2xl relative overflow-hidden"
-          >
+          <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 shadow-2xl relative overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-400">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 -mr-16 -mt-16 rounded-full blur-3xl" />
             <h3 className="font-serif text-2xl lg:text-3xl font-semibold mb-8 text-foreground text-center">
               DIY vs. Professional Remodeling
@@ -125,7 +101,7 @@ export default function ComparisonBenefits() {
             <p className="mt-8 text-xs text-muted-foreground text-center italic">
               * Based on industry standards and building codes in Chandler, Arizona.
             </p>
-          </motion.div>
+          </div>
         </div>
 
         {/* Content Depth Expansion - Authority Links */}

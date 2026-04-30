@@ -1,12 +1,13 @@
-"use client";
-
-import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
-import { QuoteForm } from "@/components/forms/quote-form";
+
+const QuoteForm = dynamic(() => import("@/components/forms/quote-form").then(mod => mod.QuoteForm), {
+  loading: () => <div className="h-[500px] bg-card/50 animate-pulse rounded-xl" />
+});
 
 interface ServiceHeroProps {
   title: string;
@@ -45,13 +46,7 @@ export default function ServiceHero({
           {/* Left Column - Hero Content */}
           <div className="lg:col-span-2">
             {/* Breadcrumbs */}
-            <motion.nav
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="mb-6"
-              aria-label="Breadcrumb"
-            >
+            <nav className="mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700" aria-label="Breadcrumb">
               <ol className="flex items-center gap-2 text-sm text-background/60">
                 {breadcrumbs.map((item, index) => (
                   <li key={item.url} className="flex items-center gap-2">
@@ -66,45 +61,25 @@ export default function ServiceHero({
                   </li>
                 ))}
               </ol>
-            </motion.nav>
+            </nav>
 
             {/* Subtitle */}
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-primary text-sm font-medium tracking-wider uppercase"
-            >
+            <span className="text-primary text-sm font-medium tracking-wider uppercase animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
               {subtitle}
-            </motion.span>
+            </span>
 
             {/* Headline */}
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mt-4 mb-6 text-balance"
-            >
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mt-4 mb-6 text-balance animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
               {title}
-            </motion.h1>
+            </h1>
 
             {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed"
-            >
+            <p className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
               {description}
-            </motion.p>
+            </p>
 
             {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4"
-            >
+            <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
               <Button
                 asChild
                 size="lg"
@@ -120,18 +95,13 @@ export default function ServiceHero({
               >
                 <a href={`tel:${siteConfig.phone}`}>Call {siteConfig.phone}</a>
               </Button>
-            </motion.div>
+            </div>
           </div>
 
           {/* Right Column - Quote Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="lg:block"
-          >
+          <div className="lg:block">
             <QuoteForm />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

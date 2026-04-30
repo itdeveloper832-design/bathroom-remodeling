@@ -1,8 +1,4 @@
-"use client";
-
-import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const faqs = [
   // HOMEPAGE CLUSTER — bathroom remodel chandler az
@@ -51,56 +47,13 @@ const faqs = [
   },
 ];
 
-function FAQItem({ question, answer, isOpen, onToggle }: {
-  question: string;
-  answer: string;
-  isOpen: boolean;
-  onToggle: () => void;
-}) {
-  return (
-    <div className="bg-card border border-border rounded-xl overflow-hidden">
-      <button
-        onClick={onToggle}
-        className="w-full px-6 py-6 text-left flex items-start justify-between gap-4 hover:bg-muted/50 transition-colors focus:outline-none"
-        aria-expanded={isOpen}
-      >
-        <span className="font-serif text-lg font-medium text-foreground pr-4">
-          {question}
-        </span>
-        <ChevronDown 
-          className={cn(
-            "w-5 h-5 text-muted-foreground transition-transform duration-200 flex-shrink-0 mt-1",
-            isOpen && "rotate-180"
-          )}
-        />
-      </button>
-      <div 
-        className={cn(
-          "overflow-hidden transition-all duration-300 ease-in-out",
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        )}
-      >
-        <div className="px-6 pb-6 text-muted-foreground leading-relaxed">
-          {answer}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <section className="py-20 lg:py-32 bg-secondary">
+    <section className="py-20 lg:py-32 bg-secondary" id="faq">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-12 md:mb-16 lg:mb-20">
+          <div className="text-center mb-12 md:mb-16 lg:mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <span className="text-primary text-sm font-medium tracking-wider uppercase">
               FAQ
             </span>
@@ -115,13 +68,21 @@ export default function FAQ() {
           {/* FAQ List */}
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <FAQItem
+              <details
                 key={index}
-                question={faq.question}
-                answer={faq.answer}
-                isOpen={openIndex === index}
-                onToggle={() => toggleFAQ(index)}
-              />
+                className="group bg-card border border-border rounded-xl overflow-hidden animate-in fade-in slide-in-from-bottom-4"
+                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
+              >
+                <summary className="w-full px-6 py-6 text-left flex items-start justify-between gap-4 cursor-pointer hover:bg-muted/50 transition-colors list-none">
+                  <span className="font-serif text-lg font-medium text-foreground pr-4">
+                    {faq.question}
+                  </span>
+                  <ChevronDown className="w-5 h-5 text-muted-foreground transition-transform duration-200 flex-shrink-0 mt-1 group-open:rotate-180" />
+                </summary>
+                <div className="px-6 pb-6 text-muted-foreground leading-relaxed">
+                  {faq.answer}
+                </div>
+              </details>
             ))}
           </div>
         </div>

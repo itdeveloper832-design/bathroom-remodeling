@@ -1,8 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
@@ -18,20 +13,12 @@ const bathroomFeatures = [
 ];
 
 export default function BathroomSection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-secondary">
+    <section className="py-20 lg:py-32 bg-secondary">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7 }}
-            className="relative"
-          >
+          <div className="relative animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
                 src="/images/bathroom-showcase.jpg"
@@ -41,25 +28,16 @@ export default function BathroomSection() {
               />
             </div>
             {/* Floating Stats Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              className="absolute -bottom-6 -right-6 bg-card border border-border rounded-xl p-6 shadow-xl"
-            >
+            <div className="absolute -bottom-6 -right-6 bg-card border border-border rounded-xl p-6 shadow-xl animate-in fade-in slide-in-from-bottom-4 delay-300">
               <div className="text-center">
                 <span className="block font-serif text-4xl font-bold text-primary">500+</span>
                 <span className="text-sm text-muted-foreground">Bathrooms Transformed</span>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Content Side */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.2 }}
-          >
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
             <span className="text-primary text-sm font-medium tracking-wider uppercase">
               Our Specialty
             </span>
@@ -95,7 +73,7 @@ export default function BathroomSection() {
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

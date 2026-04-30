@@ -1,8 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar } from "lucide-react";
@@ -39,46 +34,24 @@ const blogPosts = [
 ];
 
 export default function BlogPreview() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-background">
+    <section className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 lg:mb-20">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16 lg:mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <div className="max-w-2xl">
-            <motion.span
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5 }}
-              className="text-primary text-sm font-medium tracking-wider uppercase"
-            >
+            <span className="text-primary text-sm font-medium tracking-wider uppercase">
               Our Blog
-            </motion.span>
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance"
-            >
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">
               Remodeling Tips & Inspiration
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-muted-foreground text-lg"
-            >
+            </h2>
+            <p className="text-muted-foreground text-lg">
               Expert advice, design ideas, and industry insights to help you plan 
               your perfect bathroom remodel.
-            </motion.p>
+            </p>
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
+          <div>
             <Button
               asChild
               variant="outline"
@@ -90,17 +63,16 @@ export default function BlogPreview() {
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-          </motion.div>
+          </div>
         </div>
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
-            <motion.article
+            <article
               key={post.slug}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="animate-in fade-in slide-in-from-bottom-4"
+              style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
             >
               <Link href={`/blog/${post.slug}`} className="group block">
                 {/* Image */}
@@ -130,7 +102,7 @@ export default function BlogPreview() {
                   {post.excerpt}
                 </p>
               </Link>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

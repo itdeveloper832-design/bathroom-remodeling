@@ -1,6 +1,3 @@
-"use client";
-
-import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Play } from "lucide-react";
@@ -14,32 +11,12 @@ const stats = [
 ];
 
 export default function AboutPreview() {
-  const ref = useRef(null);
-  const [isInView, setIsInView] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-background">
+    <section className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}
-          <div className={`relative transition-opacity duration-700 ${isInView ? 'opacity-100' : 'opacity-0'}`}>
+          <div className="relative animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
                 src="/images/optimized/photo-1581578731548-c64695cc6952.webp"
@@ -59,7 +36,7 @@ export default function AboutPreview() {
             </div>
 
             {/* Stats Grid */}
-            <div className={`absolute -bottom-10 left-4 right-4 lg:-bottom-12 lg:left-8 lg:right-8 transition-opacity duration-700 ${isInView ? 'opacity-100' : 'opacity-0'}`}>
+            <div className="absolute -bottom-10 left-4 right-4 lg:-bottom-12 lg:left-8 lg:right-8 animate-in fade-in slide-in-from-bottom-4 delay-300">
               <div className="grid grid-cols-4 gap-2 lg:gap-4 bg-card border border-border rounded-xl p-4 lg:p-6 shadow-xl">
                 {stats.map((stat) => (
                   <div key={stat.label} className="text-center">
@@ -76,7 +53,7 @@ export default function AboutPreview() {
           </div>
 
           {/* Content Side */}
-          <div className={`pt-12 lg:pt-0 transition-opacity duration-700 ${isInView ? 'opacity-100' : 'opacity-0'}`}>
+          <div className="pt-12 lg:pt-0 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
             <span className="text-primary text-sm font-medium tracking-wider uppercase">
               About Us
             </span>

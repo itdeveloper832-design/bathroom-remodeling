@@ -1,72 +1,39 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { bathroomServices } from "@/lib/bathroom-services";
 
-const services = bathroomServices; // show all new services
+const services = bathroomServices; 
 
 export default function ServicesGrid() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-secondary">
+    <section className="py-20 lg:py-32 bg-secondary" id="services">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <motion.span
-            initial={mounted ? { opacity: 0, y: 20 } : false}
-            animate={mounted && isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
-            className="text-primary text-sm font-medium tracking-wider uppercase"
-          >
+        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <span className="text-primary text-sm font-medium tracking-wider uppercase">
             What We Do
-          </motion.span>
-          <motion.h2
-            initial={mounted ? { opacity: 0, y: 20 } : false}
-            animate={mounted && isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance"
-          >
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
             Bathroom Remodeling Services in Chandler, AZ
-          </motion.h2>
-          <motion.div
-            initial={mounted ? { opacity: 0, y: 20 } : false}
-            animate={mounted && isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-muted-foreground text-lg leading-relaxed space-y-4"
-          >
+          </h2>
+          <div className="text-muted-foreground text-lg leading-relaxed space-y-4">
             <p>Licensed remodeling contractors in Chandler offering:</p>
             <ul className="list-disc text-left inline-block space-y-1 ml-4">
               <li><strong>Bath Remodel Chandler AZ:</strong> Full bathroom renovations, vanity, tile, and fixtures.</li>
               <li><strong>Shower Remodeling Chandler AZ:</strong> Walk-in showers, frameless glass, curbless designs.</li>
               <li><strong>Bathtub Remodeling Chandler AZ:</strong> Tub replacement, tub-to-shower conversion, soaking tubs.</li>
             </ul>
-          </motion.div>
+          </div>
         </div>
 
         {/* Services Grid */}
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          initial={mounted ? { opacity: 0 } : false}
-          whileInView={mounted ? { opacity: 1 } : {}}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
-        >
-          {services.map((service) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service, index) => (
             <Link
               key={service.name}
               href={service.href}
-              className="group block bg-card border border-border rounded-xl p-8 h-full hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+              className="group block bg-card border border-border rounded-xl p-8 h-full hover:shadow-lg hover:border-primary/20 transition-all duration-300 animate-in fade-in slide-in-from-bottom-4"
+              style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
             >
               <div className="flex items-start justify-between mb-6">
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
@@ -82,15 +49,10 @@ export default function ServicesGrid() {
               </p>
             </Link>
           ))}
-        </motion.div>
+        </div>
 
         {/* See All Services Button */}
-        <motion.div
-          initial={mounted ? { opacity: 0, y: 20 } : false}
-          animate={mounted && isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.7 }}
-          className="text-center mt-12"
-        >
+        <div className="text-center mt-12 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
           <Link
             href="/services"
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-colors"
@@ -98,7 +60,7 @@ export default function ServicesGrid() {
             See All Services
             <ArrowUpRight className="w-5 h-5" />
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

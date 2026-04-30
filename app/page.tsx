@@ -33,40 +33,18 @@ export const metadata: Metadata = {
   },
 };
 
-// Optimized dynamic imports for below-the-fold content
-const AboutPreview = dynamic(() => import("@/components/home/about-preview"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const ServicesGrid = dynamic(() => import("@/components/home/services-grid"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const ProcessSection = dynamic(() => import("@/components/home/process-section"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const ServiceAreas = dynamic(() => import("@/components/home/service-areas"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const Financing = dynamic(() => import("@/components/home/financing"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const FAQ = dynamic(() => import("@/components/home/faq"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const BlogPreview = dynamic(() => import("@/components/home/blog-preview"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"), { 
-  loading: () => <div className="h-80 bg-muted animate-pulse" />
-});
-const FinalCTA = dynamic(() => import("@/components/home/final-cta"), { 
-  loading: () => <div className="h-32 bg-muted animate-pulse" />
-});
+import AboutPreview from "@/components/home/about-preview";
+import ServicesGrid from "@/components/home/services-grid";
+import WhyChooseUs from "@/components/home/why-choose-us";
+import BathroomSection from "@/components/home/bathroom-section";
+import ProcessSection from "@/components/home/process-section";
+import ServiceAreas from "@/components/home/service-areas";
+import Financing from "@/components/home/financing";
+import FAQ from "@/components/home/faq";
+import BlogPreview from "@/components/home/blog-preview";
+import ComparisonBenefits from "@/components/home/comparison-benefits";
+import FinalCTA from "@/components/home/final-cta";
+
 
 const homeFaqs = [
   {

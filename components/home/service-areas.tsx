@@ -1,25 +1,13 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import { MapPin } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export default function ServiceAreas() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
-    <section ref={ref} className="py-20 lg:py-32 bg-secondary">
+    <section className="py-20 lg:py-32 bg-secondary" id="service-areas">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content Side */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7 }}
-          >
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
             <span className="text-primary text-sm font-medium tracking-wider uppercase">
               Service Areas
             </span>
@@ -35,27 +23,20 @@ export default function ServiceAreas() {
             {/* Service Areas Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {siteConfig.serviceAreas.map((area, index) => (
-                <motion.div
+                <div
                   key={area}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3"
+                  className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 animate-in fade-in slide-in-from-bottom-4"
+                  style={{ animationDelay: `${index * 50}ms`, animationFillMode: 'both' }}
                 >
                   <MapPin className="w-4 h-4 text-primary shrink-0" />
                   <span className="text-foreground text-sm font-medium">{area}, AZ</span>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Map Side */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden bg-card border border-border"
-          >
+          <div className="relative aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden bg-card border border-border animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
             <iframe
               src="https://www.google.com/maps?q=Chandler,AZ&output=embed"
               width="100%"
@@ -66,7 +47,7 @@ export default function ServiceAreas() {
               referrerPolicy="no-referrer-when-downgrade"
               title="Service area map showing Chandler, Arizona and surrounding areas"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

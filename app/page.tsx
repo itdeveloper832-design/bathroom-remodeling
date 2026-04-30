@@ -6,7 +6,9 @@ import Hero from "@/components/home/hero";
 import TrustBadges from "@/components/home/trust-badges";
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
-import { ClientWrapper } from "@/components/home/client-wrapper";
+import Testimonials from "@/components/home/testimonials";
+import GalleryPreview from "@/components/home/gallery-preview";
+import ContactSection from "@/components/home/contact-section";
 
 export const metadata: Metadata = {
   title: "Bathroom Remodeling Chandler AZ | Licensed Contractors & Free Estimates",
@@ -33,17 +35,17 @@ export const metadata: Metadata = {
   },
 };
 
-const AboutPreview = dynamic(() => import("@/components/home/about-preview"));
-const ServicesGrid = dynamic(() => import("@/components/home/services-grid"));
-const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"));
-const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"));
-const ProcessSection = dynamic(() => import("@/components/home/process-section"));
-const ServiceAreas = dynamic(() => import("@/components/home/service-areas"));
-const Financing = dynamic(() => import("@/components/home/financing"));
-const FAQ = dynamic(() => import("@/components/home/faq"));
-const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
-const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"));
-const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
+import AboutPreview from "@/components/home/about-preview";
+import ServicesGrid from "@/components/home/services-grid";
+import WhyChooseUs from "@/components/home/why-choose-us";
+import BathroomSection from "@/components/home/bathroom-section";
+import ProcessSection from "@/components/home/process-section";
+import ServiceAreas from "@/components/home/service-areas";
+import Financing from "@/components/home/financing";
+import FAQ from "@/components/home/faq";
+import BlogPreview from "@/components/home/blog-preview";
+import ComparisonBenefits from "@/components/home/comparison-benefits";
+import FinalCTA from "@/components/home/final-cta";
 
 
 const homeFaqs = [
@@ -108,7 +110,9 @@ export default function HomePage() {
         <ComparisonBenefits />
         <FAQ />
         <BlogPreview />
-        <ClientWrapper />
+        <Testimonials />
+        <GalleryPreview />
+        <ContactSection />
         <FinalCTA />
       </main>
       <Footer />

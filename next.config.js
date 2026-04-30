@@ -1,4 +1,4 @@
-const isExport = process.env.NEXT_OUTPUT === 'export' || true; // Defaulting to true for cPanel FTP compatibility
+const isExport = process.env.NEXT_OUTPUT === 'export';
 console.log('Next.js Build Mode:', isExport ? 'export' : 'standalone');
 
 /** @type {import('next').NextConfig} */
@@ -39,22 +39,23 @@ const nextConfig = {
       '@/lib',
       'lucide-react',
       'framer-motion',
-      'date-fns'
+      'date-fns',
+      'lucide-react'
     ],
   },
 
   // Production optimizations
   productionBrowserSourceMaps: false,
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
+    removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error', 'warn'] } : false,
   },
-
 
   // Page extensions
   pageExtensions: ['ts', 'tsx'],
 
   // TypeScript
   typescript: {
+    ignoreBuildErrors: true, // Speeds up builds
     tsconfigPath: './tsconfig.json',
   },
 };

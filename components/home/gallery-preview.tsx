@@ -51,22 +51,24 @@ function BeforeAfterCard({ item }: { item: typeof galleryItems[0] }) {
       {/* After Image (shown on hover) */}
       <Image
         src={item.after}
-        alt={`${item.title} - After`}
+        alt={`${item.title} - After Transformation`}
         fill
         className="object-cover transition-opacity duration-500"
         style={{ opacity: isHovered ? 1 : 0 }}
         loading="lazy"
         quality={75}
+        sizes="(max-width: 768px) 100vw, 50vw"
       />
       {/* Before Image (default) */}
       <Image
         src={item.before}
-        alt={`${item.title} - Before`}
+        alt={`${item.title} - Before Transformation`}
         fill
         className="object-cover transition-opacity duration-500"
         style={{ opacity: isHovered ? 0 : 1 }}
         loading="lazy"
         quality={75}
+        sizes="(max-width: 768px) 100vw, 50vw"
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

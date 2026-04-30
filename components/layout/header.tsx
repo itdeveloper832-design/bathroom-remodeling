@@ -29,11 +29,15 @@ export function Header() {
 
   return (
     <>
+    <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] bg-primary text-primary-foreground px-4 py-2 rounded-lg">
+      Skip to content
+    </a>
     <InfoHeader />
     <header
       className={`fixed top-[50px] left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-md shadow-sm ${
         isScrolled ? "py-3" : "py-5"
       }`}
+      role="banner"
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
@@ -51,7 +55,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
             {siteConfig.navigation.map((item) => (
               <Link
                 key={item.name}
@@ -72,59 +76,65 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 focus:outline-none focus:ring-2 focus:ring-primary rounded-lg"
+            className="lg:hidden p-2 focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
+              <X className="w-6 h-6" aria-hidden="true" />
             ) : (
-              <Menu className="w-6 h-6" />
+              <Menu className="w-6 h-6" aria-hidden="true" />
             )}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden bg-background border-t border-border animate-in slide-in-from-top duration-300">
-          <div className="container mx-auto px-4 py-6">
-            <nav className="flex flex-col gap-4">
-              {siteConfig.navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium py-2 border-b border-border text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 block rounded px-2"
-                >
-                  {item.name}
-                </Link>
-              ))}
+      <nav 
+        id="mobile-menu"
+        className={`lg:hidden bg-background border-t border-border overflow-hidden transition-all duration-300 ease-in-out ${
+          isMobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+        aria-label="Mobile navigation"
+      >
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-col gap-4">
+            {siteConfig.navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-lg font-medium py-2 border-b border-border text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 block rounded px-2 hover:text-primary transition-colors"
+              >
+                {item.name}
+              </Link>
+            ))}
 
-              <div className="mt-6 space-y-4">
-                <a
-                  href={`tel:${siteConfig.phone}`}
-                  className="flex items-center gap-2 text-foreground"
-                >
-                  <Phone className="w-5 h-5" />
-                  {siteConfig.phone}
-                </a>
-                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/contact/">Get Free Estimate</Link>
-                </Button>
-              </div>
-            </nav>
+            <div className="mt-6 space-y-4">
+              <a
+                href={`tel:${siteConfig.phone}`}
+                className="flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors"
+                aria-label={`Call us at ${siteConfig.phone}`}
+              >
+                <Phone className="w-5 h-5 text-primary" aria-hidden="true" />
+                {siteConfig.phone}
+              </a>
+              <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6">
+                <Link href="/contact/">Get Free Estimate</Link>
+              </Button>
+            </div>
           </div>
         </div>
-      )}
+      </nav>
     </header>
 
     {/* Mobile Sticky Call Button - Accessible */}
     <a
       href={`tel:${siteConfig.phone}`}
       className="lg:hidden fixed bottom-4 right-4 z-50 flex items-center gap-2 px-6 py-3 bg-black text-white font-bold rounded-full shadow-2xl active:scale-95 transition-transform duration-200 animate-in slide-in-from-bottom-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-      aria-label={`Call us at ${siteConfig.phone}`}
+      aria-label={`Call us now at ${siteConfig.phone}`}
     >
       <Phone className="w-5 h-5" aria-hidden="true" />
       Call Now

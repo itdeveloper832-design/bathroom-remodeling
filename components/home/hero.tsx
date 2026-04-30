@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const QuoteForm = dynamic(() => import("@/components/forms/quote-form").then(mod => mod.QuoteForm), {
   ssr: false,
-  loading: () => <div className="h-[400px] bg-card/50 animate-pulse rounded-xl" />
+  loading: () => <div className="h-[500px] bg-card/50 animate-pulse rounded-xl" />
 });
 
 const trustBadges = [

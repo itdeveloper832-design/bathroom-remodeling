@@ -117,7 +117,7 @@ export default function HomePage() {
       <LocalBusinessSchema />
       <FAQSchema faqs={homeFaqs} />
       <Header />
-      <main role="main">
+      <main id="main-content" role="main">
         <Hero />
         <TrustBadges />
         <AboutPreview />

@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   keywords: 'bathroom remodeling Arizona, shower renovation Chandler, tub to shower conversion, bathroom contractors Phoenix',
   generator: 'v0.app',
   robots: 'index, follow',
+  verification: {
+    google: 'gn3lcazslZ9U1mVC7TKLAoyj1y-HNxm6Osnh3IoXms0',
+  },
   openGraph: {
     title: 'Bathroom Remodeling Experts | ARZ Remodeling',
     description: 'Professional bathroom and shower remodeling in Arizona',

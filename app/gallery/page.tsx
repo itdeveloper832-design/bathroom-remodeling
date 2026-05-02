@@ -121,7 +121,7 @@ export default function GalleryPage() {
             <p className="text-slate-700 mb-6">
               Interested in seeing more of our work and our complete project portfolio?
             </p>
-            <Link href="https://arzhomeremodeling.com/gallery" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-950 text-white px-8 py-3 rounded font-semibold hover:bg-blue-900 transition-colors">
+            <Link href="https://arzhomeremodeling.vercel.app/gallery" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-950 text-white px-8 py-3 rounded font-semibold hover:bg-blue-900 transition-colors">
               View Complete Gallery
             </Link>
           </div>

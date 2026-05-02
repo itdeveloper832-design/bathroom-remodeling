@@ -166,7 +166,7 @@ export default function AboutPage() {
             <h2 className="font-poppins font-bold text-2xl mb-4 text-blue-950">
               For more information about our team and services
             </h2>
-            <Link href="https://arzhomeremodeling.com" target="_blank" rel="noopener noreferrer" className="text-blue-950 font-semibold text-lg hover:text-blue-900 transition-colors">
+            <Link href="https://arzhomeremodeling.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-950 font-semibold text-lg hover:text-blue-900 transition-colors">
               Visit arzhomeremodeling.com
             </Link>
           </div>

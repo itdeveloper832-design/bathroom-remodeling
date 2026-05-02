@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'Bathroom Remodeling Experts | ARZ Remodeling',
     description: 'Professional bathroom and shower remodeling in Arizona',
     type: 'website',
-    url: 'https://arzhomeremodeling.com',
+    url: 'https://arzhomeremodeling.vercel.app',
   },
   icons: {
     icon: [
@@ -54,7 +54,7 @@ const schemaMarkup = {
   '@type': 'LocalBusiness',
   'name': 'ARZ Remodeling',
   'description': 'Professional bathroom remodeling and shower renovation services in Arizona',
-  'url': 'https://arzhomeremodeling.com',
+  'url': 'https://arzhomeremodeling.vercel.app',
   'telephone': '(480) 555-1234',
   'email': 'info@arzhomeremodeling.com',
   'address': {

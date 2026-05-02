@@ -20,7 +20,7 @@ const services = [
     description: 'Transform your entire bathroom with our comprehensive remodeling services. From layout design to installation, we handle every detail with professional expertise and quality craftsmanship.',
     features: ['Modern fixtures and design', 'Quality flooring options', 'Professional installation', 'Licensed and insured'],
     image: '/images/bathroom-remodel-1.jpg',
-    link: 'https://arzhomeremodeling.com/services/bathroom-remodeling',
+    link: 'https://arzhomeremodeling.vercel.app/services/bathroom-remodeling',
     longDescription: `Our complete bathroom remodeling services are designed to transform outdated bathrooms into beautiful, functional spaces that enhance your home's value and your daily living experience. Whether you're starting from scratch or updating an existing bathroom, our expert contractors in Chandler, Phoenix, and throughout Arizona bring years of professional experience to every project.
 
 A full bathroom remodel includes everything from plumbing and electrical updates to fixture selection, tile installation, vanity design, lighting, and finishing touches. We work closely with homeowners to understand their vision, budget, and timeline, creating detailed plans that ensure every aspect of the project is handled professionally.
@@ -33,7 +33,7 @@ Our bathroom remodeling team is skilled in all design styles—from modern and m
     description: 'Create your dream shower with custom installations featuring premium materials, spa-like features, and expert design. From simple upgrades to full renovations.',
     features: ['Walk-in shower systems', 'Custom tile work', 'Rainfall showerheads', 'Professional waterproofing'],
     image: '/images/shower-renovation-1.jpg',
-    link: 'https://arzhomeremodeling.com/services/shower-remodeling',
+    link: 'https://arzhomeremodeling.vercel.app/services/shower-remodeling',
     longDescription: `Shower renovations are one of the most impactful ways to upgrade your bathroom. Our professional shower remodeling services include everything from simple fixture upgrades to complete custom shower installations with premium materials and luxury spa-like features.
 
 Whether you want a spacious walk-in shower with frameless glass enclosure, a rainfall showerhead, body jets, or custom tile work, our experienced contractors can bring your vision to life. We specialize in professional waterproofing, ensuring your new shower is built to last without leaks or moisture problems.
@@ -46,7 +46,7 @@ We work with homeowners throughout Arizona—from Chandler to Phoenix to Tempe�
     description: 'Safe and stylish conversions from traditional bathtubs to modern walk-in showers. Ideal for accessibility, space optimization, and modern living.',
     features: ['ADA compliant options', 'Safety-focused design', 'Space maximization', 'Affordable solutions'],
     image: '/images/tub-to-shower-1.jpg',
-    link: 'https://arzhomeremodeling.com/services/tub-to-shower',
+    link: 'https://arzhomeremodeling.vercel.app/services/tub-to-shower',
     longDescription: `A tub-to-shower conversion is a practical and stylish solution for homeowners looking to modernize their bathroom while improving functionality and accessibility. Whether you rarely use your bathtub or need a more accessible bathing solution, our professional conversion services can transform your space.
 
 Our tub-to-shower conversions are designed with safety, functionality, and aesthetics in mind. We can create ADA-compliant showers with grab bars and accessible seating, modern walk-in showers with minimal barriers, or luxury spa-style installations. The conversion process involves removing the existing tub, preparing the space, installing proper waterproofing, and creating a custom shower that fits your specific needs.

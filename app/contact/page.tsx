@@ -11,14 +11,57 @@ export const metadata: Metadata = {
   keywords: 'contact bathroom remodeler, free remodeling quote, bathroom consultation, contact remodeling contractor Arizona',
 }
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    {
+      '@type': 'Question',
+      'name': 'How long does a bathroom remodeling project typically take?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': "Project timelines vary depending on scope and complexity. A simple shower renovation might take 2-4 weeks, while a complete bathroom remodel could take 6-12 weeks. We'll provide a detailed timeline during your consultation."
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'What is the typical cost of bathroom remodeling?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Bathroom remodeling costs vary widely based on scope, materials, and features. A simple renovation might start at $15,000, while a luxury remodel could exceed $50,000. We provide free, detailed estimates for all projects.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Do you offer financing for bathroom remodeling projects?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': "We can discuss financing options during your consultation. Many homeowners use home equity loans, personal loans, or credit lines. We'll help you understand all your options."
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Can you help with bathroom design and planning?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'Absolutely! Design consultation is a key part of our service. Our experienced team helps you explore options, select materials and fixtures, and create a bathroom that perfectly fits your vision and budget.'
+      }
+    }
+  ]
+}
+
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Header />
       <HeroSection
         title="Contact ARZ Remodeling for Your Free Bathroom Remodeling Quote"
         subtitle="Reach out today for a free consultation and estimate on your bathroom renovation project"
-        primaryCta={{ label: 'Contact Main Office', href: 'https://arzhomeremodeling.com/contact' }}
+        primaryCta={{ label: 'Contact Main Office', href: 'https://arzhomeremodeling.vercel.app/contact' }}
       />
 
       <section className="py-16 md:py-20">
@@ -94,7 +137,7 @@ export default function ContactPage() {
                 <p className="text-slate-600 mb-4">
                   For our complete portfolio, testimonials, and additional information about our bathroom remodeling services, visit:
                 </p>
-                <a href="https://arzhomeremodeling.com" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-950 text-white px-6 py-2 rounded font-semibold hover:bg-blue-900 transition-colors">
+                <a href="https://arzhomeremodeling.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-950 text-white px-6 py-2 rounded font-semibold hover:bg-blue-900 transition-colors">
                   arzhomeremodeling.com
                 </a>
               </div>

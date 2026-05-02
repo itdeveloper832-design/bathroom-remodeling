@@ -26,7 +26,7 @@ export function Footer() {
               Phone: <a href="tel:+14805551234" className="hover:text-white transition-colors">(480) 555-1234</a>
             </p>
             <p className="text-slate-300">
-              Visit us at: <a href="https://arzhomeremodeling.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">arzhomeremodeling.com</a>
+              Visit us at: <a href="https://arzhomeremodeling.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">arzhomeremodeling.vercel.app</a>
             </p>
           </div>
         </div>

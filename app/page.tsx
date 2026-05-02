@@ -6,9 +6,9 @@ import Hero from "@/components/home/hero";
 import TrustBadges from "@/components/home/trust-badges";
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
-import Testimonials from "@/components/home/testimonials";
-import GalleryPreview from "@/components/home/gallery-preview";
-import ContactSection from "@/components/home/contact-section";
+const Testimonials = dynamic(() => import("@/components/home/testimonials"));
+const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"));
+const ContactSection = dynamic(() => import("@/components/home/contact-section"));
 
 export const metadata: Metadata = {
   title: "Bathroom Remodeling Chandler AZ | Expert Team",

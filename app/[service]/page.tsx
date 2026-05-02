@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 
 import {
   Bath,
@@ -23,14 +24,14 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import ServiceHero from "@/components/services/service-hero";
 import ServiceCTA from "@/components/services/service-cta";
-import ServiceFAQ from "@/components/services/service-faq";
+const ServiceFAQ = dynamic(() => import("@/components/services/service-faq"));
 import ServiceProcess from "@/components/services/service-process";
 import IssuesSolved from "@/components/services/issues-solved";
 import Benefits from "@/components/services/benefits";
 import Tips from "@/components/services/tips";
-import Testimonials from "@/components/home/testimonials";
-import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/services/google-map";
+const Testimonials = dynamic(() => import("@/components/home/testimonials"));
+const ContactSection = dynamic(() => import("@/components/home/contact-section"));
+const GoogleMap = dynamic(() => import("@/components/services/google-map").then(mod => mod.GoogleMap));
 import SubServices from "@/components/services/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 import { siteConfig } from "@/lib/site-config";

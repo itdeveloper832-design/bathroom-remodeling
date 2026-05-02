@@ -36,6 +36,7 @@ export default function ServiceHero({
           fill
           className="object-cover"
           priority
+          fetchPriority="high"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />

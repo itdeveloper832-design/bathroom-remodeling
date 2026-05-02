@@ -28,6 +28,7 @@ export function GoogleMap({ lat, lng, zoom = 15, title = "Our Location", address
           allowfullscreen="" 
           aria-hidden="false" 
           tabindex="0"
+          loading="lazy"
           style="border: 0; border-radius: 12px;"
         ></iframe>
       `;

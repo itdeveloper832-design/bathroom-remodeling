@@ -23,9 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling in Chandler, AZ — Licensed Contractors, Free Estimates",
+  title: "Chandler’s Top-Rated Bathroom Remodeling Contractor | Free Estimates",
   description:
-    "Top-rated bathroom remodeling in Chandler AZ. Walk-in showers, tub-to-shower conversions, master bath renovations. AZ licensed contractor (ROC# listed). Free estimates — call (229) 306-5591.",
+    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high-quality walk-in showers, tub-to-shower conversions, and master bath renovations. Licensed company, free estimates — call (229) 306-5591 today!",
   keywords: [
     "bathroom remodeling Chandler AZ",
     "bathroom remodel Chandler Arizona",
@@ -214,9 +214,9 @@ export default function ChandlerBathroomRemodelingPage() {
       <main>
         {/* HERO */}
         <ServiceHero
-          title="Bathroom Remodeling in Chandler, AZ"
-          subtitle="Licensed Contractors — Free Estimates"
-          description="From tub-to-shower conversions in Dobson Ranch to full master bath transformations in Ocotillo — ARZ Home Remodeling serves all of Chandler. Licensed AZ contractor, 2-year warranty, fixed pricing."
+          title="Chandler’s Top-Rated Bathroom Remodeling Contractor"
+          subtitle="Hire the Best Local Remodelers — Free Estimates"
+          description="From tub-to-shower conversions in Dobson Ranch to full master bath transformations in Ocotillo — ARZ Home Remodeling is the professional choice for Chandler homeowners. Licensed AZ contractor, 2-year warranty, fixed pricing."
           image="/images/optimized/photo-1620626011761-996317b8d101.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
@@ -243,7 +243,7 @@ export default function ChandlerBathroomRemodelingPage() {
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <Link href="/contact/" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  Get a Free Estimate
+                  Call Now for Your Free No-Obligation Bathroom Quote!
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">

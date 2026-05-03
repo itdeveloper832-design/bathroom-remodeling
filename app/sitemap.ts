@@ -52,6 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/bathroom-remodeling-cost-chandler-az', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/bathroom-remodeling-mesa-az', priority: 0.85, changeFrequency: 'monthly' as const },
     { url: '/bathroom-remodeling-gilbert-az', priority: 0.85, changeFrequency: 'monthly' as const },
+    { url: '/bathroom-remodeling-tempe-az', priority: 0.85, changeFrequency: 'monthly' as const },
   ]
 
   const serviceEntries = servicePages.map((page) => ({

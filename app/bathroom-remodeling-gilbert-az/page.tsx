@@ -8,9 +8,9 @@ import { ServiceSchema } from "@/components/seo/json-ld";
 import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Gilbert AZ | Expert Contractors",
-  description: "Professional bathroom remodeling Gilbert AZ. Licensed experts delivering custom showers, tubs & full renovations. Get a free estimate today!",
-  keywords: ["bathroom remodeling Gilbert AZ", "Gilbert bathroom remodelers", "bathroom renovation Gilbert"],
+  title: "Licensed Bathroom Contractor Gilbert AZ | Quality Craftsmanship",
+  description: "Hire the top-rated bathroom remodeling company in Gilbert, AZ. Professional master bathroom renovations, shower replacements, and tub-to-shower conversions. Free estimates.",
+  keywords: ["bathroom remodeling Gilbert AZ", "licensed bathroom contractor Gilbert AZ", "top-rated shower remodelers Gilbert", "master bathroom renovation Gilbert AZ"],
   openGraph: {
     title: "Bathroom Remodeling Gilbert AZ | Expert Contractors",
     description: "Top-rated bathroom remodeling services in Gilbert, AZ.",
@@ -30,9 +30,9 @@ export default function GilbertPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Bathroom Remodeling Gilbert AZ"
-          subtitle="Top-Rated Gilbert Bathroom Remodelers"
-          description="Bringing our award-winning bathroom remodeling services to homeowners in Gilbert, AZ. We deliver high-quality renovations with a focus on craftsmanship."
+          title="Gilbert’s Top-Rated Bathroom Remodeling Contractor"
+          subtitle="Hire the Best Local Remodelers in Gilbert — Free Estimates"
+          description="Bringing our award-winning bathroom remodeling services to homeowners in Gilbert, AZ. Licensed AZ contractors specializing in high-quality renovations and custom craftsmanship."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Gilbert", url: `${siteConfig.url}/bathroom-remodeling-gilbert-az` }]}
         />
@@ -47,7 +47,7 @@ export default function GilbertPage() {
           </div>
         </section>
 
-        <ServiceCTA title="Live in Gilbert and need a bathroom remodel?" description="Get a free estimate today and experience the ARZ Home Remodeling difference." />
+        <ServiceCTA title="Ready for a Free Bathroom Remodel Estimate in Gilbert?" description="Call us or fill out the form today. Our licensed Gilbert contractors are ready to start your dream renovation." />
         
         <section className="py-20 lg:py-32 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">

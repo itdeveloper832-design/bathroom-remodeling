@@ -8,9 +8,9 @@ import { ServiceSchema } from "@/components/seo/json-ld";
 import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Mesa AZ | Expert Contractors",
-  description: "Professional bathroom remodeling Mesa AZ. Licensed experts delivering custom showers, tubs & full renovations. Get a free estimate today!",
-  keywords: ["bathroom remodeling Mesa AZ", "Mesa bathroom remodelers", "bathroom renovation Mesa"],
+  title: "Professional Bathroom Remodeling in Mesa AZ | Licensed & Insured",
+  description: "Hire the best bathroom remodeling company in Mesa, AZ. We specialize in custom showers, tub-to-shower conversions, and full master bath renovations. Licensed 5-star contractors.",
+  keywords: ["bathroom remodeling Mesa AZ", "hire shower remodeling company Mesa AZ", "local bathroom remodeling company Mesa", "full bathroom remodel contractors Mesa"],
   openGraph: {
     title: "Bathroom Remodeling Mesa AZ | Expert Contractors",
     description: "Top-rated bathroom remodeling services in Mesa, AZ.",
@@ -30,9 +30,9 @@ export default function MesaPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Bathroom Remodeling Mesa AZ"
-          subtitle="Top-Rated Mesa Bathroom Remodelers"
-          description="Bringing our award-winning bathroom remodeling services to homeowners in Mesa, AZ. We deliver high-quality renovations with a focus on craftsmanship."
+          title="Mesa’s Top-Rated Bathroom Remodeling Contractor"
+          subtitle="Hire the Best Local Remodelers in Mesa — Free Estimates"
+          description="Bringing our 5-star bathroom remodeling services to homeowners in Mesa, AZ. We specialize in high-quality renovations, custom shower installs, and full bathroom transformations."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Mesa", url: `${siteConfig.url}/bathroom-remodeling-mesa-az` }]}
         />
@@ -47,7 +47,7 @@ export default function MesaPage() {
           </div>
         </section>
 
-        <ServiceCTA title="Live in Mesa and need a bathroom remodel?" description="Get a free estimate today and experience the ARZ Home Remodeling difference." />
+        <ServiceCTA title="Ready for a Free No-Obligation Bathroom Quote in Mesa?" description="Call us or fill out the form today. Our licensed Mesa contractors are standing by to help you transform your home." />
         
         <section className="py-20 lg:py-32 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">

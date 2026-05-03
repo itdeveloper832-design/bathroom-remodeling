@@ -4,6 +4,7 @@ import { siteConfig } from '@/lib/site-config'
 import './globals.css'
 
 import { Inter, Outfit } from 'next/font/google'
+import { StickyCallButton } from '@/components/layout/sticky-call-button'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -100,8 +101,8 @@ export default function RootLayout({
         {/* Additional SEO meta tags */}
         <meta name="geo.region" content="US-AZ" />
         <meta name="geo.placename" content="Chandler" />
-        <meta name="geo.position" content="33.3062;-111.8413" />
-        <meta name="ICBM" content="33.3062, -111.8413" />
+        <meta name="geo.position" content={`${siteConfig.address.coordinates.lat};${siteConfig.address.coordinates.lng}`} />
+        <meta name="ICBM" content={`${siteConfig.address.coordinates.lat}, ${siteConfig.address.coordinates.lng}`} />
         
         {/* Security & Performance Headers (Simulated via Meta) */}
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -193,6 +194,7 @@ export default function RootLayout({
         </noscript>
         */}
         {children}
+        <StickyCallButton />
       </body>
       {/* Defer Vercel analytics - not critical for rendering */}
       <Script src="/_vercel/insights/script.js" strategy="lazyOnload" />

@@ -18,7 +18,7 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Chandler AZ | Safe & Fast",
+  title: "Tub to Shower Conversion Chandler | Best Price & Expert Installation",
   description: "Expert tub to shower conversion Chandler AZ. Improve safety and style with a modern walk-in shower. Request your free estimate today!",
   keywords: ["tub to shower conversion Chandler", "tub to shower conversion price Chandler AZ", "tub to shower conversion cost Chandler AZ", "best tub to shower conversion Chandler AZ", "affordable tub to shower conversion Chandler AZ", "tub to shower conversion quote Chandler AZ", "tub to shower conversion estimate Chandler AZ", "tub to shower conversion contractor Chandler AZ", "bathtub to shower conversion cost Chandler AZ", "bathtub to shower conversion price Chandler AZ", "bathtub to shower conversion professional Chandler AZ", "hire tub to shower conversion Chandler AZ"],
   openGraph: {
@@ -70,8 +70,8 @@ export default function TubToShowerConversionPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Best Tub to Shower Conversion Chandler AZ"
-          subtitle="Affordable Bathtub to Shower Conversion Cost Chandler AZ"
+          title="Best Tub to Shower Conversion in Chandler AZ"
+          subtitle="Hire the Expert Walk-In Shower Installers — Free Quotes"
           description="Professional tub to shower conversion Chandler AZ. Best tub to shower conversion price, affordable bathtub to shower conversion, free tub to shower conversion estimate. Hire tub to shower conversion contractor today!"
           image="/images/optimized/photo-1584622650111-993a426fbf0a.webp"
           breadcrumbs={[
@@ -139,8 +139,8 @@ export default function TubToShowerConversionPage() {
         />
 
         <ServiceCTA 
-          title="Ready to convert your tub to a shower in Chandler?" 
-          description="Get a free consultation and see how a walk-in shower can transform your bathroom." 
+          title="Call Now for Your Free No-Obligation Conversion Quote!" 
+          description="Ready for a tub-to-shower swap? Click to call our Chandler experts now and save space in your bathroom." 
         />
 
         <SubServices 

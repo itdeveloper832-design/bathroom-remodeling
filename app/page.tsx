@@ -11,9 +11,9 @@ const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview")
 const ContactSection = dynamic(() => import("@/components/home/contact-section"));
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Expert Team",
+  title: "Best Bathroom Remodeling Contractor in Chandler AZ | Licensed & Insured",
   description:
-    "Licensed bathroom remodeling contractors in Chandler, AZ. Shower renovations, tub replacements & full remodels. Free quotes: (229) 306-5591.",
+    "Hire the top-rated bathroom remodeling company in Chandler, AZ. Licensed, bonded, and insured contractors specializing in walk-in showers, tub-to-shower conversions, and master bath renovations. Free quotes!",
   keywords: [
     "bathroom remodel chandler",
     "bathroom remodel chandler az",

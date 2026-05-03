@@ -17,7 +17,7 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ | Walk-In Showers & Shower Replacement",
+  title: "Professional Shower Remodeling Chandler AZ | Walk-In Shower Experts",
   description:
     "Expert shower remodeling in Chandler AZ. Walk-in shower installation, frameless glass enclosures, shower replacement, and custom tile. Licensed AZ contractor. Free estimates — call (229) 306-5591.",
   keywords: [
@@ -80,9 +80,9 @@ export default function ShowerRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Shower Remodeling in Chandler, AZ"
-          subtitle="Walk-In Showers, Frameless Glass & Custom Tile"
-          description="Transform your outdated shower into a modern walk-in enclosure. Our Chandler shower remodeling team handles frameless glass, custom tile, curbless designs, and shower replacement with Schluter waterproofing rated for Arizona's climate."
+          title="Professional Shower Remodeling in Chandler, AZ"
+          subtitle="Hire the Best Walk-In Shower Installers — Free Estimates"
+          description="Transform your outdated shower into a modern walk-in enclosure. Our Chandler shower remodeling team handles frameless glass, custom tile, and tub-to-shower conversions with licensed expertise."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: `${siteConfig.url}/` },
@@ -150,8 +150,8 @@ export default function ShowerRemodelingPage() {
         />
 
         <ServiceCTA 
-          title="Ready for a Chandler shower remodel that stays watertight?" 
-          description="Get a custom design plan, tile selections, and a clean installation schedule tailored to your home." 
+          title="Call Now for Your Free No-Obligation Shower Quote!" 
+          description="Need a new shower? Click to call our Chandler team today for a same-week consultation and fixed pricing." 
         />
 
         <SubServices 

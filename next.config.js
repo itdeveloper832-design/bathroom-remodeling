@@ -70,8 +70,10 @@ const nextConfig = {
     tsconfigPath: './tsconfig.json',
   },
 
-  // Security + Caching headers for static assets
+  // Security + Caching headers — only active in standalone/server mode
+  // In static export mode (cPanel), .htaccess handles all headers instead
   async headers() {
+    if (isExport) return []; // headers not supported in output: export
     return [
       {
         // Cache static assets (images, fonts, JS, CSS) for 1 year

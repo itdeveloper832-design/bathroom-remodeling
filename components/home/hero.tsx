@@ -4,10 +4,10 @@ import Image from "next/image";
 import { Star, Shield, Award, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// QuoteForm deferred - it's a large component with Firebase deps and is below the fold of mobile
+// QuoteForm deferred - large component with Firebase deps, loaded after hero paints
+// Note: ssr:false is only valid in Client Components; hero.tsx is a Server Component
 const QuoteForm = dynamic(() => import("@/components/forms/quote-form").then(mod => mod.QuoteForm), {
   loading: () => <div className="h-[500px] bg-card/50 animate-pulse rounded-xl" aria-label="Loading quote form..." />,
-  ssr: false, // Form state is client-only; skip SSR to reduce server render time
 });
 
 const trustBadges = [

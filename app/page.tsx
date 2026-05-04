@@ -2,13 +2,56 @@ import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+// Critical above-fold components — imported statically for fastest LCP
 import Hero from "@/components/home/hero";
 import TrustBadges from "@/components/home/trust-badges";
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
-const Testimonials = dynamic(() => import("@/components/home/testimonials"));
-const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"));
-const ContactSection = dynamic(() => import("@/components/home/contact-section"));
+
+// Below-fold components — dynamically loaded so they don't block first paint
+// Each gets a height-matched skeleton to prevent CLS
+const AboutPreview = dynamic(() => import("@/components/home/about-preview"), {
+  loading: () => <div className="py-20 lg:py-32 bg-background"><div className="container mx-auto px-4 h-80 bg-muted/30 rounded-2xl animate-pulse" /></div>,
+});
+const ServicesGrid = dynamic(() => import("@/components/home/services-grid"), {
+  loading: () => <div className="py-20 lg:py-32 bg-secondary"><div className="container mx-auto px-4 h-96 bg-muted/30 rounded-2xl animate-pulse" /></div>,
+});
+const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"), {
+  loading: () => <div className="h-64" />,
+});
+const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"), {
+  loading: () => <div className="h-80" />,
+});
+const ProcessSection = dynamic(() => import("@/components/home/process-section"), {
+  loading: () => <div className="h-64" />,
+});
+const ServiceAreas = dynamic(() => import("@/components/home/service-areas"), {
+  loading: () => <div className="h-48" />,
+});
+const Financing = dynamic(() => import("@/components/home/financing"), {
+  loading: () => <div className="h-48" />,
+});
+const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"), {
+  loading: () => <div className="h-64" />,
+});
+const FAQ = dynamic(() => import("@/components/home/faq"), {
+  loading: () => <div className="h-96" />,
+});
+const BlogPreview = dynamic(() => import("@/components/home/blog-preview"), {
+  loading: () => <div className="h-96" />,
+});
+const Testimonials = dynamic(() => import("@/components/home/testimonials"), {
+  loading: () => <div className="py-20 bg-secondary"><div className="container mx-auto px-4 h-64 bg-muted/30 rounded-2xl animate-pulse" /></div>,
+});
+const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), {
+  loading: () => <div className="py-20 bg-background"><div className="container mx-auto px-4 h-96 bg-muted/30 rounded-2xl animate-pulse" /></div>,
+});
+const ContactSection = dynamic(() => import("@/components/home/contact-section"), {
+  loading: () => <div className="py-20 bg-secondary"><div className="container mx-auto px-4 h-96 bg-muted/30 rounded-2xl animate-pulse" /></div>,
+});
+const FinalCTA = dynamic(() => import("@/components/home/final-cta"), {
+  loading: () => <div className="h-32" />,
+});
 
 export const metadata: Metadata = {
   title: "Best Bathroom Remodeling Contractor in Chandler AZ | Licensed & Insured",
@@ -34,19 +77,6 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.url}/`,
   },
 };
-
-import AboutPreview from "@/components/home/about-preview";
-import ServicesGrid from "@/components/home/services-grid";
-import WhyChooseUs from "@/components/home/why-choose-us";
-import BathroomSection from "@/components/home/bathroom-section";
-import ProcessSection from "@/components/home/process-section";
-import ServiceAreas from "@/components/home/service-areas";
-import Financing from "@/components/home/financing";
-import FAQ from "@/components/home/faq";
-import BlogPreview from "@/components/home/blog-preview";
-import ComparisonBenefits from "@/components/home/comparison-benefits";
-import FinalCTA from "@/components/home/final-cta";
-
 
 const homeFaqs = [
   {

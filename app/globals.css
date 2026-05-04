@@ -7,13 +7,24 @@
 @font-face {
   font-family: 'system-ui';
   font-display: swap;
-  src: system-ui;
+  src: local('system-ui');
+}
+
+/* Geist Mono not loaded from network - use system monospace to avoid a font request */
+@font-face {
+  font-family: 'Geist Mono';
+  font-display: swap;
+  src: local('Courier New'), local('Courier'), monospace;
 }
 
 /* Optimize rendering performance */
 html {
   scroll-behavior: smooth;
   font-feature-settings: "kern" 1;
+  /* Subpixel antialiasing improves text clarity at small sizes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* Prevent CLS (Cumulative Layout Shift) */
@@ -268,8 +279,27 @@ footer a:not([aria-label]) {
 }
 
 /* Content visibility optimization for below-fold sections */
+/* Skips rendering off-screen sections entirely until they enter the viewport */
 .content-visibility-auto {
   content-visibility: auto;
   contain-intrinsic-size: auto 500px;
+}
+
+/* GPU layer promotion for elements that animate frequently */
+/* Avoids layout thrashing and enables hardware acceleration */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Contain layout for major page sections to prevent cascading reflows */
+section {
+  contain: layout style;
+}
+
+/* Avoid painting animations on low-power devices */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-in {
+    animation-play-state: running;
+  }
 }
 

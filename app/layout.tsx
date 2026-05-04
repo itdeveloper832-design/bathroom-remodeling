@@ -6,16 +6,24 @@ import './globals.css'
 import { Inter, Outfit } from 'next/font/google'
 import { StickyCallButton } from '@/components/layout/sticky-call-button'
 
+// Load only 2 specific weights instead of the full variable font range
+// → eliminates ~60-80KB of font data the browser would otherwise parse
 const inter = Inter({
   subsets: ['latin'],
+  weight: ['400', '600'],
   display: 'swap',
   variable: '--font-inter',
+  preload: true,
+  fallback: ['system-ui', 'arial'],
 })
 
 const outfit = Outfit({
   subsets: ['latin'],
+  weight: ['400', '600', '700'],
   display: 'swap',
   variable: '--font-outfit',
+  preload: true,
+  fallback: ['Georgia', 'serif'],
 })
 
 export const metadata: Metadata = {
@@ -69,8 +77,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.png',
-    apple: '/favicon.png',
+    // Use optimized SVG icon - removes the 308KB favicon.png from critical path
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon-dark-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-icon.png',
   },
 }
 
@@ -91,11 +103,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable} ${outfit.variable}`}>
       <head>
-        {/* Critical performance optimizations - Resource Hints */}
+        {/* DNS prefetch for third-party domains */}
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        {/* Preconnect for faster external image loading */}
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         
-        {/* Preload critical LCP image - Fetch Priority for 2024 standards */}
+        {/* Preload critical LCP image - fetchPriority=high signals browser to start immediately */}
         <link rel="preload" fetchPriority="high" href="/images/optimized/photo-1620626011761-996317b8d101.webp" as="image" type="image/webp" />
+        {/* Preload logo so it paints before first scroll */}
         <link rel="preload" fetchPriority="high" href="/images/logo-main.webp" as="image" type="image/webp" />
 
         {/* Additional SEO meta tags */}
@@ -196,7 +212,7 @@ export default function RootLayout({
         {children}
         <StickyCallButton />
       </body>
-      {/* Defer Vercel analytics - not critical for rendering */}
+      {/* Vercel analytics - only load if script exists, lazyOnload avoids blocking render */}
       <Script src="/_vercel/insights/script.js" strategy="lazyOnload" />
     </html>
   )

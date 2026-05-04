@@ -4,8 +4,10 @@ import Image from "next/image";
 import { Star, Shield, Award, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// QuoteForm deferred - it's a large component with Firebase deps and is below the fold of mobile
 const QuoteForm = dynamic(() => import("@/components/forms/quote-form").then(mod => mod.QuoteForm), {
-  loading: () => <div className="h-[500px] bg-card/50 animate-pulse rounded-xl" />
+  loading: () => <div className="h-[500px] bg-card/50 animate-pulse rounded-xl" aria-label="Loading quote form..." />,
+  ssr: false, // Form state is client-only; skip SSR to reduce server render time
 });
 
 const trustBadges = [
@@ -18,7 +20,7 @@ const trustBadges = [
 export default function Hero() {
   return (
     <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-36 md:pt-44 lg:pt-52" aria-label="Hero section">
-      {/* Background Image - LCP Optimized (142KB) */}
+      {/* Background Image - LCP Optimized */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/optimized/photo-1620626011761-996317b8d101.webp"
@@ -28,8 +30,9 @@ export default function Hero() {
           priority={true}
           sizes="100vw"
           quality={85}
-          loading="eager"
           fetchPriority="high"
+          // decoding async so main thread is not blocked while GPU decodes this large image
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" aria-hidden="true" />
       </div>
@@ -39,12 +42,14 @@ export default function Hero() {
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
           {/* Left Column - Hero Content */}
           <div className="lg:col-span-2">
-            {/* Rating Badge */}
+            {/* Rating Badge - static stars, avoids mapping array on every render */}
             <div className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm border border-background/20 rounded-full px-4 py-2 mb-8">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                ))}
+              <div className="flex" aria-hidden="true">
+                <Star className="w-4 h-4 fill-primary text-primary" />
+                <Star className="w-4 h-4 fill-primary text-primary" />
+                <Star className="w-4 h-4 fill-primary text-primary" />
+                <Star className="w-4 h-4 fill-primary text-primary" />
+                <Star className="w-4 h-4 fill-primary text-primary" />
               </div>
               <span className="text-background text-sm font-medium">
                 4.9 Rating on Google Reviews

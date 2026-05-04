@@ -303,3 +303,36 @@ section {
   }
 }
 
+/* ===== CSS-ONLY GALLERY BEFORE/AFTER HOVER =====
+   No JavaScript needed — pure CSS handles the image swap on hover.
+   This converts gallery-preview.tsx from a client to a server component. */
+
+/* After image: hidden by default, revealed on hover */
+.gallery-card .gallery-after {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Before image: visible by default, hidden on hover */
+.gallery-card .gallery-before {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* On hover: swap before→after */
+.gallery-card:hover .gallery-after { opacity: 1; }
+.gallery-card:hover .gallery-before { opacity: 0; }
+
+/* Before label: shown by default */
+.gallery-label-before { display: inline-block; }
+.gallery-label-after  { display: none; }
+
+/* On hover: swap labels */
+.gallery-card:hover .gallery-label-before { display: none; }
+.gallery-card:hover .gallery-label-after  { display: inline-block; }
+
+/* Touch devices: tap to reveal after image */
+@media (hover: none) {
+  .gallery-card:focus-within .gallery-after { opacity: 1; }
+  .gallery-card:focus-within .gallery-before { opacity: 0; }
+}

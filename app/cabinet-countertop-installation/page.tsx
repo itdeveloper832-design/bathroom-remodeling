@@ -18,7 +18,7 @@ import { serviceContent } from "@/lib/service-content-data";
 export const metadata: Metadata = {
   title: "Cabinet & Countertop Installation Chandler AZ",
   description: "Professional cabinet and countertop installation in Chandler, Arizona. Granite, quartz, marble countertops and custom cabinetry. Free estimates.",
-  keywords: ["cabinet countertop installation chandler az", "bathroom countertops chandler", "vanity cabinet installation", "granite countertops arizona", "quartz countertops chandler"],
+  keywords: ["cabinet countertop installation chandler az", "countertop installation chandler", "bathroom countertops chandler", "vanity cabinet installation", "granite countertops arizona", "quartz countertops chandler"],
   openGraph: {
     title: "Cabinet & Countertop Installation Chandler AZ",
     description: "Professional cabinet and countertop installation in Chandler. Granite, quartz, and custom cabinetry.",
@@ -151,7 +151,7 @@ export default function CabinetCountertopInstallationPage() {
                 Cabinet & Countertop Service Area in Chandler, Arizona
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We provide professional cabinet and countertop installation throughout Chandler and the greater Phoenix area.
+                We provide professional cabinet and countertop installation chandler homeowners trust throughout the greater Phoenix area.
               </p>
               <ul className="space-y-2 text-foreground">
                 <li>• Chandler, AZ and surrounding areas</li>

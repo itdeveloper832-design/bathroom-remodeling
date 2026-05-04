@@ -20,7 +20,23 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Custom Walk-In Showers Chandler AZ | Installations",
   description: "Safe & stylish walk-in showers Chandler AZ. Handicap accessible options available. Get a seamless bathroom installation today!",
-  keywords: ["walk-in showers Chandler AZ", "walk in shower installation Chandler AZ", "walk in shower installation price Chandler AZ", "walk in shower installation cost Chandler AZ", "walk in shower installation professional Chandler AZ", "walk in shower installation best Chandler AZ", "walk in shower installation company Chandler AZ", "walk in shower installation contractor Chandler AZ", "walk in shower installation estimate Chandler AZ", "walk in shower installation quote Chandler AZ", "walk in shower installation hire Chandler AZ", "affordable walk in shower installation Chandler AZ", "walk in shower installation near me Chandler AZ"],
+  keywords: [
+    "walk-in showers Chandler AZ",
+    "walk in shower installation Chandler AZ",
+    "walk-in shower company services",
+    "walk-in shower installation services",
+    "walk in shower installation price Chandler AZ",
+    "walk in shower installation cost Chandler AZ",
+    "walk in shower installation professional Chandler AZ",
+    "walk in shower installation best Chandler AZ",
+    "walk in shower installation company Chandler AZ",
+    "walk in shower installation contractor Chandler AZ",
+    "walk in shower installation estimate Chandler AZ",
+    "walk in shower installation quote Chandler AZ",
+    "walk in shower installation hire Chandler AZ",
+    "affordable walk in shower installation Chandler AZ",
+    "walk in shower installation near me Chandler AZ"
+  ],
   openGraph: {
     title: "Walk In Shower Installation Chandler AZ | Best",
     description: "Best walk in shower installation Chandler AZ. Professional installation, free quotes!",
@@ -71,8 +87,8 @@ export default function WalkInShowersPage() {
       <main>
         <ServiceHero
           title="Best Walk In Shower Installation Chandler AZ"
-          subtitle="Professional Walk In Shower Installation Company Chandler AZ"
-          description="Best walk in shower installation Chandler AZ. Affordable walk in shower installation price, professional walk in shower installation contractor. Get your free walk in shower installation quote today!"
+          subtitle="Professional Walk-In Shower Company Services in Chandler AZ"
+          description="Best walk in shower installation Chandler AZ. We offer top-tier walk-in shower company services and affordable walk-in shower installation services. Get your free quote today!"
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

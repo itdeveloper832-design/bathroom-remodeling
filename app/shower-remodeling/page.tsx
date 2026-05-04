@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     "chandler shower remodeling",
     "shower remodeling contractor chandler az",
     "tile shower installation chandler",
+    "tile shower installation services chandler",
     "accessible shower remodeling chandler",
     "shower renovation near me",
     "shower remodel near me",
@@ -152,7 +153,7 @@ export default function ShowerRemodelingPage() {
               <div className="p-6 bg-secondary rounded-2xl border border-border">
                 <h3 className="font-semibold text-foreground mb-2">Tile Shower Installation Chandler</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  We specialize in custom <strong>tile shower installation in Chandler</strong>, using moisture-proof substrates and high-grade porcelain 
+                  We specialize in custom <strong>tile shower installation services chandler</strong> homeowners trust, using moisture-proof substrates and high-grade porcelain 
                   that stands up to Chandler's heavy mineral water without staining or failing.
                 </p>
               </div>

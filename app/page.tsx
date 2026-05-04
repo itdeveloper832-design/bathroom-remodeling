@@ -34,14 +34,17 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
 export const metadata: Metadata = {
   title: "Best Bathroom Remodeling Contractor in Chandler AZ | Licensed & Insured",
   description:
-    "Hire the top-rated bathroom remodeling company in Chandler, AZ. Licensed, bonded, and insured contractors specializing in walk-in showers, tub-to-shower conversions, and master bath renovations. Free quotes!",
+    "Hire the top-rated bath remodeling contractor chandler az. Licensed, bonded, and insured contractors specializing in walk-in showers, tub-to-shower conversions, and master bath renovations. Free quotes for your chandler az bathroom remodel!",
   keywords: [
     "bathroom remodel chandler",
     "bathroom remodel chandler az",
     "bathroom remodeling chandler",
     "bathroom remodeling chandler az",
-    "bath remodel chandler",
+    "chandler az bathroom remodel",
+    "bath remodeling contractor chandler az",
     "bathroom remodeling contractor chandler",
+    "bathroom remodel chandler az prices",
+    "bath remodel chandler",
     "bathroom remodeling services chandler",
     "affordable bathroom remodeling chandler az",
     "bathroom remodel chandler az cost",

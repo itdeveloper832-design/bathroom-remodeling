@@ -10,25 +10,25 @@ export default function LocalTrust({ cityName = "Winchester" }: LocalTrustProps)
     {
       name: "Better Business Bureau",
       href: "https://www.bbb.org/us/ky/winchester/profile/fence-contractors/custom-fence-roofing-0402-9001331",
-      img: "/bbb-badge.png",
+      img: "/bbb-badge.webp",
       label: "Accredited Business",
     },
     {
       name: "Yelp Ratings",
       href: "https://www.yelp.com/biz/custom-fence-and-roofing-winchester",
-      img: "/yelp-badge.png",
+      img: "/yelp-badge.webp",
       label: "5-Star Rated",
     },
     {
       name: "Nextdoor Neighborhood Favorite",
       href: "https://nextdoor.com/pages/custom-fence-and-roofing-winchester-ky/",
-      img: "/nextdoor-badge.png",
+      img: "/nextdoor-badge.webp",
       label: "Neighborhood Favorite",
     },
     {
       name: "Winchester Chamber of Commerce",
       href: "https://business.winchesterkychamber.com/list/member/custom-fence-and-roofing-llc-7294",
-      img: "/chamber-badge.png",
+      img: "/chamber-badge.webp",
       label: `${cityName} Chamber`,
     },
   ];

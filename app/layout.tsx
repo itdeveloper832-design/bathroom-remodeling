@@ -103,12 +103,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable} ${outfit.variable}`}>
       <head>
-        {/* DNS prefetch for third-party domains */}
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://images.unsplash.com" />
-        {/* Preconnect for faster external image loading */}
-        <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
-        
         {/* Preload critical LCP image - fetchPriority=high signals browser to start immediately */}
         <link rel="preload" fetchPriority="high" href="/images/optimized/photo-1620626011761-996317b8d101.webp" as="image" type="image/webp" />
         {/* Preload logo so it paints before first scroll */}
@@ -199,21 +193,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
-        {/* Google Tag Manager (noscript) - Commented out until valid ID is provided
-        <noscript>
-          <iframe 
-            src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-            height="0" 
-            width="0" 
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
-        */}
         {children}
         <StickyCallButton />
       </body>
-      {/* Vercel analytics - only load if script exists, lazyOnload avoids blocking render */}
-      <Script src="/_vercel/insights/script.js" strategy="lazyOnload" />
     </html>
   )
 }

@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 // Critical above-fold components — imported statically for fastest LCP
 import Hero from "@/components/home/hero";
-import TrustBadges from "@/components/home/trust-badges";
+import LocalTrust from "@/components/home/local-trust";
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
@@ -63,9 +63,13 @@ export const metadata: Metadata = {
     "bathroom remodeling chandler",
     "bathroom remodeling chandler az",
     "bath remodel chandler",
-    "home remodel chandler",
-    "remodeling contractors chandler az",
-    "bathroom remodeling contractor phoenix",
+    "bathroom remodeling contractor chandler",
+    "bathroom remodeling services chandler",
+    "affordable bathroom remodeling chandler az",
+    "bathroom remodel chandler az cost",
+    "bathroom remodelers chandler az",
+    "bathroom contractor chandler az",
+    "bath remodel near me",
   ],
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | Expert Team",
@@ -87,12 +91,12 @@ const homeFaqs = [
   {
     question: "How much does a bathroom remodel cost in Chandler, AZ?",
     answer:
-      "Bathroom remodel costs in Chandler typically range from $4,500 for a guest bath update to $45,000+ for a full master bath renovation. Tub-to-shower conversions run $6,000–$13,000. We provide free, itemized written estimates before any work begins.",
+      "A typical bathroom remodel chandler az cost ranges from $4,500 for a guest bath update to $45,000+ for a full master bath renovation. Tub-to-shower conversions run $6,000–$13,000. We provide free, itemized written estimates with competitive bathroom remodel chandler az prices.",
   },
   {
     question: "Are you licensed remodeling contractors in Chandler, AZ?",
     answer:
-      "Yes. We are a licensed Arizona contractor serving homeowners across Chandler, Gilbert, Mesa, Tempe, and the East Valley. Every project includes a 2-year workmanship warranty and we pull all required city permits.",
+      "Yes. We are a licensed bathroom remodeling contractor in Chandler serving homeowners across Chandler, Gilbert, Mesa, Tempe, and the East Valley. Every project includes a 2-year workmanship warranty and we pull all required city permits.",
   },
   {
     question: "Do you offer shower remodeling in Chandler, AZ?",
@@ -129,7 +133,7 @@ export default function HomePage() {
       <Header />
       <main id="main-content" role="main">
         <Hero />
-        <TrustBadges />
+        <LocalTrust cityName="Chandler" />
         <AboutPreview />
         <ServicesGrid />
         <WhyChooseUs />

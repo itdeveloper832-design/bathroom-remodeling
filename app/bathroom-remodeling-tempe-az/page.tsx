@@ -6,6 +6,7 @@ import ServiceCTA from "@/components/service-cta";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema } from "@/components/seo/json-ld";
 import { GoogleMap } from "@/components/services/google-map";
+import LocalTrust from "@/components/home/local-trust";
 
 export const metadata: Metadata = {
   title: "Professional Bathroom Remodeling in Tempe AZ | Hire Top Contractors",
@@ -42,6 +43,7 @@ export default function TempePage() {
             { name: "Tempe", url: `${siteConfig.url}/bathroom-remodeling-tempe-az/` }
           ]}
         />
+        <LocalTrust cityName="Tempe" />
         
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 max-w-4xl text-center">

@@ -21,26 +21,24 @@ import {
   Phone,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LocalTrust from "@/components/home/local-trust";
 
 export const metadata: Metadata = {
   title: "Chandler’s Top-Rated Bathroom Remodeling Contractor | Free Estimates",
   description:
     "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high-quality walk-in showers, tub-to-shower conversions, and master bath renovations. Licensed company, free estimates — call (229) 306-5591 today!",
   keywords: [
-    "bathroom remodeling Chandler AZ",
-    "bathroom remodel Chandler Arizona",
-    "bathroom renovation Chandler AZ",
-    "shower remodeling Chandler AZ",
-    "tub to shower conversion Chandler AZ",
-    "master bathroom remodel Chandler AZ",
-    "licensed bathroom contractor Chandler AZ",
-    "bathroom remodel cost Chandler AZ",
-    "Dobson Ranch bathroom remodel",
-    "Ocotillo bathroom remodeling",
-    "bathroom contractor 85224",
-    "bathroom contractor 85225",
-    "bathroom contractor 85226",
-    "bathroom contractor 85249",
+    "bathroom remodeling chandler az",
+    "bathroom remodel chandler az",
+    "bathroom remodeling services chandler",
+    "affordable bathroom remodeling chandler az",
+    "cheap bathroom remodeling chandler az",
+    "bathroom remodel chandler az cost",
+    "bathroom remodel chandler az prices",
+    "bathroom remodeling contractor chandler",
+    "bathroom remodelers chandler az",
+    "bathroom contractor chandler az",
+    "bath remodel near me",
   ],
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
@@ -82,7 +80,7 @@ const chandlerFaqs = [
   {
     question: "How much does a bathroom remodel cost in Chandler, AZ?",
     answer:
-      "Guest bath full remodels run $10,000–$18,000. Tub-to-shower conversions are $6,000–$13,000. Master bathrooms range from $18,000–$45,000+. We offer free, itemized estimates so you know exactly what you're getting.",
+      "A typical bathroom remodel chandler az cost ranges from $10,000–$18,000 for full guest baths. Tub-to-shower conversions are $6,000–$13,000. Master bathrooms range from $18,000–$45,000+. We provide free, itemized estimates with competitive bathroom remodel chandler az prices.",
   },
   {
     question: "Can you remodel my shower without replacing the whole bathroom?",
@@ -233,11 +231,14 @@ export default function ChandlerBathroomRemodelingPage() {
               notoriously hard water. Builder-grade vanities from 1994 aren't doing your home value any favors.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in{" "}
-              <strong className="text-foreground">bathroom remodeling in Chandler, AZ</strong> — from tub-to-shower
-              conversions in Dobson Ranch to full master bath transformations in Ocotillo. We are a licensed Arizona
-              contractor, serving homeowners across{" "}
-              <span className="text-primary font-semibold">85224, 85225, 85226, and 85249</span>.
+              At ARZ Home Remodeling, we specialize in high-quality <strong>bathroom remodeling in Chandler, AZ</strong> — from professional tub-to-shower
+              conversions in Dobson Ranch to full master bath transformations in Ocotillo. As a trusted <strong>bathroom contractor in Chandler AZ</strong>, we serve homeowners across 
+              <span className="text-primary font-semibold"> 85224, 85225, 85226, and 85249</span>.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Whether you are searching for a <strong>bath remodel near me</strong> or looking for the most reliable <strong>bathroom remodelers in Chandler AZ</strong>, 
+              our team delivers results that blend durability with modern aesthetics. We understand that finding <strong>affordable bathroom remodeling in Chandler AZ</strong> 
+              is a priority, which is why we offer transparent, itemized quotes for every project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
@@ -284,6 +285,8 @@ export default function ChandlerBathroomRemodelingPage() {
             </div>
           </div>
         </section>
+
+        <LocalTrust cityName="Chandler" />
 
         {/* TRUST SIGNALS */}
         <section className="py-16 lg:py-24 bg-background">
@@ -405,8 +408,10 @@ export default function ChandlerBathroomRemodelingPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold mt-4 mb-6 text-foreground">
               Serving All of Chandler, AZ
             </h2>
-            <p className="text-muted-foreground mb-8">
-              We serve every neighborhood in Chandler plus the greater East Valley. Here are some of the areas we cover most:
+            <p className="text-muted-foreground mb-8 leading-relaxed">
+              We are a local <strong>bathroom remodeling company in Chandler</strong> dedicated to serving every neighborhood in the city plus the greater East Valley. 
+              If you've been looking for a <strong>bathroom remodeler in Chandler AZ</strong> that knows the local building codes and hard water challenges, look no further. 
+              Here are some of the areas we cover most:
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {neighborhoods.map((n) => (

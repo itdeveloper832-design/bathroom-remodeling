@@ -15,12 +15,23 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
+import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
   title: "Tub to Shower Conversion Chandler | Best Price & Expert Installation",
   description: "Expert tub to shower conversion Chandler AZ. Improve safety and style with a modern walk-in shower. Request your free estimate today!",
-  keywords: ["tub to shower conversion Chandler", "tub to shower conversion price Chandler AZ", "tub to shower conversion cost Chandler AZ", "best tub to shower conversion Chandler AZ", "affordable tub to shower conversion Chandler AZ", "tub to shower conversion quote Chandler AZ", "tub to shower conversion estimate Chandler AZ", "tub to shower conversion contractor Chandler AZ", "bathtub to shower conversion cost Chandler AZ", "bathtub to shower conversion price Chandler AZ", "bathtub to shower conversion professional Chandler AZ", "hire tub to shower conversion Chandler AZ"],
+  keywords: [
+    "tub to shower conversion chandler",
+    "tub to shower conversion companies near me",
+    "tub to shower conversion near me",
+    "bath to shower conversion near me",
+    "tub to shower conversion arizona",
+    "shower to tub conversions near me",
+    "affordable tub to shower conversion chandler az",
+    "tub to shower conversion cost chandler az",
+    "best tub to shower conversion chandler az",
+  ],
   openGraph: {
     title: "Tub to Shower Conversion Chandler AZ | Best Price",
     description: "Best tub to shower conversion Chandler AZ. Affordable bathtub to shower conversion cost!",
@@ -130,6 +141,25 @@ export default function TubToShowerConversionPage() {
           subtitle="Why Convert Your Tub"
           benefits={serviceData.benefits}
         />
+        <LocalTrust cityName="Chandler" />
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Leading Tub to Shower Conversion Experts in Arizona
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              When searching for <strong>tub to shower conversion companies near me</strong>, you want a team that understands 
+              both the aesthetic and structural requirements of Arizona homes. We specialize in <strong>tub to shower conversion in Arizona</strong>, 
+              focusing on high-quality waterproofing and custom designs. While we primarily focus on <strong>tub to shower conversion near me</strong>, 
+              we can also discuss <strong>shower to tub conversions near me</strong> for those looking to add a soaking bath back into their home.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Our <strong>bath to shower conversion near me</strong> services are designed to maximize your bathroom's footprint, 
+              providing a more open and modern feel while significantly improving accessibility.
+            </p>
+          </div>
+        </section>
 
         <Tips
           title="Tub to Shower Conversion Tips"

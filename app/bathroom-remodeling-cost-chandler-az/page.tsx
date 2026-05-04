@@ -17,13 +17,14 @@ export const metadata: Metadata = {
   description:
     "Complete bathroom remodeling cost guide for Chandler, AZ. Guest bath updates from $4,500, tub-to-shower conversions $6,000–$13,000, master bath remodels $18,000–$45,000+. Free itemized estimates.",
   keywords: [
-    "bathroom remodeling cost Chandler AZ",
-    "bathroom remodel price Chandler AZ",
-    "how much does a bathroom remodel cost in Chandler",
-    "tub to shower conversion cost Chandler AZ",
-    "master bathroom remodel cost Chandler",
-    "bathroom renovation estimate Chandler AZ",
-    "Chandler bathroom remodel pricing",
+    "bathroom remodeling cost chandler az",
+    "bathroom remodel chandler az cost",
+    "bathroom remodel chandler az prices",
+    "affordable bathroom remodeling chandler az",
+    "cheap bathroom remodeling chandler az",
+    "tub to shower conversion cost chandler az",
+    "bathroom remodel price chandler az",
+    "bathroom renovation estimate chandler az",
   ],
   openGraph: {
     title: "Bathroom Remodeling Cost Chandler AZ | 2024 Pricing Guide",
@@ -39,9 +40,9 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "What is the average cost of a bathroom remodel in Chandler, AZ?",
+    question: "What is the average bathroom remodel chandler az cost?",
     answer:
-      "The average cost depends heavily on scope. A guest bathroom cosmetic update runs $4,500–$9,000. A full guest bath remodel (new tile, shower, vanity, flooring) costs $10,000–$18,000. Master bathroom remodels range from $18,000–$45,000+.",
+      "The average bathroom remodel chandler az cost depends on scope. A guest bathroom cosmetic update runs $4,500–$9,000. A full guest bath remodel costs $10,000–$18,000. Master bathroom remodels range from $18,000–$45,000+. We provide free, itemized estimates with competitive bathroom remodel chandler az prices.",
   },
   {
     question: "Why does bathroom remodeling cost more in Chandler than national averages?",
@@ -190,7 +191,8 @@ export default function CostPage() {
               The most common question we get from Chandler homeowners is:{" "}
               <em>"What will this actually cost?"</em> The answer depends on your project type, material grade, and whether
               any plumbing is being relocated. This guide breaks down every tier with real line-item estimates so you can plan
-              accurately before we even step foot in your home.
+              accurately. Whether you're looking for <strong>cheap bathroom remodeling in Chandler AZ</strong> that doesn't sacrifice quality, 
+              or a high-end master suite renovation, we provide options for every budget.
             </p>
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <Info className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />

@@ -15,6 +15,7 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
+import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
@@ -26,14 +27,11 @@ export const metadata: Metadata = {
     "bathtub remodeling chandler az",
     "bathtub remodel chandler az",
     "tub replacement chandler az",
-    "bathtub replacement chandler az",
-    "bathtub to shower conversion chandler az",
-    "tub to shower conversion chandler az",
-    "soaking tub installation chandler az",
+    "bathroom refinishers near me",
     "bathtub remodeling contractor chandler az",
-    // Supporting geo signals
     "bathroom remodeling chandler az",
     "bathtub remodel cost chandler az",
+    "affordable bathtub remodeling chandler az",
   ],
   openGraph: {
     title: "Bathtub Remodeling Chandler AZ | Tub Replacement & Conversion",
@@ -145,6 +143,25 @@ export default function BathtubRemodelingPage() {
           subtitle="Why It Matters"
           benefits={serviceData.benefits}
         />
+        <LocalTrust cityName="Chandler" />
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Tub Replacement vs. Refinishing in Chandler
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Many homeowners search for <strong>bathroom refinishers near me</strong> as a quick fix for a stained or outdated tub. 
+              While refinishing can provide a temporary cosmetic lift, it often fails within 2-3 years due to Chandler's heavy mineral usage. 
+              Our <strong>bathtub remodeling contractor chandler az</strong> team recommends a full tub replacement for a permanent, 
+              leak-proof solution that adds real value to your home.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              We provide <strong>affordable bathtub remodeling in Chandler AZ</strong> that gives you a brand-new, modern tub 
+              backed by a workmanship warranty—something you won't get from a simple resurfacing job.
+            </p>
+          </div>
+        </section>
 
         <Tips
           title="Tub Maintenance Tips"

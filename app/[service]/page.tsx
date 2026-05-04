@@ -33,6 +33,7 @@ const Testimonials = dynamic(() => import("@/components/home/testimonials"));
 const ContactSection = dynamic(() => import("@/components/home/contact-section"));
 const GoogleMap = dynamic(() => import("@/components/services/google-map").then(mod => mod.GoogleMap));
 import SubServices from "@/components/services/sub-services";
+import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
@@ -1373,6 +1374,8 @@ export default async function BathroomServicePage({
           subtitle="Why It Matters"
           benefits={content.benefits}
         />
+
+        <LocalTrust cityName="Winchester" />
 
         {/* Related Services Section */}
         {content.relatedServices && (

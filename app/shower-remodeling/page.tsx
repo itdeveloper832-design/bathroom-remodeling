@@ -14,6 +14,7 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
+import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
@@ -24,15 +25,14 @@ export const metadata: Metadata = {
     // Primary — Shower cluster (localized from phoenix to chandler)
     "shower remodeling chandler az",
     "shower remodel chandler az",
-    "shower replacement chandler az",
-    "walk-in shower installation chandler az",
-    "walk-in shower chandler az",
-    "custom shower chandler az",
-    "frameless glass shower chandler az",
+    "shower remodeling services chandler",
+    "chandler shower remodeling",
     "shower remodeling contractor chandler az",
-    // Supporting geo signals
-    "bathroom remodeling chandler az",
-    "shower remodel cost chandler az",
+    "tile shower installation chandler",
+    "accessible shower remodeling chandler",
+    "shower renovation near me",
+    "shower remodel near me",
+    "shower remodeling company chandler",
   ],
   openGraph: {
     title: "Shower Remodeling Chandler AZ | Walk-In Showers & Custom Tile",
@@ -138,9 +138,34 @@ export default function ShowerRemodelingPage() {
         <Benefits
           title="Benefits of Upgrading Your Shower"
           subtitle="Why It Matters"
-          description="Discover how professional updates transform your daily routine and add value to your home."
+          description="Discover how professional updates transform your daily routine and add value to your home. Whether you need a simple upgrade or a complete shower renovation near me, we provide expert results."
           benefits={showerData.benefits}
         />
+        <LocalTrust cityName="Chandler" />
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Specialized Shower Remodeling Services in Chandler
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-semibold text-foreground mb-2">Tile Shower Installation Chandler</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We specialize in custom <strong>tile shower installation in Chandler</strong>, using moisture-proof substrates and high-grade porcelain 
+                  that stands up to Chandler's heavy mineral water without staining or failing.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-semibold text-foreground mb-2">Accessible Shower Remodeling Chandler</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Safety is paramount. Our <strong>accessible shower remodeling in Chandler</strong> includes curbless entries, built-in benches, 
+                  and ADA-compliant grab bars for a barrier-free bathing experience that doesn't compromise on luxury.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <Tips
           title="Expert Maintenance Tips"

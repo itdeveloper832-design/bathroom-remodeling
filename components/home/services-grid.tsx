@@ -17,7 +17,7 @@ export default function ServicesGrid() {
             Bathroom Remodeling Services in Chandler, AZ
           </h2>
           <div className="text-muted-foreground text-lg leading-relaxed space-y-4">
-            <p>Licensed remodeling contractors in Chandler offering:</p>
+            <p>Licensed <strong>bath remodeling contractors chandler az</strong> offering:</p>
             <ul className="list-disc text-left inline-block space-y-1 ml-4">
               <li><strong>Bath Remodel Chandler AZ:</strong> Full bathroom renovations, vanity, tile, and fixtures.</li>
               <li><strong>Shower Remodeling Chandler AZ:</strong> Walk-in showers, frameless glass, curbless designs.</li>

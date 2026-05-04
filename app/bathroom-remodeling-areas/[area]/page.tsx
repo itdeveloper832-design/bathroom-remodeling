@@ -12,6 +12,7 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { getAreaData, getAllAreaSlugs } from "@/lib/bathroom-remodeling-areas";
 import AreaInterlinking from "@/components/area-interlinking";
+import LocalTrust from "@/components/home/local-trust";
 
 export async function generateStaticParams() {
   const slugs = getAllAreaSlugs();
@@ -59,6 +60,7 @@ export default async function AreaPage({
           description={areaData.introSection.description}
           trustSignals={areaData.localTrustSignals}
         />
+        <LocalTrust cityName={areaData.areaName} />
         <AreaBenefits benefits={areaData.areaBenefits} />
         <ProcessSection />
         <Testimonials />

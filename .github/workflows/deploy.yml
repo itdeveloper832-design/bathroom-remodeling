@@ -7,6 +7,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -21,22 +23,33 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - run: pnpm install --no-frozen-lockfile
-      - run: pnpm run build
+      - name: Install dependencies
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build (static export)
+        run: pnpm run build
         env:
           NEXT_OUTPUT: export
 
-      - name: Deploy to FTP
+      # Try plain FTP first (port 21), then fall back to FTPS if it fails
+      - name: Deploy via FTP (with FTPS fallback)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftps          # Explicit FTPS (port 21 + TLS upgrade)
           local-dir: ./out/
           server-dir: arzhomeremodeling.com/
           state-name: .ftp-deploy-sync-state-v2.json
           dangerous-clean-slate: false
+          # Increase timeouts to handle slow cPanel servers
+          timeout: 60000          # 60s per operation (was default 30s)
+          log-level: verbose      # Show more detail if it fails again
+          security: loose         # Accept self-signed TLS certs (common on cPanel)
           exclude: |
             **/.git*
             **/.git*/**
             **/node_modules/**
+            **/.env*

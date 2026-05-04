@@ -5,10 +5,9 @@ import dynamic from "next/dynamic";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
-// Only the map is client-side (ssr:false requires "use client" parent)
+// Only the map is client-side
 // By keeping it in a dynamic import here, the footer itself stays a Server Component
 const GoogleMap = dynamic(() => import("@/components/google-map"), {
-  ssr: false,
   loading: () => <div className="mt-8 h-[150px] bg-background/10 animate-pulse rounded-xl" aria-label="Loading map" />,
 });
 

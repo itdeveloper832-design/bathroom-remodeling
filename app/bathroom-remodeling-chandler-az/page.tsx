@@ -231,14 +231,11 @@ export default function ChandlerBathroomRemodelingPage() {
               notoriously hard water. Builder-grade vanities from 1994 aren't doing your home value any favors.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in high-quality <strong>bathroom remodeling in Chandler, AZ</strong> — from professional tub-to-shower
-              conversions in Dobson Ranch to full master bath transformations in Ocotillo. As a trusted <strong>bathroom contractor in Chandler AZ</strong>, we serve homeowners across 
+              At ARZ Home Remodeling, we provide the best <strong>bathroom remodel chandler</strong> solutions, specializing in full renovations and targeted upgrades. If you are looking for a reliable <strong>chandler az bathroom remodel</strong> expert, we handle everything from professional <strong>tub to shower conversion chandler</strong> projects to complete master bath transformations. As a trusted <strong>bathroom contractor in Chandler AZ</strong>, we serve homeowners across 
               <span className="text-primary font-semibold"> 85224, 85225, 85226, and 85249</span>.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Whether you are searching for a <strong>bath remodel near me</strong> or looking for the most reliable <strong>bathroom remodelers in Chandler AZ</strong>, 
-              our team delivers results that blend durability with modern aesthetics. We understand that finding <strong>affordable bathroom remodeling in Chandler AZ</strong> 
-              is a priority, which is why we offer transparent, itemized quotes for every project.
+              Whether you need top-tier <strong>walk-in shower company services</strong> or precise <strong>tile installation chandler</strong>, our team delivers results that blend durability with modern aesthetics. If you are searching for <strong>bathroom remodeling chandler az</strong> professionals or comparing <strong>bathroom remodel chandler az prices</strong>, we offer transparent, itemized quotes to ensure you get exceptional value for your investment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
@@ -409,8 +406,8 @@ export default function ChandlerBathroomRemodelingPage() {
               Serving All of Chandler, AZ
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              We are a local <strong>bathroom remodeling company in Chandler</strong> dedicated to serving every neighborhood in the city plus the greater East Valley. 
-              If you've been looking for a <strong>bathroom remodeler in Chandler AZ</strong> that knows the local building codes and hard water challenges, look no further. 
+              We are a local team dedicated to providing top-quality <strong>shower remodeling services chandler</strong> and <strong>walk-in shower installation services</strong> across the city. 
+              If you've been looking for an expert in <strong>bathroom remodel chandler az</strong> that knows the local building codes and hard water challenges, look no further. 
               Here are some of the areas we cover most:
             </p>
             <div className="flex flex-wrap justify-center gap-3">

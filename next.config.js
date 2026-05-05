@@ -1,4 +1,4 @@
-const isExport = process.env.NEXT_OUTPUT === 'export';
+const isExport = process.env.NEXT_OUTPUT?.trim() === 'export';
 console.log('Next.js Build Mode:', isExport ? 'export' : 'standalone');
 
 /** @type {import('next').NextConfig} */

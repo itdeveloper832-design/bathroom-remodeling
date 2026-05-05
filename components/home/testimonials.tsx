@@ -8,43 +8,43 @@ import { Button } from "@/components/ui/button";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Mitchell",
+    name: "Emily Rodriguez",
     location: "Chandler, AZ",
     rating: 5,
-    service: "Bathroom Remodel",
+    service: "Walk-In Shower Installation",
     content:
-      "The team exceeded our expectations in every way. Our master bathroom went from dated and cramped to a spa-like retreat. The attention to detail was remarkable, and they finished on time and on budget.",
-    image: "/images/optimized/photo-1494790108377-be9c29b29330.webp",
+      "We hired ARZ Home Remodeling for a tub-to-shower conversion in our master bath. The process was incredibly smooth, and the frameless glass looks absolutely stunning. The crew was respectful of our home and cleaned up every day. Highly recommended!",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=200",
   },
   {
     id: 2,
-    name: "Michael Thompson",
-    location: "Sun Lakes, AZ",
+    name: "James Peterson",
+    location: "Gilbert, AZ",
     rating: 5,
-    service: "Bathtub Replacement",
+    service: "Full Master Bath Remodel",
     content:
-      "From the initial consultation to the final walkthrough, the experience was seamless. They replaced our old bathtub with a sleek new install that instantly made the room feel cleaner, brighter, and easier to use.",
-    image: "/images/optimized/photo-1472099645785-5658abf4ff4e.webp",
+      "I was dreading the mess of a full bathroom renovation, but these guys made it painless. They helped us choose the perfect tile and vanity. The craftsmanship is top-notch, and my wife is thrilled with the final result. Worth every penny.",
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200&h=200",
   },
   {
     id: 3,
-    name: "Jennifer Garcia",
+    name: "Maria Hernandez",
     location: "Mesa, AZ",
     rating: 5,
-    service: "Shower Conversion",
+    service: "Bathtub Replacement",
     content:
-      "We converted our old tub to a beautiful walk-in shower, and I couldn't be happier. The frameless glass and rainfall showerhead make it feel like a luxury hotel. Highly recommend!",
-    image: "/images/optimized/photo-1580489944761-15a19d654956.webp",
+      "Our old cast-iron tub was peeling and impossible to clean. The team replaced it with a beautiful, deep soaking tub in just two days. The new fixtures and wall surround look completely custom. I can finally relax in my bathroom again!",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200",
   },
   {
     id: 4,
-    name: "David Chen",
+    name: "Robert Chang",
     location: "Tempe, AZ",
     rating: 5,
-    service: "Full Bathroom Remodel",
+    service: "Accessible Bathroom Remodel",
     content:
-      "Professional from start to finish. The team communicated clearly throughout the project and delivered exactly what they promised. Our guest bathroom is now the highlight of our home!",
-    image: "/images/optimized/photo-1507003211169-0a1dd7228f2d.webp",
+      "We needed a safer, more accessible bathroom for my aging parents. ARZ installed a curbless shower with grab bars and a built-in bench. It not only provides peace of mind but actually looks incredibly modern and luxurious.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
   },
 ];
 

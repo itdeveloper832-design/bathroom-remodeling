@@ -42,7 +42,7 @@ jobs:
           protocol: ftps          # Explicit FTPS (port 21 + TLS upgrade)
           local-dir: ./out/
           server-dir: arzhomeremodeling.com/
-          state-name: .ftp-deploy-sync-state-v2.json
+          state-name: .ftp-deploy-sync-state-v3.json
           dangerous-clean-slate: false
           # Increase timeouts to handle slow cPanel servers
           timeout: 60000          # 60s per operation (was default 30s)

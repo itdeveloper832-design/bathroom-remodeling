@@ -21,9 +21,7 @@ const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
 
 // Client components — dynamically loaded so they don't block main thread
-const Testimonials = dynamic(() => import("@/components/home/testimonials"), {
-  loading: () => <div className="py-20 bg-secondary"><div className="container mx-auto px-4 h-64 bg-muted/30 rounded-2xl animate-pulse" /></div>,
-});
+import Testimonials from "@/components/home/testimonials";
 const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), {
   loading: () => <div className="py-20 bg-background"><div className="container mx-auto px-4 h-96 bg-muted/30 rounded-2xl animate-pulse" /></div>,
 });
@@ -125,6 +123,16 @@ export default function HomePage() {
         <ComparisonBenefits />
         <FAQ />
         <BlogPreview />
+        
+        {/* Hello World Temporary Snippet Requested by User */}
+        <section className="py-12 bg-slate-50 border-b border-t border-slate-200">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center justify-center mb-10 text-center">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight">Hello World (Temporary)</h2>
+            </div>
+          </div>
+        </section>
+
         <Testimonials />
         <GalleryPreview />
         <ContactSection />

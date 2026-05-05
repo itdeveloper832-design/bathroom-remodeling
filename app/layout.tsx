@@ -103,10 +103,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable} ${outfit.variable}`}>
       <head>
-        {/* Preload critical LCP image - fetchPriority=high signals browser to start immediately */}
-        <link rel="preload" fetchPriority="high" href="/images/optimized/photo-1620626011761-996317b8d101.webp" as="image" type="image/webp" />
-        {/* Preload logo so it paints before first scroll */}
-        <link rel="preload" fetchPriority="high" href="/images/logo-main.webp" as="image" type="image/webp" />
+        {/* Preloads handled by Next.js Image component priority={true} */}
 
         {/* Additional SEO meta tags */}
         <meta name="geo.region" content="US-AZ" />

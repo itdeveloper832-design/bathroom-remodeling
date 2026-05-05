@@ -28,8 +28,8 @@ export default function Hero() {
           fill
           className="object-cover"
           priority={true}
-          sizes="100vw"
-          quality={85}
+          sizes="(max-width: 768px) 100vw, 1920px"
+          quality={60}
           fetchPriority="high"
           // decoding async so main thread is not blocked while GPU decodes this large image
           decoding="async"

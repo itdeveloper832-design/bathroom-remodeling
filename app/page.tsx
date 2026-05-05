@@ -8,17 +8,17 @@ import LocalTrust from "@/components/home/local-trust";
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
-import AboutPreview from "@/components/home/about-preview";
-import ServicesGrid from "@/components/home/services-grid";
-import WhyChooseUs from "@/components/home/why-choose-us";
-import BathroomSection from "@/components/home/bathroom-section";
-import ProcessSection from "@/components/home/process-section";
-import ServiceAreas from "@/components/home/service-areas";
-import Financing from "@/components/home/financing";
-import ComparisonBenefits from "@/components/home/comparison-benefits";
-import FAQ from "@/components/home/faq";
-import BlogPreview from "@/components/home/blog-preview";
-import FinalCTA from "@/components/home/final-cta";
+const AboutPreview = dynamic(() => import("@/components/home/about-preview"));
+const ServicesGrid = dynamic(() => import("@/components/home/services-grid"));
+const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"));
+const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"));
+const ProcessSection = dynamic(() => import("@/components/home/process-section"));
+const ServiceAreas = dynamic(() => import("@/components/home/service-areas"));
+const Financing = dynamic(() => import("@/components/home/financing"));
+const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"));
+const FAQ = dynamic(() => import("@/components/home/faq"));
+const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
+const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
 
 // Client components — dynamically loaded so they don't block main thread
 const Testimonials = dynamic(() => import("@/components/home/testimonials"), {

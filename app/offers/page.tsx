@@ -98,7 +98,7 @@ export default function OffersPage() {
   return (
     <>
       <Header />
-      <main className="pt-24">
+      <main className="pt-32 md:pt-40 lg:pt-48">
         <section className="py-20 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">

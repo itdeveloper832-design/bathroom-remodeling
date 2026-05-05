@@ -36,7 +36,7 @@ export default function TermsOfServicePage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-background">
+      <main className="min-h-screen bg-background pt-32 md:pt-40 lg:pt-48">
         <section className="py-24 md:py-32 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">

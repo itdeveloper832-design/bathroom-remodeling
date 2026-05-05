@@ -112,6 +112,13 @@ export default function HomePage() {
       <Header />
       <main id="main-content" role="main">
         <Hero />
+        
+        {/* User requested test heading */}
+        <section className="py-8 bg-background text-center border-b">
+          <h2 className="text-3xl font-bold">Bathroom Remodeling in Chandler AZ</h2>
+          <h3 className="text-2xl font-bold text-red-600 mt-2">Hello World</h3>
+        </section>
+
         <LocalTrust cityName="Chandler" />
         <AboutPreview />
         <ServicesGrid />
@@ -123,16 +130,6 @@ export default function HomePage() {
         <ComparisonBenefits />
         <FAQ />
         <BlogPreview />
-        
-        {/* Hello World Temporary Snippet Requested by User */}
-        <section className="py-12 bg-slate-50 border-b border-t border-slate-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col items-center justify-center mb-10 text-center">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight">Hello World (Temporary)</h2>
-            </div>
-          </div>
-        </section>
-
         <Testimonials />
         <GalleryPreview />
         <ContactSection />

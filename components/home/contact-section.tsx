@@ -6,14 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { siteConfig } from "@/lib/site-config";
+
 import { bathroomServices } from "@/lib/bathroom-services";
 import { createLead } from "@/lib/actions/leads";
 
@@ -200,20 +194,22 @@ export default function ContactSection() {
 
                     <div className="space-y-2">
                       <Label htmlFor="contact-service">Service Interested In</Label>
-                      <Select name="service" required>
-                        <SelectTrigger className="bg-background h-11" id="contact-service" aria-label="Select a service">
-                          <SelectValue placeholder="Select a service" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {bathroomServices.map((service) => (
-                            <SelectItem key={service.href} value={service.name}>
-                              {service.name}
-                            </SelectItem>
-                          ))}
-                          <SelectItem value="Other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
+                      <select
+                        id="contact-service"
+                        name="service"
+                        required
+                        className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      >
+                        <option value="">Select a service</option>
+                        {bathroomServices.map((service) => (
+                          <option key={service.href} value={service.name}>
+                            {service.name}
+                          </option>
+                        ))}
+                        <option value="Other">Other</option>
+                      </select>
                     </div>
+
 
                     <div className="space-y-2">
                       <Label htmlFor="contact-message">Tell Us About Your Project</Label>

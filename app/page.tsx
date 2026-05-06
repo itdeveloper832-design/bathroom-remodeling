@@ -30,6 +30,8 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
   loading: () => <div className="py-20 bg-secondary"><div className="container mx-auto px-4 h-96 bg-muted/30 rounded-2xl animate-pulse" /></div>,
 });
 
+
+
 export const metadata: Metadata = {
   title: "Best Bathroom Remodeling Contractor in Chandler AZ | Licensed & Insured",
   description:

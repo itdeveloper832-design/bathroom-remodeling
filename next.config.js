@@ -4,7 +4,8 @@ console.log('Next.js Build Mode:', isExport ? 'export' : 'standalone');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Output configuration - Dynamic based on deployment target
-  output: isExport ? 'export' : 'standalone',
+  output: isExport ? 'export' : undefined,
+
 
   // Trailing slash ensures static export URLs match canonical tags
   trailingSlash: true,

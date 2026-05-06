@@ -15,14 +15,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 import { getGalleryItems, createGalleryItem, updateGalleryItem, deleteGalleryItem } from "@/lib/actions/gallery"
+
 import type { GalleryItem } from "@/lib/types"
 import { Plus, Pencil, Trash2, Eye, EyeOff, Grid, List } from "lucide-react"
 
@@ -159,22 +153,21 @@ export default function AdminGalleryPage() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="category">Category</Label>
-                  <Select
+                  <select
+                    id="category"
                     value={formData.category}
-                    onValueChange={(value) => setFormData({ ...formData, category: value })}
+                    onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                    className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   >
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select category" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {categories.map((cat) => (
-                        <SelectItem key={cat.value} value={cat.value}>
-                          {cat.label}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                    <option value="">Select category</option>
+                    {categories.map((cat) => (
+                      <option key={cat.value} value={cat.value}>
+                        {cat.label}
+                      </option>
+                    ))}
+                  </select>
                 </div>
+
                 <div className="space-y-2">
                   <Label htmlFor="imageUrl">Main Image URL</Label>
                   <Input

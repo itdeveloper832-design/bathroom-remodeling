@@ -112,13 +112,6 @@ export default function HomePage() {
       <Header />
       <main id="main-content" role="main">
         <Hero />
-        
-        {/* User requested test heading */}
-        <section className="py-8 bg-background text-center border-b">
-          <h2 className="text-3xl font-bold">Bathroom Remodeling in Chandler AZ</h2>
-          <h3 className="text-2xl font-bold text-red-600 mt-2">Hello World</h3>
-        </section>
-
         <LocalTrust cityName="Chandler" />
         <AboutPreview />
         <ServicesGrid />

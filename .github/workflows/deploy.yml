@@ -41,8 +41,8 @@ jobs:
           port: 21
           protocol: ftps          # Explicit FTPS (port 21 + TLS upgrade)
           local-dir: ./out/
-          server-dir: ./
-          state-name: .ftp-deploy-sync-state-v4.json
+          server-dir: public_html/
+          state-name: .ftp-deploy-sync-state-v5.json
           dangerous-clean-slate: false
           # Increase timeouts to handle slow cPanel servers
           timeout: 60000          # 60s per operation (was default 30s)

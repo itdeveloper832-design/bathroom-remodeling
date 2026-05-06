@@ -19,6 +19,7 @@ const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-be
 const FAQ = dynamic(() => import("@/components/home/faq"));
 const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
+const SEOFooter = dynamic(() => import("@/components/home/seo-footer"));
 
 // Client components — dynamically loaded so they don't block main thread
 import Testimonials from "@/components/home/testimonials";
@@ -128,6 +129,7 @@ export default function HomePage() {
         <ContactSection />
         <FinalCTA />
       </main>
+      <SEOFooter />
       <Footer />
     </>
   );

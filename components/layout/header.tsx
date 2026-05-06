@@ -44,14 +44,14 @@ export function Header() {
           {/* Logo - Accessible - Responsive */}
           <Link href="/" className="flex items-center hover:scale-105 transition-transform duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
             <Image
-              src="/images/logo-main.webp"
+              src="/images/logo-main.png"
               alt="ARZ Home Remodeling Logo"
               width={816}
               height={280}
               priority
               fetchPriority="high"
               sizes="(max-width: 640px) 220px, (max-width: 1024px) 300px, 360px"
-              className="h-auto w-[220px] sm:w-[260px] md:w-[300px] lg:w-[360px]"
+              className="h-auto w-[220px] sm:w-[260px] md:w-[300px] lg:w-[360px] object-contain"
             />
           </Link>
 

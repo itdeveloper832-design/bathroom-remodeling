@@ -26,20 +26,15 @@ import LocalTrust from "@/components/home/local-trust";
 export const metadata: Metadata = {
   title: "Chandler’s Top-Rated Bathroom Remodeling Contractor | Free Estimates",
   description:
-    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high-quality walk-in showers, tub-to-shower conversions, and master bath renovations. Licensed company, free estimates — call (229) 306-5591 today!",
+    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high-quality walk-in showers, tub-to-shower conversions, and master bath renovations. Licensed company, free estimates — call (480) 306-5591 today!",
   keywords: [
     "bathroom remodeling chandler az",
-    "bathroom remodel chandler az",
-    "bathroom remodeling services chandler",
-    "affordable bathroom remodeling chandler az",
-    "cheap bathroom remodeling chandler az",
-    "bathroom remodel chandler az cost",
-    "bathroom remodel chandler az prices",
-    "bathroom remodeling contractor chandler",
-    "bathroom remodelers chandler az",
-    "bathroom contractor chandler az",
-    "bath remodel near me",
+    "bath remodel chandler",
+    "shower remodeling chandler",
+    "tub to shower conversion chandler",
+    "master bath renovation chandler",
   ],
+
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
     description:
@@ -231,12 +226,13 @@ export default function ChandlerBathroomRemodelingPage() {
               notoriously hard water. Builder-grade vanities from 1994 aren't doing your home value any favors.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we provide the best <strong>bathroom remodel chandler</strong> solutions, specializing in full renovations and targeted upgrades. If you are looking for a reliable <strong>chandler az bathroom remodel</strong> expert, we handle everything from professional <strong>tub to shower conversion chandler</strong> projects to complete master bath transformations. As a trusted <strong>bathroom contractor in Chandler AZ</strong>, we serve homeowners across 
+              At ARZ Home Remodeling, we provide tailored solutions for homeowners, specializing in full renovations and targeted upgrades. Whether you&apos;re looking for a luxury master bath transformation or a functional tub-to-shower conversion, our team handles everything from design to final inspection. As a local business, we proudly serve communities across 
               <span className="text-primary font-semibold"> 85224, 85225, 85226, and 85249</span>.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Whether you need top-tier <strong>walk-in shower company services</strong> or precise <strong>tile installation chandler</strong>, our team delivers results that blend durability with modern aesthetics. If you are searching for <strong>bathroom remodeling chandler az</strong> professionals or comparing <strong>bathroom remodel chandler az prices</strong>, we offer transparent, itemized quotes to ensure you get exceptional value for your investment.
+              From top-tier walk-in showers to precise tile work, we deliver results that blend durability with modern aesthetics. We offer transparent, itemized quotes to ensure you get exceptional value for your investment, with no hidden fees or surprise change orders.
             </p>
+
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <Link href="/contact/" className="flex items-center gap-2">
@@ -245,7 +241,7 @@ export default function ChandlerBathroomRemodelingPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:+12293065591" className="flex items-center gap-2">
+                <Link href="tel:+14803065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

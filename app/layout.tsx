@@ -33,7 +33,15 @@ export const metadata: Metadata = {
     template: `%s | ARZ Remodeling`
   },
   description: 'Best bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, licensed bathroom renovation contractors. Free bathroom remodel quote!',
-  keywords: ['bathroom remodeling contractors chandler az', 'bathroom remodel cost chandler az', 'bathroom remodel services chandler az', 'hire bathroom remodel contractor chandler az', 'bathroom renovation contractors chandler az', 'best bathroom remodeling contractors chandler az', 'affordable bathroom remodeling contractors chandler az', 'licensed bathroom remodeling contractors chandler az'],
+  keywords: [
+    'bathroom remodeling chandler az',
+    'bath remodel chandler',
+    'shower remodeling chandler',
+    'tub to shower conversion chandler',
+    'master bath renovation chandler',
+    'licensed bathroom contractor chandler',
+  ],
+
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
@@ -147,7 +155,15 @@ export default function RootLayout({
                 "Sa 09:00-16:00"
               ],
               "priceRange": "$$",
+              "hasCredential": {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "license",
+                "name": "Arizona Registrar of Contractors License",
+                "credentialId": siteConfig.license,
+                "url": "https://roc.az.gov/"
+              },
               "areaServed": siteConfig.serviceAreas,
+
               "serviceArea": {
                 "@type": "GeoCircle",
                 "geoMidpoint": {

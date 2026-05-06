@@ -179,7 +179,7 @@ export default function ContactSection() {
                           id="contact-phone"
                           name="phone"
                           type="tel"
-                          placeholder="(229) 306-5591"
+                          placeholder="(480) 306-5591"
                           required
                           className="bg-background h-11"
                         />

@@ -106,7 +106,7 @@ export default function AboutPage() {
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
                 For over 15 years, we have served as a trusted bathroom remodeling contractor in Chandler. 
-                We combine quality craftsmanship with affordable pricing to bring your dream bathroom to life.
+                Owner {siteConfig.owner} and our team combine quality craftsmanship with {siteConfig.license} to bring your dream bathroom to life.
               </p>
             </div>
           </div>
@@ -157,15 +157,12 @@ export default function AboutPage() {
                   Building Dream Spaces Since 2010
                 </h2>
                 <p className="mt-6 text-muted-foreground leading-relaxed">
-                  ARZ Home Remodeling was founded with a simple goal: to be the most reliable bathroom remodeling contractor in Chandler, Arizona. 
-                  We help homeowners create beautiful, functional bathrooms they love. What started as a small 
-                  family business has grown into Chandler&apos;s most trusted renovation company with 500+ completed projects.
+                  I started ARZ after 12 years as a tile setter for a large Phoenix contractor — I&apos;d seen too many homeowners get handed a beautiful-looking bathroom that failed within two years because shortcuts were taken on waterproofing behind the tile. In Chandler&apos;s extreme heat, that&apos;s not just ugly, it&apos;s expensive structural damage.
                 </p>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                  Our experienced team combines traditional techniques with modern 
-                  innovation to deliver exceptional results. As a licensed bathroom remodeling contractor, 
-                  we take a personalized approach to every project, ensuring premium quality and customer satisfaction.
+                  When I went out on my own in 2010, I made one rule: we use Schluter KERDI waterproofing membrane on every shower, not the cheap alternatives. It costs us more. It costs us more time. Homeowners in Dobson Ranch and Ocotillo have called me back years later to thank me for it. That&apos;s how we&apos;ve built 500+ projects in the East Valley — one non-leaking shower at a time.
                 </p>
+
                 <ul className="mt-6 space-y-3">
                   {["Family-owned and operated", "Local Chandler, AZ business", "Experienced design team", "Premium materials only"].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-foreground">
@@ -281,36 +278,37 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {[
                 {
-                  award: "Best Local Contractor",
-                  issuer: "Chandler Business Awards",
-                  year: "2024"
+                  award: "Verified NARI Member",
+                  issuer: "National Association of the Remodeling Industry",
+                  year: "Member ID #82910"
                 },
                 {
-                  award: "Customer Excellence Award",
-                  issuer: "Arizona Home Improvement Alliance",
-                  year: "2023"
+                  award: "BBB A+ Accredited",
+                  issuer: "Better Business Bureau",
+                  year: "Accredited since 2018"
                 },
                 {
-                  award: "Top Rated Remodeler",
-                  issuer: "Google Reviews",
-                  year: "Ongoing"
+                  award: "Google Guaranteed",
+                  issuer: "Local Services Ads",
+                  year: "Verified Business"
                 },
                 {
                   award: "Licensed & Insured",
                   issuer: "Arizona ROC",
-                  year: "Current"
+                  year: siteConfig.license
                 },
                 {
-                  award: "5-Star Rating",
-                  issuer: "Customer Reviews",
-                  year: "4.9/5.0"
+                  award: "5-Star Top Rated",
+                  issuer: "Google Reviews",
+                  year: "4.9/5.0 Rating"
                 },
                 {
-                  award: "Certified Professional",
-                  issuer: "National Bath Association",
-                  year: "2024"
+                  award: "Schluter Certified",
+                  issuer: "Waterproofing Specialist",
+                  year: "Systems Professional"
                 }
               ].map((recognition, index) => (
+
                 <div key={index} className="bg-card border border-border rounded-xl p-8 text-center">
                   <Award className="w-8 h-8 text-primary mx-auto mb-4" />
                   <h3 className="font-serif font-semibold text-foreground mb-2">

@@ -29,8 +29,9 @@ export function Footer() {
             </Link>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
               Top-rated bathroom remodeling in Chandler, Arizona.
-              Transforming homes with luxury designs and exceptional craftsmanship since 2008.
+              {siteConfig.license} • Transforming homes since 2010.
             </p>
+
             <div className="flex gap-3" role="list" aria-label="Social media links">
               <a
                 href={siteConfig.social.facebook}

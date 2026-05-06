@@ -20,7 +20,7 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Professional Shower Remodeling Chandler AZ | Walk-In Shower Experts",
   description:
-    "Expert shower remodeling in Chandler AZ. Walk-in shower installation, frameless glass enclosures, shower replacement, and custom tile. Licensed AZ contractor. Free estimates — call (229) 306-5591.",
+    "Expert shower remodeling in Chandler AZ. Walk-in shower installation, frameless glass enclosures, shower replacement, and custom tile. Licensed AZ contractor. Free estimates — call (480) 306-5591.",
   keywords: [
     // Primary — Shower cluster (localized from phoenix to chandler)
     "shower remodeling chandler az",

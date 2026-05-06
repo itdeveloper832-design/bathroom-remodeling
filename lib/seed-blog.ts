@@ -180,7 +180,7 @@ Ready to start your bathroom remodeling project in Chandler, Arizona? Contact Ch
 
 ---
 
-*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at (229) 306-5591 or visit our showroom to discuss your project.*
+*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at (480) 306-5591 or visit our showroom to discuss your project.*
   `,
   author: "Chandler Bathroom Remodeling Team",
   category: "Bathroom Remodeling",
@@ -370,7 +370,7 @@ Ready to incorporate these 2024 bathroom design trends into your Chandler home? 
 
 ---
 
-*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at (229) 306-5591 to discuss your 2024 bathroom renovation project.*
+*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at (480) 306-5591 to discuss your 2024 bathroom renovation project.*
   `,
   author: "Chandler Bathroom Remodeling Team",
   category: "Design Trends",
@@ -385,8 +385,48 @@ Ready to incorporate these 2024 bathroom design trends into your Chandler home? 
   updatedAt: new Date().toISOString(),
 };
 
+// Third blog post for E-E-A-T signals
+export const thirdBlogPost = {
+  title: "Why We Use Schluter-KERDI Waterproofing for Every Chandler Remodel",
+  slug: "why-we-use-schluter-kerdi-waterproofing-chandler",
+  excerpt: "Don't let your new bathroom fail due to outdated waterproofing. Learn why our team insists on Schluter-KERDI for every project in the East Valley.",
+  content: `
+# Why We Use Schluter-KERDI Waterproofing for Every Chandler Remodel
+
+If you're investing thousands in a bathroom remodel, the most important part of the project is the one you'll never see: the waterproofing system. In Chandler, Arizona, our homes face unique challenges, from extreme temperature shifts to mineral-heavy hard water.
+
+At ARZ Home Remodeling, led by Mike Hernandez, we refuse to cut corners with "old school" methods like cement board and plastic liners. Here is why we use the Schluter-KERDI system for every walk-in shower and tub surround we build.
+
+## 1. Vapor-Tight Protection
+Unlike traditional cement board, which is water-resistant but not vapor-proof, Schluter-KERDI is a bonded waterproofing membrane and vapor retarder. In the high-steam environment of a master bath, this prevents moisture from seeping into your wall studs and causing mold or rot years down the line.
+
+## 2. Integrated System Design
+The beauty of Schluter is that it's a complete system. From the pre-sloped shower tray to the integrated drain and the KERDI-BOARD walls, every component is designed to work together. This eliminates the "weak points" found in mixed-material builds.
+
+## 3. Faster Installation, Better Results
+Because KERDI-BOARD is lightweight and easy to cut, our team can prep a shower faster and with more precision than traditional methods. This means we spend more time focusing on the perfect tile layout and less time hauling heavy backer boards through your home.
+
+## 4. Peace of Mind for Chandler Homeowners
+Our 2-year workmanship warranty is backed by our confidence in these materials. When we build a shower with Schluter, we know it won't leak. Period.
+
+Ready to upgrade your bathroom with a system built to last? Contact Mike at (480) 306-5591 for a free estimate.
+  `,
+  author: "Mike Hernandez",
+  category: "Technical",
+  tags: ["Schluter KERDI", "waterproofing", "bathroom remodeling chandler", "shower construction"],
+  featuredImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2574&auto=format&fit=crop",
+  metaTitle: "Waterproofing for Chandler Bathroom Remodels | ARZ Home Remodeling",
+  metaDescription: "Learn why we use Schluter-KERDI waterproofing systems for every bathroom remodel in Chandler, AZ to prevent leaks and mold.",
+  metaKeywords: "schluter kerdi chandler, bathroom waterproofing az, shower contractor chandler, leak proof shower",
+  status: "published" as const,
+  publishedAt: "2026-05-01T10:00:00Z",
+  createdAt: "2026-05-01T10:00:00Z",
+  updatedAt: "2026-05-01T10:00:00Z",
+};
+
 // Default gallery images for bathroom and kitchen
 export const defaultGalleryItems = [
+
   // Bathroom Gallery
   {
     title: "Modern Master Bathroom",

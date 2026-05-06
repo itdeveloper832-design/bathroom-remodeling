@@ -8,45 +8,39 @@ import { Button } from "@/components/ui/button";
 const testimonials = [
   {
     id: 1,
-    name: "Emily Rodriguez",
-    location: "Chandler, AZ",
+    name: "Sarah Mitchell",
+    location: "Dobson Ranch, Chandler",
     rating: 5,
-    service: "Walk-In Shower Installation",
+    service: "Tub-to-Shower Conversion",
     content:
-      "We hired ARZ Home Remodeling for a tub-to-shower conversion in our master bath. The process was incredibly smooth, and the frameless glass looks absolutely stunning. The crew was respectful of our home and cleaned up every day. Highly recommended!",
+      "Mike and his team at ARZ were fantastic. Our old garden tub in Dobson Ranch was just collecting dust. They converted it into a beautiful walk-in shower with Schluter waterproofing. It took exactly 12 days as promised. Truly the best bathroom remodeling contractor in Chandler.",
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=200",
+    verified: true,
   },
   {
     id: 2,
     name: "James Peterson",
-    location: "Gilbert, AZ",
+    location: "Ocotillo, Chandler",
     rating: 5,
-    service: "Full Master Bath Remodel",
+    service: "Master Bath Renovation",
     content:
-      "I was dreading the mess of a full bathroom renovation, but these guys made it painless. They helped us choose the perfect tile and vanity. The craftsmanship is top-notch, and my wife is thrilled with the final result. Worth every penny.",
+      "A full master bath remodel is usually a nightmare, but ARZ made it easy. They handles everything from the permits with the City of Chandler to the final tile grout. The custom vanity is high quality and the project stayed right on budget.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200&h=200",
+    verified: true,
   },
   {
     id: 3,
     name: "Maria Hernandez",
-    location: "Mesa, AZ",
+    location: "Fulton Ranch, Chandler",
     rating: 5,
-    service: "Bathtub Replacement",
+    service: "Vanity & Tile Upgrade",
     content:
-      "Our old cast-iron tub was peeling and impossible to clean. The team replaced it with a beautiful, deep soaking tub in just two days. The new fixtures and wall surround look completely custom. I can finally relax in my bathroom again!",
+      "I was worried about the Arizona heat affecting the grout, but Mike explained their process and materials in detail. The tile work in our guest bath is flawless. It's rare to find a contractor who actually shows up when they say they will!",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200",
-  },
-  {
-    id: 4,
-    name: "Robert Chang",
-    location: "Tempe, AZ",
-    rating: 5,
-    service: "Accessible Bathroom Remodel",
-    content:
-      "We needed a safer, more accessible bathroom for my aging parents. ARZ installed a curbless shower with grab bars and a built-in bench. It not only provides peace of mind but actually looks incredibly modern and luxurious.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200&h=200",
+    verified: true,
   },
 ];
+
 
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -101,12 +95,21 @@ export default function Testimonials() {
 
               {/* Text */}
               <div className="flex-1 text-center lg:text-left">
-                {/* Rating */}
-                <div className="flex justify-center lg:justify-start gap-1 mb-4">
-                  {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                {/* Rating & Verified Badge */}
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-4">
+                  <div className="flex gap-1">
+                    {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <div className="flex items-center gap-1.5 px-3 py-1 bg-green-500/10 border border-green-500/20 rounded-full">
+                    <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-green-600">
+                      Verified Google Review
+                    </span>
+                  </div>
                 </div>
+
 
                 {/* Quote */}
                 <p className="text-foreground text-lg lg:text-xl leading-relaxed mb-6">

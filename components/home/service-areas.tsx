@@ -22,7 +22,17 @@ export default function ServiceAreas() {
 
             {/* Service Areas Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {siteConfig.serviceAreas.map((area, index) => (
+              {[
+                "Chandler",
+                "Gilbert",
+                "Mesa",
+                "Ocotillo",
+                "Dobson Ranch",
+                "Sun Lakes",
+                "Fulton Ranch",
+                "Tempe",
+                "Ahwatukee"
+              ].map((area, index) => (
                 <div
                   key={area}
                   className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 animate-in fade-in slide-in-from-bottom-4"
@@ -38,16 +48,17 @@ export default function ServiceAreas() {
           {/* Map Side */}
           <div className="relative aspect-square lg:aspect-[4/3] rounded-2xl overflow-hidden bg-card border border-border animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
             <iframe
-              src="https://www.google.com/maps?q=Chandler,AZ&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3334.6838369776056!2d-111.9605964!3d33.3009334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0403f517282b%3A0x64f0a47ba733e83e!2s6710%20W%20Chicago%20St%2C%20Chandler%2C%20AZ%2085226%2C%20USA!5e0!3m2!1sen!2s!4v1777130880103!5m2!1sen!2s"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Service area map showing Chandler, Arizona and surrounding areas"
+              title="Service area map showing our Chandler, Arizona location"
             />
           </div>
+
         </div>
       </div>
     </section>

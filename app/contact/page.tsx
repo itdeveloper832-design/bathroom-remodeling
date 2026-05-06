@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 const contactFaqs = [
   {
     question: "How do I hire bathroom contractor in Chandler AZ?",
-    answer: "To hire bathroom contractor in Chandler AZ, call us at (229) 306-5591 or fill out our contact form. Our professional bathroom contractor services include free bathroom contractor estimate within 24 hours. Best bathroom contractor near me Chandler AZ!"
+    answer: "To hire bathroom contractor in Chandler AZ, call us at (480) 306-5591 or fill out our contact form. Our professional bathroom contractor services include free bathroom contractor estimate within 24 hours. Best bathroom contractor near me Chandler AZ!"
   },
   {
     question: "What is the bathroom contractor price in Chandler AZ?",

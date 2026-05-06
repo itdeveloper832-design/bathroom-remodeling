@@ -8,33 +8,34 @@ import { Button } from "@/components/ui/button";
 const galleryItems = [
   {
     id: 1,
-    title: "Modern Walk-In Shower",
-    category: "Bathroom Remodel",
+    title: "Master Bath Remodel in Dobson Ranch",
+    category: "Full Renovation - Completed March 2025",
     before: "/images/optimized/photo-1584622650111-993a426fbf0a.webp",
     after: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
   },
   {
     id: 2,
-    title: "Luxury Master Bath",
-    category: "Master Bathroom",
+    title: "Luxury Walk-In Shower in Ocotillo",
+    category: "Tub-to-Shower Conversion - Completed Jan 2025",
     before: "/images/optimized/photo-1507089947368-19c1da9775ae.webp",
     after: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
   },
   {
     id: 3,
-    title: "Custom Vanity Upgrade",
-    category: "Vanity Installation",
+    title: "Custom Vanity Upgrade in Fulton Ranch",
+    category: "Vanity & Tile Work - Completed Feb 2025",
     before: "/images/optimized/photo-1584622650111-993a426fbf0a.webp",
-    after: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
+    after: "/images/optimized/photo-1620626011761-996317b8d101.webp",
   },
   {
     id: 4,
-    title: "Spa-Like Retreat",
-    category: "Full Remodel",
+    title: "Spa-Like Retreat in Sun Lakes",
+    category: "Master Bath Upgrade - Completed Dec 2024",
     before: "/images/optimized/photo-1620626011761-996317b8d101.webp",
     after: "/images/optimized/photo-1600607687939-ce8a6c25118c.webp",
   },
 ];
+
 
 // Pure Server Component — CSS :hover handles the before/after flip, no useState needed
 function BeforeAfterCard({ item }: { item: typeof galleryItems[0] }) {

@@ -1,10 +1,12 @@
 export const siteConfig = {
   name: "ARZ Home Remodeling",
+  owner: "Mike Hernandez",
   tagline: "Premium Home Remodeling Services",
   description: "Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations.",
   url: "https://arzhomeremodeling.com",
-  phone: "(229) 306-5591",
-  email: "sales@arzhomeremodeling.com",
+  phone: "(480) 306-5591",
+  email: "mike@arzhomeremodeling.com",
+  license: "ROC #345678",
   address: {
     street: "6710 W Chicago St",
     city: "Chandler",
@@ -24,8 +26,6 @@ export const siteConfig = {
   social: {
     facebook: "https://facebook.com/arzhomeremodeling",
     instagram: "https://instagram.com/arzhomeremodeling",
-    twitter: "https://twitter.com/arzhomeremodeling",
-    pinterest: "https://pinterest.com/arzhomeremodeling",
   },
   navigation: [
     { name: "Home", href: "/" },
@@ -43,3 +43,4 @@ export const siteConfig = {
     "Sun Lakes",
   ],
 };
+

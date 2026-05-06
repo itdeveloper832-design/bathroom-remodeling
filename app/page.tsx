@@ -36,27 +36,19 @@ export const metadata: Metadata = {
     "Hire the top-rated bath remodeling contractor chandler az. Licensed, bonded, and insured contractors specializing in walk-in showers, tub-to-shower conversions, and master bath renovations. Free quotes for your chandler az bathroom remodel!",
   keywords: [
     "bathroom remodel chandler",
-    "bathroom remodel chandler az",
-    "bathroom remodeling chandler",
     "bathroom remodeling chandler az",
-    "chandler az bathroom remodel",
     "bath remodeling contractor chandler az",
-    "bathroom remodeling contractor chandler",
-    "bathroom remodel chandler az prices",
-    "bath remodel chandler",
-    "bathroom remodeling services chandler",
-    "affordable bathroom remodeling chandler az",
-    "bathroom remodel chandler az cost",
-    "bathroom remodelers chandler az",
-    "bathroom contractor chandler az",
-    "bath remodel near me",
+    "shower remodeling chandler",
+    "tub to shower conversion chandler",
+    "master bath renovation chandler",
   ],
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | Expert Team",
     description:
-      "Licensed bathroom remodeling contractors in Chandler, AZ. Shower renovations, tub replacements & full remodels. Free quotes: (229) 306-5591.",
+      "Licensed bathroom remodeling contractors in Chandler, AZ. Shower renovations, tub replacements & full remodels. Free quotes: (480) 306-5591.",
     type: "website",
   },
+
   alternates: {
     canonical: `${siteConfig.url}/`,
   },

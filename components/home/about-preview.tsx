@@ -57,7 +57,7 @@ export default function AboutPreview() {
               About Us
             </span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
-              Crafting Dream Spaces Since 2008
+              Crafting Dream Spaces Since 2010
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               ARZ Home Remodeling was founded with a simple mission: to transform ordinary 

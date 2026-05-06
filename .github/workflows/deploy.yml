@@ -43,7 +43,7 @@ jobs:
           local-dir: ./out/
           server-dir: public_html/
           state-name: .ftp-deploy-sync-state-v5.json
-          dangerous-clean-slate: false
+          dangerous-clean-slate: true
           # Increase timeouts to handle slow cPanel servers
           timeout: 60000          # 60s per operation (was default 30s)
           log-level: verbose      # Show more detail if it fails again
@@ -53,3 +53,4 @@ jobs:
             **/.git*/**
             **/node_modules/**
             **/.env*
+            cgi-bin/**

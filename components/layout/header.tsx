@@ -44,7 +44,7 @@ export function Header() {
           {/* Logo - Accessible - Responsive */}
           <Link href="/" className="flex items-center hover:scale-105 transition-transform duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
             <Image
-              src="/images/logo-main.png"
+              src="/web-log-img.png"
               alt="ARZ Home Remodeling Logo"
               width={816}
               height={280}

@@ -35,22 +35,21 @@ jobs:
           NEXT_OUTPUT: export
 
       # Try plain FTP first (port 21), then fall back to FTPS if it fails
-      - name: Deploy via FTP (with FTPS fallback)
+      - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          protocol: ftps          # Explicit FTPS (port 21 + TLS upgrade)
+          protocol: ftp
           local-dir: ./out/
-          server-dir: public_html/arzhomeremodeling.com/
-          state-name: .ftp-deploy-sync-state-v5.json
+          server-dir: arzhomeremodeling.com/
+          state-name: .ftp-deploy-sync-state.json
           dangerous-clean-slate: true
-          # Increase timeouts to handle slow cPanel servers
-          timeout: 60000          # 60s per operation (was default 30s)
-          log-level: verbose      # Show more detail if it fails again
-          security: loose         # Accept self-signed TLS certs (common on cPanel)
+          timeout: 60000
+          log-level: verbose
+          security: loose
           exclude: |
             **/.git*
             **/.git*/**

@@ -1,5 +1,5 @@
 import type { BlogPost, Category } from "@/lib/types";
-import { defaultBlogPost, secondBlogPost } from "@/lib/seed-blog";
+import { defaultBlogPost, secondBlogPost, thirdBlogPost } from "@/lib/seed-blog";
 import { submitToIndexNow } from "@/lib/indexnow";
 
 function generateSlug(title: string): string {
@@ -11,7 +11,7 @@ function generateSlug(title: string): string {
     .trim();
 }
 
-const basePosts: BlogPost[] = [defaultBlogPost, secondBlogPost].map((post, index) => ({
+const basePosts: BlogPost[] = [defaultBlogPost, secondBlogPost, thirdBlogPost].map((post, index) => ({
   id: `post-${index + 1}`,
   title: post.title,
   slug: post.slug,

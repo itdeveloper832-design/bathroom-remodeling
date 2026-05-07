@@ -29,10 +29,10 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Bathroom Remodeling Chandler AZ | Expert Contractors`,
+    default: `Bathroom Remodel Chandler | Top Bathroom Remodeling Chandler AZ`,
     template: `%s | ARZ Remodeling`
   },
-  description: 'Best bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, licensed bathroom renovation contractors. Free bathroom remodel quote!',
+  description: 'Top-rated bathroom remodel Chandler. Expert bathroom remodeling Chandler AZ services including tub to shower conversion, accessible showers, and tile installation. Free quotes!',
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
@@ -76,12 +76,10 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    // Use optimized SVG icon - removes the 308KB favicon.png from critical path
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/icon-dark-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/favicon.jfif', type: 'image/jpeg' },
     ],
-    apple: '/apple-icon.png',
+    apple: '/images/favicon.jfif',
   },
 }
 

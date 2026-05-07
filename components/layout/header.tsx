@@ -34,14 +34,14 @@ export function Header() {
       </a>
       <InfoHeader />
       <header
-        className={`fixed top-[50px] left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-md shadow-sm ${isScrolled ? "py-3" : "py-5"
+        className={`fixed left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-md shadow-sm ${isScrolled ? "top-0 py-3 shadow-md border-b border-primary/10" : "top-[50px] py-5"
           }`}
         role="banner"
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo - Accessible - Responsive */}
-            <Link href="/" className="flex items-center hover:scale-105 transition-transform duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
+            <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
               <Image
                 src="/images/web-log-image.png"
                 alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"

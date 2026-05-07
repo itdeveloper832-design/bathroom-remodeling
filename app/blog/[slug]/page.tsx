@@ -17,28 +17,14 @@ interface BlogPostPageProps {
 }
 
 export async function generateStaticParams() {
-  return [
-    { slug: "complete-guide-bathroom-remodeling-chandler-arizona" },
-    { slug: "2024-bathroom-design-trends-chandler-arizona" },
-  ];
+  const posts = await getPublishedPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 async function getPostData(slug: string): Promise<BlogPost | null> {
-  // For static export, only return default blog post
-  if (slug === defaultBlogPost.slug) {
-    const fallbackKeywords = (defaultBlogPost as { metaKeywords?: string }).metaKeywords
-      ?.split(",")
-      .map((keyword) => keyword.trim())
-      .filter(Boolean) ?? [];
-
-    return {
-      ...defaultBlogPost,
-      id: "default-post",
-      readTime: 12,
-      keywords: fallbackKeywords,
-    }
-  }
-  return null
+  return await getPostBySlug(slug);
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
@@ -237,7 +223,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                           src={relatedPost.featuredImage || "/images/blog-placeholder.jpg"}
                           alt={relatedPost.title}
                           fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          className="object-cover transition-transform duration-500"
                         />
                       </div>
                       <span className="text-xs font-medium text-primary uppercase tracking-wider">

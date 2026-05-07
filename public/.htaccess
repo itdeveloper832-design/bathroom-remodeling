@@ -160,6 +160,6 @@ FileETag None
 # ----- PREVENT HOTLINKING (saves bandwidth) -----
 <IfModule mod_rewrite.c>
   RewriteCond %{HTTP_REFERER} !^$
-  RewriteCond %{HTTP_REFERER} !^https?://(www\.)?arzremodeling\.com [NC]
+  RewriteCond %{HTTP_REFERER} !^https?://(www\.)?arzhomeremodeling\.com [NC]
   RewriteRule \.(jpg|jpeg|png|webp|avif|gif|svg)$ - [F,NC,L]
 </IfModule>

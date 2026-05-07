@@ -42,10 +42,10 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          protocol: ftp
+          protocol: ftps
           local-dir: ./out/
-          server-dir: arzhomeremodeling.com/
-          state-name: .ftp-deploy-sync-state.json
+          server-dir: ./
+          state-name: .ftp-deploy-sync-state-v6.json
           dangerous-clean-slate: true
           timeout: 60000
           log-level: verbose

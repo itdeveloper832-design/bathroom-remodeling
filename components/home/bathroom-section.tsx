@@ -21,7 +21,7 @@ export default function BathroomSection() {
           <div className="relative animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="/images/bathroom-showcase.jpg"
+                src="/images/optimized/photo-1600566752355-35792bedcfea.webp"
                 alt="Luxury bathroom remodel featuring walk-in shower in Chandler, Arizona"
                 fill
                 className="object-cover"

@@ -8,12 +8,11 @@ import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "Get a Free Bathroom Remodel Quote Chandler AZ",
-  description: "Request your free bathroom remodel quote Chandler AZ. Our licensed contractors are ready to discuss your renovation. Call now!",
-  keywords: ["bathroom remodel quote Chandler", "bathroom contractor Chandler AZ", "bathroom contractor price Chandler AZ", "bathroom contractor quote Chandler AZ", "bathroom contractor estimate Chandler AZ", "bathroom contractor professional Chandler AZ", "bathroom contractor best Chandler AZ", "bathroom contractor near me Chandler AZ", "bathroom contractor affordable Chandler AZ", "hire bathroom contractor Chandler AZ", "bathroom contractor cost Chandler AZ", "bathroom contractor company Chandler AZ", "bathroom contractor installation Chandler AZ"],
+  title: "Get Your Free Bathroom Remodel Estimate in Chandler, AZ",
+  description: "Ready to transform your bathroom? Request your free estimate from Chandler's trusted remodeling contractors. Fast response and expert advice.",
   openGraph: {
-    title: "Bathroom Contractor Chandler AZ | Free Quote",
-    description: "Best bathroom contractor Chandler AZ. Hire bathroom contractor, free estimate!",
+    title: "Free Bathroom Remodel Estimate | ARZ Home Remodeling",
+    description: "Get a free, no-obligation estimate for your Chandler bathroom remodel. Licensed and insured experts.",
     url: `${siteConfig.url}/contact/`,
     type: "website",
     images: [
@@ -27,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Contractor Chandler AZ | Free Quote",
-    description: "Best bathroom contractor Chandler AZ. Hire bathroom contractor, free estimate!",
+    title: "Free Bathroom Remodel Estimate | ARZ Home Remodeling",
+    description: "Request your free bathroom renovation estimate in Chandler, AZ today.",
     images: [`${siteConfig.url}/og-image.jpg`],
   },
   alternates: {
@@ -75,11 +74,12 @@ export default function ContactPage() {
                 Get In Touch
               </span>
               <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance">
-                Best Bathroom Contractor Chandler AZ | Free Quote
+                Get Your Free Bathroom Remodel Estimate in Chandler, AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Ready to hire bathroom contractor in Chandler AZ? Contact our professional bathroom contractor for a free 
-                bathroom contractor estimate. Affordable bathroom contractor services with flexible financing available.
+                Ready to get started? Fill out the form below or give us a call — we typically respond
+                within 2 business hours. We&apos;ll schedule a free in-home visit to measure your space,
+                discuss your vision, and give you a written quote with no obligation.
               </p>
             </div>
           </div>

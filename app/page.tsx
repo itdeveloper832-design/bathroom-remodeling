@@ -36,14 +36,6 @@ export const metadata: Metadata = {
   title: "Best Bathroom Remodeling Contractor in Chandler AZ | Licensed & Insured",
   description:
     "Hire the top-rated bath remodeling contractor chandler az. Licensed, bonded, and insured contractors specializing in walk-in showers, tub-to-shower conversions, and master bath renovations. Free quotes for your chandler az bathroom remodel!",
-  keywords: [
-    "bathroom remodel chandler",
-    "bathroom remodeling chandler az",
-    "bath remodeling contractor chandler az",
-    "shower remodeling chandler",
-    "tub to shower conversion chandler",
-    "master bath renovation chandler",
-  ],
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | Expert Team",
     description:

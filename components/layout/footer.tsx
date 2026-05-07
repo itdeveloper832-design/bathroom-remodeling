@@ -104,11 +104,6 @@ export function Footer() {
           <nav aria-label="Footer quick links">
             <h3 className="font-serif text-xl font-semibold mb-6 text-background">Quick Links</h3>
             <ul className="space-y-3">
-              <li>
-                <Link href="/" className="text-background/80 hover:text-primary transition-colors text-sm no-underline">
-                  Bathroom Remodeling in Chandler AZ
-                </Link>
-              </li>
               {siteConfig.navigation.map((item) => (
                 <li key={item.name}>
                   <Link

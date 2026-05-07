@@ -33,15 +33,6 @@ export const metadata: Metadata = {
     template: `%s | ARZ Remodeling`
   },
   description: 'Best bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, licensed bathroom renovation contractors. Free bathroom remodel quote!',
-  keywords: [
-    'bathroom remodeling chandler az',
-    'bath remodel chandler',
-    'shower remodeling chandler',
-    'tub to shower conversion chandler',
-    'master bath renovation chandler',
-    'licensed bathroom contractor chandler',
-  ],
-
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
@@ -132,7 +123,7 @@ export default function RootLayout({
               "@id": `${siteConfig.url}/#organization`,
               "name": siteConfig.name,
               "url": siteConfig.url,
-              "logo": `${siteConfig.url}/images/logo-main.png`,
+              "logo": `${siteConfig.url}/images/logo-main.webp`,
               "image": `${siteConfig.url}/images/hero-bathroom.jpg`,
               "description": siteConfig.description,
               "telephone": siteConfig.phone,

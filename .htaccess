@@ -103,6 +103,6 @@ Options -Indexes
 </FilesMatch>
 
 # Allow access to public files
-<FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|otf)$">
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|ico|css|js|svg|woff|woff2|ttf|otf)$">
   Header set Cache-Control "public, max-age=31536000, immutable"
 </FilesMatch>

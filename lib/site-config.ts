@@ -14,8 +14,8 @@ export const siteConfig = {
     zip: "85226",
     full: "6710 W Chicago St, Chandler, AZ 85226",
     coordinates: {
-      lat: 33.33256,
-      lng: -111.91689,
+      lat: 33.3009334,
+      lng: -111.9605964,
     },
   },
   hours: {

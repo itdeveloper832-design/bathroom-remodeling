@@ -9,9 +9,8 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "Trusted Bathroom Remodeling Contractor Chandler AZ | ARZ",
+  title: "ARZ Home Remodeling — Licensed Bathroom Contractor in Chandler, AZ",
   description: "Local, licensed bathroom remodeling contractor in Chandler AZ. Over 15 years building luxury baths with guaranteed satisfaction. Read our story!",
-  keywords: ["bathroom remodeling contractor", "Chandler AZ remodelers", "bathroom renovation Chandler", "local remodeling company", "custom bathrooms AZ"],
   openGraph: {
     title: "Bathroom Remodeling Contractor Chandler AZ | ARZ Home Remodeling",
     description: "Expert bathroom remodeling contractor Chandler AZ. Professional, high-quality renovations!",
@@ -137,7 +136,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                   <Image
-                    src="/images/about-bathroom.jpg"
+                    src="/images/optimized/photo-1581578731548-c64695cc6952.webp"
                     alt="Master bathroom renovation"
                     fill
                     className="object-cover"

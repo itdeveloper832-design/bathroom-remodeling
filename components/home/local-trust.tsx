@@ -5,29 +5,29 @@ interface LocalTrustProps {
   cityName?: string;
 }
 
-export default function LocalTrust({ cityName = "Winchester" }: LocalTrustProps) {
+export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
   const trustLinks = [
     {
       name: "Better Business Bureau",
-      href: "https://www.bbb.org/us/ky/winchester/profile/fence-contractors/custom-fence-roofing-0402-9001331",
+      href: "#",
       img: "/bbb-badge.webp",
       label: "Accredited Business",
     },
     {
       name: "Yelp Ratings",
-      href: "https://www.yelp.com/biz/custom-fence-and-roofing-winchester",
+      href: "#",
       img: "/yelp-badge.webp",
       label: "5-Star Rated",
     },
     {
       name: "Nextdoor Neighborhood Favorite",
-      href: "https://nextdoor.com/pages/custom-fence-and-roofing-winchester-ky/",
+      href: "#",
       img: "/nextdoor-badge.webp",
       label: "Neighborhood Favorite",
     },
     {
       name: "Winchester Chamber of Commerce",
-      href: "https://business.winchesterkychamber.com/list/member/custom-fence-and-roofing-llc-7294",
+      href: "#",
       img: "/chamber-badge.webp",
       label: `${cityName} Chamber`,
     },

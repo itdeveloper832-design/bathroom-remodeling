@@ -19,7 +19,7 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Handicap Accessible Bathroom Chandler AZ | Safety",
   description: "Safe, ADA-compliant handicap accessible bathroom Chandler AZ. Roll-in showers and grab bar installations. Call us today!",
-  keywords: ["handicap accessible bathroom Chandler", "ADA compliant bathroom", "roll-in showers", "grab bar installation", "accessible bathroom remodel"],
+  keywords: ["handicap accessible bathroom Chandler", "ADA compliant bathroom", "accessible shower remodeling chandler", "accessible shower installation chandler", "walk-in shower installation services", "roll-in showers", "grab bar installation", "accessible bathroom remodel"],
   openGraph: {
     title: "Handicap Accessible Bathroom Chandler AZ | Safety",
     description: "Safe, ADA-compliant handicap accessible bathroom Chandler AZ. Roll-in showers and grab bar installations.",
@@ -129,7 +129,7 @@ export default function AccessibilityPage() {
             <div>
               <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">Accessible Bathroom Services in Chandler</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">We provide expert accessibility modifications throughout Chandler and the surrounding communities.</p>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">We provide expert <strong>walk-in shower installation services</strong> and accessibility modifications throughout Chandler and the surrounding communities.</p>
             </div>
             <div><GoogleMap lat={33.3062} lng={-111.8413} zoom={12} title="Handicap Accessible Bathroom Chandler" address="Chandler, AZ" /></div>
           </div>

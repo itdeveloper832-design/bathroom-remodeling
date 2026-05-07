@@ -20,7 +20,7 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Bathroom Tile Installation Chandler AZ | Custom Flooring",
   description: "Premium bathroom tile installation in Chandler AZ. Custom ceramic, porcelain, & marble flooring and shower walls. Get a free quote!",
-  keywords: ["bathroom tile installation Chandler", "tile installation chandler", "shower tile AZ", "bathroom floor tiles", "tile contractors Chandler", "backsplash installers", "waterproof tile"],
+  keywords: ["bathroom tile installation Chandler", "tile installation chandler", "tile shower installation chandler", "tile shower installation services chandler", "shower tile AZ", "bathroom floor tiles", "tile contractors Chandler", "backsplash installers", "waterproof tile"],
   openGraph: {
     title: "Bathroom Tile Installation in Chandler AZ",
     description: "Professional tile setting in Chandler with shower walls, floor tiles, and backsplash work.",
@@ -118,7 +118,7 @@ export default function BathroomTileInstallationPage() {
             <div>
               <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">Tile Installation Service Area in Chandler, Arizona</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">Expert surface upgrades and flooring services throughout Chandler, Arizona and surrounding communities.</p>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">Expert surface upgrades and <strong>tile installation in Chandler</strong>, along with professional flooring services throughout Chandler, Arizona and surrounding communities.</p>
               <ul className="space-y-2 text-foreground">
                 <li>• Chandler, AZ and nearby areas</li>
                 <li>• Licensed local contractors</li>

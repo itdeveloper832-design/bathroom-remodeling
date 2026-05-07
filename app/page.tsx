@@ -33,9 +33,9 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
 
 
 export const metadata: Metadata = {
-  title: "Best Bathroom Remodeling Contractor in Chandler AZ | Licensed & Insured",
+  title: "Top-Rated Bathroom Remodel Chandler | Bathroom Remodeling Chandler AZ",
   description:
-    "Hire the top-rated bath remodeling contractor chandler az. Licensed, bonded, and insured contractors specializing in walk-in showers, tub-to-shower conversions, and master bath renovations. Free quotes for your chandler az bathroom remodel!",
+    "Hire the best bathroom remodelers in Chandler AZ. Licensed contractors for your bathroom remodel in Chandler AZ, tub-to-shower conversion, and master bath renovations. Get a free quote for professional Chandler bathroom remodeling today!",
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | Expert Team",
     description:
@@ -52,7 +52,7 @@ const homeFaqs = [
   {
     question: "What types of bathroom remodeling do you offer in Chandler, AZ?",
     answer:
-      "We offer complete bathroom remodeling in Chandler AZ including full bathroom renovations, master bath remodels, vanity installation, tile work, flooring, and lighting upgrades. Our licensed remodeling contractors handle every trade — no subcontractor shuffle.",
+      "We offer complete <strong>bathroom remodeling in Chandler AZ</strong> including full renovations, master bath remodels, vanity installation, and tile work. Our expert <strong>bathroom remodelers in Chandler AZ</strong> handle every trade to ensure your project is completed on time and within budget.",
   },
   {
     question: "How much does a bathroom remodel cost in Chandler, AZ?",

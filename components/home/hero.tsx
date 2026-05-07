@@ -58,15 +58,12 @@ export default function Hero() {
 
             {/* Headline - Accessible H1 */}
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-6 text-balance focus-visible:outline-none">
-              Top-Rated Bathroom Remodel Chandler
+              Chandler Bathroom Remodeling | Top Bathroom Remodel Chandler
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed font-light">
-              Transform your space with the leading experts for a <strong>bathroom remodel in Chandler AZ</strong>. 
-              From luxury shower renovations to a quick tub-to-shower conversion, 
-              we are the <strong>bathroom remodeling contractor in Chandler</strong> you can trust. 
-              Licensed and insured with over 15 years of local experience.
+              Experience the best <strong>bathroom remodeling in Chandler</strong> with our expert team. As your local <strong>bathroom remodelers in Chandler AZ</strong>, we deliver stunning results for any <strong>bathroom remodel in Chandler AZ</strong>. From luxury shower renovations to quick tub-to-shower conversions, we are the licensed experts you can trust.
             </p>
 
             {/* CTA Buttons - Accessible */}

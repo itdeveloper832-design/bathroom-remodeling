@@ -1,6 +1,8 @@
 # ARZ Home Remodeling - cPanel .htaccess Configuration
 # Place this file in /home/digitalskills/arzhomeremodeling.com/
 
+DirectoryIndex index.html
+
 # Enable Rewrite Engine
 <IfModule mod_rewrite.c>
   RewriteEngine On

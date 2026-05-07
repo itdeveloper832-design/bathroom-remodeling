@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${siteConfig.url}/og-image.jpg`,
+        url: `${siteConfig.url}/images/hero-bathroom.jpg`,
         width: 1200,
         height: 630,
         alt: "Special Offers - Bathroom Remodeling",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Special Offers - Bathroom Remodeling",
     description: "Exclusive bathroom remodeling offers and promotions in Chandler.",
-    images: [`${siteConfig.url}/og-image.jpg`],
+    images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/offers/`,

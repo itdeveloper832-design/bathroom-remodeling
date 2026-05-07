@@ -9,6 +9,7 @@ const testimonials = [
   {
     id: 1,
     name: "Sarah Mitchell",
+    initials: "SM",
     location: "Dobson Ranch, Chandler",
     rating: 5,
     service: "Tub-to-Shower Conversion",
@@ -20,6 +21,7 @@ const testimonials = [
   {
     id: 2,
     name: "James Peterson",
+    initials: "JP",
     location: "Ocotillo, Chandler",
     rating: 5,
     service: "Master Bath Renovation",
@@ -31,6 +33,7 @@ const testimonials = [
   {
     id: 3,
     name: "Maria Hernandez",
+    initials: "MH",
     location: "Fulton Ranch, Chandler",
     rating: 5,
     service: "Vanity & Tile Upgrade",
@@ -78,18 +81,24 @@ export default function Testimonials() {
 
             {/* Content */}
             <div className="flex flex-col lg:flex-row gap-8 items-center">
-              {/* Image */}
+              {/* Avatar Circle / Image */}
               <div className="shrink-0">
-                <div className="relative w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-primary/20">
-                  <Image
-                    src={testimonials[currentIndex].image}
-                    alt={`${testimonials[currentIndex].name} - testimonial`}
-                    fill
-                    className="object-cover"
-                    loading="lazy"
-                    quality={75}
-                    sizes="(max-width: 768px) 96px, 128px"
-                  />
+                <div className="relative w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-primary/20 bg-primary/10 flex items-center justify-center">
+                  {testimonials[currentIndex].image.startsWith('http') ? (
+                    <span className="text-2xl lg:text-3xl font-serif font-bold text-primary">
+                      {testimonials[currentIndex].initials}
+                    </span>
+                  ) : (
+                    <Image
+                      src={testimonials[currentIndex].image}
+                      alt={`${testimonials[currentIndex].name} - testimonial`}
+                      fill
+                      className="object-cover"
+                      loading="lazy"
+                      quality={75}
+                      sizes="(max-width: 768px) 96px, 128px"
+                    />
+                  )}
                 </div>
               </div>
 

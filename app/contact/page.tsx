@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${siteConfig.url}/og-image.jpg`,
+        url: `${siteConfig.url}/images/hero-bathroom.jpg`,
         width: 1200,
         height: 630,
         alt: "Contact ARZ Home Remodeling",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Free Bathroom Remodel Estimate | ARZ Home Remodeling",
     description: "Request your free bathroom renovation estimate in Chandler, AZ today.",
-    images: [`${siteConfig.url}/og-image.jpg`],
+    images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/contact/`,

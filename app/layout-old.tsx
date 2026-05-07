@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: 'Professional bathroom and kitchen remodeling services in Chandler, Arizona. Transform your home with expert craftsmanship and quality service.',
     images: [
       {
-        url: `${siteConfig.url}/og-image.jpg`,
+        url: `${siteConfig.url}/images/hero-bathroom.jpg`,
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} - Home Remodeling`,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `Expert Home Remodeling – Chandler, AZ | ${siteConfig.name}`,
     description: 'Professional bathroom and kitchen remodeling in Chandler, Arizona. Expert contractors, luxury renovations.',
-    images: [`${siteConfig.url}/og-image.jpg`],
+    images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   robots: {
     index: true,

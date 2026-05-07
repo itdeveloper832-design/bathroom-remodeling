@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${siteConfig.url}/og-image.jpg`,
+        url: `${siteConfig.url}/images/hero-bathroom.jpg`,
         width: 1200,
         height: 630,
         alt: "Terms of Service",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Terms of Service - ARZ Home Remodeling",
     description: "Read our terms and conditions for using our services.",
-    images: [`${siteConfig.url}/og-image.jpg`],
+    images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/terms-of-service/`,

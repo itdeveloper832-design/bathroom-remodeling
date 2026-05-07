@@ -78,8 +78,8 @@
   # Default: 1 hour
   ExpiresDefault                          "access plus 1 hour"
 
-  # HTML: short cache (content changes)
-  ExpiresByType text/html                 "access plus 1 hour"
+  # HTML: Disable caching for immediate updates
+  ExpiresByType text/html                 "access plus 0 seconds"
 
   # CSS / JS: 1 year (content-hashed filenames)
   ExpiresByType text/css                  "access plus 1 year"
@@ -120,9 +120,11 @@
     Header set Cache-Control "public, max-age=2592000, stale-while-revalidate=86400"
   </FilesMatch>
 
-  # HTML - 1 hour, must revalidate
+  # HTML - Always revalidate, no caching
   <FilesMatch "\.html$">
-    Header set Cache-Control "public, max-age=3600, must-revalidate"
+    Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
   </FilesMatch>
 
   # Security Headers (improves Lighthouse Best Practices score)

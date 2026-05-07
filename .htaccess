@@ -24,6 +24,9 @@ DirectoryIndex index.html
   RewriteCond %{REQUEST_URI} !\.php$
   RewriteCond %{REQUEST_URI} !\.txt$
   RewriteRule ^(.*)$ /index.html [L]
+  
+  # Ensure index.html is served for directories
+  RewriteRule ^(.*)/$ /$1/index.html [L]
 </IfModule>
 
 # Enable Gzip Compression
@@ -70,6 +73,12 @@ DirectoryIndex index.html
   
   # Default
   ExpiresDefault "access plus 2 days"
+
+  # HTML files - Do not cache or set short cache
+  <FilesMatch "\.(html)$">
+    ExpiresActive Off
+    Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+  </FilesMatch>
 </IfModule>
 
 # Security Headers

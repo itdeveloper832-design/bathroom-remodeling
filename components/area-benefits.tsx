@@ -6,8 +6,10 @@ interface AreaBenefitsProps {
 }
 
 export default function AreaBenefits({ benefits, cityName }: AreaBenefitsProps) {
+  if (!benefits || benefits.length === 0) return null;
+
   return (
-    <section id="benefits" className="py-20 lg:py-32 bg-foreground text-background">
+    <section id="benefits" className="py-20 lg:py-32 bg-foreground text-background content-visibility-auto">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -20,7 +22,7 @@ export default function AreaBenefits({ benefits, cityName }: AreaBenefitsProps) 
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {benefits?.map((benefit, index) => (
+            {benefits.map((benefit, index) => (
               <div
                 key={index}
                 className="flex items-start gap-4 animate-in fade-in slide-in-from-bottom-4"

@@ -20,6 +20,7 @@
 /* Optimize rendering performance */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 112px; /* InfoHeader (40px) + Header (72px) */
   font-feature-settings: "kern" 1;
   /* Subpixel antialiasing improves text clarity at small sizes */
   -webkit-font-smoothing: antialiased;

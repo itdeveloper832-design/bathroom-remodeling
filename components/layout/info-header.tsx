@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 export function InfoHeader() {
   return (
     <aside 
-      className="fixed top-0 left-0 right-0 z-50 bg-foreground text-background h-[50px] flex items-center text-sm"
+      className="fixed top-0 left-0 right-0 z-40 bg-foreground text-background h-[40px] flex items-center text-xs"
       aria-label="Top contact information"
     >
       <div className="container mx-auto px-4 lg:px-8">

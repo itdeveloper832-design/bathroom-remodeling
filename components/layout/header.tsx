@@ -34,22 +34,21 @@ export function Header() {
       </a>
       <InfoHeader />
       <header
-        className={`fixed left-0 right-0 z-50 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-1 shadow-md border-b border-primary/10" : "top-[50px] py-2"}`}
+        className={`fixed left-0 right-0 z-50 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-2 shadow-md border-b border-primary/10" : "top-[40px] py-3"}`}
         role="banner"
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo - Accessible - Responsive */}
-            <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg py-1" aria-label="ARZ Home Remodeling - Home">
+            <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
               <Image
                 src="/images/logo-main.webp"
                 alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"
-                width={180}
-                height={48}
+                width={160}
+                height={40}
                 priority
                 fetchPriority="high"
-                sizes="(max-width: 640px) 120px, (max-width: 1024px) 180px, 240px"
-                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain object-left"
+                className="h-8 sm:h-9 md:h-10 lg:h-12 w-auto object-contain"
               />
             </Link>
 
@@ -93,8 +92,7 @@ export function Header() {
         {/* Mobile Menu */}
         <nav
           id="mobile-menu"
-          className={`lg:hidden bg-background border-t border-border overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-            }`}
+          className={`lg:hidden bg-background border-t border-border overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
           aria-label="Mobile navigation"
         >
           <div className="container mx-auto px-4 py-6">

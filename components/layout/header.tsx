@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
@@ -43,7 +43,7 @@ export function Header() {
             {/* Logo - Accessible - Responsive */}
             <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
               <Image
-                src="/images/web-log-image.png"
+                src="/images/logo-main.webp"
                 alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"
                 width={360}
                 height={124}
@@ -129,15 +129,6 @@ export function Header() {
         </nav>
       </header>
 
-      {/* Mobile Sticky Call Button - Accessible */}
-      <a
-        href={`tel:${siteConfig.phone}`}
-        className="lg:hidden fixed bottom-4 right-4 z-50 flex items-center gap-2 px-6 py-3 bg-black text-white font-bold rounded-full shadow-2xl active:scale-95 transition-transform duration-200 animate-in slide-in-from-bottom-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-        aria-label={`Call us now at ${siteConfig.phone}`}
-      >
-        <Phone className="w-5 h-5" aria-hidden="true" />
-        Call Now
-      </a>
     </>
   );
 }

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 import { bathroomServices } from "@/lib/bathroom-services";
 import { createLead } from "@/lib/actions/leads";
 
@@ -12,11 +13,6 @@ export function QuoteForm() {
   const [wordCount, setWordCount] = useState(0);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -71,10 +67,6 @@ export function QuoteForm() {
     }
   };
 
-  if (!mounted) {
-    return null;
-  }
-
   if (success) {
     return (
       <div
@@ -121,9 +113,7 @@ export function QuoteForm() {
         aria-label="Free bathroom remodel quote request"
       >
         <div>
-          <label htmlFor="quote-name" className="sr-only">
-            Your Name
-          </label>
+          <Label htmlFor="quote-name">Your Name</Label>
           <Input
             id="quote-name"
             type="text"
@@ -131,13 +121,12 @@ export function QuoteForm() {
             placeholder="Your Name"
             required
             aria-required="true"
+            className="mt-1.5"
           />
         </div>
 
         <div>
-          <label htmlFor="quote-phone" className="sr-only">
-            Phone Number
-          </label>
+          <Label htmlFor="quote-phone">Phone Number</Label>
           <Input
             id="quote-phone"
             type="tel"
@@ -145,13 +134,12 @@ export function QuoteForm() {
             placeholder="Phone Number"
             required
             aria-required="true"
+            className="mt-1.5"
           />
         </div>
 
         <div>
-          <label htmlFor="quote-email" className="sr-only">
-            Email Address
-          </label>
+          <Label htmlFor="quote-email">Email Address</Label>
           <Input
             id="quote-email"
             type="email"
@@ -159,13 +147,12 @@ export function QuoteForm() {
             placeholder="Email Address"
             required
             aria-required="true"
+            className="mt-1.5"
           />
         </div>
 
         <div>
-          <label htmlFor="quote-zip" className="sr-only">
-            ZIP Code
-          </label>
+          <Label htmlFor="quote-zip">ZIP Code</Label>
           <Input
             id="quote-zip"
             type="text"
@@ -173,20 +160,19 @@ export function QuoteForm() {
             placeholder="ZIP Code"
             required
             aria-required="true"
+            className="mt-1.5"
           />
         </div>
 
         <div>
-          <label htmlFor="quote-service" className="sr-only">
-            Select Service
-          </label>
+          <Label htmlFor="quote-service">Select Service</Label>
           <select
             id="quote-service"
             name="service"
             required
             aria-required="true"
             aria-label="Select bathroom remodeling service"
-            className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-1.5"
           >
             <option value="">Select Service</option>
             {bathroomServices.map((service) => (
@@ -199,15 +185,13 @@ export function QuoteForm() {
         </div>
 
         <div>
-          <label htmlFor="quote-message" className="sr-only">
-            Project Description
-          </label>
+          <Label htmlFor="quote-message">Project Description</Label>
           <Textarea
             id="quote-message"
             name="message"
             placeholder="Describe your project in detail (minimum 20 words required)"
             rows={3}
-            className="resize-none"
+            className="resize-none mt-1.5"
             required
             aria-required="true"
             aria-describedby={error ? "quote-message-error" : undefined}

@@ -32,7 +32,7 @@ export default function Hero() {
           quality={60}
           fetchPriority="high"
           // decoding async so main thread is not blocked while GPU decodes this large image
-          decoding="async"
+          decoding="sync"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" aria-hidden="true" />
       </div>

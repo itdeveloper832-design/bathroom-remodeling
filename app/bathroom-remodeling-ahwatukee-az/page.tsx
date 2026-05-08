@@ -8,6 +8,7 @@ import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
+import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import {
   ShieldCheck,

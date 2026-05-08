@@ -23,7 +23,8 @@ import { updateLeadStatus, deleteLead } from "@/lib/actions/leads"
 import type { Lead } from "@/lib/types"
 import { MoreHorizontal, Mail, Phone, Calendar, Trash2, Check, Clock, X, Download, RefreshCw } from "lucide-react"
 import { db } from "@/lib/firebase"
-import { collection, getDocs, query, orderBy } from "firebase/firestore"
+import * as firestore from "firebase/firestore"
+const { collection, getDocs, query, orderBy } = firestore;
 
 const statusColors: Record<string, string> = {
   new: "bg-blue-100 text-blue-800",

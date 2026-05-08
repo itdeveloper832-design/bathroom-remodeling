@@ -5,11 +5,11 @@ import { siteConfig } from "@/lib/site-config";
 export function InfoHeader() {
   return (
     <aside 
-      className="fixed top-0 left-0 right-0 z-40 bg-foreground text-background h-[40px] flex items-center text-xs"
+      className="fixed top-0 left-0 right-0 z-30 bg-foreground text-background h-[32px] flex items-center text-[10px]"
       aria-label="Top contact information"
     >
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-end gap-2 sm:gap-6">
+        <div className="flex items-center justify-end gap-2 sm:gap-4">
           <a 
             href={`tel:${siteConfig.phone}`}
             className="flex items-center gap-2 hover:text-primary transition-colors min-h-[48px] px-2 no-underline"

@@ -25,25 +25,24 @@ export function QuoteForm() {
     setIsSubmitting(true);
     setError("");
 
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name") as string,
-      phone: formData.get("phone") as string,
-      email: formData.get("email") as string,
-      zip: formData.get("zip") as string,
-      service: formData.get("service") as string,
-      message: formData.get("message") as string,
-      type: "quote" as const,
-    };
-
     try {
+      const formData = new FormData(e.currentTarget);
+      const data = {
+        name: formData.get("name") as string,
+        phone: formData.get("phone") as string,
+        email: formData.get("email") as string,
+        zip: formData.get("zip") as string,
+        service: formData.get("service") as string,
+        message: formData.get("message") as string,
+        type: "quote" as const,
+      };
+
       const result = await createLead(data);
 
       if (!result.success) {
         throw new Error(result.error || "Submission failed");
       }
 
-      console.info("Quote form submission successful", data);
       setSuccess(true);
       e.currentTarget.reset();
       setWordCount(0);
@@ -51,9 +50,9 @@ export function QuoteForm() {
     } catch (err: any) {
       console.error("Error submitting quote:", err);
       setError("Failed to submit quote. Please try again or call us directly.");
+    } finally {
+      setIsSubmitting(false);
     }
-
-    setIsSubmitting(false);
   };
 
   const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {

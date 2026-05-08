@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 // Critical above-fold components — imported statically for fastest LCP
 import Hero from "@/components/home/hero";
-import LocalTrust from "@/components/home/local-trust";
+const LocalTrust = dynamic(() => import("@/components/home/local-trust"));
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
@@ -22,7 +22,7 @@ const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
 const SEOFooter = dynamic(() => import("@/components/home/seo-footer"));
 
 // Client components — dynamically loaded so they don't block main thread
-import Testimonials from "@/components/home/testimonials";
+const Testimonials = dynamic(() => import("@/components/home/testimonials"));
 const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), {
   loading: () => <div className="py-20 bg-background"><div className="container mx-auto px-4 h-96 bg-muted/30 rounded-2xl animate-pulse" /></div>,
 });

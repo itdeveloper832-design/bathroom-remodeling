@@ -34,7 +34,7 @@ export function Header() {
       </a>
       <InfoHeader />
       <header
-        className={`fixed left-0 right-0 z-50 transition-all duration-300 bg-background/95 backdrop-blur-md shadow-sm ${isScrolled ? "top-0 py-3 shadow-md border-b border-primary/10" : "top-[50px] py-5"
+        className={`fixed left-0 right-0 z-50 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-3 shadow-md border-b border-primary/10" : "top-[50px] py-5"
           }`}
         role="banner"
       >

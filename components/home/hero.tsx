@@ -29,9 +29,9 @@ export default function Hero() {
           className="object-cover"
           priority={true}
           sizes="(max-width: 768px) 100vw, 1920px"
-          quality={60}
+          quality={50}
           fetchPriority="high"
-          // decoding async so main thread is not blocked while GPU decodes this large image
+          // decoding sync so the browser prioritizes rendering the critical LCP image
           decoding="sync"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" aria-hidden="true" />
@@ -43,7 +43,7 @@ export default function Hero() {
           {/* Left Column - Hero Content */}
           <div className="lg:col-span-2">
             {/* Rating Badge - static stars, avoids mapping array on every render */}
-            <div className="inline-flex items-center gap-2 bg-background/10 backdrop-blur-sm border border-background/20 rounded-full px-4 py-2 mb-8">
+            <div className="inline-flex items-center gap-2 bg-foreground/10 border border-background/20 rounded-full px-4 py-2 mb-8">
               <div className="flex" aria-hidden="true">
                 <Star className="w-4 h-4 fill-primary text-primary" />
                 <Star className="w-4 h-4 fill-primary text-primary" />

@@ -25,7 +25,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Licensed Bathroom Contractor Gilbert AZ | Quality Craftsmanship",
   description:
-    "Hire the top-rated bathroom remodeling company in Gilbert, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates — call (480) 306-5591 today!",
+    "Hire the top-rated bathroom remodeling company in Gilbert, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates — call +12293065591 today!",
   keywords: [
     "bathroom remodeling Gilbert AZ",
     "bathroom remodel Gilbert Arizona",

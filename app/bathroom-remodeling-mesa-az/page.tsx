@@ -25,7 +25,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Professional Bathroom Remodeling in Mesa AZ | Licensed & Insured",
   description:
-    "Hire the best bathroom remodeling company in Mesa, AZ. We specialize in custom showers, tub-to-shower conversions, and full master bath renovations. Licensed 5-star contractors, free estimates — call (480) 306-5591 today!",
+    "Hire the best bathroom remodeling company in Mesa, AZ. We specialize in custom showers, tub-to-shower conversions, and full master bath renovations. Licensed 5-star contractors, free estimates — call +12293065591 today!",
   keywords: [
     "bathroom remodeling Mesa AZ",
     "bathroom remodel Mesa Arizona",

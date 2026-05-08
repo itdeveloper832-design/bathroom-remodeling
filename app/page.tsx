@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | Expert Team",
     description:
-      "Licensed bathroom remodeling contractors in Chandler, AZ. Shower renovations, tub replacements & full remodels. Free quotes: (480) 306-5591.",
+      "Licensed bathroom remodeling contractors in Chandler, AZ. Shower renovations, tub replacements & full remodels. Free quotes: +12293065591.",
     type: "website",
   },
 

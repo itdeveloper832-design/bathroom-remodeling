@@ -19,7 +19,7 @@ import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: 'Bathroom Remodeling Services Chandler AZ | Licensed Contractors',
-  description: 'Top-rated bathroom remodeling in Chandler AZ. Walk-in showers, tub-to-shower conversions, master bath renovations. AZ licensed contractor, 2-year warranty. Free estimates — call (480) 306-5591.',
+  description: 'Top-rated bathroom remodeling in Chandler AZ. Walk-in showers, tub-to-shower conversions, master bath renovations. AZ licensed contractor, 2-year warranty. Free estimates — call +12293065591.',
   keywords: [
     "bathroom remodeling chandler az",
     "bathroom remodel chandler",

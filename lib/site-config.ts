@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "Premium Home Remodeling Services",
   description: "Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations.",
   url: "https://arzhomeremodeling.com",
-  phone: "(480) 306-5591",
+  phone: "+12293065591",
   email: "mike@arzhomeremodeling.com",
   license: "ROC #345678",
   address: {

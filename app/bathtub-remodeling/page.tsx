@@ -21,7 +21,7 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Bathtub Remodeling Chandler AZ | Tub Replacement & Tub-to-Shower Conversion",
   description:
-    "Expert bathtub remodeling in Chandler AZ. Tub replacement, bathtub-to-shower conversion, soaking tub installation. Licensed AZ contractor. Free estimates — call (480) 306-5591.",
+    "Expert bathtub remodeling in Chandler AZ. Tub replacement, bathtub-to-shower conversion, soaking tub installation. Licensed AZ contractor. Free estimates — call +12293065591.",
   keywords: [
     // Primary — Bathtub cluster
     "bathtub remodeling chandler az",

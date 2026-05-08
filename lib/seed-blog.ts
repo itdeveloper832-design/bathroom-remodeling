@@ -180,7 +180,7 @@ Ready to start your bathroom remodeling project in Chandler, Arizona? Contact Ch
 
 ---
 
-*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at (480) 306-5591 or visit our showroom to discuss your project.*
+*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at +12293065591 or visit our showroom to discuss your project.*
   `,
   author: "Chandler Bathroom Remodeling Team",
   category: "Bathroom Remodeling",
@@ -370,7 +370,7 @@ Ready to incorporate these 2024 bathroom design trends into your Chandler home? 
 
 ---
 
-*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at (480) 306-5591 to discuss your 2024 bathroom renovation project.*
+*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at +12293065591 to discuss your 2024 bathroom renovation project.*
   `,
   author: "Chandler Bathroom Remodeling Team",
   category: "Design Trends",
@@ -409,7 +409,7 @@ Because KERDI-BOARD is lightweight and easy to cut, our team can prep a shower f
 ## 4. Peace of Mind for Chandler Homeowners
 Our 2-year workmanship warranty is backed by our confidence in these materials. When we build a shower with Schluter, we know it won't leak. Period.
 
-Ready to upgrade your bathroom with a system built to last? Contact Mike at (480) 306-5591 for a free estimate.
+Ready to upgrade your bathroom with a system built to last? Contact Mike at +12293065591 for a free estimate.
   `,
   author: "Mike Hernandez",
   category: "Technical",

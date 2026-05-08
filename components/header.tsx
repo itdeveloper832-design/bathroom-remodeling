@@ -28,7 +28,7 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <a href="tel:+14805551234" className="flex items-center gap-2 bg-blue-950 text-white px-4 py-2 rounded">
+          <a href="tel:+12293065591" className="flex items-center gap-2 bg-blue-950 text-white px-4 py-2 rounded">
             <Phone size={16} />
             <span>Call Now</span>
           </a>
@@ -46,7 +46,7 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <a href="tel:+14805551234" className="flex items-center gap-2 bg-blue-950 text-white px-4 py-2 rounded w-fit">
+          <a href="tel:+12293065591" className="flex items-center gap-2 bg-blue-950 text-white px-4 py-2 rounded w-fit">
             <Phone size={16} />
             Call Now
           </a>

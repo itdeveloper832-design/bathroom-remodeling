@@ -311,7 +311,7 @@ export default async function LocationPage({
                 href="tel:+12293065591"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition font-semibold"
               >
-                (229) 306-5591
+                +12293065591
               </a>
             </div>
           </div>

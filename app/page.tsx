@@ -19,7 +19,6 @@ const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-be
 const FAQ = dynamic(() => import("@/components/home/faq"));
 const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
-const SEOFooter = dynamic(() => import("@/components/home/seo-footer"));
 
 // Client components — dynamically loaded so they don't block main thread
 const Testimonials = dynamic(() => import("@/components/home/testimonials"));
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | Expert Team",
     description:
-      "Licensed bathroom remodeling contractors in Chandler, AZ. Shower renovations, tub replacements & full remodels. Free quotes: +12293065591.",
+      "Licensed bathroom remodeling contractors in Chandler, AZ. Shower renovations, tub replacements & full remodels. Free quotes: +14803065591.",
     type: "website",
   },
 
@@ -115,8 +114,8 @@ export default function HomePage() {
         <ContactSection />
         <FinalCTA />
       </main>
-      <SEOFooter />
       <Footer />
     </>
   );
 }
+

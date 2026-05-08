@@ -26,19 +26,7 @@ import LocalTrust from "@/components/home/local-trust";
 export const metadata: Metadata = {
   title: "Chandler’s Top-Rated Bathroom Remodeling Contractor | Free Estimates",
   description:
-    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high-quality walk-in showers, tub-to-shower conversions, and master bath renovations. Licensed company, free estimates — call +12293065591 today!",
-  keywords: [
-    "bathroom remodeling chandler az",
-    "bath remodel chandler",
-    "shower remodeling chandler",
-    "tub to shower conversion chandler",
-    "master bath renovation chandler",
-    "bathroom contractor chandler az",
-    "bath remodeling services chandler az",
-    "bath remodeling contractor chandler az",
-    "bathroom remodelers chandler az",
-  ],
-
+    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high-quality walk-in showers, tub-to-shower conversions, and master bath renovations. Licensed company, free estimates — call +14803065591 today!",
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
     description:
@@ -248,7 +236,7 @@ export default function ChandlerBathroomRemodelingPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:+12293065591" className="flex items-center gap-2">
+                <Link href="tel:+14803065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>
@@ -468,3 +456,4 @@ export default function ChandlerBathroomRemodelingPage() {
     </>
   );
 }
+

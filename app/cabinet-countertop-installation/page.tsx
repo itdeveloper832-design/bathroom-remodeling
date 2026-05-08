@@ -18,7 +18,6 @@ import { serviceContent } from "@/lib/service-content-data";
 export const metadata: Metadata = {
   title: "Cabinet & Countertop Installation Chandler AZ",
   description: "Professional cabinet and countertop installation in Chandler, Arizona. Granite, quartz, marble countertops and custom cabinetry. Free estimates.",
-  keywords: ["cabinet countertop installation chandler az", "countertop installation chandler", "bathroom countertops chandler", "vanity cabinet installation", "granite countertops arizona", "quartz countertops chandler"],
   openGraph: {
     title: "Cabinet & Countertop Installation Chandler AZ",
     description: "Professional cabinet and countertop installation in Chandler. Granite, quartz, and custom cabinetry.",
@@ -180,3 +179,4 @@ export default function CabinetCountertopInstallationPage() {
     </>
   );
 }
+

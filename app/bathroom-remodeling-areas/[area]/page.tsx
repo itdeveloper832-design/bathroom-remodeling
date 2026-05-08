@@ -61,7 +61,7 @@ export default async function AreaPage({
           trustSignals={areaData.localTrustSignals}
         />
         <LocalTrust cityName={areaData.areaName} />
-        <AreaBenefits benefits={areaData.areaBenefits} />
+        <AreaBenefits benefits={areaData.areaBenefits} cityName={areaData.areaName} />
         <ProcessSection />
         <Testimonials />
         <CustomFAQ

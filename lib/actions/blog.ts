@@ -23,7 +23,7 @@ const basePosts: BlogPost[] = [defaultBlogPost, secondBlogPost, thirdBlogPost].m
   status: post.status,
   metaTitle: post.metaTitle,
   metaDescription: post.metaDescription,
-  keywords: post.metaKeywords.split(",").map((keyword) => keyword.trim()).filter(Boolean),
+  keywords: post.tags || [],
   tags: post.tags,
   readTime: 12,
   publishedAt: post.publishedAt,

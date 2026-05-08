@@ -21,18 +21,7 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Bathtub Remodeling Chandler AZ | Tub Replacement & Tub-to-Shower Conversion",
   description:
-    "Expert bathtub remodeling in Chandler AZ. Tub replacement, bathtub-to-shower conversion, soaking tub installation. Licensed AZ contractor. Free estimates — call +12293065591.",
-  keywords: [
-    // Primary — Bathtub cluster
-    "bathtub remodeling chandler az",
-    "bathtub remodel chandler az",
-    "tub replacement chandler az",
-    "bathroom refinishers near me",
-    "bathtub remodeling contractor chandler az",
-    "bathroom remodeling chandler az",
-    "bathtub remodel cost chandler az",
-    "affordable bathtub remodeling chandler az",
-  ],
+    "Expert bathtub remodeling in Chandler AZ. Tub replacement, bathtub-to-shower conversion, soaking tub installation. Licensed AZ contractor. Free estimates — call +14803065591.",
   openGraph: {
     title: "Bathtub Remodeling Chandler AZ | Tub Replacement & Conversion",
     description:
@@ -263,3 +252,4 @@ export default function BathtubRemodelingPage() {
     </>
   );
 }
+

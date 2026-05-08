@@ -32,14 +32,12 @@ export default function BlogContent() {
             ...defaultBlogPost,
             id: "default-post-1",
             readTime: 12,
-            keywords: ["bathroom remodeling chandler arizona", "bathroom renovation chandler az", "bathroom contractor chandler", "shower remodel chandler arizona", "bathroom design arizona"],
-          },
+            },
           {
             ...secondBlogPost,
             id: "default-post-2",
             readTime: 8,
-            keywords: ["bathroom design trends 2024", "chandler arizona bathroom", "modern bathroom design", "smart bathroom technology", "sustainable bathroom materials"],
-          }
+            }
         ]
         setPosts(defaultPosts)
       } else {
@@ -253,3 +251,4 @@ export default function BlogContent() {
     </>
   )
 }
+

@@ -9,7 +9,6 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Special Offers - Bathroom Remodeling Chandler",
   description: "Exclusive bathroom remodeling offers in Chandler, AZ. Save on showers, tile, and vanity upgrades. Limited time deals available!",
-  keywords: ["bathroom remodeling offers", "special promotions", "remodeling deals chandler"],
   openGraph: {
     title: "Special Offers - Bathroom Remodeling",
     description: "Exclusive bathroom remodeling offers and promotions in Chandler, Arizona.",
@@ -165,3 +164,4 @@ export default function OffersPage() {
     </>
   );
 }
+

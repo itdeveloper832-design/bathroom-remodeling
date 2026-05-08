@@ -3,86 +3,403 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import ServiceHero from "@/components/service-hero";
 import ServiceCTA from "@/components/service-cta";
+import ServiceFAQ from "@/components/service-faq";
+import Testimonials from "@/components/home/testimonials";
+import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema } from "@/components/seo/json-ld";
-import { GoogleMap } from "@/components/services/google-map";
-import LocalTrust from "@/components/home/local-trust";
+import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
+import Link from "next/link";
+import {
+  ShieldCheck,
+  Star,
+  MapPin,
+  Clock,
+  DollarSign,
+  Droplets,
+  CheckCircle2,
+  ArrowRight,
+  Phone,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Professional Bathroom Remodeling in Tempe AZ | Hire Top Contractors",
-  description: "Hire the best bathroom remodeling company in Tempe, AZ. Expert shower replacement, tub-to-shower conversions, and master bath renovations. Licensed & insured specialists.",
-  keywords: ["bathroom remodeling Tempe AZ", "professional shower replacement Tempe", "shower conversion experts Tempe AZ", "bathroom shower installers Tempe AZ", "bathroom tile contractors Tempe"],
+  title: "Licensed Bathroom Contractor Tempe AZ | Quality Craftsmanship",
+  description:
+    "Hire the top-rated bathroom remodeling company in Tempe, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates — call +14803065591 today!",
   openGraph: {
-    title: "Professional Bathroom Remodeling in Tempe AZ | ARZ Home Remodeling",
-    description: "Top-rated bathroom remodeling services in Tempe, AZ. Free estimates and expert installation.",
+    title: "Bathroom Remodeling Tempe AZ | ARZ Home Remodeling",
+    description:
+      "Licensed Tempe bathroom contractors. Walk-in showers, tub conversions, master bath renovations. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-tempe-az/`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/bathroom-remodeling-tempe.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Bathroom Remodeling Tempe Arizona - ARZ Home Remodeling",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bathroom Remodeling Tempe AZ | Free Estimates",
+    description: "Licensed Tempe bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
+    images: [`${siteConfig.url}/images/bathroom-remodeling-tempe.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-tempe-az/`,
   },
 };
 
+const tempeFaqs = [
+  {
+    question: "How long does a bathroom remodel take in Tempe, AZ?",
+    answer:
+      "A standard guest bathroom remodel in Tempe typically takes 2–3 weeks. Larger master bathroom renovations in areas like South Tempe or Warner Ranch run 4–6 weeks depending on scope. We provide a firm timeline in your written proposal.",
+  },
+  {
+    question: "Do you need a permit for bathroom remodeling in Tempe?",
+    answer:
+      "Cosmetic upgrades (like new tile or vanities) generally don't require permits. Structural changes, moving plumbing lines, or major electrical work require a City of Tempe permit. We handle all permitting and inspections for you.",
+  },
+  {
+    question: "How much does a bathroom remodel cost in Tempe, AZ?",
+    answer:
+      "Guest bath remodels in Tempe run $10,000–$18,000. Tub-to-shower conversions typically range from $6,000–$13,000. Full master suite renovations range from $18,000–$45,000+. We offer free, detailed estimates for every project.",
+  },
+  {
+    question: "Can you remodel my shower without replacing the whole bathroom?",
+    answer:
+      "Yes. We specialize in shower-only replacements and tub-to-shower conversions. This is a popular way for Tempe homeowners to modernize their space without the cost of a full gut remodel.",
+  },
+  {
+    question: "Are you licensed to do bathroom remodeling in Tempe?",
+    answer:
+      "Yes. We are a licensed Arizona contractor, fully insured, with a 2-year workmanship warranty. We are experienced with Tempe's specific building codes and requirements.",
+  },
+  {
+    question: "Do you serve neighborhoods near ASU and Downtown Tempe?",
+    answer:
+      "We serve all of Tempe, including Downtown, North Tempe, South Tempe, Warner Ranch, Shalimar, and the areas surrounding ASU — plus neighboring cities like Chandler, Mesa, and Gilbert.",
+  },
+];
+
+const services = [
+  {
+    title: "Walk-In Shower Installation",
+    href: "/shower-remodeling/",
+    description:
+      "We convert outdated tub/shower combos into open, curbless walk-in showers with frameless glass, custom tile, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof result.",
+    price: "From $6,000",
+  },
+  {
+    title: "Tub-to-Shower Conversion",
+    href: "/tub-to-shower-conversion/",
+    description:
+      "A top request in Tempe. We remove your old tub, waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds space and ROI to your Tempe home.",
+    price: "$6,000–$13,000",
+  },
+  {
+    title: "Complete Master Bathroom Remodel",
+    href: "/master-bathroom-remodel/",
+    description:
+      "Our master bath remodels include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: 3–5 weeks. We manage all trades and coordination.",
+    price: "$18,000–$45,000+",
+  },
+];
+
+const trustPoints = [
+  {
+    icon: ShieldCheck,
+    title: "AZ Licensed & Insured",
+    body: "Every project fully covered. We carry all required Arizona contractor licensing.",
+  },
+  {
+    icon: Star,
+    title: "2-Year Workmanship Warranty",
+    body: "We stand behind our work. If it fails within 2 years, we fix it at no cost to you.",
+  },
+  {
+    icon: MapPin,
+    title: "Tempe Local",
+    body: "We've remodeled bathrooms in Warner Ranch, South Tempe, and near the ASU area.",
+  },
+  {
+    icon: DollarSign,
+    title: "Fixed Pricing",
+    body: "No hidden fees. You get a written quote before any work starts. No change-order games.",
+  },
+  {
+    icon: Droplets,
+    title: "Hard Water Expertise",
+    body: "We use tile and grout systems designed to resist Tempe's mineral-heavy water supply.",
+  },
+  {
+    icon: Clock,
+    title: "On-Time Completion",
+    body: "We provide a firm schedule and stick to it. We show up when we say we will.",
+  },
+];
+
+const pricingTiers = [
+  {
+    label: "Guest Bathroom Update",
+    detail: "Vanity, toilet, fixtures, paint",
+    range: "$4,500 – $9,000",
+  },
+  {
+    label: "Guest Bathroom Full Remodel",
+    detail: "Tile, shower, vanity, flooring",
+    range: "$10,000 – $18,000",
+  },
+  {
+    label: "Tub-to-Shower Conversion",
+    detail: "Demo, waterproofing, custom shower build",
+    range: "$6,000 – $13,000",
+  },
+  {
+    label: "Master Bathroom Remodel",
+    detail: "Full scope — shower, vanity, tile, lighting",
+    range: "$18,000 – $45,000+",
+  },
+];
+
+const process = [
+  { step: "01", title: "Free Phone Consultation", body: "We discuss your goals, budget, and timeline to ensure we're the right fit." },
+  { step: "02", title: "In-Home Evaluation", body: "We measure, assess plumbing, and review your selections on-site in Tempe." },
+  { step: "03", title: "Fixed Written Proposal", body: "You see the complete price before we start. No hidden costs or surprises." },
+  { step: "04", title: "Design & Material Selection", body: "Tile, fixtures, and finishes chosen together to match your unique style." },
+  { step: "05", title: "Construction", body: "Our in-house team handles demo, waterproofing, tile, plumbing, and finishing." },
+  { step: "06", title: "Final Walkthrough", body: "You inspect every detail before we close the job. 100% satisfaction required." },
+];
+
+const neighborhoods = [
+  "South Tempe", "Warner Ranch", "Shalimar", "Downtown Tempe",
+  "North Tempe", "Alta Mira", "Optimist Park", "Tally Ho",
+  "85281", "85282", "85283", "85284",
+];
+
 export default function TempePage() {
   return (
     <>
-      <ServiceSchema 
-        serviceName="Bathroom Remodeling in Tempe, AZ" 
-        serviceDescription="Expert bathroom remodeling services for Tempe, AZ homeowners. Specializing in high-intent lead generation for bathroom and shower renovations." 
-        serviceUrl={`${siteConfig.url}/bathroom-remodeling-tempe-az/`} 
+      <ServiceSchema
+        serviceName="Bathroom Remodeling in Tempe, Arizona"
+        serviceDescription="Licensed bathroom remodeling contractor serving Tempe, AZ. Custom shower installation, tub-to-shower conversions, master bath renovations, and complete bathroom remodels. Serving South Tempe, Warner Ranch, and all university-area neighborhoods."
+        serviceUrl={`${siteConfig.url}/bathroom-remodeling-tempe-az/`}
+      />
+      <FAQSchema faqs={tempeFaqs} />
+      <PriceSchema
+        serviceName="Bathroom Remodeling in Tempe AZ"
+        priceRange="$4,500 - $45,000+"
+        url={`${siteConfig.url}/bathroom-remodeling-tempe-az/`}
       />
       <Header />
       <main>
+        {/* HERO */}
         <ServiceHero
           title="Tempe’s Top-Rated Bathroom Remodeling Contractor"
           subtitle="Hire the Best Local Remodelers in Tempe — Free Estimates"
-          description="Bringing our 5-star bathroom remodeling services to homeowners in Tempe, AZ. We specialize in high-quality renovations, custom shower installs, and full bathroom transformations."
+          description="Bringing our 5-star bathroom remodeling services to homeowners in Tempe, AZ. Licensed AZ contractors specializing in high-quality renovations, custom shower installs, and full bathroom transformations."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
-            { name: "Home", url: siteConfig.url }, 
-            { name: "Tempe", url: `${siteConfig.url}/bathroom-remodeling-tempe-az/` }
+            { name: "Home", url: siteConfig.url },
+            { name: "Bathroom Remodeling Tempe AZ", url: `${siteConfig.url}/bathroom-remodeling-tempe-az/` },
           ]}
         />
-        <LocalTrust cityName="Tempe" />
-        
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="font-serif text-3xl font-semibold mb-6">Serving Homeowners in Tempe, AZ</h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              We are proud to extend our professional bathroom remodeling services to the Tempe community. 
-              Whether you need a quick shower update or a full master bath transformation, our team of licensed contractors is ready to help.
+
+        {/* OPENING CONTENT */}
+        <section className="py-16 lg:py-24 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Tempe homeowners value both style and functionality. Whether you live in a classic home in South Tempe or a 
+              modern space near Downtown, your bathroom should be a reflection of your lifestyle.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Tempe homeowners trust us for our high-quality craftsmanship and transparent pricing. From the first consultation to the final walkthrough, we ensure your bathroom remodel is a stress-free experience.
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              At ARZ Home Remodeling, we specialize in{" "}
+              <strong className="text-foreground">bathroom remodeling in Tempe, AZ</strong> — from custom walk-in 
+              showers in Warner Ranch to full master bath transformations near ASU. We are a licensed Arizona 
+              contractor, serving homeowners across{" "}
+              <span className="text-primary font-semibold">85281, 85282, 85283, and 85284</span>.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                <Link href="/contact/" className="flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  Call Now for Your Free No-Obligation Bathroom Quote!
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link href={`tel:${siteConfig.phone}`} className="flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  {siteConfig.phone}
+                </Link>
+              </Button>
+            </div>
           </div>
         </section>
 
-        <ServiceCTA 
-          title="Ready for a Free No-Obligation Bathroom Quote in Tempe?" 
-          description="Call us or fill out the form today. Our licensed Tempe contractors are standing by to help you transform your home with a beautiful new bathroom." 
-        />
-        
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Tempe, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">Tempe Bathroom Remodeling Service Area</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">Expert bathroom remodeling services throughout Tempe, Arizona and surrounding university-area communities.</p>
+        {/* SERVICES */}
+        <section className="py-16 lg:py-24 bg-secondary">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="text-center mb-12">
+              <span className="text-primary text-sm font-medium tracking-wider uppercase">What We Do</span>
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground text-balance">
+                Our Tempe Bathroom Remodeling Services
+              </h2>
             </div>
-            <div>
-              <GoogleMap 
-                lat={33.4255} 
-                lng={-111.9400} 
-                zoom={12} 
-                title="Bathroom Remodeling Tempe" 
-                address="Tempe, AZ" 
-              />
+            <div className="grid md:grid-cols-3 gap-8">
+              {services.map((svc) => (
+                <div key={svc.title} className="bg-background rounded-2xl p-8 border border-border flex flex-col">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-semibold uppercase tracking-widest text-primary">{svc.price}</span>
+                  </div>
+                  <h3 className="font-serif text-xl font-semibold text-foreground mb-3">{svc.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed flex-1 mb-6">{svc.description}</p>
+                  <Link
+                    href={svc.href}
+                    className="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:underline mt-auto"
+                  >
+                    Learn more <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         </section>
+
+        {/* TRUST SIGNALS */}
+        <section className="py-16 lg:py-24 bg-background">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="text-center mb-12">
+              <span className="text-primary text-sm font-medium tracking-wider uppercase">Our Promise</span>
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground">
+                Why Tempe Homeowners Choose Us
+              </h2>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {trustPoints.map((pt) => (
+                <div key={pt.title} className="flex gap-4 p-6 bg-secondary rounded-2xl border border-border">
+                  <pt.icon className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">{pt.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{pt.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* HARD WATER EXPERTISE */}
+        <section className="py-16 lg:py-24 bg-primary text-primary-foreground">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <div className="flex items-start gap-4 mb-8">
+              <Droplets className="w-10 h-10 flex-shrink-0 mt-1 opacity-80" />
+              <div>
+                <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-6">
+                  Solving Tempe's Hard Water Challenges
+                </h2>
+                <p className="text-primary-foreground/85 text-lg leading-relaxed mb-4">
+                  Tempe's water supply is known for high mineral content, which can ruin a new bathroom if not properly planned 
+                  for. We use specialized materials that stand up to the local environment.
+                </p>
+                <ul className="space-y-3 text-primary-foreground/85 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <span><strong>Epoxy Grout:</strong> Waterproof and resistant to staining from mineral buildup.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <span><strong>Nano-Coated Glass:</strong> Keeps your shower doors clear of calcium and water spots.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <span><strong>Schluter Systems:</strong> Ensuring your shower remains leak-proof for years.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* COST GUIDE */}
+        <section className="py-16 lg:py-24 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <div className="text-center mb-12">
+              <span className="text-primary text-sm font-medium tracking-wider uppercase">Transparent Pricing</span>
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground">
+                Tempe Bathroom Remodel Cost Guide
+              </h2>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+              {pricingTiers.map((tier) => (
+                <div key={tier.label} className="bg-secondary rounded-2xl p-6 border border-border flex justify-between items-center gap-4">
+                  <div>
+                    <p className="font-semibold text-foreground">{tier.label}</p>
+                    <p className="text-muted-foreground text-sm">{tier.detail}</p>
+                  </div>
+                  <span className="text-primary font-bold text-lg whitespace-nowrap">{tier.range}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* PROCESS */}
+        <section className="py-16 lg:py-24 bg-secondary">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="text-center mb-12">
+              <span className="text-primary text-sm font-medium tracking-wider uppercase">How It Works</span>
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground">
+                Our Remodeling Process
+              </h2>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {process.map((step) => (
+                <div key={step.step} className="bg-background rounded-2xl p-6 border border-border">
+                  <span className="text-4xl font-bold text-primary/20">{step.step}</span>
+                  <h3 className="font-semibold text-foreground mt-2 mb-2">{step.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{step.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SERVICE AREAS */}
+        <section className="py-16 lg:py-24 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+            <span className="text-primary text-sm font-medium tracking-wider uppercase">Service Area</span>
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold mt-4 mb-6 text-foreground">
+              Serving All of Tempe, AZ
+            </h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {neighborhoods.map((n) => (
+                <span key={n} className="bg-secondary border border-border rounded-full px-4 py-2 text-sm font-medium text-foreground">
+                  {n}
+                </span>
+              ))}
+            </div>
+            <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
+              <Link href="/bathroom-remodeling-chandler-az/" className="hover:text-primary transition-colors">Bathroom Remodeling Chandler AZ →</Link>
+              <Link href="/bathroom-remodeling-gilbert-az/" className="hover:text-primary transition-colors">Bathroom Remodeling Gilbert AZ →</Link>
+              <Link href="/bathroom-remodeling-mesa-az/" className="hover:text-primary transition-colors">Bathroom Remodeling Mesa AZ →</Link>
+            </div>
+          </div>
+        </section>
+
+        <ServiceFAQ faqs={tempeFaqs} />
+        <Testimonials />
+        <ContactSection />
+        <ServiceCTA
+          title="Ready for a Free Estimate in Tempe, AZ?"
+          description="Call us or fill out the form. We'll discuss your project and schedule your free in-home evaluation within 48 hours."
+        />
       </main>
       <Footer />
     </>
   );
 }
+
+

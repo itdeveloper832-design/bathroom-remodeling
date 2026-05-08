@@ -1275,7 +1275,6 @@ export async function generateMetadata({
   return {
     title,
     description,
-    keywords: [service.name.toLowerCase(), `${service.name.toLowerCase()} services`, `${service.name.toLowerCase()} contractors`, "chandler arizona", "remodeling contractors"],
     openGraph: {
       title: `${title} | ARZ Home Remodeling`,
       description,
@@ -1290,8 +1289,8 @@ export async function generateMetadata({
 
 
 const chandlerLocation = {
-  lat: 33.3062,
-  lng: -111.8413,
+  lat: 33.3009334,
+  lng: -111.9605964,
 };
 
 export default async function BathroomServicePage({
@@ -1375,7 +1374,7 @@ export default async function BathroomServicePage({
           benefits={content.benefits}
         />
 
-        <LocalTrust cityName="Winchester" />
+        <LocalTrust cityName="Chandler" />
 
         {/* Related Services Section */}
         {content.relatedServices && (

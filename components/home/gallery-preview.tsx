@@ -24,14 +24,14 @@ const galleryItems = [
     id: 3,
     title: "Custom Vanity Upgrade in Fulton Ranch",
     category: "Vanity & Tile Work - Completed Feb 2025",
-    before: "/images/optimized/photo-1584622650111-993a426fbf0a.webp",
+    before: "/images/optimized/photo-1581578731548-c64695cc6952.webp",
     after: "/images/optimized/photo-1620626011761-996317b8d101.webp",
   },
   {
     id: 4,
     title: "Spa-Like Retreat in Sun Lakes",
     category: "Master Bath Upgrade - Completed Dec 2024",
-    before: "/images/optimized/photo-1620626011761-996317b8d101.webp",
+    before: "/images/optimized/photo-1585412727339-54e4bae3bbf9.webp",
     after: "/images/optimized/photo-1600607687939-ce8a6c25118c.webp",
   },
 ];

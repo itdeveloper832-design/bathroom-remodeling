@@ -20,21 +20,7 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Professional Shower Remodeling Chandler AZ | Walk-In Shower Experts",
   description:
-    "Expert shower remodeling in Chandler AZ. Walk-in shower installation, frameless glass enclosures, shower replacement, and custom tile. Licensed AZ contractor. Free estimates — call +12293065591.",
-  keywords: [
-    // Primary — Shower cluster (localized from phoenix to chandler)
-    "shower remodeling chandler az",
-    "shower remodel chandler az",
-    "shower remodeling services chandler",
-    "chandler shower remodeling",
-    "shower remodeling contractor chandler az",
-    "tile shower installation chandler",
-    "tile shower installation services chandler",
-    "accessible shower remodeling chandler",
-    "shower renovation near me",
-    "shower remodel near me",
-    "shower remodeling company chandler",
-  ],
+    "Expert shower remodeling in Chandler AZ. Walk-in shower installation, frameless glass enclosures, shower replacement, and custom tile. Licensed AZ contractor. Free estimates — call +14803065591.",
   openGraph: {
     title: "Shower Remodeling Chandler AZ | Walk-In Showers & Custom Tile",
     description:
@@ -240,3 +226,4 @@ export default function ShowerRemodelingPage() {
     </>
   );
 }
+

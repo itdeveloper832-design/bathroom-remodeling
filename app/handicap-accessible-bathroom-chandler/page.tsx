@@ -19,7 +19,6 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Handicap Accessible Bathroom Chandler AZ | Safety",
   description: "Safe, ADA-compliant handicap accessible bathroom Chandler AZ. Roll-in showers and grab bar installations. Call us today!",
-  keywords: ["handicap accessible bathroom Chandler", "ADA compliant bathroom", "accessible shower remodeling chandler", "accessible shower installation chandler", "walk-in shower installation services", "roll-in showers", "grab bar installation", "accessible bathroom remodel"],
   openGraph: {
     title: "Handicap Accessible Bathroom Chandler AZ | Safety",
     description: "Safe, ADA-compliant handicap accessible bathroom Chandler AZ. Roll-in showers and grab bar installations.",
@@ -139,3 +138,4 @@ export default function AccessibilityPage() {
     </>
   );
 }
+

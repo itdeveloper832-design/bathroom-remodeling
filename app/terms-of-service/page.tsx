@@ -6,7 +6,6 @@ import { siteConfig } from "@/lib/site-config"
 export const metadata: Metadata = {
   title: "Terms of Service - ARZ Home Remodeling",
   description: "Terms of Service for ARZ Home Remodeling. Read our terms and conditions for using our services.",
-  keywords: ["terms of service", "terms and conditions", "legal"],
   openGraph: {
     title: "Terms of Service - ARZ Home Remodeling",
     description: "Read our terms and conditions for using our services.",
@@ -151,3 +150,4 @@ export default function TermsOfServicePage() {
     </>
   )
 }
+

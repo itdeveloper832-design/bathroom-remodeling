@@ -23,7 +23,7 @@ export function Footer() {
           <div>
             <h4 className="font-poppins font-semibold mb-4">Contact Info</h4>
             <p className="text-slate-300">
-              Phone: <a href="tel:+12293065591" className="hover:text-white transition-colors">+12293065591</a>
+              Phone: <a href="tel:+14803065591" className="hover:text-white transition-colors">+14803065591</a>
             </p>
             <p className="text-slate-300">
               Visit us at: <a href="https://arzhomeremodeling.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">arzhomeremodeling.vercel.app</a>

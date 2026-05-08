@@ -49,7 +49,7 @@ export default function OcotilloBathroomRemodelingPage() {
           description={areaData.introSection.description}
           trustSignals={areaData.localTrustSignals}
         />
-        <AreaBenefits benefits={areaData.areaBenefits} />
+        <AreaBenefits benefits={areaData.areaBenefits} cityName={areaData.areaName} />
         <ProcessSection />
         <Testimonials />
         <CustomFAQ
@@ -64,3 +64,4 @@ export default function OcotilloBathroomRemodelingPage() {
     </>
   );
 }
+

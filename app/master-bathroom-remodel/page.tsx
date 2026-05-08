@@ -17,14 +17,6 @@ export const metadata: Metadata = {
   title: "Master Bathroom Remodel Chandler AZ | Full-Scope Renovations",
   description:
     "Complete master bathroom remodel in Chandler AZ. Shower enclosures, vanity replacement, tile flooring, updated lighting — all managed by one licensed AZ contractor. Free estimates.",
-  keywords: [
-    "master bathroom remodel Chandler AZ",
-    "master bath renovation Chandler",
-    "luxury master bathroom Chandler AZ",
-    "master suite remodel Chandler",
-    "complete master bathroom renovation AZ",
-    "master bathroom contractor Chandler",
-  ],
   openGraph: {
     title: "Master Bathroom Remodel Chandler AZ | ARZ Home Remodeling",
     description:
@@ -235,3 +227,4 @@ export default function MasterBathPage() {
     </>
   );
 }
+

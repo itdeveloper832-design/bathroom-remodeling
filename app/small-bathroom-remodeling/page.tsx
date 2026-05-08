@@ -20,7 +20,6 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Small Bathroom Remodel Chandler AZ | Maximize Space",
   description: "Expert small bathroom remodel Chandler AZ. We maximize space & aesthetic with modern vanity and tile upgrades. Get your free estimate!",
-  keywords: ["small bathroom remodel Chandler", "small bathroom remodel cost chandler az", "affordable small bathroom remodel cost chandler az", "best small bathroom remodel cost chandler az", "local small bathroom remodel cost chandler az", "professional small bathroom remodel cost chandler az", "small bathroom remodeling chandler", "space-saving bathroom design"],
   openGraph: {
     title: "Small Bathroom Remodel Cost Chandler AZ | Expert",
     description: "Affordable small bathroom remodel cost Chandler AZ. Professional small bathroom remodeling services.",
@@ -133,3 +132,4 @@ export default function SmallBathroomRemodelingPage() {
     </>
   );
 }
+

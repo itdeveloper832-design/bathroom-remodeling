@@ -19,15 +19,7 @@ import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: 'Bathroom Remodeling Services Chandler AZ | Licensed Contractors',
-  description: 'Top-rated bathroom remodeling in Chandler AZ. Walk-in showers, tub-to-shower conversions, master bath renovations. AZ licensed contractor, 2-year warranty. Free estimates — call +12293065591.',
-  keywords: [
-    "bathroom remodeling chandler az",
-    "bathroom remodel chandler",
-    "bath remodel near me",
-    "affordable bathroom remodeling chandler az",
-    "bathroom remodel chandler az cost",
-  ],
-
+  description: 'Top-rated bathroom remodeling in Chandler AZ. Walk-in showers, tub-to-shower conversions, master bath renovations. AZ licensed contractor, 2-year warranty. Free estimates — call +14803065591.',
   openGraph: {
     title: 'Bathroom Remodeling Services in Chandler AZ | ARZ Home Remodeling',
     description: 'Transform your space with the best bathroom remodeling team in Chandler. Licensed AZ contractor, fixed pricing, 2-year warranty.',
@@ -150,3 +142,4 @@ export default function BathroomRemodelingPage() {
     </>
   );
 }
+

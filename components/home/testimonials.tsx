@@ -85,10 +85,6 @@ export default function Testimonials() {
               <div className="shrink-0">
                 <div className="relative w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-primary/20 bg-primary/10 flex items-center justify-center">
                   {testimonials[currentIndex].image.startsWith('http') ? (
-                    <span className="text-2xl lg:text-3xl font-serif font-bold text-primary">
-                      {testimonials[currentIndex].initials}
-                    </span>
-                  ) : (
                     <Image
                       src={testimonials[currentIndex].image}
                       alt={`${testimonials[currentIndex].name} - testimonial`}
@@ -98,6 +94,10 @@ export default function Testimonials() {
                       quality={75}
                       sizes="(max-width: 768px) 96px, 128px"
                     />
+                  ) : (
+                    <span className="text-2xl lg:text-3xl font-serif font-bold text-primary">
+                      {testimonials[currentIndex].initials}
+                    </span>
                   )}
                 </div>
               </div>

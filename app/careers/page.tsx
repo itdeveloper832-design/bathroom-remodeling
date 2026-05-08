@@ -9,7 +9,6 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Careers at ARZ Home Remodeling Chandler AZ",
   description: "Join our growing team in Chandler, AZ. We're hiring experienced bathroom remodelers and tile installers. Apply today!",
-  keywords: ["careers", "jobs chandler", "bathroom remodeler jobs", "employment"],
   openGraph: {
     title: "Careers - Join Our Team",
     description: "Join our growing team in Chandler, Arizona. We're hiring experienced contractors.",
@@ -135,3 +134,4 @@ export default function CareersPage() {
     </>
   );
 }
+

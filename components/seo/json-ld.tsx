@@ -46,7 +46,9 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       siteConfig.social.instagram,
       siteConfig.social.twitter,
       siteConfig.social.pinterest,
-    ],
+      siteConfig.social.youtube,
+      siteConfig.social.linkedin,
+    ].filter(Boolean),
     priceRange: "$$",
     areaServed: siteConfig.serviceAreas.map((area) => ({
       "@type": "Place",

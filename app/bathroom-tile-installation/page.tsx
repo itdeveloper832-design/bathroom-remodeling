@@ -20,7 +20,6 @@ import { bathroomServices } from "@/lib/bathroom-services";
 export const metadata: Metadata = {
   title: "Bathroom Tile Installation Chandler AZ | Custom Flooring",
   description: "Premium bathroom tile installation in Chandler AZ. Custom ceramic, porcelain, & marble flooring and shower walls. Get a free quote!",
-  keywords: ["bathroom tile installation Chandler", "tile installation chandler", "tile shower installation chandler", "tile shower installation services chandler", "shower tile AZ", "bathroom floor tiles", "tile contractors Chandler", "backsplash installers", "waterproof tile"],
   openGraph: {
     title: "Bathroom Tile Installation in Chandler AZ",
     description: "Professional tile setting in Chandler with shower walls, floor tiles, and backsplash work.",
@@ -134,3 +133,4 @@ export default function BathroomTileInstallationPage() {
     </>
   );
 }
+

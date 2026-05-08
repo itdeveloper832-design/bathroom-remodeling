@@ -40,7 +40,6 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return {
     title: post.metaTitle || post.title,
     description: post.metaDescription || post.excerpt,
-    keywords: post.keywords,
     openGraph: {
       title: post.metaTitle || post.title,
       description: post.metaDescription || post.excerpt,
@@ -67,7 +66,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound()
   }
 
-  const relatedPosts: BlogPost[] = []
+  const relatedPosts = await getRelatedPosts(post.category, post.id)
 
   return (
     <>

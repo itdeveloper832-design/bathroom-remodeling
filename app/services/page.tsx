@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Custom Bathroom Remodeling Services in Chandler",
   description: "Professional bathroom remodeling services. From tub conversions to full master bath builds in Chandler, AZ. Schedule your free quote!",
-  keywords: ["bathroom remodeling services", "Chandler AZ contractors", "custom shower builds", "bathroom renovations", "tub replacements"],
   openGraph: {
     title: "Bathroom Remodeling Services in Chandler AZ",
     description: "Complete renovation solutions for your home. Professional installations by licensed contractors.",
@@ -102,3 +101,4 @@ export default function ServicesPage() {
     </>
   );
 }
+

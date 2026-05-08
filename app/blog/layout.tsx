@@ -4,7 +4,6 @@ import { siteConfig } from "@/lib/site-config"
 export const metadata: Metadata = {
   title: "Bathroom Remodeling Blog | Expert Tips & Design Ideas - Chandler, AZ",
   description: "Discover expert bathroom remodeling tips, design trends, and inspiration from Chandler, Arizona's top bathroom remodelers. Learn about costs, materials, and latest design ideas.",
-  keywords: ["bathroom remodeling blog", "bathroom design tips", "chandler az bathroom renovation", "bathroom remodel ideas", "modern bathroom design", "bathroom renovation costs"],
   openGraph: {
     title: "Bathroom Remodeling Blog | Chandler Bathroom Remodeling",
     description: "Expert bathroom remodeling tips, design trends, and inspiration from Chandler, Arizona's trusted remodeling company.",
@@ -37,3 +36,4 @@ export default function BlogLayout({
 }) {
   return children
 }
+

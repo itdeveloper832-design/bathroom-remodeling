@@ -17,7 +17,6 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 export const metadata: Metadata = {
   title: "Shower & Bathtub Upgrade Chandler AZ | Remodeling",
   description: "Professional shower and bathtub upgrade services in Chandler, Arizona. Modern fixtures, premium materials, and expert installation. Free estimates.",
-  keywords: ["shower bathtub upgrade chandler az", "bathroom upgrade services", "shower upgrade chandler", "bathtub upgrade arizona", "bathroom fixture upgrade"],
   openGraph: {
     title: "Shower & Bathtub Upgrade Chandler AZ | Remodeling",
     description: "Professional shower and bathtub upgrades in Chandler with modern fixtures and premium materials.",
@@ -248,3 +247,4 @@ export default function ShowerBathtubUpgradePage() {
     </>
   );
 }
+

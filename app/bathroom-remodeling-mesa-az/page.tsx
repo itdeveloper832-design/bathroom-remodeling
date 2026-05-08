@@ -25,25 +25,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Professional Bathroom Remodeling in Mesa AZ | Licensed & Insured",
   description:
-    "Hire the best bathroom remodeling company in Mesa, AZ. We specialize in custom showers, tub-to-shower conversions, and full master bath renovations. Licensed 5-star contractors, free estimates — call +12293065591 today!",
-  keywords: [
-    "bathroom remodeling Mesa AZ",
-    "bathroom remodel Mesa Arizona",
-    "bathroom renovation Mesa AZ",
-    "shower remodeling Mesa AZ",
-    "tub to shower conversion Mesa AZ",
-    "master bathroom renovation Mesa AZ",
-    "licensed bathroom contractor Mesa AZ",
-    "bathroom remodel cost Mesa AZ",
-    "Dobson Ranch bathroom remodel",
-    "Las Sendas bathroom remodeling",
-    "Eastmark bathroom remodelers",
-    "Red Mountain Ranch bathroom contractors",
-    "bathroom contractor 85201",
-    "bathroom contractor 85204",
-    "bathroom contractor 85208",
-    "bathroom contractor 85212",
-  ],
+    "Hire the best bathroom remodeling company in Mesa, AZ. We specialize in custom showers, tub-to-shower conversions, and full master bath renovations. Licensed 5-star contractors, free estimates — call +14803065591 today!",
   openGraph: {
     title: "Bathroom Remodeling Mesa AZ | ARZ Home Remodeling",
     description:
@@ -419,4 +401,5 @@ export default function MesaPage() {
     </>
   );
 }
+
 

@@ -43,7 +43,6 @@ export async function generateMetadata({
   return {
     title,
     description,
-    keywords: [`bathroom remodeling Chandler AZ`, `bathroom remodeling ${displayName}`, `bathroom remodel contractor`, `shower replacement ${displayName}`],
     // noindex: these are thin programmatic pages; removing from sitemap + noindex
     // prevents them from being "Discovered - currently not indexed" in GSC
     robots: {
@@ -123,11 +122,11 @@ export default async function LocationPage({
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition font-medium">
+                <Link href="/contact/" className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition font-medium text-center">
                   Get Free Estimate
-                </button>
+                </Link>
                 <a
-                  href="tel:+12293065591"
+                  href="tel:+14803065591"
                   className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary/5 transition font-medium flex items-center justify-center gap-2"
                 >
                   <Phone className="w-5 h-5" />
@@ -304,14 +303,14 @@ export default async function LocationPage({
               Contact our local remodeling contractors for a free consultation and detailed estimate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-primary px-8 py-3 rounded-lg hover:bg-gray-100 transition font-semibold">
+              <Link href="/contact/" className="bg-white text-primary px-8 py-3 rounded-lg hover:bg-gray-100 transition font-semibold text-center">
                 Schedule Consultation
-              </button>
+              </Link>
               <a
-                href="tel:+12293065591"
+                href="tel:+14803065591"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition font-semibold"
               >
-                +12293065591
+                +14803065591
               </a>
             </div>
           </div>

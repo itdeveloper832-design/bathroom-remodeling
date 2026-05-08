@@ -33,46 +33,54 @@ export function Footer() {
             </p>
 
             <div className="flex gap-3" role="list" aria-label="Social media links">
-              <a
-                href={siteConfig.social.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                aria-label="Follow ARZ Home Remodeling on Facebook"
-                role="listitem"
-              >
-                <Facebook className="w-5 h-5" aria-hidden="true" />
-              </a>
-              <a
-                href={siteConfig.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                aria-label="Follow ARZ Home Remodeling on Instagram"
-                role="listitem"
-              >
-                <Instagram className="w-5 h-5" aria-hidden="true" />
-              </a>
-              <a
-                href="https://youtube.com/arzhomeremodeling"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                aria-label="Watch our remodeling projects on YouTube"
-                role="listitem"
-              >
-                <Youtube className="w-5 h-5" aria-hidden="true" />
-              </a>
-              <a
-                href="https://linkedin.com/company/arzhomeremodeling"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                aria-label="Connect with ARZ Home Remodeling on LinkedIn"
-                role="listitem"
-              >
-                <Linkedin className="w-5 h-5" aria-hidden="true" />
-              </a>
+              {siteConfig.social.facebook && (
+                <a
+                  href={siteConfig.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
+                  aria-label="Follow ARZ Home Remodeling on Facebook"
+                  role="listitem"
+                >
+                  <Facebook className="w-5 h-5" aria-hidden="true" />
+                </a>
+              )}
+              {siteConfig.social.instagram && (
+                <a
+                  href={siteConfig.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
+                  aria-label="Follow ARZ Home Remodeling on Instagram"
+                  role="listitem"
+                >
+                  <Instagram className="w-5 h-5" aria-hidden="true" />
+                </a>
+              )}
+              {siteConfig.social.youtube && (
+                <a
+                  href={siteConfig.social.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
+                  aria-label="Watch our remodeling projects on YouTube"
+                  role="listitem"
+                >
+                  <Youtube className="w-5 h-5" aria-hidden="true" />
+                </a>
+              )}
+              {siteConfig.social.linkedin && (
+                <a
+                  href={siteConfig.social.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
+                  aria-label="Connect with ARZ Home Remodeling on LinkedIn"
+                  role="listitem"
+                >
+                  <Linkedin className="w-5 h-5" aria-hidden="true" />
+                </a>
+              )}
             </div>
           </div>
 

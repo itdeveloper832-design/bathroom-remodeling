@@ -16,16 +16,6 @@ export const metadata: Metadata = {
   title: "Bathroom Remodeling Cost Chandler AZ | 2024 Pricing Guide",
   description:
     "Complete bathroom remodeling cost guide for Chandler, AZ. Guest bath updates from $4,500, tub-to-shower conversions $6,000–$13,000, master bath remodels $18,000–$45,000+. Free itemized estimates.",
-  keywords: [
-    "bathroom remodeling cost chandler az",
-    "bathroom remodel chandler az cost",
-    "bathroom remodel chandler az prices",
-    "affordable bathroom remodeling chandler az",
-    "cheap bathroom remodeling chandler az",
-    "tub to shower conversion cost chandler az",
-    "bathroom remodel price chandler az",
-    "bathroom renovation estimate chandler az",
-  ],
   openGraph: {
     title: "Bathroom Remodeling Cost Chandler AZ | 2024 Pricing Guide",
     description:
@@ -371,3 +361,4 @@ export default function CostPage() {
     </>
   );
 }
+

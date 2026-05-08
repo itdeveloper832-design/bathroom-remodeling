@@ -18,7 +18,6 @@ import { serviceContent } from "@/lib/service-content-data";
 export const metadata: Metadata = {
   title: "Tub Removal Chandler AZ | Bathtub Removal Service",
   description: "Professional bathtub removal services in Chandler, Arizona. Safe removal, proper disposal, and floor prep for your bathroom renovation project.",
-  keywords: ["tub removal chandler az", "bathtub removal service", "remove old bathtub", "tub demolition chandler", "bathroom tub removal"],
   openGraph: {
     title: "Tub Removal Chandler AZ | Bathtub Removal Service",
     description: "Professional bathtub removal services in Chandler. Safe removal and proper disposal included.",
@@ -180,3 +179,4 @@ export default function TubRemovalPage() {
     </>
   );
 }
+

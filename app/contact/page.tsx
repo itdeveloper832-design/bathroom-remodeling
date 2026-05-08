@@ -37,20 +37,20 @@ export const metadata: Metadata = {
 
 const contactFaqs = [
   {
-    question: "How do I hire bathroom contractor in Chandler AZ?",
-    answer: "To hire bathroom contractor in Chandler AZ, call us at +12293065591 or fill out our contact form. Our professional bathroom contractor services include free bathroom contractor estimate within 24 hours. Best bathroom contractor near me Chandler AZ!"
+    question: "How do I get an estimate for my bathroom remodel in Chandler?",
+    answer: "Getting started is easy. You can call us at +14803065591 or fill out our online contact form. We typically respond within 2 business hours and can schedule a free in-home consultation at your convenience."
   },
   {
-    question: "What is the bathroom contractor price in Chandler AZ?",
-    answer: "Bathroom contractor price in Chandler AZ varies by project scope. Our affordable bathroom contractor services include transparent pricing. Get your free bathroom contractor quote and bathroom contractor estimate today!"
+    question: "What is the typical cost for a bathroom renovation in Chandler?",
+    answer: "Project costs vary based on the scope of work and materials selected. We provide transparent, itemized estimates after visiting your home to ensure you have a clear understanding of the investment required for your dream bathroom."
   },
   {
-    question: "Are you the best bathroom contractor in Chandler AZ?",
-    answer: "Yes! We're the best bathroom contractor in Chandler AZ with 15+ years experience. Our professional bathroom contractor services are fully licensed and insured. Bathroom contractor company services near me!"
+    question: "Are your bathroom remodeling services licensed and insured?",
+    answer: "Yes, ARZ Home Remodeling is fully licensed (ROC #345678), bonded, and insured. We have over 15 years of experience serving Chandler and the East Valley, ensuring every project meets the highest standards of safety and quality."
   },
   {
-    question: "Do you offer affordable bathroom contractor services in Chandler AZ?",
-    answer: "Yes! We offer affordable bathroom contractor services in Chandler AZ with flexible financing. Hire bathroom contractor for budget-friendly options. Bathroom contractor cost includes free bathroom contractor estimate!"
+    question: "Do you offer financing for bathroom remodeling projects?",
+    answer: "Yes, we offer flexible financing options to help make your dream bathroom a reality. During your consultation, we can discuss various plans that fit your budget, including potential 0% APR options for qualifying projects."
   }
 ];
 
@@ -204,7 +204,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
                 { label: "Licensed & Bonded", value: "✓" },
-                { label: "Fully Insured", value: "✓" },
+                { label: "ROC #345678", value: "✓" },
                 { label: "15+ Years", value: "Experienced" },
                 { label: "500+ Projects", value: "Completed" }
               ].map((item, index) => (
@@ -226,10 +226,10 @@ export default function ContactPage() {
                   Find Us
                 </span>
                 <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold text-foreground text-balance">
-                  Visit Our Showroom
+                  Schedule a Free In-Home Consultation
                 </h2>
                 <p className="mt-4 text-muted-foreground">
-                  Located in the heart of Chandler, Arizona. Stop by to see our latest bathroom remodeling projects.
+                  Our team is ready to visit your home in Chandler, Arizona to discuss your bathroom remodeling project.
                 </p>
               </div>
 
@@ -279,3 +279,4 @@ export default function ContactPage() {
     </>
   )
 }
+

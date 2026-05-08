@@ -180,15 +180,14 @@ Ready to start your bathroom remodeling project in Chandler, Arizona? Contact Ch
 
 ---
 
-*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at +12293065591 or visit our showroom to discuss your project.*
+*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at +14803065591 or visit our showroom to discuss your project.*
   `,
-  author: "Chandler Bathroom Remodeling Team",
+  author: "Alex Rivers",
   category: "Bathroom Remodeling",
   tags: ["bathroom remodeling", "chandler arizona", "home improvement", "bathroom renovation", "contractor"],
   featuredImage: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop",
   metaTitle: "Complete Guide to Bathroom Remodeling in Chandler, Arizona | Chandler Bathroom Remodeling",
   metaDescription: "Expert guide to bathroom remodeling in Chandler, Arizona. Learn about costs, materials, timelines, and how to choose the right contractor for your renovation project.",
-  metaKeywords: "bathroom remodel chandler, bathroom remodeling chandler, bathroom remodeling services chandler, bathroom remodel chandler az, tub to shower conversion chandler, bathroom remodeling contractor chandler, bathroom remodeling chandler az, affordable bathroom remodeling chandler az",
   status: "published" as const,
   publishedAt: new Date().toISOString(),
   createdAt: new Date().toISOString(),
@@ -370,15 +369,14 @@ Ready to incorporate these 2024 bathroom design trends into your Chandler home? 
 
 ---
 
-*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at +12293065591 to discuss your 2024 bathroom renovation project.*
+*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at +14803065591 to discuss your 2024 bathroom renovation project.*
   `,
-  author: "Chandler Bathroom Remodeling Team",
+  author: "Alex Rivers",
   category: "Design Trends",
   tags: ["bathroom design trends 2024", "chandler arizona bathroom", "modern bathroom design", "smart bathroom technology", "sustainable bathroom"],
   featuredImage: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2574&auto=format&fit=crop",
   metaTitle: "2024 Bathroom Design Trends | Chandler Arizona Bathroom Remodeling",
   metaDescription: "Discover the hottest bathroom design trends for 2024 in Chandler, Arizona. From spa features to smart technology, transform your bathroom with modern ideas.",
-  metaKeywords: "bathroom design trends 2024, bathroom remodeling chandler, modern bathroom design, shower remodeling services chandler, tile shower installation chandler, shower remodeling company chandler, affordable bathroom remodeling chandler az",
   status: "published" as const,
   publishedAt: new Date().toISOString(),
   createdAt: new Date().toISOString(),
@@ -409,15 +407,14 @@ Because KERDI-BOARD is lightweight and easy to cut, our team can prep a shower f
 ## 4. Peace of Mind for Chandler Homeowners
 Our 2-year workmanship warranty is backed by our confidence in these materials. When we build a shower with Schluter, we know it won't leak. Period.
 
-Ready to upgrade your bathroom with a system built to last? Contact Mike at +12293065591 for a free estimate.
+Ready to upgrade your bathroom with a system built to last? Contact Mike at +14803065591 for a free estimate.
   `,
-  author: "Mike Hernandez",
+  author: "Alex Rivers",
   category: "Technical",
   tags: ["Schluter KERDI", "waterproofing", "bathroom remodeling chandler", "shower construction"],
   featuredImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2574&auto=format&fit=crop",
   metaTitle: "Waterproofing for Chandler Bathroom Remodels | ARZ Home Remodeling",
   metaDescription: "Learn why we use Schluter-KERDI waterproofing systems for every bathroom remodel in Chandler, AZ to prevent leaks and mold.",
-  metaKeywords: "accessible shower remodeling chandler, tub to shower conversion companies near me, shower renovation near me, bathroom remodeling chandler az cost, schluter kerdi chandler, bathroom waterproofing az, shower contractor chandler, leak proof shower",
   status: "published" as const,
   publishedAt: "2026-05-01T10:00:00Z",
   createdAt: "2026-05-01T10:00:00Z",

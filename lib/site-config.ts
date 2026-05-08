@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: "ARZ Home Remodeling",
-  owner: "Mike Hernandez",
+  owner: "Alex Rivers",
   tagline: "Premium Home Remodeling Services",
   description: "Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations.",
   url: "https://arzhomeremodeling.com",
-  phone: "+12293065591",
+  phone: "+14803065591",
   email: "mike@arzhomeremodeling.com",
   license: "ROC #345678",
   address: {
@@ -26,6 +26,10 @@ export const siteConfig = {
   social: {
     facebook: "https://facebook.com/arzhomeremodeling",
     instagram: "https://instagram.com/arzhomeremodeling",
+    youtube: "https://youtube.com/arzhomeremodeling",
+    linkedin: "https://linkedin.com/company/arzhomeremodeling",
+    twitter: "", // Add if available
+    pinterest: "", // Add if available
   },
   navigation: [
     { name: "Home", href: "/" },

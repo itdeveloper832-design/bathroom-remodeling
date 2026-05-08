@@ -40,7 +40,6 @@ function BlogEditorContent() {
     status: "draft",
     metaTitle: "",
     metaDescription: "",
-    keywords: [],
     tags: [],
     readTime: 5,
   })
@@ -287,15 +286,6 @@ function BlogEditorContent() {
                 />
               </div>
               
-              <div className="space-y-2">
-                <Label htmlFor="keywords">Keywords (comma-separated)</Label>
-                <Input
-                  id="keywords"
-                  value={post.keywords?.join(", ")}
-                  onChange={(e) => setPost({ ...post, keywords: e.target.value.split(",").map(k => k.trim()).filter(Boolean) })}
-                  placeholder="bathroom remodel, renovation"
-                />
-              </div>
             </CardContent>
           </Card>
         </div>
@@ -317,3 +307,4 @@ export default function BlogEditorPage() {
     </Suspense>
   )
 }
+

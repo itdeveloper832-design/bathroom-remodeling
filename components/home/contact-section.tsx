@@ -173,7 +173,7 @@ export default function ContactSection() {
                           id="contact-phone"
                           name="phone"
                           type="tel"
-                          placeholder="+12293065591"
+                          placeholder="+14803065591"
                           required
                           className="bg-background h-11"
                         />

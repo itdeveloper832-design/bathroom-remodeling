@@ -6,7 +6,6 @@ import { siteConfig } from "@/lib/site-config"
 export const metadata: Metadata = {
   title: "Privacy Policy - ARZ Home Remodeling",
   description: "Privacy Policy for ARZ Home Remodeling. Learn how we collect, use and protect your personal information.",
-  keywords: ["privacy policy", "data protection", "privacy"],
   openGraph: {
     title: "Privacy Policy - ARZ Home Remodeling",
     description: "Learn how we collect, use and protect your personal information.",
@@ -134,3 +133,4 @@ export default function PrivacyPolicyPage() {
     </>
   )
 }
+

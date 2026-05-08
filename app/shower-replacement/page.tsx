@@ -18,7 +18,6 @@ import { serviceContent } from "@/lib/service-content-data";
 export const metadata: Metadata = {
   title: "Shower Replacement Chandler AZ | Parts & Install",
   description: "Professional shower replacement Chandler AZ. Shower valve replacement, shower handle replacement, shower door replacement, shower pan replacement. Free quotes!",
-  keywords: ["shower replacement chandler az", "shower valve replacement chandler az", "shower handle replacement chandler az", "shower door replacement chandler az", "shower pan replacement chandler az", "shower drain replacement chandler az", "shower cartridge replacement chandler az", "shower faucet replacement chandler az", "glass shower door replacement cost chandler az", "shower surround replacement chandler az", "shower stall replacement contractors chandler az", "mobile home shower replacement chandler az"],
   openGraph: {
     title: "Shower Replacement Chandler AZ | Parts & Install",
     description: "Professional shower replacement Chandler AZ. Valve, handle, door, pan replacement. Free quotes!",
@@ -180,3 +179,4 @@ export default function ShowerReplacementPage() {
     </>
   );
 }
+

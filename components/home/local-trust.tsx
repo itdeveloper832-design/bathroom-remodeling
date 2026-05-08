@@ -26,7 +26,7 @@ export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
       label: "Neighborhood Favorite",
     },
     {
-      name: "Winchester Chamber of Commerce",
+      name: "Chandler Chamber of Commerce",
       href: "#",
       img: "/chamber-badge.webp",
       label: `${cityName} Chamber`,

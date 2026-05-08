@@ -44,8 +44,8 @@ export function Header() {
               <Image
                 src="/images/logo-main.webp"
                 alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"
-                width={240}
-                height={64}
+                width={180}
+                height={48}
                 priority
                 fetchPriority="high"
                 sizes="(max-width: 640px) 120px, (max-width: 1024px) 180px, 240px"

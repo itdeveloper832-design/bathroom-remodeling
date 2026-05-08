@@ -19,24 +19,28 @@ export async function createLead(
     const docRef = await addDoc(collection(db, "leads"), leadData);
 
     // Trigger email notification via Firebase Trigger Email extension
-    await addDoc(collection(db, "mail"), {
-      to: siteConfig.email,
-      message: {
-        subject: `New ${data.type === "quote" ? "Quote Request" : "Contact Form"}: ${data.name}`,
-        html: `
-          <h3>New Lead Received</h3>
-          <p><strong>Type:</strong> ${data.type === "quote" ? "Quote Request" : "Contact Form"}</p>
-          <p><strong>Name:</strong> ${data.name}</p>
-          <p><strong>Phone:</strong> ${data.phone}</p>
-          <p><strong>Email:</strong> ${data.email}</p>
-          ${data.zip ? `<p><strong>ZIP Code:</strong> ${data.zip}</p>` : ""}
-          <p><strong>Service:</strong> ${data.service}</p>
-          <p><strong>Message:</strong> ${data.message}</p>
-          <hr />
-          <p>This lead has been saved to your admin dashboard at <a href="${siteConfig.url}/admin/leads">${siteConfig.url}/admin/leads</a></p>
-        `,
-      },
-    });
+    try {
+      await addDoc(collection(db, "mail"), {
+        to: siteConfig.email,
+        message: {
+          subject: `New ${data.type === "quote" ? "Quote Request" : "Contact Form"}: ${data.name}`,
+          html: `
+            <h3>New Lead Received</h3>
+            <p><strong>Type:</strong> ${data.type === "quote" ? "Quote Request" : "Contact Form"}</p>
+            <p><strong>Name:</strong> ${data.name}</p>
+            <p><strong>Phone:</strong> ${data.phone}</p>
+            <p><strong>Email:</strong> ${data.email}</p>
+            ${data.zip ? `<p><strong>ZIP Code:</strong> ${data.zip}</p>` : ""}
+            <p><strong>Service:</strong> ${data.service}</p>
+            <p><strong>Message:</strong> ${data.message}</p>
+            <hr />
+            <p>This lead has been saved to your admin dashboard at <a href="${siteConfig.url}/admin/leads">${siteConfig.url}/admin/leads</a></p>
+          `,
+        },
+      });
+    } catch (mailError) {
+      console.warn("Lead saved but email notification failed:", mailError);
+    }
 
     return { success: true, id: docRef.id };
   } catch (error: any) {

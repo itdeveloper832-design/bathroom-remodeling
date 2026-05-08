@@ -34,7 +34,7 @@ export function Header() {
       </a>
       <InfoHeader />
       <header
-        className={`fixed left-0 right-0 z-50 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-3 shadow-md border-b border-primary/10" : "top-[50px] py-5"
+        className={`fixed left-0 right-0 z-50 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-2 shadow-md border-b border-primary/10" : "top-[50px] py-3"
           }`}
         role="banner"
       >
@@ -45,12 +45,12 @@ export function Header() {
               <Image
                 src="/images/logo-main.webp"
                 alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"
-                width={360}
-                height={124}
+                width={280}
+                height={96}
                 priority
                 fetchPriority="high"
-                sizes="(max-width: 640px) 220px, (max-width: 1024px) 300px, 360px"
-                className="h-auto w-[220px] sm:w-[260px] md:w-[300px] lg:w-[360px] object-contain"
+                sizes="(max-width: 640px) 160px, (max-width: 1024px) 220px, 280px"
+                className="h-auto w-[160px] sm:w-[180px] md:w-[220px] lg:w-[280px] object-contain"
               />
             </Link>
 

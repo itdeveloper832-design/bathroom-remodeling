@@ -34,23 +34,23 @@ export function Header() {
       </a>
       <InfoHeader />
       <header
-        className={`fixed left-0 right-0 z-50 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-2 shadow-md border-b border-primary/10" : "top-[50px] py-3"
+        className={`fixed left-0 right-0 z-50 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-1 shadow-md border-b border-primary/10" : "top-[50px] py-2"
           }`}
         role="banner"
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo - Accessible - Responsive */}
-            <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
+            <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg py-1" aria-label="ARZ Home Remodeling - Home">
               <Image
                 src="/images/logo-main.webp"
                 alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"
-                width={280}
-                height={96}
+                width={240}
+                height={64}
                 priority
                 fetchPriority="high"
-                sizes="(max-width: 640px) 160px, (max-width: 1024px) 220px, 280px"
-                className="h-auto w-[160px] sm:w-[180px] md:w-[220px] lg:w-[280px] object-contain"
+                sizes="(max-width: 640px) 120px, (max-width: 1024px) 180px, 240px"
+                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain object-left"
               />
             </Link>
 

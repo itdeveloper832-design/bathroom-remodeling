@@ -23,27 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Professional Bathroom Remodeling in Mesa AZ | Licensed & Insured",
-  description:
-    "Hire the best bathroom remodeling company in Mesa, AZ. We specialize in custom showers, tub-to-shower conversions, and full master bath renovations. Licensed 5-star contractors, free estimates — call +14803065591 today!",
+  title: "Bathroom Remodeling Mesa: Licensed Contractors & Free Quotes",
+  description: "Top-rated bathroom remodeling in Mesa, AZ. Licensed experts for custom walk-in showers, master bath renovations, and tub-to-shower conversions. Free itemized estimates!",
   openGraph: {
-    title: "Bathroom Remodeling Mesa AZ | ARZ Home Remodeling",
-    description:
-      "Licensed Mesa bathroom contractors. Custom showers, tub conversions, master bath renovations. Free estimates.",
+    title: "Bathroom Remodeling Mesa: Licensed Contractors & Free Quotes",
+    description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: +14803065591.",
     url: `${siteConfig.url}/bathroom-remodeling-mesa-az/`,
     type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/images/bathroom-remodeling-mesa.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Bathroom Remodeling Mesa Arizona - ARZ Home Remodeling",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Mesa AZ | Free Estimates",
+    title: "Bathroom Remodeling Mesa: Licensed Contractors & Free Quotes",
     description: "Licensed Mesa bathroom contractors. Custom showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-mesa.jpg`],
   },
@@ -198,9 +188,9 @@ export default function MesaPage() {
       <main>
         {/* HERO */}
         <ServiceHero
-          title="Mesa’s Top-Rated Bathroom Remodeling Contractor"
-          subtitle="Hire the Best Local Remodelers in Mesa — Free Estimates"
-          description="Bringing our 5-star bathroom remodeling services to homeowners in Mesa, AZ. Licensed AZ contractors specializing in high-quality renovations, custom shower installs, and full bathroom transformations."
+          title="Licensed Bathroom Remodeling in Mesa, AZ"
+          subtitle="Expert Transformations & Custom Shower Designs"
+          description="Build the bathroom you've always wanted with Mesa's trusted remodeling team. From custom walk-in showers in Las Sendas to master suite renovations in Eastmark, we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

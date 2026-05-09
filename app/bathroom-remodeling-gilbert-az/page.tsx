@@ -23,27 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Licensed Bathroom Contractor Gilbert AZ | Quality Craftsmanship",
-  description:
-    "Hire the top-rated bathroom remodeling company in Gilbert, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates — call +14803065591 today!",
+  title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
+  description: "Top-rated bathroom remodeling in Gilbert, AZ. Licensed experts for custom walk-in showers, master bath renovations, and tub-to-shower conversions. Free itemized quotes!",
   openGraph: {
-    title: "Bathroom Remodeling Gilbert AZ | ARZ Home Remodeling",
-    description:
-      "Licensed Gilbert bathroom contractors. Walk-in showers, tub conversions, master bath renovations. Free estimates.",
+    title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
+    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: +14803065591.",
     url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/`,
     type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/images/bathroom-remodeling-gilbert.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Bathroom Remodeling Gilbert Arizona - ARZ Home Remodeling",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Gilbert AZ | Free Estimates",
+    title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
     description: "Licensed Gilbert bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-gilbert.jpg`],
   },
@@ -198,9 +188,9 @@ export default function GilbertPage() {
       <main>
         {/* HERO */}
         <ServiceHero
-          title="Gilbert’s Top-Rated Bathroom Remodeling Contractor"
-          subtitle="Hire the Best Local Remodelers in Gilbert — Free Estimates"
-          description="Bringing our award-winning bathroom remodeling services to homeowners in Gilbert, AZ. Licensed AZ contractors specializing in high-quality renovations, custom shower installs, and master bath transformations."
+          title="Licensed Bathroom Remodeling in Gilbert, AZ"
+          subtitle="Luxury Transformations & Quality Craftsmanship"
+          description="Transform your Gilbert home with the East Valley's trusted remodeling experts. From custom walk-in showers in Power Ranch to master suite renovations in Morrison Ranch, we deliver stunning results with a fixed-price guarantee and ROC Licensed peace of mind."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

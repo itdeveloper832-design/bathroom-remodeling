@@ -23,27 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Licensed Bathroom Contractor Tempe AZ | Quality Craftsmanship",
-  description:
-    "Hire the top-rated bathroom remodeling company in Tempe, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates — call +14803065591 today!",
+  title: "Bathroom Remodeling Tempe: Licensed Contractors & Free Quotes",
+  description: "Top-rated bathroom remodeling in Tempe, AZ. Licensed experts for custom walk-in showers, master bath renovations, and tub-to-shower conversions. Free itemized estimates!",
   openGraph: {
-    title: "Bathroom Remodeling Tempe AZ | ARZ Home Remodeling",
-    description:
-      "Licensed Tempe bathroom contractors. Walk-in showers, tub conversions, master bath renovations. Free estimates.",
+    title: "Bathroom Remodeling Tempe: Licensed Contractors & Free Quotes",
+    description: "Expert bathroom remodeling in Tempe, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: +14803065591.",
     url: `${siteConfig.url}/bathroom-remodeling-tempe-az/`,
     type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/images/bathroom-remodeling-tempe.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Bathroom Remodeling Tempe Arizona - ARZ Home Remodeling",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Tempe AZ | Free Estimates",
+    title: "Bathroom Remodeling Tempe: Licensed Contractors & Free Quotes",
     description: "Licensed Tempe bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-tempe.jpg`],
   },
@@ -198,9 +188,9 @@ export default function TempePage() {
       <main>
         {/* HERO */}
         <ServiceHero
-          title="Tempe’s Top-Rated Bathroom Remodeling Contractor"
-          subtitle="Hire the Best Local Remodelers in Tempe — Free Estimates"
-          description="Bringing our 5-star bathroom remodeling services to homeowners in Tempe, AZ. Licensed AZ contractors specializing in high-quality renovations, custom shower installs, and full bathroom transformations."
+          title="Licensed Bathroom Remodeling in Tempe, AZ"
+          subtitle="Modern Transformations & Expert Local Contractors"
+          description="Elevate your Tempe home with professional remodeling services tailored to your lifestyle. From custom walk-in showers near ASU to master suite renovations in South Tempe, we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

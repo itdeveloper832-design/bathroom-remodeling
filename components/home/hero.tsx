@@ -19,7 +19,7 @@ const trustBadges = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-36 md:pt-44 lg:pt-52" aria-label="Hero section">
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-28 md:pt-32 lg:pt-36" aria-label="Hero section">
       {/* Background Image - LCP Optimized */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -38,7 +38,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pb-16 lg:pb-20 pt-10 md:pt-16 lg:pt-20">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pb-16 lg:pb-20 pt-4 md:pt-6 lg:pt-8">
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
           {/* Left Column - Hero Content */}
           <div className="lg:col-span-2">

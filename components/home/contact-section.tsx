@@ -18,6 +18,7 @@ export default function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
     setIsSubmitting(true);
     setError("");
 
@@ -40,7 +41,7 @@ export default function ContactSection() {
 
       console.info("Contact form submission successful", data);
       setIsSubmitted(true);
-      e.currentTarget.reset();
+      form.reset();
     } catch (err) {
       console.error("Error submitting contact form:", err);
       setError("Failed to submit form. Please try again or call us directly.");

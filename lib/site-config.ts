@@ -5,7 +5,7 @@ export const siteConfig = {
   description: "Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations.",
   url: "https://arzhomeremodeling.com",
   phone: "+14803065591",
-  email: "mike@arzhomeremodeling.com",
+  email: "sales@arzhomeremodeling.com",
   license: "ROC #345678",
   address: {
     street: "6710 W Chicago St",

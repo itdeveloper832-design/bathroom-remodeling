@@ -22,6 +22,7 @@ export function QuoteForm() {
       return;
     }
 
+    const form = e.currentTarget;
     setIsSubmitting(true);
     setError("");
 
@@ -44,7 +45,7 @@ export function QuoteForm() {
       }
 
       setSuccess(true);
-      e.currentTarget.reset();
+      form.reset();
       setWordCount(0);
       setError("");
     } catch (err: any) {

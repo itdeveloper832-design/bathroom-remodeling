@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    icon: "/images/compressed-favicon.png",
+    shortcut: "/images/compressed-favicon.png",
+    apple: "/images/compressed-favicon.png",
   },
 }
 
@@ -124,7 +124,7 @@ export default function RootLayout({
               "@id": `${siteConfig.url}/#organization`,
               "name": siteConfig.name,
               "url": siteConfig.url,
-              "logo": `${siteConfig.url}/images/logo-main.webp`,
+              "logo": `${siteConfig.url}/images/web-log-image.png`,
               "image": `${siteConfig.url}/images/hero-bathroom.jpg`,
               "description": siteConfig.description,
               "telephone": siteConfig.phone,

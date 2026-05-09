@@ -29,12 +29,12 @@ export function Header() {
 
   return (
     <>
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] bg-primary text-primary-foreground px-4 py-2 rounded-lg">
+      <a href="#main-content" className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:top-4 focus-visible:left-4 focus-visible:z-[100] bg-primary text-primary-foreground px-4 py-2 rounded-lg">
         Skip to content
       </a>
       <InfoHeader />
       <header
-        className={`fixed left-0 right-0 z-40 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-1" : "top-[32px] py-1.5"}`}
+        className={`fixed left-0 right-0 z-40 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-1" : "top-[40px] py-4"}`}
         role="banner"
       >
         <div className="container mx-auto px-4 lg:px-8">
@@ -43,12 +43,12 @@ export function Header() {
             <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
               <div className="relative h-8 sm:h-9 md:h-10 lg:h-12 w-[120px] sm:w-[140px] md:w-[160px]">
                 <Image
-                  src="/images/logo-main.webp"
+                  src="/images/web-log-image.png"
                   alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"
                   fill
                   priority
                   fetchPriority="high"
-                  className="object-contain object-left mix-blend-multiply"
+                  className="object-contain object-left"
                 />
               </div>
             </Link>
@@ -59,7 +59,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-medium text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1"
+                  className="text-lg font-bold text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1"
                 >
                   {item.name}
                 </Link>
@@ -68,7 +68,7 @@ export function Header() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <Button asChild className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-6 font-semibold">
+              <Button asChild className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-8 py-6 text-base font-bold">
                 <Link href="/contact/">Free Estimate</Link>
               </Button>
             </div>

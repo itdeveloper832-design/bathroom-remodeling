@@ -267,7 +267,7 @@ footer a:not([aria-label]) {
 }
 
 /* Skip link styling */
-.sr-only:focus {
+.sr-only:focus-visible {
   position: fixed !important;
   top: 1rem;
   left: 1rem;

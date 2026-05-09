@@ -21,13 +21,37 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ area: string }>;
+}): Promise<Metadata> {
+  const { area: areaSlug } = await params;
+  const areaData = getAreaData(areaSlug);
+
+  if (!areaData) return {};
+
+  return {
+    title: `${areaData.areaName} Bathroom Remodeling: Licensed Pros & Free Quotes`,
+    description: `Top-rated bathroom remodeling in ${areaData.areaName}, Chandler. Licensed experts for custom showers, master bath renovations, and tub conversions. Get a free estimate!`,
+    openGraph: {
+      title: `${areaData.areaName} Bathroom Remodeling: Licensed Pros & Free Quotes`,
+      description: `Transform your ${areaData.areaName} home with expert bathroom remodeling. Licensed contractors, luxury designs, and affordable pricing.`,
+      url: `${siteConfig.url}/bathroom-remodeling-areas/${areaSlug}/`,
+      type: "website",
+    },
+    alternates: {
+      canonical: `${siteConfig.url}/bathroom-remodeling-areas/${areaSlug}/`,
+    },
+  };
+}
+
 export default async function AreaPage({
   params,
 }: {
   params: Promise<{ area: string }>;
 }) {
   const { area: areaSlug } = await params;
-
   const areaData = getAreaData(areaSlug);
 
   if (!areaData) {
@@ -51,7 +75,8 @@ export default async function AreaPage({
       <Header />
       <main>
         <ServiceHero
-          title={areaData.heroTitle}
+          title={`Licensed Bathroom Remodeling in ${areaData.areaName}`}
+          subtitle={areaData.heroSubtitle || "Professional Local Renovations"}
           description={areaData.heroDescription}
           backgroundImage="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
         />

@@ -18,12 +18,13 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: 'Bathroom Remodeling Services Chandler AZ | Licensed Contractors',
-  description: 'Top-rated bathroom remodeling in Chandler AZ. Walk-in showers, tub-to-shower conversions, master bath renovations. AZ licensed contractor, 2-year warranty. Free estimates — call +14803065591.',
+  title: "Bathroom Remodeling Chandler: Licensed Pros & Free Estimates",
+  description: "Transform your bathroom with Chandler's top-rated remodelers. ROC Licensed experts for custom showers, master bath renovations, and tub-to-shower swaps. Get a free quote!",
   openGraph: {
-    title: 'Bathroom Remodeling Services in Chandler AZ | ARZ Home Remodeling',
-    description: 'Transform your space with the best bathroom remodeling team in Chandler. Licensed AZ contractor, fixed pricing, 2-year warranty.',
-    url: `${siteConfig.url}/bathroom-remodeling/`,
+    title: "Bathroom Remodeling Chandler: Licensed Pros & Free Estimates",
+    description: "Expert bathroom remodeling in Chandler, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: +14803065591.",
+    url: `${siteConfig.url}/bathroom-remodeling`,
+    type: "website",
     images: [
       {
         url: `${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`,

@@ -19,11 +19,11 @@ import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Chandler | Best Price & Expert Installation",
-  description: "Expert tub to shower conversion Chandler AZ. Improve safety and style with a modern walk-in shower. Request your free estimate today!",
+  title: "Tub to Shower Conversion Chandler: Licensed Pros & Free Estimates",
+  description: "Convert your unused bathtub into a modern, safe walk-in shower. Licensed Chandler contractors, itemized quotes, and Schluter-certified waterproofing. Save space today!",
   openGraph: {
-    title: "Tub to Shower Conversion Chandler AZ | Best Price",
-    description: "Best tub to shower conversion Chandler AZ. Affordable bathtub to shower conversion cost!",
+    title: "Tub to Shower Conversion Chandler: Licensed Pros & Free Estimates",
+    description: "Best tub to shower conversion Chandler AZ. ROC Licensed contractors, affordable pricing, and expert installation. Get a free quote!",
     url: `${siteConfig.url}/tub-to-shower-conversion`,
     type: "website",
     images: [
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tub to Shower Conversion Chandler AZ | Best Price",
-    description: "Best tub to shower conversion Chandler AZ. Affordable bathtub to shower conversion!",
+    title: "Tub to Shower Conversion Chandler: Licensed Pros & Free Estimates",
+    description: "Best tub to shower conversion Chandler AZ. ROC Licensed contractors and affordable pricing.",
     images: [`${siteConfig.url}/images/tub-to-shower-hero.jpg`],
   },
   alternates: {
@@ -70,9 +70,9 @@ export default function TubToShowerConversionPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Best Tub to Shower Conversion in Chandler AZ"
-          subtitle="Hire the Expert Walk-In Shower Installers — Free Quotes"
-          description="Professional tub to shower conversion Chandler AZ. Best tub to shower conversion price, affordable bathtub to shower conversion, free tub to shower conversion estimate. Hire tub to shower conversion contractor today!"
+          title="Premium Tub to Shower Conversion in Chandler, AZ"
+          subtitle="Transform Your Space with Licensed Walk-In Shower Experts"
+          description="Don't let an unused bathtub waste valuable space in your bathroom. Our ROC Licensed experts specialize in high-quality tub-to-shower swaps, providing a safer, more modern, and more accessible bathing experience for your Chandler home."
           image="/images/optimized/photo-1584622650111-993a426fbf0a.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

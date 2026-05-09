@@ -14,28 +14,18 @@ import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Master Bathroom Remodel Chandler AZ | Full-Scope Renovations",
-  description:
-    "Complete master bathroom remodel in Chandler AZ. Shower enclosures, vanity replacement, tile flooring, updated lighting — all managed by one licensed AZ contractor. Free estimates.",
+  title: "Master Bathroom Remodel Chandler: Luxury Custom Renovations",
+  description: "Transform your master suite with Chandler's luxury bath experts. Licensed contractors for custom walk-in showers, double vanities, and premium tile. Free itemized quotes!",
   openGraph: {
-    title: "Master Bathroom Remodel Chandler AZ | ARZ Home Remodeling",
-    description:
-      "Full-scope master bathroom renovations in Chandler, AZ. One licensed contractor for plumbing, tile, vanity, lighting, and fixtures.",
+    title: "Master Bathroom Remodel Chandler: Luxury Custom Renovations",
+    description: "Full-scope master bathroom renovations in Chandler, AZ. Licensed contractors, fixed pricing, and luxury designs. Free estimates: +14803065591.",
     url: `${siteConfig.url}/master-bathroom-remodel`,
     type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Master Bathroom Remodel Chandler AZ",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Master Bathroom Remodel Chandler AZ",
-    description: "Full-scope master bath renovations in Chandler. One contractor, fixed pricing, free estimates.",
+    title: "Master Bathroom Remodel Chandler: Luxury Custom Renovations",
+    description: "Full-scope master bath renovations in Chandler. Licensed contractors and premium designs.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
   alternates: {
@@ -103,9 +93,9 @@ export default function MasterBathPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Master Bathroom Remodel Chandler AZ"
-          subtitle="Full-Scope Renovations — One Licensed Contractor"
-          description="From walk-in showers and custom tile to vanity replacement and lighting — we handle every trade so you don't have to. Fixed pricing, firm timelines, 2-year warranty."
+          title="Licensed Master Bathroom Remodeling in Chandler, AZ"
+          subtitle="Luxury Transformations Managed by One Local Team"
+          description="Elevate your master suite with a luxury renovation tailored to your style. We handle everything — from custom walk-in showers and double vanities to premium tile and lighting — so you can enjoy a stress-free transformation with a fixed-price guarantee."
           image="/images/optimized/photo-1600607687939-ce8a6c25118c.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },

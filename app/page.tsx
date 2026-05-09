@@ -32,13 +32,13 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
 
 
 export const metadata: Metadata = {
-  title: "Top-Rated Bathroom Remodel Chandler | Bathroom Remodeling Chandler AZ",
+  title: "ARZ Bathroom Remodeling Chandler: Licensed Pros & Free Estimates",
   description:
-    "Hire the best bathroom remodelers in Chandler AZ. Licensed contractors for your bathroom remodel in Chandler AZ, tub-to-shower conversion, and master bath renovations. Get a free quote for professional Chandler bathroom remodeling today!",
+    "Transform your Chandler home with ARZ. ROC Licensed bathroom remodeling contractors specializing in custom showers, tub-to-shower swaps, and luxury master baths. Get your free quote today!",
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ | Expert Team",
+    title: "ARZ Bathroom Remodeling Chandler: Licensed Pros & Free Estimates",
     description:
-      "Licensed bathroom remodeling contractors in Chandler, AZ. Shower renovations, tub replacements & full remodels. Free quotes: +14803065591.",
+      "ROC Licensed bathroom remodeling contractors in Chandler, AZ. Shower renovations, tub replacements & full remodels. Free quotes: +14803065591.",
     type: "website",
   },
 

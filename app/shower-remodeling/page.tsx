@@ -18,27 +18,17 @@ import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Professional Shower Remodeling Chandler AZ | Walk-In Shower Experts",
-  description:
-    "Expert shower remodeling in Chandler AZ. Walk-in shower installation, frameless glass enclosures, shower replacement, and custom tile. Licensed AZ contractor. Free estimates — call +14803065591.",
+  title: "Shower Remodeling Chandler: Licensed Walk-In Shower Pros",
+  description: "Transform your outdated shower into a luxury walk-in enclosure. Licensed Chandler contractors specializing in custom tile, frameless glass, and waterproof shower replacements. Get a free estimate!",
   openGraph: {
-    title: "Shower Remodeling Chandler AZ | Walk-In Showers & Custom Tile",
-    description:
-      "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, shower replacement. Licensed contractor. Free estimates!",
+    title: "Shower Remodeling Chandler: Licensed Walk-In Shower Pros",
+    description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Licensed contractor. Free estimates!",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/images/shower-remodeling-hero.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Shower Remodeling Chandler AZ - Walk-In Showers & Custom Tile",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Remodeling Chandler AZ | Walk-In Showers",
+    title: "Shower Remodeling Chandler: Licensed Walk-In Shower Pros",
     description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Free estimates!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },
@@ -67,9 +57,9 @@ export default function ShowerRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Professional Shower Remodeling in Chandler, AZ"
-          subtitle="Hire the Best Walk-In Shower Installers — Free Estimates"
-          description="Transform your outdated shower into a modern walk-in enclosure. Our Chandler shower remodeling team handles frameless glass, custom tile, and tub-to-shower conversions with licensed expertise."
+          title="Licensed Shower Remodeling in Chandler, AZ"
+          subtitle="Expert Walk-In Shower Installation & Custom Tile"
+          description="Elevate your bathroom with a custom shower designed for beauty and durability. From frameless glass enclosures to curbless walk-in entries, our Chandler team delivers high-end results with ROC Licensed expertise."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: `${siteConfig.url}/` },

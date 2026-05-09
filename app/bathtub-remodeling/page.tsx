@@ -19,29 +19,18 @@ import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Bathtub Remodeling Chandler AZ | Tub Replacement & Tub-to-Shower Conversion",
-  description:
-    "Expert bathtub remodeling in Chandler AZ. Tub replacement, bathtub-to-shower conversion, soaking tub installation. Licensed AZ contractor. Free estimates — call +14803065591.",
+  title: "Bathtub Remodeling Chandler AZ | Replacement & Upgrades",
+  description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation, and luxury upgrades. Licensed AZ contractor. Free itemized estimates!",
   openGraph: {
-    title: "Bathtub Remodeling Chandler AZ | Tub Replacement & Conversion",
-    description:
-      "Expert bathtub remodeling in Chandler AZ. Tub replacement, tub-to-shower conversion, soaking tub installation. Free estimates!",
+    title: "Bathtub Remodeling Chandler AZ | Replacement & Upgrades",
+    description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation, and luxury upgrades. Free estimates!",
     url: `${siteConfig.url}/bathtub-remodeling/`,
     type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/images/bathtub-remodeling-hero.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Bathtub Remodeling Chandler AZ - Tub Replacement & Conversion",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathtub Remodeling Chandler AZ | Free Estimates",
-    description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, tub-to-shower conversion. Free estimates!",
-    images: [`${siteConfig.url}/images/bathtub-remodeling-hero.jpg`],
+    title: "Bathtub Remodeling Chandler AZ | Replacement & Upgrades",
+    description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation. Free estimates!",
   },
   alternates: {
     canonical: `${siteConfig.url}/bathtub-remodeling/`,

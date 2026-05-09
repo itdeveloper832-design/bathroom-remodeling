@@ -29,7 +29,7 @@ export function Footer() {
             </Link>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
               Top-rated bathroom remodeling in Chandler, Arizona.
-              {siteConfig.license} • Transforming homes since 2010.
+              {siteConfig.license && ` ${siteConfig.license} • `} Transforming homes since 2010.
             </p>
 
             <div className="flex gap-3" role="list" aria-label="Social media links">
@@ -181,11 +181,19 @@ export function Footer() {
       {/* Service Areas */}
       <div className="border-t border-background/10">
         <div className="container mx-auto px-4 lg:px-8 py-8">
-          <div className="text-center">
-            <h4 className="text-sm font-medium text-background/70 mb-3">Proudly Serving</h4>
-            <p className="text-background/80 text-sm leading-relaxed">
-              {siteConfig.serviceAreas.join(" • ")}
-            </p>
+          <div className="grid md:grid-cols-2 gap-8 text-center md:text-left">
+            <div>
+              <h4 className="text-sm font-medium text-background/70 mb-3 uppercase tracking-wider">Service Areas</h4>
+              <p className="text-background/80 text-sm leading-relaxed">
+                {siteConfig.serviceAreas.join(" • ")}
+              </p>
+            </div>
+            <div className="md:text-right">
+              <h4 className="text-sm font-medium text-background/70 mb-3 uppercase tracking-wider">Chandler Zip Codes</h4>
+              <p className="text-background/80 text-sm leading-relaxed">
+                {(siteConfig as any).zipCodes?.join(" • ")}
+              </p>
+            </div>
           </div>
         </div>
       </div>

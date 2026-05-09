@@ -18,30 +18,21 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Custom Walk-In Showers Chandler AZ | Installations",
-  description: "Safe & stylish walk-in showers Chandler AZ. Handicap accessible options available. Get a seamless bathroom installation today!",
+  title: "Walk-In Shower Installation Chandler AZ | ADA Options",
+  description: "Safe & stylish walk-in showers in Chandler AZ. Starting from $6,000. Handicap accessible options, curbless entries, and frameless glass. Get a free quote!",
   openGraph: {
-    title: "Walk In Shower Installation Chandler AZ | Best",
-    description: "Best walk in shower installation Chandler AZ. Professional installation, free quotes!",
-    url: `${siteConfig.url}/walk-in-showers`,
+    title: "Walk-In Shower Installation Chandler AZ | ADA Options",
+    description: "Professional walk-in shower installation in Chandler AZ. Barrier-free designs, ADA options, and luxury finishes. Licensed & insured. Free estimates!",
+    url: `${siteConfig.url}/walk-in-showers/`,
     type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/images/walk-in-shower-hero.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Walk-In Showers Installation - Chandler AZ",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Walk In Shower Installation Chandler AZ | Best",
-    description: "Best walk in shower installation Chandler AZ. Professional, affordable!",
-    images: [`${siteConfig.url}/images/walk-in-shower-hero.jpg`],
+    title: "Walk-In Shower Installation Chandler AZ | ADA Options",
+    description: "Safe & stylish walk-in showers in Chandler AZ. Starting from $6,000. Free estimates!",
   },
   alternates: {
-    canonical: `${siteConfig.url}/walk-in-showers`,
+    canonical: `${siteConfig.url}/walk-in-showers/`,
   },
 };
 

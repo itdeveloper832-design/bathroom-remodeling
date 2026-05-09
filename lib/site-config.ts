@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://arzhomeremodeling.com",
   phone: "+14803065591",
   email: "sales@arzhomeremodeling.com",
-  license: "ROC #345678",
+  license: "", // Removed placeholder ROC #345678 per audit
   address: {
     street: "6710 W Chicago St",
     city: "Chandler",
@@ -18,6 +18,7 @@ export const siteConfig = {
       lng: -111.9605964,
     },
   },
+  zipCodes: ["85224", "85225", "85226", "85249"],
   hours: {
     weekdays: "8:00 AM - 6:00 PM",
     saturday: "9:00 AM - 4:00 PM",
@@ -45,6 +46,9 @@ export const siteConfig = {
     "Tempe",
     "Ahwatukee",
     "Sun Lakes",
+    "Ocotillo",
+    "Dobson Ranch",
+    "Fulton Ranch",
   ],
 };
 

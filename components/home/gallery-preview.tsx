@@ -11,28 +11,28 @@ const galleryItems = [
     title: "Master Bath Remodel in Dobson Ranch",
     category: "Full Renovation - Completed March 2025",
     before: "/images/optimized/photo-1584622650111-993a426fbf0a.webp",
-    after: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
+    after: "/images/projects/project-shower.png",
   },
   {
     id: 2,
-    title: "Luxury Walk-In Shower in Ocotillo",
-    category: "Tub-to-Shower Conversion - Completed Jan 2025",
+    title: "Luxury Master Vanity in Ocotillo",
+    category: "Vanity & Stone Work - Completed Jan 2025",
     before: "/images/optimized/photo-1507089947368-19c1da9775ae.webp",
-    after: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
+    after: "/images/projects/project-vanity.png",
   },
   {
     id: 3,
-    title: "Custom Vanity Upgrade in Fulton Ranch",
-    category: "Vanity & Tile Work - Completed Feb 2025",
+    title: "Guest Bath Tile Upgrade in Sun Lakes",
+    category: "Tile & Tub Upgrade - Completed Feb 2025",
     before: "/images/optimized/photo-1581578731548-c64695cc6952.webp",
-    after: "/images/optimized/photo-1620626011761-996317b8d101.webp",
+    after: "/images/projects/project-guest.png",
   },
   {
     id: 4,
-    title: "Spa-Like Retreat in Sun Lakes",
+    title: "Spa-Like Retreat in Fulton Ranch",
     category: "Master Bath Upgrade - Completed Dec 2024",
     before: "/images/optimized/photo-1585412727339-54e4bae3bbf9.webp",
-    after: "/images/optimized/photo-1600607687939-ce8a6c25118c.webp",
+    after: "/images/projects/project-shower.png", // Reusing for now or could generate more
   },
 ];
 

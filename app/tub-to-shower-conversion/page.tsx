@@ -19,30 +19,21 @@ import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Chandler: Licensed Pros & Free Estimates",
-  description: "Convert your unused bathtub into a modern, safe walk-in shower. Licensed Chandler contractors, itemized quotes, and Schluter-certified waterproofing. Save space today!",
+  title: "Tub to Shower Conversion Chandler AZ | From $6,000",
+  description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
   openGraph: {
-    title: "Tub to Shower Conversion Chandler: Licensed Pros & Free Estimates",
-    description: "Best tub to shower conversion Chandler AZ. ROC Licensed contractors, affordable pricing, and expert installation. Get a free quote!",
-    url: `${siteConfig.url}/tub-to-shower-conversion`,
+    title: "Tub to Shower Conversion Chandler AZ | From $6,000",
+    description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
+    url: `${siteConfig.url}/tub-to-shower-conversion/`,
     type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/images/tub-to-shower-hero.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Tub to Shower Conversion - Chandler AZ",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tub to Shower Conversion Chandler: Licensed Pros & Free Estimates",
-    description: "Best tub to shower conversion Chandler AZ. ROC Licensed contractors and affordable pricing.",
-    images: [`${siteConfig.url}/images/tub-to-shower-hero.jpg`],
+    title: "Tub to Shower Conversion Chandler AZ | From $6,000",
+    description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
   },
   alternates: {
-    canonical: `${siteConfig.url}/tub-to-shower-conversion`,
+    canonical: `${siteConfig.url}/tub-to-shower-conversion/`,
   },
 };
 
@@ -147,6 +138,14 @@ export default function TubToShowerConversionPage() {
               Our <strong>bath to shower conversion near me</strong> services are designed to maximize your bathroom's footprint, 
               providing a more open and modern feel while significantly improving accessibility.
             </p>
+            <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
+              <p className="text-foreground font-medium mb-4">
+                We offer 0% financing on projects over $5,000 — 
+                <a href="/financing/" className="text-primary hover:underline ml-1">
+                  see our bathroom remodeling financing options
+                </a>.
+              </p>
+            </div>
           </div>
         </section>
 

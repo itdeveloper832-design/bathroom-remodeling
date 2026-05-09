@@ -14,22 +14,21 @@ import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Master Bathroom Remodel Chandler: Luxury Custom Renovations",
-  description: "Transform your master suite with Chandler's luxury bath experts. Licensed contractors for custom walk-in showers, double vanities, and premium tile. Free itemized quotes!",
+  title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
+  description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities & full renovation. Licensed Chandler contractor — free estimate.",
   openGraph: {
-    title: "Master Bathroom Remodel Chandler: Luxury Custom Renovations",
-    description: "Full-scope master bathroom renovations in Chandler, AZ. Licensed contractors, fixed pricing, and luxury designs. Free estimates: +14803065591.",
-    url: `${siteConfig.url}/master-bathroom-remodel`,
+    title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
+    description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities & full renovation. Licensed Chandler contractor — free estimate.",
+    url: `${siteConfig.url}/master-bathroom-remodel/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Master Bathroom Remodel Chandler: Luxury Custom Renovations",
-    description: "Full-scope master bath renovations in Chandler. Licensed contractors and premium designs.",
-    images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
+    title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
+    description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities & full renovation.",
   },
   alternates: {
-    canonical: `${siteConfig.url}/master-bathroom-remodel`,
+    canonical: `${siteConfig.url}/master-bathroom-remodel/`,
   },
 };
 
@@ -159,6 +158,14 @@ export default function MasterBathPage() {
                 <p className="text-2xl font-bold text-primary">2 Years</p>
                 <p className="text-muted-foreground text-sm">Workmanship guaranteed</p>
               </div>
+            </div>
+            <div className="mt-12 text-center">
+              <p className="text-foreground font-medium">
+                Flexible payment plans available. 
+                <Link href="/financing/" className="text-primary hover:underline ml-1">
+                  View our 0% APR financing for master bath projects
+                </Link>.
+              </p>
             </div>
           </div>
         </section>

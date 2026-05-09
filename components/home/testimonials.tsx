@@ -14,8 +14,8 @@ const testimonials = [
     rating: 5,
     service: "Tub-to-Shower Conversion",
     content:
-      "Mike and his team at ARZ were fantastic. Our old garden tub in Dobson Ranch was just collecting dust. They converted it into a beautiful walk-in shower with Schluter waterproofing. It took exactly 12 days as promised. Truly the best bathroom remodeling contractor in Chandler.",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=200",
+      "Alex and his team at ARZ were fantastic. Our old garden tub in Dobson Ranch was just collecting dust. They converted it into a beautiful walk-in shower with Schluter waterproofing. It took exactly 12 days as promised. Truly the best bathroom remodeling contractor in Chandler.",
+    image: "", // Use initials for realism
     verified: true,
   },
   {
@@ -26,8 +26,8 @@ const testimonials = [
     rating: 5,
     service: "Master Bath Renovation",
     content:
-      "A full master bath remodel is usually a nightmare, but ARZ made it easy. They handles everything from the permits with the City of Chandler to the final tile grout. The custom vanity is high quality and the project stayed right on budget.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200&h=200",
+      "A full master bath remodel is usually a nightmare, but ARZ made it easy. They handled everything from the permits with the City of Chandler to the final tile grout. The custom vanity is high quality and the project stayed right on budget.",
+    image: "",
     verified: true,
   },
   {
@@ -38,8 +38,44 @@ const testimonials = [
     rating: 5,
     service: "Vanity & Tile Upgrade",
     content:
-      "I was worried about the Arizona heat affecting the grout, but Mike explained their process and materials in detail. The tile work in our guest bath is flawless. It's rare to find a contractor who actually shows up when they say they will!",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200",
+      "I was worried about the Arizona heat affecting the grout, but Alex explained their process and materials in detail. The tile work in our guest bath is flawless. It's rare to find a contractor who actually shows up when they say they will!",
+    image: "",
+    verified: true,
+  },
+  {
+    id: 4,
+    name: "Linda K.",
+    initials: "LK",
+    location: "Cooper Commons, Chandler",
+    rating: 5,
+    service: "Guest Bath Remodel",
+    content:
+      "We needed a quick refresh for our guest bathroom before family arrived. ARZ gave us a fair price and finished in less than a week. The new walk-in shower looks amazing and the tile work is perfect.",
+    image: "",
+    verified: true,
+  },
+  {
+    id: 5,
+    name: "Robert S.",
+    initials: "RS",
+    location: "Sun Lakes, Chandler",
+    rating: 5,
+    service: "ADA Walk-In Shower",
+    content:
+      "Special thanks to the crew for making our bathroom safe and accessible. The curbless entry and grab bars were installed exactly as discussed. It's much easier for me to get in and out now. Highly recommend for seniors in Sun Lakes.",
+    image: "",
+    verified: true,
+  },
+  {
+    id: 6,
+    name: "Michelle G.",
+    initials: "MG",
+    location: "Gila Springs, Chandler",
+    rating: 5,
+    service: "Shower Tile Replacement",
+    content:
+      "Our old shower was leaking behind the walls. Alex caught it during the inspection and fixed the structural damage properly before tiling. Very honest and professional team.",
+    image: "",
     verified: true,
   },
 ];

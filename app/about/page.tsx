@@ -136,15 +136,15 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                   <Image
-                    src="/images/optimized/photo-1581578731548-c64695cc6952.webp"
-                    alt="Master bathroom renovation"
+                    src="/images/alex-rivers.png"
+                    alt="Alex Rivers, Owner of ARZ Home Remodeling"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-xl shadow-lg border border-border">
-                  <p className="text-4xl font-serif font-bold text-primary">15+</p>
-                  <p className="text-sm text-muted-foreground">Years in Business</p>
+                  <p className="text-xl font-serif font-bold text-primary">Alex Rivers</p>
+                  <p className="text-sm text-muted-foreground">Owner & Lead Contractor</p>
                 </div>
               </div>
               
@@ -153,13 +153,13 @@ export default function AboutPage() {
                   Who We Are
                 </span>
                 <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold text-foreground text-balance">
-                  Building Dream Spaces Since 2010
+                  Local Expertise in Every Tile
                 </h2>
                 <p className="mt-6 text-muted-foreground leading-relaxed">
-                  I started ARZ after 12 years as a tile setter for a large Phoenix contractor — I&apos;d seen too many homeowners get handed a beautiful-looking bathroom that failed within two years because shortcuts were taken on waterproofing behind the tile. In Chandler&apos;s extreme heat, that&apos;s not just ugly, it&apos;s expensive structural damage.
+                  I started ARZ Home Remodeling after over a decade in the Arizona construction industry. I saw too many homeowners in the East Valley being promised luxury bathrooms that failed within two years because of poor waterproofing or cheap materials.
                 </p>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                  When I went out on my own in 2010, I made one rule: we use Schluter KERDI waterproofing membrane on every shower, not the cheap alternatives. It costs us more. It costs us more time. Homeowners in Dobson Ranch and Ocotillo have called me back years later to thank me for it. That&apos;s how we&apos;ve built 500+ projects in the East Valley — one non-leaking shower at a time.
+                  In Chandler&apos;s climate, precision isn&apos;t just about aesthetics; it&apos;s about structural integrity. Whether it&apos;s a master suite in Ocotillo or a guest bath in Dobson Ranch, we treat every home like it&apos;s our own. We lead with transparency, firm written prices, and a commitment to doing things right the first time.
                 </p>
 
                 <ul className="mt-6 space-y-3">

@@ -18,17 +18,17 @@ import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler: Licensed Walk-In Shower Pros",
-  description: "Transform your outdated shower into a luxury walk-in enclosure. Licensed Chandler contractors specializing in custom tile, frameless glass, and waterproof shower replacements. Get a free estimate!",
+  title: "Shower Remodeling Chandler AZ | Installed in 1–2 Weeks",
+  description: "Custom walk-in showers, frameless glass & curbless designs in Chandler. Licensed crew, Schluter waterproofing, 2-year warranty. Free quote — (480) 306-5591.",
   openGraph: {
-    title: "Shower Remodeling Chandler: Licensed Walk-In Shower Pros",
-    description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Licensed contractor. Free estimates!",
+    title: "Shower Remodeling Chandler AZ | Installed in 1–2 Weeks",
+    description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Licensed crew. Free quotes!",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Remodeling Chandler: Licensed Walk-In Shower Pros",
+    title: "Shower Remodeling Chandler AZ | Installed in 1–2 Weeks",
     description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Free estimates!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },
@@ -140,6 +140,14 @@ export default function ShowerRemodelingPage() {
                   and ADA-compliant grab bars for a barrier-free bathing experience that doesn't compromise on luxury.
                 </p>
               </div>
+            </div>
+            <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
+              <p className="text-foreground font-medium mb-4">
+                We offer 0% financing on bathroom projects over $5,000 — 
+                <Link href="/financing/" className="text-primary hover:underline ml-1">
+                  see our bathroom remodeling financing options
+                </Link>.
+              </p>
             </div>
           </div>
         </section>

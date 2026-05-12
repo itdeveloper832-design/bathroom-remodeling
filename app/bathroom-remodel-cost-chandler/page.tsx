@@ -13,18 +13,18 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Cost Chandler AZ | 2024 Pricing Guide",
+  title: "Bathroom Remodeling Cost Chandler AZ | 2025 Pricing Guide",
   description:
     "Complete bathroom remodeling cost guide for Chandler, AZ. Guest bath updates from $4,500, tub-to-shower conversions $6,000–$13,000, master bath remodels $18,000–$45,000+. Free itemized estimates.",
   openGraph: {
-    title: "Bathroom Remodeling Cost Chandler AZ | 2024 Pricing Guide",
+    title: "Bathroom Remodeling Cost Chandler AZ | 2025 Pricing Guide",
     description:
       "Transparent bathroom remodeling pricing for Chandler, AZ homeowners. All project types covered.",
-    url: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az/`,
+    url: `${siteConfig.url}/bathroom-remodel-cost-chandler/`,
     type: "website",
   },
   alternates: {
-    canonical: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az/`,
+    canonical: `${siteConfig.url}/bathroom-remodel-cost-chandler/`,
   },
 };
 
@@ -157,20 +157,20 @@ export default function CostPage() {
       <ServiceSchema
         serviceName="Bathroom Remodeling Cost Guide — Chandler, AZ"
         serviceDescription="Comprehensive bathroom remodeling cost guide for Chandler, AZ homeowners. Transparent pricing for guest bath updates, full remodels, tub-to-shower conversions, and master bathroom renovations."
-        serviceUrl={`${siteConfig.url}/bathroom-remodeling-cost-chandler-az/`}
+        serviceUrl={`${siteConfig.url}/bathroom-remodel-cost-chandler/`}
       />
       <FAQSchema faqs={faqs} />
       <Header />
       <main>
         <ServiceHero
-          title="Bathroom Remodeling Cost Guide — Chandler, AZ"
-          subtitle="Transparent 2024 Pricing"
+          title="How Much Does a Bathroom Remodel Cost in Chandler, AZ? (2025 Pricing Guide)"
+          subtitle="Transparent 2025 Pricing"
           description="Straight answers on what bathroom remodeling costs in Chandler. Every tier broken down by line item — no guessing, no surprises."
           image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Chandler AZ", url: `${siteConfig.url}/bathroom-remodeling-chandler-az/` },
-            { name: "Cost Guide", url: `${siteConfig.url}/bathroom-remodeling-cost-chandler-az/` },
+            { name: "Cost Guide", url: `${siteConfig.url}/bathroom-remodel-cost-chandler/` },
           ]}
         />
 

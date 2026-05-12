@@ -187,7 +187,7 @@ export default function MasterBathPage() {
                 <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary" />
               </Link>
               <Link
-                href="/bathroom-remodeling-cost-chandler-az"
+                href="/bathroom-remodel-cost-chandler"
                 className="bg-secondary border border-border rounded-xl p-5 hover:border-primary transition-colors group flex items-center justify-between"
               >
                 <div>

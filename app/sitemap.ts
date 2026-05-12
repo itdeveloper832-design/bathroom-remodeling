@@ -49,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/handicap-accessible-bathroom-chandler', priority: 0.85, changeFrequency: 'monthly' as const },
     { url: '/small-bathroom-remodeling', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/master-bathroom-remodel', priority: 0.9, changeFrequency: 'monthly' as const },
-    { url: '/bathroom-remodeling-cost-chandler-az', priority: 0.9, changeFrequency: 'weekly' as const },
+    { url: '/bathroom-remodel-cost-chandler', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/bathroom-remodeling-mesa-az', priority: 0.85, changeFrequency: 'monthly' as const },
     { url: '/bathroom-remodeling-gilbert-az', priority: 0.85, changeFrequency: 'monthly' as const },
     { url: '/bathroom-remodeling-tempe-az', priority: 0.85, changeFrequency: 'monthly' as const },

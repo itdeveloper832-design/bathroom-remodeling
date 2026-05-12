@@ -19,17 +19,17 @@ import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Chandler AZ | From $6,000",
+  title: "Tub to Shower Conversion Chandler, Mesa & Gilbert AZ | Free Estimate | ARZ",
   description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
   openGraph: {
-    title: "Tub to Shower Conversion Chandler AZ | From $6,000",
+    title: "Tub to Shower Conversion Chandler, Mesa & Gilbert AZ | Free Estimate | ARZ",
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
     url: `${siteConfig.url}/tub-to-shower-conversion/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tub to Shower Conversion Chandler AZ | From $6,000",
+    title: "Tub to Shower Conversion Chandler, Mesa & Gilbert AZ | Free Estimate | ARZ",
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
   },
   alternates: {

@@ -18,17 +18,17 @@ import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ | Installed in 1–2 Weeks",
+  title: "Shower Remodeling Chandler AZ | Walk-In & Frameless Glass Showers | ARZ",
   description: "Custom walk-in showers, frameless glass & curbless designs in Chandler. Licensed crew, Schluter waterproofing, 2-year warranty. Free quote — (480) 306-5591.",
   openGraph: {
-    title: "Shower Remodeling Chandler AZ | Installed in 1–2 Weeks",
+    title: "Shower Remodeling Chandler AZ | Walk-In & Frameless Glass Showers | ARZ",
     description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Licensed crew. Free quotes!",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Remodeling Chandler AZ | Installed in 1–2 Weeks",
+    title: "Shower Remodeling Chandler AZ | Walk-In & Frameless Glass Showers | ARZ",
     description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Free estimates!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },

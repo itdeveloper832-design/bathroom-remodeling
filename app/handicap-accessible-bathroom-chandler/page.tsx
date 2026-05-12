@@ -17,10 +17,10 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "ADA Bathroom Remodeling Chandler AZ | Safe & Accessible",
+  title: "ADA Accessible Bathroom Remodeling Chandler AZ | Senior-Safe Showers | ARZ",
   description: "Licensed ADA bathroom remodeling in Chandler. We specialize in walk-in tubs, curbless showers, grab bars, and senior-safe renovations. Free itemized quotes!",
   openGraph: {
-    title: "ADA Bathroom Remodeling Chandler AZ | Safe & Accessible",
+    title: "ADA Accessible Bathroom Remodeling Chandler AZ | Senior-Safe Showers | ARZ",
     description: "Expert ADA bathroom remodeling in Chandler. Safe walk-in showers, roll-in entries, and professional safety modifications.",
     url: `${siteConfig.url}/handicap-accessible-bathroom-chandler/`,
     type: "website",

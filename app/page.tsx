@@ -32,11 +32,11 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
 
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Free In-Home Estimate",
-  description: "Licensed bathroom remodeling in Chandler. Showers, tub conversions & full remodels in 10-14 days. Free in-home estimates and fixed written pricing. No pressure!",
+  title: "Bathroom Remodeling Chandler AZ | Licensed Contractor, Free Estimates — ARZ",
+  description: "Transform your Chandler bathroom with ARZ — ROC Licensed contractors with 500+ projects. Shower remodels, tub conversions & full renovations. Call (480) 306-5591 for your free same-week estimate.",
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ | Free In-Home Estimate",
-    description: "Licensed bathroom remodeling in Chandler. Showers, tub conversions & full remodels in 10-14 days. Free in-home estimates and fixed written pricing.",
+    title: "Bathroom Remodeling Chandler AZ | Licensed Contractor, Free Estimates — ARZ",
+    description: "Transform your Chandler bathroom with ARZ — ROC Licensed contractors with 500+ projects. Shower remodels, tub conversions & full renovations. Call (480) 306-5591 for your free same-week estimate.",
     type: "website",
   },
 

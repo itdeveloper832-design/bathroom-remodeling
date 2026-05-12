@@ -361,7 +361,7 @@ export default function ChandlerBathroomRemodelingPage() {
               ))}
             </div>
             <div className="text-center">
-              <Link href="/bathroom-remodeling-cost-chandler-az/" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
+              <Link href="/bathroom-remodel-cost-chandler/" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
                 View our full Chandler cost guide <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

@@ -13,6 +13,7 @@ const ServicesGrid = dynamic(() => import("@/components/home/services-grid"));
 const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"));
 const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"));
 const ProcessSection = dynamic(() => import("@/components/home/process-section"));
+const ChandlerExpertise = dynamic(() => import("@/components/home/chandler-expertise"));
 const ServiceAreas = dynamic(() => import("@/components/home/service-areas"));
 const Financing = dynamic(() => import("@/components/home/financing"));
 const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"));
@@ -32,11 +33,11 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
 
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Licensed Contractor, Free Estimates — ARZ",
-  description: "Transform your Chandler bathroom with ARZ — ROC Licensed contractors with 500+ projects. Shower remodels, tub conversions & full renovations. Call (480) 306-5591 for your free same-week estimate.",
+  title: "Top-Rated Home, Kitchen & Bathroom Remodeling in Chandler, AZ",
+  description: "Expert home, kitchen, and bathroom remodeling in Chandler, AZ. ROC Licensed contractors delivering premium renovations from Ocotillo to Sun Lakes. Free Quote!",
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ | Licensed Contractor, Free Estimates — ARZ",
-    description: "Transform your Chandler bathroom with ARZ — ROC Licensed contractors with 500+ projects. Shower remodels, tub conversions & full renovations. Call (480) 306-5591 for your free same-week estimate.",
+    title: "Top-Rated Home, Kitchen & Bathroom Remodeling in Chandler, AZ",
+    description: "Expert home, kitchen, and bathroom remodeling in Chandler, AZ. ROC Licensed contractors delivering premium renovations from Ocotillo to Sun Lakes. Free Quote!",
     type: "website",
   },
 
@@ -46,6 +47,11 @@ export const metadata: Metadata = {
 };
 
 const homeFaqs = [
+  {
+    question: "Do you offer complete home and kitchen remodeling in Chandler, AZ?",
+    answer:
+      "Yes! In addition to our award-winning bathroom services, we are licensed general contractors providing complete <strong>kitchen remodeling in Chandler AZ</strong> and full home renovations. We manage all trades, from custom cabinetry and quartz countertops to flooring and structural changes.",
+  },
   {
     question: "What types of bathroom remodeling do you offer in Chandler, AZ?",
     answer:
@@ -82,6 +88,16 @@ const homeFaqs = [
       "The tub-to-shower conversion is by far the most requested service in Chandler. Most homes built in the 1990s and early 2000s have a garden tub that goes unused. We remove it, waterproof the substrate, and install a modern walk-in shower — adding usable space and strong resale ROI.",
   },
   {
+    question: "Do you provide flooring installation in Chandler and the East Valley?",
+    answer:
+      "Yes. We offer professional <strong>flooring installation in Chandler AZ</strong> for the entire home. We specialize in desert-ready materials like Luxury Vinyl Plank (LVP), porcelain tile, and high-quality engineered hardwood that won't warp in our dry climate.",
+  },
+  {
+    question: "Do you offer roofing services in Chandler, AZ?",
+    answer:
+      "Yes. Our <strong>roofing services in Chandler AZ</strong> include tile roof repair, shingle replacement, and 2-layer tile R&R (underlayment replacement). We specialize in monsoon-ready protection and energy-efficient ventilation to help lower your cooling costs.",
+  },
+  {
     question: "What neighborhoods in Chandler do you serve?",
     answer:
       "We serve all of Chandler, AZ including Dobson Ranch, Sun Lakes, Ocotillo, Fulton Ranch, Chandler Heights, Gila Springs, Fox Crossing, and Cooper Commons, plus Gilbert, Mesa, Tempe, and Ahwatukee.",
@@ -102,6 +118,7 @@ export default function HomePage() {
         <WhyChooseUs />
         <BathroomSection />
         <ProcessSection />
+        <ChandlerExpertise />
         <ServiceAreas />
         <Financing />
         <ComparisonBenefits />

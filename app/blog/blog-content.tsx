@@ -11,7 +11,14 @@ import type { BlogPost, Category } from "@/lib/types"
 import { Calendar, Clock, ArrowRight, Search, ChevronRight, Filter } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { defaultBlogPost, secondBlogPost, thirdBlogPost } from "@/lib/seed-blog"
+import { 
+  defaultBlogPost, 
+  secondBlogPost, 
+  thirdBlogPost, 
+  kitchenCostPost, 
+  flooringTipsPost, 
+  remodelingRoiPost 
+} from "@/lib/seed-blog";
 
 export default function BlogContent() {
   const [posts, setPosts] = useState<BlogPost[]>([])
@@ -30,7 +37,10 @@ export default function BlogContent() {
         const defaultPosts: BlogPost[] = [
           { ...defaultBlogPost, id: "default-post-1", readTime: 12 },
           { ...secondBlogPost, id: "default-post-2", readTime: 8 },
-          { ...thirdBlogPost, id: "default-post-3", readTime: 5 }
+          { ...thirdBlogPost, id: "default-post-3", readTime: 5 },
+          { ...kitchenCostPost as any, id: "default-post-4", readTime: 10 },
+          { ...flooringTipsPost as any, id: "default-post-5", readTime: 7 },
+          { ...remodelingRoiPost as any, id: "default-post-6", readTime: 9 }
         ]
         setPosts(defaultPosts)
       } else {

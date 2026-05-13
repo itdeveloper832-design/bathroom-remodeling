@@ -1,8 +1,44 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { ArrowUpRight, Home, ChefHat, Sparkles, ShowerHead, Bath, LayoutGrid } from "lucide-react";
 
-const services = bathroomServices; 
+const services = [
+  {
+    name: "Custom Kitchen Remodeling",
+    href: "/kitchen-remodeling/",
+    description: "Breathtaking kitchen renovations with custom cabinetry, quartz islands, and modern fixtures.",
+    icon: ChefHat,
+  },
+  {
+    name: "Complete Home Renovations",
+    href: "/services/",
+    description: "Full-scale home gutting, structural changes, and complete interior modernization.",
+    icon: Home,
+  },
+  {
+    name: "Master Bathroom Remodel",
+    href: "/master-bathroom-remodel/",
+    description: "Transform your master bath into a luxury retreat with premium features and custom designs.",
+    icon: Sparkles,
+  },
+  {
+    name: "Tub to Shower Conversion",
+    href: "/tub-to-shower-conversion/",
+    description: "Convert your unused garden tub into a spacious, modern walk-in shower.",
+    icon: ShowerHead,
+  },
+  {
+    name: "Shower Remodeling",
+    href: "/shower-remodeling/",
+    description: "Complete shower remodeling services with modern fixtures, premium Schluter waterproofing, and frameless glass.",
+    icon: Bath,
+  },
+  {
+    name: "Cabinet & Countertop Installation",
+    href: "/cabinet-countertop-installation/",
+    description: "Custom cabinet and countertop installation with granite, quartz, and marble options.",
+    icon: LayoutGrid,
+  },
+];
 
 export default function ServicesGrid() {
   return (
@@ -11,17 +47,17 @@ export default function ServicesGrid() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <span className="text-primary text-sm font-medium tracking-wider uppercase">
-            What We Do
+            Our Expertise
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
-            Bathroom Remodeling Services in Chandler, AZ
+            Home, Kitchen & Bath Remodeling
           </h2>
           <div className="text-muted-foreground text-lg leading-relaxed space-y-4">
-            <p>Licensed <strong>bath remodeling contractors chandler az</strong> offering:</p>
+            <p>Licensed <strong>home remodeling contractors in Chandler AZ</strong> offering:</p>
             <ul className="list-disc text-left inline-block space-y-1 ml-4">
-              <li><strong>Bath Remodel Chandler AZ:</strong> Full bathroom renovations, vanity, tile, and fixtures.</li>
-              <li><strong>Shower Remodeling Chandler AZ:</strong> Walk-in showers, frameless glass, curbless designs.</li>
-              <li><strong>Bathtub Remodeling Chandler AZ:</strong> Tub replacement, tub-to-shower conversion, soaking tubs.</li>
+              <li><strong>Kitchen Remodeling Chandler AZ:</strong> Custom cabinets, quartz islands, and open-concept designs.</li>
+              <li><strong>Home Renovation Chandler AZ:</strong> Whole-house remodels, structural changes, and interior updates.</li>
+              <li><strong>Bath Remodel Chandler AZ:</strong> Master bath renovations, walk-in showers, and tub conversions.</li>
             </ul>
           </div>
         </div>

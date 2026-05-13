@@ -43,7 +43,7 @@ export default function BathroomSection() {
               Our Specialty
             </span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
-              Expert Bathroom Remodeling in Chandler, Arizona
+              Custom Bathroom Remodeling
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               Your bathroom should be a sanctuary. Our comprehensive remodeling approach transforms 

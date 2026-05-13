@@ -58,12 +58,12 @@ export default function Hero() {
 
             {/* Headline - Accessible H1 */}
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-6 text-balance focus-visible:outline-none">
-              Modern Bathroom Remodeling in Chandler, AZ
+              Expert Home, Kitchen & Bathroom Remodeling Contractors in Chandler, AZ
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed font-light">
-              Transform your daily routine with a luxury bathroom designed for your lifestyle. We are Chandler&apos;s trusted, <strong>ROC Licensed (#345678)</strong> remodeling experts specializing in custom tile showers, tub-to-shower conversions, and premium master bath renovations. Get a free, itemized estimate today.
+              Transform your daily routine with a luxury home designed for your lifestyle. As top <Link href="/" className="font-semibold underline hover:text-primary transition-colors">home remodeling contractors</Link> in Chandler, we are <strong>ROC Licensed (#345678)</strong> experts specializing in <Link href="/kitchen-remodeling/" className="font-semibold underline hover:text-primary transition-colors">kitchen renovations</Link>, <Link href="/shower-remodeling/" className="font-semibold underline hover:text-primary transition-colors">walk-in shower remodeling</Link>, <Link href="/tub-to-shower-conversion/" className="font-semibold underline hover:text-primary transition-colors">tub to shower conversions</Link>, and complete home makeovers. Get a free, itemized estimate today.
             </p>
 
             {/* CTA Buttons - Accessible */}

@@ -175,7 +175,7 @@ export default function MasterBathPage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <div className="grid sm:grid-cols-2 gap-4">
               <Link
-                href="/bathroom-remodeling-chandler-az"
+                href="/"
                 className="bg-secondary border border-border rounded-xl p-5 hover:border-primary transition-colors group flex items-center justify-between"
               >
                 <div>

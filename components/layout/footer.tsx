@@ -21,15 +21,15 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6 group no-underline">
               <span className="font-serif text-3xl font-semibold text-background group-hover:text-primary transition-colors">
-                Chandler
+                ARZ Home
               </span>
               <span className="block text-xs tracking-[0.2em] uppercase text-background/60 -mt-1">
-                Bathroom Remodeling
+                Remodeling Contractors
               </span>
             </Link>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
-              Top-rated bathroom remodeling in Chandler, Arizona.
-              {siteConfig.license && ` ${siteConfig.license} • `} Transforming homes since 2010.
+              Top-rated home, kitchen, and bathroom remodeling in Chandler, Arizona.
+              {siteConfig.license && ` ${siteConfig.license} • `} Transforming East Valley homes since 2010.
             </p>
 
             <div className="flex gap-3" role="list" aria-label="Social media links">
@@ -86,15 +86,16 @@ export function Footer() {
 
           {/* Services Column */}
           <nav aria-label="Footer services navigation">
-            <h3 className="font-serif text-xl font-semibold mb-6 text-background">Our Services</h3>
+            <h3 className="font-serif text-xl font-semibold mb-6 text-background">Core Services</h3>
             <ul className="space-y-3">
               {[
-                { href: "/bathroom-remodeling/", label: "Bathroom Remodeling Chandler AZ" },
-                { href: "/shower-remodeling/", label: "Shower Remodeling in Chandler" },
-                { href: "/bathtub-remodeling/", label: "Bathtub Remodeling Chandler" },
-                { href: "/walk-in-showers/", label: "Walk-in Showers Chandler AZ" },
-                { href: "/bathroom-tile-installation/", label: "Bathroom Tile Contractors" },
-                { href: "/tub-to-shower-conversion/", label: "Tub-to-Shower Conversion" },
+                { href: "/kitchen-remodeling-chandler-az/", label: "Kitchen Remodeling Chandler" },
+                { href: "/bathroom-remodeling-chandler-az/", label: "Bathroom Remodeling Chandler" },
+                { href: "/bathroom-remodel-cost-chandler/", label: "Bathroom Remodeling Cost" },
+                { href: "/home-renovation-chandler-az/", label: "Full Home Renovations" },
+                { href: "/flooring-installation-chandler/", label: "Flooring Installation" },
+                { href: "/roofing-chandler-az/", label: "Roofing Services" },
+                { href: "/painting-contractors-chandler/", label: "Painting Contractors" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -108,25 +109,28 @@ export function Footer() {
             </ul>
           </nav>
 
-          {/* Quick Links Column */}
-          <nav aria-label="Footer quick links">
-            <h3 className="font-serif text-xl font-semibold mb-6 text-background">Quick Links</h3>
+          {/* Locations Column */}
+          <nav aria-label="Footer locations navigation">
+            <h3 className="font-serif text-xl font-semibold mb-6 text-background">Service Locations</h3>
             <ul className="space-y-3">
-              {siteConfig.navigation.map((item) => (
-                <li key={item.name}>
+              {[
+                { href: "/remodeling-gilbert-az/", label: "Remodeling Gilbert, AZ" },
+                { href: "/remodeling-mesa-az/", label: "Remodeling Mesa, AZ" },
+                { href: "/bathroom-remodeling-areas/ocotillo/", label: "Ocotillo Remodeling" },
+                { href: "/bathroom-remodeling-areas/sun-lakes/", label: "Sun Lakes Remodeling" },
+                { href: "/bathroom-remodeling-areas/fulton-ranch/", label: "Fulton Ranch Remodeling" },
+                { href: "/about/", label: "About Our Company" },
+                { href: "/financing/", label: "Financing Options" },
+              ].map((link) => (
+                <li key={link.href}>
                   <Link
-                    href={item.href}
+                    href={link.href}
                     className="text-background/80 hover:text-primary transition-colors text-sm no-underline"
                   >
-                    {item.name}
+                    {link.label}
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link href="/financing/" className="text-background/80 hover:text-primary transition-colors text-sm no-underline">
-                  Financing Options
-                </Link>
-              </li>
             </ul>
           </nav>
 

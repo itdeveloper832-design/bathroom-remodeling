@@ -62,11 +62,11 @@ export default function AboutPreview() {
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               ARZ Home Remodeling was founded with a simple mission: to transform ordinary 
               spaces into extraordinary ones. What started as a small family business has 
-              grown into one of the most trusted <strong>bathroom remodeling services in Chandler</strong> and the premier choice for <strong>chandler arizona bathroom remodeling</strong>.
+              grown into the most trusted <strong>home remodeling contractors in Chandler, AZ</strong>. From open-concept <strong>kitchen renovations</strong> to luxury <strong>bathroom remodeling services in Chandler</strong>, we handle it all.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Our team of skilled designers and craftsmen brings together creativity, 
-              technical expertise, and an unwavering commitment to quality. We treat every 
+              Our team of licensed craftsmen brings together creativity, technical expertise, 
+              and an unwavering commitment to quality. We proudly serve homeowners across Ocotillo, Fulton Ranch, Sun Lakes, and the entire East Valley. We treat every 
               project as if it were our own home, ensuring exceptional results every time.
             </p>
 

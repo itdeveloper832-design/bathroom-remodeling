@@ -10,7 +10,23 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
     "@type": type,
     name: siteConfig.name,
     image: `${siteConfig.url}/images/web-log-image.png`,
-    "@id": siteConfig.url,
+    "@id": `${siteConfig.url}/#organization`,
+    founder: {
+      "@type": "Person",
+      name: siteConfig.owner,
+      jobTitle: "Founder & Owner",
+      url: siteConfig.url,
+    },
+    knowsAbout: [
+      "Home Remodeling",
+      "Kitchen Remodeling",
+      "Bathroom Remodeling",
+      "Shower Remodeling",
+      "Bathtub Installation",
+      "Bathroom Tile",
+      "Kitchen Cabinets",
+      "Countertop Installation"
+    ],
     url: siteConfig.url,
     telephone: siteConfig.phone,
     email: siteConfig.email,
@@ -56,8 +72,24 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
     })),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Bathroom Remodeling Services",
+      name: "Home Remodeling Services in Chandler",
       itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Kitchen Remodeling",
+            description: "Custom kitchen renovations in Chandler including cabinetry, quartz countertops, and open-concept floor plans.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Home Remodeling",
+            description: "Complete home renovation services, structural changes, and interior modernization in the East Valley.",
+          },
+        },
         {
           "@type": "Offer",
           itemOffered: {

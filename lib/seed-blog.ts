@@ -421,6 +421,146 @@ Ready to upgrade your bathroom with a system built to last? Contact Mike at +148
   updatedAt: "2026-05-01T10:00:00Z",
 };
 
+// Fourth blog post: Kitchen Remodeling Costs
+export const kitchenCostPost = {
+  title: "How Much Does a Kitchen Remodel Cost in Chandler, AZ (2026 Guide)?",
+  slug: "kitchen-remodel-cost-chandler-az-2026",
+  excerpt: "Planning a kitchen renovation in Chandler? Get the latest breakdown of costs for cabinets, countertops, labor, and more in the current East Valley market.",
+  content: `
+# How Much Does a Kitchen Remodel Cost in Chandler, AZ (2026 Guide)?
+
+A kitchen remodel is one of the most rewarding home improvements you can undertake, but it's also one of the most complex. If you're a homeowner in Chandler, Gilbert, or Mesa, understanding the current local market costs is essential for successful planning.
+
+In 2026, we are seeing a shift toward higher-quality, durable materials that can withstand our desert climate, along with a focus on open-concept layouts.
+
+## Typical Kitchen Remodeling Price Brackets in Chandler
+
+### 1. The Cosmetic Refresh ($15,000 – $25,000)
+Ideal for kitchens with a good layout but outdated finishes.
+- **Includes:** Cabinet refinishing or painting, new quartz countertops, tile backsplash, updated sink/faucet, and new hardware.
+- **Timeline:** 2–3 weeks.
+
+### 2. The Mid-Range Remodel ($30,000 – $55,000)
+The most common project for East Valley families.
+- **Includes:** New semi-custom cabinetry, premium stone countertops, updated flooring (LVP or tile), new lighting package, and minor plumbing/electrical relocations.
+- **Timeline:** 4–6 weeks.
+
+### 3. The Full Luxury Transformation ($65,000+)
+For those wanting a complete professional-grade kitchen.
+- **Includes:** Fully custom cabinetry, high-end appliance packages, structural wall removal for open-concept living, custom islands, and designer lighting.
+- **Timeline:** 8–12 weeks.
+
+## Where Your Money Goes (Cost Breakdown)
+
+- **Cabinetry:** 30% — The single biggest investment in any kitchen.
+- **Labor & Installation:** 25% — Professional installation ensures your warranty remains valid.
+- **Countertops:** 15% — Quartz is the king of Chandler kitchens due to its durability.
+- **Appliances:** 15% — Varies significantly based on brand and features.
+- **Flooring & Backsplash:** 10% — The finishing touches that pull the design together.
+- **Permits & Misc:** 5% — City of Chandler permits are required for structural/electrical work.
+
+## How to Save Without Sacrificing Quality
+
+1. **Keep the Footprint:** Moving gas lines and drains adds thousands to the bill.
+2. **Prioritize the Island:** Spend more on a show-stopping island and save slightly on the perimeter counters.
+3. **Choose Local Pro:** Licensed local contractors have established relationships with East Valley suppliers, often securing better pricing on materials.
+
+Ready for a firm, itemized quote for your Chandler kitchen? View our <a href='/kitchen-remodeling-chandler-az/' class='text-primary hover:underline font-medium'>Kitchen Remodeling Chandler AZ</a> service page or contact ARZ Home Remodeling at +14803065591 today.
+  `,
+  author: "Alex Rivers",
+  category: "Kitchen Remodeling",
+  tags: ["kitchen remodel cost", "chandler az", "kitchen budget", "renovation prices"],
+  featuredImage: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2670&auto=format&fit=crop",
+  metaTitle: "Kitchen Remodel Cost in Chandler AZ (2026) | Price Guide",
+  metaDescription: "What does a kitchen remodel cost in Chandler, AZ in 2026? See our price breakdown for cabinets, quartz counters, and full renovations in the East Valley.",
+  status: "published" as const,
+  publishedAt: new Date().toISOString(),
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
+};
+
+// Fifth blog post: Flooring for Arizona
+export const flooringTipsPost = {
+  title: "5 Tips for Choosing Flooring for the Arizona Desert Climate",
+  slug: "best-flooring-for-arizona-desert-homes",
+  excerpt: "The Arizona heat and dust are tough on floors. Learn which materials like LVP and Tile perform best in Chandler homes and why.",
+  content: `
+# 5 Tips for Choosing Flooring for the Arizona Desert Climate
+
+Living in Chandler means dealing with intense heat, low humidity, and plenty of desert dust. Your choice of flooring needs to do more than just look good—it needs to survive the East Valley environment.
+
+At ARZ Home Remodeling, we've installed thousands of square feet of flooring. Here is our expert advice for choosing materials that last.
+
+## 1. Prioritize Luxury Vinyl Plank (LVP)
+LVP has become the #1 choice for Chandler homeowners for a reason. It is 100% waterproof, scratch-resistant (great for desert pets), and won't expand or contract during our massive temperature swings.
+
+## 2. Porcelain Tile for Maximum Cooling
+Nothing stays cooler underfoot during a 115-degree July day than porcelain tile. It is incredibly durable and resists the fine desert sand that can act like sandpaper on softer materials.
+
+## 3. Avoid Solid Hardwood (Usually)
+While beautiful, solid hardwood is prone to shrinking and cracking in our extremely low humidity. If you want the wood look, we recommend **Engineered Hardwood** or wood-look tile, which are much more stable in the desert.
+
+## 4. Think About Grout Colors
+Gilbert and Chandler water is "hard" (full of minerals). Avoid white grout on floor tiles, as it will inevitably discolor from desert dust and mineral buildup. Choose mid-tone grays or tans that blend with the natural environment.
+
+## 5. Don't Skip the Underlayment
+High-quality underlayment provides a thermal break and sound dampening. In homes with post-tension slabs (common in newer Chandler builds), a crack-isolation membrane is essential to prevent your new tile from cracking as the house settles.
+
+Need help selecting the perfect floor for your home? Explore our <a href='/flooring-installation-chandler/' class='text-primary hover:underline font-medium'>Flooring Installation Chandler</a> services or call us at +14803065591 for a free in-home measurement.
+  `,
+  author: "Alex Rivers",
+  category: "Flooring",
+  tags: ["arizona flooring", "best floors for desert", "LVP vs Tile", "chandler az"],
+  featuredImage: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2670&auto=format&fit=crop",
+  metaTitle: "Best Flooring for Arizona Homes | Chandler Flooring Guide",
+  metaDescription: "Choosing floors for the desert? Learn why LVP and Tile are the best choices for Chandler, AZ homes and what to avoid in our climate.",
+  status: "published" as const,
+  publishedAt: new Date().toISOString(),
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
+};
+
+// Sixth blog post: ROI/Authority
+export const remodelingRoiPost = {
+  title: "Which Remodeling Projects Have the Best ROI in the East Valley?",
+  slug: "remodeling-roi-chandler-gilbert-mesa",
+  excerpt: "Investing in your home? Discover which renovations—from kitchens to roofs—provide the best return on investment for Chandler and Gilbert homeowners.",
+  content: `
+# Which Remodeling Projects Have the Best ROI in the East Valley?
+
+In the fast-growing Chandler and Gilbert real estate markets, not all renovations are created equal. If you're planning to sell in the next 5-10 years, you want to invest in projects that will actually add equity to your home.
+
+Based on recent market data for 85226, 85249, and 85297, here are the top ROI remodeling projects.
+
+## 1. Minor Kitchen Refresh (ROI: 75-80%)
+You don't always need a full gut. Updating countertops to quartz and painting cabinets provides a massive visual impact that buyers love, often returning nearly 80% of the cost at sale.
+
+## 2. Bathroom Modernization (ROI: 65-70%)
+Replacing a 90s-era garden tub with a large, luxury walk-in shower is the single most requested feature among East Valley buyers. It makes the master suite feel like a high-end hotel.
+
+## 3. New Flooring Throughout (ROI: 70%)
+Replacing mismatched carpet and tile with a unified LVP or large-format tile floor makes a home feel larger and more modern instantly. It's often the first thing buyers notice.
+
+## 4. Exterior Painting & Stucco Repair (ROI: 90%+)
+The Arizona sun is brutal on paint. A fresh exterior coat protects your home's structure while providing the curb appeal that gets buyers through the door. This is arguably the highest ROI project for the cost.
+
+## 5. Roof Underlayment Replacement (ROI: Essential for Sale)
+While it doesn't add "beauty," a certified 2-layer tile R&R (Remove and Replace) ensures your home passes inspection. In Chandler, a roof nearing 20 years old can be a deal-breaker for buyers.
+
+Want to know which project makes the most sense for your home? Contact Alex at ARZ Home Remodeling for an expert consultation on <a href='/bathroom-remodeling-chandler-az/' class='text-primary hover:underline font-medium'>bathroom remodeling</a>, <a href='/kitchen-remodeling-chandler-az/' class='text-primary hover:underline font-medium'>kitchen renovations</a>, or <a href='/roofing-chandler-az/' class='text-primary hover:underline font-medium'>roofing services</a>.
+  `,
+  author: "Alex Rivers",
+  category: "Home Improvement",
+  tags: ["ROI", "home value", "chandler real estate", "remodeling investment"],
+  featuredImage: "https://images.unsplash.com/photo-1560514481-f740959fe358?q=80&w=2574&auto=format&fit=crop",
+  metaTitle: "Highest ROI Remodeling Projects in Chandler & Gilbert AZ",
+  metaDescription: "Maximize your home equity. Discover which remodeling projects offer the best return on investment for homeowners in the East Valley.",
+  status: "published" as const,
+  publishedAt: new Date().toISOString(),
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
+};
+
 // Default gallery images for bathroom and kitchen
 export const defaultGalleryItems = [
 

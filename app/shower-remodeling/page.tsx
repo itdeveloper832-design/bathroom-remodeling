@@ -181,7 +181,7 @@ export default function ShowerRemodelingPage() {
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <a
-                href="/bathroom-remodeling-chandler-az/"
+                href="/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">

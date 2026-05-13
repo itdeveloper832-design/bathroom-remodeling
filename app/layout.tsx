@@ -29,7 +29,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Bathroom Remodel Chandler | Top Bathroom Remodeling Chandler AZ`,
+    default: `Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling`,
     template: `%s | ARZ Remodeling`
   },
   description: 'Top-rated bathroom remodel Chandler. Expert bathroom remodeling Chandler AZ services including tub to shower conversion, accessible showers, and tile installation. Free quotes!',
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Bathroom Remodeling Chandler AZ | Expert Contractors`,
-    description: 'Best bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, free estimates!',
+    title: `Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling`,
+    description: 'Top-rated bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, free estimates!',
     images: [
       {
         url: `${siteConfig.url}/images/hero-bathroom.jpg`,
@@ -65,8 +65,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Bathroom Remodeling Contractors Chandler AZ`,
-    description: 'Best bathroom remodeling contractors Chandler AZ. Free bathroom remodel quote!',
+    title: `Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling`,
+    description: 'Top-rated bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, free estimates!',
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   verification: {
@@ -123,6 +123,18 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               "@id": `${siteConfig.url}/#organization`,
               "name": siteConfig.name,
+              "founder": {
+                "@type": "Person",
+                "name": siteConfig.owner,
+                "jobTitle": "Founder & Owner",
+                "url": siteConfig.url
+              },
+              "knowsAbout": [
+                "Bathroom Remodeling",
+                "Shower Remodeling",
+                "Bathtub Installation",
+                "Bathroom Tile"
+              ],
               "url": siteConfig.url,
               "logo": `${siteConfig.url}/images/web-log-image.png`,
               "image": `${siteConfig.url}/images/hero-bathroom.jpg`,
@@ -147,12 +159,19 @@ export default function RootLayout({
                 "Sa 09:00-16:00"
               ],
               "priceRange": "$$",
-              "hasCredential": {
-                "@type": "EducationalOccupationalCredential",
-                "credentialCategory": "license",
-                "name": "Arizona Registrar of Contractors License",
-                "credentialId": siteConfig.license,
-                "url": "https://roc.az.gov/"
+              ...(siteConfig.license ? {
+                "hasCredential": {
+                  "@type": "EducationalOccupationalCredential",
+                  "credentialCategory": "license",
+                  "name": "Arizona Registrar of Contractors License",
+                  "credentialId": siteConfig.license,
+                  "url": "https://roc.az.gov/"
+                }
+              } : {}),
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "127"
               },
               "areaServed": siteConfig.serviceAreas,
 

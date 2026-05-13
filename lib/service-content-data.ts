@@ -1092,4 +1092,287 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
     ],
   },
+  "home-renovation": {
+    benefits: [
+      {
+        title: "Complete Property Transformation",
+        description: "Modernize your entire home with a cohesive design, improved flow, and updated finishes throughout.",
+        icon: "Home",
+      },
+      {
+        title: "Optimized Living Space",
+        description: "Remove walls, reconfigure layouts, and create the open-concept living area you've always wanted.",
+        icon: "Layout",
+      },
+      {
+        title: "Enhanced Energy Efficiency",
+        description: "Update insulation, windows, and systems during renovation to lower your monthly utility bills.",
+        icon: "Zap",
+      },
+      {
+        title: "Significant Value Increase",
+        description: "Whole-house renovations offer the highest potential equity gain for Chandler homeowners.",
+        icon: "TrendingUp",
+      },
+    ],
+    issues: [
+      {
+        problem: "Choppy, compartmentalized layouts typical of older East Valley homes",
+        solution: "Structural wall removal and beam installation to create a modern, open-concept floor plan.",
+      },
+      {
+        problem: "Outdated electrical and plumbing systems that don't meet modern needs",
+        solution: "Full system upgrades to ensure safety, efficiency, and support for modern appliances.",
+      },
+      {
+        problem: "Mismatched flooring and finishes creating a disjointed aesthetic",
+        solution: "Cohesive material selection and design language applied across the entire home.",
+      },
+      {
+        problem: "Wasted square footage in underutilized rooms or large hallways",
+        solution: "Layout redesign to convert wasted space into functional areas like home offices or pantries.",
+      },
+    ],
+    tips: [
+      "Plan for Temporary Living: Whole-home renovations are invasive. We help you plan for a temporary kitchen or living area during construction.",
+      "Invest in Structural Integrity: If you're removing walls, always work with licensed contractors who understand East Valley load-bearing requirements.",
+      "Stay Consistent with Finishes: Choosing a unified palette for flooring and paint makes your home feel larger and more intentional.",
+      "Don't Skip the Permitting: Proper permits protect your investment and ensure your home remains easy to sell in the future.",
+    ],
+    faqs: [
+      {
+        question: "How much does a whole-home renovation cost in Chandler?",
+        answer:
+          "Costs typically range from $100–$250 per square foot depending on finishes and structural changes. A full mid-range renovation for a 2,000 sq ft home often falls between $150,000 and $300,000.",
+      },
+      {
+        question: "How long will I be out of my kitchen or home during renovation?",
+        answer:
+          "Whole-house projects usually take 3–6 months. We work in phases to keep your home as livable as possible, but we often recommend temporary housing for major structural phases.",
+      },
+      {
+        question: "Do you handle the architectural and design plans?",
+        answer:
+          "Yes. We are a design-build firm. We handle everything from the initial 3D renderings and structural engineering to the final coat of paint.",
+      },
+      {
+        question: "Are permits required for interior renovations in Chandler?",
+        answer:
+          "Yes, most significant interior changes (plumbing, electrical, structural) require permits from the City of Chandler. We handle the entire application and inspection process.",
+      },
+    ],
+  },
+
+  "flooring": {
+    benefits: [
+      {
+        title: "Durable Desert-Ready Floors",
+        description: "Materials selected to withstand Chandler's heat, dust, and heavy foot traffic.",
+        icon: "Shield",
+      },
+      {
+        title: "Seamless Professional Install",
+        description: "Laser-leveled transitions and precision cuts for a flawless look from room to room.",
+        icon: "Ruler",
+      },
+      {
+        title: "Water-Resistant Solutions",
+        description: "High-grade LVP and porcelain tile options perfect for kitchens, baths, and laundry rooms.",
+        icon: "Droplets",
+      },
+      {
+        title: "Easy Maintenance & Cleanup",
+        description: "Modern flooring options that resist staining and are simple to clean in our dusty climate.",
+        icon: "Check",
+      },
+    ],
+    issues: [
+      {
+        problem: "Cracked or lifting floor tiles due to foundation settling or poor install",
+        solution: "Proper substrate preparation and use of crack-isolation membranes before new installation.",
+      },
+      {
+        problem: "Worn, stained carpet that traps desert dust and allergens",
+        solution: "Replacement with hypoallergenic hard-surface flooring like LVP or wood-look tile.",
+      },
+      {
+        problem: "Uneven floors creating trip hazards or gaps under baseboards",
+        solution: "Professional floor leveling and proper subfloor prep to ensure a perfectly flat surface.",
+      },
+      {
+        problem: "Outdated flooring that makes a home feel aged and dark",
+        solution: "Installation of modern, large-format tiles or light-colored planks to brighten the space.",
+      },
+    ],
+    tips: [
+      "Prioritize LVP for Active Homes: Luxury Vinyl Plank is waterproof, scratch-resistant, and perfect for families with pets.",
+      "Don't Skimp on Underlayment: A high-quality underlayment provides better sound dampening and a softer feel underfoot.",
+      "Plan for Transition Strips: Ensure smooth transitions between different flooring types (e.g., tile to wood) for a professional finish.",
+      "Acclimate Your Materials: Hardwood and some LVP products need 48–72 hours to adjust to your home's humidity before installation.",
+    ],
+    faqs: [
+      {
+        question: "Which is better for Chandler homes: Tile or LVP?",
+        answer:
+          "Both are excellent. Tile is cooler and more traditional for the desert, while LVP is softer, warmer, and more cost-effective. We help you choose based on your room use and budget.",
+      },
+      {
+        question: "How long does a standard flooring installation take?",
+        answer:
+          "Most flooring projects take 3–5 days. Large whole-home installations can take 7–10 days. This includes prep, removal of old flooring, and final baseboard installation.",
+      },
+      {
+        question: "Do you install new baseboards with the flooring?",
+        answer:
+          "Yes! We highly recommend new baseboards for a clean, professional finish. We can install standard or custom-profile baseboards as part of your project.",
+      },
+      {
+        question: "Can you install new flooring over existing tile?",
+        answer:
+          "In some cases, yes, if the existing tile is flat and secure. However, we usually recommend removing old flooring to ensure the best possible subfloor preparation.",
+      },
+    ],
+  },
+
+  "roofing": {
+    benefits: [
+      {
+        title: "Monsoon-Ready Protection",
+        description: "Reinforced roofing systems designed to withstand high winds and heavy Arizona rains.",
+        icon: "Shield",
+      },
+      {
+        title: "Energy Efficiency Upgrades",
+        description: "Reflective materials and proper ventilation that lower attic temperatures and AC costs.",
+        icon: "Zap",
+      },
+      {
+        title: "Long-Term Warranty Peace of Mind",
+        description: "Quality materials and workmanship backed by industry-leading warranties.",
+        icon: "ShieldCheck",
+      },
+      {
+        title: "Instant Curb Appeal Boost",
+        description: "A new roof dramatically improves the exterior appearance and value of your home.",
+        icon: "Home",
+      },
+    ],
+    issues: [
+      {
+        problem: "Aged underlayment failing beneath tile roofs",
+        solution: "Tile R&R (Remove and Replace) with high-grade synthetic underlayment for 30+ year protection.",
+      },
+      {
+        problem: "Missing or damaged shingles after a desert storm",
+        solution: "Prompt repair or replacement with wind-rated architectural shingles.",
+      },
+      {
+        problem: "Improper attic ventilation causing high energy bills",
+        solution: "Installation of O'Hagin vents, ridge vents, or solar attic fans to improve airflow.",
+      },
+      {
+        problem: "Leaks around valleys, chimneys, or skylights",
+        solution: "Professional flashing replacement and waterproof sealing of all roof penetrations.",
+      },
+    ],
+    tips: [
+      "Inspect After Every Monsoon: Check for slipped tiles or missing shingles after major storms to catch leaks early.",
+      "Don't Wait for a Leak: If your roof is 20+ years old, the underlayment is likely reaching the end of its life.",
+      "Choose Light Colors for Energy Savings: Lighter roof colors reflect more sunlight, keeping your Chandler home cooler.",
+      "Clear Debris Regularly: Keep valleys and gutters clear of desert leaves and debris to prevent water backup.",
+    ],
+    faqs: [
+      {
+        question: "How long does a roof last in Chandler, AZ?",
+        answer:
+          "Tile roofs can last 50+ years, but the underlayment needs replacement every 20–25 years. Shingle roofs typically last 15–20 years in our intense sun.",
+      },
+      {
+        question: "What is a 'Tile R&R'?",
+        answer:
+          "It stands for Remove and Replace. We carefully remove your existing tiles, replace the failed underlayment, and then reinstall the original tiles. This is a cost-effective way to get a 'new' roof.",
+      },
+      {
+        question: "How do I know if I have storm damage?",
+        answer:
+          "Look for slipped tiles, missing shingles, or grit in your gutters. We provide free professional roof inspections to document damage for insurance claims.",
+      },
+      {
+        question: "Does a new roof help with home cooling?",
+        answer:
+          "Yes! Modern underlayments and ventilation systems can reduce attic temperatures by 20–30 degrees, significantly lowering your AC workload.",
+      },
+    ],
+  },
+
+  "painting": {
+    benefits: [
+      {
+        title: "UV-Resistant Exterior Protection",
+        description: "High-quality paints designed to withstand the intense Arizona sun without fading or peeling.",
+        icon: "Sun",
+      },
+      {
+        title: "Flawless Interior Finishes",
+        description: "Professional preparation and application for smooth, beautiful walls and ceilings.",
+        icon: "Check",
+      },
+      {
+        title: "Instant Home Modernization",
+        description: "A fresh color palette is the fastest and most affordable way to update your home's look.",
+        icon: "Palette",
+      },
+      {
+        title: "Meticulous Prep & Cleanup",
+        description: "We handle all masking, patching, and cleaning so you don't have to worry about a mess.",
+        icon: "Sparkles",
+      },
+    ],
+    issues: [
+      {
+        problem: "Fading and chalking exterior paint from UV exposure",
+        solution: "Full exterior repaint with premium 100% acrylic paints formulated for the desert.",
+      },
+      {
+        problem: "Cracked or peeling stucco surfaces",
+        solution: "Patching, sealing, and painting with elastomeric coatings that move with your home.",
+      },
+      {
+        problem: "Outdated, dark interior colors making rooms feel small",
+        solution: "Interior repainting with light, modern neutrals to open up and brighten your living spaces.",
+      },
+      {
+        problem: "Scuffed baseboards and dingy trim",
+        solution: "Professional trim and door painting using durable, easy-to-clean semi-gloss finishes.",
+      },
+    ],
+    tips: [
+      "Don't Skip the Primer: Especially on new drywall or stucco, proper priming ensures paint adhesion and color accuracy.",
+      "Choose the Right Sheen: Use Eggshell or Satin for walls (cleanable) and Semi-Gloss for trim and doors (durable).",
+      "Invest in Quality Paint: Premium paints have more solids, providing better coverage and lasting years longer.",
+      "Test Colors in Your Own Light: Paint small samples on different walls to see how Chandler's intense sunlight affects the hue.",
+    ],
+    faqs: [
+      {
+        question: "How often should I paint my home's exterior in Chandler?",
+        answer:
+          "Due to the intense sun, most Chandler homes need an exterior repaint every 5–8 years to protect the stucco and wood trim.",
+      },
+      {
+        question: "Do you handle drywall repairs before painting?",
+        answer:
+          "Yes! We fix cracks, holes, and texture issues as part of our standard preparation process to ensure a perfect final finish.",
+      },
+      {
+        question: "How long does it take to paint a whole house?",
+        answer:
+          "An exterior repaint usually takes 3–5 days. A full interior repaint for a standard home takes 4–7 days depending on the number of rooms.",
+      },
+      {
+        question: "Can you help me choose the right colors?",
+        answer:
+          "Absolutely. We provide color consultations and can help you select a palette that matches your home's style and complies with any HOA requirements.",
+      },
+    ],
+  },
 };

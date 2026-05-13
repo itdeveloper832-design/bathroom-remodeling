@@ -136,7 +136,7 @@ export default function TubToShowerConversionPage() {
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               Our <strong>bath to shower conversion near me</strong> services are designed to maximize your bathroom's footprint, 
-              providing a more open and modern feel while significantly improving accessibility.
+              providing a more open and modern feel while significantly improving accessibility. As leading <Link href="/" className="font-semibold underline hover:text-primary transition-colors">bathroom renovation contractors in Chandler</Link>, we guarantee a flawless finish every time.
             </p>
             <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
               <p className="text-foreground font-medium mb-4">

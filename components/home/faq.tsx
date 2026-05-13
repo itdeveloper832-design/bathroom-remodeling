@@ -1,6 +1,11 @@
 import { ChevronDown } from "lucide-react";
 
 const faqs = [
+  {
+    question: "Do you offer complete home and kitchen remodeling in Chandler, AZ?",
+    answer:
+      "Yes! In addition to our award-winning bathroom services, we are licensed general contractors providing complete kitchen remodeling in Chandler AZ and full home renovations. We manage all trades, from custom cabinetry and quartz countertops to flooring and structural changes.",
+  },
   // HOMEPAGE CLUSTER — bathroom remodel chandler az
   {
     question: "What types of bathroom remodeling do you offer in Chandler, AZ?",
@@ -24,20 +29,15 @@ const faqs = [
       "Yes. Our shower remodeling in Chandler includes walk-in shower installation, frameless glass enclosures, custom tile work, curbless shower conversions, and shower replacement. We use Schluter waterproofing to prevent leaks in Arizona's extreme temperature swings.",
   },
   {
-    question: "How long does shower remodeling take in Chandler?",
+    question: "How long does a typical kitchen or bathroom remodel take?",
     answer:
-      "A shower-only remodel in Chandler typically takes 1–2 weeks. A full shower replacement with custom tile and frameless glass takes 2–3 weeks. We provide a firm written timeline before any work starts.",
+      "A standard bathroom remodel in Chandler takes about 2 to 3 weeks. A full kitchen remodel typically takes 4 to 6 weeks. Timelines vary based on scope and material availability, but we provide a firm schedule before construction begins.",
   },
   // BATHTUB CLUSTER — bathtub remodeling chandler az
   {
     question: "Do you offer bathtub remodeling and replacement in Chandler, AZ?",
     answer:
       "Yes. Our bathtub remodeling services in Chandler include full tub replacement, bathtub-to-shower conversion, soaking tub installation, and jetted tub upgrades. We specialize in tub-to-shower conversions for unused garden tubs — the most popular service in Chandler homes built 1985–2005.",
-  },
-  {
-    question: "What is the most popular bath remodel in Chandler homes?",
-    answer:
-      "The tub-to-shower conversion is by far the most requested service in Chandler. Most homes built in the 1990s and early 2000s have a garden tub that goes unused. We remove it, waterproof the substrate, and install a modern walk-in shower — adding usable space and strong resale ROI.",
   },
   // SERVICE AREA
   {
@@ -58,10 +58,10 @@ export default function FAQ() {
               FAQ
             </span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground">
-              Bathroom Remodeling FAQs — Chandler, AZ
+              Remodeling FAQs — Chandler, AZ
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Common questions about bathroom remodeling, shower remodeling, and bathtub remodeling in Chandler, Arizona.
+              Common questions about home remodeling, kitchen renovations, and bathroom remodeling in Chandler, Arizona.
             </p>
           </div>
 

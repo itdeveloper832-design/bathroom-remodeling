@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Main service pages
   const servicePages = [
-    { url: '/bathroom-remodeling-chandler-az', priority: 1.0, changeFrequency: 'weekly' as const },
+    { url: '/bathroom-remodeling-chandler-az', priority: 0.5, changeFrequency: 'monthly' as const },
     { url: '/bathroom-remodeling', priority: 0.95, changeFrequency: 'weekly' as const },
     { url: '/services', priority: 0.9, changeFrequency: 'weekly' as const },
     { url: '/shower-remodeling', priority: 0.85, changeFrequency: 'monthly' as const },

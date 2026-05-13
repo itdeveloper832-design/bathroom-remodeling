@@ -34,10 +34,11 @@ export const siteConfig = {
   },
   navigation: [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about/" },
+    { name: "Kitchen", href: "/kitchen-remodeling-chandler-az/" },
+    { name: "Bathroom", href: "/bathroom-remodeling-chandler-az/" },
+    { name: "Home Renovation", href: "/home-renovation-chandler-az/" },
+    { name: "All Services", href: "/services/" },
     { name: "Contact", href: "/contact/" },
-    { name: "Services", href: "/services/" },
-    { name: "Blog", href: "/blog/" },
   ],
   serviceAreas: [
     "Chandler",

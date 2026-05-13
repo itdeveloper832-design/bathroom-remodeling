@@ -41,6 +41,24 @@ img[data-aspect-ratio] {
   aspect-ratio: var(--aspect-ratio);
 }
 
+.aspect-video { aspect-ratio: 16 / 9; }
+.aspect-square { aspect-ratio: 1 / 1; }
+.aspect-portrait { aspect-ratio: 3 / 4; }
+.aspect-remodel { aspect-ratio: 3 / 2; } /* Standard architectural photo ratio */
+
+/* Prevent layout shift for common containers */
+.skeleton-box {
+  background-color: var(--muted);
+  border-radius: var(--radius);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+
 /* Prevent layout shift from scrollbars */
 html {
   scrollbar-gutter: stable;

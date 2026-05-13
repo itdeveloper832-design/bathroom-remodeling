@@ -37,8 +37,13 @@ export function GoogleMap({ lat, lng, zoom = 15, title = "Our Location", address
 
   return (
     <div className="space-y-4">
-      <div className="rounded-lg overflow-hidden shadow-md">
-        <div ref={mapContainer} />
+      <div className="rounded-lg overflow-hidden shadow-md bg-muted min-h-[400px] relative">
+        {!map.current && (
+          <div className="absolute inset-0 flex items-center justify-center bg-secondary animate-pulse">
+            <span className="text-muted-foreground text-sm font-medium">Loading Map...</span>
+          </div>
+        )}
+        <div ref={mapContainer} className="relative z-10" />
       </div>
     </div>
   );

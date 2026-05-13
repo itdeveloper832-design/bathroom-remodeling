@@ -46,8 +46,9 @@ export async function generateMetadata({
     // noindex: these are thin programmatic pages; removing from sitemap + noindex
     // prevents them from being "Discovered - currently not indexed" in GSC
     robots: {
-      index: false,
+      index: true,
       follow: true,
+      nocache: true,
     },
     alternates: {
       canonical: `${siteConfig.url}/chandler-az-${resolvedParams.location}/`,

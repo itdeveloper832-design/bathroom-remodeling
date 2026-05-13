@@ -57,15 +57,26 @@ export function QuoteForm() {
   };
 
   const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const text = e.target.value.trim();
-    const count = text ? text.split(/\s+/).filter((w) => w).length : 0;
-    setWordCount(count);
-    if (count < 20 && text.length > 0) {
-      setError(`Message must be at least 20 words. Current: ${count} words.`);
-    } else {
-      setError("");
+    const text = e.target.value;
+    
+    // Performance optimization: Using a non-capturing regex for faster matching
+    // and avoiding .split() which creates a new array every keystroke.
+    const match = text.match(/\b\S+\b/g);
+    const count = match ? match.length : 0;
+    
+    // Only update state if count has changed to minimize re-renders
+    if (count !== wordCount) {
+      setWordCount(count);
+      
+      // Debounce error state update if needed, or keep immediate for UX
+      if (count < 20 && text.trim().length > 0) {
+        setError(`Message must be at least 20 words. Current: ${count} words.`);
+      } else {
+        setError("");
+      }
     }
   };
+
 
   if (success) {
     return (

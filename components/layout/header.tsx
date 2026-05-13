@@ -41,7 +41,7 @@ export function Header() {
           <div className="flex items-center justify-between">
             {/* Logo - Accessible - Responsive */}
             <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
-              <div className="relative h-8 sm:h-9 md:h-10 lg:h-12 w-[120px] sm:w-[140px] md:w-[160px]">
+              <div className="relative h-8 sm:h-9 md:h-10 lg:h-12 w-[112px] sm:w-[126px] md:w-[140px] lg:w-[168px] bg-background/50 rounded" style={{ aspectRatio: '14 / 4' }}>
                 <Image
                   src="/images/web-log-image.png"
                   alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"

@@ -28,12 +28,13 @@ export default function Hero() {
           fill
           className="object-cover"
           priority={true}
-          sizes="(max-width: 768px) 100vw, 1920px"
-          quality={50}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 1920px"
+          quality={85}
           fetchPriority="high"
           // decoding sync so the browser prioritizes rendering the critical LCP image
           decoding="sync"
         />
+
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" aria-hidden="true" />
       </div>
 

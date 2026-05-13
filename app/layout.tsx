@@ -14,7 +14,7 @@ const inter = Inter({
   display: 'swap',
   variable: '--font-inter',
   preload: true,
-  fallback: ['system-ui', 'arial'],
+  adjustFontFallback: true, // Prevents layout shift
 })
 
 const outfit = Outfit({
@@ -23,7 +23,7 @@ const outfit = Outfit({
   display: 'swap',
   variable: '--font-outfit',
   preload: true,
-  fallback: ['Georgia', 'serif'],
+  adjustFontFallback: true, // Prevents layout shift
 })
 
 export const metadata: Metadata = {
@@ -99,11 +99,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable} ${outfit.variable}`}>
       <head>
-        {/* Preconnect to external origins */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        {/* Preconnect to critical origins */}
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
-        {/* Preloads handled by Next.js Image component priority={true} */}
+
 
         {/* Additional SEO meta tags */}
         <meta name="geo.region" content="US-AZ" />

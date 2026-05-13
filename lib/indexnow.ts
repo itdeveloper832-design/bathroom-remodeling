@@ -1,6 +1,6 @@
 import axios from "axios";
 import { siteConfig } from "./site-config";
-import sitemap from "@/app/sitemap";
+
 
 const INDEXNOW_API_URL = "https://api.indexnow.org/indexnow";
 const API_KEY = "82d2e4a5c3f04f53a18605d9cb430c1a";
@@ -69,27 +69,4 @@ export async function submitToIndexNow(urls: string | string[], retry = true): P
   }
 }
 
-/**
- * Fetches all URLs from the sitemap and submits them to IndexNow.
- * Can be called from a daily cron job.
- */
-export async function submitSitemapToIndexNow(): Promise<boolean> {
-  try {
-    console.log("[IndexNow] Starting sitemap submission...");
-    const sitemapEntries = sitemap();
-    const urls = sitemapEntries.map(entry => entry.url);
-    
-    // Batch in groups of 100
-    let success = true;
-    for (let i = 0; i < urls.length; i += 100) {
-      const batch = urls.slice(i, i + 100);
-      const batchSuccess = await submitToIndexNow(batch);
-      if (!batchSuccess) success = false;
-    }
-    
-    return success;
-  } catch (error: any) {
-    console.error("[IndexNow] Sitemap submission error:", error.message);
-    return false;
-  }
-}
+

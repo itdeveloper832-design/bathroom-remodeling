@@ -279,37 +279,54 @@ export default function AboutPage() {
                 {
                   award: "Verified NARI Member",
                   issuer: "National Association of the Remodeling Industry",
-                  year: "Member ID #82910"
+                  year: "Member ID #82910",
+                  icon: <Award className="w-8 h-8 text-primary mx-auto mb-4" />
                 },
                 {
                   award: "BBB A+ Accredited",
                   issuer: "Better Business Bureau",
-                  year: "Accredited since 2018"
+                  year: "Accredited since 2018",
+                  img: "/images/badges/bbb-badges.png"
                 },
                 {
-                  award: "Google Guaranteed",
-                  issuer: "Local Services Ads",
-                  year: "Verified Business"
+                  award: "Nextdoor Favorite",
+                  issuer: "Neighborhood Awards",
+                  year: "2024 Winner",
+                  img: "/images/badges/nextdoor-badges.png"
+                },
+                {
+                  award: "Yelp Top Rated",
+                  issuer: "Client Reviews",
+                  year: "4.9/5.0 Rating",
+                  img: "/images/badges/yelp-badges.png"
+                },
+                {
+                  award: "Chamber Member",
+                  issuer: "Chandler Chamber",
+                  year: "Active Member",
+                  img: "/images/badges/chamber-badges.png"
                 },
                 {
                   award: "Licensed & Insured",
                   issuer: "Arizona ROC",
-                  year: siteConfig.license
-                },
-                {
-                  award: "5-Star Top Rated",
-                  issuer: "Google Reviews",
-                  year: "4.9/5.0 Rating"
-                },
-                {
-                  award: "Schluter Certified",
-                  issuer: "Waterproofing Specialist",
-                  year: "Systems Professional"
+                  year: siteConfig.license,
+                  icon: <Shield className="w-8 h-8 text-primary mx-auto mb-4" />
                 }
               ].map((recognition, index) => (
-
-                <div key={index} className="bg-card border border-border rounded-xl p-8 text-center">
-                  <Award className="w-8 h-8 text-primary mx-auto mb-4" />
+                <div key={index} className="bg-card border border-border rounded-xl p-8 text-center flex flex-col items-center justify-center">
+                  {recognition.img ? (
+                    <div className="relative h-16 w-full mb-4">
+                      <Image 
+                        src={recognition.img} 
+                        alt={recognition.award} 
+                        fill 
+                        className="object-contain"
+                        sizes="200px"
+                      />
+                    </div>
+                  ) : (
+                    recognition.icon
+                  )}
                   <h3 className="font-serif font-semibold text-foreground mb-2">
                     {recognition.award}
                   </h3>
@@ -321,6 +338,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               ))}
+
             </div>
 
             {/* Trust Badges */}

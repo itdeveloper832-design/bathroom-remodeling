@@ -9,26 +9,26 @@ export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
   const trustLinks = [
     {
       name: "Better Business Bureau",
-      href: "#",
-      img: "/bbb-badge.webp",
+      href: "https://www.bbb.org/",
+      img: "/images/badges/bbb-badges.png",
       label: "Accredited Business",
     },
     {
       name: "Yelp Ratings",
-      href: "#",
-      img: "/yelp-badge.webp",
+      href: "https://www.yelp.com/",
+      img: "/images/badges/yelp-badges.png",
       label: "5-Star Rated",
     },
     {
       name: "Nextdoor Neighborhood Favorite",
-      href: "#",
-      img: "/nextdoor-badge.webp",
+      href: "https://nextdoor.com/",
+      img: "/images/badges/nextdoor-badges.png",
       label: "Neighborhood Favorite",
     },
     {
       name: "Chandler Chamber of Commerce",
-      href: "#",
-      img: "/chamber-badge.webp",
+      href: "https://www.chandlerchamber.com/",
+      img: "/images/badges/chamber-badges.png",
       label: `${cityName} Chamber`,
     },
   ];

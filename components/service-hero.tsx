@@ -32,7 +32,10 @@ export default function ServiceHero({
           priority
           sizes="100vw"
           className="object-cover"
-          quality={80}
+          quality={90}
+          fetchPriority="high"
+          decoding="sync"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
       </div>

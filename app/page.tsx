@@ -112,22 +112,24 @@ export default function HomePage() {
       <Header />
       <main id="main-content" role="main">
         <Hero />
-        <LocalTrust cityName="Chandler" />
-        <AboutPreview />
-        <ServicesGrid />
-        <WhyChooseUs />
-        <BathroomSection />
-        <ProcessSection />
-        <ChandlerExpertise />
-        <ServiceAreas />
-        <Financing />
-        <ComparisonBenefits />
-        <FAQ />
-        <BlogPreview />
-        <Testimonials />
-        <GalleryPreview />
-        <ContactSection />
-        <FinalCTA />
+        <div className="content-visibility-auto">
+          <LocalTrust cityName="Chandler" />
+          <AboutPreview />
+          <ServicesGrid />
+          <WhyChooseUs />
+          <BathroomSection />
+          <ProcessSection />
+          <ChandlerExpertise />
+          <ServiceAreas />
+          <Financing />
+          <ComparisonBenefits />
+          <FAQ />
+          <BlogPreview />
+          <Testimonials />
+          <GalleryPreview />
+          <ContactSection />
+          <FinalCTA />
+        </div>
       </main>
       <Footer />
     </>

@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const isExport = process.env.NEXT_OUTPUT?.trim() === 'export' || true; // Default to export for cPanel
 console.log('Next.js Build Mode:', isExport ? 'export' : 'standalone');
 
@@ -39,11 +40,32 @@ const nextConfig = {
       'lucide-react',
       'date-fns',
       '@radix-ui/react-accordion',
+      '@radix-ui/react-alert-dialog',
+      '@radix-ui/react-aspect-ratio',
+      '@radix-ui/react-avatar',
+      '@radix-ui/react-checkbox',
+      '@radix-ui/react-collapsible',
+      '@radix-ui/react-context-menu',
       '@radix-ui/react-dialog',
       '@radix-ui/react-dropdown-menu',
+      '@radix-ui/react-hover-card',
+      '@radix-ui/react-label',
+      '@radix-ui/react-menubar',
+      '@radix-ui/react-navigation-menu',
+      '@radix-ui/react-popover',
+      '@radix-ui/react-progress',
+      '@radix-ui/react-radio-group',
+      '@radix-ui/react-scroll-area',
       '@radix-ui/react-select',
+      '@radix-ui/react-separator',
+      '@radix-ui/react-slider',
+      '@radix-ui/react-slot',
+      '@radix-ui/react-switch',
       '@radix-ui/react-tabs',
       '@radix-ui/react-toast',
+      '@radix-ui/react-toggle',
+      '@radix-ui/react-toggle-group',
+      '@radix-ui/react-tooltip',
     ],
   },
   transpilePackages: ['firebase', '@firebase/app', 'firebase/firestore', '@firebase/auth', '@firebase/component', '@firebase/util'],
@@ -67,20 +89,47 @@ const nextConfig = {
   webpack(config, { dev, isServer }) {
     if (!dev && !isServer) {
       config.optimization.splitChunks = {
-        ...config.optimization.splitChunks,
+        chunks: 'all',
+        maxInitialRequests: 25,
+        minSize: 20000,
         cacheGroups: {
-          ...config.optimization.splitChunks?.cacheGroups,
-          reactVendor: {
-            test: /[\\/]node_modules[\\/](react|react-dom|scheduler)[\\/]/,
-            name: 'react-vendor',
+          default: false,
+          vendors: false,
+          framework: {
             chunks: 'all',
-            priority: 30,
+            name: 'framework',
+            test: /(?<!node_modules.*)[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-subscription)[\\/]/,
+            priority: 40,
+            enforce: true,
           },
-          radixVendor: {
-            test: /[\\/]node_modules[\\/]@radix-ui[\\/]/,
-            name: 'radix-vendor',
-            chunks: 'all',
+          lib: {
+            test(module) {
+              return module.size() > 160000 && /node_modules[\\/]/.test(module.identifier());
+            },
+            name(module) {
+              const hash = crypto.createHash('sha1');
+              hash.update(module.identifier());
+              return hash.digest('hex').substring(0, 8);
+            },
+            priority: 30,
+            minChunks: 1,
+            reuseExistingChunk: true,
+          },
+          commons: {
+            name: 'commons',
+            minChunks: 2,
             priority: 20,
+          },
+          shared: {
+            name(module, chunks) {
+              return crypto
+                .createHash('sha1')
+                .update(chunks.reduce((acc, chunk) => acc + chunk.name, ''))
+                .digest('hex') + '-shared';
+            },
+            priority: 10,
+            minChunks: 2,
+            reuseExistingChunk: true,
           },
         },
       };

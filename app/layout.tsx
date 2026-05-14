@@ -100,9 +100,19 @@ export default function RootLayout({
     <html lang="en" className={`scroll-smooth ${inter.variable} ${outfit.variable}`}>
       <head>
         {/* Preconnect to critical origins */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
+        {/* Preload critical LCP image */}
+        <link 
+          rel="preload" 
+          as="image" 
+          href="/images/optimized/photo-1620626011761-996317b8d101.webp" 
+          type="image/webp" 
+          fetchPriority="high"
+        />
 
         {/* Additional SEO meta tags */}
         <meta name="geo.region" content="US-AZ" />

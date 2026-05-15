@@ -4,12 +4,12 @@ import { bathroomServices } from "@/lib/bathroom-services";
 
 export default function AreaInterlinking() {
   const services = [
-    { name: "Kitchen Remodeling", href: "/kitchen-remodeling-chandler-az/", description: "Custom kitchens with quartz counters and modern cabinetry." },
-    { name: "Bathroom Remodeling", href: "/bathroom-remodeling-chandler-az/", description: "Luxury bath renovations and tub-to-shower conversions." },
-    { name: "Flooring Installation", href: "/flooring-installation-chandler/", description: "Desert-ready tile and luxury vinyl plank flooring." },
-    { name: "Roofing Services", href: "/roofing-chandler-az/", description: "Professional tile R&R and leak repairs for Chandler homes." },
-    { name: "Painting Contractors", href: "/painting-contractors-chandler/", description: "Premium interior and exterior painting services." },
-    { name: "Home Renovations", href: "/home-renovation-chandler-az/", description: "Whole-house transformations and open-concept designs." },
+    { name: "Bathroom Remodeling", href: "/bathroom-remodeling-chandler-az/", description: "Luxury bath renovations and complete bathroom transformations." },
+    { name: "Master Bath Remodel", href: "/master-bathroom-remodel/", description: "Create a spa-like retreat with high-end fixtures and finishes." },
+    { name: "Tub-to-Shower", href: "/tub-to-shower-conversion/", description: "Modernize your space by converting unused tubs into walk-in showers." },
+    { name: "Shower Remodeling", href: "/shower-remodeling/", description: "Custom tile work, frameless glass, and modern shower solutions." },
+    { name: "Vanity Installation", href: "/bathroom-vanity-installation/", description: "Update your bathroom with custom vanities and stone countertops." },
+    { name: "Small Bath Remodel", href: "/small-bathroom-remodeling/", description: "Maximize space and style in guest baths and powder rooms." },
   ];
 
   return (
@@ -21,7 +21,7 @@ export default function AreaInterlinking() {
               Our Local Expertise in Chandler
             </h2>
             <p className="text-muted-foreground text-lg">
-              Comprehensive remodeling solutions for every East Valley home.
+              Specialized bathroom remodeling solutions for every East Valley home.
             </p>
           </div>
           

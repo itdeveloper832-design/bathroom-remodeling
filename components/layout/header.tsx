@@ -54,12 +54,12 @@ export function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+            <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
               {siteConfig.navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-lg font-bold text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1"
+                  className="text-sm font-semibold text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1"
                 >
                   {item.name}
                 </Link>
@@ -68,7 +68,7 @@ export function Header() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <Button asChild className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-8 py-6 text-base font-bold">
+              <Button asChild className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-6 py-4 text-sm font-semibold">
                 <Link href="/contact/">Free Estimate</Link>
               </Button>
             </div>

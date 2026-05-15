@@ -34,10 +34,9 @@ export const siteConfig = {
   },
   navigation: [
     { name: "Home", href: "/" },
-    { name: "Bathroom Remodeling", href: "/bathroom-remodeling-chandler-az/" },
-    { name: "Tub to Shower", href: "/tub-to-shower-conversion/" },
-    { name: "Shower Remodeling", href: "/shower-remodeling/" },
-    { name: "Master Bath", href: "/master-bathroom-remodel/" },
+    { name: "About", href: "/about/" },
+    { name: "Services", href: "/services/" },
+    { name: "Blog", href: "/blog/" },
     { name: "Contact", href: "/contact/" },
   ],
   serviceAreas: [

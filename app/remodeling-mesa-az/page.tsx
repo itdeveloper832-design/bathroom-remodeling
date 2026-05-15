@@ -23,11 +23,11 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Home Remodeling Mesa AZ | Kitchen & Bath Renovations",
-  description: "Expert home remodeling services in Mesa, AZ. Specializing in kitchen renovations, bathroom remodels, and whole-house transformations. Licensed & Insured. Free quotes!",
+  title: "Bathroom Remodeling Mesa AZ | Luxury Bath Renovations",
+  description: "Expert bathroom remodeling services in Mesa, AZ. Specializing in luxury master bath renovations, walk-in showers, and tub-to-shower conversions. Licensed & Insured. Free quotes!",
   openGraph: {
-    title: "Home Remodeling Mesa AZ | Kitchen & Bath Renovations",
-    description: "Transform your Mesa home with the East Valley's trusted remodeling team. Quality kitchen, bath, and home renovations. Free estimates!",
+    title: "Bathroom Remodeling Mesa AZ | Luxury Bath Renovations",
+    description: "Transform your Mesa home with the East Valley's trusted bathroom remodelers. Quality master bath and shower renovations. Free estimates!",
     url: `${siteConfig.url}/remodeling-mesa-az/`,
     type: "website",
   },
@@ -38,22 +38,22 @@ export const metadata: Metadata = {
 
 const mesaFaqs = [
   {
-    question: "Do you offer full home remodeling in Mesa, AZ?",
+    question: "Do you offer bathroom remodeling in Mesa, AZ?",
     answer:
-      "Yes! We are licensed general contractors providing complete home renovations, including kitchen and bathroom remodeling, flooring, painting, and structural changes across Mesa and the East Valley.",
+      "Yes! We are licensed contractors providing complete bathroom renovations, including master bath remodels, walk-in shower installations, and tub-to-shower conversions across Mesa and the East Valley.",
   },
   {
-    question: "How much does it cost to remodel a kitchen or bath in Mesa?",
+    question: "How much does it cost to remodel a bathroom in Mesa?",
     answer:
-      "Kitchen remodels in Mesa typically range from $15,000 to $50,000+, while bathrooms range from $8,000 to $35,000+. We provide free, itemized estimates tailored to your specific project needs.",
+      "Bathroom remodels in Mesa typically range from $8,000 to $35,000+. We provide free, itemized estimates tailored to your specific project needs.",
   },
   {
-    question: "How long do most remodeling projects take?",
+    question: "How long do most bathroom remodeling projects take in Mesa?",
     answer:
-      "Bathroom remodels usually take 2-4 weeks, kitchens 4-8 weeks, and full home renovations 3-6 months. We provide a firm schedule before any construction begins.",
+      "A standard bathroom remodel usually takes 2-3 weeks, while a luxury master bathroom transformation may take 3-4 weeks. We provide a firm schedule before any construction begins.",
   },
   {
-    question: "Are you licensed and insured in Mesa?",
+    question: "Are you licensed and insured bathroom remodelers in Mesa?",
     answer:
       "Yes. We are a licensed Arizona contractor serving Mesa homeowners with full insurance coverage and a 2-year workmanship warranty on all projects.",
   },
@@ -61,22 +61,22 @@ const mesaFaqs = [
 
 const services = [
   {
-    title: "Kitchen Remodeling",
-    href: "/kitchen-remodeling-chandler-az/",
-    icon: ChefHat,
-    description: "Custom cabinetry, quartz countertops, and open-concept designs tailored for your Mesa home.",
-  },
-  {
-    title: "Bathroom Remodeling",
-    href: "/bathroom-remodeling-chandler-az/",
+    title: "Master Bath Remodel",
+    href: "/master-bathroom-remodel/",
     icon: Bath,
-    description: "Luxury master bath renovations, walk-in showers, and tub-to-shower conversions with premium tile.",
+    description: "Luxury master suite transformations with freestanding tubs, dual vanities, and premium tile designs.",
   },
   {
-    title: "Whole-Home Renovation",
-    href: "/home-renovation-chandler-az/",
-    icon: Home,
-    description: "Complete interior transformations, structural wall removal, and modern open floor plans.",
+    title: "Shower Remodeling",
+    href: "/shower-remodeling/",
+    icon: Bath,
+    description: "Expert walk-in shower installations, frameless glass enclosures, and modern waterproof systems.",
+  },
+  {
+    title: "Tub to Shower",
+    href: "/tub-to-shower-conversion/",
+    icon: Bath,
+    description: "The most popular Mesa upgrade: converting outdated garden tubs into spacious, modern walk-in showers.",
   },
 ];
 
@@ -108,21 +108,21 @@ export default function MesaRemodelingPage() {
   return (
     <>
       <ServiceSchema
-        serviceName="Home Remodeling in Mesa, Arizona"
-        serviceDescription="Professional home, kitchen, and bathroom remodeling services in Mesa, AZ. Licensed general contractors specializing in luxury renovations."
+        serviceName="Bathroom Remodeling in Mesa, Arizona"
+        serviceDescription="Professional bathroom remodeling services in Mesa, AZ. Licensed general contractors specializing in luxury master baths and shower renovations."
         serviceUrl={`${siteConfig.url}/remodeling-mesa-az/`}
       />
       <FAQSchema faqs={mesaFaqs} />
       <Header />
       <main>
         <ServiceHero
-          title="Expert Home Remodeling in Mesa, AZ"
-          subtitle="Kitchen, Bath & Whole-House Renovations"
-          description="Transform your living space with Mesa's trusted remodeling experts. From modern kitchen redesigns to luxury bathroom suites and complete home renovations, we deliver quality craftsmanship and a stress-free experience."
+          title="Expert Bathroom Remodeling in Mesa, AZ"
+          subtitle="Luxury Master Baths & Shower Conversions"
+          description="Transform your bathroom with Mesa's trusted remodeling experts. From modern shower redesigns to luxury master suites, we deliver quality craftsmanship and a stress-free experience."
           image="/images/optimized/photo-1600585154340-be6161a56a0c.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
-            { name: "Remodeling Mesa AZ", url: `${siteConfig.url}/remodeling-mesa-az/` },
+            { name: "Bathroom Remodeling Mesa AZ", url: `${siteConfig.url}/remodeling-mesa-az/` },
           ]}
         />
 
@@ -130,13 +130,13 @@ export default function MesaRemodelingPage() {
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-6">
-              Premier Remodeling Contractors Serving Mesa
+              Premier Bathroom Remodeling Contractors Serving Mesa
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              At ARZ Home Remodeling, we understand that your home is your most significant investment. 
+              At ARZ Remodeling, we understand that your bathroom is a vital part of your home. 
               Our team of licensed professionals is dedicated to providing high-quality 
-              <strong className="text-foreground"> home remodeling in Mesa, AZ</strong>. 
-              Whether you're looking to open up your kitchen layout or transform an outdated bathroom 
+              <strong className="text-foreground"> bathroom remodeling in Mesa, AZ</strong>. 
+              Whether you're looking to upgrade a small guest bath or transform an outdated master bathroom 
               into a spa-like retreat, we bring your vision to life with precision and care.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -217,7 +217,7 @@ export default function MesaRemodelingPage() {
         <Testimonials />
         <ContactSection />
         <ServiceCTA
-          title="Ready to Start Your Mesa Remodel?"
+          title="Ready to Start Your Mesa Bathroom Remodel?"
           description="Contact us today for a free, no-obligation consultation and estimate."
         />
       </main>

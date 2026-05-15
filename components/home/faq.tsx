@@ -57,7 +57,7 @@ export default function FAQ() {
               Remodeling FAQs — Chandler, AZ
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Common questions about home remodeling, kitchen renovations, and bathroom remodeling in Chandler, Arizona.
+              Common questions about bathroom remodeling, shower upgrades, and tub-to-shower conversions in Chandler, Arizona.
             </p>
           </div>
 

@@ -24,7 +24,7 @@ export default function ChandlerExpertise() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <span><strong>Kitchen Climate Control:</strong> Custom cabinetry designed for Arizona&apos;s low humidity to prevent warping.</span>
+                  <span><strong>Moisture-Ready Vanities:</strong> Custom cabinetry and sealants designed for bathroom humidity and high usage.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
@@ -44,9 +44,9 @@ export default function ChandlerExpertise() {
         <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
           <div className="font-serif text-2xl font-semibold text-foreground text-center mb-8">Expert Remodeling Services in Chandler</div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/kitchen-remodeling/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-base m-0">Kitchen Remodeling</h3>
-              <p className="text-muted-foreground text-sm mt-1">Custom cabinets, quartz islands, open-concept designs</p>
+            <Link href="/bathroom-vanity-installation/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-base m-0">Vanity Installation</h3>
+              <p className="text-muted-foreground text-sm mt-1">Custom cabinets and stone countertops for bathrooms</p>
             </Link>
             <Link href="/shower-remodeling/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-base m-0">Walk-In Showers</h3>
@@ -60,13 +60,13 @@ export default function ChandlerExpertise() {
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-base m-0">Master Bathroom Remodel</h3>
               <p className="text-muted-foreground text-sm mt-1">Full-scope master suite transformations</p>
             </Link>
-            <Link href="/cabinet-countertop-installation/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-base m-0">Cabinets & Countertops</h3>
-              <p className="text-muted-foreground text-sm mt-1">Premium storage and surface solutions</p>
+            <Link href="/bathroom-tile-installation/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-base m-0">Bathroom Tile</h3>
+              <p className="text-muted-foreground text-sm mt-1">Expert tile work for floors, walls, and showers</p>
             </Link>
-            <Link href="/services/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-base m-0">Full Home Renovation</h3>
-              <p className="text-muted-foreground text-sm mt-1">Complete interior modernization projects</p>
+            <Link href="/small-bathroom-remodeling/" className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group">
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-base m-0">Small Bath Remodel</h3>
+              <p className="text-muted-foreground text-sm mt-1">Maximize space in guest baths and powder rooms</p>
             </Link>
           </div>
         </div>

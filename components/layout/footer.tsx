@@ -28,8 +28,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
-              Top-rated home, kitchen, and bathroom remodeling in Chandler, Arizona.
-              {siteConfig.license && ` ${siteConfig.license} • `} Transforming East Valley homes since 2010.
+              Top-rated bathroom remodeling in Chandler, Arizona.
+              {siteConfig.license && ` ${siteConfig.license} • `} Expert master bath renovations and shower upgrades since 2010.
             </p>
 
             <div className="flex gap-3" role="list" aria-label="Social media links">
@@ -39,7 +39,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Follow ARZ Home Remodeling on Facebook"
+                  aria-label="Follow ARZ Remodeling on Facebook"
                   role="listitem"
                 >
                   <Facebook className="w-5 h-5" aria-hidden="true" />
@@ -51,7 +51,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Follow ARZ Home Remodeling on Instagram"
+                  aria-label="Follow ARZ Remodeling on Instagram"
                   role="listitem"
                 >
                   <Instagram className="w-5 h-5" aria-hidden="true" />
@@ -63,7 +63,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Watch our remodeling projects on YouTube"
+                  aria-label="Watch our bathroom remodeling projects on YouTube"
                   role="listitem"
                 >
                   <Youtube className="w-5 h-5" aria-hidden="true" />
@@ -75,7 +75,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Connect with ARZ Home Remodeling on LinkedIn"
+                  aria-label="Connect with ARZ Remodeling on LinkedIn"
                   role="listitem"
                 >
                   <Linkedin className="w-5 h-5" aria-hidden="true" />
@@ -86,16 +86,16 @@ export function Footer() {
 
           {/* Services Column */}
           <nav aria-label="Footer services navigation">
-            <h3 className="font-serif text-xl font-semibold mb-6 text-background">Core Services</h3>
+            <h3 className="font-serif text-xl font-semibold mb-6 text-background">Bathroom Services</h3>
             <ul className="space-y-3">
               {[
-                { href: "/kitchen-remodeling-chandler-az/", label: "Kitchen Remodeling Chandler" },
                 { href: "/bathroom-remodeling-chandler-az/", label: "Bathroom Remodeling Chandler" },
-                { href: "/bathroom-remodel-cost-chandler/", label: "Bathroom Remodeling Cost" },
-                { href: "/home-renovation-chandler-az/", label: "Full Home Renovations" },
-                { href: "/flooring-installation-chandler/", label: "Flooring Installation" },
-                { href: "/roofing-chandler-az/", label: "Roofing Services" },
-                { href: "/painting-contractors-chandler/", label: "Painting Contractors" },
+                { href: "/master-bathroom-remodel/", label: "Master Bathroom Remodel" },
+                { href: "/shower-remodeling/", label: "Shower Remodeling Chandler" },
+                { href: "/tub-to-shower-conversion/", label: "Tub-to-Shower Conversion" },
+                { href: "/bathroom-remodel-cost-chandler/", label: "Bathroom Remodel Cost" },
+                { href: "/small-bathroom-remodeling/", label: "Small Bathroom Remodeling" },
+                { href: "/bathroom-tile-installation/", label: "Bathroom Tile Installation" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link

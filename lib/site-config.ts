@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "ARZ Home Remodeling",
   owner: "Alex Rivers",
-  tagline: "Premium Home Remodeling Services",
-  description: "Professional bathroom and kitchen remodeling services in Chandler, Arizona. Top-rated home remodeling contractors specializing in luxury renovations.",
+  tagline: "Premium Bathroom Remodeling Services",
+  description: "Top-rated bathroom remodeling services in Chandler, Arizona. Expert bathroom remodeling contractors specializing in luxury master baths, showers, and tub conversions.",
   url: "https://arzhomeremodeling.com",
   phone: "+14803065591",
   email: "sales@arzhomeremodeling.com",

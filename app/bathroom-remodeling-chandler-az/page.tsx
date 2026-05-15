@@ -225,7 +225,7 @@ export default function ChandlerBathroomRemodelingPage() {
               From top-tier walk-in showers to precise tile work, we deliver results that blend durability with modern aesthetics. We offer transparent, itemized quotes to ensure you get exceptional value for your investment. If you've been searching for a reliable <strong>bathroom contractor in Chandler, AZ</strong> or professional <strong>bath remodeling services in Chandler, AZ</strong>, our team is here to help. You can also view our <Link href='/bathroom-remodel-cost-chandler/' className='text-primary hover:underline font-medium'>detailed pricing guide</Link> for current 2026 rates.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              As a leading <strong>bath remodeling contractor in Chandler, AZ</strong>, we understand that every project is unique. Our <strong>bathroom remodelers in Chandler, AZ</strong> are skilled in handling everything from simple updates to complex structural changes, ensuring your new space meets all local building codes. If your project involves adjacent rooms, we also offer <Link href='/kitchen-remodeling-chandler-az/' className='text-primary hover:underline font-medium'>kitchen remodeling services</Link> to ensure a cohesive home aesthetic.
+              As a leading <strong>bath remodeling contractor in Chandler, AZ</strong>, we understand that every project is unique. Our <strong>bathroom remodelers in Chandler, AZ</strong> are skilled in handling everything from simple updates to complex structural changes, ensuring your new space meets all local building codes and exceeds your expectations.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">

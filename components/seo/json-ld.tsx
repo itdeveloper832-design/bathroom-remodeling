@@ -18,14 +18,15 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       url: siteConfig.url,
     },
     knowsAbout: [
-      "Home Remodeling",
-      "Kitchen Remodeling",
       "Bathroom Remodeling",
       "Shower Remodeling",
       "Bathtub Installation",
+      "Tub to Shower Conversion",
+      "Master Bathroom Remodeling",
+      "Small Bathroom Remodeling",
       "Bathroom Tile",
-      "Kitchen Cabinets",
-      "Countertop Installation"
+      "Vanity Installation",
+      "Bathroom Flooring"
     ],
     url: siteConfig.url,
     telephone: siteConfig.phone,
@@ -72,30 +73,14 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
     })),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Home Remodeling Services in Chandler",
+      name: "Bathroom Remodeling Services in Chandler",
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Kitchen Remodeling",
-            description: "Custom kitchen renovations in Chandler including cabinetry, quartz countertops, and open-concept floor plans.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Home Remodeling",
-            description: "Complete home renovation services, structural changes, and interior modernization in the East Valley.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
             name: "Bathroom Remodeling",
-            description: "Complete bathroom renovation services including custom showers, tub conversions, vanities, and more.",
+            description: "Complete bathroom renovation services including custom showers, tub conversions, vanities, and more in Chandler AZ.",
           },
         },
         {

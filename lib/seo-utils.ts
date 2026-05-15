@@ -84,7 +84,7 @@ export function getRouteFrequency(route: string): 'always' | 'hourly' | 'daily' 
  * Gets the last modified date.
  */
 export function getRouteLastMod(route: string): Date {
-  return new Date();
+  return new Date('2026-05-05');
 }
 
 /**

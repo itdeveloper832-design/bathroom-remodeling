@@ -33,11 +33,11 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
 
 
 export const metadata: Metadata = {
-  title: "Top-Rated Home, Kitchen & Bathroom Remodeling in Chandler, AZ",
-  description: "Expert home, kitchen, and bathroom remodeling in Chandler, AZ. ROC Licensed contractors delivering premium renovations from Ocotillo to Sun Lakes. Free Quote!",
+  title: "Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling",
+  description: "Top-rated bathroom remodeling in Chandler, AZ. ROC Licensed contractors specializing in luxury bathroom renovations, walk-in showers, and tub-to-shower conversions. Free Quote!",
   openGraph: {
-    title: "Top-Rated Home, Kitchen & Bathroom Remodeling in Chandler, AZ",
-    description: "Expert home, kitchen, and bathroom remodeling in Chandler, AZ. ROC Licensed contractors delivering premium renovations from Ocotillo to Sun Lakes. Free Quote!",
+    title: "Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling",
+    description: "Expert bathroom remodeling in Chandler, AZ. Licensed contractors delivering premium renovations from Ocotillo to Sun Lakes. Free Quote!",
     type: "website",
   },
 
@@ -48,14 +48,9 @@ export const metadata: Metadata = {
 
 const homeFaqs = [
   {
-    question: "Do you offer complete home and kitchen remodeling in Chandler, AZ?",
-    answer:
-      "Yes! In addition to our award-winning bathroom services, we are licensed general contractors providing complete <strong>kitchen remodeling in Chandler AZ</strong> and full home renovations. We manage all trades, from custom cabinetry and quartz countertops to flooring and structural changes.",
-  },
-  {
     question: "What types of bathroom remodeling do you offer in Chandler, AZ?",
     answer:
-      "We offer complete <strong>bathroom remodeling in Chandler AZ</strong> including full renovations, master bath remodels, vanity installation, and tile work. Our expert <strong>bathroom remodelers in Chandler AZ</strong> handle every trade to ensure your project is completed on time and within budget.",
+      "We offer complete <strong>bathroom remodeling in Chandler AZ</strong> including full renovations, master bath remodels, vanity installation, and custom tile work. Our expert <strong>bathroom remodelers in Chandler AZ</strong> handle every trade to ensure your project is completed on time and within budget.",
   },
   {
     question: "How much does a bathroom remodel cost in Chandler, AZ?",
@@ -63,7 +58,7 @@ const homeFaqs = [
       "A typical bathroom remodel chandler az cost ranges from $4,500 for a guest bath update to $45,000+ for a full master bath renovation. Tub-to-shower conversions run $6,000–$13,000. We provide free, itemized written estimates with competitive bathroom remodel chandler az prices.",
   },
   {
-    question: "Are you licensed remodeling contractors in Chandler, AZ?",
+    question: "Are you licensed bathroom remodeling contractors in Chandler, AZ?",
     answer:
       "Yes. We are a licensed bathroom remodeling contractor in Chandler serving homeowners across Chandler, Gilbert, Mesa, Tempe, and the East Valley. Every project includes a 2-year workmanship warranty and we pull all required city permits.",
   },
@@ -73,14 +68,14 @@ const homeFaqs = [
       "Yes. Our shower remodeling in Chandler includes walk-in shower installation, frameless glass enclosures, custom tile work, curbless shower conversions, and shower replacement. We use Schluter waterproofing to prevent leaks in Arizona's extreme temperature swings.",
   },
   {
-    question: "How long does shower remodeling take in Chandler?",
+    question: "How long does a bathroom remodel take in Chandler?",
     answer:
-      "A shower-only remodel in Chandler typically takes 1–2 weeks. A full shower replacement with custom tile and frameless glass takes 2–3 weeks. We provide a firm written timeline before any work starts.",
+      "A standard bathroom remodel in Chandler takes about 2 to 3 weeks. A master bathroom transformation may take 3 to 4 weeks. We provide a firm written timeline before any work starts to minimize disruption to your home.",
   },
   {
     question: "Do you offer bathtub remodeling and replacement in Chandler, AZ?",
     answer:
-      "Yes. Our bathtub remodeling services in Chandler include full tub replacement, bathtub-to-shower conversion, soaking tub installation, and jetted tub upgrades. We also specialize in tub-to-shower conversions for unused garden tubs — the most popular service in Chandler homes built 1985–2005.",
+      "Yes. Our bathtub remodeling services in Chandler include full tub replacement, bathtub-to-shower conversion, soaking tub installation, and jetted tub upgrades. We also specialize in tub-to-shower conversions for unused garden tubs — the most popular service in Chandler homes.",
   },
   {
     question: "What is the most popular bath remodel project in Chandler homes?",
@@ -88,14 +83,9 @@ const homeFaqs = [
       "The tub-to-shower conversion is by far the most requested service in Chandler. Most homes built in the 1990s and early 2000s have a garden tub that goes unused. We remove it, waterproof the substrate, and install a modern walk-in shower — adding usable space and strong resale ROI.",
   },
   {
-    question: "Do you provide flooring installation in Chandler and the East Valley?",
+    question: "Do you provide bathroom flooring installation in Chandler?",
     answer:
-      "Yes. We offer professional <strong>flooring installation in Chandler AZ</strong> for the entire home. We specialize in desert-ready materials like Luxury Vinyl Plank (LVP), porcelain tile, and high-quality engineered hardwood that won't warp in our dry climate.",
-  },
-  {
-    question: "Do you offer roofing services in Chandler, AZ?",
-    answer:
-      "Yes. Our <strong>roofing services in Chandler AZ</strong> include tile roof repair, shingle replacement, and 2-layer tile R&R (underlayment replacement). We specialize in monsoon-ready protection and energy-efficient ventilation to help lower your cooling costs.",
+      "Yes. We offer professional <strong>bathroom flooring installation in Chandler AZ</strong>. We specialize in desert-ready materials like porcelain tile and high-quality waterproof flooring that won't warp in our dry climate.",
   },
   {
     question: "What neighborhoods in Chandler do you serve?",

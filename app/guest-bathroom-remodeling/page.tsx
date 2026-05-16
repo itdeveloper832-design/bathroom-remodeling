@@ -17,6 +17,7 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { Users, Layout, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Guest Bathroom Remodeling Chandler AZ | Small Bath Renovations",

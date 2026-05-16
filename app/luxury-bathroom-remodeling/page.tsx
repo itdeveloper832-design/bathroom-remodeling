@@ -17,6 +17,7 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { Crown, Sparkles, Gem } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Luxury Bathroom Remodeling Chandler AZ | High-End Design & Finishes",

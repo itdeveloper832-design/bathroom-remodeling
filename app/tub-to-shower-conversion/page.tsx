@@ -47,7 +47,7 @@ const chandlerLocation = {
 };
 
 const otherServices = bathroomServices
-  .filter(s => s.href !== "/tub-to-shower-conversion")
+  .filter(s => s.href !== "/tub-to-shower-conversion/")
   .slice(0, 3);
 
 export default function TubToShowerConversionPage() {
@@ -143,9 +143,9 @@ export default function TubToShowerConversionPage() {
             <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
               <p className="text-foreground font-medium mb-4">
                 We offer 0% financing on projects over $5,000 — 
-                <a href="/financing/" className="text-primary hover:underline ml-1">
+                <Link href="/financing/" className="text-primary hover:underline ml-1">
                   see our bathroom remodeling financing options
-                </a>.
+                </Link>.
               </p>
             </div>
           </div>

@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/roofing-chandler-az/`,
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function RoofingPage() {

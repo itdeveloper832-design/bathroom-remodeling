@@ -1,4 +1,4 @@
-import { ShowerHead, Bath, Lightbulb, LucideIcon, Droplets, Sparkles, ArrowUpDown, Accessibility, DoorOpen, RefreshCw, ArrowRightLeft, Trash2, TrendingUp, LayoutGrid } from "lucide-react";
+import { ShowerHead, Bath, Lightbulb, LucideIcon, Droplets, Sparkles, ArrowUpDown, Accessibility, DoorOpen, RefreshCw, ArrowRightLeft, Trash2, TrendingUp, LayoutGrid, Users } from "lucide-react";
 
 export type BathroomService = {
   name: string;
@@ -93,24 +93,33 @@ export const bathroomServices: BathroomService[] = [
     icon: Droplets,
   },
   {
-    name: "Handicap Accessible Bathroom",
-    href: "/handicap-accessible-bathroom-chandler/",
-    description:
-      "Safe, ADA-compliant bathroom modifications for seniors and individuals with mobility needs.",
+    name: "Luxury Bathroom Remodeling",
+    href: "/luxury-bathroom-remodeling/",
+    description: "Premium master bath transformations with high-end finishes and custom spa designs.",
+    icon: Sparkles,
+  },
+  {
+    name: "ADA Bathroom Remodeling",
+    href: "/ada-bathroom-remodeling/",
+    description: "Safe, ADA-compliant bathroom modifications for seniors and individuals with mobility needs.",
     icon: Accessibility,
+  },
+  {
+    name: "Guest Bathroom Remodeling",
+    href: "/guest-bathroom-remodeling/",
+    description: "High-impact updates for secondary bathrooms, powder rooms, and guest suites.",
+    icon: Users,
   },
   {
     name: "Small Bathroom Remodeling",
     href: "/small-bathroom-remodeling/",
-    description:
-      "Maximize your small bathroom space with our expert small bathroom remodeling services.",
+    description: "Maximize your small bathroom space with our expert small bathroom remodeling services.",
     icon: LayoutGrid,
   },
   {
     name: "Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
-    description:
-      "Transform your master bath into a luxury retreat with premium features and custom designs.",
+    description: "Transform your master bath into a luxury retreat with premium features and custom designs.",
     icon: Sparkles,
   },
 ];

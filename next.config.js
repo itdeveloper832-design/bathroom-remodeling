@@ -10,6 +10,27 @@ const nextConfig = {
   // Trailing slash ensures static export URLs match canonical tags
   trailingSlash: true,
 
+  // Redirects for legacy/duplicate pages
+  async redirects() {
+    return [
+      {
+        source: '/remodeling-gilbert-az/',
+        destination: '/bathroom-remodeling-gilbert-az/',
+        permanent: true,
+      },
+      {
+        source: '/remodeling-mesa-az/',
+        destination: '/bathroom-remodeling-mesa-az/',
+        permanent: true,
+      },
+      {
+        source: '/remodeling-tempe-az/',
+        destination: '/bathroom-remodeling-tempe-az/',
+        permanent: true,
+      },
+    ];
+  },
+
   // Security & Best Practices
   poweredByHeader: false,
   reactStrictMode: true,

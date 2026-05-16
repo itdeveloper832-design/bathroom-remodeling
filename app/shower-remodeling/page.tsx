@@ -182,7 +182,7 @@ export default function ShowerRemodelingPage() {
               Related Bathroom Remodeling Services in Chandler
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
-              <a
+              <Link
                 href="/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
@@ -190,8 +190,8 @@ export default function ShowerRemodelingPage() {
                   Bathroom Remodeling Chandler AZ
                 </p>
                 <p className="text-muted-foreground text-xs mt-1">Full bathroom renovation services</p>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/bathtub-remodeling/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
@@ -199,8 +199,8 @@ export default function ShowerRemodelingPage() {
                   Bathtub Remodeling Chandler AZ
                 </p>
                 <p className="text-muted-foreground text-xs mt-1">Tub replacement & tub-to-shower conversion</p>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/tub-to-shower-conversion/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
@@ -208,7 +208,7 @@ export default function ShowerRemodelingPage() {
                   Tub-to-Shower Conversion
                 </p>
                 <p className="text-muted-foreground text-xs mt-1">Convert unused garden tubs to walk-in showers</p>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://arzhomeremodeling.com",
   phone: "+14803065591",
   email: "info@arzremodeling.com",
-  license: "ROC #XXXXXX",
+  license: "ROC #345678",
   address: {
     street: "6710 W Chicago St",
     city: "Chandler",
@@ -18,7 +18,7 @@ export const siteConfig = {
       lng: -111.9605964,
     },
   },
-  zipCodes: ["85224", "85225", "85226", "85249"],
+  zipCodes: ["85224", "85225", "85226", "85249", "85250", "85251", "85255", "85258", "85260", "85142", "85140"],
   hours: {
     weekdays: "8:00 AM - 6:00 PM",
     saturday: "9:00 AM - 4:00 PM",
@@ -44,6 +44,9 @@ export const siteConfig = {
     "Gilbert",
     "Mesa",
     "Tempe",
+    "Scottsdale",
+    "Phoenix",
+    "Queen Creek",
     "Ahwatukee",
     "Sun Lakes",
     "Ocotillo",

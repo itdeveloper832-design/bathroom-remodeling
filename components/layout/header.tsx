@@ -43,12 +43,13 @@ export function Header() {
             <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
               <div className="relative h-8 sm:h-9 md:h-10 lg:h-12 w-[112px] sm:w-[126px] md:w-[140px] lg:w-[168px] bg-background/50 rounded" style={{ aspectRatio: '14 / 4' }}>
                 <Image
-                  src="/images/web-log-image.png"
+                  src="/images/web-log-image.webp"
                   alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"
-                  fill
+                  width={168}
+                  height={48}
                   priority
                   fetchPriority="high"
-                  className="object-contain object-left"
+                  className="object-contain object-left w-auto h-8 sm:h-9 md:h-10 lg:h-12"
                 />
               </div>
             </Link>

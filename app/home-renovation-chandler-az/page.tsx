@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/home-renovation-chandler-az/`,
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function HomeRenovationPage() {

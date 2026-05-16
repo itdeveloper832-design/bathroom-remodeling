@@ -89,13 +89,13 @@ export function Footer() {
             <h3 className="font-serif text-xl font-semibold mb-6 text-background">Bathroom Services</h3>
             <ul className="space-y-3">
               {[
-                { href: "/bathroom-remodeling-chandler-az/", label: "Bathroom Remodeling Chandler" },
-                { href: "/master-bathroom-remodel/", label: "Master Bathroom Remodel" },
+                { href: "/luxury-bathroom-remodeling/", label: "Luxury Master Bathrooms" },
+                { href: "/ada-bathroom-remodeling/", label: "ADA & Accessible Design" },
+                { href: "/guest-bathroom-remodeling/", label: "Guest Bath & Powder Rooms" },
                 { href: "/shower-remodeling/", label: "Shower Remodeling Chandler" },
                 { href: "/tub-to-shower-conversion/", label: "Tub-to-Shower Conversion" },
                 { href: "/bathroom-remodel-cost-chandler/", label: "Bathroom Remodel Cost" },
-                { href: "/small-bathroom-remodeling/", label: "Small Bathroom Remodeling" },
-                { href: "/bathroom-tile-installation/", label: "Bathroom Tile Installation" },
+                { href: "/master-bathroom-remodel/", label: "Full Master Remodels" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -114,13 +114,13 @@ export function Footer() {
             <h3 className="font-serif text-xl font-semibold mb-6 text-background">Service Locations</h3>
             <ul className="space-y-3">
               {[
-                { href: "/remodeling-gilbert-az/", label: "Remodeling Gilbert, AZ" },
-                { href: "/remodeling-mesa-az/", label: "Remodeling Mesa, AZ" },
-                { href: "/bathroom-remodeling-areas/ocotillo/", label: "Ocotillo Remodeling" },
-                { href: "/bathroom-remodeling-areas/sun-lakes/", label: "Sun Lakes Remodeling" },
-                { href: "/bathroom-remodeling-areas/fulton-ranch/", label: "Fulton Ranch Remodeling" },
-                { href: "/about/", label: "About Our Company" },
-                { href: "/financing/", label: "Financing Options" },
+                { href: "/bathroom-remodeling-phoenix-az/", label: "Remodeling Phoenix, AZ" },
+                { href: "/bathroom-remodeling-scottsdale-az/", label: "Remodeling Scottsdale, AZ" },
+                { href: "/bathroom-remodeling-gilbert-az/", label: "Remodeling Gilbert, AZ" },
+                { href: "/bathroom-remodeling-mesa-az/", label: "Remodeling Mesa, AZ" },
+                { href: "/bathroom-remodeling-tempe-az/", label: "Remodeling Tempe, AZ" },
+                { href: "/bathroom-remodeling-queen-creek-az/", label: "Remodeling Queen Creek" },
+                { href: "/bathroom-remodeling-ahwatukee-az/", label: "Remodeling Ahwatukee" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link

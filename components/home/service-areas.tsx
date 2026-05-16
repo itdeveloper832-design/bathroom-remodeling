@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
@@ -23,24 +24,25 @@ export default function ServiceAreas() {
             {/* Service Areas Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {[
-                "Chandler",
-                "Gilbert",
-                "Mesa",
-                "Ocotillo",
-                "Dobson Ranch",
-                "Sun Lakes",
-                "Fulton Ranch",
-                "Tempe",
-                "Ahwatukee"
+                { name: "Chandler", href: "/bathroom-remodeling-chandler-az/" },
+                { name: "Gilbert", href: "/bathroom-remodeling-gilbert-az/" },
+                { name: "Mesa", href: "/bathroom-remodeling-mesa-az/" },
+                { name: "Ocotillo", href: "/bathroom-remodeling-ocotillo/" },
+                { name: "Dobson Ranch", href: "/bathroom-remodeling-areas/dobson-ranch/" },
+                { name: "Sun Lakes", href: "/bathroom-remodeling-sun-lakes/" },
+                { name: "Fulton Ranch", href: "/bathroom-remodeling-fulton-ranch/" },
+                { name: "Tempe", href: "/bathroom-remodeling-tempe-az/" },
+                { name: "Ahwatukee", href: "/bathroom-remodeling-ahwatukee-az/" }
               ].map((area, index) => (
-                <div
-                  key={area}
-                  className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 animate-in fade-in slide-in-from-bottom-4"
+                <Link
+                  key={area.name}
+                  href={area.href}
+                  className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 animate-in fade-in slide-in-from-bottom-4 hover:border-primary transition-colors no-underline group"
                   style={{ animationDelay: `${index * 50}ms`, animationFillMode: 'both' }}
                 >
-                  <MapPin className="w-4 h-4 text-primary shrink-0" />
-                  <span className="text-foreground text-sm font-medium">{area}, AZ</span>
-                </div>
+                  <MapPin className="w-4 h-4 text-primary shrink-0 group-hover:scale-110 transition-transform" />
+                  <span className="text-foreground text-sm font-medium">{area.name}, AZ</span>
+                </Link>
               ))}
             </div>
           </div>

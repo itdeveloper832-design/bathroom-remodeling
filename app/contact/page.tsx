@@ -204,7 +204,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
                 { label: "Licensed & Bonded", value: "✓" },
-                { label: "ROC #345678", value: "✓" },
+                { label: siteConfig.license, value: "✓" },
                 { label: "15+ Years", value: "Experienced" },
                 { label: "500+ Projects", value: "Completed" }
               ].map((item, index) => (

@@ -1,5 +1,12 @@
 import type { BlogPost, Category } from "@/lib/types";
-import { defaultBlogPost, secondBlogPost, thirdBlogPost } from "@/lib/seed-blog";
+import { 
+  defaultBlogPost, 
+  secondBlogPost, 
+  thirdBlogPost,
+  kitchenCostPost,
+  flooringTipsPost,
+  remodelingRoiPost
+} from "@/lib/seed-blog";
 import { submitToIndexNow } from "@/lib/indexnow";
 
 function generateSlug(title: string): string {
@@ -11,7 +18,14 @@ function generateSlug(title: string): string {
     .trim();
 }
 
-const basePosts: BlogPost[] = [defaultBlogPost, secondBlogPost, thirdBlogPost].map((post, index) => ({
+const basePosts: BlogPost[] = [
+  defaultBlogPost, 
+  secondBlogPost, 
+  thirdBlogPost,
+  kitchenCostPost,
+  flooringTipsPost,
+  remodelingRoiPost
+].map((post, index) => ({
   id: `post-${index + 1}`,
   title: post.title,
   slug: post.slug,
@@ -25,7 +39,7 @@ const basePosts: BlogPost[] = [defaultBlogPost, secondBlogPost, thirdBlogPost].m
   metaDescription: post.metaDescription,
   keywords: post.tags || [],
   tags: post.tags,
-  readTime: 12,
+  readTime: index === 0 ? 12 : index === 1 ? 8 : index === 2 ? 5 : 10,
   publishedAt: post.publishedAt,
   createdAt: post.createdAt,
   updatedAt: post.updatedAt,
@@ -35,6 +49,9 @@ let inMemoryPosts: BlogPost[] = [...basePosts];
 let inMemoryCategories: Category[] = [
   { id: "cat-1", name: "Bathroom Remodeling", slug: "bathroom-remodeling", description: "Bathroom remodeling guides and advice." },
   { id: "cat-2", name: "Design Trends", slug: "design-trends", description: "Latest design trends and inspiration." },
+  { id: "cat-3", name: "Costs & Budget", slug: "costs-budget", description: "Detailed pricing guides for Chandler bathroom remodels." },
+  { id: "cat-4", name: "Materials", slug: "materials", description: "Expert advice on tile, fixtures, and surfaces." },
+  { id: "cat-5", name: "Home Value", slug: "home-value", description: "ROI analysis and equity-building tips." },
 ];
 
 export async function getPosts(): Promise<BlogPost[]> {

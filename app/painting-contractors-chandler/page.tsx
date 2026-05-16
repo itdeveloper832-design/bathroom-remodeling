@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/painting-contractors-chandler/`,
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function PaintingPage() {

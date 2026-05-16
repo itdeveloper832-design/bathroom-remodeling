@@ -145,7 +145,7 @@ export default function RootLayout({
                 "Bathroom Tile"
               ],
               "url": siteConfig.url,
-              "logo": `${siteConfig.url}/images/web-log-image.png`,
+              "logo": `${siteConfig.url}/images/web-log-image.webp`,
               "image": `${siteConfig.url}/images/hero-bathroom.jpg`,
               "description": siteConfig.description,
               "telephone": siteConfig.phone,

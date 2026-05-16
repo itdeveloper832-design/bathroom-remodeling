@@ -17,6 +17,7 @@ import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Bathtub Remodeling Chandler AZ | Replacement & Upgrades",
@@ -45,7 +46,7 @@ const chandlerLocation = {
 };
 
 const otherServices = bathroomServices
-  .filter(s => s.href !== "/bathtub-remodeling")
+  .filter(s => s.href !== "/bathtub-remodeling/")
   .slice(0, 3);
 
 export default function BathtubRemodelingPage() {
@@ -199,14 +200,13 @@ export default function BathtubRemodelingPage() {
           description="Contact us today for a free consultation and estimate on your new bathing space." 
         />
 
-        {/* INTERNAL LINKING — Step 6 of SEO strategy */}
         <section className="py-12 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-2xl font-semibold text-center mb-6 text-foreground">
               Related Bathroom Services in Chandler
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
-              <a
+              <Link
                 href="/bathroom-remodeling-chandler-az/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
@@ -214,8 +214,8 @@ export default function BathtubRemodelingPage() {
                   Bathroom Remodeling Chandler AZ
                 </p>
                 <p className="text-muted-foreground text-xs mt-1">Full bathroom renovations — all services</p>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/shower-remodeling/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
@@ -223,8 +223,8 @@ export default function BathtubRemodelingPage() {
                   Shower Remodeling in Chandler
                 </p>
                 <p className="text-muted-foreground text-xs mt-1">Walk-in showers, frameless glass, custom tile</p>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/tub-to-shower-conversion/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
@@ -232,7 +232,7 @@ export default function BathtubRemodelingPage() {
                   Tub-to-Shower Conversion
                 </p>
                 <p className="text-muted-foreground text-xs mt-1">Most popular service in Chandler homes</p>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -241,4 +241,3 @@ export default function BathtubRemodelingPage() {
     </>
   );
 }
-

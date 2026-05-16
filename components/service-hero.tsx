@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
+import { BreadcrumbSchema } from "@/components/seo/json-ld";
 
 interface ServiceHeroProps {
   title: string;
@@ -17,12 +18,14 @@ export default function ServiceHero({
   description, 
   subtitle,
   image,
+  breadcrumbs,
   backgroundImage = "/images/optimized/photo-1620626011761-996317b8d101.webp"
 }: ServiceHeroProps) {
   const heroImage = image ?? backgroundImage;
 
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32 md:pt-40 lg:pt-48" aria-label={title}>
+      {breadcrumbs && <BreadcrumbSchema items={breadcrumbs} />}
       {/* Background Image - LCP Optimized */}
       <div className="absolute inset-0 z-0">
         <Image

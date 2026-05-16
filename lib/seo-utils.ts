@@ -47,9 +47,6 @@ export function getRoutePriority(route: string): number {
   
   const highPriority = [
     '/bathroom-remodeling',
-    '/kitchen-remodeling',
-    '/home-renovation',
-    '/services',
     '/bathroom-remodeling-chandler-az',
   ];
   

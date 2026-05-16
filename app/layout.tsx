@@ -136,7 +136,7 @@ export default function RootLayout({
                 "@type": "Person",
                 "name": siteConfig.owner,
                 "jobTitle": "Founder & Owner",
-                "url": siteConfig.url
+                "url": `${siteConfig.url}/about/`
               },
               "knowsAbout": [
                 "Bathroom Remodeling",

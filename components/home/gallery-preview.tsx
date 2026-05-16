@@ -32,7 +32,7 @@ const galleryItems = [
     title: "Spa-Like Retreat in Fulton Ranch",
     category: "Master Bath Upgrade - Completed Dec 2024",
     before: "/images/optimized/photo-1585412727339-54e4bae3bbf9.webp",
-    after: "/images/projects/project-shower.png", // Reusing for now or could generate more
+    after: "/images/optimized/photo-1600607687939-ce8a6c25118c.webp",
   },
 ];
 

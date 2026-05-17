@@ -392,30 +392,42 @@ export function PriceSchema({
   url,
   availability = "InStock",
 }: PriceSchemaProps) {
-  const offerSchema = price
-    ? {
-        "@type": "Offer",
-        priceCurrency,
-        price,
-        availability: `https://schema.org/${availability}`,
-        url: url,
-      }
-    : {
-        "@type": "Offer",
-        priceCurrency,
-        priceRange,
-        availability: `https://schema.org/${availability}`,
-        url: url,
-      };
+  let offerSchema: any = {
+    "@type": "Offer",
+    priceCurrency,
+    availability: `https://schema.org/${availability}`,
+    url: url,
+  };
+
+  if (price) {
+    offerSchema.price = price;
+  } else if (priceRange) {
+    const numbers = priceRange.replace(/[^0-9.-]/g, '').split('-');
+    const lowPrice = numbers[0] || "0";
+    const highPrice = numbers[1] || lowPrice;
+
+    offerSchema = {
+      "@type": "AggregateOffer",
+      priceCurrency,
+      lowPrice,
+      highPrice,
+      offerCount: "1",
+      availability: `https://schema.org/${availability}`,
+      url: url,
+    };
+  } else {
+    offerSchema.price = "0";
+  }
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: serviceName,
-    provider: {
-      "@type": "HomeAndConstructionBusiness",
+    image: `${siteConfig.url}/images/hero-bathroom.jpg`,
+    description: `Professional ${serviceName} by ${siteConfig.name}.`,
+    brand: {
+      "@type": "Brand",
       name: siteConfig.name,
-      url: siteConfig.url,
     },
     offers: offerSchema,
     aggregateRating: {

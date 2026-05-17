@@ -1251,18 +1251,12 @@ const serviceContent: Record<string, ServiceDetail> = {
   }
 };
 
-export function generateStaticParams() {
-  return Object.keys(serviceContent).map((slug) => ({ service: slug }));
-}
 
-export const dynamicParams = false;
-
-export async function generateMetadata({
-  params,
+export async function generateServiceMetadata({
+  serviceSlug,
 }: {
-  params: Promise<{ service: string }>;
+  serviceSlug: string;
 }): Promise<Metadata> {
-  const { service: serviceSlug } = await params;
   const service = serviceMap[serviceSlug];
   const content = serviceContent[serviceSlug];
 
@@ -1293,12 +1287,11 @@ const chandlerLocation = {
   lng: -111.9605964,
 };
 
-export default async function BathroomServicePage({
-  params,
+export async function ServicePageContent({
+  serviceSlug,
 }: {
-  params: Promise<{ service: string }>;
+  serviceSlug: string;
 }) {
-  const { service: serviceSlug } = await params;
   const service = serviceMap[serviceSlug];
   const content = serviceContent[serviceSlug];
 

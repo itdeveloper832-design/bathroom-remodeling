@@ -219,8 +219,10 @@ export default function RootLayout({
                 siteConfig.social.facebook,
                 siteConfig.social.instagram,
                 siteConfig.social.twitter,
-                siteConfig.social.pinterest
-              ]
+                siteConfig.social.pinterest,
+                siteConfig.social.youtube,
+                siteConfig.social.linkedin
+              ].filter(Boolean)
             })
           }}
         />

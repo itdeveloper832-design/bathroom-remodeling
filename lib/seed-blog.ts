@@ -653,3 +653,48 @@ export const defaultGalleryItems = [
     featured: false,
   },
 ];
+
+// Seventh blog post: Hard Water in Arizona
+export const hardWaterPost = {
+  title: "How to Combat East Valley Hard Water in Your New Shower",
+  slug: "combat-east-valley-hard-water-shower",
+  excerpt: "Hard water in Chandler, Gilbert, and Mesa can destroy your shower fixtures and tile. Learn how to protect your bathroom remodel from mineral buildup.",
+  content: `
+# How to Combat East Valley Hard Water in Your New Shower
+
+If you live in the East Valley—whether that's Chandler, Gilbert, or Mesa—you know about our hard water. Our municipal water supply is heavy in calcium, magnesium, and other minerals that leave stubborn white scale on everything they touch. 
+
+When you invest in a beautiful new master bathroom remodel, the last thing you want is for your brand-new fixtures and glass enclosures to look cloudy and aged within months. Here is how ARZ Home Remodeling recommends combatting East Valley hard water.
+
+## 1. Install a Whole-Home Water Softener
+The absolute best defense against hard water is to treat it before it ever reaches your shower head. A high-quality water softener removes the calcium and magnesium ions. This not only protects your shower glass and fixtures but also extends the life of your water heater, washing machine, and dishwasher. We highly recommend factoring a water softener into your overall remodeling budget.
+
+## 2. Choose the Right Fixture Finishes
+Some finishes show water spots much more aggressively than others. 
+- **Avoid:** Polished chrome and shiny black finishes, which highlight every single water droplet that dries on them.
+- **Choose:** Brushed nickel, brushed brass, or matte finishes. These textures naturally hide minor water spotting and are much easier to maintain in an Arizona home.
+
+## 3. Opt for Treated Shower Glass
+If you are installing a frameless glass shower enclosure, specify factory-treated glass (like EnduroShield or ShowerGuard). This treatment seals the microscopic pores in the glass, preventing hard water minerals from etching into the surface. It makes squeegeeing much more effective and dramatically reduces cleaning time.
+
+## 4. Use Large-Format Tile with Epoxy Grout
+Grout is naturally porous and will absorb mineral deposits over time, leading to discoloration.
+- Use large-format porcelain tiles to minimize the total number of grout lines in your shower.
+- Upgrade to epoxy grout or a high-performance urethane grout. Unlike traditional cement grout, these materials are stain-resistant, waterproof, and won't absorb hard water minerals.
+
+## 5. The Daily Squeegee Habit
+Even with treated glass and a water softener, the simplest way to maintain a pristine shower is to squeegee the glass and walls after every use. It takes 30 seconds and prevents the minerals from ever drying onto the surfaces.
+
+Protect your investment! If you're ready to design a beautiful, low-maintenance bathroom that stands up to Arizona's harsh water, contact ARZ Home Remodeling at +14803065591 today.
+  `,
+  author: "Alex Rivers",
+  category: "Maintenance",
+  tags: ["hard water", "shower maintenance", "chandler az", "bathroom care"],
+  featuredImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2574&auto=format&fit=crop",
+  metaTitle: "Combat East Valley Hard Water in Your Shower | ARZ Remodeling",
+  metaDescription: "Learn how to protect your new bathroom remodel from Chandler's hard water. Tips on fixtures, glass treatments, and maintenance to keep your shower pristine.",
+  status: "published" as const,
+  publishedAt: new Date().toISOString(),
+  createdAt: new Date().toISOString(),
+  updatedAt: new Date().toISOString(),
+};

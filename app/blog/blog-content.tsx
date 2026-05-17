@@ -17,7 +17,8 @@ import {
   thirdBlogPost, 
   kitchenCostPost, 
   flooringTipsPost, 
-  remodelingRoiPost 
+  remodelingRoiPost,
+  hardWaterPost
 } from "@/lib/seed-blog";
 
 export default function BlogContent() {
@@ -40,7 +41,8 @@ export default function BlogContent() {
           { ...thirdBlogPost, id: "default-post-3", readTime: 5 },
           { ...kitchenCostPost as any, id: "default-post-4", readTime: 10 },
           { ...flooringTipsPost as any, id: "default-post-5", readTime: 7 },
-          { ...remodelingRoiPost as any, id: "default-post-6", readTime: 9 }
+          { ...remodelingRoiPost as any, id: "default-post-6", readTime: 9 },
+          { ...hardWaterPost as any, id: "default-post-7", readTime: 6 }
         ]
         setPosts(defaultPosts)
       } else {

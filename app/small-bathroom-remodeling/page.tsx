@@ -16,6 +16,7 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Small Bathroom Remodel Chandler AZ | Space-Saving Designs",
@@ -79,6 +80,29 @@ export default function SmallBathroomRemodelingPage() {
           description="Discover how professional small bathroom remodeling maximizes space and adds value to your home."
           benefits={smallBathData.benefits}
         />
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Chandler's Premier Small Bathroom Makeover Experts
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              Whether you live in a modern townhouse in <strong>Ocotillo</strong>, a family home in <strong>Fulton Ranch</strong>, or are updating an older property in <strong>Sun Lakes</strong>, optimizing a small bathroom requires precise planning and expert craftsmanship. As specialized <strong>small bathroom remodeling contractors in Chandler AZ</strong>, we understand that every square inch matters. From strategic storage solutions to floating vanities and curb-less shower designs, our goal is to make your compact bathroom feel spacious and luxurious.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Many homes in Chandler's established neighborhoods have secondary bathrooms or powder rooms that lack natural light and modern amenities. We employ space-saving designs, utilizing large-format tiles to reduce grout lines, and incorporating custom glass enclosures that open up the visual space. A <strong>small bathroom remodel in Chandler</strong> not only improves your daily routine but significantly boosts your home's resale value.
+            </p>
+            <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
+              <p className="text-foreground font-medium mb-4">
+                We offer 0% financing on projects over $5,000 — 
+                <Link href="/financing/" className="text-primary hover:underline ml-1">
+                  see our bathroom remodeling financing options
+                </Link>.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <Tips
           title="Expert Small Bathroom Remodeling Tips"
           subtitle="Professional Insights"

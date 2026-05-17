@@ -11,22 +11,15 @@ import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
 import { ChevronRight, MapPin, Clock, Phone } from "lucide-react";
 
-// Generate static pages for all locations
-export async function generateStaticParams() {
-  const slugs = generateAllLocationSlugs();
-  return slugs.map((slug) => ({
-    location: slug,
-  }));
-}
+
 
 // Generate metadata
-export async function generateMetadata({
-  params,
+export async function generateLocationMetadata({
+  locationSlug,
 }: {
-  params: Promise<{ location: string }>;
+  locationSlug: string;
 }): Promise<Metadata> {
-  const resolvedParams = await params;
-  const location = findLocationBySlug(resolvedParams.location);
+  const location = findLocationBySlug(locationSlug);
   if (!location) return {};
 
   const displayName =
@@ -38,7 +31,7 @@ export async function generateMetadata({
 
   const title = `Bathroom Remodeling in ${displayName} | Local Contractors`;
   const description = `Expert bathroom remodeling Chandler AZ serving ${displayName}. Licensed local contractors delivering custom showers, tubs, and full renovations. Get a free quote!`;
-  const url = `${siteConfig.url}/chandler-az-${resolvedParams.location}`;
+  const url = `${siteConfig.url}/chandler-az-${locationSlug}`;
 
   return {
     title,
@@ -51,18 +44,16 @@ export async function generateMetadata({
       nocache: true,
     },
     alternates: {
-      canonical: `${siteConfig.url}/chandler-az-${resolvedParams.location}/`,
+      canonical: `${siteConfig.url}/chandler-az-${locationSlug}/`,
     },
   };
 }
 
-export default async function LocationPage({
-  params,
+export async function LocationPageContent({
+  locationSlug,
 }: {
-  params: Promise<{ location: string }>;
+  locationSlug: string;
 }) {
-  const resolvedParams = await params;
-  const locationSlug = resolvedParams.location;
   const location = findLocationBySlug(locationSlug);
 
   if (!location) {

@@ -18,7 +18,7 @@ export const siteConfig = {
       lng: -111.9605964,
     },
   },
-  zipCodes: ["85224", "85225", "85226", "85249", "85250", "85251", "85255", "85258", "85260", "85142", "85140"],
+  zipCodes: ["85224", "85225", "85226", "85249"],
   hours: {
     weekdays: "8:00 AM - 6:00 PM",
     saturday: "9:00 AM - 4:00 PM",
@@ -41,12 +41,6 @@ export const siteConfig = {
   ],
   serviceAreas: [
     "Chandler",
-    "Gilbert",
-    "Mesa",
-    "Tempe",
-    "Scottsdale",
-    "Phoenix",
-    "Queen Creek",
     "Ahwatukee",
     "Sun Lakes",
     "Ocotillo",

@@ -60,7 +60,7 @@ export default function Hero() {
 
             {/* Headline - Accessible H1 */}
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-6 text-balance focus-visible:outline-none">
-              Top-Rated Bathroom Remodeling Contractors in Chandler, AZ
+              #1 Bathroom Remodeling Contractors in Chandler, AZ
             </h1>
 
             {/* Subheadline */}

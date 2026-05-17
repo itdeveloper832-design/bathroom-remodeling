@@ -17,10 +17,7 @@ export function QuoteForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (wordCount < 20) {
-      setError(`Message must be at least 20 words. Current: ${wordCount} words.`);
-      return;
-    }
+    // Removed 20 words check
 
     const form = e.currentTarget;
     setIsSubmitting(true);
@@ -68,12 +65,8 @@ export function QuoteForm() {
     if (count !== wordCount) {
       setWordCount(count);
       
-      // Debounce error state update if needed, or keep immediate for UX
-      if (count < 20 && text.trim().length > 0) {
-        setError(`Message must be at least 20 words. Current: ${count} words.`);
-      } else {
-        setError("");
-      }
+      // Error state update removed for 20 words limit
+      setError("");
     }
   };
 
@@ -200,11 +193,9 @@ export function QuoteForm() {
           <Textarea
             id="quote-message"
             name="message"
-            placeholder="Describe your project in detail (minimum 20 words required)"
+            placeholder="Describe your project goals, timeline, or any specific requirements (Optional)."
             rows={3}
             className="resize-none mt-1.5"
-            required
-            aria-required="true"
             aria-describedby={error ? "quote-message-error" : undefined}
             onChange={handleMessageChange}
           />
@@ -221,7 +212,7 @@ export function QuoteForm() {
 
         <Button
           type="submit"
-          disabled={isSubmitting || wordCount < 20}
+          disabled={isSubmitting}
           className="w-full bg-primary hover:bg-primary/90 text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2"
           aria-label={
             isSubmitting

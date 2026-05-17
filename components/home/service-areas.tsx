@@ -13,7 +13,7 @@ export default function ServiceAreas() {
               Service Areas
             </span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
-              Proudly Serving Chandler & Surrounding Communities
+              Serving Homeowners Across Chandler, Ocotillo, Fulton Ranch, & Sun Lakes
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               Based in Chandler, Arizona, we provide premium <strong>bathroom remodeling services in Chandler</strong> 

@@ -4,11 +4,7 @@ import Image from "next/image";
 import { Star, Shield, Award, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// QuoteForm deferred - large component with Firebase deps, loaded after hero paints
-// Note: ssr:false is only valid in Client Components; hero.tsx is a Server Component
-const QuoteForm = dynamic(() => import("@/components/forms/quote-form").then(mod => mod.QuoteForm), {
-  loading: () => <div className="h-[500px] bg-card/50 animate-pulse rounded-xl" aria-label="Loading quote form..." />,
-});
+
 
 const trustBadges = [
   { icon: Star, label: "5-Star Rated" },
@@ -41,9 +37,9 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pb-16 lg:pb-20 pt-4 md:pt-6 lg:pt-8">
-        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
-          {/* Left Column - Hero Content */}
-          <div className="lg:col-span-2">
+        <div className="max-w-4xl">
+          {/* Hero Content */}
+          <div>
             {/* Rating Badge - static stars, avoids mapping array on every render */}
             <div className="inline-flex items-center gap-2 bg-foreground/10 border border-background/20 rounded-full px-4 py-2 mb-8">
               <div className="flex" aria-hidden="true">
@@ -76,7 +72,7 @@ export default function Hero() {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 py-6 focus-visible:outline-2 focus-visible:outline-offset-2"
                 aria-label="Get your free bathroom remodel estimate"
               >
-                <Link href="/contact/">Get Your Free Estimate</Link>
+                <Link href="#contact">Get a Free Estimate</Link>
               </Button>
               <Button
                 asChild
@@ -88,11 +84,6 @@ export default function Hero() {
                 <Link href="/gallery/">View Our Portfolio</Link>
               </Button>
             </div>
-          </div>
-
-          {/* Right Column - Quote Form - Dynamically Loaded */}
-          <div className="lg:block">
-            <QuoteForm />
           </div>
         </div>
       </div>

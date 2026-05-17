@@ -51,7 +51,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="py-20 lg:py-32 bg-secondary overflow-hidden">
+    <section id="contact" className="py-20 lg:py-32 bg-secondary overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Contact Info Side */}

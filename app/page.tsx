@@ -34,7 +34,7 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
 
 export const metadata: Metadata = {
   title: "Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling",
-  description: "Top-rated bathroom remodeling in Chandler, AZ. ROC Licensed contractors specializing in luxury bathroom renovations, walk-in showers, and tub-to-shower conversions. Free Quote!",
+  description: "Looking for premier bathroom remodeling contractors in Chandler, AZ? We specialize in luxury master bath renovations, custom walk-in showers, and tub-to-shower conversions. Call +14803065591 for a free estimate!",
   openGraph: {
     title: "Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling",
     description: "Expert bathroom remodeling in Chandler, AZ. Licensed contractors delivering premium renovations from Ocotillo to Sun Lakes. Free Quote!",

@@ -9,7 +9,7 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
     "@context": "https://schema.org",
     "@type": type,
     name: siteConfig.name,
-    image: `${siteConfig.url}/images/new-logo-image.png`,
+    image: `${siteConfig.url}/images/new-images-logo.jpg`,
     "@id": `${siteConfig.url}/#organization`,
     founder: {
       "@type": "Person",
@@ -254,7 +254,7 @@ export function ArticleSchema({
       name: siteConfig.name,
       logo: {
         "@type": "ImageObject",
-        url: `${siteConfig.url}/images/new-logo-image.png`,
+        url: `${siteConfig.url}/images/new-images-logo.jpg`,
       },
     },
     url: url,

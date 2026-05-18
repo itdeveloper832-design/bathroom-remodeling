@@ -34,22 +34,25 @@ export function Header() {
       </a>
       <InfoHeader />
       <header
-        className={`fixed left-0 right-0 z-40 transition-all duration-300 bg-background shadow-sm lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-1" : "top-[40px] py-4"}`}
+        className={`fixed left-0 right-0 z-40 transition-all duration-300 bg-background shadow-md lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-2 lg:py-3" : "top-[40px] py-4 lg:py-6"}`}
         role="banner"
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo - Accessible - Responsive */}
             <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
-              <div className="relative h-8 sm:h-9 md:h-10 lg:h-12 w-[112px] sm:w-[126px] md:w-[140px] lg:w-[168px] bg-background/50 rounded" style={{ aspectRatio: '14 / 4' }}>
+              <div className={`relative transition-all duration-300 ${
+                isScrolled 
+                  ? "h-14 w-14 sm:h-16 sm:w-16 lg:h-18 lg:w-18" 
+                  : "h-20 w-20 sm:h-24 sm:w-24 lg:h-28 lg:w-28"
+              }`}>
                 <Image
-                  src="/images/new-images-logo.jpg"
+                  src="/images/web-logo-image.png"
                   alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"
-                  width={168}
-                  height={48}
+                  fill
                   priority
                   fetchPriority="high"
-                  className="object-contain object-left w-auto h-8 sm:h-9 md:h-10 lg:h-12"
+                  className="object-contain object-left"
                 />
               </div>
             </Link>

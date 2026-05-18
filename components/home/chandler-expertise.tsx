@@ -60,7 +60,7 @@ export default function ChandlerExpertise() {
               </div>
 
               <p className="text-primary-foreground/85 text-lg leading-relaxed">
-                As local <strong>Chandler bathroom remodeling contractors</strong>, we don&apos;t just renovate for looks — we build for permanent durability in the desert. From luxury tub-to-shower conversions near the Chandler Fashion Center to master bath updates by Hamilton High School, our materials are built to perform for decades.
+                As local <strong>Chandler bathroom remodeling contractors</strong>, we do not just renovate for looks. We build for permanent durability in the desert. From luxury tub-to-shower conversions near the Chandler Fashion Center to master bath updates by Hamilton High School, our materials are built to perform for decades.
               </p>
             </div>
           </div>

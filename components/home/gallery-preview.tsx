@@ -1,4 +1,4 @@
-// ✅ CONVERTED TO SERVER COMPONENT — no "use client" needed
+// ✅ CONVERTED TO SERVER COMPONENT: no "use client" needed
 // Before/after hover effect now uses pure CSS :hover — zero JS shipped for this section
 import Image from "next/image";
 import Link from "next/link";
@@ -37,7 +37,7 @@ const galleryItems = [
 ];
 
 
-// Pure Server Component — CSS :hover handles the before/after flip, no useState needed
+// Pure Server Component: CSS :hover handles the before/after flip, no useState needed
 function BeforeAfterCard({ item }: { item: typeof galleryItems[0] }) {
   return (
     <div className="gallery-card relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group">
@@ -97,7 +97,7 @@ export default function GalleryPreview() {
               Before &amp; After Transformations
             </h2>
             <p className="text-muted-foreground text-lg">
-              Hover over each image to see the stunning transformation — real projects
+              Hover over each image to see the stunning transformation of real projects
               completed for homeowners in Chandler and the surrounding East Valley.
             </p>
           </div>

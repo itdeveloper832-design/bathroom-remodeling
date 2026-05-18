@@ -79,7 +79,7 @@ export default function FAQ() {
               FAQ
             </span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground">
-              Remodeling FAQs — Chandler, AZ
+              Remodeling FAQs for Chandler, AZ
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
               Common questions about bathroom remodeling, shower upgrades, and tub-to-shower conversions in Chandler, Arizona.

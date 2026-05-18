@@ -137,7 +137,7 @@ export default function BathtubRemodelingPage() {
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               We provide <strong>affordable bathtub remodeling in Chandler AZ</strong> that gives you a brand-new, modern tub 
-              backed by a workmanship warranty—something you won't get from a simple resurfacing job.
+              backed by a workmanship warranty, which is something you will not get from a simple resurfacing job.
             </p>
           </div>
         </section>
@@ -213,7 +213,7 @@ export default function BathtubRemodelingPage() {
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">
                   Bathroom Remodeling Chandler AZ
                 </p>
-                <p className="text-muted-foreground text-xs mt-1">Full bathroom renovations — all services</p>
+                <p className="text-muted-foreground text-xs mt-1">Full bathroom renovations: all services</p>
               </Link>
               <Link
                 href="/shower-remodeling/"

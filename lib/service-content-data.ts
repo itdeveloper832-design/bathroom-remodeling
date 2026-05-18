@@ -413,75 +413,75 @@ export const serviceContent: Record<string, ServiceContentData> = {
   "bathtub-remodeling": {
     benefits: [
       {
-        title: "Luxurious Soaking Experience",
-        description: "Upgrade to deeper, wider tubs with ergonomic designs for ultimate relaxation and comfort.",
+        title: "Deep Soaking Comfort",
+        description: "We install modern soaking tubs that allow you to fully submerge for muscle relaxation.",
         icon: "Droplets",
       },
       {
-        title: "Modern Jetted Tub Technology",
-        description: "Air or water jets provide therapeutic massage benefits and turn your tub into a personal spa.",
+        title: "Modern Tub Technology",
+        description: "Air and water jet tubs provide therapeutic massage benefits and turn your tub into a home spa.",
         icon: "Zap",
       },
       {
-        title: "Durable & Easy-to-Maintain Materials",
-        description: "Acrylic, cast iron, and soaking tubs resist scratches, stains, and degradation for years.",
+        title: "Stain Resistant Materials",
+        description: "We use high grade acrylic and enameled cast iron that resist scratches and hard water mineral scale.",
         icon: "Shield",
       },
       {
         title: "Better Drainage & Plumbing",
-        description: "Modern drain systems with proper slope prevent water damage and ensure efficient emptying.",
+        description: "Modern drain installations with proper floor slope prevent water pooling and ensure fast emptying.",
         icon: "Wind",
       },
     ],
     issues: [
       {
-        problem: "Cracked, stained, or worn tubs from years of use",
-        solution: "Replace with modern tubs offering durability, easier cleaning, and contemporary aesthetics.",
+        problem: "Stained or Cracked Acrylic",
+        solution: "Replace old acrylic with modern tubs offering premium durability and contemporary aesthetics.",
       },
       {
-        problem: "Poor drainage causing standing water and mold",
+        problem: "Poor Water Drainage",
         solution: "New drain installation with proper slope and modern drain assemblies ensures perfect water flow.",
       },
       {
-        problem: "Limited soaking space or awkward tub dimensions",
-        solution: "Upgrade to deeper, wider soaking tubs or install corner tubs that maximize bathroom space.",
+        problem: "Wasted Floor Space",
+        solution: "Upgrade to deeper freestanding soaking tubs or install corner tubs that maximize bathroom layout space.",
       },
       {
-        problem: "Plumbing leaks or water damage around tub",
-        solution: "Professional installation with proper waterproofing prevents leaks and protects your subfloor.",
+        problem: "Hidden Plumbing Leaks",
+        solution: "Professional installation with proper Schluter waterproofing barriers prevents leaks and protects your subfloor.",
       },
     ],
     tips: [
-      "Consider Freestanding Tubs for Drama: Modern freestanding soaking tubs create a luxurious focal point and offer deeper soaking depths.",
-      "Jetted Tubs Require Professional Installation: Air/water jets need electrical connections and specialized plumbing—hire professionals to ensure safety.",
-      "Acrylic Tubs Are Budget-Friendly & Durable: Acrylic offers excellent durability, is easy to clean, and costs less than cast iron or stone.",
-      "Install Grab Bars During Tub Installation: Add safety grab bars during installation for accessibility and to support family members of all ages.",
+      "Freestanding Tubs Add Luxury: Modern freestanding soaking tubs create a beautiful focal point and offer deeper water soaking.",
+      "Hire Licensed Pros for Jet Tubs: Air and water jets need specialized electrical wiring and plumbing lines; hire licensed contractors.",
+      "Acrylic Tubs Resist Minerals: Acrylic reinforced with fiberglass is stain resistant, easy to clean, and resists local hard water minerals.",
+      "Anchor Safety Grab Bars to Studs: Install secure safety grab bars directly into wood wall studs during your tub remodel to prevent falls.",
     ],
     faqs: [
       {
-        question: "What's the difference between soaking and standard tubs?",
+        question: "What is the difference between a standard tub and a soaking tub?",
         answer:
-          "Soaking tubs are deeper (typically 18-24 inches) for comfortable submersion, while standard tubs are shallower. Soaking provides therapeutic relaxation.",
+          "A standard alcove tub is relatively shallow, with a water depth of only 10 to 12 inches. A deep soaking tub features taller walls that provide a water depth of 18 to 24 inches. This extra depth allows for comfortable, full body water submersion for muscle relaxation and a spa like experience.",
       },
       {
-        question: "Are jetted tubs worth the investment?",
+        question: "How long does a bathtub replacement project take?",
         answer:
-          "Jetted tubs offer therapeutic benefits and luxury appeal. Budget $3,000-8,000 for quality units. Factor in higher electricity use and potential maintenance.",
+          "A straightforward bathtub replacement typically takes three to five days of active construction. This timeframe includes careful demolition of the old tub, upgrading drain lines, installing the new tub level, building the surround walls, and applying waterproof silicone sealants.",
       },
       {
-        question: "Can you convert my shower area to a soaking tub?",
+        question: "What bathtub materials are most durable against Chandler hard water?",
         answer:
-          "Yes! We can convert shower space to tub. You may lose shower capability, so many homeowners choose a combined tub-shower setup instead.",
+          "Enameled cast iron is the most durable tub material, lasting over 50 years, but it is heavy and requires strong floor support. High quality acrylic reinforced with fiberglass is the most popular choice. Acrylic is highly stain resistant, easy to clean, and resists mineral scaling caused by local hard water.",
       },
       {
-        question: "What materials work best for long-lasting tubs?",
+        question: "Do you pull permits for bathtub remodeling in Chandler?",
         answer:
-          "Cast iron (most durable), acrylic (affordable & practical), and stone (luxurious). Acrylic is best value; cast iron lasts 50+ years.",
+          "Yes, we coordinate all paperwork and pull required building permits from the City of Chandler Development Services Department. We handle the entire inspection process, including plumbing and electrical reviews, to ensure your bathtub installation meets local safety codes.",
       },
       {
         question: "How is a freestanding tub installed?",
         answer:
-          "Freestanding tubs sit on finished floors and connect to existing plumbing. Installation is relatively simple compared to built-in tubs.",
+          "A freestanding tub is installed on a finished tile floor and connects to a dedicated drain box. It does not require surrounding walls, allowing for a clean, modern look and flexible placement within your master bathroom.",
       },
     ],
   },

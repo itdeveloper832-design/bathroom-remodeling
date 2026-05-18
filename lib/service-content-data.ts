@@ -967,23 +967,19 @@ export const serviceContent: Record<string, ServiceContentData> = {
     issues: [
       {
         problem: "Excessive Weight Hazards",
-        description: "Heavy cast iron tubs require specialized lifting rigs to extract safely without damaging tile floors.",
-        icon: "AlertTriangle",
+        solution: "We extract heavy tubs by safely cutting them into manageable sections with heavy duty diamond saws.",
       },
       {
         problem: "Hidden Subfloor Rot",
-        description: "Water seeping through old caulk rots the joists and encourages toxic black mold growth.",
-        icon: "Droplets",
+        solution: "We inspect wood floor joists, replace water damaged underlayment, and lay fresh rot resistant subflooring.",
       },
       {
         problem: "Corroded Plumbing Lines",
-        description: "Old waste lines and tub trap fittings rust out and leak behind drywall.",
-        icon: "Wrench",
+        solution: "We replace outdated plumbing lines with modern flexible PEX water pipes and durable PVC drain lines.",
       },
       {
         problem: "Wasted Floor Footprint",
-        description: "Massive built in garden tubs take up feet of space that could be used for luxury showers.",
-        icon: "Layout",
+        solution: "We reconfigure your bathroom layout to convert the newly freed floor footprint into a luxury walk in shower.",
       },
     ],
     tips: [

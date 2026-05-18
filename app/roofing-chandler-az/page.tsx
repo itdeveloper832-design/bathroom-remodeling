@@ -1,133 +1,102 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/service-hero";
-import ServiceCTA from "@/components/service-cta";
-import ServiceFAQ from "@/components/service-faq";
-import ServiceProcess from "@/components/service-process";
-import IssuesSolved from "@/components/issues-solved";
-import Benefits from "@/components/benefits";
-import Tips from "@/components/tips";
-import Testimonials from "@/components/home/testimonials";
-import ContactSection from "@/components/home/contact-section";
+import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
-import { serviceContent } from "@/lib/service-content-data";
-import LocalTrust from "@/components/home/local-trust";
+import Link from "next/link";
+import { ArrowRight, Bath, ShowerHead, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Roofing Contractors Chandler AZ | Roof Repair & Replacement",
-  description: "Trusted roofing services in Chandler, AZ. Tile roof repair, shingle replacement, and leak detection. Built for the Arizona sun. Licensed & Insured.",
-  openGraph: {
-    title: "Roofing Contractors Chandler AZ | Roof Repair & Replacement",
-    description: "Protect your home with Chandler's trusted roofing experts. Specializing in tile and shingle roofs designed for the desert climate. Free inspections!",
-    url: `${siteConfig.url}/roofing-chandler-az/`,
-    type: "website",
+  title: "Roofing Services - ARZ Home Remodeling",
+  description: "ARZ Home Remodeling specializes exclusively in premium bathroom renovations in Chandler, AZ. Learn more about our custom shower and bath designs.",
+  robots: {
+    index: false,
+    follow: false,
   },
   alternates: {
     canonical: `${siteConfig.url}/roofing-chandler-az/`,
   },
-  robots: {
-    index: false,
-    follow: true,
-  },
 };
 
 export default function RoofingPage() {
-  const serviceData = serviceContent["roofing"];
-  
   return (
     <>
-      <ServiceSchema
-        serviceName="Roofing Services in Chandler, Arizona"
-        serviceDescription="Professional roofing contractors in Chandler, Arizona. Specializing in tile roof repair, shingle replacement, and monsoon-ready protection."
-        serviceUrl={`${siteConfig.url}/roofing-chandler-az/`}
-      />
-      <FAQSchema faqs={serviceData.faqs} />
       <Header />
-      <main>
-        <ServiceHero
-          title="Top-Rated Roofing Contractors in Chandler, AZ"
-          subtitle="Monsoon-Ready Roof Protection & Repair"
-          description="Your roof is your home's first line of defense against the intense Arizona sun and heavy monsoon rains. We specialize in durable tile and shingle roofing systems designed to withstand the desert climate while improving your home's energy efficiency."
-          image="/images/optimized/photo-1632759162403-108a90196720.webp"
-          breadcrumbs={[
-            { name: "Home", url: `${siteConfig.url}/` },
-            { name: "Roofing Chandler", url: `${siteConfig.url}/roofing-chandler-az/` },
-          ]}
-        />
+      <main className="min-h-[80vh] flex flex-col justify-center items-center py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-2xl text-center">
+          <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <HelpCircle className="w-8 h-8 text-primary" />
+          </div>
+          <h1 className="font-serif text-3xl md:text-4xl font-semibold mb-6 text-foreground">
+            Specializing Exclusively in Premium Bathroom Remodeling
+          </h1>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            In order to deliver the highest level of craftsmanship, structural integrity, and dedicated local expertise, 
+            <strong> ARZ Home Remodeling focuses 100% of our operations on premium bathroom transformations.</strong> 
+            We no longer offer roofing or general carpentry services.
+          </p>
+          
+          <div className="border border-border rounded-2xl p-6 bg-secondary/50 mb-10 text-left">
+            <h2 className="font-serif text-xl font-medium text-foreground mb-4 text-center">
+              Our Premium Bathroom Specialties
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link 
+                href="/bathroom-remodeling-chandler-az/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <Bath className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Bathroom Remodeling</p>
+                  <p className="text-xs text-muted-foreground">Full custom transformations</p>
+                </div>
+              </Link>
+              <Link 
+                href="/shower-remodeling/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ShowerHead className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Shower Remodeling</p>
+                  <p className="text-xs text-muted-foreground">Modern tiles & curbless pans</p>
+                </div>
+              </Link>
+              <Link 
+                href="/tub-to-shower-conversion/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ArrowRight className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Tub-to-Shower</p>
+                  <p className="text-xs text-muted-foreground">Maximize your floor space</p>
+                </div>
+              </Link>
+              <Link 
+                href="/ada-bathroom-remodeling/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ArrowRight className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">ADA Bathrooms</p>
+                  <p className="text-xs text-muted-foreground">Safe, elegant accessibility</p>
+                </div>
+              </Link>
+            </div>
+          </div>
 
-        <ServiceProcess
-          title="Our Roofing Process"
-          subtitle="Built to Last"
-          description="A comprehensive approach to ensuring your roof remains leak-free and energy-efficient for decades."
-          steps={[
-            {
-              number: "01",
-              icon: "Search",
-              title: "Free Roof Inspection",
-              description: "A detailed assessment of your roof's condition, including tile, shingle, and underlayment health.",
-            },
-            {
-              number: "02",
-              icon: "Shield",
-              title: "Preparation & Safety",
-              description: "Full site protection and safety setup to ensure your property remains clean and secure during work.",
-            },
-            {
-              number: "03",
-              icon: "Hammer",
-              title: "Repair or Replacement",
-              description: "Professional execution of your roofing project, whether it's a minor repair or a full tile R&R.",
-            },
-            {
-              number: "04",
-              icon: "Zap",
-              title: "Ventilation Optimization",
-              description: "Installation or upgrade of attic ventilation systems to lower cooling costs and extend roof life.",
-            },
-            {
-              number: "05",
-              icon: "CheckCircle",
-              title: "Quality Final Inspection",
-              description: "Rigorous quality check and cleanup, ensuring your new roof is ready for whatever the weather brings.",
-            },
-          ]}
-        />
-
-        <IssuesSolved
-          title="Roofing Issues We Solve"
-          subtitle="Desert Protection"
-          description="We address the unique challenges that the Arizona climate poses to residential roofing."
-          issues={serviceData.issues}
-        />
-
-        <Benefits
-          title="Why Choose Our Roofing Services?"
-          subtitle="Expertise You Can Trust"
-          description="Protect your largest investment with high-quality materials and professional workmanship."
-          benefits={serviceData.benefits}
-        />
-
-        <LocalTrust cityName="Chandler" />
-
-        <Tips
-          title="Roof Maintenance Tips"
-          subtitle="Professional Advice"
-          description="Simple steps to extend the life of your roof in the Chandler heat."
-          tips={serviceData.tips}
-        />
-
-        <ServiceCTA 
-          title="Need a Roof Inspection?" 
-          description="Don't wait for a leak. Schedule your free professional roof inspection today." 
-        />
-
-        <ServiceFAQ faqs={serviceData.faqs} />
-
-        <Testimonials />
-
-        <ContactSection />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg">
+              <Link href="/bathroom-remodeling-chandler-az/">
+                View Bathroom Services
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link href="/contact/">
+                Get a Free Estimate
+              </Link>
+            </Button>
+          </div>
+        </div>
       </main>
       <Footer />
     </>

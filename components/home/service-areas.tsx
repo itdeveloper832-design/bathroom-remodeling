@@ -27,11 +27,11 @@ export default function ServiceAreas() {
                 { name: "Chandler", href: "/bathroom-remodeling-chandler-az/" },
                 { name: "Gilbert", href: "/bathroom-remodeling-gilbert-az/" },
                 { name: "Mesa", href: "/bathroom-remodeling-mesa-az/" },
-                { name: "Ocotillo", href: "/bathroom-remodeling-ocotillo/" },
-                { name: "Dobson Ranch", href: "/bathroom-remodeling-areas/dobson-ranch/" },
-                { name: "Sun Lakes", href: "/bathroom-remodeling-sun-lakes/" },
-                { name: "Fulton Ranch", href: "/bathroom-remodeling-fulton-ranch/" },
+                { name: "Queen Creek", href: "/bathroom-remodeling-queen-creek-az/" },
                 { name: "Tempe", href: "/bathroom-remodeling-tempe-az/" },
+                { name: "Apache Junction", href: "/bathroom-remodeling-apache-junction-az/" },
+                { name: "Sun Lakes", href: "/bathroom-remodeling-sun-lakes/" },
+                { name: "Ocotillo", href: "/bathroom-remodeling-ocotillo/" },
                 { name: "Ahwatukee", href: "/bathroom-remodeling-ahwatukee-az/" }
               ].map((area, index) => (
                 <Link

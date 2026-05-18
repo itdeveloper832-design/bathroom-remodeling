@@ -46,6 +46,8 @@ export const siteConfig = {
     "Ocotillo",
     "Dobson Ranch",
     "Fulton Ranch",
+    "Queen Creek",
+    "Apache Junction",
   ],
 };
 

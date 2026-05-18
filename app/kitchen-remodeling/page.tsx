@@ -1,29 +1,17 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/service-hero";
-import ServiceCTA from "@/components/service-cta";
-import ServiceFAQ from "@/components/service-faq";
-import ServiceProcess from "@/components/service-process";
-import IssuesSolved from "@/components/issues-solved";
-import Benefits from "@/components/benefits";
-import Tips from "@/components/tips";
-import Testimonials from "@/components/home/testimonials";
-import ContactSection from "@/components/home/contact-section";
+import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
-import { serviceContent } from "@/lib/service-content-data";
-import SubServices from "@/components/sub-services";
-import LocalTrust from "@/components/home/local-trust";
+import Link from "next/link";
+import { ArrowRight, Bath, ShowerHead, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Kitchen Remodeling Chandler: Licensed Contractors & Free Quotes",
-  description: "Transform your kitchen with Chandler's top-rated remodelers. ROC Licensed experts for custom cabinetry, quartz countertops, and full gourmet kitchen renovations. Get a free quote!",
-  openGraph: {
-    title: "Kitchen Remodeling Chandler: Licensed Contractors & Free Quotes",
-    description: "Expert kitchen remodeling in Chandler, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: +14803065591.",
-    url: `${siteConfig.url}/kitchen-remodeling/`,
-    type: "website",
+  title: "Kitchen Remodeling Services - ARZ Home Remodeling",
+  description: "ARZ Home Remodeling specializes exclusively in premium bathroom renovations in Chandler, AZ. Learn more about our custom shower and bath designs.",
+  robots: {
+    index: false,
+    follow: false,
   },
   alternates: {
     canonical: `${siteConfig.url}/kitchen-remodeling/`,
@@ -31,100 +19,84 @@ export const metadata: Metadata = {
 };
 
 export default function KitchenRemodelingPage() {
-  const kitchenData = serviceContent["kitchen-remodeling"];
-  
   return (
     <>
-      <ServiceSchema
-        serviceName="Kitchen Remodeling in Chandler, Arizona"
-        serviceDescription="Professional kitchen renovations in Chandler, Arizona. Custom cabinets, stone countertops, updated layouts, and high-end finishes."
-        serviceUrl={`${siteConfig.url}/kitchen-remodeling/`}
-      />
-      <FAQSchema faqs={kitchenData.faqs} />
       <Header />
-      <main>
-        <ServiceHero
-          title="Licensed Kitchen Remodeling in Chandler, AZ"
-          subtitle="Expert Gourmet Kitchen Transformations & Custom Cabinetry"
-          description="Build the kitchen of your dreams with Chandler's trusted remodeling team. From open-concept layouts and custom islands to premium quartz countertops and soft-close cabinetry, we deliver high-end results with ROC Licensed expertise."
-          image="/images/optimized/photo-1556911220-e15b29be8c8f.webp"
-          breadcrumbs={[
-            { name: "Home", url: `${siteConfig.url}/` },
-            { name: "Kitchen Remodeling Chandler AZ", url: `${siteConfig.url}/kitchen-remodeling/` },
-          ]}
-        />
+      <main className="min-h-[80vh] flex flex-col justify-center items-center py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-2xl text-center">
+          <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <HelpCircle className="w-8 h-8 text-primary" />
+          </div>
+          <h1 className="font-serif text-3xl md:text-4xl font-semibold mb-6 text-foreground">
+            Specializing Exclusively in Premium Bathroom Remodeling
+          </h1>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            In order to deliver the highest level of craftsmanship, structural integrity, and dedicated local expertise, 
+            <strong> ARZ Home Remodeling focuses 100% of our operations on premium bathroom transformations.</strong> 
+            We no longer offer kitchen remodeling or general carpentry services.
+          </p>
+          
+          <div className="border border-border rounded-2xl p-6 bg-secondary/50 mb-10 text-left">
+            <h2 className="font-serif text-xl font-medium text-foreground mb-4 text-center">
+              Our Premium Bathroom Specialties
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link 
+                href="/bathroom-remodeling-chandler-az/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <Bath className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Bathroom Remodeling</p>
+                  <p className="text-xs text-muted-foreground">Full custom transformations</p>
+                </div>
+              </Link>
+              <Link 
+                href="/shower-remodeling/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ShowerHead className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Shower Remodeling</p>
+                  <p className="text-xs text-muted-foreground">Modern tiles & curbless pans</p>
+                </div>
+              </Link>
+              <Link 
+                href="/tub-to-shower-conversion/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ArrowRight className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Tub-to-Shower</p>
+                  <p className="text-xs text-muted-foreground">Maximize your floor space</p>
+                </div>
+              </Link>
+              <Link 
+                href="/ada-bathroom-remodeling/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ArrowRight className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">ADA Bathrooms</p>
+                  <p className="text-xs text-muted-foreground">Safe, elegant accessibility</p>
+                </div>
+              </Link>
+            </div>
+          </div>
 
-        <ServiceProcess
-          title="Our Kitchen Remodeling Process"
-          subtitle="How We Work"
-          description="A systematic, stress-free approach to transforming your kitchen into a functional and beautiful space."
-          steps={[
-            {
-              number: "01",
-              icon: "PhoneCall",
-              title: "Consultation & Layout Planning",
-              description: "We discuss your cooking habits and entertaining needs to design the perfect kitchen flow.",
-            },
-            {
-              number: "02",
-              icon: "Ruler",
-              title: "Material & Finish Selection",
-              description: "Choose your cabinets, countertops, backsplash, and flooring from our premium collections.",
-            },
-            {
-              number: "03",
-              icon: "Hammer",
-              title: "Demo & Structural Prep",
-              description: "Clean demolition and site prep, including any wall removal for open-concept designs.",
-            },
-            {
-              number: "04",
-              icon: "ChefHat",
-              title: "Cabinetry & Countertop Install",
-              description: "Precision installation of your custom cabinets followed by professional stone templating and setting.",
-            },
-            {
-              number: "05",
-              icon: "ShieldCheck",
-              title: "Final Finishing & Walkthrough",
-              description: "Installation of backsplash, lighting, and hardware, followed by a detailed quality inspection.",
-            },
-          ]}
-        />
-
-        <IssuesSolved
-          title="Common Kitchen Problems We Solve"
-          subtitle="Expert Solutions"
-          description="We address the most frequent challenges Chandler homeowners face with their existing kitchens."
-          issues={kitchenData.issues}
-        />
-
-        <Benefits
-          title="Benefits of a Modern Kitchen"
-          subtitle="Why Invest in Your Kitchen"
-          description="A professional kitchen remodel improves your quality of life while significantly boosting your home value."
-          benefits={kitchenData.benefits}
-        />
-
-        <LocalTrust cityName="Chandler" />
-
-        <Tips
-          title="Kitchen Planning Tips"
-          subtitle="Professional Insights"
-          description="Smart strategies to ensure your new kitchen is as functional as it is beautiful."
-          tips={kitchenData.tips}
-        />
-
-        <ServiceCTA 
-          title="Ready for a Free Kitchen Remodeling Estimate?" 
-          description="Call now or fill out the form to schedule your free in-home consultation with our Chandler experts." 
-        />
-
-        <ServiceFAQ faqs={kitchenData.faqs} />
-
-        <Testimonials />
-
-        <ContactSection />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg">
+              <Link href="/bathroom-remodeling-chandler-az/">
+                View Bathroom Services
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link href="/contact/">
+                Get a Free Estimate
+              </Link>
+            </Button>
+          </div>
+        </div>
       </main>
       <Footer />
     </>

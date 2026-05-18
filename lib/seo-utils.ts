@@ -81,13 +81,19 @@ export function getRouteFrequency(route: string): 'always' | 'hourly' | 'daily' 
  * Gets the last modified date.
  */
 export function getRouteLastMod(route: string): Date {
-  return new Date('2026-05-17');
+  return new Date('2026-05-18');
 }
 
 /**
  * Checks if a route should be excluded based on noindex metadata.
  */
 export function isNoIndexRoute(route: string): boolean {
+  // Exclude non-bathroom services completely
+  const excludedKeywords = ['kitchen', 'painting', 'roofing', 'home-renovation'];
+  if (excludedKeywords.some(keyword => route.includes(keyword))) {
+    return true;
+  }
+
   try {
     const fs = require('fs');
     const path = require('path');
@@ -96,7 +102,7 @@ export function isNoIndexRoute(route: string): boolean {
     
     if (fs.existsSync(pagePath)) {
       const content = fs.readFileSync(pagePath, 'utf8');
-      if (content.includes('index: false') || content.includes('noindex: true')) {
+      if (content.includes('index: false') || content.includes('noindex: true') || content.includes('index: false')) {
         return true;
       }
     }

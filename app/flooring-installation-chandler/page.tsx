@@ -1,28 +1,17 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/service-hero";
-import ServiceCTA from "@/components/service-cta";
-import ServiceFAQ from "@/components/service-faq";
-import ServiceProcess from "@/components/service-process";
-import IssuesSolved from "@/components/issues-solved";
-import Benefits from "@/components/benefits";
-import Tips from "@/components/tips";
-import Testimonials from "@/components/home/testimonials";
-import ContactSection from "@/components/home/contact-section";
+import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
-import { serviceContent } from "@/lib/service-content-data";
-import LocalTrust from "@/components/home/local-trust";
+import Link from "next/link";
+import { ArrowRight, Bath, ShowerHead, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Flooring Installation Chandler AZ | LVP, Tile & Hardwood",
-  description: "Professional flooring installation in Chandler, AZ. Specializing in LVP, porcelain tile, and hardwood. Durable desert-ready floors. Free estimate!",
-  openGraph: {
-    title: "Flooring Installation Chandler AZ | LVP, Tile & Hardwood",
-    description: "Upgrade your home with premium flooring in Chandler, AZ. Expert installation of tile, vinyl plank, and wood. Licensed contractors. Free quotes!",
-    url: `${siteConfig.url}/flooring-installation-chandler/`,
-    type: "website",
+  title: "Flooring Services - ARZ Home Remodeling",
+  description: "ARZ Home Remodeling specializes exclusively in premium bathroom renovations in Chandler, AZ. Learn more about our custom shower and bath designs.",
+  robots: {
+    index: false,
+    follow: false,
   },
   alternates: {
     canonical: `${siteConfig.url}/flooring-installation-chandler/`,
@@ -30,100 +19,84 @@ export const metadata: Metadata = {
 };
 
 export default function FlooringPage() {
-  const serviceData = serviceContent["flooring"];
-  
   return (
     <>
-      <ServiceSchema
-        serviceName="Flooring Installation in Chandler, Arizona"
-        serviceDescription="Professional flooring services in Chandler, Arizona. Installation of LVP, porcelain tile, hardwood, and custom stone flooring."
-        serviceUrl={`${siteConfig.url}/flooring-installation-chandler/`}
-      />
-      <FAQSchema faqs={serviceData.faqs} />
       <Header />
-      <main>
-        <ServiceHero
-          title="Professional Flooring Installation in Chandler, AZ"
-          subtitle="Durable & Beautiful Desert-Ready Floors"
-          description="Transform your home with high-quality flooring that stands up to the Arizona climate. From waterproof Luxury Vinyl Plank (LVP) to timeless porcelain tile and classic hardwood, we provide precision installation and premium materials."
-          image="/images/optimized/photo-1581858726788-75bc0f6a952d.webp"
-          breadcrumbs={[
-            { name: "Home", url: `${siteConfig.url}/` },
-            { name: "Flooring Installation Chandler", url: `${siteConfig.url}/flooring-installation-chandler/` },
-          ]}
-        />
+      <main className="min-h-[80vh] flex flex-col justify-center items-center py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-2xl text-center">
+          <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <HelpCircle className="w-8 h-8 text-primary" />
+          </div>
+          <h1 className="font-serif text-3xl md:text-4xl font-semibold mb-6 text-foreground">
+            Specializing Exclusively in Premium Bathroom Remodeling
+          </h1>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            In order to deliver the highest level of craftsmanship, structural integrity, and dedicated local expertise, 
+            <strong> ARZ Home Remodeling focuses 100% of our operations on premium bathroom transformations.</strong> 
+            We no longer offer general residential flooring or whole-house hardwood carpentry services outside of custom bathroom floors.
+          </p>
+          
+          <div className="border border-border rounded-2xl p-6 bg-secondary/50 mb-10 text-left">
+            <h2 className="font-serif text-xl font-medium text-foreground mb-4 text-center">
+              Our Premium Bathroom Specialties
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link 
+                href="/bathroom-remodeling-chandler-az/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <Bath className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Bathroom Remodeling</p>
+                  <p className="text-xs text-muted-foreground">Full custom transformations</p>
+                </div>
+              </Link>
+              <Link 
+                href="/shower-remodeling/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ShowerHead className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Shower Remodeling</p>
+                  <p className="text-xs text-muted-foreground">Modern tiles & curbless pans</p>
+                </div>
+              </Link>
+              <Link 
+                href="/tub-to-shower-conversion/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ArrowRight className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Tub-to-Shower</p>
+                  <p className="text-xs text-muted-foreground">Maximize your floor space</p>
+                </div>
+              </Link>
+              <Link 
+                href="/ada-bathroom-remodeling/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ArrowRight className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">ADA Bathrooms</p>
+                  <p className="text-xs text-muted-foreground">Safe, elegant accessibility</p>
+                </div>
+              </Link>
+            </div>
+          </div>
 
-        <ServiceProcess
-          title="Our Flooring Installation Process"
-          subtitle="Precision & Quality"
-          description="A meticulous approach to ensuring your new floors are perfectly level, durable, and beautiful."
-          steps={[
-            {
-              number: "01",
-              icon: "Ruler",
-              title: "Measurement & Estimation",
-              description: "Accurate on-site measurements and material calculation to ensure minimal waste and clear pricing.",
-            },
-            {
-              number: "02",
-              icon: "Hammer",
-              title: "Old Flooring Removal",
-              description: "Careful removal and disposal of your old carpet, tile, or laminate with minimal dust disruption.",
-            },
-            {
-              number: "03",
-              icon: "CheckCircle",
-              title: "Subfloor Preparation",
-              description: "Professional floor leveling and substrate repair to ensure a perfectly flat surface for your new flooring.",
-            },
-            {
-              number: "04",
-              icon: "Layout",
-              title: "Expert Installation",
-              description: "Precision cutting and laying of your chosen material, followed by seamless transition installation.",
-            },
-            {
-              number: "05",
-              icon: "Sparkles",
-              title: "Baseboard & Finishing",
-              description: "Installation of new baseboards and final cleanup, leaving your home ready for immediate use.",
-            },
-          ]}
-        />
-
-        <IssuesSolved
-          title="Flooring Problems We Solve"
-          subtitle="Expert Solutions"
-          description="We address the most common flooring challenges faced by homeowners in the East Valley."
-          issues={serviceData.issues}
-        />
-
-        <Benefits
-          title="Benefits of Professional Flooring"
-          subtitle="Style Meets Durability"
-          description="Invest in flooring that improves your home's aesthetic while withstanding the demands of desert living."
-          benefits={serviceData.benefits}
-        />
-
-        <LocalTrust cityName="Chandler" />
-
-        <Tips
-          title="Flooring Selection Tips"
-          subtitle="Professional Advice"
-          description="How to choose the best flooring material for your specific needs and lifestyle."
-          tips={serviceData.tips}
-        />
-
-        <ServiceCTA 
-          title="Ready for New Floors?" 
-          description="Schedule your free in-home measurement today and explore our wide selection of premium flooring." 
-        />
-
-        <ServiceFAQ faqs={serviceData.faqs} />
-
-        <Testimonials />
-
-        <ContactSection />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg">
+              <Link href="/bathroom-remodeling-chandler-az/">
+                View Bathroom Services
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link href="/contact/">
+                Get a Free Estimate
+              </Link>
+            </Button>
+          </div>
+        </div>
       </main>
       <Footer />
     </>

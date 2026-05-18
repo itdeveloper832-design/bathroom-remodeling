@@ -1,133 +1,102 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/service-hero";
-import ServiceCTA from "@/components/service-cta";
-import ServiceFAQ from "@/components/service-faq";
-import ServiceProcess from "@/components/service-process";
-import IssuesSolved from "@/components/issues-solved";
-import Benefits from "@/components/benefits";
-import Tips from "@/components/tips";
-import Testimonials from "@/components/home/testimonials";
-import ContactSection from "@/components/home/contact-section";
+import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
-import { serviceContent } from "@/lib/service-content-data";
-import LocalTrust from "@/components/home/local-trust";
+import Link from "next/link";
+import { ArrowRight, Bath, ShowerHead, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Full Home Renovation Chandler AZ | Whole House Remodeling",
-  description: "Complete home renovation services in Chandler, AZ. Whole-house remodels, structural changes, and interior modernization. Licensed & insured. Call today!",
-  openGraph: {
-    title: "Full Home Renovation Chandler AZ | Whole House Remodeling",
-    description: "Expert whole-house remodeling in Chandler, AZ. Licensed contractors, open-concept designs, and premium finishes. Free estimates!",
-    url: `${siteConfig.url}/home-renovation-chandler-az/`,
-    type: "website",
+  title: "Home Renovation Services - ARZ Home Remodeling",
+  description: "ARZ Home Remodeling specializes exclusively in premium bathroom renovations in Chandler, AZ. Learn more about our custom shower and bath designs.",
+  robots: {
+    index: false,
+    follow: false,
   },
   alternates: {
     canonical: `${siteConfig.url}/home-renovation-chandler-az/`,
   },
-  robots: {
-    index: false,
-    follow: true,
-  },
 };
 
 export default function HomeRenovationPage() {
-  const serviceData = serviceContent["home-renovation"];
-  
   return (
     <>
-      <ServiceSchema
-        serviceName="Full Home Renovation in Chandler, Arizona"
-        serviceDescription="Professional whole-house remodeling services in Chandler, Arizona. Structural changes, open-concept layouts, and complete interior modernization."
-        serviceUrl={`${siteConfig.url}/home-renovation-chandler-az/`}
-      />
-      <FAQSchema faqs={serviceData.faqs} />
       <Header />
-      <main>
-        <ServiceHero
-          title="Full Home Renovation Services in Chandler, AZ"
-          subtitle="Whole-House Remodeling & Interior Modernization"
-          description="Transform your entire living space with Chandler's premier design-build firm. From structural wall removal and open-concept floor plans to cohesive interior updates, we manage every detail of your whole-house renovation."
-          image="/images/optimized/photo-1600607687920-4e2a09cf159d.webp"
-          breadcrumbs={[
-            { name: "Home", url: `${siteConfig.url}/` },
-            { name: "Home Renovation Chandler", url: `${siteConfig.url}/home-renovation-chandler-az/` },
-          ]}
-        />
+      <main className="min-h-[80vh] flex flex-col justify-center items-center py-24 bg-background">
+        <div className="container mx-auto px-4 max-w-2xl text-center">
+          <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <HelpCircle className="w-8 h-8 text-primary" />
+          </div>
+          <h1 className="font-serif text-3xl md:text-4xl font-semibold mb-6 text-foreground">
+            Specializing Exclusively in Premium Bathroom Remodeling
+          </h1>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            In order to deliver the highest level of craftsmanship, structural integrity, and dedicated local expertise, 
+            <strong> ARZ Home Remodeling focuses 100% of our operations on premium bathroom transformations.</strong> 
+            We no longer offer general whole-home renovations or structural carpentry services.
+          </p>
+          
+          <div className="border border-border rounded-2xl p-6 bg-secondary/50 mb-10 text-left">
+            <h2 className="font-serif text-xl font-medium text-foreground mb-4 text-center">
+              Our Premium Bathroom Specialties
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Link 
+                href="/bathroom-remodeling-chandler-az/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <Bath className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Bathroom Remodeling</p>
+                  <p className="text-xs text-muted-foreground">Full custom transformations</p>
+                </div>
+              </Link>
+              <Link 
+                href="/shower-remodeling/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ShowerHead className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Shower Remodeling</p>
+                  <p className="text-xs text-muted-foreground">Modern tiles & curbless pans</p>
+                </div>
+              </Link>
+              <Link 
+                href="/tub-to-shower-conversion/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ArrowRight className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">Tub-to-Shower</p>
+                  <p className="text-xs text-muted-foreground">Maximize your floor space</p>
+                </div>
+              </Link>
+              <Link 
+                href="/ada-bathroom-remodeling/" 
+                className="flex items-center gap-3 p-3 bg-background rounded-xl border border-border hover:border-primary transition-colors group"
+              >
+                <ArrowRight className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="font-semibold text-sm text-foreground group-hover:text-primary transition-colors">ADA Bathrooms</p>
+                  <p className="text-xs text-muted-foreground">Safe, elegant accessibility</p>
+                </div>
+              </Link>
+            </div>
+          </div>
 
-        <ServiceProcess
-          title="Our Whole-Home Renovation Process"
-          subtitle="Cohesive Design-Build"
-          description="A comprehensive approach to transforming your entire property into a modern, functional masterpiece."
-          steps={[
-            {
-              number: "01",
-              icon: "Layout",
-              title: "Planning & Feasibility",
-              description: "We assess your home's structure and your goals to design a layout that works for your lifestyle.",
-            },
-            {
-              number: "02",
-              icon: "PencilRuler",
-              title: "Interior Design & Selection",
-              description: "Our designers help you select a cohesive palette of flooring, paint, and finishes for every room.",
-            },
-            {
-              number: "03",
-              icon: "Hammer",
-              title: "Structural & System Prep",
-              description: "Careful demolition and structural work, followed by full updates to electrical and plumbing systems.",
-            },
-            {
-              number: "04",
-              icon: "CheckCircle",
-              title: "Phased Construction",
-              description: "Meticulous execution of the design plan, managed in phases to minimize disruption to your life.",
-            },
-            {
-              number: "05",
-              icon: "Home",
-              title: "Final Reveal & Inspection",
-              description: "Detailed final walkthrough and quality check to ensure your new home exceeds every expectation.",
-            },
-          ]}
-        />
-
-        <IssuesSolved
-          title="Whole-Home Challenges We Solve"
-          subtitle="Expert Solutions"
-          description="We address the structural and aesthetic issues common in older East Valley homes."
-          issues={serviceData.issues}
-        />
-
-        <Benefits
-          title="Why Invest in Full Renovation?"
-          subtitle="Total Transformation"
-          description="Modernize your lifestyle while maximizing your property value in the Chandler market."
-          benefits={serviceData.benefits}
-        />
-
-        <LocalTrust cityName="Chandler" />
-
-        <Tips
-          title="Home Renovation Tips"
-          subtitle="Professional Advice"
-          description="How to ensure your large-scale renovation is a success from start to finish."
-          tips={serviceData.tips}
-        />
-
-        <ServiceCTA 
-          title="Ready for a Whole-House Transformation?" 
-          description="Schedule your free in-home consultation today and let's start designing your dream home." 
-        />
-
-        <ServiceFAQ faqs={serviceData.faqs} />
-
-        <Testimonials />
-
-        <ContactSection />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg">
+              <Link href="/bathroom-remodeling-chandler-az/">
+                View Bathroom Services
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link href="/contact/">
+                Get a Free Estimate
+              </Link>
+            </Button>
+          </div>
+        </div>
       </main>
       <Footer />
     </>

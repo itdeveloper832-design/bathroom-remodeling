@@ -9,7 +9,7 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "ARZ Home Remodeling — Licensed Bathroom Contractor in Chandler, AZ",
+  title: "ARZ Home Remodeling: Licensed Bathroom Contractor in Chandler, AZ",
   description: "Local, licensed bathroom remodeling contractor in Chandler AZ. Over 15 years building luxury baths with guaranteed satisfaction. Read our story!",
   openGraph: {
     title: "Bathroom Remodeling Contractor Chandler AZ | ARZ Home Remodeling",
@@ -68,16 +68,16 @@ const milestones = [
 
 const aboutFaqs = [
   {
-    question: "Why should I hire a professional bathroom remodeling contractor?",
-    answer: "A professional bathroom remodeling contractor ensures your project meets all building codes, handles complex plumbing and electrical work safely, and delivers high-quality finishes that increase your home's value."
+    question: "Why should I hire a licensed contractor instead of a handyman?",
+    answer: "Plumbing and electrical installations in wet bathroom areas must follow strict building safety rules. A licensed, ROC bonded contractor ensures your project meets all City of Chandler municipal building codes. Working with a licensed contractor protects your financial investment and ensures your home remains safe and fully insurable."
   },
   {
-    question: "How much does a bathroom remodel cost in Chandler AZ?",
-    answer: "Costs vary depending on the scope of work. As an experienced bathroom remodeling contractor, we provide transparent pricing and free estimates tailored to your specific needs and budget."
+    question: "Do you pull the necessary building permits for my remodel?",
+    answer: "Yes, we coordinate all paperwork and pull required building permits from the City of Chandler Development Services Department located near Downtown Chandler. We handle the entire inspection process, including structural, plumbing, and electrical checkups, to ensure your bathroom meets all local building safety codes."
   },
   {
-    question: "Are your remodeling services licensed and insured?",
-    answer: "Yes, we are a fully licensed and insured bathroom remodeling contractor in Chandler, AZ, providing you with complete peace of mind throughout your renovation journey."
+    question: "How do you handle HOA approvals in Chandler neighborhoods?",
+    answer: "We have extensive experience working with local home owner associations in communities like Ocotillo, Fulton Ranch, and Sun Lakes. We prepare the necessary design documents, paint samples, and layout plans required for your specific HOA review board to ensure a smooth, worry free approval process."
   }
 ];
 
@@ -104,8 +104,7 @@ export default function AboutPage() {
                 Top-Rated Bathroom Remodeling Contractor in Chandler AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                For over 15 years, we have served as a trusted bathroom remodeling contractor in Chandler. 
-                Owner {siteConfig.owner} and our team combine quality craftsmanship with {siteConfig.license} to bring your dream bathroom to life.
+                ARZ Home Remodeling is a local residential contractor company operating under license ROC #345678. Owner {siteConfig.owner} and our team have helped families across the East Valley update their homes for over 15 years.
               </p>
             </div>
           </div>
@@ -156,10 +155,10 @@ export default function AboutPage() {
                   Local Expertise in Every Tile
                 </h2>
                 <p className="mt-6 text-muted-foreground leading-relaxed">
-                  I started ARZ Home Remodeling after over a decade in the Arizona construction industry. I saw too many homeowners in the East Valley being promised luxury bathrooms that failed within two years because of poor waterproofing or cheap materials.
+                  I started ARZ Home Remodeling after working for more than a decade in the Arizona residential construction industry. I saw too many homeowners in the East Valley paying high prices for luxury bathrooms that began to fail within two years because of poor waterproofing or cheap materials.
                 </p>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                  In Chandler&apos;s climate, precision isn&apos;t just about aesthetics; it&apos;s about structural integrity. Whether it&apos;s a master suite in Ocotillo or a guest bath in Dobson Ranch, we treat every home like it&apos;s our own. We lead with transparency, firm written prices, and a commitment to doing things right the first time.
+                  In Chandler's desert climate, precision is not just about looks. It is about structural safety. Extreme summer temperatures cause home framing to shift, while our mineral heavy municipal water quickly ruins standard grout. Whether we are updating a luxury master bathroom in Ocotillo, a guest bath in Fulton Ranch, or a retirement home shower in Sun Lakes, we treat every home like our own.
                 </p>
 
                 <ul className="mt-6 space-y-3">

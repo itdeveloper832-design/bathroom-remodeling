@@ -112,6 +112,71 @@ export default function AdminLeadsPage() {
         </div>
       }
     >
+      {/* Analytics Dashboard */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <Card className="bg-gradient-to-br from-blue-50 to-white border-blue-100 shadow-sm">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-medium text-blue-600 mb-1">Total Leads</p>
+                <h3 className="text-3xl font-bold text-slate-900">{leads.length}</h3>
+              </div>
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                <Mail className="w-6 h-6 text-blue-600" />
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gradient-to-br from-amber-50 to-white border-amber-100 shadow-sm">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-medium text-amber-600 mb-1">New & Uncontacted</p>
+                <h3 className="text-3xl font-bold text-slate-900">
+                  {leads.filter(l => l.status === "new").length}
+                </h3>
+              </div>
+              <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                <Clock className="w-6 h-6 text-amber-600" />
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gradient-to-br from-green-50 to-white border-green-100 shadow-sm">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-medium text-green-600 mb-1">Converted</p>
+                <h3 className="text-3xl font-bold text-slate-900">
+                  {leads.filter(l => l.status === "converted").length}
+                </h3>
+              </div>
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                <Check className="w-6 h-6 text-green-600" />
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gradient-to-br from-purple-50 to-white border-purple-100 shadow-sm">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-medium text-purple-600 mb-1">Quote Requests</p>
+                <h3 className="text-3xl font-bold text-slate-900">
+                  {leads.filter(l => l.type === "quote").length}
+                </h3>
+              </div>
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                <Phone className="w-6 h-6 text-purple-600" />
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
       {/* Filter Tabs */}
       <div className="flex gap-2 mb-6 flex-wrap">
         {["all", "new", "contacted", "converted", "closed"].map((status) => (

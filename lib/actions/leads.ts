@@ -1,15 +1,15 @@
 import { Lead } from "@/lib/types";
 import { siteConfig } from "@/lib/site-config";
 
+import { db } from "@/lib/firebase";
+import { collection, addDoc, doc, updateDoc, deleteDoc } from "firebase/firestore";
+
 // ─── PUBLIC: Submit a lead (addDoc only, no reads) ───────────────────────────
 
 export async function createLead(
   data: Omit<Lead, "id" | "createdAt" | "status">
 ): Promise<{ success: boolean; id?: string; error?: string }> {
   try {
-    const { db } = await import("@/lib/firebase");
-    const { collection, addDoc } = await import("firebase/firestore");
-
     const leadData = {
       ...data,
       status: "new" as const,
@@ -56,8 +56,6 @@ export async function updateLeadStatus(
   status: Lead["status"]
 ): Promise<{ success: boolean; error?: string }> {
   try {
-    const { db } = await import("@/lib/firebase");
-    const { doc, updateDoc } = await import("firebase/firestore");
     await updateDoc(doc(db, "leads", id), { status });
     return { success: true };
   } catch (error: any) {
@@ -70,8 +68,6 @@ export async function deleteLead(
   id: string
 ): Promise<{ success: boolean; error?: string }> {
   try {
-    const { db } = await import("@/lib/firebase");
-    const { doc, deleteDoc } = await import("firebase/firestore");
     await deleteDoc(doc(db, "leads", id));
     return { success: true };
   } catch (error: any) {

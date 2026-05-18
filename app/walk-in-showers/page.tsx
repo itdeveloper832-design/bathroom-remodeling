@@ -136,7 +136,7 @@ export default function WalkInShowersPage() {
         <SubServices 
           title="Related Services in Chandler"
           subtitle="More Solutions"
-          description="We provide comprehensive bathroom remodeling services tailored to your needs."
+          description="We provide comprehensive bathroom remodeling services designed for your needs."
           services={otherServices.map(s => s.name)}
         />
 

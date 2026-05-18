@@ -647,7 +647,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       },
       {
         title: "Open, Spacious Feel",
-        description: "Walk-in showers visually open up your bathroom and create a luxurious, spa-like atmosphere.",
+        description: "Walk in showers visually open up your bathroom and create a luxurious, spa like atmosphere.",
         icon: "Wind",
       },
       {
@@ -663,53 +663,53 @@ export const serviceContent: Record<string, ServiceContentData> = {
     ],
     issues: [
       {
-        problem: "Inadequate waterproofing allowing water to escape into adjoining spaces",
-        solution: "Professional waterproofing systems with proper membranes and barriers contain water completely.",
+        problem: "Water Splashing Out",
+        solution: "We calculate the exact floor slope and place linear drains strategically to contain water completely.",
       },
       {
-        problem: "Poor drainage causing standing water in shower",
-        solution: "Linear drains or properly sloped floors ensure water flows away efficiently.",
+        problem: "Standing Water and Mold",
+        solution: "We build precise concrete shower pans that slope perfectly toward the drain to prevent pooling.",
       },
       {
-        problem: "Inadequate ventilation leading to mold and moisture damage",
-        solution: "Proper ventilation systems and exhaust fans remove excess moisture from open showers.",
+        problem: "Lack of Wall Storage",
+        solution: "We build custom recessed tile niches into the wall framing for a clean, organized layout.",
       },
       {
-        problem: "Safety concerns from slippery surfaces",
-        solution: "Textured tile, grab bars, and proper lighting create a safe walk-in shower environment.",
+        problem: "Slippery Floor Hazards",
+        solution: "We install smaller textured mosaic tiles or slip resistant porcelain to provide excellent foot grip.",
       },
     ],
     tips: [
-      "Install a Linear Drain: Linear or trench drains handle water flow better than point drains and look sleek in modern showers.",
-      "Use Niche Storage: Built-in niches keep shampoo and soap organized without cluttering the floor.",
-      "Half-Glass Enclosures Work Great: Glass dividers contain some water splash while maintaining the open feel of walk-in designs.",
-      "Large Format Tile Looks Modern: 12x24 or 24x24 tiles create clean lines and fewer grout joints in walk-in showers.",
+      "Install a Linear Drain: Linear drains handle water flow better than point drains and look sleek in modern showers.",
+      "Use Niche Storage: Built-in niches keep shampoo and soap organized without cluttering the floor space.",
+      "Half-Glass Enclosures Work Great: Glass dividers contain water splash while maintaining the open feel of walk-in designs.",
+      "Large Format Tile Looks Modern: Large tiles create clean lines and fewer grout joints in walk-in showers.",
     ],
     faqs: [
       {
-        question: "How do walk-in showers contain water without doors?",
+        question: "How do walk-in showers contain water without a door?",
         answer:
-          "Proper slope (1/4-1/2 inch per foot) and strategic design guide water toward drains. Some use partial glass for additional containment.",
+          "Proper floor slope is the key to containing water in a doorless walk in shower. We slope the shower floor one quarter inch per foot toward a high flow linear drain. We also build a partial glass partition wall that blocks splashes while keeping the entrance completely open.",
       },
       {
-        question: "What's the minimum size for a walk-in shower?",
+        question: "What is the minimum size required for a walk-in shower?",
         answer:
-          "Minimum is typically 4x8 feet for comfort. Smaller spaces work but feel tight. We design to maximize your available space.",
+          "A comfortable walk in shower requires a minimum footprint of 36 inches by 60 inches. If you want a completely open, doorless design that does not splash water onto your dry bathroom floor, we recommend a layout of at least 42 inches by 72 inches.",
       },
       {
-        question: "Are walk-in showers more difficult to waterproof?",
+        question: "Do walk-in showers increase home resale value?",
         answer:
-          "They require professional waterproofing, but modern systems handle it perfectly. Proper installation ensures leak-free performance.",
+          "Yes, high end walk in showers are highly desirable for modern homebuyers in the East Valley. Replacing an underutilized tub with a custom walk in shower is one of the most reliable ways to improve home equity and make your property stand out.",
       },
       {
-        question: "Can I add seating to a walk-in shower?",
+        question: "Do you install stud anchored grab bars for safety?",
         answer:
-          "Yes! Built-in benches and fold-down shower seats provide comfort for those who prefer seated showering.",
+          "Yes, we anchor every grab bar straight into heavy wood wall studs behind your shower walls. This ensures the bars can easily support adult body weight, providing essential safety for family members of all ages.",
       },
       {
-        question: "Do walk-in showers increase home value?",
+        question: "How long does a walk-in shower installation take in Chandler?",
         answer:
-          "Yes! Walk-in showers appeal to modern buyers and are especially valuable for aging-in-place appeal.",
+          "A standard walk-in shower installation typically takes seven to ten days of active construction. This includes demolition of your old enclosure, custom pan forming, multi layer waterproofing, tile setting, and final glass installation.",
       },
     ],
   },

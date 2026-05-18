@@ -15,17 +15,17 @@ import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
-  description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities & full renovation. Licensed Chandler contractor — free estimate.",
+  description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities and full renovation. Licensed Chandler contractor.",
   openGraph: {
     title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
-    description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities & full renovation. Licensed Chandler contractor — free estimate.",
+    description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities and full renovation. Licensed Chandler contractor.",
     url: `${siteConfig.url}/master-bathroom-remodel/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
-    description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities & full renovation.",
+    description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities and full renovation.",
   },
   alternates: {
     canonical: `${siteConfig.url}/master-bathroom-remodel/`,
@@ -36,39 +36,39 @@ const faqs = [
   {
     question: "What is included in a master bathroom remodel?",
     answer:
-      "Our master bath remodels typically include: new shower enclosure or walk-in shower, vanity and countertop replacement, tile flooring, updated lighting, plumbing fixture upgrades, and mirror or medicine cabinet installation. We manage plumbing and electrical coordination so you never need multiple contractors.",
+      "Our master bath remodels typically include converting old bathtubs into walk in tile showers with frameless glass enclosures, replacing low double vanities with premium quartz countertops, laying non slip porcelain flooring, updating LED lighting systems, and coordinating all Chandler city plumbing permits."
   },
   {
     question: "How long does a master bathroom remodel take in Chandler?",
     answer:
-      "A comprehensive master bathroom remodel typically takes 3–5 weeks depending on scope. Custom cabinetry, detailed tile work, and layout changes can extend the timeline. We provide a firm schedule in your written proposal.",
+      "A comprehensive master bathroom remodel typically takes three to five weeks depending on scope. Custom cabinetry, detailed tile work, and layout changes can extend the timeline. We provide a firm schedule in your written proposal."
   },
   {
     question: "How much does a master bathroom remodel cost in Chandler, AZ?",
     answer:
-      "Master bathroom remodels in Chandler range from $18,000 to $45,000+ depending on the size, material selections, and whether plumbing is being relocated. We provide free, itemized written estimates before any work starts.",
+      "Master bathroom remodels in Chandler range from eighteen thousand to forty five thousand dollars depending on the size, material selections, and whether plumbing is being relocated. We provide free, itemized written estimates before any work starts."
   },
   {
     question: "Do you handle permits for master bathroom remodels in Chandler?",
     answer:
-      "Yes. Anytime structural changes, plumbing relocation, or electrical upgrades are involved, we pull all required Chandler city permits and manage the inspection process.",
+      "Yes. Anytime structural changes, plumbing relocation, or electrical upgrades are involved, we pull all required Chandler city permits and manage the inspection process."
   },
   {
     question: "What features are popular in master bathrooms in Chandler?",
     answer:
-      "Chandler homeowners most often request: curbless walk-in showers with frameless glass, double vanities with quartz countertops, heated tile floors, rainfall showerheads, and custom tile work. We also recommend epoxy grout to combat Chandler's hard water mineral staining.",
-  },
+      "Chandler homeowners most often request curbless walk-in showers with frameless glass, double vanities with quartz countertops, heated tile floors, rainfall showerheads, and custom tile work. We also recommend epoxy grout to combat Chandler's hard water mineral staining."
+  }
 ];
 
 const included = [
   "Walk-in shower enclosure with frameless glass",
-  "Custom tile work — shower walls, floors, niches",
-  "Vanity & countertop replacement",
+  "Custom tile work including shower walls, floors, and niches",
+  "Vanity and countertop replacement",
   "Double sink plumbing upgrade",
-  "Tile or LVP flooring",
-  "Updated lighting & mirrors",
-  "Plumbing & electrical coordination",
-  "Final inspection & walkthrough",
+  "Tile or luxury vinyl plank flooring",
+  "Updated lighting and mirrors",
+  "Plumbing and electrical coordination",
+  "Final inspection and walkthrough"
 ];
 
 const otherServices = bathroomServices
@@ -80,7 +80,7 @@ export default function MasterBathPage() {
     <>
       <ServiceSchema
         serviceName="Master Bathroom Remodel in Chandler, Arizona"
-        serviceDescription="Full-scope master bathroom renovations in Chandler, AZ. Shower enclosures, vanity replacement, tile flooring, plumbing and lighting upgrades — all managed by one licensed Arizona contractor."
+        serviceDescription="Full-scope master bathroom renovations in Chandler, AZ. Shower enclosures, vanity replacement, tile flooring, plumbing and lighting upgrades managed by one licensed Arizona contractor."
         serviceUrl={`${siteConfig.url}/master-bathroom-remodel`}
       />
       <FAQSchema faqs={faqs} />
@@ -94,7 +94,7 @@ export default function MasterBathPage() {
         <ServiceHero
           title="Licensed Master Bathroom Remodeling in Chandler, AZ"
           subtitle="Luxury Transformations Managed by One Local Team"
-          description="Elevate your master suite with a luxury renovation tailored to your style. We handle everything — from custom walk-in showers and double vanities to premium tile and lighting — so you can enjoy a stress-free transformation with a fixed-price guarantee."
+          description="Elevate your master suite with a luxury renovation tailored to your style. We handle everything: from custom walk-in showers and double vanities to premium tile and lighting. Enjoy a stress-free transformation with a fixed-price guarantee."
           image="/images/optimized/photo-1600607687939-ce8a6c25118c.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
@@ -113,11 +113,11 @@ export default function MasterBathPage() {
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                   Our master bath remodels in Chandler are designed to be true single-contractor experiences. You get one point of
-                  contact, one fixed price, and one team handling demolition through final walkthrough — including plumbing and
+                  contact, one fixed price, and one team handling demolition through final walkthrough including plumbing and
                   electrical coordination.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Timeline: <strong className="text-foreground">3–5 weeks</strong> depending on scope. We specify{" "}
+                  Timeline: <strong className="text-foreground">three to five weeks</strong> depending on scope. We specify{" "}
                   <strong className="text-foreground">epoxy grout and nano-coated glass</strong> to combat Chandler's hard water
                   mineral buildup.
                 </p>
@@ -143,13 +143,13 @@ export default function MasterBathPage() {
               <div className="flex flex-col items-center gap-2">
                 <DollarSign className="w-8 h-8 text-primary" />
                 <p className="font-semibold text-foreground">Investment Range</p>
-                <p className="text-2xl font-bold text-primary">$18K – $45K+</p>
+                <p className="text-2xl font-bold text-primary">$18K to $45K+</p>
                 <p className="text-muted-foreground text-sm">Based on scope and selections</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <Clock className="w-8 h-8 text-primary" />
                 <p className="font-semibold text-foreground">Project Timeline</p>
-                <p className="text-2xl font-bold text-primary">3–5 Weeks</p>
+                <p className="text-2xl font-bold text-primary">3 to 5 Weeks</p>
                 <p className="text-muted-foreground text-sm">Written schedule provided upfront</p>
               </div>
               <div className="flex flex-col items-center gap-2">
@@ -163,20 +163,49 @@ export default function MasterBathPage() {
               <p className="text-foreground font-medium">
                 Flexible payment plans available. 
                 <Link href="/financing/" className="text-primary hover:underline ml-1">
-                  View our 0% APR financing for master bath projects
+                  View our zero percent APR financing for master bath projects
                 </Link>.
               </p>
             </div>
           </div>
         </section>
 
+        {/* DOUBLE VANITIES & DUAL SHOWER PLUMBING DESIGN */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Double Vanity Reconfigurations & Dual Shower Plumbing Design
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6 text-center">
+              Our <strong>master bathroom remodeling in Chandler AZ</strong> delivers high end transformations near Fulton Ranch. 
+              We utilize advanced waterproofing and professional mechanical design to engineer high performance personal suites.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Double Vanity Drain Splits</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Many older master bathrooms only have a single sink vanity. We open the drywall to split the single drain line into two dedicated 
+                  plumbing drains, venting them properly to code so you can enjoy separate private sink stations.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Dual Shower Head Mechanical Loops</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  True master showers utilize multiple fixtures including a ceiling mount rainfall shower head and a wall mount slide bar wand. 
+                  We run dedicated supply loops with solid brass pressure balance cartridges to ensure stable water pressure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* INTERNAL LINKS */}
-        <section className="py-12 bg-background">
+        <section className="py-12 bg-secondary/50 border-t border-b border-border">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <div className="grid sm:grid-cols-2 gap-4">
               <Link
                 href="/"
-                className="bg-secondary border border-border rounded-xl p-5 hover:border-primary transition-colors group flex items-center justify-between"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group flex items-center justify-between"
               >
                 <div>
                   <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
@@ -188,7 +217,7 @@ export default function MasterBathPage() {
               </Link>
               <Link
                 href="/bathroom-remodel-cost-chandler"
-                className="bg-secondary border border-border rounded-xl p-5 hover:border-primary transition-colors group flex items-center justify-between"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group flex items-center justify-between"
               >
                 <div>
                   <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
@@ -211,7 +240,7 @@ export default function MasterBathPage() {
 
         <ServiceCTA
           title="Ready to design your dream master bath in Chandler?"
-          description="Schedule a free in-home consultation. We'll measure, assess your plumbing, and give you a fixed written estimate — no pressure."
+          description="Schedule a free in-home consultation. We will measure, assess your plumbing, and give you a fixed written estimate: no pressure."
         />
 
         <ServiceFAQ faqs={faqs} />
@@ -224,4 +253,3 @@ export default function MasterBathPage() {
     </>
   );
 }
-

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import ServiceHero from "@/components/services/service-hero";
-import ServiceCTA from "@/components/services/service-cta";
-import ServiceFAQ from "@/components/services/service-faq";
+import ServiceHero from "@/components/service-hero";
+import ServiceCTA from "@/components/service-cta";
+import ServiceFAQ from "@/components/service-faq";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
@@ -13,9 +13,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Professional Bathroom Remodeling Apache Junction AZ | Free Estimates",
+  title: "Bathroom Remodeling Apache Junction AZ | Free Estimates",
   description:
-    "Hire Apache Junction's top-rated bathroom remodeling contractor. Specializing in walk-in showers, tub-to-shower conversions, and premium desert-safe tiling. Licensed company, free quotes — call +14803065591 today!",
+    "Hire Apache Junction's top-rated bathroom remodeling contractor. Specializing in walk-in showers, tub-to-shower conversions, and premium desert-safe tiling. Licensed company, free quotes: call +14803065591 today!",
   openGraph: {
     title: "Bathroom Remodeling Apache Junction AZ | ARZ Home Remodeling",
     description:
@@ -32,17 +32,17 @@ const apacheJunctionFaqs = [
   {
     question: "How much does a bathroom remodel cost in Apache Junction?",
     answer:
-      "A professional bathroom remodel in Apache Junction, Arizona typically averages between <strong>$9,500 and $34,000</strong>. Small guest bathroom updates or tub swaps range from <strong>$7,500 to $16,000</strong>, while custom master bathroom overhauls with high-performance tile and frameless glass can go from <strong>$20,000 to over $45,000</strong>. We provide transparent, itemized quotes."
+      "A professional bathroom remodel in Apache Junction, Arizona typically averages between nine thousand five hundred and thirty four thousand dollars. Small guest bathroom updates or tub swaps range from seven thousand five hundred to sixteen thousand dollars, while custom master bathroom overhauls with high performance tile and frameless glass can go from twenty thousand to over forty five thousand dollars. We provide transparent, itemized quotes."
   },
   {
     question: "Do you need a permit for bathroom remodeling in Apache Junction?",
     answer:
-      "Yes, major structural, electrical, or plumbing alterations require building permits from the <strong>City of Apache Junction Building Division</strong>. Permits ensure all safety codes are met, especially in older East Valley homes. Simple cosmetic swaps (like vanity cabinets or standard floor tile updates) do not require permits. We manage the entire permitting process for you."
+      "Yes, major structural, electrical, or plumbing alterations require building permits from the City of Apache Junction Building Division. Permits ensure all safety codes are met, especially in older East Valley homes. Simple cosmetic swaps like replacing vanity cabinets or standard floor tile updates do not require permits. We manage the entire permitting process for you."
   },
   {
     question: "What materials work best in Apache Junction's hard water?",
     answer:
-      "Apache Junction's municipal water has exceptionally high mineral counts (averaging <strong>300+ mg/L</strong> of dissolved solids). We recommend <strong>porcelain tile</strong> because it's non-porous and resists white scale stains far better than natural stone. We also exclusively use <strong>epoxy grout</strong>, which resists mineral penetration and discoloration, and premium plywood vanities that stand up to summer humidity."
+      "Apache Junction's municipal water has exceptionally high mineral counts, averaging over three hundred milligrams per liter of dissolved solids. We recommend porcelain tile because it is non porous and resists white scale stains far better than natural stone. We also exclusively use epoxy grout, which resists mineral penetration and discoloration, and premium plywood vanities that stand up to summer humidity."
   }
 ];
 
@@ -104,7 +104,7 @@ export default function ApacheJunctionPage() {
             "Hard Water Defense Grout Systems",
             "Slip-Resistant Flooring (DCOF >= 0.42)",
             "Licensed AZ Contractor Support",
-            "Fixed Pricing — No Hidden Fees"
+            "Fixed Pricing: No Hidden Fees"
           ]} 
           cityName="Apache Junction" 
         />

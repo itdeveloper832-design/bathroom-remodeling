@@ -10,23 +10,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
 import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
-import {
-  ShieldCheck,
-  Star,
-  MapPin,
-  Clock,
-  DollarSign,
-  Droplets,
-  CheckCircle2,
-  ArrowRight,
-  Phone,
-} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Professional Bathroom Remodeling Queen Creek AZ | Free Estimates",
   description:
-    "Hire Queen Creek's top-rated bathroom remodeling company. We specialize in family-friendly renovations, walk-in showers, and master bath updates. Licensed company, free quotes — call +14803065591 today!",
+    "Hire Queen Creek's top-rated bathroom remodeling company. We specialize in family-friendly renovations, walk-in showers, and master bath updates. Licensed company, free quotes: call +14803065591 today!",
   openGraph: {
     title: "Bathroom Remodeling Queen Creek AZ | ARZ Home Remodeling",
     description:
@@ -43,17 +32,17 @@ const queenCreekFaqs = [
   {
     question: "How long does a bathroom remodel take in Queen Creek, AZ?",
     answer:
-      "Most Queen Creek projects are completed in 2-4 weeks. Guest bathroom updates often take just 10-14 days, while full master suite transformations typically run 3-5 weeks."
+      "Most Queen Creek projects are completed in two to four weeks. Guest bathroom updates often take just ten to fourteen days, while full master suite transformations typically run three to five weeks."
   },
   {
     question: "Do you serve San Tan Valley as well?",
     answer:
-      "Yes! We provide full bathroom remodeling services throughout Queen Creek and San Tan Valley, including neighborhoods like Encanterra, Johnson Ranch, and Queen Creek Station."
+      "Yes. We provide full bathroom remodeling services throughout Queen Creek and San Tan Valley, including neighborhoods like Encanterra, Johnson Ranch, and Queen Creek Station."
   },
   {
     question: "What is the most popular bathroom upgrade in Queen Creek?",
     answer:
-      "Tub-to-shower conversions are highly popular in Queen Creek. Homeowners are opting for spacious walk-in showers with modern tile and frameless glass for better functionality and style."
+      "Tub to shower conversions are highly popular in Queen Creek. Homeowners are opting for spacious walk-in showers with modern tile and frameless glass for better functionality and style."
   }
 ];
 
@@ -88,8 +77,8 @@ export default function QueenCreekPage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-3xl font-semibold mb-6">Local Bathroom Renovations in Queen Creek</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Queen Creek is one of Arizona's fastest-growing communities, and we're proud to help local families 
-              enhance their homes with professional bathroom updates. Whether you're in a newer build in San Tan Valley 
+              Queen Creek is one of Arizona's fastest growing communities, and we're proud to help local families 
+              enhance their homes with professional bathroom updates. Whether you are in a newer build in San Tan Valley 
               or a custom home in the heart of Queen Creek, our team has the local expertise you need.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
@@ -115,7 +104,7 @@ export default function QueenCreekPage() {
             "Family-Friendly Bathroom Design",
             "Durable Tile & Grout Systems",
             "Licensed AZ Contractor Support",
-            "Fixed Pricing — No Hidden Fees"
+            "Fixed Pricing: No Hidden Fees"
           ]} 
           cityName="Queen Creek" 
         />

@@ -124,6 +124,34 @@ export default function CabinetCountertopInstallationPage() {
           benefits={serviceData.benefits}
         />
 
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Solid Wood Cabinetry and Precision Stone Fabrication
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A premium vanity upgrade requires meticulous attention to structural loads and moisture resistance. Our 
+              experienced team builds custom cabinetry and fabricates quartz countertops to guarantee lifetime durability.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">KCMA Standard Hardwood Cabinetry</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We install premium, kiln-dried solid maple, oak, and birch cabinet frames that comply with strict KCMA 
+                  standards. Sourcing dry hardwoods prevents doors from warping or cracking in our dry desert air.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Heavy-Duty Stud Wall Anchoring</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Stone countertops carry extreme weight loads. We secure every cabinet box directly into the original wall studs 
+                  using heavy-duty steel cabinet screws, ensuring the structural assembly never sags.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Tips
           title="Cabinet & Countertop Tips"
           subtitle="Care & Maintenance"

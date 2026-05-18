@@ -190,70 +190,70 @@ export const serviceContent: Record<string, ServiceContentData> = {
         icon: "Box",
       },
       {
-        title: "Brighter, Larger-Looking Spaces",
-        description: "Strategic lighting and mirror placement create the illusion of more space in small bathrooms.",
+        title: "Brighter Visuals",
+        description: "Strategic lighting, high output recessed LEDs, and large mirror placement create the illusion of extra space.",
         icon: "Lightbulb",
       },
       {
         title: "Affordable Transformation",
-        description: "Smaller square footage means lower material costs while delivering significant style upgrades.",
+        description: "Smaller square footage means lower material costs while delivering significant structural style upgrades.",
         icon: "DollarSign",
       },
       {
-        title: "Improved Flow & Comfort",
-        description: "Optimized layouts ensure better traffic flow and more comfortable use in compact spaces.",
+        title: "Improved Traffic Flow",
+        description: "Optimized floor plans ensure better physical flow and more comfortable use in compact spaces.",
         icon: "Wind",
       },
     ],
     issues: [
       {
-        problem: "Cramped spaces that feel claustrophobic and limit functionality",
-        solution: "Wall-mounted fixtures, corner sinks, and strategic lighting create openness in small bathrooms.",
+        problem: "Cramped and claustrophobic small bathrooms",
+        solution: "We install wall mounted floating vanities and custom corner sinks to open up empty floor space.",
       },
       {
-        problem: "Insufficient storage in limited square footage",
-        solution: "Vertical storage, medicine cabinets, recessed shelving, and custom vanities maximize space usage.",
+        problem: "Zero linen or toiletries storage space",
+        solution: "We cut into the wall studs to build custom recessed medicine cabinets and tiled shelving niches.",
       },
       {
-        problem: "Dark, dingy appearance from poor lighting design",
-        solution: "Layered lighting with overhead, vanity, and accent lights makes small bathrooms feel bright and welcoming.",
+        problem: "Dark, gloomy environment with dim bulbs",
+        solution: "We design high output recessed LED ceiling systems and vapor proof shower lighting.",
       },
       {
-        problem: "Plumbing and ventilation issues in tight spaces",
-        solution: "Professional installation ensures proper ventilation and plumbing in constrained layouts.",
+        problem: "Trapped steam causing blistering drywall paint",
+        solution: "We size and install high CFM quiet exhaust fans that quickly vent moisture out of the space.",
       },
     ],
     tips: [
-      "Go Vertical for Storage: Use wall space above toilets, shelving, and tall cabinets to maximize storage without taking floor space.",
-      "Light Colors Expand the Space: White, light gray, and pale blue tiles and paint reflect light and make small bathrooms feel larger.",
-      "Floating Vanities Create Airflow: Wall-mounted sinks create visual space below and make cleaning floors easier in tight bathrooms.",
-      "Recessed Shelves Over Surface Shelving: Built-in niches and recessed shelves provide storage without protruding into the room and breaking up space.",
+      "Build Recessed Wall Shelving: We cut into wall stud cavities to build custom tiled niches that store toiletries without blocking shoulders.",
+      "Install Floating Vanities: Exposing more floor tiling creates the visual optical illusion of a much larger room.",
+      "Select Large Format Tiles: Laying large floor tiles with fewer grout lines makes small bathrooms feel wider.",
+      "Replace Shower Curtains with Glass: Seamless glass panels allow light to flow uninterrupted across the entire washroom.",
     ],
     faqs: [
       {
-        question: "What's the minimum bathroom size for remodeling?",
+        question: "What is the average small bathroom remodel cost in Chandler?",
         answer:
-          "We successfully remodel bathrooms as small as 5x5 feet! Even tiny spaces can be transformed with smart design, efficient fixtures, and proper planning.",
+          "The average small bathroom remodel cost in Chandler typically ranges from four thousand five hundred to nine thousand dollars for a cosmetic upgrade including a new floating vanity, modern plumbing fixtures, and new floor tiling. A complete structural reconfiguration starts around twelve thousand dollars.",
       },
       {
-        question: "Can a small bathroom renovation include all the features I want?",
+        question: "What is the minimum size bathroom you can remodel?",
         answer:
-          "Yes! Prioritize your must-haves—like a quality shower or statement sink—and we design around them. Modern compact fixtures offer luxury in small spaces.",
+          "We successfully remodel guest bathrooms and powder rooms as small as five by five feet. Even tiny half baths can be transformed into highly functional spaces using corner vanities, wall mounted toilets, and narrow profile sinks designed specifically for tight floor clearances.",
       },
       {
-        question: "How do you keep small bathroom remodels affordable?",
+        question: "How do you make a tiny bathroom look and feel larger?",
         answer:
-          "Less square footage means lower material and labor costs. We focus on smart design and efficient use of space rather than excessive expansion.",
+          "To make a small bathroom feel spacious, we utilize light color palettes, install large mirrors to reflect natural light, hang floating vanities to expose more flooring, use large format floor tiles to reduce grout lines, and replace heavy shower curtains with seamless glass panels.",
       },
       {
         question: "What ventilation options work best in small bathrooms?",
         answer:
-          "Wall-mounted or ceiling fans work great in small spaces. We ensure proper CFM sizing for your bathroom dimensions to prevent moisture issues.",
+          "We size and install high CFM quiet exhaust fans that quickly vent moisture out of the space, sealing all ceiling joints to prevent hot desert attic air leaks.",
       },
       {
-        question: "Can you make a small bathroom feel spacious?",
+        question: "Can you add a custom walk in shower to a half bath?",
         answer:
-          "Absolutely! Light colors, mirrors, efficient layouts, and layered lighting create the illusion of more space even in tiny bathrooms.",
+          "Yes, we frequently convert small half baths into full bathrooms by reconfiguring adjacent closet spaces to add a modern curbless walk in shower. This smart layout change adds significant value to your Chandler property.",
       },
     ],
   },
@@ -261,75 +261,75 @@ export const serviceContent: Record<string, ServiceContentData> = {
   "bathroom-tile-installation": {
     benefits: [
       {
-        title: "Professional Tile Patterns & Layouts",
-        description: "Expertise in herringbone, basketweave, subway, and custom patterns that elevate your design.",
+        title: "Precision Patterns",
+        description: "Herringbone, basketweave, subway, and custom patterns that elevate your design.",
         icon: "Palette",
       },
       {
-        title: "Waterproof Installation Standards",
-        description: "Proper substrate preparation and techniques prevent leaks and ensure long-lasting durability.",
+        title: "TCNA Waterproofing",
+        description: "Vapor tight membrane preparation and techniques prevent leaks and rot.",
         icon: "Shield",
       },
       {
-        title: "Wide Selection of Materials",
-        description: "Access to premium porcelain, natural stone, glass, and specialty tiles for any aesthetic.",
+        title: "Premium Porcelain",
+        description: "Access to dense porcelain, glass, and specialty stone tiles for any washroom aesthetic.",
         icon: "Sparkles",
       },
       {
-        title: "Expert Grout & Sealing",
-        description: "Professional-grade grout and sealant application protects tiles and maintains beauty for years.",
+        title: "Resin Grout Durability",
+        description: "Stain resistant, non porous epoxy grout joints protect tiles and maintain beauty.",
         icon: "Clock",
       },
     ],
     issues: [
       {
-        problem: "Uneven tile installation causing visible gaps and misalignment",
-        solution: "Professional installation with laser-level technology ensures perfectly straight, even grout lines.",
+        problem: "Water Seeping Behind Tile Walls",
+        solution: "We install vapor tight Schluter Kerdi waterproofing barriers behind every tile surround.",
       },
       {
-        problem: "Cracked grout lines allowing water infiltration and mold growth",
-        solution: "Quality epoxy grout with proper curing and sealing creates waterproof, durable joints.",
+        problem: "Chipped and Cracked Tile Grout",
+        solution: "We set tiles using polymer modified mortar containing flexible latex additives.",
       },
       {
-        problem: "Lippage (uneven tile edges) creating safety hazards and poor appearance",
-        solution: "Leveling systems and expert technique prevent lippage and ensure seamless, safe tile surfaces.",
+        problem: "Uneven Tile Edges or Lippage",
+        solution: "We use advanced physical tile leveling clips to align edges perfectly during setting.",
       },
       {
-        problem: "Substrate failure causing tiles to crack or pop off",
-        solution: "Proper substrate preparation with concrete board, membranes, and prime ensures tile adhesion.",
+        problem: "Stained and Discolored Grout Joints",
+        solution: "We install resin based, non porous epoxy grout that repels hard water minerals.",
       },
     ],
     tips: [
-      "Invest in Proper Substrate: Concrete backer board and waterproofing membranes are essential for tile longevity in wet areas.",
-      "Quality Grout Makes a Difference: Premium epoxy or urethane grout resists stains, mold, and moisture better than standard cement grout.",
-      "Plan Complex Patterns in Advance: Herringbone and diagonal patterns require precise measurement and layout planning to minimize cuts.",
-      "Seal Natural Stone Immediately: Porous stones like marble and travertine must be sealed immediately after installation to prevent staining.",
+      "Select Dense Porcelain: Non porous porcelain is highly waterproof and resists staining much better than ceramic.",
+      "Install Vapor Proof Membranes: Schluter Kerdi membranes protect framing studs from steam and moisture rot.",
+      "Choose Epoxy Grout: Non porous epoxy grout resists mold, is easy to clean, and never needs mineral sealing.",
+      "Seal Natural Stone Tiles: Porous stone like marble and travertine must be sealed before and after grouting to prevent spots.",
     ],
     faqs: [
       {
-        question: "What's the best tile material for bathroom walls?",
+        question: "What is the difference between porcelain and ceramic tile?",
         answer:
-          "Porcelain tile is best—it's non-porous, resists moisture, and is easy to clean. Glass tile adds elegance, and natural stone offers beauty but needs sealing.",
+          "Porcelain tile is made from highly refined clay fired at much higher temperatures than ceramic tile. This makes porcelain extremely dense, highly durable, and almost completely waterproof, making it the perfect choice for high moisture shower walls and bathroom floors.",
       },
       {
-        question: "How do you prevent mold in tile grout?",
+        question: "How long does it take to install a new tiled shower surround?",
         answer:
-          "We use epoxy grout which resists mold naturally, apply professional-grade sealers, and ensure proper ventilation to keep grout clean.",
+          "A standard tiled shower surround installation typically takes five to seven days of active construction. This timeframe includes removing your old tile down to the wall studs, building cement boards, applying waterproof Kerdi membranes, setting tiles, and grouting.",
+      },
+      {
+        question: "Why should I choose epoxy grout instead of standard cement grout?",
+        answer:
+          "Standard cement grout is highly porous and easily absorbs moisture, mold spores, and minerals from Chandler hard water. Epoxy grout is made from durable resins, making it completely non porous. It resists mold growth, prevents staining, and never needs to be sealed.",
       },
       {
         question: "Can you repair cracked tiles without replacing everything?",
         answer:
-          "Yes, we can replace individual damaged tiles. However, if grout or substrate is compromised, we may recommend broader repairs to prevent further damage.",
+          "Yes, we can carefully remove and replace individual damaged tiles. However, if grout crumbling is widespread, we recommend checking the subfloor substrate underneath to ensure there is no hidden moisture rot.",
       },
       {
-        question: "What's the most popular tile pattern today?",
+        question: "What are the most popular tile patterns today?",
         answer:
-          "Subway tile remains popular for its clean look, but herringbone, large format, and geometric patterns are trending. We help you choose patterns that complement your design.",
-      },
-      {
-        question: "How long before tile is fully cured and ready to use?",
-        answer:
-          "Full tile curing takes 24-48 hours depending on conditions. We provide specific care instructions, and you can use your bathroom after full curing.",
+          "Subway tile patterns remain popular for classical looks, but herringbone, large format formats, and geometric designs are highly requested. We help you choose patterns that complement your overall design.",
       },
     ],
   },
@@ -337,75 +337,75 @@ export const serviceContent: Record<string, ServiceContentData> = {
   "bathroom-vanity-installation": {
     benefits: [
       {
-        title: "Personalized Storage Solutions",
-        description: "Custom vanities designed around your specific storage needs, countertop space, and daily routine.",
+        title: "Solid Wood Vanities",
+        description: "Premium moisture resistant cabinetry frames designed around your storage needs and countertop space.",
         icon: "Box",
       },
       {
-        title: "Modern Countertop Materials",
-        description: "Quartz, marble, granite, and solid surface options provide durability, beauty, and low maintenance.",
+        title: "Durable Stone Countertops",
+        description: "Quartz, marble, and granite countertops sealed to resist water marks and calcium buildup.",
         icon: "Sparkles",
       },
       {
-        title: "Optimized Plumbing & Lighting",
-        description: "Expert installation includes proper drain sizing, supply line routing, and integrated vanity lighting.",
+        title: "Aligned Drain Connections",
+        description: "Expert plumbing alignment with solid brass stop valves for safe leak free performance.",
         icon: "Zap",
       },
       {
-        title: "Style & Aesthetic Upgrade",
-        description: "New vanities completely transform your bathroom's appearance and create a focal point for the space.",
+        title: "Comfort Height Cabinetry",
+        description: "Modern thirty six inch comfort heights that make daily routines easier for adults.",
         icon: "Palette",
       },
     ],
     issues: [
       {
-        problem: "Cramped countertops with limited workspace",
-        solution: "Larger vanities or double-sink configurations provide ample countertop and storage.",
+        problem: "Water Swollen Vanity Frames",
+        solution: "We install custom solid wood cabinets with high performance water resistant sealers.",
       },
       {
-        problem: "Outdated fixtures and worn countertops",
-        solution: "Modern vanity replacement with contemporary fixtures and quality countertops updates your bathroom instantly.",
+        problem: "Awkward Under Sink Layouts",
+        solution: "We modify back panels and plumbing routing to clear vanity drawers without losing support.",
       },
       {
-        problem: "Poor lighting and awkward plumbing connections",
-        solution: "Professional installation optimizes plumbing routes, adds vanity lighting, and improves functionality.",
+        problem: "Poor Face Vanity Shadows",
+        solution: "We install professional lighting fixtures on both sides of mirrors to eliminate grooming shadows.",
       },
       {
-        problem: "Inadequate storage leading to counter clutter",
-        solution: "Deeper cabinets, multiple drawers, and pull-out organizers maximize storage capacity.",
+        problem: "Disorganized Countertop Clutter",
+        solution: "We design cabinets with pull out styling racks and integrated cabinet power outlets.",
       },
     ],
     tips: [
-      "Choose Quartz for Durability: Engineered quartz is non-porous, stain-resistant, and requires minimal maintenance compared to natural stone.",
-      "Add Under-Mount Sinks: Under-mount sinks provide cleaner lines, easier countertop cleaning, and more usable counter space.",
-      "Install Task Lighting: Vanity lights on both sides of mirrors eliminate shadows for better grooming and makeup application.",
-      "Include Drawer Organizers: Custom drawer dividers and organizers keep grooming items accessible and reduce daily clutter.",
+      "Select Non Porous Quartz Tops: Quartz resists hard water stains and never needs annual resealing.",
+      "Anchor Base to Stud Walls: Heavy stone tops require vanities to be fastened securely into wood studs.",
+      "Use Cedar Shims to Level: Ensure the cabinet box is perfectly level so drawers never stick or bind.",
+      "Seal Under Mount Sinks Fully: Mount steel bracket support clips to guarantee sinks never sag or leak.",
     ],
     faqs: [
       {
-        question: "What's the best countertop material for a bathroom vanity?",
+        question: "Can you convert a single sink bathroom vanity into a double sink vanity?",
         answer:
-          "Quartz is best for durability and low maintenance. Marble offers beauty but needs sealing. Solid surface is affordable and repairable. We help match materials to your lifestyle.",
+          "Yes, we can convert a single sink vanity into a double vanity if the space is at least sixty inches wide. The process involves opening the drywall behind the vanity to split the single cold and hot water lines and running two separate waste pipes to support the double sinks.",
       },
       {
-        question: "Can you relocate my vanity plumbing?",
+        question: "How long does it take to install a new bathroom vanity?",
         answer:
-          "Yes, we can reroute plumbing to accommodate new vanity locations. Moving plumbing increases cost but provides layout flexibility.",
+          "A standard bathroom vanity installation typically takes two to three days of active construction. This timeframe includes careful demolition of your old cabinet, adjusting water and drain lines, leveling the new solid wood cabinet, mounting the stone countertop, and installing the faucets.",
       },
       {
-        question: "How long does vanity installation take?",
+        question: "Do you offer custom vanity heights for taller homeowners?",
         answer:
-          "A standard vanity installation takes 1-2 days. If plumbing relocation is needed, add 1-2 days. We coordinate with other trades seamlessly.",
+          "Yes, we install both standard thirty two inch vanities and modern thirty six inch comfort height vanities. Comfort height vanities are identical to kitchen cabinet heights and reduce the need to bend over while washing, making them highly popular for master bathrooms.",
       },
       {
-        question: "What's the lifespan of a quality bathroom vanity?",
+        question: "How do you protect natural stone tops from hard water scaling?",
         answer:
-          "A well-maintained vanity lasts 20+ years. Quality cabinets, finishes, and countertops ensure long-term durability and style.",
+          "We treat all granite and marble vanity tops with deep penetrating oil based impregnator sealers. This repels minerals and hard water drops, preventing white calcium scaling from binding to the stone surface.",
       },
       {
-        question: "Can I get a double vanity in my small bathroom?",
+        question: "Do you install double sink vanities in small bathrooms?",
         answer:
-          "Yes! We design double vanities for bathrooms as small as 8 feet wide. Floating vanities and narrower units make doubles feasible.",
+          "Yes, we can custom design slim profile double vanities or floating modern vanities for tighter bathroom layouts. If the wall space is at least sixty inches, we can successfully integrate a functional double vanity.",
       },
     ],
   },
@@ -490,17 +490,17 @@ export const serviceContent: Record<string, ServiceContentData> = {
     benefits: [
       {
         title: "Modern Shower Systems",
-        description: "Upgrade to rainfall showerheads, body jets, thermostatic mixing valves, and smart shower systems.",
+        description: "Upgrade to rainfall showerheads, body jets, pressure balancing mixing valves, and smart shower systems.",
         icon: "Droplets",
       },
       {
         title: "Improved Water Efficiency",
-        description: "Low-flow fixtures reduce water usage by 30-50% while maintaining excellent water pressure.",
+        description: "Low flow fixtures reduce water usage by 30 to 50 percent while maintaining excellent water pressure.",
         icon: "Wind",
       },
       {
         title: "Enhanced Safety Features",
-        description: "Anti-slip flooring, grab bars, and accessible design make showers safer for all family members.",
+        description: "Anti slip flooring, stud anchored grab bars, and accessible design make showers safer for all family members.",
         icon: "Shield",
       },
       {
@@ -511,53 +511,53 @@ export const serviceContent: Record<string, ServiceContentData> = {
     ],
     issues: [
       {
-        problem: "Weak water pressure affecting shower quality",
-        solution: "Replace restrictor flow limiters, update supply lines, or install pressure-boosting systems.",
+        problem: "Sudden Water Temperature Swings",
+        solution: "We replace old valves with pressure balancing valves to maintain safe, steady temperatures.",
       },
       {
-        problem: "Corroded or leaking fixtures and valves",
-        solution: "Complete fixture replacement with modern, corrosion-resistant materials ensures leak-free operation.",
+        problem: "Soft or Leaking Shower Pans",
+        solution: "We remove old pans down to the subfloor and install solid, multi layer waterproof pans.",
       },
       {
-        problem: "Cold water swings during showers",
-        solution: "Install thermostatic mixing valves that maintain consistent temperature automatically.",
+        problem: "Hard Water Scale Scaling",
+        solution: "We install professional grade brass valves and scale resistant silicone nozzles that resist scaling.",
       },
       {
-        problem: "Outdated finishes clashing with new bathroom design",
-        solution: "Update to contemporary finishes like brushed nickel, matte black, or champagne bronze.",
+        problem: "Outdated Metal Enclosures",
+        solution: "Update to contemporary finishes like brushed nickel, matte black, or champagne bronze with frameless glass.",
       },
     ],
     tips: [
-      "Choose Eco-Friendly Low-Flow Fixtures: Modern low-flow showerheads deliver excellent coverage while reducing water waste and utility bills.",
-      "Thermostatic Valves Provide Comfort & Safety: These valves prevent scalding by maintaining preset temperatures, protecting young children and elderly.",
-      "Match Fixtures to Your Home's Design: Choose finishes that complement your home's interior style—polished, brushed, or matte options.",
-      "Install Quality Trim Rings: Proper trim rings create clean transitions between fixtures and walls for a professional appearance.",
+      "Choose Eco-Friendly Low-Flow Fixtures: Modern low flow showerheads deliver excellent coverage while reducing utility bills.",
+      "Pressure Balancing Valves Provide Safety: These valves prevent scalding by maintaining preset temperatures, protecting young children and seniors.",
+      "Match Fixtures to Your Home's Design: Choose finishes that complement your home's style like brushed or matte solid brass options.",
+      "Install Quality Solid Metal Trim: Proper metal trim rings create clean transitions and leak proof seals between fixtures and walls.",
     ],
     faqs: [
       {
-        question: "Can I replace just the showerhead without full replacement?",
+        question: "Can you replace a shower valve without tearing down the wall?",
         answer:
-          "Yes! A new showerhead is an affordable upgrade. If your valve needs repair or you want new trim, full replacement provides better results.",
+          "Yes, in many cases we can replace a shower valve cartridge or valve body through a small access panel behind the shower wall. If no access panel exists, we can carefully cut a neat opening in the drywall of the adjoining room to replace the valve without disturbing your beautiful shower tile.",
       },
       {
-        question: "What's the best showerhead for low water pressure?",
+        question: "What are the signs that a shower pan needs to be replaced?",
         answer:
-          "High-pressure showerheads and pressure-compensating valves optimize flow. Some perform better than others—we recommend the best options.",
+          "The most common signs of a failing shower pan include water stains on the ceiling below the bathroom, soft spots when stepping near the drain, musty mildew smells that do not go away, and cracked grout lines along the bottom tile joints where the wall meets the floor.",
       },
       {
-        question: "How do I prevent scalding in my shower?",
+        question: "Why should I install a pressure balancing shower valve?",
         answer:
-          "Install a thermostatic mixing valve that limits maximum temperature. This protects young children and elderly family members.",
+          "A pressure balancing shower valve maintains a constant ratio of hot and cold water pressure. This valve prevents the water from becoming dangerously hot or freezing cold when toilet flushing or laundry cycles run elsewhere in the home, protecting children and seniors from scalding.",
       },
       {
-        question: "Can you upgrade an older shower to modern fixtures?",
+        question: "What shower finishes are most durable in Chandler?",
         answer:
-          "Absolutely! We can adapt older plumbing to modern fixtures and finishes. Most updates work with existing supply lines.",
+          "Brushed nickel and stainless steel are the most durable finishes. They hide water spots and resist hard water mineral deposits extremely well, whereas chrome and matte black require much more frequent cleaning.",
       },
       {
-        question: "What's the most durable shower finish?",
+        question: "How long does a shower replacement project take?",
         answer:
-          "Brushed nickel and stainless steel resist water spots and corrosion best. Matte black and polished chrome require more maintenance.",
+          "A complete shower replacement typically takes three to five days of active construction. This timeframe includes wall demolition, updating plumbing lines, installing the waterproof pan, tiling the walls, and mounting new hardware fixtures.",
       },
     ],
   },
@@ -566,12 +566,12 @@ export const serviceContent: Record<string, ServiceContentData> = {
     benefits: [
       {
         title: "Increased Accessibility",
-        description: "Walk-in showers eliminate stepping over high tub walls, making bathing safer for all ages.",
+        description: "Walk in showers eliminate stepping over high tub walls, making bathing safer for all ages.",
         icon: "Accessibility",
       },
       {
         title: "Space Efficiency",
-        description: "Showers often take less space than tubs, potentially opening up your bathroom layout.",
+        description: "Showers take less space than tubs, potentially opening up your bathroom layout.",
         icon: "Box",
       },
       {
@@ -587,53 +587,53 @@ export const serviceContent: Record<string, ServiceContentData> = {
     ],
     issues: [
       {
-        problem: "Limited bathroom space, making showers feel cramped",
-        solution: "Custom corner showers or compact layouts maximize functionality in tight spaces.",
+        problem: "Dangerous Stepping Barriers",
+        solution: "We build curbless, zero entry showers that eliminate high step tub thresholds.",
       },
       {
-        problem: "Family members miss tub for baths and soaking",
-        solution: "Consider combo units or ensure other bathrooms have tubs before converting.",
+        problem: "Low Water Pressure",
+        solution: "We install pressure balanced valve systems for excellent water flow and steady temperatures.",
       },
       {
-        problem: "Moisture and water damage from inadequate waterproofing",
-        solution: "Professional waterproofing with membranes, proper slope, and drainage prevents damage.",
+        problem: "Small, Cramped Bathrooms",
+        solution: "Converting to a walk in shower opens up your bathroom layout visually and physically.",
       },
       {
-        problem: "Complex plumbing relocations adding unexpected costs",
-        solution: "We assess plumbing during consultation and provide accurate estimates upfront.",
+        problem: "Plumbing Drain Clogs",
+        solution: "We expand old tub plumbing from one and a half inches to a two inch high flow shower drain.",
       },
     ],
     tips: [
-      "Plan Drainage Carefully: Shower floors must slope properly toward drains to prevent pooling. Professional installation is essential.",
-      "Install Grab Bars for Safety: Grab bars in showers prevent slips and provide essential safety for elderly or mobility-limited users.",
-      "Choose Anti-Slip Flooring: Textured tile or specialized coatings reduce slipping risk in wet shower environments.",
-      "Consider Waterproofing Before Finishing: Proper waterproofing membranes protect subfloors from leaks—this investment pays for itself.",
+      "Plan Drainage Carefully: Shower floors must slope properly toward drains to prevent pooling. Professional drain expansion is essential.",
+      "Install Grab Bars for Safety: Grab bars in showers prevent slips and provide essential safety for seniors or mobility limited users.",
+      "Choose Anti-Slip Flooring: Textured mosaic tile or specialized slip resistant porcelain reduces slipping risk in wet shower environments.",
+      "Consider Waterproofing First: Proper waterproofing membranes protect subfloors from leaks; this quality investment pays for itself.",
     ],
     faqs: [
       {
-        question: "Are you one of the top tub to shower conversion companies near me?",
+        question: "Will removing a bathtub affect my home resale value?",
         answer:
-          "Yes, we are highly rated among tub to shower conversion companies near me in Chandler and the East Valley. We specialize in removing unused tubs and installing modern, accessible walk-in showers.",
+          "Removing the only bathtub in your home can reduce the pool of potential buyers, particularly young families with toddlers. However, if your home has at least one other bathroom with a tub, swapping an unused garden tub in the master bath for a spacious walk in shower almost always increases your property value.",
       },
       {
-        question: "How long does a tub to shower conversion near me take?",
+        question: "How long does a tub to shower conversion take?",
         answer:
-          "A standard tub to shower conversion near me typically takes 1-2 weeks. We handle everything from demo to plumbing, making us a preferred choice for bath to shower conversion near me.",
+          "A professional tub to shower conversion typically takes seven to ten days of active construction. This includes demolition of the old tub, expanding the drain line from one and a half inches to two inches, installing waterproofing systems, tile setting, and mounting the glass enclosures.",
       },
       {
-        question: "Can you add a bench to my tub to shower conversion in Chandler?",
+        question: "What is the difference between a curbless and curbed walk-in shower?",
         answer:
-          "Yes! Built-in benches or corner seats are popular additions to a tub to shower conversion in Chandler. We design for comfort and accessibility, especially for those aging in place.",
+          "A curbed walk in shower has a small three to four inch step threshold to contain water. A curbless walk in shower is completely flat and level with the bathroom floor. Curbless showers require recessing the subfloor to slope toward the drain, which provides barrier free universal access.",
       },
       {
-        question: "Will a tub to shower conversion in Arizona affect home value?",
+        question: "Do you offer financing options for conversions in Chandler?",
         answer:
-          "In many cases, it increases value! A professional tub to shower conversion in Arizona is highly sought after by modern buyers who prefer spacious, luxury showers over unused garden tubs.",
+          "Yes, we provide competitive 0 percent financing options for tub-to-shower swap projects over $5,000 to help keep your home renovations highly affordable.",
       },
       {
-        question: "What's the typical tub to shower conversion cost?",
+        question: "What waterproofing systems do you install behind tiles?",
         answer:
-          "Costs range from $6,000 to $13,000. We provide competitive tub to shower conversion estimates in Chandler, ensuring you get the best ROI for your bathroom renovation.",
+          "We use full Schluter Kerdi waterproofing membranes and concrete backer boards behind all custom shower tiling. This creates an impenetrable moisture barrier that protects your home framing from mold and dry rot.",
       },
     ],
   },
@@ -716,75 +716,75 @@ export const serviceContent: Record<string, ServiceContentData> = {
   "cabinet-countertop-installation": {
     benefits: [
       {
-        title: "Custom Storage Solutions",
-        description: "Cabinets designed specifically for your items, habits, and lifestyle maximize functionality.",
+        title: "Custom Wood Cabinets",
+        description: "Solid wood cabinet frames and doors designed specifically for your items, habits, and lifestyle.",
         icon: "Box",
       },
       {
-        title: "Premium Countertop Materials",
+        title: "Premium Stone Countertops",
         description: "Quartz, granite, and marble countertops combine beauty, durability, and luxury aesthetics.",
         icon: "Sparkles",
       },
       {
-        title: "Improved Workflow & Efficiency",
-        description: "Professional kitchen layouts place frequently-used items at optimal heights for easy access.",
+        title: "Heavy Stud Anchoring",
+        description: "Professional vanity installations anchored directly into wall studs to support heavy stone securely.",
         icon: "Zap",
       },
       {
-        title: "Significant Home Value Increase",
-        description: "Kitchen upgrades add 50-80% ROI when selling and dramatically improve daily living.",
+        title: "Significant Home Value Boost",
+        description: "High quality cabinetry upgrades add exceptional value when selling your property.",
         icon: "TrendingUp",
       },
     ],
     issues: [
       {
-        problem: "Inadequate cabinet storage for kitchen items",
-        solution: "Add floor-to-ceiling cabinets, pull-out organizers, and custom storage solutions.",
+        problem: "Swollen and Sagging Cabinets",
+        solution: "We install solid wood cabinetry with protective moisture resistant coatings.",
       },
       {
-        problem: "Worn, chipped, or outdated countertops",
-        solution: "Professional replacement with modern materials that resist staining and damage.",
+        problem: "Stained and Scratched Countertops",
+        solution: "We replace old countertops with non porous quartz that resists stains and mineral damage.",
       },
       {
-        problem: "Poor cabinet layout affecting cooking efficiency",
-        solution: "Reorganize layout with work triangles, proper lighting, and strategic appliance placement.",
+        problem: "Misaligned Doors and Drawers",
+        solution: "We level every cabinet base perfectly using structural shims during installation.",
       },
       {
-        problem: "Water damage or deterioration of cabinet interiors",
-        solution: "Replace damaged cabinets and install proper ventilation and water barriers.",
+        problem: "Leaking Undermount Sinks",
+        solution: "We install heavy duty steel brackets to anchor undermount sinks permanently to the stone.",
       },
     ],
     tips: [
-      "Choose Quartz for Low Maintenance: Non-porous quartz never needs sealing, resists stains, and requires only simple cleaning.",
-      "Install Under-Mount Lighting: Under-cabinet lights improve visibility and create modern ambiance in your kitchen.",
-      "Use Soft-Close Drawers: Soft-close hardware prevents slamming, extends cabinet life, and provides quiet operation.",
-      "Plan Counter Organization: Custom dividers and organizers keep countertops clean while maintaining accessibility.",
+      "Choose Quartz for Low Maintenance: Non porous quartz never needs sealing and resists hard water spots.",
+      "Install Under Vanity Lighting: LED strip lights improve visibility and create modern nighttime ambiance.",
+      "Use Soft Close Hardware: Soft close hinges prevent slamming and extend the overall life of cabinet doors.",
+      "Plan Counter Storage First: Built in drawers and organizers keep countertops free from daily clutter.",
     ],
     faqs: [
       {
-        question: "What's the best kitchen countertop material?",
+        question: "What is the difference between quartz and granite countertops?",
         answer:
-          "Quartz offers best durability and low maintenance. Granite provides luxury but needs sealing. Laminate is budget-friendly. We help match materials to your needs.",
+          "Granite is a 100 percent natural stone that is highly unique but porous. It requires regular sealing to prevent cosmetic stains. Quartz is an engineered stone made from natural quartz crystals and durable resins. It is completely non porous, never requires sealing, and is highly stain resistant.",
       },
       {
-        question: "How long do kitchen cabinets typically last?",
+        question: "How long does it take to install new vanities and countertops?",
         answer:
-          "Quality cabinets last 20+ years. Regular maintenance and avoiding water damage extends lifespan significantly.",
+          "A standard bathroom cabinet and countertop installation typically takes five to seven days of active construction. This timeframe includes removing your old vanity, preparing the plumbing lines, anchoring the new cabinets, setting the fabricated stone, and installing the sink drains.",
       },
       {
-        question: "Can you refinish my existing cabinets instead of replacing them?",
+        question: "Do you offer cabinet refacing or only full replacement?",
         answer:
-          "Yes! Cabinet refinishing is an affordable option if frames are solid. New hardware and paint can transform appearance.",
+          "If your original cabinet structural boxes are solid and free of moisture damage, we can easily perform cabinet refacing. Refacing involves keeping the original frames but replacing the doors, drawer fronts, and hardware, saving you time and home renovation costs.",
       },
       {
-        question: "What's involved in cabinet and countertop installation?",
+        question: "What solid hardwoods do you install for bathroom cabinetry?",
         answer:
-          "We remove old materials, prepare surfaces, install new cabinets level, set countertops with proper support, and seal edges and joints.",
+          "We primarily install kiln dried solid maple, birch, and oak vanities. Sourcing kiln dried hardwoods prevents the wood cells from warping or cracking in our dry desert air, ensuring long term durability.",
       },
       {
-        question: "How long does cabinet and countertop installation take?",
+        question: "How do you secure undermount sinks to the stone countertop?",
         answer:
-          "Standard kitchen typically takes 1-2 weeks. Complex renovations with plumbing/electrical changes may take 3-4 weeks.",
+          "We never rely on silicone glue alone to support sinks. We secure every undermount sink using industrial steel mounting clips and structural brackets anchored straight to the underside of the stone.",
       },
     ],
   },
@@ -792,75 +792,75 @@ export const serviceContent: Record<string, ServiceContentData> = {
   "bathroom-flooring-installation": {
     benefits: [
       {
-        title: "Water-Resistant & Durable Flooring",
-        description: "Modern flooring materials resist moisture, mold, and are incredibly durable in wet environments.",
+        title: "Waterproof Tile & Stone",
+        description: "Dense porcelain tiles that absorb virtually zero moisture and resist mold growth.",
         icon: "Shield",
       },
       {
-        title: "Slip-Resistant Safety",
-        description: "Textured flooring and proper grout composition prevent slips and falls in bathrooms.",
+        title: "Anti Slip Safety",
+        description: "Textured mosaic and porcelain floor surfaces that prevent slips and falls.",
         icon: "AlertTriangle",
       },
       {
-        title: "Easy Maintenance & Cleaning",
-        description: "Sealed porcelain tile and other modern materials require minimal effort to keep clean.",
+        title: "Epoxy Grout Durability",
+        description: "Stain resistant, non porous epoxy grout joints that will not crumble or discolor.",
         icon: "Clock",
       },
       {
-        title: "Design Versatility",
-        description: "Endless tile options, patterns, and colors allow complete customization of your bathroom look.",
+        title: "Foundation Crack Protection",
+        description: "Anti fracture underlayment membranes that prevent slab shifts from cracking your tile.",
         icon: "Palette",
       },
     ],
     issues: [
       {
-        problem: "Cracked or chipped flooring creating hazards",
-        solution: "Professional replacement with durable, slip-resistant flooring prevents injuries.",
+        problem: "Cracked Floor Tiles",
+        solution: "We install flexible polymer modified thinset and anti fracture Ditra membranes to absorb subfloor shifts.",
       },
       {
-        problem: "Water damage and deterioration of subfloors",
-        solution: "Remove damaged flooring, repair subfloor, and install proper waterproofing before new flooring.",
+        problem: "Crumbling Grout Lines",
+        solution: "We reinforce sagging wood subfloors and install durable cement backer boards before tiling.",
       },
       {
-        problem: "Mold and mildew growth in grout lines",
-        solution: "Epoxy grout and proper sealing prevent mold naturally and resist moisture.",
+        problem: "Stained and Moldy Grout",
+        solution: "We use resin based, non porous epoxy grout that repels water and prevents mold.",
       },
       {
-        problem: "Outdated or stained flooring affecting bathroom appearance",
-        solution: "Modern tile and stone flooring completely transforms your bathroom aesthetic.",
+        problem: "Slippery Wet Tile Floors",
+        solution: "We replace old smooth tiles with high traction, slip resistant textured porcelain floor designs.",
       },
     ],
     tips: [
-      "Porcelain Tile is Best for Bathrooms: Non-porous porcelain won't absorb water or harbor mold, making it ideal for wet areas.",
-      "Use Large Format Tiles: 12x24 or 24x24 tiles have fewer grout lines, making cleaning easier and showers more waterproof.",
-      "Epoxy Grout Outperforms Cement: Epoxy grout resists mold, staining, and moisture much better than standard cement grout.",
-      "Heated Floors Add Luxury: Radiant floor heating provides comfort and helps prevent mold by drying floors quickly.",
+      "Select Dense Porcelain: Non porous porcelain is highly waterproof and resists staining much better than ceramic.",
+      "Install Anti Fracture Membranes: Schluter Ditra membranes absorb subfloor concrete movement to prevent tile cracks.",
+      "Choose Epoxy Grout Joints: Epoxy grout resists mold, is easy to clean, and never needs mineral sealer.",
+      "Verify Slip Resistance Rating: Check that your floor tiles have high textured friction ratings to prevent falls.",
     ],
     faqs: [
       {
-        question: "What's the best flooring option for wet bathrooms?",
+        question: "What is the best flooring material for a wet bathroom floor?",
         answer:
-          "Porcelain tile is best—it's non-porous and resists mold. Large-format tiles with epoxy grout provide superior waterproofing.",
+          "Textured porcelain tile is the highest performing flooring material for bathrooms. Porcelain is extremely dense, absorb less than 0.5 percent moisture, resists mold naturally, and will not warp like wood laminates when exposed to steam or water splashes.",
       },
       {
-        question: "How do you prevent water from seeping through flooring?",
+        question: "How long does it take to install new bathroom floor tile?",
         answer:
-          "Professional waterproofing membranes under flooring, proper slope toward drains, and sealed grout prevent water infiltration.",
+          "A standard bathroom floor tile installation typically takes three to five days of active construction. This timeframe includes removing your old flooring, leveling the concrete slab, installing crack isolation membranes, setting the tile, and applying the epoxy grout.",
       },
       {
-        question: "Can you install heated floors in a bathroom?",
+        question: "Why do my bathroom floor tile grout lines crack and crumble?",
         answer:
-          "Yes! Radiant heating under tiles provides warmth and helps floors dry faster. Installation requires planning during remodel.",
+          "Grout lines crumble when the subfloor beneath the tile bends or flexes under foot traffic. Crumbly grout is a sign that the original contractor failed to install a solid cement backer board or did not secure the plywood subfloor properly before tiling.",
       },
       {
-        question: "How long does bathroom flooring installation take?",
+        question: "Does bathroom flooring installation require foundation repairs?",
         answer:
-          "Standard bathroom flooring takes 3-5 days depending on size and complexity. Curing time adds another 2-3 days before use.",
+          "No, but it requires slab crack treatment. If your desert concrete slab has minor settling cracks, we install flexible elastomeric membranes over the cracks before tiling to isolate the tile from slab movement.",
       },
       {
-        question: "What pattern options are available for bathroom tile?",
+        question: "Can you install radiant heated floors under bathroom tile?",
         answer:
-          "Subway, herringbone, geometric, hexagon, and large-format options available. We help choose patterns that suit your design.",
+          "Yes, we can easily lay low profile electric heating cables inside the membrane underlayment before setting your new porcelain tiles. Heated floors dry out moisture quickly and provide luxurious winter warmth.",
       },
     ],
   },
@@ -868,75 +868,75 @@ export const serviceContent: Record<string, ServiceContentData> = {
   "bathroom-lighting-installation": {
     benefits: [
       {
-        title: "Professional Layered Lighting Design",
-        description: "Combination of ambient, task, and accent lighting creates depth and eliminates shadows.",
+        title: "Layered Light Designs",
+        description: "Balanced ceiling lights, mirror task lights, and accent lights eliminate shadows.",
         icon: "Lightbulb",
       },
       {
-        title: "Energy-Efficient LED Technology",
-        description: "Modern LEDs use 75% less energy than incandescent bulbs and last 25,000+ hours.",
+        title: "Energy Efficient LEDs",
+        description: "Modern LEDs use far less power and provide clear shadow free illumination.",
         icon: "Zap",
       },
       {
-        title: "Improved Grooming & Mirror Visibility",
-        description: "Proper vanity lighting eliminates unflattering shadows for better makeup and shaving.",
+        title: "Dedicated circuit Safety",
+        description: "Professional dedicated circuits with GFCI shock protection guarantee home safety.",
         icon: "Mirror",
       },
       {
-        title: "Smart Lighting Control",
-        description: "Dimmers, sensors, and smart controls let you adjust lighting for any mood or task.",
+        title: "Moisture Sealed Fixtures",
+        description: "Wet zone vapor proof fixtures that resist heavy steam and corrosion.",
         icon: "Sparkles",
       },
     ],
     issues: [
       {
-        problem: "Dark, shadowy bathrooms making grooming difficult",
-        solution: "Layered lighting design with overhead, vanity, and accent lights brightens spaces.",
+        problem: "Heavy Facial Shadows",
+        solution: "We install dual vertical sconces on both sides of mirror glass to cast flattering light.",
       },
       {
-        problem: "Inadequate electrical support for new lighting",
-        solution: "Professional electrical assessment ensures proper circuit sizing and safety.",
+        problem: "Tripping Circuit Breakers",
+        solution: "We run dedicated twenty amp circuits to handle hair dryers and styling irons safely.",
       },
       {
-        problem: "Poor quality lighting highlighting skin imperfections",
-        solution: "Vanity lights positioned correctly provide flattering, shadow-free illumination.",
+        problem: "Rusted Metal Fixtures",
+        solution: "We install moisture resistant, sealed metal fixtures that will not rust from shower steam.",
       },
       {
-        problem: "High electric bills from inefficient lighting",
-        solution: "LED upgrades reduce energy consumption and lower monthly utility costs significantly.",
+        problem: "Harsh Blinding Morning Light",
+        solution: "We install customizable smart dimmer switches to keep morning light soft and comfortable.",
       },
     ],
     tips: [
-      "Mount Vanity Lights at Eye Level: Lights positioned at 65-75 inches above floor provide optimal illumination for grooming.",
-      "Use 3000K Color Temperature: Warm white (3000K) LED light is flattering for skin tone and creates relaxing ambiance.",
-      "Add Dimmer Controls: Dimmers let you adjust lighting for different times of day and create spa-like atmosphere.",
-      "Install Ventilation Fans with Lights: Combination fan-light units save space while providing ventilation and illumination.",
+      "Position sconces at Eye Level: Mounting fixtures sixty five inches high provides perfect mirror views.",
+      "Choose Warm 3000K LEDs: Warm white colors provide accurate skin tones and welcoming ambiance.",
+      "Install Smart Dimmer Switches: Dimmers let you customize lighting levels for different times of day.",
+      "Use Sealed Shower Fixtures: Vapor proof LEDs inside wet areas prevent moisture corrosion and electrical shorts.",
     ],
     faqs: [
       {
-        question: "What's the ideal bathroom lighting setup?",
+        question: "What is the best color temperature for bathroom vanity lighting?",
         answer:
-          "Layer overhead ambient light, vanity task lighting (on sides of mirrors), and accent lighting for a balanced design.",
+          "We highly recommend using warm white LED lighting with a color temperature of 3000 Kelvin. This color temperature provides a natural, clean light that matches skin tones perfectly while avoiding the cold, harsh blue hue of daylight bulbs.",
       },
       {
-        question: "How do I eliminate harsh shadows in my bathroom mirror?",
+        question: "How do I eliminate shadows when looking in the bathroom mirror?",
         answer:
-          "Position lights on both sides of mirror at 36 inches apart and 65-75 inches high for shadowless illumination.",
+          "To eliminate all grooming shadows, we install vertical wall sconces on both sides of your mirror. The fixtures should be spaced thirty six inches apart and mounted sixty five to seventy five inches above your floor to match eye level.",
       },
       {
-        question: "Should I use LED or traditional bulbs?",
+        question: "Does bathroom lighting installation require a dedicated circuit?",
         answer:
-          "LEDs are superior—they're energy-efficient, last 25x longer, run cooler, and provide better light quality.",
+          "Yes, modern building codes require bathrooms to be on a dedicated twenty amp circuit. This circuit must be fully protected by a Ground Fault Circuit Interrupter to prevent electrical shocks when you run hair dryers or styling irons.",
       },
       {
-        question: "Can I install dimmer switches in a bathroom?",
+        question: "Can you install lighting inside the shower enclosure?",
         answer:
-          "Yes! Dimmers work great in bathrooms and allow you to adjust light levels for different times of day.",
+          "Yes, we install specialized vapor proof LED recessed lights inside shower wet zones. These fixtures are completely sealed to prevent steam and water drops from penetrating the electrical wiring.",
       },
       {
-        question: "Is bathroom lighting installation complicated?",
+        question: "Why should I upgrade to LED lights inside my bathroom?",
         answer:
-          "It requires electrical work, so hire a licensed electrician. Installation typically takes 1-2 hours per fixture.",
+          "LED lightbulbs produce very little heat, require eighty percent less energy than hot incandescent bulbs, and last over twenty thousand hours, dramatically reducing your utility bills and maintenance costs.",
       },
     ],
   },
@@ -949,7 +949,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
         icon: "Box",
       },
       {
-        title: "Reduced Water & Utility Costs",
+        title: "Reduced Utility Costs",
         description: "Removing hot tub water usage reduces monthly water and heating bills significantly.",
         icon: "DollarSign",
       },
@@ -966,53 +966,57 @@ export const serviceContent: Record<string, ServiceContentData> = {
     ],
     issues: [
       {
-        problem: "Taking up too much space in small bathrooms",
-        solution: "Remove tub and maximize space with efficient shower design or additional storage.",
+        problem: "Excessive Weight Hazards",
+        description: "Heavy cast iron tubs require specialized lifting rigs to extract safely without damaging tile floors.",
+        icon: "AlertTriangle",
       },
       {
-        problem: "Heavy tub requiring specialized removal equipment",
-        solution: "Professional removal teams safely extract tubs without damaging surrounding areas.",
+        problem: "Hidden Subfloor Rot",
+        description: "Water seeping through old caulk rots the joists and encourages toxic black mold growth.",
+        icon: "Droplets",
       },
       {
-        problem: "Plumbing and structural issues when removing tub",
-        solution: "We assess plumbing, handle disconnections, and repair substrate properly.",
+        problem: "Corroded Plumbing Lines",
+        description: "Old waste lines and tub trap fittings rust out and leak behind drywall.",
+        icon: "Wrench",
       },
       {
-        problem: "Uncertainty about what to do with removed space",
-        solution: "We design replacement features—showers, storage, or additional layout space.",
+        problem: "Wasted Floor Footprint",
+        description: "Massive built in garden tubs take up feet of space that could be used for luxury showers.",
+        icon: "Layout",
       },
     ],
     tips: [
-      "Plan Replacement Design Before Removal: Determine what replaces the tub before removal to maximize space efficiency.",
-      "Consider Plumbing Modifications: Tub removal frees plumbing that can be redirected for new shower configurations.",
-      "Repair Subfloor if Damaged: Inspect subfloor during removal and repair any water damage before installing new features.",
-      "Keep One Tub for Families: In multi-bathroom homes, removing one tub is fine if another remains for bathing.",
+      "Plan Replacement Design Early: Decide exactly what features will replace the tub before beginning demolition.",
+      "Inspect Wall Framing: Have your contractor inspect the wood studs for moisture damage as soon as the tub is out.",
+      "Upgrade Sewer Lines: Take advantage of the open subfloor to replace old cast iron plumbing with durable PVC.",
+      "Keep One Bath in the House: Maintain at least one functional tub in the home to preserve resale appeal for families.",
     ],
     faqs: [
       {
-        question: "How is a tub safely removed?",
+        question: "How heavy is a standard bathtub and how do you remove it?",
         answer:
-          "We drain the tub, disconnect plumbing, cut away caulk and trim, and carefully extract it. Most tubs weigh 200-400 lbs.",
+          "An old cast iron bathtub typically weighs between 250 and 400 pounds. To extract it safely without destroying your bathroom walls, we often use specialized diamond saw blades to cut the heavy tub into two manageable pieces. We then carry the sections out on protected heavy duty dollies.",
       },
       {
-        question: "Can tub removal be done in one day?",
+        question: "What happens to the old tub after it is removed?",
         answer:
-          "Yes, removal alone takes 2-4 hours. If repairs or new installations follow, add 1-2 days.",
+          "We handle all hauling, loading, and disposal as part of our comprehensive service. We transport the old fiberglass or metal tub directly to a local recycling or waste management facility in Chandler, leaving your home completely clean and free of heavy construction debris.",
       },
       {
-        question: "What happens to the plumbing after tub removal?",
+        question: "Will removing a bathtub require major plumbing changes?",
         answer:
-          "We cap off unused pipes and redirect plumbing as needed for your replacement design.",
+          "Yes, removing a tub generally requires capping the low water lines and capping off the waste drain. If you are converting the space into a shower, we will relocate the drain line and expand the plumbing line from a standard one and a half inch tub pipe to a high flow two inch shower pipe.",
       },
       {
-        question: "Does tub removal require permits?",
+        question: "How long does a standard tub removal take?",
         answer:
-          "Generally no for removal alone. If you're adding new fixtures, permits may be required for electrical/plumbing work.",
+          "The physical extraction of a bathtub takes between two and four hours of careful work. If we are repairing the subfloor, replacing corroded framing, or capping pipes, the complete site preparation takes one full day.",
       },
       {
-        question: "How much does tub removal cost?",
+        question: "Do you protect my home from dust during demolition?",
         answer:
-          "Removal alone typically costs $500-1,500 depending on difficulty. Replacement design and installation add additional costs.",
+          "Yes, we seal off the bathroom doorways using heavy plastic zip walls and set up negative air scrubbers. This keeps fine drywall dust, plaster, and fiberglass particles from escaping into your clean living spaces.",
       },
     ],
   },

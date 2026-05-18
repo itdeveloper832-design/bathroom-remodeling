@@ -45,19 +45,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "How much does a shower and bathtub upgrade cost in Chandler?",
-    answer: "Shower and bathtub upgrades in Chandler typically cost $3,000-$15,000 depending on scope. Simple fixture upgrades start around $3,000, while complete shower-tub combo upgrades with new tile and glass can exceed $15,000. We provide free detailed estimates."
+    answer: "A standard shower and bathtub upgrade project ranges from $3,000 to $15,000 depending on the scope. A simple fixture and trim upgrade starts around $3,000, while a complete tile replacement and custom frameless glass enclosure installation can exceed $15,000."
   },
   {
-    question: "What does a shower and bathtub upgrade include?",
-    answer: "Our upgrades can include new fixtures (faucets, showerheads, handles), fresh tile or surround panels, glass enclosures, improved drainage, better lighting, and modern hardware. We customize each project to your needs and budget."
+    question: "What are the signs that a shower valve needs to be upgraded?",
+    answer: "The most common signs of a failing shower valve include water dripping from the tub spout when the shower is running, difficulty turning the handle, musty mildew smells behind the wall, and sudden bursts of cold or hot water when other faucets are turned on."
   },
   {
-    question: "How long does a shower-bathtub upgrade take?",
-    answer: "Most shower and bathtub upgrades are completed in 3-7 days. Fixture-only upgrades take 1-2 days, while complete remodels with tile and glass may take 5-7 days. We work efficiently to minimize disruption."
+    question: "Why should I use epoxy grout instead of cement grout?",
+    answer: "Standard cement grout is highly porous and absorbs water, shampoo residue, and minerals easily. Epoxy grout is made from durable resins and is completely non porous. It resists mold growth, prevents water seepage, and will not stain from Chandler hard water."
   },
   {
-    question: "Can you upgrade without replacing the tub or shower base?",
-    answer: "Yes! We offer refinishing options and can upgrade tile, fixtures, and enclosures while keeping your existing tub or shower base. This can save money while still transforming your bathroom's appearance."
+    question: "How long does a shower and bathtub upgrade take?",
+    answer: "A complete shower and bathtub upgrade typically takes three to seven days of active construction. This timeframe includes wall demolition, updating plumbing lines, installing the waterproof pan, tiling the walls, and mounting new hardware fixtures."
   }
 ];
 
@@ -185,6 +185,34 @@ export default function ShowerBathtubUpgradePage() {
             },
           ]}
         />
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Solid Brass Plumbing and Hard Water Defense in Chandler
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Our <strong>shower and bathtub upgrade in Chandler AZ</strong> protects your investment by engineering against our extremely 
+              hard municipal desert water. We focus on durable, commercial grade materials behind your tile walls.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Solid Brass Valve Upgrades</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Cheap zinc or plastic hardware fails quickly under local mineral loads. We install solid brass cartridge valve 
+                  bodies that resist calcium scaling and guarantee lifetime structural integrity.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Schluter Kerdi Waterproofing</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We install high performance Schluter Kerdi vapor tight membranes behind every new shower tub tile surround. This 
+                  creates an absolute water seal, preventing hidden mold or moisture damage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <Tips
           title="Shower & Bathtub Upgrade Tips"

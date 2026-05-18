@@ -21,9 +21,11 @@ export default function AreaIntro({
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-foreground leading-tight">
               {title}
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              {description}
-            </p>
+            {description.split("\n\n").map((para, i) => (
+              <p key={i} className="text-lg text-muted-foreground leading-relaxed mb-6">
+                {para}
+              </p>
+            ))}
           </div>
 
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">

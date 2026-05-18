@@ -10,7 +10,6 @@ import Benefits from "@/components/benefits";
 import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
@@ -18,12 +17,13 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { Shield, CheckCircle, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "ADA Bathroom Remodeling Chandler AZ | Senior-Safe & Accessible Design",
-  description: "Specialized ADA bathroom remodeling in Chandler. Expert installers for walk-in showers, grab bars, roll-in entries, and senior-safe modifications. Licensed AZ contractor — free quote!",
+  title: "ADA Bathroom Remodeling Chandler AZ | Senior Safe Design",
+  description: "Specialized ADA bathroom remodeling in Chandler. Expert installers for walk-in showers, grab bars, roll-in entries, and senior-safe modifications. Licensed AZ contractor.",
   openGraph: {
-    title: "ADA Bathroom Remodeling Chandler AZ | Senior-Safe & Accessible Design",
+    title: "ADA Bathroom Remodeling Chandler AZ | Senior Safe Design",
     description: "Expert ADA bathroom remodeling in Chandler. Safe walk-in showers, roll-in entries, and professional safety modifications for seniors and mobility needs.",
     url: `${siteConfig.url}/ada-bathroom-remodeling/`,
     type: "website",
@@ -36,34 +36,34 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "What makes a bathroom ADA compliant in Chandler, AZ?",
-    answer: "An ADA-compliant bathroom features specific modifications like curbless walk-in showers, 36-inch wide doorways for wheelchair access, reinforced grab bars, comfort-height toilets (17-19 inches), and non-slip surfaces. Our Chandler team ensures every modification meets official accessibility standards while maintaining a high-end look."
+    answer: "An accessible bathroom features specific modifications including curbless zero threshold showers, at least thirty six inch wide door entries for wheelchair clearance, comfort height toilets measuring seventeen to nineteen inches tall, and structural grab bars capable of holding five hundred pounds."
   },
   {
-    question: "Do you offer walk-in tub installation in Chandler?",
-    answer: "Yes, we install premium walk-in tubs with hydrotherapy jets, heated seating, and low-threshold entries. We also specialize in walk-in shower conversions, which many Chandler seniors prefer for their modern look and ease of use."
+    question: "Do you offer tub to walk in shower conversions for seniors?",
+    answer: "Yes, we specialize in converting dangerous high sided bathtubs into zero barrier walk in showers. This conversion is the most popular modification for Chandler seniors because it eliminates the biggest fall hazard in the bathroom."
   },
   {
-    question: "How long does a senior-safe bathroom remodel take?",
-    answer: "Minor modifications like grab bars and a walk-in shower conversion can be completed in 3-5 days. A total ADA-compliant bathroom reconfiguration typically takes 2-3 weeks. We prioritize efficiency to minimize disruption to your home."
+    question: "How long does an accessible ADA bathroom remodel take?",
+    answer: "A basic walk in shower conversion and grab bar installation takes three to five days of construction. A complete structural reconfiguration to widen doorways and lower vanities for wheelchair clearance typically takes two to three weeks of active work."
   }
 ];
 
 const issues = [
-  { problem: "Slippery Standard Tubs", solution: "We replace high-walled tubs with curbless, slip-resistant walk-in showers for safer entry." },
-  { problem: "Lack of Support", solution: "Strategically placed, reinforced grab bars that support up to 500 lbs without looking institutional." },
-  { problem: "Cramped Entries", solution: "Doorway widening and vanity modifications to allow for clear floor space and wheelchair maneuverability." }
+  { problem: "Slippery Standard Tubs", solution: "We replace high walled tubs with curbless, slip resistant walk in showers to eliminate the dangerous step entry." },
+  { problem: "Flimsy Grab Bars", solution: "We reinforce wall framing with solid wood backing secured directly to the studs before mounting grab bars." },
+  { problem: "Cramped Door Entries", solution: "We widen bathroom doorways to a clear thirty six inches to allow easy wheelchair or walker entry." }
 ];
 
 const benefitsList = [
-  { title: "Long-Term Independence", description: "Stay in your Chandler home longer with a bathroom designed for aging-in-place." },
-  { title: "Reduced Fall Risk", description: "Strategic safety features significantly lower the risk of slips and falls in wet areas." },
-  { title: "Universal Design", description: "Our designs are beautiful for all users while providing essential accessibility for some." }
+  { title: "Long Term Independence", description: "Stay in your Chandler home near Sun Lakes longer with a master bathroom custom designed for aging in place." },
+  { title: "Reduced Fall Risk", description: "Strategic safety features and high traction mosaic tiles significantly lower the risk of slips and falls." },
+  { title: "Universal Design", description: "Our accessible renovations are highly beautiful for all users while providing necessary mobility support." }
 ];
 
 const tipsList = [
-  { title: "Choose the Right Flooring", description: "Select tile with a high Dynamic Coefficient of Friction (DCOF) rating for wet areas." },
-  { title: "Lighting Matters", description: "Shadow-free, bright LED lighting is critical for those with visual impairments." },
-  { title: "Handheld Versatility", description: "Slide-bar handheld showerheads allow for seated showering at any height." }
+  { title: "Choose Textured Flooring", description: "Select dense porcelain floor tiles with a high Dynamic Coefficient of Friction rating for maximum wet grip." },
+  { title: "Eliminate Dark Shadows", description: "Install shadow free, bright LED lighting layouts to help seniors with visual impairments navigate safely." },
+  { title: "Use Slide Bar Handhelds", description: "Installing vertical slide bar handheld showerheads allows for comfortable seated showering at any height." }
 ];
 
 const otherServices = bathroomServices
@@ -111,7 +111,7 @@ export default function ADAPage() {
         <ServiceProcess
           title="Our Accessibility Remodeling Process"
           subtitle="Safety-First Approach"
-          description="We combine technical ADA requirements with luxury design to create a bathroom that is both safe and beautiful."
+          description="We combine technical ADA requirements with clean design to create a bathroom that is both safe and beautiful."
           steps={[
             { number: "01", icon: "Layout", title: "Safety Audit", description: "We assess your current bathroom for hazards and identify necessary mobility modifications." },
             { number: "02", icon: "Ruler", title: "Custom Design", description: "Create a layout that maximizes accessibility while matching your home's aesthetic." },
@@ -133,6 +133,34 @@ export default function ADAPage() {
           description="Discover why an accessibility remodel is a critical investment for Chandler homeowners planning to age in place."
           benefits={benefitsList}
         />
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Barrier-Free Shower Curbs & Structural Grab-Bar Wall Anchoring
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Our <strong>ADA bathroom remodeling in Chandler AZ</strong> protects your safety near Sun Lakes. 
+              We utilize advanced framing adjustments and professional backing support to construct fully wheelchair roll-in compliant environments.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Zero-Curb Roll-In Shower Pans</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  True roll in showers have no step dam or barrier. We recut and lower the local wood subfloor joists by two inches, creating 
+                  a recessed pocket that sits perfectly level with your bathroom floor for easy wheelchair entry.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Solid Stud-Wall Grab Bar Blocking</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Mounting safety rails onto simple drywall anchors is extremely dangerous. We install thick solid wood blocking securely 
+                  fastened to the wall studs, guaranteeing each grab bar holds up to five hundred pounds without loose play.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <Tips
           title="Expert Accessibility Tips"
@@ -168,7 +196,7 @@ export default function ADAPage() {
                     <Link href="/contact/">Get A Free Quote</Link>
                  </Button>
                  <Button variant="outline" asChild size="lg">
-                    <Link href={`tel:${siteConfig.phone}`}>{siteConfig.phone}</Link>
+                    <Link href={`tel:${siteConfig.phone.replace(/[^0-9]/g, '')}`}>{siteConfig.phone}</Link>
                  </Button>
               </div>
             </div>

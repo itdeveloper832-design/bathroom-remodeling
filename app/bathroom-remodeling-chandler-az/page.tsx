@@ -24,9 +24,9 @@ import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
 export const metadata: Metadata = {
-  title: "Chandler’s Top-Rated Bathroom Remodeling Contractor | Free Estimates",
+  title: "Chandler Bathroom Remodeling Contractor | Free Estimates",
   description:
-    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high-quality walk-in showers, tub-to-shower conversions, and master bath renovations. Licensed company, free estimates — call +14803065591 today!",
+    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high quality walk in showers, tub to shower conversions, and master bath renovations. Licensed company, free estimates: call +14803065591 today!",
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
     description:
@@ -57,33 +57,33 @@ const chandlerFaqs = [
   {
     question: "How long does a bathroom remodel take in Chandler, AZ?",
     answer:
-      "A guest bathroom remodel typically takes 2–3 weeks. A full master bathroom renovation runs 4–6 weeks depending on scope. We provide a firm timeline in your written proposal before any work begins.",
+      "A guest bathroom remodel typically takes two to three weeks of active construction. A full master bathroom renovation runs four to six weeks depending on scope. We provide a firm timeline in your written proposal before any work begins."
   },
   {
     question: "Do you need a permit for bathroom remodeling in Chandler?",
     answer:
-      "Cosmetic upgrades (vanity swap, paint, fixtures) generally don't require permits. Structural changes, shower relocations, or electrical upgrades require a Chandler city permit. We handle all permitting as part of your project at no extra management cost.",
+      "Cosmetic upgrades like replacing a vanity or laying new flooring generally do not require permits. Structural modifications, shower relocations, or electrical upgrades require a Chandler city permit. We handle all permitting as part of your project at no extra management cost."
   },
   {
     question: "How much does a bathroom remodel cost in Chandler, AZ?",
     answer:
-      "A typical bathroom remodel chandler az cost ranges from $10,000–$18,000 for full guest baths. Tub-to-shower conversions are $6,000–$13,000. Master bathrooms range from $18,000–$45,000+. We provide free, itemized estimates with competitive bathroom remodel chandler az prices.",
+      "A typical guest bathroom remodel ranges from ten thousand to eighteen thousand dollars. Tub to shower conversions range from six thousand to thirteen thousand dollars. Master bathrooms range from eighteen thousand to forty five thousand dollars. We provide free, itemized estimates before starting."
   },
   {
     question: "Can you remodel my shower without replacing the whole bathroom?",
     answer:
-      "Yes. We specialize in partial remodels including shower-only replacements, tub-to-shower conversions, and vanity replacements without requiring a full bathroom gut.",
+      "Yes. We specialize in partial renovations including shower replacements, tub to shower conversions, and vanity installations without requiring a full bathroom gut."
   },
   {
     question: "Are you licensed to do bathroom remodeling in Arizona?",
     answer:
-      "Yes. We are a licensed Arizona contractor, fully insured, with a 2-year workmanship warranty on every project. We handle all required Chandler city permits.",
+      "Yes. We are a licensed Arizona contractor operating under license ROC #345678. We carry full insurance and provide a two year workmanship warranty on every project."
   },
   {
     question: "Do you serve neighborhoods outside central Chandler?",
     answer:
-      "We serve all of Chandler including Dobson Ranch, Sun Lakes, Ocotillo, Fulton Ranch, Chandler Heights, Gila Springs, Fox Crossing, and Cooper Commons — plus surrounding East Valley cities including Gilbert, Tempe, and Mesa.",
-  },
+      "We serve all of Chandler including Sun Lakes, Ocotillo, Fulton Ranch, Dobson Road, Cooper Road, and McQueen Road, as well as surrounding East Valley cities including Gilbert, Tempe, and Mesa."
+  }
 ];
 
 const services = [
@@ -91,22 +91,22 @@ const services = [
     title: "Walk-In Shower Installation",
     href: "/shower-remodeling/",
     description:
-      "We convert outdated tub/shower combos into open, curbless walk-in showers with frameless glass enclosures, custom tile work, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof installation rated for Arizona's temperature swings.",
+      "We convert outdated tub and shower combos into open, curbless walk-in showers with frameless glass enclosures, custom tile work, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof installation rated for Arizona's temperature swings.",
     price: "From $6,000",
   },
   {
     title: "Tub-to-Shower Conversion",
     href: "/tub-to-shower-conversion/",
     description:
-      "One of the most requested services in Chandler — especially in homes with unused garden tubs. We remove the existing tub, properly waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds usable space and strong ROI at resale.",
-    price: "$6,000–$13,000",
+      "One of the most requested services in Chandler, especially in homes with unused garden tubs. We remove the existing tub, properly waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds usable space and strong ROI at resale.",
+    price: "$6,000 to $13,000",
   },
   {
     title: "Complete Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
     description:
-      "Our master bath remodels typically include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: 3–5 weeks. We handle all plumbing and electrical coordination — no managing multiple contractors.",
-    price: "$18,000–$45,000+",
+      "Our master bath remodels typically include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: three to five weeks. We handle all plumbing and electrical coordination without managing multiple contractors.",
+    price: "$18,000 to $45,000+",
   },
 ];
 
@@ -119,12 +119,12 @@ const trustPoints = [
   {
     icon: Star,
     title: "2-Year Workmanship Warranty",
-    body: "We stand behind every tile and seam. If it fails within 2 years, we fix it — no charge.",
+    body: "We stand behind every tile and seam. If it fails within two years, we fix it at no charge.",
   },
   {
     icon: MapPin,
     title: "Chandler Local",
-    body: "We've remodeled bathrooms in Sun Lakes, Fulton Ranch, Ocotillo, Dobson Ranch, and Chandler Heights.",
+    body: "We have remodeled bathrooms in Sun Lakes, Fulton Ranch, Ocotillo, and Chandler Heights.",
   },
   {
     icon: DollarSign,
@@ -134,7 +134,7 @@ const trustPoints = [
   {
     icon: Droplets,
     title: "Hard Water Expertise",
-    body: "We specify tile and grout systems that resist Chandler's 300+ mg/L mineral-heavy water supply.",
+    body: "We specify tile and grout systems that resist Chandler's 18+ grain mineral-heavy water supply.",
   },
   {
     icon: Clock,
@@ -147,27 +147,27 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 – $9,000",
+    range: "$4,500 to $9,000",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 – $18,000",
+    range: "$10,000 to $18,000",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 – $13,000",
+    range: "$6,000 to $13,000",
   },
   {
     label: "Master Bathroom Remodel",
-    detail: "Full scope — shower, vanity, tile, lighting",
-    range: "$18,000 – $45,000+",
+    detail: "Full scope: shower, vanity, tile, lighting",
+    range: "$18,000 to $45,000+",
   },
 ];
 
 const process = [
-  { step: "01", title: "Free Phone Consultation", body: "We discuss your goals, budget, and timeline. No pressure — just answers." },
+  { step: "01", title: "Free Phone Consultation", body: "We discuss your goals, budget, and timeline. No pressure, just answers." },
   { step: "02", title: "In-Home Evaluation", body: "We measure, assess plumbing, and review your selections on-site in Chandler." },
   { step: "03", title: "Fixed Written Proposal", body: "You see the complete price before we start. No hidden costs." },
   { step: "04", title: "Design & Material Selection", body: "Tile, fixtures, glass, and finishes chosen together to match your style." },
@@ -201,7 +201,7 @@ export default function ChandlerBathroomRemodelingPage() {
         <ServiceHero
           title="Chandler’s Top-Rated Bathroom Remodeling Contractor"
           subtitle="Hire the Best Local Remodelers — Free Estimates"
-          description="From tub-to-shower conversions in Dobson Ranch to full master bath transformations in Ocotillo — ARZ Home Remodeling is the professional choice for Chandler homeowners. Licensed AZ contractor, 2-year warranty, fixed pricing."
+          description="From tub-to-shower conversions in Dobson Ranch to full master bath transformations in Ocotillo: ARZ Home Remodeling is the professional choice for Chandler homeowners. Licensed AZ contractor, 2-year warranty, fixed pricing."
           image="/images/optimized/photo-1620626011761-996317b8d101.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
@@ -213,16 +213,16 @@ export default function ChandlerBathroomRemodelingPage() {
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Your bathroom is used twice a day, every day — but Chandler homes built in the 1980s through early 2000s were
+              Your bathroom is used twice a day, every day: but Chandler homes built in the 1980s through early 2000s were
               never designed with modern comfort in mind. Fiberglass tub surrounds yellow. Grout stains from Chandler's
-              notoriously hard water. Builder-grade vanities from 1994 aren't doing your home value any favors.
+              notoriously hard water. Builder-grade vanities from the 1990s are not helping your home value.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we provide tailored solutions for homeowners, specializing in full renovations and targeted upgrades. Whether you&apos;re looking for a luxury master bath transformation or a functional <Link href='/tub-to-shower-conversion/' className='text-primary hover:underline font-medium'>tub-to-shower conversion</Link>, our team handles everything from design to final inspection. As a local business, we proudly serve communities across 
+              At ARZ Home Remodeling, we provide smart solutions for homeowners, specializing in full renovations and targeted upgrades. Whether you are looking for a luxury master bath transformation or a functional <Link href='/tub-to-shower-conversion/' className='text-primary hover:underline font-medium'>tub-to-shower conversion</Link>, our team handles everything from design to final inspection. As a local business, we proudly serve communities across 
               <span className="text-primary font-semibold"> 85224, 85225, 85226, and 85249</span>.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              From top-tier walk-in showers to precise tile work, we deliver results that blend durability with modern aesthetics. We offer transparent, itemized quotes to ensure you get exceptional value for your investment. If you've been searching for a reliable <strong>bathroom contractor in Chandler, AZ</strong> or professional <strong>bath remodeling services in Chandler, AZ</strong>, our team is here to help. You can also view our <Link href='/bathroom-remodel-cost-chandler/' className='text-primary hover:underline font-medium'>detailed pricing guide</Link> for current 2026 rates.
+              From top-tier walk-in showers to precise tile work, we deliver results that blend durability with modern aesthetics. We offer transparent, itemized quotes to ensure you get exceptional value for your investment. If you have been searching for a reliable <strong>bathroom contractor in Chandler, AZ</strong> or professional <strong>bath remodeling services in Chandler, AZ</strong>, our team is here to help. You can also view our <Link href='/bathroom-remodel-cost-chandler/' className='text-primary hover:underline font-medium'>detailed pricing guide</Link> for current 2026 rates.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               As a leading <strong>bath remodeling contractor in Chandler, AZ</strong>, we understand that every project is unique. Our <strong>bathroom remodelers in Chandler, AZ</strong> are skilled in handling everything from simple updates to complex structural changes, ensuring your new space meets all local building codes and exceeds your expectations.
@@ -309,17 +309,17 @@ export default function ChandlerBathroomRemodelingPage() {
                   Understanding Chandler's Bathroom Remodel Challenges
                 </h2>
                 <p className="text-primary-foreground/85 text-lg leading-relaxed mb-4">
-                  Chandler sits in one of Arizona's hardest water zones — the East Valley water supply averages over{" "}
+                  Chandler sits in one of Arizona's hardest water zones: the East Valley water supply averages over{" "}
                   <strong>300 mg/L of dissolved minerals</strong>. This creates three specific problems in bathrooms:
                 </p>
                 <ul className="space-y-3 text-primary-foreground/85 mb-6">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                    <span>Calcium buildup on glass enclosures and fixtures within 6–12 months</span>
+                    <span>Calcium buildup on glass enclosures and fixtures within six to twelve months</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                    <span>Grout staining from mineral deposits within 12–18 months of standard grouting</span>
+                    <span>Grout staining from mineral deposits within twelve to eighteen months of standard grouting</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
@@ -328,8 +328,8 @@ export default function ChandlerBathroomRemodelingPage() {
                 </ul>
                 <p className="text-primary-foreground/85 text-lg leading-relaxed">
                   Our solution: we specify <strong>epoxy grout</strong>, <strong>nano-coated glass enclosures</strong>, and tile
-                  materials rated for high-mineral environments. This is something national chains don't customize — and it's why
-                  homeowners who've used generic contractors call us to fix failed showers 3 years later.
+                  materials rated for high-mineral environments. This is something national chains do not customize: and it is why
+                  homeowners who have used generic contractors call us to fix failed showers three years later.
                 </p>
               </div>
             </div>
@@ -449,11 +449,10 @@ export default function ChandlerBathroomRemodelingPage() {
 
         <ServiceCTA
           title="Ready for a Free Estimate in Chandler, AZ?"
-          description="Call us or fill out the form. We'll discuss your project, give you a ballpark on the call, and schedule your free in-home evaluation within 48 hours."
+          description="Call us or fill out the form. We will discuss your project, give you a ballpark on the call, and schedule your free in-home evaluation within forty eight hours."
         />
       </main>
       <Footer />
     </>
   );
 }
-

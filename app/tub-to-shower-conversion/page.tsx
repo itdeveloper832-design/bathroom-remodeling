@@ -142,7 +142,7 @@ export default function TubToShowerConversionPage() {
             </p>
             <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
               <p className="text-foreground font-medium mb-4">
-                We offer 0% financing on projects over $5,000 — 
+                We offer 0% financing on projects over $5,000: 
                 <Link href="/financing/" className="text-primary hover:underline ml-1">
                   see our bathroom remodeling financing options
                 </Link>.

@@ -121,6 +121,35 @@ export default function WalkInShowersPage() {
           benefits={serviceData.benefits}
         />
 
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Safe and Accessible Universal Shower Design in Chandler
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Home safety is important for everyone. Our <strong>walk-in shower company in Chandler AZ</strong> designs curbless, 
+              barrier-free showers that allow you to remain in your home comfortably and safely for years to come. We specialize in 
+              accessible remodeling that blends high-end styling with safety.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Zero Threshold Curbless Design</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Traditional showers require stepping over a high threshold. We build zero-curb showers by recessing the subfloor 
+                  level, creating a completely flat entry that is wheelchair and walker friendly.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Stud-Anchored Grab Bars</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We never attach safety bars to thin drywall or tile backer alone. We anchor every safety grab bar directly into the 
+                  original wood wall studs to support full adult body weight securely.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Tips
           title="Walk-In Shower Tips & Maintenance"
           subtitle="Keep It Looking New"

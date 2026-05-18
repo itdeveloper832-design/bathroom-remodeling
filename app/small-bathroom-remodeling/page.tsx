@@ -82,19 +82,34 @@ export default function SmallBathroomRemodelingPage() {
         />
 
         <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
-            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
               Chandler's Premier Small Bathroom Makeover Experts
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Whether you live in a modern townhouse in <strong>Ocotillo</strong>, a family home in <strong>Fulton Ranch</strong>, or are updating an older property in <strong>Sun Lakes</strong>, optimizing a small bathroom requires precise planning and expert craftsmanship. As specialized <strong>small bathroom remodeling contractors in Chandler AZ</strong>, we understand that every square inch matters. From strategic storage solutions to floating vanities and curb-less shower designs, our goal is to make your compact bathroom feel spacious and luxurious.
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6 text-center">
+              Whether you live in a modern townhouse in <strong>Ocotillo</strong>, a family home in <strong>Fulton Ranch</strong>, or are updating a classic property in <strong>Sun Lakes</strong>, optimizing a small bathroom requires precise planning and expert craftsmanship. As specialized <strong>small bathroom remodeling contractors in Chandler AZ</strong>, we understand that every square inch matters.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Many homes in Chandler's established neighborhoods have secondary bathrooms or powder rooms that lack natural light and modern amenities. We employ space-saving designs, utilizing large-format tiles to reduce grout lines, and incorporating custom glass enclosures that open up the visual space. A <strong>small bathroom remodel in Chandler</strong> not only improves your daily routine but significantly boosts your home's resale value.
-            </p>
-            <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
+            <div className="grid md:grid-cols-2 gap-6 mt-8 mb-12">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">In-Wall Recessed Storage Niches</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Standard shelving projects out into the room, blocking your shoulders and making the washroom feel narrower. 
+                  We cut directly into standard wall framing cavities to build deep recessed shelves and custom tiled niches, 
+                  delivering massive storage without taking up a single inch of floor clearance.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Zero-Barrier Curbless Showers</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Standard shower tubs with thick high thresholds act like visual walls, chopping your bathroom into tiny pieces. 
+                  We install barrier free glass walk in showers, allowing your eyes to sweep uninterrupted across the entire 
+                  room to make a compact space feel twice as large.
+                </p>
+              </div>
+            </div>
+            <div className="p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
               <p className="text-foreground font-medium mb-4">
-                We offer 0% financing on projects over $5,000 — 
+                We offer zero percent financing on projects over five thousand dollars:
                 <Link href="/financing/" className="text-primary hover:underline ml-1">
                   see our bathroom remodeling financing options
                 </Link>.

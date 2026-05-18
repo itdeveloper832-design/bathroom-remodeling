@@ -33,52 +33,54 @@ export const chandlerLocations: ZipCodeData[] = [
     slug: "85248",
     city: "Chandler",
     description:
-      "Southwest Chandler featuring premium master-planned communities and golf courses",
+      "Southwest Chandler featuring premium planned communities, lush golf courses, and gorgeous waterfront residential properties.",
     neighborhoods: [
       {
         name: "Ocotillo",
         slug: "ocotillo",
         zipCode: "85248",
         description:
-          "Exclusive luxury community with resort-style living and scenic desert views",
+          "Exclusive luxury community in southwest Chandler, famous for its upscale golf course, beautiful lakes, and high end waterfront properties.",
         marketInsight:
-          "High-end market with strong interest in master bathroom upgrades and spa-like features",
+          "Affluent market with strong demand for master bathroom upgrades. Popular choices include frameless heavy glass showers, dual vanity reconfigurations, and luxury freestanding soaking tubs. Project budgets range from twenty five thousand to seventy five thousand dollars.",
         homeStylesCommon: [
-          "Spanish Colonial",
-          "Mediterranean",
-          "Contemporary Desert Modern"
+          "Spanish Colonial Revival",
+          "Mediterranean Villa",
+          "Contemporary Desert Modern",
+          "Transitional"
         ],
         customerBehavior:
-          "Affluent homeowners prioritize premium finishes, high-end fixtures, and luxury aesthetics",
+          "Homeowners prioritize premium non porous porcelain tile, stain resistant epoxy grout, and hydrophobic nano coated glass to protect against local hard water mineral scale.",
         localContext:
-          "Ocotillo features custom homes on larger lots with emphasis on outdoor living spaces"
+          "Ocotillo surrounds the Ocotillo Golf Club, near Dobson Road and Queen Creek Road, just minutes from Hamilton High School and the Fulton Ranch Towne Center."
       },
       {
         name: "Fulton Ranch",
         slug: "fulton-ranch",
         zipCode: "85248",
         description:
-          "Master-planned community with golf course living and spacious homes",
+          "Master planned residential community in southwest Chandler, featuring multi million dollar lakefront estates and spacious executive homes.",
         marketInsight:
-          "Golf course community with active retirees seeking accessibility upgrades and aging-in-place solutions",
-        homeStylesCommon: ["Southwestern", "Contemporary", "Craftsman"],
+          "Prestigious market with a focus on custom home modernization and luxury master bath renovations. Homeowners seek open walk in showers with dual shower head plumbing loops. Budgets average thirty thousand to sixty thousand dollars.",
+        homeStylesCommon: ["Southwestern Executive", "Contemporary Modern", "Craftsman Estate"],
         customerBehavior:
-          "Mature demographic with interest in accessible, low-maintenance bathroom designs",
+          "Homeowners value high capacity digital shower valves, modern back lit mirrors, and floating quartz topped double vanities with quiet soft close hardware.",
         localContext:
-          "Fulton Ranch attracts active adults with emphasis on outdoor recreation and community amenities"
+          "Fulton Ranch is located along Arizona Avenue and Ocotillo Road, close to the beautiful Fulton Ranch Towne Center and Arizona College Prep."
       },
       {
         name: "Arden Park",
         slug: "arden-park",
         zipCode: "85248",
-        description: "Established residential community with tree-lined streets",
+        description:
+          "Established gated community in southwest Chandler, famous for its lush green trees, spacious family homes, and scenic neighborhood park with a lake.",
         marketInsight:
-          "Stable neighborhood with consistent demand for bathroom updates and home modernization",
-        homeStylesCommon: ["Traditional", "Ranch", "Neo-Traditional"],
+          "Stable neighborhood with consistent demand for full bathroom updates, tub to shower conversions, and flooring replacements. Average remodel budgets range from fifteen thousand to thirty five thousand dollars.",
+        homeStylesCommon: ["Traditional Ranch", "Neo Traditional Suburban", "Modern Craftsman"],
         customerBehavior:
-          "Long-term residents updating homes with modern fixtures and design trends",
+          "Homeowners seek durable, easy to clean materials that withstand active family life, including large format porcelain tile and quiet ventilation systems.",
         localContext:
-          "Arden Park offers mature landscaping and established neighborhood feel appealing to families"
+          "Arden Park is situated near Dobson Road and Ocotillo Road, close to Hamilton High School and Tumbleweed Park, offering a peaceful residential setting."
       }
     ]
   },
@@ -86,46 +88,50 @@ export const chandlerLocations: ZipCodeData[] = [
     zip: "85249",
     slug: "85249",
     city: "Chandler",
-    description: "Central Chandler with diverse communities and family neighborhoods",
+    description:
+      "Central and southeast Chandler, characterized by highly desirable family neighborhoods, excellent local schools, and new custom residential developments.",
     neighborhoods: [
       {
         name: "Circle G",
         slug: "circle-g",
         zipCode: "85249",
-        description: "Master-planned community with commercial and residential blend",
+        description:
+          "Prestigious luxury custom home community in central Chandler, featuring large estate sized lots, custom horse properties, and premium custom residences.",
         marketInsight:
-          "Young professional community with focus on modern design and efficiency",
-        homeStylesCommon: ["Contemporary", "Modern", "Minimalist"],
+          "High net worth market with focus on custom architectural designs and luxury master suite transformations. Homeowners invest forty thousand to eighty thousand dollars in high end bathroom remodeling.",
+        homeStylesCommon: ["Custom Contemporary", "Mediterranean Ranch", "Modern Farmhouse"],
         customerBehavior:
-          "Tech-savvy homeowners interested in smart bathroom features and energy efficiency",
+          "Clients select premium natural stone tiling, walk in steam showers, digital shower control systems, and solid hardwood custom double vanities.",
         localContext:
-          "Circle G combines urban living with planned community amenities and walkability"
+          "Circle G is located near Cooper Road and Lindsay Road, close to the Tumbleweed Park Recreation Center and Basha High School."
       },
       {
         name: "Riggs Ranch",
         slug: "riggs-ranch",
         zipCode: "85249",
-        description: "Growing residential area with newer construction homes",
+        description:
+          "Highly sought after residential community in southeast Chandler, featuring spacious single family homes and quiet, well maintained streets.",
         marketInsight:
-          "New homeowners performing initial renovations and custom upgrades",
-        homeStylesCommon: ["Contemporary", "Transitional", "Modern Farmhouse"],
+          "Family oriented neighborhood with high demand for dual sink vanity upgrades, tub to shower safety conversions, and guest bathroom updates. Average budgets range from ten thousand to twenty five thousand dollars.",
+        homeStylesCommon: ["Contemporary Southwestern", "Transitional Family", "Modern Ranch"],
         customerBehavior:
-          "Newer homeowners investing in quality fixtures and personalized designs",
+          "Homeowners prioritize water efficient EPA WaterSense certified low flow faucets and toilets to reduce utility bills while maintaining excellent pressure.",
         localContext:
-          "Riggs Ranch attracts first-time and move-up buyers seeking newer communities"
+          "Riggs Ranch is located near Riggs Road and Cooper Road, close to Basha High School and Riggs Elementary School."
       },
       {
         name: "Sun Groves",
         slug: "sun-groves",
         zipCode: "85249",
-        description: "Scenic community with nature-inspired landscaping",
+        description:
+          "Scenic master planned community in southeast Chandler, nestled near the base of the San Tan Mountains, famous for its beautiful parks and trails.",
         marketInsight:
-          "Environmentally-conscious buyers interested in sustainable bathroom materials",
-        homeStylesCommon: ["Desert Contemporary", "Eco-Friendly", "Modern"],
+          "Environmentally conscious market with strong interest in eco friendly remodeling, water conservation, and durable materials. Average budgets range from ten thousand to twenty thousand dollars.",
+        homeStylesCommon: ["Desert Contemporary", "Sustainable Modern", "Transitional Suburban"],
         customerBehavior:
-          "Sustainability-focused homeowners choosing water-efficient fixtures and eco-materials",
+          "Homeowners select sustainable materials, VOC free finishes, high efficiency LED lighting, and low flow shower heads.",
         localContext:
-          "Sun Groves emphasizes natural elements and environmental responsibility in community design"
+          "Sun Groves is situated near Riggs Road and Basha Road, just south of Basha High School and the Sun Groves community park."
       }
     ]
   },
@@ -134,34 +140,35 @@ export const chandlerLocations: ZipCodeData[] = [
     slug: "85224",
     city: "Chandler",
     description:
-      "Southeast Chandler with established neighborhoods and strong community identity",
+      "North central Chandler, offering established residential neighborhoods, mature desert landscaping, and highly convenient access to local shopping and dining.",
     neighborhoods: [
       {
         name: "Warner Ranch",
         slug: "warner-ranch",
         zipCode: "85224",
         description:
-          "Large master-planned community with multiple residential villages",
+          "Large, highly desirable master planned community featuring gorgeous family neighborhoods, greenbelt parks, and excellent local schools.",
         marketInsight:
-          "Diverse demographic seeking various price points in bathroom renovations",
-        homeStylesCommon: ["Southwestern", "Mediterranean", "Contemporary"],
+          "Active family market with high demand for kid friendly double vanities, low maintenance tub and shower surrounds, and modern plumbing updates. Budgets range from ten thousand to twenty thousand dollars.",
+        homeStylesCommon: ["Southwestern Suburban", "Mediterranean Family", "Contemporary Ranch"],
         customerBehavior:
-          "Variety-seeking buyers interested in both budget-friendly and premium options",
+          "Families look for stain resistant grout, easy to clean quartz countertops, and durable plywood cabinets that resist water damage.",
         localContext:
-          "Warner Ranch offers multiple neighborhoods with distinct character within single ZIP"
+          "Warner Ranch spans across Warner Road and Kyrene Road, bordering Tempe, close to Corona del Sol High School and Kyrene de la Mariposa School."
       },
       {
         name: "Dobson Place",
         slug: "dobson-place",
         zipCode: "85224",
-        description: "Established neighborhood with strong community character",
+        description:
+          "Established and quiet residential community in north central Chandler, popular for its tree lined streets and well maintained single family homes.",
         marketInsight:
-          "Long-time residents upgrading bathrooms with classic style meets modern function",
-        homeStylesCommon: ["Traditional", "Transitional", "Southwestern"],
+          "Homeowners seeking to modernize older builder grade bathrooms with walk in tile showers, modern lighting, and quiet ventilation. Average budgets range from ten thousand to eighteen thousand dollars.",
+        homeStylesCommon: ["Traditional Family", "Transitional Ranch", "Southwestern"],
         customerBehavior:
-          "Established homeowners balancing style preferences with modern convenience",
+          "Clients value solid craftsmanship, clear timelines, and functional storage options like recessed medicine cabinets and linen shelves.",
         localContext:
-          "Dobson Place retains neighborhood character while embracing contemporary updates"
+          "Dobson Place is located near Dobson Road and Warner Road, just minutes from the Dobson Ranch Golf Course and local retail centers."
       }
     ]
   },
@@ -169,34 +176,36 @@ export const chandlerLocations: ZipCodeData[] = [
     zip: "85225",
     slug: "85225",
     city: "Chandler",
-    description: "Central Chandler featuring downtown area and mixed-use development",
+    description:
+      "Central Chandler, encompassing the historic downtown cultural district, vibrant local parks, and a mix of historic bungalows and suburban neighborhoods.",
     neighborhoods: [
       {
         name: "Downtown Chandler",
         slug: "downtown-chandler",
         zipCode: "85225",
-        description: "Historic downtown core with urban living and cultural amenities",
+        description:
+          "Historic and urban core of Chandler, blending historic bungalows, Craftsman cottages, and modern urban townhomes within walking distance of dining.",
         marketInsight:
-          "Urban professionals with interest in modern loft-style bathrooms and minimalist design",
-        homeStylesCommon: ["Urban Loft", "Contemporary", "Industrial Modern"],
+          "Vibrant market seeking sensitive historic preservation mixed with modern plumbing, subfloor leveling, and space saving layouts. Budgets run ten thousand to twenty eight thousand dollars.",
+        homeStylesCommon: ["Historic Bungalow", "Urban Loft", "Craftsman Cottage", "Modern Minimalist"],
         customerBehavior:
-          "City-living enthusiasts seeking trendy, Instagram-worthy bathroom designs",
+          "Clients value period appropriate hex tile, subway tile, clawfoot tubs, PEX plumbing upgrades, and smart space saving floating vanities.",
         localContext:
-          "Downtown Chandler vibrant cultural district with emphasis on modern urban lifestyle"
+          "Downtown Chandler surrounds Dr. A.J. Chandler Park and Arizona Avenue, close to Chandler High School and the Crowne Plaza San Marcos Resort."
       },
       {
         name: "Clemente Ranch",
         slug: "clemente-ranch",
         zipCode: "85225",
         description:
-          "Transitional neighborhood bridging downtown and suburban living",
+          "Highly popular, mature residential community in central Chandler, featuring tree lined streets and spacious single family homes.",
         marketInsight:
-          "Mixed demographic seeking balanced approach between style and practicality",
-        homeStylesCommon: ["Transitional", "Contemporary", "Southwestern"],
+          "Consistent demand for master bath modernization, tub to shower safety conversions, and tile flooring upgrades. Average budgets range from twelve thousand to thirty thousand dollars.",
+        homeStylesCommon: ["Transitional Suburban", "Contemporary Southwestern", "Traditional Family"],
         customerBehavior:
-          "Practical homeowners blending contemporary style with functional design",
+          "Practical homeowners focus on durably sealed tile shower enclosures, quiet exhaust fans, and water saving EPA WaterSense plumbing fixtures.",
         localContext:
-          "Clemente Ranch offers proximity to downtown amenities with neighborhood feel"
+          "Clemente Ranch is situated near Alma School Road and Germann Road, close to Dobson Road and the local Clemente Park."
       }
     ]
   },
@@ -204,34 +213,36 @@ export const chandlerLocations: ZipCodeData[] = [
     zip: "85226",
     slug: "85226",
     city: "Chandler",
-    description: "North Chandler with emerging communities and modern developments",
+    description:
+      "Northwest Chandler, encompassing the highly active Kyrene Corridor and the exclusive Stellar Airpark community, bordering Tempe and Phoenix.",
     neighborhoods: [
       {
         name: "Kyrene Corridor",
         slug: "kyrene-corridor",
         zipCode: "85226",
         description:
-          "Commercial and residential mixed-use corridor along major thoroughfare",
+          "Desirable mixed use corridor in northwest Chandler, featuring modern residential neighborhoods and convenient commercial access.",
         marketInsight:
-          "Business owners and professionals interested in both residential and commercial solutions",
-        homeStylesCommon: ["Contemporary", "Modern", "Mixed Commercial"],
+          "Tech professional demographic with strong interest in smart home automation, digital shower valves, and modern floating vanity designs. Budgets range from fifteen thousand to thirty five thousand dollars.",
+        homeStylesCommon: ["Contemporary Modern", "Transitional Tech Suburban", "Minimalist"],
         customerBehavior:
-          "Cosmopolitan buyers with appreciation for cutting-edge design and functionality",
+          "Homeowners prioritize sleek European style cabinets, large format porcelain slabs, and voice controlled smart bathroom mirrors.",
         localContext:
-          "Kyrene Corridor represents Chandler's modern commercial-residential integration"
+          "Kyrene Corridor runs along Kyrene Road and Ray Road, close to Kyrene de la Mirada School and the Intel Ocotillo campus."
       },
       {
         name: "Stellar Airpark",
         slug: "stellar-airpark",
         zipCode: "85226",
-        description: "Unique airpark community with aviation-enthusiast demographic",
+        description:
+          "Unique and exclusive aviation focused community in northwest Chandler, featuring luxury custom estates with private airplane hangars.",
         marketInsight:
-          "Affluent aviation enthusiasts with sophisticated design preferences and budgets",
-        homeStylesCommon: ["Contemporary", "Modern", "Luxury Custom"],
+          "Affluent custom home market seeking luxury master suite renovations, high end steam showers, custom stone slab wall panels, and premium finishes. Budgets range from thirty thousand to eighty thousand dollars.",
+        homeStylesCommon: ["Luxury Custom Aviation", "Modern Industrial", "Contemporary Executive"],
         customerBehavior:
-          "High-net-worth individuals prioritizing quality, uniqueness, and exclusivity",
+          "High net worth clients select custom solid wood vanities, large curbless walk in showers with linear drains, and rainfall shower loops.",
         localContext:
-          "Stellar Airpark attracts aviation enthusiasts seeking unique lifestyle community"
+          "Stellar Airpark is located near Chandler Boulevard and McQueen Road, offering direct runway access for local private pilots."
       }
     ]
   }

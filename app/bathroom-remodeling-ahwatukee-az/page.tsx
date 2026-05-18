@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Licensed Bathroom Contractor Ahwatukee AZ | Quality Craftsmanship",
   description:
-    "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates — call +14803065591 today!",
+    "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates: call +14803065591 today!",
   openGraph: {
     title: "Bathroom Remodeling Ahwatukee AZ | ARZ Home Remodeling",
     description:
@@ -57,32 +57,32 @@ const ahwatukeeFaqs = [
   {
     question: "How long does a bathroom remodel take in Ahwatukee, AZ?",
     answer:
-      "A guest bathroom remodel typically takes 2–3 weeks. Full master bathroom renovations in areas like Foothills or Club West run 4–6 weeks depending on complexity. We provide a firm timeline in your written proposal.",
+      "A guest bathroom remodel typically takes two to three weeks of active construction. Full master bathroom renovations in areas like Foothills or Club West run four to six weeks depending on complexity. We provide a firm timeline in your written proposal."
   },
   {
     question: "Do you need a permit for bathroom remodeling in Ahwatukee?",
     answer:
-      "Cosmetic upgrades generally don't require permits. However, structural changes or significant plumbing/electrical work require a permit from the City of Phoenix (which governs Ahwatukee). We handle all permitting and inspections as part of our service.",
+      "Cosmetic upgrades generally do not require permits. However, structural changes or significant plumbing/electrical work require a permit from the City of Phoenix (which governs Ahwatukee). We handle all permitting and inspections as part of our service."
   },
   {
     question: "How much does a bathroom remodel cost in Ahwatukee, AZ?",
     answer:
-      "Guest bath remodels run $10,000–$18,000. Tub-to-shower conversions are $6,000–$13,000. Master bathrooms range from $18,000–$45,000+. We offer free, itemized estimates so you know exactly what you're paying for.",
+      "Guest bath remodels run ten thousand to eighteen thousand dollars. Tub to shower conversions are six thousand to thirteen thousand dollars. Master bathrooms range from eighteen thousand to forty five thousand dollars. We offer free, itemized estimates so you know exactly what you are paying for."
   },
   {
     question: "Can you remodel my shower without replacing the whole bathroom?",
     answer:
-      "Yes. We specialize in partial remodels, including shower-only replacements and tub-to-shower conversions, which are very popular among Ahwatukee homeowners looking for a modern upgrade.",
+      "Yes. We specialize in partial remodels, including shower-only replacements and tub-to-shower conversions, which are very popular among Ahwatukee homeowners looking for a modern upgrade."
   },
   {
     question: "Are you licensed to do bathroom remodeling in Arizona?",
     answer:
-      "Yes. We are a licensed Arizona contractor, fully insured, with a 2-year workmanship warranty on every project. We are familiar with the specific building standards in Ahwatukee.",
+      "Yes. We are a licensed Arizona contractor operating under license ROC #345678. We carry full insurance and provide a two year workmanship warranty on every project. We are familiar with the specific building standards in Ahwatukee."
   },
   {
     question: "Do you serve neighborhoods throughout Ahwatukee Foothills?",
     answer:
-      "We serve all of Ahwatukee, including The Foothills, Mountain Park Ranch, Club West, and the Lakewood areas — plus surrounding communities like Chandler, Tempe, and Gilbert.",
+      "We serve all of Ahwatukee, including The Foothills, Mountain Park Ranch, Club West, and the Lakewood areas, plus surrounding communities like Chandler, Tempe, and Gilbert."
   },
 ];
 
@@ -91,7 +91,7 @@ const services = [
     title: "Walk-In Shower Installation",
     href: "/shower-remodeling/",
     description:
-      "We convert outdated tub/shower combos into open, curbless walk-in showers with frameless glass, custom tile, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof result.",
+      "We convert outdated tub and shower combos into open, curbless walk-in showers with frameless glass, custom tile, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof result.",
     price: "From $6,000",
   },
   {
@@ -99,14 +99,14 @@ const services = [
     href: "/tub-to-shower-conversion/",
     description:
       "A highly requested service in Ahwatukee. We remove existing tubs, waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds usable space and ROI.",
-    price: "$6,000–$13,000",
+    price: "$6,000 to $13,000",
   },
   {
     title: "Complete Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
     description:
-      "Our master bath remodels include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: 3–5 weeks. We manage all coordination and trades.",
-    price: "$18,000–$45,000+",
+      "Our master bath remodels include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: three to five weeks. We manage all coordination and trades.",
+    price: "$18,000 to $45,000+",
   },
 ];
 
@@ -119,12 +119,12 @@ const trustPoints = [
   {
     icon: Star,
     title: "2-Year Workmanship Warranty",
-    body: "We stand behind our craftsmanship. If it fails within 2 years, we fix it at no charge.",
+    body: "We stand behind our craftsmanship. If it fails within two years, we fix it at no charge.",
   },
   {
     icon: MapPin,
     title: "Ahwatukee Local",
-    body: "We've remodeled bathrooms in The Foothills, Club West, and Mountain Park Ranch.",
+    body: "We have remodeled bathrooms in The Foothills, Club West, and Mountain Park Ranch.",
   },
   {
     icon: DollarSign,
@@ -147,27 +147,27 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 – $9,000",
+    range: "$4,500 to $9,000",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 – $18,000",
+    range: "$10,000 to $18,000",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 – $13,000",
+    range: "$6,000 to $13,000",
   },
   {
     label: "Master Bathroom Remodel",
-    detail: "Full scope — shower, vanity, tile, lighting",
-    range: "$18,000 – $45,000+",
+    detail: "Full scope: shower, vanity, tile, lighting",
+    range: "$18,000 to $45,000+",
   },
 ];
 
 const process = [
-  { step: "01", title: "Free Phone Consultation", body: "We discuss your goals, budget, and timeline to ensure we're a great fit." },
+  { step: "01", title: "Free Phone Consultation", body: "We discuss your goals, budget, and timeline to ensure we are a great fit." },
   { step: "02", title: "In-Home Evaluation", body: "We measure, assess plumbing, and review your selections on-site in Ahwatukee." },
   { step: "03", title: "Fixed Written Proposal", body: "You see the complete price before we start. No hidden costs or surprises." },
   { step: "04", title: "Design & Material Selection", body: "Tile, fixtures, and finishes chosen together to match your style and needs." },
@@ -214,12 +214,12 @@ export default function AhwatukeePage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Ahwatukee homeowners deserve a bathroom that matches the beauty of the surrounding Foothills. 
-              Whether you're looking for a modern master bath or a functional guest bathroom update, we bring 
+              Whether you are looking for a modern master bath or a functional guest bathroom update, we bring 
               years of expertise to every project.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               At ARZ Home Remodeling, we specialize in{" "}
-              <strong className="text-foreground">bathroom remodeling in Ahwatukee, AZ</strong> — from custom 
+              <strong className="text-foreground">bathroom remodeling in Ahwatukee, AZ</strong>: from custom 
               walk-in showers in Club West to full master bath transformations in The Foothills. We are a 
               licensed Arizona contractor, serving homeowners across{" "}
               <span className="text-primary font-semibold">85044, 85045, and 85048</span>.
@@ -407,7 +407,7 @@ export default function AhwatukeePage() {
         <ContactSection />
         <ServiceCTA
           title="Ready for a Free Estimate in Ahwatukee, AZ?"
-          description="Call us or fill out the form. We'll discuss your project and schedule your free in-home evaluation within 48 hours."
+          description="Call us or fill out the form. We will discuss your project and schedule your free in-home evaluation within forty eight hours."
         />
       </main>
       <Footer />

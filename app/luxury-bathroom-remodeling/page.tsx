@@ -10,7 +10,6 @@ import Benefits from "@/components/benefits";
 import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
@@ -20,11 +19,11 @@ import { Crown, Sparkles, Gem } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Luxury Bathroom Remodeling Chandler AZ | High-End Design & Finishes",
-  description: "Experience the pinnacle of luxury bathroom remodeling in Chandler. High-end master bath renovations, spa-inspired showers, premium stone work, and custom cabinetry. ROC Licensed — Free Design Consultation!",
+  title: "Luxury Bathroom Remodeling Chandler AZ | High End Design",
+  description: "Experience the pinnacle of luxury bathroom remodeling in Chandler. High end master bath renovations, spa inspired showers, premium stone work, and custom cabinetry. Licensed AZ contractor.",
   openGraph: {
-    title: "Luxury Bathroom Remodeling Chandler AZ | High-End Design & Finishes",
-    description: "Premium master bathroom transformations in Chandler. Spa showers, freestanding tubs, and high-end materials. Licensed AZ contractor.",
+    title: "Luxury Bathroom Remodeling Chandler AZ | High End Design",
+    description: "Premium master bathroom transformations in Chandler. Spa showers, freestanding tubs, and high end materials. Licensed AZ contractor.",
     url: `${siteConfig.url}/luxury-bathroom-remodeling/`,
     type: "website",
   },
@@ -35,35 +34,35 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "What defines a 'luxury' bathroom remodel in Chandler?",
-    answer: "A luxury remodel typically involves high-end materials like Carrara marble, custom-built vanities, frameless steam showers, freestanding soaking tubs, and smart home integration (heated floors, digital shower controls). In Chandler communities like Ocotillo or Fulton Ranch, these projects focus on creating a personal spa retreat."
+    question: "What defines a luxury bathroom remodel in Chandler?",
+    answer: "A luxury bathroom renovation includes high performance materials like Italian Carrara marble, custom solid wood vanities, curbless walk in steam showers, freestanding stone resin tubs, and smart upgrades like programmable floor heating and digital shower controls."
   },
   {
-    question: "How much does a high-end master bathroom remodel cost?",
-    answer: "Luxury bathroom transformations in Chandler typically range from $35,000 to $75,000+. The cost is driven by premium material selections, plumbing reconfigurations, and specialized installations like curbless steam showers and custom lighting."
+    question: "How long does a luxury master bathroom renovation take?",
+    answer: "A comprehensive luxury master bathroom remodel typically takes four to six weeks of active construction. This timeframe includes executing structural wall changes, upgrading plumbing supply loops, running dedicated electrical lines, laying intricate tile patterns, and mounting solid stone countertops."
   },
   {
-    question: "Can you provide custom 3D designs for my project?",
-    answer: "Yes, our luxury remodeling package includes professional design consultations and 3D renderings to help you visualize every detail—from tile patterns to fixture placement—before construction begins."
+    question: "Can my home foundation handle a heavy stone freestanding tub?",
+    answer: "Standard subfloors are not engineered to support the heavy weight of a deep soaking tub filled with water and a person, which can easily exceed one thousand pounds. We structurally reinforce the floor joists under the tub before installation to ensure safe support."
   }
 ];
 
 const issues = [
-  { problem: "Dated 'Builder-Grade' Finishes", solution: "We strip away generic materials and replace them with hand-selected stone, custom cabinetry, and premium fixtures." },
-  { problem: "Poor Natural Lighting", solution: "Integration of skylights, oversized windows, and layered LED lighting to create a bright, airy spa atmosphere." },
-  { problem: "Inefficient Master Layouts", solution: "Complete floor plan reconfigurations to maximize space, privacy, and flow for a truly premium experience." }
+  { problem: "Generic Builder Grade Layouts", solution: "We reconfigure walls to expand walk in closet entries and optimize floor plans for a premium flow." },
+  { problem: "Cold Damp Floor Tiles", solution: "We install low voltage underfloor radiant heating mats to keep your feet warm during winter." },
+  { problem: "Poor Lighting and Dark Showers", solution: "We design custom recessed LED layouts with under cabinet lighting and vapor proof shower fixtures." }
 ];
 
 const benefitsList = [
-  { title: "Increased Home Equity", description: "High-end bathroom renovations offer some of the highest ROIs for luxury Chandler real estate." },
-  { title: "Daily Wellness Retreat", description: "Transform a functional room into a sanctuary for relaxation and stress relief." },
-  { title: "Smart Home Integration", description: "Voice-controlled showers, smart mirrors, and programmable floor heating for ultimate modern comfort." }
+  { title: "Increased Home Equity", description: "High end bathroom renovations offer some of the highest ROIs for luxury Chandler real estate near Fulton Ranch." },
+  { title: "Daily Wellness Retreat", description: "Transform a functional master bathroom into a personal spa sanctuary for daily relaxation and stress relief." },
+  { title: "Smart Home Integration", description: "Voice controlled showers, smart anti fog mirrors, and programmable floor heating for ultimate modern comfort." }
 ];
 
 const tipsList = [
-  { title: "Invest in Quality Fixtures", description: "Premium brands like Kohler, Brizo, or Moen offer superior longevity and finish durability." },
-  { title: "Think Beyond the Surface", description: "Luxury is also about what you don't see—invest in soundproofing and high-end subfloor systems." },
-  { title: "Layer Your Lighting", description: "Combine task, ambient, and accent lighting to highlight architectural features and premium tile." }
+  { title: "Reinforce Floor Joists", description: "Always reinforce support framing under heavy stone composite tubs before filling them with water." },
+  { title: "Layer Your Lighting Designs", description: "Combine task vertical sconces, recessed ceiling lights, and smart dimmers for flattering mirror views." },
+  { title: "Protect Natural Stone Surfaces", description: "Apply premium oil based sealers to porous marble or granite surfaces to block hard water mineral scales." }
 ];
 
 const otherServices = bathroomServices
@@ -75,7 +74,7 @@ export default function LuxuryPage() {
     <>
       <ServiceSchema 
         serviceName="Luxury Bathroom Remodeling in Chandler" 
-        serviceDescription="Premium high-end bathroom renovations in Chandler, AZ. Spa-inspired master baths, custom tile, and luxury fixtures." 
+        serviceDescription="Premium high end bathroom renovations in Chandler, AZ. Spa inspired master baths, custom tile, and luxury fixtures." 
         serviceUrl={`${siteConfig.url}/luxury-bathroom-remodeling/`} 
       />
       <FAQSchema faqs={faqs} />
@@ -111,7 +110,7 @@ export default function LuxuryPage() {
         <ServiceProcess
           title="The Luxury Remodeling Experience"
           subtitle="Bespoke Execution"
-          description="Our white-glove process ensures every detail of your high-end bathroom is executed with surgical precision."
+          description="Our process ensures every detail of your high end bathroom is executed with surgical precision."
           steps={[
             { number: "01", icon: "Layout", title: "Design Discovery", description: "Deep dive into your style, goals, and material preferences with our lead designer." },
             { number: "02", icon: "Ruler", title: "3D Rendering", description: "Visualize your new master bath with photorealistic 3D models and layout plans." },
@@ -123,21 +122,49 @@ export default function LuxuryPage() {
         <IssuesSolved
           title="Luxury Transformations"
           subtitle="Elevating Your Home"
-          description="We solve the design and technical challenges of high-end bathroom construction in Chandler."
+          description="We solve the design and technical challenges of high end bathroom construction in Chandler."
           issues={issues}
         />
 
         <Benefits
           title="The Benefits of Luxury"
           subtitle="Invest in Your Lifestyle"
-          description="Experience the difference of a custom-built master suite designed specifically for your needs."
+          description="Experience the difference of a custom built master suite designed specifically for your needs."
           benefits={benefitsList}
         />
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Curbless Steam Showers & Double-Loop Plumbing Engineering
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Our <strong>luxury bathroom remodeling in Chandler AZ</strong> delivers high end master transformations near Fulton Ranch. 
+              We utilize advanced waterproofing and professional mechanical design to engineer high performance personal spas.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Zero-Threshold Curbless Drainage</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We build seamless walk in steam showers that sit completely flush with your bathroom floor. This requires professional 
+                  lowering of subfloor wood framing and installing linear drains to ensure a perfect water drainage slope.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Double-Loop High-Volume Plumbing</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Spa systems utilizing body sprays and dual overhead rain cans demand steady water pressure. We run custom dedicated 
+                  supply loops with solid brass balance cartridge valves to ensure consistent, luxurious water flow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <Tips
           title="Designer Insights"
           subtitle="Luxury Best Practices"
-          description="How to maximize the impact of your high-end bathroom renovation."
+          description="How to maximize the impact of your high end bathroom renovation."
           tips={tipsList}
         />
 
@@ -149,7 +176,7 @@ export default function LuxuryPage() {
         <SubServices 
           title="Related Luxury Services"
           subtitle="Complete Transformations"
-          description="We offer a full range of high-end home renovation services."
+          description="We offer a full range of high end home renovation services."
           services={otherServices.map(s => s.name)}
         />
 
@@ -170,7 +197,7 @@ export default function LuxuryPage() {
                   <Link href="/contact/">Start Your Design Consultation</Link>
                </Button>
                <Button variant="outline" asChild size="lg">
-                  <Link href={`tel:${siteConfig.phone}`}>Call {siteConfig.phone}</Link>
+                  <Link href={`tel:${siteConfig.phone.replace(/[^0-9]/g, '')}`}>Call {siteConfig.phone}</Link>
                </Button>
             </div>
           </div>

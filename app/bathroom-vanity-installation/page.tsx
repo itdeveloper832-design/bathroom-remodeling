@@ -104,6 +104,34 @@ export default function BathroomVanityInstallationPage() {
           benefits={vanityData.benefits}
         />
 
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Professional Vanity Leveling and Plumbing Integration in Chandler
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A professional bathroom vanity replacement requires advanced alignment and heavy weight support. We focus on 
+              precise leveling and leak free plumbing connections behind the drywall to protect your home.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Custom Drain Line Realignment</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Upgrading to double sinks or changing drawer layouts often requires shifting under-sink pipes. We re-route drain 
+                  lines and install premium brass angle stop valves to ensure a lifetime of trouble-free water flow.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Precision Subfloor Cedar Shimming</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Installing a heavy quartz vanity on an uneven tile or concrete subfloor causes the frame to warp. We align the base 
+                  perfectly using heavy cedar shims before fastening, guaranteeing drawer tracks never stick.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Tips
           title="Expert Vanity Installation Tips"
           subtitle="Professional Insights"

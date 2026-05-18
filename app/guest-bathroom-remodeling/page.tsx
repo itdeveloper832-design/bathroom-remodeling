@@ -10,7 +10,6 @@ import Benefits from "@/components/benefits";
 import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
-import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
@@ -18,13 +17,14 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { Users, Layout, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
   title: "Guest Bathroom Remodeling Chandler AZ | Small Bath Renovations",
-  description: "Transform your guest bathroom into a welcoming space. We specialize in efficient, high-impact guest bath and powder room remodeling in Chandler. Fast turnarounds, fixed pricing. Free quote!",
+  description: "Transform your guest bathroom into a welcoming space. We specialize in efficient, high impact guest bath and powder room remodeling in Chandler. Fast turnarounds, fixed pricing. Free quote!",
   openGraph: {
     title: "Guest Bathroom Remodeling Chandler AZ | Small Bath Renovations",
-    description: "Expert guest bathroom and powder room remodeling in Chandler. High-impact updates, efficient timelines, and quality finishes.",
+    description: "Expert guest bathroom and powder room remodeling in Chandler. High impact updates, efficient timelines, and quality finishes.",
     url: `${siteConfig.url}/guest-bathroom-remodeling/`,
     type: "website",
   },
@@ -36,34 +36,34 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: "How long does a guest bathroom remodel take in Chandler?",
-    answer: "A typical guest bathroom or powder room remodel takes 10-14 days. Because these spaces are smaller, we can complete demolition and installation more efficiently than a full master suite."
+    answer: "A standard guest bathroom or powder room remodel typically takes ten to fourteen days of active construction. Because secondary baths have smaller square footage, we can execute demolition, drywall prep, tile laying, and plumbing fixture installation very quickly."
   },
   {
-    question: "What is the average cost for a guest bathroom update?",
-    answer: "In Chandler, a high-impact guest bath update (vanity, fixtures, flooring, and paint) typically ranges from $4,500 to $9,000. A full 'gut' remodel with new tile shower starts around $12,000."
+    question: "What is the average cost to remodel a secondary bathroom?",
+    answer: "A high impact guest bathroom cosmetic update including new vanity cabinets, quartz countertops, modern fixtures, porcelain floor tiles, and paint typically ranges from four thousand five hundred to nine thousand dollars. Full gut renovations with tile showers start around twelve thousand dollars."
   },
   {
-    question: "Can you add a shower to a powder room?",
-    answer: "Yes, we often convert half-baths into full bathrooms by adding a walk-in shower. This significantly increases your Chandler home's value and provides extra bathing space for guests or family members."
+    question: "Can you add a walk in shower to a half bath powder room?",
+    answer: "Yes, we frequently convert small half baths into full bathrooms by reconfiguring adjacent closet spaces to add a modern curbless walk in shower. This smart layout change adds significant value to your Chandler property."
   }
 ];
 
 const issues = [
-  { problem: "Dated 1990s Builder-Grade Materials", solution: "Modernized vanity, porcelain tile flooring, and updated lighting that instantly refreshes the space." },
-  { problem: "Poor Storage for Guests", solution: "Installation of custom niches and floating vanities that maximize space without cluttering the room." },
-  { problem: "Inefficient Lighting & Ventilation", solution: "Upgraded LED lighting and high-efficiency fans that keep the small space bright and mold-free." }
+  { problem: "Dated Builder Grade Materials", solution: "We install modern wood vanities, porcelain floor tiles, and bright LED layouts that instantly refresh the space." },
+  { problem: "Poor Storage for Guests", solution: "We install custom recessed tile niches and floating wall hung vanities that maximize space without cluttering the room." },
+  { problem: "Inefficient Ventilation", solution: "We install high CFM quiet exhaust fans that quickly vent moisture out to prevent blistering wall paint and mold." }
 ];
 
 const benefitsList = [
-  { title: "Welcoming Guest Experience", description: "Provide friends and family with a modern, clean, and comfortable bathroom during their stay." },
-  { title: "Maximum ROI for Resale", description: "Updated guest bathrooms are one of the most cost-effective ways to increase a Chandler home's value." },
+  { title: "Welcoming Guest Experience", description: "Provide friends and family with a modern, clean, and comfortable bathroom during their stay near Sun Lakes." },
+  { title: "Maximum ROI for Resale", description: "Updated guest bathrooms are one of the most cost effective ways to increase a Chandler home's value." },
   { title: "Daily Convenience", description: "A secondary bathroom that feels as good as your master bath makes morning routines easier for everyone." }
 ];
 
 const tipsList = [
   { title: "Use Large Format Tile", description: "Larger tiles with fewer grout lines can make a small guest bathroom feel much bigger." },
   { title: "Prioritize the Vanity", description: "In a small space, the vanity is the focal point. Invest in a quality piece with ample storage." },
-  { title: "Opt for a Floating Vanity", description: "Seeing more of the floor creates the illusion of more square footage in tight spaces." }
+  { title: "Opt for a Floating Vanity", description: "Seeing more of the floor creates the optical illusion of more square footage in tight spaces." }
 ];
 
 const otherServices = bathroomServices
@@ -102,7 +102,7 @@ export default function GuestBathPage() {
                </div>
                <div className="flex items-center gap-2">
                  <Sparkles className="w-5 h-5" />
-                 <span>Fast 10-14 Day Turnaround</span>
+                 <span>Fast 10 to 14 Day Turnaround</span>
                </div>
             </div>
           </div>
@@ -133,6 +133,34 @@ export default function GuestBathPage() {
           description="Discover the value of modernizing your home's secondary bathrooms."
           benefits={benefitsList}
         />
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Space-Saving Floating Vanities & High-CFM Quiet Ventilation
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Our <strong>guest bathroom remodeling in Chandler AZ</strong> delivers high impact spatial designs near McQueen Road. 
+              We utilize advanced wall-hung structures and high ventilation upgrades to engineer spacious, fresh environments.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Wall-Hung Floating Vanities</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Floor mounted vanity cabinets block sightlines, making small spaces feel tight. We anchor premium floating vanities directly 
+                  to wall studs, exposing more floor tiling to create the optical illusion of extra square footage.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">High-CFM Quiet Exhaust Fans</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Compact guest bathrooms trap steam quickly, creating blistering paint and mold hazards. We install ultra quiet exhaust fans 
+                  rated at 110 Cubic Feet per Minute to pull moist air out, sealing connections to prevent attic draft leaks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <Tips
           title="Small Bath Best Practices"
@@ -170,7 +198,7 @@ export default function GuestBathPage() {
                     <Link href="/contact/">Get Your Quote</Link>
                  </Button>
                  <Button variant="outline" asChild size="lg">
-                    <Link href={`tel:${siteConfig.phone}`}>Call {siteConfig.phone}</Link>
+                    <Link href={`tel:${siteConfig.phone.replace(/[^0-9]/g, '')}`}>Call {siteConfig.phone}</Link>
                  </Button>
               </div>
             </div>

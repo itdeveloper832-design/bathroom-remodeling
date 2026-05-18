@@ -124,6 +124,34 @@ export default function TubRemovalPage() {
           benefits={serviceData.benefits}
         />
 
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Professional Tub Extraction and Subfloor Preparation
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Removing a heavy bathtub requires advanced tools and careful planning. Our experienced team handles the entire 
+              demolition process safely, ensuring your bathroom structural framework remains protected.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Certified Plumbing Disconnection</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We turn off your water main and carefully remove all brass tub drain lines and overflow piping. We permanently cap 
+                  unused hot and cold supply lines behind the drywall with heavy copper caps.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Subfloor Joist Preparation</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Bulky bathtubs often conceal hidden water leaks. Once extracted, we thoroughly inspect the floor joists, remove any 
+                  mold or dry rot, and reinforce your subfloor with clean plywood.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Tips
           title="Tub Removal Planning Tips"
           subtitle="Before You Start"

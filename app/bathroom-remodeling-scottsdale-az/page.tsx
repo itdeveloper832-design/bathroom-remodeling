@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Luxury Bathroom Remodeling Scottsdale AZ | Premium Renovations",
   description:
-    "Scottsdale's premier bathroom remodeling contractor. We specialize in luxury master bath transformations, custom walk-in showers, and high-end materials. Licensed company, free estimates — call +14803065591 today!",
+    "Scottsdale's premier bathroom remodeling contractor. We specialize in luxury master bath transformations, custom walk-in showers, and high-end materials. Licensed company, free estimates: call +14803065591 today!",
   openGraph: {
     title: "Bathroom Remodeling Scottsdale AZ | ARZ Home Remodeling",
     description:
@@ -43,7 +43,7 @@ const scottsdaleFaqs = [
   {
     question: "How much does a bathroom remodel cost in Scottsdale, AZ?",
     answer:
-      "Scottsdale bathroom remodels often range from $25,000 to $75,000+ for luxury master suites. Smaller guest bathrooms typically range from $12,000 to $22,000. We provide fixed-price quotes based on your specific material selections."
+      "Scottsdale bathroom remodels often range from twenty five thousand to seventy five thousand dollars for luxury master suites. Smaller guest bathrooms typically range from twelve thousand to twenty two thousand dollars. We provide fixed-price quotes based on your specific material selections."
   },
   {
     question: "Do you handle permits for Scottsdale bathroom projects?",
@@ -75,7 +75,7 @@ export default function ScottsdalePage() {
       <main>
         <ServiceHero
           title="Scottsdale’s Premier Luxury Bathroom Remodeling"
-          subtitle="Bespoke Design & Master Suite Transformations"
+          subtitle="Custom Design & Master Suite Transformations"
           description="Elevate your Scottsdale home with a world-class bathroom renovation. We specialize in high-end materials, spa-inspired features, and museum-quality craftsmanship for Scottsdale's most prestigious zip codes."
           image="/images/optimized/photo-1620626011761-996317b8d101.webp"
           breadcrumbs={[
@@ -88,7 +88,7 @@ export default function ScottsdalePage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-3xl font-semibold mb-6">Expert Bathroom Renovations in Scottsdale</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Scottsdale homeowners demand the best in design and execution. Whether you're updating a modern condo in 
+              Scottsdale homeowners demand the best in design and execution. Whether you are updating a modern condo in 
               Old Town or transforming a sprawling master suite in North Scottsdale, we bring the expertise and 
               attention to detail required for high-end home improvements.
             </p>
@@ -99,7 +99,7 @@ export default function ScottsdalePage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">
-                <Link href="/contact/">Schedule A Design Consultation</Link>
+                <Link href="/contact/">Get Your Free Scottsdale Quote</Link>
               </Button>
               <Button variant="outline" asChild size="lg">
                 <Link href={`tel:${siteConfig.phone}`}>Call {siteConfig.phone}</Link>

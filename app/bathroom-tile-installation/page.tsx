@@ -94,6 +94,35 @@ export default function BathroomTileInstallationPage() {
           subtitle="Why It Matters"
           benefits={tileData.benefits}
         />
+
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              TCNA Standards and Advanced Substrate Waterproofing in Chandler
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Our <strong>bathroom tile installation in Chandler AZ</strong> protects your framing from moisture damage. 
+              We strictly follow Tile Council of North America standards to deliver leak free shower surrounds and flat floor tile layouts.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Schluter Kerdi Vapor Barriers</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We do not lay wet area tiles straight over standard drywall or greenboard. We construct shower enclosures using solid 
+                  backer boards fully sealed in Schluter Kerdi waterproofing membranes to create an absolute moisture barrier.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Polymer-Modified Thinset Mortar</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Desert foundation shifts break standard mortar bonds, cracking grout lines. We utilize advanced polymer thinset 
+                  incorporating latex additives to allow the tile bed to flex without cracking or popping loose.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Tips
           title="Expert Maintenance Tips"
           subtitle="Professional Insights"

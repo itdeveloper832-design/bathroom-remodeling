@@ -46,32 +46,32 @@ const mesaFaqs = [
   {
     question: "How long does a bathroom remodel take in Mesa, AZ?",
     answer:
-      "A guest bathroom remodel typically takes 2–3 weeks. A full master bathroom renovation runs 4–6 weeks depending on scope. We provide a firm timeline in your written proposal before any work begins.",
+      "A guest bathroom remodel typically takes two to three weeks of active construction. A full master bathroom renovation runs four to six weeks depending on scope. We provide a firm timeline in your written proposal before any work begins."
   },
   {
     question: "Do you need a permit for bathroom remodeling in Mesa?",
     answer:
-      "Cosmetic upgrades generally don't require permits. Structural changes, shower relocations, or major electrical upgrades require a City of Mesa permit. We handle all permitting as part of your project at no extra management cost.",
+      "Cosmetic upgrades generally do not require permits. Structural changes, shower relocations, or major electrical upgrades require a City of Mesa permit. We handle all permitting as part of your project at no extra management cost."
   },
   {
     question: "How much does a bathroom remodel cost in Mesa, AZ?",
     answer:
-      "Guest bath full remodels run $10,000–$18,000. Tub-to-shower conversions are $6,000–$13,000. Master bathrooms range from $18,000–$45,000+. We offer free, itemized estimates so you know exactly what you're getting.",
+      "Guest bath full remodels run ten thousand to eighteen thousand dollars. Tub to shower conversions are six thousand to thirteen thousand dollars. Master bathrooms range from eighteen thousand to forty five thousand dollars. We offer free, itemized estimates so you know exactly what you are getting."
   },
   {
     question: "Can you remodel my shower without replacing the whole bathroom?",
     answer:
-      "Yes. We specialize in partial remodels including shower-only replacements, tub-to-shower conversions, and vanity replacements without requiring a full bathroom gut.",
+      "Yes. We specialize in partial remodels including shower-only replacements, tub-to-shower conversions, and vanity replacements without requiring a full bathroom gut."
   },
   {
     question: "Are you licensed to do bathroom remodeling in Arizona?",
     answer:
-      "Yes. We are a licensed Arizona contractor, fully insured, with a 2-year workmanship warranty on every project. We handle all required Mesa city permits.",
+      "Yes. We are a licensed Arizona contractor, fully insured, operating under license ROC #345678. We provide a two year workmanship warranty on every project. We handle all required Mesa city permits."
   },
   {
     question: "Do you serve neighborhoods outside central Mesa?",
     answer:
-      "We serve all of Mesa including Dobson Ranch, Las Sendas, Eastmark, Red Mountain Ranch, Mulberry, and more — plus surrounding East Valley cities like Chandler, Gilbert, and Tempe.",
+      "We serve all of Mesa including Dobson Ranch, Las Sendas, Eastmark, Red Mountain Ranch, Mulberry, and more, plus surrounding East Valley cities like Chandler, Gilbert, and Tempe."
   },
 ];
 
@@ -80,7 +80,7 @@ const services = [
     title: "Walk-In Shower Installation",
     href: "/shower-remodeling/",
     description:
-      "We convert outdated tub/shower combos into open, curbless walk-in showers with frameless glass enclosures, custom tile work, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof installation.",
+      "We convert outdated tub and shower combos into open, curbless walk-in showers with frameless glass enclosures, custom tile work, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof installation.",
     price: "From $6,000",
   },
   {
@@ -88,14 +88,14 @@ const services = [
     href: "/tub-to-shower-conversion/",
     description:
       "One of the most requested services in Mesa. We remove existing tubs, properly waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds usable space and strong ROI at resale.",
-    price: "$6,000–$13,000",
+    price: "$6,000 to $13,000",
   },
   {
     title: "Complete Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
     description:
-      "Our master bath remodels typically include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: 3–5 weeks. We handle all plumbing and electrical coordination.",
-    price: "$18,000–$45,000+",
+      "Our master bath remodels typically include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: three to five weeks. We handle all plumbing and electrical coordination.",
+    price: "$18,000 to $45,000+",
   },
 ];
 
@@ -108,12 +108,12 @@ const trustPoints = [
   {
     icon: Star,
     title: "2-Year Workmanship Warranty",
-    body: "We stand behind every tile and seam. If it fails within 2 years, we fix it — no charge.",
+    body: "We stand behind every tile and seam. If it fails within two years, we fix it at no charge.",
   },
   {
     icon: MapPin,
     title: "Mesa Local",
-    body: "We've remodeled bathrooms in Dobson Ranch, Las Sendas, Eastmark, and Red Mountain Ranch.",
+    body: "We have remodeled bathrooms in Dobson Ranch, Las Sendas, Eastmark, and Red Mountain Ranch.",
   },
   {
     icon: DollarSign,
@@ -136,27 +136,27 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 – $9,000",
+    range: "$4,500 to $9,000",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 – $18,000",
+    range: "$10,000 to $18,000",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 – $13,000",
+    range: "$6,000 to $13,000",
   },
   {
     label: "Master Bathroom Remodel",
-    detail: "Full scope — shower, vanity, tile, lighting",
-    range: "$18,000 – $45,000+",
+    detail: "Full scope: shower, vanity, tile, lighting",
+    range: "$18,000 to $45,000+",
   },
 ];
 
 const process = [
-  { step: "01", title: "Free Phone Consultation", body: "We discuss your goals, budget, and timeline. No pressure — just answers." },
+  { step: "01", title: "Free Phone Consultation", body: "We discuss your goals, budget, and timeline. No pressure, just answers." },
   { step: "02", title: "In-Home Evaluation", body: "We measure, assess plumbing, and review your selections on-site in Mesa." },
   { step: "03", title: "Fixed Written Proposal", body: "You see the complete price before we start. No hidden costs." },
   { step: "04", title: "Design & Material Selection", body: "Tile, fixtures, glass, and finishes chosen together to match your style." },
@@ -190,7 +190,7 @@ export default function MesaPage() {
         <ServiceHero
           title="Licensed Bathroom Remodeling in Mesa, AZ"
           subtitle="Expert Transformations & Custom Shower Designs"
-          description="Build the bathroom you've always wanted with Mesa's trusted remodeling team. From custom walk-in showers in Las Sendas to master suite renovations in Eastmark, we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
+          description="Build the bathroom you've always wanted with Mesa's trusted remodeling team. From custom walk-in showers in Las Sendas to master suite renovations in Eastmark: we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
@@ -207,7 +207,7 @@ export default function MesaPage() {
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               At ARZ Home Remodeling, we specialize in{" "}
-              <strong className="text-foreground">bathroom remodeling in Mesa, AZ</strong> — from custom walk-in 
+              <strong className="text-foreground">bathroom remodeling in Mesa, AZ</strong>: from custom walk-in 
               showers in Las Sendas to full master bath transformations in Eastmark. We are a licensed Arizona 
               contractor, serving homeowners across{" "}
               <span className="text-primary font-semibold">85201, 85204, 85208, and 85212</span>.
@@ -384,12 +384,10 @@ export default function MesaPage() {
         <ContactSection />
         <ServiceCTA
           title="Ready for a Free Estimate in Mesa, AZ?"
-          description="Call us or fill out the form. We'll discuss your project and schedule your free in-home evaluation within 48 hours."
+          description="Call us or fill out the form. We will discuss your project and schedule your free in-home evaluation within forty eight hours."
         />
       </main>
       <Footer />
     </>
   );
 }
-
-

@@ -46,32 +46,32 @@ const tempeFaqs = [
   {
     question: "How long does a bathroom remodel take in Tempe, AZ?",
     answer:
-      "A standard guest bathroom remodel in Tempe typically takes 2–3 weeks. Larger master bathroom renovations in areas like South Tempe or Warner Ranch run 4–6 weeks depending on scope. We provide a firm timeline in your written proposal.",
+      "A standard guest bathroom remodel in Tempe typically takes two to three weeks of active construction. Larger master bathroom renovations in areas like South Tempe or Warner Ranch run four to six weeks depending on scope. We provide a firm timeline in your written proposal."
   },
   {
     question: "Do you need a permit for bathroom remodeling in Tempe?",
     answer:
-      "Cosmetic upgrades (like new tile or vanities) generally don't require permits. Structural changes, moving plumbing lines, or major electrical work require a City of Tempe permit. We handle all permitting and inspections for you.",
+      "Cosmetic upgrades like new tile or vanities generally do not require permits. Structural changes, moving plumbing lines, or major electrical work require a City of Tempe permit. We handle all permitting and inspections for you."
   },
   {
     question: "How much does a bathroom remodel cost in Tempe, AZ?",
     answer:
-      "Guest bath remodels in Tempe run $10,000–$18,000. Tub-to-shower conversions typically range from $6,000–$13,000. Full master suite renovations range from $18,000–$45,000+. We offer free, detailed estimates for every project.",
+      "Guest bath remodels in Tempe run ten thousand to eighteen thousand dollars. Tub to shower conversions typically range from six thousand to thirteen thousand dollars. Full master suite renovations range from eighteen thousand to forty five thousand dollars. We offer free, detailed estimates for every project."
   },
   {
     question: "Can you remodel my shower without replacing the whole bathroom?",
     answer:
-      "Yes. We specialize in shower-only replacements and tub-to-shower conversions. This is a popular way for Tempe homeowners to modernize their space without the cost of a full gut remodel.",
+      "Yes. We specialize in shower-only replacements and tub-to-shower conversions. This is a popular way for Tempe homeowners to modernize their space without the cost of a full gut remodel."
   },
   {
     question: "Are you licensed to do bathroom remodeling in Tempe?",
     answer:
-      "Yes. We are a licensed Arizona contractor, fully insured, with a 2-year workmanship warranty. We are experienced with Tempe's specific building codes and requirements.",
+      "Yes. We are a licensed Arizona contractor, fully insured, operating under license ROC #345678. We provide a two year workmanship warranty on every project. We are experienced with Tempe's specific building codes and requirements."
   },
   {
     question: "Do you serve neighborhoods near ASU and Downtown Tempe?",
     answer:
-      "We serve all of Tempe, including Downtown, North Tempe, South Tempe, Warner Ranch, Shalimar, and the areas surrounding ASU — plus neighboring cities like Chandler, Mesa, and Gilbert.",
+      "We serve all of Tempe, including Downtown, North Tempe, South Tempe, Warner Ranch, Shalimar, and the areas surrounding ASU, plus neighboring cities like Chandler, Mesa, and Gilbert."
   },
 ];
 
@@ -80,7 +80,7 @@ const services = [
     title: "Walk-In Shower Installation",
     href: "/shower-remodeling/",
     description:
-      "We convert outdated tub/shower combos into open, curbless walk-in showers with frameless glass, custom tile, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof result.",
+      "We convert outdated tub and shower combos into open, curbless walk-in showers with frameless glass, custom tile, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof result.",
     price: "From $6,000",
   },
   {
@@ -88,14 +88,14 @@ const services = [
     href: "/tub-to-shower-conversion/",
     description:
       "A top request in Tempe. We remove your old tub, waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds space and ROI to your Tempe home.",
-    price: "$6,000–$13,000",
+    price: "$6,000 to $13,000",
   },
   {
     title: "Complete Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
     description:
-      "Our master bath remodels include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: 3–5 weeks. We manage all trades and coordination.",
-    price: "$18,000–$45,000+",
+      "Our master bath remodels include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: three to five weeks. We manage all trades and coordination.",
+    price: "$18,000 to $45,000+",
   },
 ];
 
@@ -108,12 +108,12 @@ const trustPoints = [
   {
     icon: Star,
     title: "2-Year Workmanship Warranty",
-    body: "We stand behind our work. If it fails within 2 years, we fix it at no cost to you.",
+    body: "We stand behind our work. If it fails within two years, we fix it at no cost to you.",
   },
   {
     icon: MapPin,
     title: "Tempe Local",
-    body: "We've remodeled bathrooms in Warner Ranch, South Tempe, and near the ASU area.",
+    body: "We have remodeled bathrooms in Warner Ranch, South Tempe, and near the ASU area.",
   },
   {
     icon: DollarSign,
@@ -136,27 +136,27 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 – $9,000",
+    range: "$4,500 to $9,000",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 – $18,000",
+    range: "$10,000 to $18,000",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 – $13,000",
+    range: "$6,000 to $13,000",
   },
   {
     label: "Master Bathroom Remodel",
-    detail: "Full scope — shower, vanity, tile, lighting",
-    range: "$18,000 – $45,000+",
+    detail: "Full scope: shower, vanity, tile, lighting",
+    range: "$18,000 to $45,000+",
   },
 ];
 
 const process = [
-  { step: "01", title: "Free Phone Consultation", body: "We discuss your goals, budget, and timeline to ensure we're the right fit." },
+  { step: "01", title: "Free Phone Consultation", body: "We discuss your goals, budget, and timeline to ensure we are the right fit." },
   { step: "02", title: "In-Home Evaluation", body: "We measure, assess plumbing, and review your selections on-site in Tempe." },
   { step: "03", title: "Fixed Written Proposal", body: "You see the complete price before we start. No hidden costs or surprises." },
   { step: "04", title: "Design & Material Selection", body: "Tile, fixtures, and finishes chosen together to match your unique style." },
@@ -190,7 +190,7 @@ export default function TempePage() {
         <ServiceHero
           title="Licensed Bathroom Remodeling in Tempe, AZ"
           subtitle="Modern Transformations & Expert Local Contractors"
-          description="Elevate your Tempe home with professional remodeling services tailored to your lifestyle. From custom walk-in showers near ASU to master suite renovations in South Tempe, we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
+          description="Elevate your Tempe home with professional remodeling services tailored to your lifestyle. From custom walk-in showers near ASU to master suite renovations in South Tempe: we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
@@ -207,7 +207,7 @@ export default function TempePage() {
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               At ARZ Home Remodeling, we specialize in{" "}
-              <strong className="text-foreground">bathroom remodeling in Tempe, AZ</strong> — from custom walk-in 
+              <strong className="text-foreground">bathroom remodeling in Tempe, AZ</strong>: from custom walk-in 
               showers in Warner Ranch to full master bath transformations near ASU. We are a licensed Arizona 
               contractor, serving homeowners across{" "}
               <span className="text-primary font-semibold">85281, 85282, 85283, and 85284</span>.
@@ -384,12 +384,10 @@ export default function TempePage() {
         <ContactSection />
         <ServiceCTA
           title="Ready for a Free Estimate in Tempe, AZ?"
-          description="Call us or fill out the form. We'll discuss your project and schedule your free in-home evaluation within 48 hours."
+          description="Call us or fill out the form. We will discuss your project and schedule your free in-home evaluation within forty eight hours."
         />
       </main>
       <Footer />
     </>
   );
 }
-
-

@@ -10,23 +10,12 @@ import { siteConfig } from "@/lib/site-config";
 import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
 import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
-import {
-  ShieldCheck,
-  Star,
-  MapPin,
-  Clock,
-  DollarSign,
-  Droplets,
-  CheckCircle2,
-  ArrowRight,
-  Phone,
-} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Professional Bathroom Remodeling Phoenix AZ | Licensed Contractors",
   description:
-    "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates — call +14803065591 today!",
+    "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates: call +14803065591 today!",
   openGraph: {
     title: "Bathroom Remodeling Phoenix AZ | ARZ Home Remodeling",
     description:
@@ -43,12 +32,12 @@ const phoenixFaqs = [
   {
     question: "How much does a bathroom remodel cost in Phoenix, AZ?",
     answer:
-      "Phoenix bathroom remodels typically range from $12,000 for guest bathrooms to $40,000+ for luxury master suites. Tub-to-shower conversions are a popular mid-range option starting around $6,000. We provide free, itemized estimates for every project."
+      "Phoenix bathroom remodels typically range from twelve thousand dollars for guest bathrooms to forty thousand dollars for luxury master suites. Tub to shower conversions are a popular mid range option starting around six thousand dollars. We provide free, itemized estimates for every project."
   },
   {
     question: "Are you licensed to work in Phoenix?",
     answer:
-      "Yes. We are a fully licensed Arizona contractor (ROC #345678) and carry comprehensive insurance for all Phoenix-area residential remodeling projects."
+      "Yes. We are a fully licensed Arizona contractor operating under license ROC #345678 and carry comprehensive insurance for all Phoenix area residential remodeling projects."
   },
   {
     question: "Do you handle the entire project from start to finish?",

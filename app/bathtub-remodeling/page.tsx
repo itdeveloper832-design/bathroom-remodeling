@@ -163,7 +163,7 @@ export default function BathtubRemodelingPage() {
 
         <ServiceFAQ faqs={faqs} />
 
-        <Testimonials />
+        <Testimonials category="bathtub-remodeling" />
 
         <ContactSection />
 

@@ -4,84 +4,14 @@ import { useState } from "react";
 import Image from "next/image";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getTestimonials, type TestimonialType } from "@/lib/testimonials-data";
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Sarah Mitchell",
-    initials: "SM",
-    location: "Dobson Ranch, Chandler",
-    rating: 5,
-    service: "Tub-to-Shower Conversion",
-    content:
-      "Alex and his team at ARZ were fantastic. Our old garden tub in Dobson Ranch was just collecting dust. They converted it into a beautiful walk-in shower with Schluter waterproofing. It took exactly 12 days as promised. Truly the best bathroom remodeling contractor in Chandler.",
-    image: "", // Use initials for realism
-    verified: true,
-  },
-  {
-    id: 2,
-    name: "James Peterson",
-    initials: "JP",
-    location: "Ocotillo, Chandler",
-    rating: 5,
-    service: "Master Bath Renovation",
-    content:
-      "A full master bath remodel is usually a nightmare, but ARZ made it easy. They handled everything from the permits with the City of Chandler to the final tile grout. The custom vanity is high quality and the project stayed right on budget.",
-    image: "",
-    verified: true,
-  },
-  {
-    id: 3,
-    name: "Maria Hernandez",
-    initials: "MH",
-    location: "Fulton Ranch, Chandler",
-    rating: 5,
-    service: "Vanity & Tile Upgrade",
-    content:
-      "I was worried about the Arizona heat affecting the grout, but Alex explained their process and materials in detail. The tile work in our guest bath is flawless. It's rare to find a contractor who actually shows up when they say they will!",
-    image: "",
-    verified: true,
-  },
-  {
-    id: 4,
-    name: "Linda K.",
-    initials: "LK",
-    location: "Cooper Commons, Chandler",
-    rating: 5,
-    service: "Guest Bath Remodel",
-    content:
-      "We needed a quick refresh for our guest bathroom before family arrived. ARZ gave us a fair price and finished in less than a week. The new walk-in shower looks amazing and the tile work is perfect.",
-    image: "",
-    verified: true,
-  },
-  {
-    id: 5,
-    name: "Robert S.",
-    initials: "RS",
-    location: "Sun Lakes, Chandler",
-    rating: 5,
-    service: "ADA Walk-In Shower",
-    content:
-      "Special thanks to the crew for making our bathroom safe and accessible. The curbless entry and grab bars were installed exactly as discussed. It's much easier for me to get in and out now. Highly recommend for seniors in Sun Lakes.",
-    image: "",
-    verified: true,
-  },
-  {
-    id: 6,
-    name: "Michelle G.",
-    initials: "MG",
-    location: "Gila Springs, Chandler",
-    rating: 5,
-    service: "Shower Tile Replacement",
-    content:
-      "Our old shower was leaking behind the walls. Alex caught it during the inspection and fixed the structural damage properly before tiling. Very honest and professional team.",
-    image: "",
-    verified: true,
-  },
-];
+interface TestimonialsProps {
+  category?: string;
+}
 
-
-export default function Testimonials() {
+export default function Testimonials({ category }: TestimonialsProps) {
+  const testimonials = getTestimonials(category);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
@@ -120,7 +50,7 @@ export default function Testimonials() {
               {/* Avatar Circle / Image */}
               <div className="shrink-0">
                 <div className="relative w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-primary/20 bg-primary/10 flex items-center justify-center">
-                  {testimonials[currentIndex].image.startsWith('http') ? (
+                  {testimonials[currentIndex].image ? (
                     <Image
                       src={testimonials[currentIndex].image}
                       alt={`${testimonials[currentIndex].name} - testimonial`}

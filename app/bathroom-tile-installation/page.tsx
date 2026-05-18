@@ -110,7 +110,7 @@ export default function BathroomTileInstallationPage() {
         />
 
         <ServiceFAQ faqs={faqs} />
-        <Testimonials />
+        <Testimonials category="bathroom-tile-installation" />
         <ContactSection />
         <section className="py-20 lg:py-32 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">

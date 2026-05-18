@@ -213,7 +213,7 @@ export default function ShowerRemodelingPage() {
           </div>
         </section>
 
-        <Testimonials />
+        <Testimonials category="shower-remodeling" />
 
         <ContactSection />
 

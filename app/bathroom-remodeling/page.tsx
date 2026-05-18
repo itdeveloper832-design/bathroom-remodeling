@@ -108,7 +108,7 @@ export default function BathroomRemodelingPage() {
           tips={bathRemodelData.tips}
         />
         <ProcessSection />
-        <Testimonials />
+        <Testimonials category="bathroom-remodeling" />
         <ServiceAreas />
 
         {/* INTERNAL LINKING SECTION */}

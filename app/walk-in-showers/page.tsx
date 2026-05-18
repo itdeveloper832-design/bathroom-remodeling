@@ -142,7 +142,7 @@ export default function WalkInShowersPage() {
 
         <ServiceFAQ faqs={faqs} />
 
-        <Testimonials />
+        <Testimonials category="walk-in-showers" />
 
         <ContactSection />
 

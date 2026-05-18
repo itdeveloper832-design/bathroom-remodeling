@@ -172,7 +172,7 @@ export default function TubToShowerConversionPage() {
 
         <ServiceFAQ faqs={faqs} />
 
-        <Testimonials />
+        <Testimonials category="tub-to-shower-conversion" />
 
         <ContactSection />
 

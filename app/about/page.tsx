@@ -10,10 +10,10 @@ import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
   title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
-  description: "Meet the ARZ Home Remodeling team - Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
+  description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
   openGraph: {
     title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
-    description: "Meet the ARZ Home Remodeling team - Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
+    description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
     url: `${siteConfig.url}/about/`,
     type: "website",
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
-    description: "Meet the ARZ Home Remodeling team - Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
+    description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
@@ -143,14 +143,14 @@ export default function AboutPage() {
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-xl shadow-lg border border-border">
                   <p className="text-xl font-serif font-bold text-primary">Alex Rivers</p>
-                  {/* Placeholder: Real founder/owner name needed */}
+                  {/* <!-- Placeholder: Real founder/owner name needed --> */}
                   <p className="text-sm text-muted-foreground">Owner & Lead Contractor</p>
                 </div>
               </div>
               
               <div>
                 <span className="text-sm font-medium tracking-widest text-primary uppercase">
-                  Why We Started ARZ Remodeling
+                  Why We Started ARZ Home Remodeling
                 </span>
                 {/* DRAFT CONTENT FOR REVIEW */}
                 <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold text-foreground text-balance">
@@ -185,22 +185,31 @@ export default function AboutPage() {
                 {/* Placeholder: Team Member 1 Name, Role, Years of Experience needed */}
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
                   <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4" />
+                  {/* <!-- Placeholder: Team Member Name --> */}
                   <h3 className="text-lg font-serif font-bold">[Team Member Name]</h3>
+                  {/* <!-- Placeholder: Team Member Role --> */}
                   <p className="text-sm text-primary mb-2">[Role]</p>
+                  {/* <!-- Placeholder: Team Member Years of Experience --> */}
                   <p className="text-sm text-muted-foreground">[X] Years of Experience</p>
                 </div>
                 {/* Placeholder: Team Member 2 Name, Role, Years of Experience needed */}
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
                   <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4" />
+                  {/* <!-- Placeholder: Team Member Name --> */}
                   <h3 className="text-lg font-serif font-bold">[Team Member Name]</h3>
+                  {/* <!-- Placeholder: Team Member Role --> */}
                   <p className="text-sm text-primary mb-2">[Role]</p>
+                  {/* <!-- Placeholder: Team Member Years of Experience --> */}
                   <p className="text-sm text-muted-foreground">[X] Years of Experience</p>
                 </div>
                 {/* Placeholder: Team Member 3 Name, Role, Years of Experience needed */}
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
                   <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4" />
+                  {/* <!-- Placeholder: Team Member Name --> */}
                   <h3 className="text-lg font-serif font-bold">[Team Member Name]</h3>
+                  {/* <!-- Placeholder: Team Member Role --> */}
                   <p className="text-sm text-primary mb-2">[Role]</p>
+                  {/* <!-- Placeholder: Team Member Years of Experience --> */}
                   <p className="text-sm text-muted-foreground">[X] Years of Experience</p>
                 </div>
               </div>
@@ -391,7 +400,7 @@ export default function AboutPage() {
               <div>
                 <a href="https://google.com" target="_blank" rel="noopener" aria-label="View our 4.9 Star Google Rating">
                   <div className="text-3xl font-bold text-primary mb-2">★</div>
-                  <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">Google 4.9 Rating</p>
+                  <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">Google 4.9★ Rating</p>
                 </a>
               </div>
               <div>
@@ -422,7 +431,7 @@ export default function AboutPage() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href={`tel:${siteConfig.phone}`}>
+                  <Link href="tel:2293065591">
                     Call {siteConfig.phone}
                   </Link>
                 </Button>

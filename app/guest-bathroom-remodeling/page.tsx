@@ -200,7 +200,7 @@ export default function GuestBathPage() {
                     <Link href="/contact/">Get Your Quote</Link>
                  </Button>
                  <Button variant="outline" asChild size="lg">
-                    <Link href={`tel:${siteConfig.phone.replace(/[^0-9]/g, '')}`}>Call {siteConfig.phone}</Link>
+                    <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
                  </Button>
               </div>
             </div>

@@ -145,7 +145,7 @@ export async function LocationPageContent({
                   Get Free Estimate
                 </Link>
                 <a
-                  href="tel:(229) 306-5591"
+                  href="tel:2293065591"
                   className="border border-primary text-primary px-8 py-3.5 rounded-lg hover:bg-primary/5 transition font-medium flex items-center justify-center gap-2"
                 >
                   <Phone className="w-5 h-5" />
@@ -395,7 +395,7 @@ export async function LocationPageContent({
                 Schedule Consultation
               </Link>
               <a
-                href="tel:(229) 306-5591"
+                href="tel:2293065591"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition font-semibold"
               >
                 (229) 306-5591

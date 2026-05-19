@@ -95,7 +95,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-serif font-semibold text-foreground mb-2">Phone</h3>
                 <a 
-                  href={`tel:${siteConfig.phone}`} 
+                  href="tel:2293065591" 
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   {siteConfig.phone}
@@ -247,7 +247,7 @@ export default function ContactPage() {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-serif font-semibold text-foreground mb-2">Phone</h3>
-                  <a href={`tel:${siteConfig.phone}`} className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  <a href="tel:2293065591" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                     {siteConfig.phone}
                   </a>
                 </div>

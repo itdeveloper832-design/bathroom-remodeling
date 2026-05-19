@@ -115,7 +115,7 @@ export function Header() {
 
               <div className="mt-6 space-y-4">
                 <a
-                  href={`tel:${siteConfig.phone}`}
+                  href="tel:2293065591"
                   className="flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors"
                   aria-label={`Call us at ${siteConfig.phone}`}
                 >

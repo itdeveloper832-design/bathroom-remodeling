@@ -104,7 +104,7 @@ export default function ScottsdalePage() {
                 <Link href="/contact/">Get Your Free Scottsdale Quote</Link>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <Link href={`tel:${siteConfig.phone}`}>Call {siteConfig.phone}</Link>
+                <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
               </Button>
             </div>
           </div>

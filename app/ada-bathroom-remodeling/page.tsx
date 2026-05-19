@@ -198,7 +198,7 @@ export default function ADAPage() {
                     <Link href="/contact/">Get A Free Quote</Link>
                  </Button>
                  <Button variant="outline" asChild size="lg">
-                    <Link href={`tel:${siteConfig.phone.replace(/[^0-9]/g, '')}`}>{siteConfig.phone}</Link>
+                    <Link href="tel:2293065591">{siteConfig.phone}</Link>
                  </Button>
               </div>
             </div>

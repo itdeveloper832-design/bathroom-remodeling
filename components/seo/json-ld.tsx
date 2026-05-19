@@ -8,7 +8,7 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
   const schema = {
     "@context": "https://schema.org",
     "@type": type,
-    name: siteConfig.name,
+    name: "ARZ Home Remodeling",
     image: `${siteConfig.url}/images/new-images-logo.jpg`,
     "@id": `${siteConfig.url}/#organization`,
     founder: {
@@ -28,21 +28,21 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       "Vanity Installation",
       "Bathroom Flooring"
     ],
-    url: siteConfig.url,
-    telephone: siteConfig.phone,
-    email: siteConfig.email,
+    url: "https://arzhomeremodeling.com",
+    telephone: "(229) 306-5591",
+    email: "info@arzremodeling.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.state,
-      postalCode: siteConfig.address.zip,
+      streetAddress: "6710 W Chicago St",
+      addressLocality: "Chandler",
+      addressRegion: "AZ",
+      postalCode: "85226",
       addressCountry: "US",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: siteConfig.address.coordinates.lat,
-      longitude: siteConfig.address.coordinates.lng,
+      latitude: 33.3009334,
+      longitude: -111.9605964,
     },
     openingHoursSpecification: [
       {
@@ -66,7 +66,7 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       siteConfig.social.youtube,
       siteConfig.social.linkedin,
     ].filter(Boolean),
-    priceRange: "$$",
+    priceRange: "$$-$$$",
     areaServed: siteConfig.serviceAreas.map((area) => ({
       "@type": "Place",
       name: `${area}, Arizona`,
@@ -168,7 +168,8 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
-      reviewCount: "127",
+      reviewCount: "50",
+      bestRating: "5"
     },
   };
 
@@ -190,26 +191,37 @@ export function ServiceSchema({ serviceName, serviceDescription, serviceUrl }: S
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: serviceName,
-    description: serviceDescription,
-    provider: {
+    "serviceType": "ConstructionBusiness",
+    "name": serviceName,
+    "description": serviceDescription,
+    "provider": {
       "@type": "HomeAndConstructionBusiness",
-      name: siteConfig.name,
-      telephone: siteConfig.phone,
-      address: {
+      "@id": "https://arzhomeremodeling.com/#organization",
+      "name": "ARZ Home Remodeling",
+      "url": "https://arzhomeremodeling.com",
+      "telephone": "(229) 306-5591",
+      "email": "info@arzremodeling.com",
+      "address": {
         "@type": "PostalAddress",
-        streetAddress: siteConfig.address.street,
-        addressLocality: siteConfig.address.city,
-        addressRegion: siteConfig.address.state,
-        postalCode: siteConfig.address.zip,
-        addressCountry: "US",
-      },
+        "streetAddress": "6710 W Chicago St",
+        "addressLocality": "Chandler",
+        "addressRegion": "AZ",
+        "postalCode": "85226",
+        "addressCountry": "US"
+      }
     },
-    areaServed: {
+    "areaServed": {
       "@type": "Place",
-      name: `${siteConfig.address.city}, Arizona`,
+      "name": "Chandler, AZ"
     },
-    url: serviceUrl,
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "priceRange": "$12,500 - $38,000",
+      "lowPrice": "12500",
+      "highPrice": "38000"
+    },
+    "url": serviceUrl
   };
 
   return (

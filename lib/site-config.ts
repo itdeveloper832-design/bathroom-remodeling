@@ -5,8 +5,10 @@ export const siteConfig = {
   description: "Top-rated bathroom remodeling services in Chandler, Arizona. Expert bathroom remodeling contractors specializing in luxury master baths, showers, and tub conversions.",
   url: "https://arzhomeremodeling.com",
   phone: "(229) 306-5591",
+  phoneClean: "2293065591",
   email: "info@arzremodeling.com",
-  license: "<!-- Placeholder: Real Arizona Registrar of Contractors license number needed --> ROC Licensed | License #[REAL NUMBER]",
+  // Placeholder: Real Arizona Registrar of Contractors license number needed
+  license: "ROC Licensed | License #[REAL NUMBER]",
   address: {
     street: "6710 W Chicago St",
     city: "Chandler",

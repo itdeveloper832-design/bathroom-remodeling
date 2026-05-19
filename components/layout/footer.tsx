@@ -28,12 +28,9 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
-              Top-rated bathroom remodeling in Chandler, Arizona.
-              {siteConfig.license && (
-                <>
-                  {" "}{siteConfig.license} - <a href="https://roc.az.gov" target="_blank" rel="noopener" className="hover:text-primary transition-colors underline">Licensed by the Arizona Registrar of Contractors</a> •{" "}
-                </>
-              )}
+              Top-rated bathroom remodeling in Chandler, Arizona.{" "}
+              {/* <!-- Placeholder: Real Arizona Registrar of Contractors license number needed --> */}
+              {siteConfig.license} - <a href="https://roc.az.gov" target="_blank" rel="noopener" className="hover:text-primary transition-colors underline">Licensed by the Arizona Registrar of Contractors</a> •{" "}
               Expert master bath renovations and shower upgrades since 2010.
             </p>
 
@@ -94,13 +91,15 @@ export function Footer() {
             <h3 className="font-serif text-xl font-semibold mb-6 text-background">Bathroom Services</h3>
             <ul className="space-y-3">
               {[
-                { href: "/luxury-bathroom-remodeling/", label: "Luxury Master Bathrooms" },
-                { href: "/ada-bathroom-remodeling/", label: "ADA & Accessible Design" },
-                { href: "/guest-bathroom-remodeling/", label: "Guest Bath & Powder Rooms" },
-                { href: "/shower-remodeling/", label: "Shower Remodeling Chandler" },
+                { href: "/shower-remodeling/", label: "Shower Remodeling" },
                 { href: "/tub-to-shower-conversion/", label: "Tub-to-Shower Conversion" },
-                { href: "/bathroom-remodel-cost-chandler/", label: "Bathroom Remodel Cost" },
-                { href: "/master-bathroom-remodel/", label: "Full Master Remodels" },
+                { href: "/master-bathroom-remodel/", label: "Master Bathroom Remodel" },
+                { href: "/small-bathroom-remodeling/", label: "Small Bathroom Remodeling" },
+                { href: "/bathroom-tile-installation/", label: "Bathroom Tile Installation" },
+                { href: "/bathroom-vanity-installation/", label: "Bathroom Vanity Installation" },
+                { href: "/ada-bathroom-remodeling/", label: "ADA Bathroom Remodeling" },
+                { href: "/luxury-bathroom-remodeling/", label: "Luxury Bathroom Remodeling" },
+                { href: "/guest-bathroom-remodeling/", label: "Guest Bathroom Remodeling" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -153,7 +152,7 @@ export function Footer() {
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
                   <a
-                    href={`tel:${siteConfig.phone}`}
+                    href="tel:2293065591"
                     className="text-background/80 hover:text-primary transition-colors text-sm no-underline"
                     aria-label={`Call us at ${siteConfig.phone}`}
                   >

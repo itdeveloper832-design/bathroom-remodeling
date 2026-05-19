@@ -41,7 +41,7 @@ export default function ServiceCTA({ title, description }: ServiceCTAProps) {
               variant="outline"
               className="bg-black text-white border-black hover:bg-black text-base px-8 py-6"
             >
-              <a href={`tel:${siteConfig.phone}`}>
+              <a href="tel:2293065591">
                 <Phone className="mr-2 w-4 h-4" />
                 {siteConfig.phone}
               </a>

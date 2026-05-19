@@ -40,7 +40,7 @@ export default function FinalCTA() {
                 variant="outline"
                 className="border-black bg-black text-white hover:bg-primary-foreground hover:text-primary text-base px-8 py-6"
               >
-                <a href={`tel:${siteConfig.phone}`}>
+                <a href="tel:2293065591">
                   <Phone className="mr-2 w-4 h-4" />
                   Call Now: {siteConfig.phone}
                 </a>

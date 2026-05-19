@@ -244,7 +244,7 @@ export default function AdminLeadsPage() {
                           </a>
                           {lead.phone && (
                             <a
-                              href={`tel:${lead.phone}`}
+                              href="tel:2293065591"
                               className="flex items-center gap-1 hover:text-primary"
                             >
                               <Phone className="h-3 w-3" />

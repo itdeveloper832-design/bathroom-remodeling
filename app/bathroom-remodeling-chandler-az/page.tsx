@@ -238,7 +238,7 @@ export default function ChandlerBathroomRemodelingPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:(229) 306-5591" className="flex items-center gap-2">
+                <Link href="tel:2293065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

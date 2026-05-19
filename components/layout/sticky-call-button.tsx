@@ -29,7 +29,7 @@ export function StickyCallButton() {
       }`}
     >
       <a
-        href={`tel:${siteConfig.phone.replace(/\D/g, "")}`}
+        href="tel:2293065591"
         className="flex items-center justify-center w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-lg hover:bg-primary/90 active:scale-95 transition-all animate-pulse"
         aria-label="Call Now"
       >

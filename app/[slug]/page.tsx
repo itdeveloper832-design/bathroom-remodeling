@@ -1,23 +1,20 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { bathroomServices } from "@/lib/bathroom-services";
 import { generateAllLocationSlugs } from "@/lib/chandler-locations";
 
-import { generateServiceMetadata, ServicePageContent } from "./service-page";
 import { generateLocationMetadata, LocationPageContent } from "./location-page";
 
+// Only generate static params for location slugs.
+// Service pages have their own dedicated directories (e.g. app/shower-remodeling/)
+// and must NOT be duplicated here — that causes route conflicts and 404s.
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const serviceSlugs = bathroomServices.map((service) => ({
-    slug: service.href.replace(/\//g, ""),
-  }));
-  
   const locationSlugs = generateAllLocationSlugs().map((loc) => ({
     slug: `chandler-az-${loc}`,
   }));
 
-  return [...serviceSlugs, ...locationSlugs];
+  return locationSlugs;
 }
 
 export async function generateMetadata({
@@ -25,15 +22,14 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const resolvedParams = await params;
-  const slug = resolvedParams.slug;
-  
+  const { slug } = await params;
+
   if (slug.startsWith("chandler-az-")) {
     const locationSlug = slug.replace("chandler-az-", "");
     return generateLocationMetadata({ locationSlug });
-  } else {
-    return generateServiceMetadata({ serviceSlug: slug });
   }
+
+  return {};
 }
 
 export default async function Page({
@@ -41,13 +37,14 @@ export default async function Page({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const resolvedParams = await params;
-  const slug = resolvedParams.slug;
-  
+  const { slug } = await params;
+
   if (slug.startsWith("chandler-az-")) {
     const locationSlug = slug.replace("chandler-az-", "");
     return <LocationPageContent locationSlug={locationSlug} />;
-  } else {
-    return <ServicePageContent serviceSlug={slug} />;
   }
+
+  // Any slug not matching a location pattern is not found.
+  // All service pages are handled by their own dedicated routes.
+  notFound();
 }

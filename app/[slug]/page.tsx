@@ -6,7 +6,7 @@ import { generateLocationMetadata, LocationPageContent } from "./location-page";
 
 // Only generate static params for location slugs.
 // Service pages have their own dedicated directories (e.g. app/shower-remodeling/)
-// and must NOT be duplicated here — that causes route conflicts and 404s.
+// and must NOT be duplicated here - that causes route conflicts and 404s.
 export const dynamicParams = false;
 
 export async function generateStaticParams() {

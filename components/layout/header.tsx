@@ -34,7 +34,7 @@ export function Header() {
       </a>
       <InfoHeader />
       <header
-        className={`fixed left-0 right-0 z-40 transition-all duration-300 bg-background shadow-md lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-2 lg:py-3" : "top-[40px] py-4 lg:py-6"}`}
+        className={`fixed left-0 right-0 z-40 transition-all duration-300 bg-background shadow-md lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-1 lg:py-1.5" : "top-[40px] py-1.5 lg:py-2"}`}
         role="banner"
       >
         <div className="container mx-auto px-4 lg:px-8">
@@ -43,12 +43,12 @@ export function Header() {
             <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
               <div className={`relative transition-all duration-300 ${
                 isScrolled 
-                  ? "h-14 w-14 sm:h-16 sm:w-16 lg:h-18 lg:w-18" 
-                  : "h-20 w-20 sm:h-24 sm:w-24 lg:h-28 lg:w-28"
+                  ? "h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14" 
+                  : "h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16"
               }`}>
                 <Image
                   src="/images/web-logo-image.png"
-                  alt="ARZ Home Remodeling — Bathroom Remodeling Chandler AZ"
+                  alt="ARZ Home Remodeling - Bathroom Remodeling Chandler AZ"
                   fill
                   priority
                   fetchPriority="high"
@@ -63,7 +63,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-semibold text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1"
+                  className="text-base font-semibold text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1"
                 >
                   {item.name}
                 </Link>
@@ -72,7 +72,7 @@ export function Header() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <Button asChild className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-6 py-4 text-sm font-semibold">
+              <Button asChild className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-6 py-2 text-base font-semibold">
                 <Link href="/contact/">Free Estimate</Link>
               </Button>
             </div>

@@ -7,7 +7,7 @@ import ServiceFAQ from "@/components/service-faq";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema, PriceSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import {
@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Licensed Bathroom Contractor Ahwatukee AZ | Quality Craftsmanship",
   description:
-    "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates: call +14803065591 today!",
+    "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates: call (229) 306-5591 today!",
   openGraph: {
     title: "Bathroom Remodeling Ahwatukee AZ | ARZ Home Remodeling",
     description:
@@ -77,7 +77,7 @@ const ahwatukeeFaqs = [
   {
     question: "Are you licensed to do bathroom remodeling in Arizona?",
     answer:
-      "Yes. We are a licensed Arizona contractor operating under license ROC #345678. We carry full insurance and provide a two year workmanship warranty on every project. We are familiar with the specific building standards in Ahwatukee."
+      "Yes. We are a licensed Arizona contractor operating under license ROC Licensed | License #ROC338304. We carry full insurance and provide a two year workmanship warranty on every project. We are familiar with the specific building standards in Ahwatukee."
   },
   {
     question: "Do you serve neighborhoods throughout Ahwatukee Foothills?",
@@ -184,7 +184,9 @@ const neighborhoods = [
 export default function AhwatukeePage() {
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathroom Remodeling Ahwatukee Az", url: "https://arzhomeremodeling.com/bathroom-remodeling-ahwatukee-az/" } ]} />
+<ServiceSchema
         serviceName="Bathroom Remodeling in Ahwatukee, Arizona"
         serviceDescription="Licensed bathroom remodeling contractor serving Ahwatukee, AZ. Custom shower installation, tub-to-shower conversions, master bath renovations, and complete bathroom remodels. Serving The Foothills, Club West, and Lakewood."
         serviceUrl={`${siteConfig.url}/bathroom-remodeling-ahwatukee-az/`}
@@ -200,7 +202,7 @@ export default function AhwatukeePage() {
         {/* HERO */}
         <ServiceHero
           title="Ahwatukee’s Top-Rated Bathroom Remodeling Contractor"
-          subtitle="Hire the Best Local Remodelers in Ahwatukee — Free Estimates"
+          subtitle="Hire the Best Local Remodelers in Ahwatukee - Free Estimates"
           description="Bringing our 5-star bathroom remodeling services to homeowners in Ahwatukee, AZ. Licensed AZ contractors specializing in high-quality renovations, custom shower installs, and full bathroom transformations."
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[

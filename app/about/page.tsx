@@ -9,11 +9,11 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "ARZ Home Remodeling: Licensed Bathroom Contractor in Chandler, AZ",
-  description: "Local, licensed bathroom remodeling contractor in Chandler AZ. Over 15 years building luxury baths with guaranteed satisfaction. Read our story!",
+  title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
+  description: "Meet the ARZ Home Remodeling team - Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
   openGraph: {
-    title: "Bathroom Remodeling Contractor Chandler AZ | ARZ Home Remodeling",
-    description: "Expert bathroom remodeling contractor Chandler AZ. Professional, high-quality renovations!",
+    title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
+    description: "Meet the ARZ Home Remodeling team - Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
     url: `${siteConfig.url}/about/`,
     type: "website",
     images: [
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Contractor Chandler AZ",
-    description: "Professional bathroom remodeling contractor Chandler AZ. Affordable luxury renovations!",
+    title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
+    description: "Meet the ARZ Home Remodeling team - Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
@@ -104,7 +104,7 @@ export default function AboutPage() {
                 Top-Rated Bathroom Remodeling Contractor in Chandler AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                ARZ Home Remodeling is a local residential contractor company operating under license ROC #345678. Owner {siteConfig.owner} and our team have helped families across the East Valley update their homes for over 15 years.
+                ARZ Home Remodeling is a local residential contractor company operating under license ROC Licensed | License #ROC338304. Owner {siteConfig.owner} and our team have helped families across the East Valley update their homes for over 15 years.
               </p>
             </div>
           </div>
@@ -143,22 +143,21 @@ export default function AboutPage() {
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-xl shadow-lg border border-border">
                   <p className="text-xl font-serif font-bold text-primary">Alex Rivers</p>
+                  {/* Placeholder: Real founder/owner name needed */}
                   <p className="text-sm text-muted-foreground">Owner & Lead Contractor</p>
                 </div>
               </div>
               
               <div>
                 <span className="text-sm font-medium tracking-widest text-primary uppercase">
-                  Who We Are
+                  Why We Started ARZ Remodeling
                 </span>
+                {/* DRAFT CONTENT FOR REVIEW */}
                 <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold text-foreground text-balance">
                   Local Expertise in Every Tile
                 </h2>
                 <p className="mt-6 text-muted-foreground leading-relaxed">
-                  I started ARZ Home Remodeling after working for more than a decade in the Arizona residential construction industry. I saw too many homeowners in the East Valley paying high prices for luxury bathrooms that began to fail within two years because of poor waterproofing or cheap materials.
-                </p>
-                <p className="mt-4 text-muted-foreground leading-relaxed">
-                  In Chandler's desert climate, precision is not just about looks. It is about structural safety. Extreme summer temperatures cause home framing to shift, while our mineral heavy municipal water quickly ruins standard grout. Whether we are updating a luxury master bathroom in Ocotillo, a guest bath in Fulton Ranch, or a retirement home shower in Sun Lakes, we treat every home like our own.
+                  We started ARZ Home Remodeling to solve a specific problem in Chandler: homeowners were tired of unreliable contractors who used cheap materials and vanished halfway through a job. We saw a desperate need for a trusted, local bathroom remodeling contractor who actually picks up the phone, shows up on time, and builds bathrooms that stand the test of time. Unlike other companies that rely on high-pressure sales tactics and cut corners on waterproofing, we decided to do things differently. We built our entire business model on complete transparency, uncompromising craftsmanship, and a genuine commitment to our neighbors. We only use premium materials designed to withstand Arizona's unique climate, ensuring your new bathroom is not only beautiful but built to last. Our goal has always been simple: to be the one contractor you proudly recommend to your friends and family.
                 </p>
 
                 <ul className="mt-6 space-y-3">
@@ -169,6 +168,41 @@ export default function AboutPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+
+            {/* Meet The Team Section */}
+            <div className="mt-24">
+              <div className="max-w-2xl mx-auto text-center mb-16">
+                <span className="text-sm font-medium tracking-widest text-primary uppercase">
+                  Our People
+                </span>
+                <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold text-foreground text-balance">
+                  Meet the Team
+                </h2>
+              </div>
+              <div className="grid md:grid-cols-3 gap-8">
+                {/* Placeholder: Team Member 1 Name, Role, Years of Experience needed */}
+                <div className="text-center p-6 bg-card rounded-xl border border-border">
+                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4" />
+                  <h3 className="text-lg font-serif font-bold">[Team Member Name]</h3>
+                  <p className="text-sm text-primary mb-2">[Role]</p>
+                  <p className="text-sm text-muted-foreground">[X] Years of Experience</p>
+                </div>
+                {/* Placeholder: Team Member 2 Name, Role, Years of Experience needed */}
+                <div className="text-center p-6 bg-card rounded-xl border border-border">
+                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4" />
+                  <h3 className="text-lg font-serif font-bold">[Team Member Name]</h3>
+                  <p className="text-sm text-primary mb-2">[Role]</p>
+                  <p className="text-sm text-muted-foreground">[X] Years of Experience</p>
+                </div>
+                {/* Placeholder: Team Member 3 Name, Role, Years of Experience needed */}
+                <div className="text-center p-6 bg-card rounded-xl border border-border">
+                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4" />
+                  <h3 className="text-lg font-serif font-bold">[Team Member Name]</h3>
+                  <p className="text-sm text-primary mb-2">[Role]</p>
+                  <p className="text-sm text-muted-foreground">[X] Years of Experience</p>
+                </div>
               </div>
             </div>
           </div>
@@ -277,7 +311,7 @@ export default function AboutPage() {
               {[
                 {
                   award: "Verified NARI Member",
-                  issuer: "National Association of the Remodeling Industry",
+                  issuer: <a href="https://www.nari.org" target="_blank" rel="noopener" className="hover:underline hover:text-primary">National Association of the Remodeling Industry</a>,
                   year: "Member ID #82910",
                   icon: <Award className="w-8 h-8 text-primary mx-auto mb-4" />
                 },
@@ -341,18 +375,31 @@ export default function AboutPage() {
             </div>
 
             {/* Trust Badges */}
-            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto text-center">
-              {[
-                { label: "Licensed & Bonded", icon: "✓" },
-                { label: "Fully Insured", icon: "✓" },
-                { label: "15+ Years Experience", icon: "✓" },
-                { label: "100% Satisfaction", icon: "✓" }
-              ].map((badge, index) => (
-                <div key={index}>
-                  <div className="text-3xl font-bold text-primary mb-2">{badge.icon}</div>
-                  <p className="text-sm font-medium text-foreground">{badge.label}</p>
-                </div>
-              ))}
+            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
+              <div>
+                <a href="https://www.bbb.org" target="_blank" rel="noopener" aria-label="Verify our BBB Accredited Business status">
+                  <div className="text-3xl font-bold text-primary mb-2">✓</div>
+                  <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">BBB Accredited Business</p>
+                </a>
+              </div>
+              <div>
+                <a href="https://www.nari.org" target="_blank" rel="noopener" aria-label="Verify our NARI Membership">
+                  <div className="text-3xl font-bold text-primary mb-2">✓</div>
+                  <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">NARI Member</p>
+                </a>
+              </div>
+              <div>
+                <a href="https://google.com" target="_blank" rel="noopener" aria-label="View our 4.9 Star Google Rating">
+                  <div className="text-3xl font-bold text-primary mb-2">★</div>
+                  <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">Google 4.9 Rating</p>
+                </a>
+              </div>
+              <div>
+                <a href="https://roc.az.gov" target="_blank" rel="noopener" aria-label="Verify our Arizona ROC License">
+                  <div className="text-3xl font-bold text-primary mb-2">✓</div>
+                  <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">Arizona ROC Licensed</p>
+                </a>
+              </div>
             </div>
           </div>
         </section>

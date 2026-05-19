@@ -145,7 +145,7 @@ export async function LocationPageContent({
                   Get Free Estimate
                 </Link>
                 <a
-                  href="tel:+14803065591"
+                  href="tel:(229) 306-5591"
                   className="border border-primary text-primary px-8 py-3.5 rounded-lg hover:bg-primary/5 transition font-medium flex items-center justify-center gap-2"
                 >
                   <Phone className="w-5 h-5" />
@@ -254,7 +254,7 @@ export async function LocationPageContent({
             <div className="grid sm:grid-cols-3 gap-6">
               <div className="bg-secondary p-6 rounded-xl border border-border text-center">
                 <ShieldCheck className="w-8 h-8 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold text-foreground mb-2">Licensed ROC #345678</h3>
+                <h3 className="font-semibold text-foreground mb-2">Licensed ROC Licensed | License #ROC338304</h3>
                 <p className="text-muted-foreground text-xs leading-relaxed">Fully bonded and insured for complete residential renovations in Arizona.</p>
               </div>
               <div className="bg-secondary p-6 rounded-xl border border-border text-center">
@@ -395,10 +395,10 @@ export async function LocationPageContent({
                 Schedule Consultation
               </Link>
               <a
-                href="tel:+14803065591"
+                href="tel:(229) 306-5591"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition font-semibold"
               >
-                +14803065591
+                (229) 306-5591
               </a>
             </div>
           </div>

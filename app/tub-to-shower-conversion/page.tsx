@@ -12,7 +12,7 @@ import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import LocalTrust from "@/components/home/local-trust";
@@ -54,7 +54,9 @@ export default function TubToShowerConversionPage() {
   const serviceData = serviceContent["tub-to-shower-conversion"];
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Tub To Shower Conversion", url: "https://arzhomeremodeling.com/tub-to-shower-conversion/" } ]} />
+<ServiceSchema
         serviceName="Tub to Shower Conversion in Chandler, Arizona"
         serviceDescription="Professional tub to shower conversion in Chandler, Arizona. Convert your bathtub to a modern walk-in shower with expert installation."
         serviceUrl={`${siteConfig.url}/tub-to-shower-conversion`}

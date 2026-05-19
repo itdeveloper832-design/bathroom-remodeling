@@ -1,5 +1,5 @@
 // ✅ CONVERTED TO SERVER COMPONENT: no "use client" needed
-// Before/after hover effect now uses pure CSS :hover — zero JS shipped for this section
+// Before/after hover effect now uses pure CSS :hover - zero JS shipped for this section
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -41,7 +41,7 @@ const galleryItems = [
 function BeforeAfterCard({ item }: { item: typeof galleryItems[0] }) {
   return (
     <div className="gallery-card relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group">
-      {/* After Image — revealed on hover via CSS opacity */}
+      {/* After Image - revealed on hover via CSS opacity */}
       <Image
         src={item.after}
         alt={`${item.title} - After Remodel`}
@@ -52,7 +52,7 @@ function BeforeAfterCard({ item }: { item: typeof galleryItems[0] }) {
         className="object-cover gallery-after"
         sizes="(max-width: 768px) 100vw, 50vw"
       />
-      {/* Before Image — shown by default, hidden on hover */}
+      {/* Before Image - shown by default, hidden on hover */}
       <Image
         src={item.before}
         alt={`${item.title} - Before Remodel`}
@@ -65,7 +65,7 @@ function BeforeAfterCard({ item }: { item: typeof galleryItems[0] }) {
       />
       {/* Dark overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      {/* Before/After label — CSS switches text via :hover */}
+      {/* Before/After label - CSS switches text via :hover */}
       <div className="absolute top-4 left-4 z-10">
         <span className="gallery-label-before px-3 py-1 text-xs font-semibold rounded-full bg-background/80 text-foreground">
           Before

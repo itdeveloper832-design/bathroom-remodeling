@@ -11,7 +11,7 @@ import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 import Link from "next/link";
@@ -73,7 +73,9 @@ const otherServices = bathroomServices
 export default function GuestBathPage() {
   return (
     <>
-      <ServiceSchema 
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Guest Bathroom Remodeling", url: "https://arzhomeremodeling.com/guest-bathroom-remodeling/" } ]} />
+<ServiceSchema 
         serviceName="Guest Bathroom Remodeling in Chandler" 
         serviceDescription="Professional guest bathroom and powder room renovations in Chandler, AZ. Fast, high-impact updates for secondary bathrooms." 
         serviceUrl={`${siteConfig.url}/guest-bathroom-remodeling/`} 

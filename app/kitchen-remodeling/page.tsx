@@ -1,3 +1,4 @@
+import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -21,7 +22,9 @@ export const metadata: Metadata = {
 export default function KitchenRemodelingPage() {
   return (
     <>
-      <Header />
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Kitchen Remodeling", url: "https://arzhomeremodeling.com/kitchen-remodeling/" } ]} />
+<Header />
       <main className="min-h-[80vh] flex flex-col justify-center items-center py-24 bg-background">
         <div className="container mx-auto px-4 max-w-2xl text-center">
           <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">

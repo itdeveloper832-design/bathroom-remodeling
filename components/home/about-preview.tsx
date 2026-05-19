@@ -60,7 +60,7 @@ export default function AboutPreview() {
               Crafting Dream Spaces Since 2010
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              ARZ Remodeling was founded with a simple mission: to transform ordinary 
+              ARZ Home Remodeling was founded with a simple mission: to transform ordinary 
               bathrooms into extraordinary ones. What started as a small family business has 
               grown into the most trusted <strong>bathroom remodeling contractors in Chandler, AZ</strong>. From spa-like <strong>master bath renovations</strong> to luxury <strong>shower remodeling services in Chandler</strong>, we handle it all.
             </p>

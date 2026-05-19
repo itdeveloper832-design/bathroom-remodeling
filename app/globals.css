@@ -324,7 +324,7 @@ section {
 }
 
 /* ===== CSS-ONLY GALLERY BEFORE/AFTER HOVER =====
-   No JavaScript needed — pure CSS handles the image swap on hover.
+   No JavaScript needed - pure CSS handles the image swap on hover.
    This converts gallery-preview.tsx from a client to a server component. */
 
 /* After image: hidden by default, revealed on hover */

@@ -12,7 +12,7 @@ import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import LocalTrust from "@/components/home/local-trust";
@@ -53,7 +53,9 @@ export default function BathtubRemodelingPage() {
   const serviceData = serviceContent["bathtub-remodeling"];
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathtub Remodeling", url: "https://arzhomeremodeling.com/bathtub-remodeling/" } ]} />
+<ServiceSchema
         serviceName="Bathtub Remodeling in Chandler, Arizona"
         serviceDescription="Expert tub replacements in Chandler, Arizona. Modern installations, luxury upgrades, and professional renovations."
         serviceUrl={`${siteConfig.url}/bathtub-remodeling/`}

@@ -12,7 +12,7 @@ import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
   title: "Shower & Bathtub Upgrade Chandler AZ | Remodeling",
@@ -69,7 +69,9 @@ const chandlerLocation = {
 export default function ShowerBathtubUpgradePage() {
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Shower Bathtub Upgrade", url: "https://arzhomeremodeling.com/shower-bathtub-upgrade/" } ]} />
+<ServiceSchema
         serviceName="Shower & Bathtub Upgrade in Chandler, Arizona"
         serviceDescription="Professional shower and bathtub upgrade services in Chandler, Arizona. Modern fixtures, premium materials, and expert installation."
         serviceUrl={`${siteConfig.url}/shower-bathtub-upgrade`}

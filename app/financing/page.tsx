@@ -1,3 +1,4 @@
+import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import { Metadata } from "next"
 import Link from "next/link"
 import { Header } from "@/components/layout/header"
@@ -97,7 +98,9 @@ const plans = [
 export default function FinancingPage() {
   return (
     <>
-      <Header />
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Financing", url: "https://arzhomeremodeling.com/financing/" } ]} />
+<Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
         <section className="pt-28 md:pt-40 lg:pt-48 pb-24 md:pb-32 bg-secondary">

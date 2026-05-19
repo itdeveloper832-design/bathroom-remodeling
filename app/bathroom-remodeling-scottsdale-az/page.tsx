@@ -7,7 +7,7 @@ import ServiceFAQ from "@/components/service-faq";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema, PriceSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import {
@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Luxury Bathroom Remodeling Scottsdale AZ | Premium Renovations",
   description:
-    "Scottsdale's premier bathroom remodeling contractor. We specialize in luxury master bath transformations, custom walk-in showers, and high-end materials. Licensed company, free estimates: call +14803065591 today!",
+    "Scottsdale's premier bathroom remodeling contractor. We specialize in luxury master bath transformations, custom walk-in showers, and high-end materials. Licensed company, free estimates: call (229) 306-5591 today!",
   openGraph: {
     title: "Bathroom Remodeling Scottsdale AZ | ARZ Home Remodeling",
     description:
@@ -60,7 +60,9 @@ const scottsdaleFaqs = [
 export default function ScottsdalePage() {
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathroom Remodeling Scottsdale Az", url: "https://arzhomeremodeling.com/bathroom-remodeling-scottsdale-az/" } ]} />
+<ServiceSchema
         serviceName="Luxury Bathroom Remodeling in Scottsdale, Arizona"
         serviceDescription="Licensed bathroom contractor specializing in high-end renovations in Scottsdale, AZ. Custom showers, luxury master baths, and premium stone installation."
         serviceUrl={`${siteConfig.url}/bathroom-remodeling-scottsdale-az/`}

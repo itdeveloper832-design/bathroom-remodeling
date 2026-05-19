@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 const contactFaqs = [
   {
     question: "How do I get an estimate for my bathroom remodel in Chandler?",
-    answer: "Getting started is easy. You can call us at +14803065591 or fill out our online contact form. We typically respond within 2 business hours and can schedule a free in-home consultation at your convenience."
+    answer: "Getting started is easy. You can call us at (229) 306-5591 or fill out our online contact form. We typically respond within 2 business hours and can schedule a free in-home consultation at your convenience."
   },
   {
     question: "What is the typical cost for a bathroom renovation in Chandler?",
@@ -46,7 +46,7 @@ const contactFaqs = [
   },
   {
     question: "Are your bathroom remodeling services licensed and insured?",
-    answer: "Yes, ARZ Home Remodeling is fully licensed (ROC #345678), bonded, and insured. We have over 15 years of experience serving Chandler and the East Valley, ensuring every project meets the highest standards of safety and quality."
+    answer: "Yes, ARZ Home Remodeling is fully licensed (ROC Licensed | License #ROC338304), bonded, and insured. We have over 15 years of experience serving Chandler and the East Valley, ensuring every project meets the highest standards of safety and quality."
   },
   {
     question: "Do you offer financing for bathroom remodeling projects?",
@@ -77,7 +77,7 @@ export default function ContactPage() {
                 Get Your Free Bathroom Remodel Estimate in Chandler, AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Ready to get started? Fill out the form below or give us a call — we typically respond
+                Ready to get started? Fill out the form below or give us a call - we typically respond
                 within 2 business hours. We&apos;ll schedule a free in-home visit to measure your space,
                 discuss your vision, and give you a written quote with no obligation.
               </p>

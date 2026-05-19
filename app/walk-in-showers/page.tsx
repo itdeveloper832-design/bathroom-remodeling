@@ -12,7 +12,7 @@ import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
@@ -51,7 +51,9 @@ export default function WalkInShowersPage() {
   const serviceData = serviceContent["walk-in-showers"];
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Walk In Showers", url: "https://arzhomeremodeling.com/walk-in-showers/" } ]} />
+<ServiceSchema
         serviceName="Walk-In Shower Installation in Chandler, Arizona"
         serviceDescription="Professional walk-in shower installation in Chandler, Arizona. Barrier-free designs, frameless glass enclosures, and ADA-compliant options."
         serviceUrl={`${siteConfig.url}/walk-in-showers`}

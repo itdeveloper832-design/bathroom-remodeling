@@ -11,7 +11,7 @@ import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 import Link from "next/link";
@@ -73,7 +73,9 @@ const otherServices = bathroomServices
 export default function ADAPage() {
   return (
     <>
-      <ServiceSchema 
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Ada Bathroom Remodeling", url: "https://arzhomeremodeling.com/ada-bathroom-remodeling/" } ]} />
+<ServiceSchema 
         serviceName="ADA Bathroom Remodeling in Chandler" 
         serviceDescription="Professional senior-safe and handicap accessible bathroom modifications in Chandler, AZ. Curbless showers, grab bars, and roll-in entries." 
         serviceUrl={`${siteConfig.url}/ada-bathroom-remodeling/`} 

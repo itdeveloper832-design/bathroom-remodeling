@@ -9,7 +9,7 @@ import ServiceCTA from "@/components/service-cta";
 import AreaIntro from "@/components/area-intro";
 import AreaBenefits from "@/components/area-benefits";
 import CustomFAQ from "@/components/custom-faq";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { getAreaData, getAllAreaSlugs } from "@/lib/bathroom-remodeling-areas";
 import AreaInterlinking from "@/components/area-interlinking";
@@ -67,7 +67,9 @@ export default async function AreaPage({
 
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "[area]", url: "https://arzhomeremodeling.com/[area]/" } ]} />
+<ServiceSchema
         serviceName={areaData.fullName}
         serviceDescription={`Professional bathroom remodeling services in ${areaData.areaName}, Chandler. ${areaData.description} Complete bathroom renovations, shower installations, fixture upgrades, and more.`}
         serviceUrl={`${siteConfig.url}/bathroom-remodeling-areas/${areaSlug}`}

@@ -7,7 +7,7 @@ import ServiceFAQ from "@/components/service-faq";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema, PriceSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Bathroom Remodeling Apache Junction AZ | Free Estimates",
   description:
-    "Hire Apache Junction's top-rated bathroom remodeling contractor. Specializing in walk-in showers, tub-to-shower conversions, and premium desert-safe tiling. Licensed company, free quotes: call +14803065591 today!",
+    "Hire Apache Junction's top-rated bathroom remodeling contractor. Specializing in walk-in showers, tub-to-shower conversions, and premium desert-safe tiling. Licensed company, free quotes: call (229) 306-5591 today!",
   openGraph: {
     title: "Bathroom Remodeling Apache Junction AZ | ARZ Home Remodeling",
     description:
@@ -49,7 +49,9 @@ const apacheJunctionFaqs = [
 export default function ApacheJunctionPage() {
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathroom Remodeling Apache Junction Az", url: "https://arzhomeremodeling.com/bathroom-remodeling-apache-junction-az/" } ]} />
+<ServiceSchema
         serviceName="Bathroom Remodeling in Apache Junction, Arizona"
         serviceDescription="Licensed bathroom remodeling contractor serving Apache Junction, AZ. Custom walk-in showers, master bath upgrades, and tub-to-shower conversions for local families."
         serviceUrl={`${siteConfig.url}/bathroom-remodeling-apache-junction-az/`}

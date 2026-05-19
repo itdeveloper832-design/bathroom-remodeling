@@ -8,6 +8,10 @@ export function Footer() {
           <div>
             <h3 className="font-poppins font-bold text-lg mb-4">ARZ Home Remodeling</h3>
             <p className="text-slate-300">Professional home remodeling and renovation services across Arizona.</p>
+            <p className="mt-4 text-slate-300 text-sm">
+              {/* Placeholder: Real Arizona Registrar of Contractors license number needed */}
+              ROC Licensed | License #[REAL NUMBER] - <a href="https://roc.az.gov" target="_blank" rel="noopener" className="hover:text-white transition-colors underline">Licensed by the Arizona Registrar of Contractors</a>
+            </p>
           </div>
 
           <div>
@@ -23,10 +27,13 @@ export function Footer() {
           <div>
             <h4 className="font-poppins font-semibold mb-4">Contact Info</h4>
             <p className="text-slate-300">
-              Phone: <a href="tel:+14803065591" className="hover:text-white transition-colors">+14803065591</a>
+              Address: 6710 W Chicago St, Chandler, AZ 85226
             </p>
             <p className="text-slate-300">
-              Visit us at: <a href="https://arzhomeremodeling.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">arzhomeremodeling.vercel.app</a>
+              Phone: <a href="tel:2293065591" className="hover:text-white transition-colors">(229) 306-5591</a>
+            </p>
+            <p className="text-slate-300">
+              Email: <a href="mailto:info@arzremodeling.com" className="hover:text-white transition-colors">info@arzremodeling.com</a>
             </p>
           </div>
         </div>

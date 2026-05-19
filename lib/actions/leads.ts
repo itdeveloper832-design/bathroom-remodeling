@@ -49,7 +49,7 @@ export async function createLead(
   }
 }
 
-// ─── ADMIN: Update / Delete (client SDK writes — allowed by Firestore rules) ──
+// ─── ADMIN: Update / Delete (client SDK writes - allowed by Firestore rules) ──
 
 export async function updateLeadStatus(
   id: string,

@@ -12,7 +12,7 @@ import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
@@ -54,7 +54,9 @@ export default function CabinetCountertopInstallationPage() {
   const serviceData = serviceContent["cabinet-countertop-installation"];
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Cabinet Countertop Installation", url: "https://arzhomeremodeling.com/cabinet-countertop-installation/" } ]} />
+<ServiceSchema
         serviceName="Cabinet & Countertop Installation in Chandler, Arizona"
         serviceDescription="Professional cabinet and countertop installation in Chandler, Arizona. Granite, quartz, marble countertops and custom cabinetry with expert installation."
         serviceUrl={`${siteConfig.url}/cabinet-countertop-installation`}

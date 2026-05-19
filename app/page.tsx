@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-// Critical above-fold components — imported statically for fastest LCP
+// Critical above-fold components - imported statically for fastest LCP
 import Hero from "@/components/home/hero";
 const LocalTrust = dynamic(() => import("@/components/home/local-trust"));
 import { LocalBusinessSchema, FAQSchema } from "@/components/seo/json-ld";
@@ -21,7 +21,7 @@ const FAQ = dynamic(() => import("@/components/home/faq"));
 const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
 
-// Client components — dynamically loaded so they don't block main thread
+// Client components - dynamically loaded so they don't block main thread
 const Testimonials = dynamic(() => import("@/components/home/testimonials"));
 const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), {
   loading: () => <div className="py-20 bg-background"><div className="container mx-auto px-4 h-96 bg-muted/30 rounded-2xl animate-pulse" /></div>,
@@ -33,10 +33,10 @@ const ContactSection = dynamic(() => import("@/components/home/contact-section")
 
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling",
-  description: "Looking for premier bathroom remodeling contractors in Chandler, AZ? We specialize in luxury master bath renovations, custom walk-in showers, and tub-to-shower conversions. Call +14803065591 for a free estimate!",
+  title: "Bathroom Remodeling Contractors Chandler AZ | ARZ Home Remodeling",
+  description: "Looking for premier bathroom remodeling contractors in Chandler, AZ? We specialize in luxury master bath renovations, custom walk-in showers, and tub-to-shower conversions. Call (229) 306-5591 for a free estimate!",
   openGraph: {
-    title: "Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling",
+    title: "Bathroom Remodeling Contractors Chandler AZ | ARZ Home Remodeling",
     description: "Expert bathroom remodeling in Chandler, AZ. Licensed contractors delivering premium renovations from Ocotillo to Sun Lakes. Free Quote!",
     type: "website",
   },

@@ -1,3 +1,4 @@
+import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -24,7 +25,9 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <Header />
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" } ]} />
+<Header />
       <main className="pt-32 pb-20">
         {/* Hero Section */}
         <section className="bg-secondary py-16 lg:py-24">

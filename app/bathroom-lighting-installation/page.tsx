@@ -12,7 +12,7 @@ import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
@@ -38,7 +38,9 @@ export default function BathroomLightingInstallationPage() {
 
   return (
     <>
-      <ServiceSchema 
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathroom Lighting Installation", url: "https://arzhomeremodeling.com/bathroom-lighting-installation/" } ]} />
+<ServiceSchema 
         serviceName="Bathroom Lighting Installation in Chandler, Arizona" 
         serviceDescription="Professional bathroom lighting installation in Chandler, Arizona. Recessed LED layout, layered vanity lights, and GFCI shock safety." 
         serviceUrl={`${siteConfig.url}/bathroom-lighting-installation`} 

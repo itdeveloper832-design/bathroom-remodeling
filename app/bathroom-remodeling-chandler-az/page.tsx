@@ -7,7 +7,7 @@ import ServiceFAQ from "@/components/service-faq";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema, PriceSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import Link from "next/link";
 import {
   ShieldCheck,
@@ -26,7 +26,7 @@ import LocalTrust from "@/components/home/local-trust";
 export const metadata: Metadata = {
   title: "Chandler Bathroom Remodeling Contractor | Free Estimates",
   description:
-    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high quality walk in showers, tub to shower conversions, and master bath renovations. Licensed company, free estimates: call +14803065591 today!",
+    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high quality walk in showers, tub to shower conversions, and master bath renovations. Licensed company, free estimates: call (229) 306-5591 today!",
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
     description:
@@ -77,7 +77,7 @@ const chandlerFaqs = [
   {
     question: "Are you licensed to do bathroom remodeling in Arizona?",
     answer:
-      "Yes. We are a licensed Arizona contractor operating under license ROC #345678. We carry full insurance and provide a two year workmanship warranty on every project."
+      "Yes. We are a licensed Arizona contractor operating under license ROC Licensed | License #ROC338304. We carry full insurance and provide a two year workmanship warranty on every project."
   },
   {
     question: "Do you serve neighborhoods outside central Chandler?",
@@ -184,7 +184,9 @@ const neighborhoods = [
 export default function ChandlerBathroomRemodelingPage() {
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathroom Remodeling Chandler Az", url: "https://arzhomeremodeling.com/bathroom-remodeling-chandler-az/" } ]} />
+<ServiceSchema
         serviceName="Bathroom Remodeling in Chandler, Arizona"
         serviceDescription="Licensed bathroom remodeling contractor serving Chandler, AZ. Walk-in shower installation, tub-to-shower conversions, master bath renovations, vanity replacement, and complete bathroom remodels. Serving Dobson Ranch, Sun Lakes, Ocotillo, Fulton Ranch, and all of Chandler."
         serviceUrl={`${siteConfig.url}/bathroom-remodeling-chandler-az/`}
@@ -200,7 +202,7 @@ export default function ChandlerBathroomRemodelingPage() {
         {/* HERO */}
         <ServiceHero
           title="Chandler’s Top-Rated Bathroom Remodeling Contractor"
-          subtitle="Hire the Best Local Remodelers — Free Estimates"
+          subtitle="Hire the Best Local Remodelers - Free Estimates"
           description="From tub-to-shower conversions in Dobson Ranch to full master bath transformations in Ocotillo: ARZ Home Remodeling is the professional choice for Chandler homeowners. Licensed AZ contractor, 2-year warranty, fixed pricing."
           image="/images/optimized/photo-1620626011761-996317b8d101.webp"
           breadcrumbs={[
@@ -236,7 +238,7 @@ export default function ChandlerBathroomRemodelingPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:+14803065591" className="flex items-center gap-2">
+                <Link href="tel:(229) 306-5591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>
@@ -374,7 +376,7 @@ export default function ChandlerBathroomRemodelingPage() {
             <div className="text-center mb-12">
               <span className="text-primary text-sm font-medium tracking-wider uppercase">How It Works</span>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground">
-                Our Remodeling Process — No Surprises
+                Our Remodeling Process - No Surprises
               </h2>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">

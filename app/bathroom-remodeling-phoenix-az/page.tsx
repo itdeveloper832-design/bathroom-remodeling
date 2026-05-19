@@ -7,7 +7,7 @@ import ServiceFAQ from "@/components/service-faq";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema, PriceSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Professional Bathroom Remodeling Phoenix AZ | Licensed Contractors",
   description:
-    "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates: call +14803065591 today!",
+    "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates: call (229) 306-5591 today!",
   openGraph: {
     title: "Bathroom Remodeling Phoenix AZ | ARZ Home Remodeling",
     description:
@@ -37,7 +37,7 @@ const phoenixFaqs = [
   {
     question: "Are you licensed to work in Phoenix?",
     answer:
-      "Yes. We are a fully licensed Arizona contractor operating under license ROC #345678 and carry comprehensive insurance for all Phoenix area residential remodeling projects."
+      "Yes. We are a fully licensed Arizona contractor operating under license ROC Licensed | License #ROC338304 and carry comprehensive insurance for all Phoenix area residential remodeling projects."
   },
   {
     question: "Do you handle the entire project from start to finish?",
@@ -49,7 +49,9 @@ const phoenixFaqs = [
 export default function PhoenixPage() {
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathroom Remodeling Phoenix Az", url: "https://arzhomeremodeling.com/bathroom-remodeling-phoenix-az/" } ]} />
+<ServiceSchema
         serviceName="Bathroom Remodeling in Phoenix, Arizona"
         serviceDescription="Licensed bathroom remodeling contractor serving the greater Phoenix area. Custom showers, master bath renovations, and professional bathroom makeovers."
         serviceUrl={`${siteConfig.url}/bathroom-remodeling-phoenix-az/`}
@@ -64,7 +66,7 @@ export default function PhoenixPage() {
       <main>
         <ServiceHero
           title="Phoenix’s Top Choice for Bathroom Remodeling"
-          subtitle="Licensed Contractors — High-Quality Results"
+          subtitle="Licensed Contractors - High-Quality Results"
           description="Transform your Phoenix home with a professionally remodeled bathroom. We bring years of expertise, transparent pricing, and superior craftsmanship to every project in the Valley of the Sun."
           image="/images/optimized/photo-1620626011761-996317b8d101.webp"
           breadcrumbs={[

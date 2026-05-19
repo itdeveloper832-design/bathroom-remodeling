@@ -75,7 +75,7 @@ Eco-friendly materials like recycled glass countertops, bamboo cabinetry, and re
 
 ### Open and Airy Layouts
 
-Frameless glass shower enclosures, floating vanities, and strategic mirror placement make bathrooms feel larger and more open—perfect for Arizona's indoor-outdoor lifestyle.
+Frameless glass shower enclosures, floating vanities, and strategic mirror placement make bathrooms feel larger and more open-perfect for Arizona's indoor-outdoor lifestyle.
 
 ## Choosing Materials for Arizona's Climate
 
@@ -180,7 +180,7 @@ Ready to start your bathroom remodeling project in Chandler, Arizona? Contact Ch
 
 ---
 
-*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at +14803065591 or visit our showroom to discuss your project.*
+*Chandler Bathroom Remodeling is the premier bathroom remodeling company serving Chandler, Mesa, Tempe, Scottsdale, and Phoenix. Contact us at (229) 306-5591 or visit our showroom to discuss your project.*
   `,
   author: "Alex Rivers",
   category: "Bathroom Remodeling",
@@ -230,7 +230,7 @@ After a long day in the Arizona sun, coming home to a spa-like bathroom provides
 - **Bluetooth speakers** seamlessly integrated into vanity mirrors
 
 ### Benefits for Chandler Homeowners:
-Smart technology helps conserve water—a crucial consideration in Arizona—while adding convenience and luxury to your daily routine.
+Smart technology helps conserve water-a crucial consideration in Arizona-while adding convenience and luxury to your daily routine.
 
 ## 3. Sustainable and Eco-Friendly Materials
 
@@ -286,7 +286,7 @@ The trend toward floating vanities continues strong in 2024, creating an illusio
 - **Integrated charging stations** within vanity drawers
 
 ### Ideal for Arizona Bathrooms:
-Floating elements make cleaning easier—a significant advantage in dusty desert environments—and create the perception of more space in smaller bathrooms.
+Floating elements make cleaning easier-a significant advantage in dusty desert environments-and create the perception of more space in smaller bathrooms.
 
 ## 7. Biophilic Design Elements
 
@@ -369,7 +369,7 @@ Ready to incorporate these 2024 bathroom design trends into your Chandler home? 
 
 ---
 
-*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at +14803065591 to discuss your 2024 bathroom renovation project.*
+*Chandler Bathroom Remodeling specializes in incorporating the latest design trends while ensuring functionality and durability for Arizona homes. Contact us at (229) 306-5591 to discuss your 2024 bathroom renovation project.*
   `,
   author: "Alex Rivers",
   category: "Design Trends",
@@ -407,7 +407,7 @@ Because KERDI-BOARD is lightweight and easy to cut, our team can prep a shower f
 ## 4. Peace of Mind for Chandler Homeowners
 Our 2-year workmanship warranty is backed by our confidence in these materials. When we build a shower with Schluter, we know it won't leak. Period.
 
-Ready to upgrade your bathroom with a system built to last? Contact Mike at +14803065591 for a free estimate.
+Ready to upgrade your bathroom with a system built to last? Contact Mike at (229) 306-5591 for a free estimate.
   `,
   author: "Alex Rivers",
   category: "Technical",
@@ -452,11 +452,11 @@ For those wanting a complete spa-like experience.
 
 ## Where Your Money Goes (Cost Breakdown)
 
-- **Labor & Installation:** 40% — Professional waterproofing and tile work are critical.
-- **Fixtures & Shower Systems:** 20% — rainfall heads and thermostatic valves.
-- **Vanity & Countertops:** 15% — Quartz is the king of Chandler bathrooms.
-- **Tile & Materials:** 15% — The visual centerpiece of your remodel.
-- **Permits & Misc:** 10% — City of Chandler permits ensure safety and code compliance.
+- **Labor & Installation:** 40% - Professional waterproofing and tile work are critical.
+- **Fixtures & Shower Systems:** 20% - rainfall heads and thermostatic valves.
+- **Vanity & Countertops:** 15% - Quartz is the king of Chandler bathrooms.
+- **Tile & Materials:** 15% - The visual centerpiece of your remodel.
+- **Permits & Misc:** 10% - City of Chandler permits ensure safety and code compliance.
 
 ## How to Save Without Sacrificing Quality
 
@@ -464,7 +464,7 @@ For those wanting a complete spa-like experience.
 2. **Prioritize Waterproofing:** Spend more on the hidden systems (like Schluter) to avoid costly leaks later.
 3. **Choose a Local Pro:** Licensed local contractors have established relationships with East Valley suppliers.
 
-Ready for a firm, itemized quote for your Chandler bathroom? View our <a href='/bathroom-remodeling-chandler-az/' class='text-primary hover:underline font-medium'>Bathroom Remodeling Chandler AZ</a> service page or contact ARZ Home Remodeling at +14803065591 today.
+Ready for a firm, itemized quote for your Chandler bathroom? View our <a href='/bathroom-remodeling-chandler-az/' class='text-primary hover:underline font-medium'>Bathroom Remodeling Chandler AZ</a> service page or contact ARZ Home Remodeling at (229) 306-5591 today.
   `,
   author: "Alex Rivers",
   category: "Costs & Budget",
@@ -486,7 +486,7 @@ export const flooringTipsPost = {
   content: `
 # 5 Tips for Choosing Bathroom Flooring for the Arizona Desert Climate
 
-Living in Chandler means dealing with intense heat, low humidity, and plenty of desert dust. Your choice of bathroom flooring needs to do more than just look good—it needs to survive the East Valley environment and our mineral-heavy water.
+Living in Chandler means dealing with intense heat, low humidity, and plenty of desert dust. Your choice of bathroom flooring needs to do more than just look good-it needs to survive the East Valley environment and our mineral-heavy water.
 
 At ARZ Home Remodeling, we've installed thousands of square feet of bathroom flooring. Here is our expert advice for choosing materials that last.
 
@@ -505,7 +505,7 @@ Gilbert and Chandler water is "hard" (full of minerals). Avoid white grout on ba
 ## 5. Don't Skip the Underlayment
 High-quality underlayment provides a thermal break and prevents your new tile from cracking as your Chandler home settles over time.
 
-Need help selecting the perfect bathroom floor? Explore our <a href='/bathroom-remodeling/' class='text-primary hover:underline font-medium'>Bathroom Remodeling</a> services or call us at +14803065591 for a free in-home measurement.
+Need help selecting the perfect bathroom floor? Explore our <a href='/bathroom-remodeling/' class='text-primary hover:underline font-medium'>Bathroom Remodeling</a> services or call us at (229) 306-5591 for a free in-home measurement.
   `,
   author: "Alex Rivers",
   category: "Materials",
@@ -523,7 +523,7 @@ Need help selecting the perfect bathroom floor? Explore our <a href='/bathroom-r
 export const remodelingRoiPost = {
   title: "Which Bathroom Remodeling Projects Have the Best ROI in the East Valley?",
   slug: "bathroom-remodeling-roi-chandler-gilbert-mesa",
-  excerpt: "Investing in your bathroom? Discover which specific renovations—from tub conversions to master suite upgrades—provide the best return on investment.",
+  excerpt: "Investing in your bathroom? Discover which specific renovations-from tub conversions to master suite upgrades-provide the best return on investment.",
   content: `
 # Which Bathroom Remodeling Projects Have the Best ROI in the East Valley?
 
@@ -662,7 +662,7 @@ export const hardWaterPost = {
   content: `
 # How to Combat East Valley Hard Water in Your New Shower
 
-If you live in the East Valley—whether that's Chandler, Gilbert, or Mesa—you know about our hard water. Our municipal water supply is heavy in calcium, magnesium, and other minerals that leave stubborn white scale on everything they touch. 
+If you live in the East Valley-whether that's Chandler, Gilbert, or Mesa-you know about our hard water. Our municipal water supply is heavy in calcium, magnesium, and other minerals that leave stubborn white scale on everything they touch. 
 
 When you invest in a beautiful new master bathroom remodel, the last thing you want is for your brand-new fixtures and glass enclosures to look cloudy and aged within months. Here is how ARZ Home Remodeling recommends combatting East Valley hard water.
 
@@ -685,13 +685,13 @@ Grout is naturally porous and will absorb mineral deposits over time, leading to
 ## 5. The Daily Squeegee Habit
 Even with treated glass and a water softener, the simplest way to maintain a pristine shower is to squeegee the glass and walls after every use. It takes 30 seconds and prevents the minerals from ever drying onto the surfaces.
 
-Protect your investment! If you're ready to design a beautiful, low-maintenance bathroom that stands up to Arizona's harsh water, contact ARZ Home Remodeling at +14803065591 today.
+Protect your investment! If you're ready to design a beautiful, low-maintenance bathroom that stands up to Arizona's harsh water, contact ARZ Home Remodeling at (229) 306-5591 today.
   `,
   author: "Alex Rivers",
   category: "Maintenance",
   tags: ["hard water", "shower maintenance", "chandler az", "bathroom care"],
   featuredImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2574&auto=format&fit=crop",
-  metaTitle: "Combat East Valley Hard Water in Your Shower | ARZ Remodeling",
+  metaTitle: "Combat East Valley Hard Water in Your Shower | ARZ Home Remodeling",
   metaDescription: "Learn how to protect your new bathroom remodel from Chandler's hard water. Tips on fixtures, glass treatments, and maintenance to keep your shower pristine.",
   status: "published" as const,
   publishedAt: new Date().toISOString(),

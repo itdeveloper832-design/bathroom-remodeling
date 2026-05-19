@@ -1,4 +1,5 @@
 "use client"
+import { BreadcrumbSchema } from "@/components/seo/json-ld";
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
@@ -65,7 +66,9 @@ export default function GalleryPage() {
 
   return (
     <>
-      <Header />
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Gallery", url: "https://arzhomeremodeling.com/gallery/" } ]} />
+<Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
         <section className="pt-28 md:pt-40 lg:pt-48 pb-24 md:pb-32 bg-secondary overflow-hidden">

@@ -7,7 +7,7 @@ import ServiceFAQ from "@/components/service-faq";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema, PriceSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema, PriceSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import Link from "next/link";
 import {
   ShieldCheck,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: "Top-rated bathroom remodeling in Gilbert, AZ. Licensed experts for custom walk-in showers, master bath renovations, and tub-to-shower conversions. Free itemized quotes!",
   openGraph: {
     title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
-    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: +14803065591.",
+    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/`,
     type: "website",
   },
@@ -66,7 +66,7 @@ const gilbertFaqs = [
   {
     question: "Are you licensed to do bathroom remodeling in Arizona?",
     answer:
-      "Yes. We are a licensed Arizona contractor, fully insured, operating under license ROC #345678. We provide a two year workmanship warranty on every project. We handle all required Gilbert city permits."
+      "Yes. We are a licensed Arizona contractor, fully insured, operating under license ROC Licensed | License #ROC338304. We provide a two year workmanship warranty on every project. We handle all required Gilbert city permits."
   },
   {
     question: "Do you serve neighborhoods outside central Gilbert?",
@@ -173,7 +173,9 @@ const neighborhoods = [
 export default function GilbertPage() {
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathroom Remodeling Gilbert Az", url: "https://arzhomeremodeling.com/bathroom-remodeling-gilbert-az/" } ]} />
+<ServiceSchema
         serviceName="Bathroom Remodeling in Gilbert, Arizona"
         serviceDescription="Licensed bathroom remodeling contractor serving Gilbert, AZ. Walk-in shower installation, tub-to-shower conversions, master bath renovations, and complete bathroom remodels. Serving Morrison Ranch, Power Ranch, Val Vista Lakes, and all of Gilbert."
         serviceUrl={`${siteConfig.url}/bathroom-remodeling-gilbert-az/`}

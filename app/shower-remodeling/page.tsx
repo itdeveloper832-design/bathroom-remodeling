@@ -11,7 +11,7 @@ import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import LocalTrust from "@/components/home/local-trust";
@@ -21,7 +21,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Shower Remodeling Chandler AZ | Walk-In & Frameless Glass Showers | ARZ",
-  description: "Custom walk-in showers, frameless glass & curbless designs in Chandler. Licensed crew, Schluter waterproofing, 2-year warranty. Free quote — (480) 306-5591.",
+  description: "Custom walk-in showers, frameless glass & curbless designs in Chandler. Licensed crew, Schluter waterproofing, 2-year warranty. Free quote - (229) 306-5591.",
   openGraph: {
     title: "Shower Remodeling Chandler AZ | Walk-In & Frameless Glass Showers | ARZ",
     description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Licensed crew. Free quotes!",
@@ -50,7 +50,9 @@ export default function ShowerRemodelingPage() {
   
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Shower Remodeling", url: "https://arzhomeremodeling.com/shower-remodeling/" } ]} />
+<ServiceSchema
         serviceName="Shower Remodeling in Chandler, Arizona"
         serviceDescription="Professional shower upgrades in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations, and premium fixtures."
         serviceUrl={`${siteConfig.url}/shower-remodeling/`}
@@ -145,7 +147,7 @@ export default function ShowerRemodelingPage() {
             </div>
             <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
               <p className="text-foreground font-medium mb-4">
-                We offer 0% financing on bathroom projects over $5,000 — 
+                We offer 0% financing on bathroom projects over $5,000 - 
                 <Link href="/financing/" className="text-primary hover:underline ml-1">
                   see our bathroom remodeling financing options
                 </Link>.
@@ -175,7 +177,7 @@ export default function ShowerRemodelingPage() {
 
         <ServiceFAQ faqs={faqs} />
 
-        {/* INTERNAL LINKING — Step 6 of SEO strategy */}
+        {/* INTERNAL LINKING - Step 6 of SEO strategy */}
         <section className="py-12 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-2xl font-semibold text-center mb-6 text-foreground">

@@ -817,7 +817,7 @@ const serviceContent: Record<string, ServiceDetail> = {
     tips: [
       "Choose slip-resistant floor tile (DCOF > 0.42) for better traction when wet.",
       "Add blocking in the walls now for future grab bars, even if you don't install them today.",
-      "Keep glass simpler to clean—fewer metal channels mean fewer places for buildup.",
+      "Keep glass simpler to clean-fewer metal channels mean fewer places for buildup.",
       "Consider a handheld shower at a lower height for rinsing and seated use.",
       "Use a quality squeegee daily to maintain glass clarity in Arizona's hard water.",
     ],
@@ -1029,7 +1029,7 @@ const serviceContent: Record<string, ServiceDetail> = {
         {
           title: "Choosing the Perfect Vanity for Your Chandler Bathroom",
           content:
-            "Selecting the right bathroom vanity involves balancing style, size, storage, and budget considerations. Measure your bathroom carefully to determine the maximum vanity size that allows comfortable movement. Single-sink vanities work well in powder rooms and smaller bathrooms, while double-sink vanities accommodate busy households and master bathrooms. Consider storage needs—drawers provide better organization than cabinets for most items. Vanity height has evolved from the traditional 30-32 inches to comfort height at 36 inches, which reduces back strain during daily use. Material choices include solid wood for durability and classic appeal, engineered wood with moisture-resistant finishes for budget-friendly options, and metal or glass for contemporary designs. Countertop materials range from affordable laminate to luxurious quartz, granite, or marble. We help you navigate these options to find the perfect vanity for your needs.",
+            "Selecting the right bathroom vanity involves balancing style, size, storage, and budget considerations. Measure your bathroom carefully to determine the maximum vanity size that allows comfortable movement. Single-sink vanities work well in powder rooms and smaller bathrooms, while double-sink vanities accommodate busy households and master bathrooms. Consider storage needs-drawers provide better organization than cabinets for most items. Vanity height has evolved from the traditional 30-32 inches to comfort height at 36 inches, which reduces back strain during daily use. Material choices include solid wood for durability and classic appeal, engineered wood with moisture-resistant finishes for budget-friendly options, and metal or glass for contemporary designs. Countertop materials range from affordable laminate to luxurious quartz, granite, or marble. We help you navigate these options to find the perfect vanity for your needs.",
         },
         {
           title: "Professional Vanity Installation Process",

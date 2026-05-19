@@ -167,7 +167,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "What's the best tile shower installation in Chandler?",
         answer:
-          "Porcelain tile is ideal for a tile shower installation in Chandler—it's non-porous and resists mold. We specialize in custom tile work that handles Arizona's hard water better than standard builder-grade materials.",
+          "Porcelain tile is ideal for a tile shower installation in Chandler-it's non-porous and resists mold. We specialize in custom tile work that handles Arizona's hard water better than standard builder-grade materials.",
       },
       {
         question: "Can you provide shower remodeling services in Chandler without a full gut?",

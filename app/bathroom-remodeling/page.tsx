@@ -11,7 +11,7 @@ import Testimonials from "@/components/home/testimonials";
 import ServiceAreas from "@/components/home/service-areas";
 import ServiceCTA from "@/components/service-cta";
 import ServiceFAQ from "@/components/service-faq";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { serviceContent } from "@/lib/service-content-data";
 import Link from "next/link";
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description: "Transform your bathroom with Chandler's top-rated remodelers. ROC Licensed experts for custom showers, master bath renovations, and tub-to-shower swaps. Get a free quote!",
   openGraph: {
     title: "Bathroom Remodeling Chandler: Licensed Pros & Free Estimates",
-    description: "Expert bathroom remodeling in Chandler, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: +14803065591.",
+    description: "Expert bathroom remodeling in Chandler, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling`,
     type: "website",
     images: [
@@ -52,7 +52,9 @@ export default function BathroomRemodelingPage() {
   
   return (
     <>
-      <ServiceSchema
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathroom Remodeling", url: "https://arzhomeremodeling.com/bathroom-remodeling/" } ]} />
+<ServiceSchema
         serviceName="Bathroom Remodeling Services in Chandler, Arizona"
         serviceDescription="Comprehensive renovation services including custom showers, bathtub installation, vanity upgrades, tile work, flooring, and complete bathroom makeovers. Serving Chandler, Arizona and surrounding areas."
         serviceUrl={`${siteConfig.url}/bathroom-remodeling/`}
@@ -62,7 +64,7 @@ export default function BathroomRemodelingPage() {
       <main>
         <ServiceHero
           title="Bathroom Remodeling Services in Chandler AZ"
-          subtitle="Licensed AZ Contractor — Free Estimates"
+          subtitle="Licensed AZ Contractor - Free Estimates"
           description="Looking to upgrade your space? We provide comprehensive bathroom remodeling services tailored to your style and budget. Connect with our local Chandler contractors for a free design consultation and estimate today!"
         />
 

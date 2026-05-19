@@ -5,7 +5,7 @@ We have completed a comprehensive overhaul of `arzhomeremodeling.com` to address
 ## 1. NAP Consistency & Local Trust (Name, Address, Phone)
 *   **Strict Niche Strategy:** Pivoted legacy kitchen and flooring content to specialized bathroom remodeling topics.
 *   **Technical Compliance:** Implemented programmatic sitemap generation with a **2026-05-16** `lastmod` date and IndexNow integration.
-*   **Trust Signals:** Standardized ROC License (**ROC #345678**) and integrated authoritative BBB/Yelp search profile links.
+*   **Trust Signals:** Standardized ROC License (**ROC Licensed | License #ROC338304**) and integrated authoritative BBB/Yelp search profile links.
 *   **Site Architecture:** Converted static service grids into high-equity internal links using Next.js Link components.
 *   **Schema Excellence:** Deployed full `LocalBusiness`, `Breadcrumb`, `FAQ`, and `Article` schemas with optimized WebP asset references.
 *   **Professional Identity:** Updated the business email from generic `sales@` to `mike@arzhomeremodeling.com`.
@@ -13,7 +13,7 @@ We have completed a comprehensive overhaul of `arzhomeremodeling.com` to address
 
 ## 2. E-E-A-T Improvements (Experience, Expertise, Authoritativeness, Trust)
 *   **Owner Identity:** Established **Mike Hernandez** as the owner. Added a detailed "Founder's Story" on the About page highlighting 15+ years of experience and specific technical expertise (e.g., Schluter-KERDI waterproofing).
-*   **Verifiable Licensing:** Integrated the official Arizona Registrar of Contractors license number (**ROC #345678**) into the footer, the About page, and the `LocalBusiness` JSON-LD schema for automated search engine verification.
+*   **Verifiable Licensing:** Integrated the official Arizona Registrar of Contractors license number (**ROC Licensed | License #ROC338304**) into the footer, the About page, and the `LocalBusiness` JSON-LD schema for automated search engine verification.
 *   **Founding Year Consistency:** Standardized the founding year to **2010** across all marketing materials to resolve conflicting "2008 vs 2010" signals.
 
 ## 3. Content Quality & Social Proof

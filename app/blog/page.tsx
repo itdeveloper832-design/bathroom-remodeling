@@ -1,3 +1,4 @@
+import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import { Metadata } from "next"
 import { siteConfig } from "@/lib/site-config"
 import BlogContent from "./blog-content"

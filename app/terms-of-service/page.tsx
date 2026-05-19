@@ -1,3 +1,4 @@
+import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import { Metadata } from "next"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
@@ -34,7 +35,9 @@ export const metadata: Metadata = {
 export default function TermsOfServicePage() {
   return (
     <>
-      <Header />
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Terms Of Service", url: "https://arzhomeremodeling.com/terms-of-service/" } ]} />
+<Header />
       <main className="min-h-screen bg-background pt-32 md:pt-40 lg:pt-48">
         <section className="py-24 md:py-32 bg-secondary">
           <div className="container mx-auto px-4">

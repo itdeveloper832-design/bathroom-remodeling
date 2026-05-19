@@ -1,4 +1,4 @@
-// ✅ SERVER COMPONENT — footer has no client-side state
+// ✅ SERVER COMPONENT - footer has no client-side state
 // GoogleMap is isolated in its own client wrapper below to avoid making the whole footer a client component
 import Link from "next/link";
 import dynamic from "next/dynamic";
@@ -29,7 +29,12 @@ export function Footer() {
             </Link>
             <p className="text-background/70 text-sm leading-relaxed mb-6">
               Top-rated bathroom remodeling in Chandler, Arizona.
-              {siteConfig.license && ` ${siteConfig.license} • `} Expert master bath renovations and shower upgrades since 2010.
+              {siteConfig.license && (
+                <>
+                  {" "}{siteConfig.license} - <a href="https://roc.az.gov" target="_blank" rel="noopener" className="hover:text-primary transition-colors underline">Licensed by the Arizona Registrar of Contractors</a> •{" "}
+                </>
+              )}
+              Expert master bath renovations and shower upgrades since 2010.
             </p>
 
             <div className="flex gap-3" role="list" aria-label="Social media links">
@@ -39,7 +44,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Follow ARZ Remodeling on Facebook"
+                  aria-label="Follow ARZ Home Remodeling on Facebook"
                   role="listitem"
                 >
                   <Facebook className="w-5 h-5" aria-hidden="true" />
@@ -51,7 +56,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Follow ARZ Remodeling on Instagram"
+                  aria-label="Follow ARZ Home Remodeling on Instagram"
                   role="listitem"
                 >
                   <Instagram className="w-5 h-5" aria-hidden="true" />
@@ -75,7 +80,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Connect with ARZ Remodeling on LinkedIn"
+                  aria-label="Connect with ARZ Home Remodeling on LinkedIn"
                   role="listitem"
                 >
                   <Linkedin className="w-5 h-5" aria-hidden="true" />

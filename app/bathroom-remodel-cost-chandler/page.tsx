@@ -6,7 +6,7 @@ import ServiceCTA from "@/components/service-cta";
 import ServiceFAQ from "@/components/service-faq";
 import Testimonials from "@/components/home/testimonials";
 import { siteConfig } from "@/lib/site-config";
-import { ServiceSchema, FAQSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 import Link from "next/link";
@@ -37,12 +37,12 @@ const faqs = [
   {
     question: "Why does bathroom remodeling cost more in Chandler than national averages?",
     answer:
-      "Chandler's hard water (300+ mg/L dissolved minerals) requires premium waterproofing materials, epoxy grout, and nano-coated glass — all of which cost more upfront but prevent early failure. Arizona labor costs and permit fees also factor in.",
+      "Chandler's hard water (300+ mg/L dissolved minerals) requires premium waterproofing materials, epoxy grout, and nano-coated glass - all of which cost more upfront but prevent early failure. Arizona labor costs and permit fees also factor in.",
   },
   {
     question: "How can I save money on my bathroom remodel in Chandler?",
     answer:
-      "Keep the existing plumbing layout to avoid relocation costs. Choose porcelain tile over natural stone. Opt for stock vanities rather than custom cabinetry. Focus high-end selections on the shower — the most-used element — and go mid-grade everywhere else.",
+      "Keep the existing plumbing layout to avoid relocation costs. Choose porcelain tile over natural stone. Opt for stock vanities rather than custom cabinetry. Focus high-end selections on the shower - the most-used element - and go mid-grade everywhere else.",
   },
   {
     question: "What drives up bathroom remodel costs the most?",
@@ -57,14 +57,14 @@ const faqs = [
   {
     question: "Do you offer financing for bathroom remodels in Chandler?",
     answer:
-      "Yes. We offer financing options for qualified homeowners. We can discuss financing during your free estimate — many Chandler homeowners finance master bath remodels with monthly payments starting around $350–$450/month.",
+      "Yes. We offer financing options for qualified homeowners. We can discuss financing during your free estimate - many Chandler homeowners finance master bath remodels with monthly payments starting around $350–$450/month.",
   },
 ];
 
 const pricingData = [
   {
     category: "Guest Bathroom Update",
-    description: "Cosmetic refresh — no structural changes",
+    description: "Cosmetic refresh - no structural changes",
     items: [
       { name: "Vanity & countertop replacement", cost: "$800–$2,500" },
       { name: "Toilet replacement", cost: "$300–$800" },
@@ -154,8 +154,10 @@ const otherServices = bathroomServices.slice(0, 3);
 export default function CostPage() {
   return (
     <>
-      <ServiceSchema
-        serviceName="Bathroom Remodeling Cost Guide — Chandler, AZ"
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Bathroom Remodel Cost Chandler", url: "https://arzhomeremodeling.com/bathroom-remodel-cost-chandler/" } ]} />
+<ServiceSchema
+        serviceName="Bathroom Remodeling Cost Guide - Chandler, AZ"
         serviceDescription="Comprehensive bathroom remodeling cost guide for Chandler, AZ homeowners. Transparent pricing for guest bath updates, full remodels, tub-to-shower conversions, and master bathroom renovations."
         serviceUrl={`${siteConfig.url}/bathroom-remodel-cost-chandler/`}
       />
@@ -165,7 +167,7 @@ export default function CostPage() {
         <ServiceHero
           title="How Much Does a Bathroom Remodel Cost in Chandler, AZ? (2025 Pricing Guide)"
           subtitle="Transparent 2025 Pricing"
-          description="Straight answers on what bathroom remodeling costs in Chandler. Every tier broken down by line item — no guessing, no surprises."
+          description="Straight answers on what bathroom remodeling costs in Chandler. Every tier broken down by line item - no guessing, no surprises."
           image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
@@ -350,7 +352,7 @@ export default function CostPage() {
 
         <ServiceCTA
           title="Get a Free Itemized Estimate in Chandler, AZ"
-          description="Tell us your project — we'll give you a ballpark on the call and schedule a free in-home evaluation within 48 hours. No obligation."
+          description="Tell us your project - we'll give you a ballpark on the call and schedule a free in-home evaluation within 48 hours. No obligation."
         />
 
         <ServiceFAQ faqs={faqs} />

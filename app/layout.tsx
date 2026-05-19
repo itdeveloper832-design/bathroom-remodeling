@@ -29,8 +29,8 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling`,
-    template: `%s | ARZ Remodeling`
+    default: `Bathroom Remodeling Contractors Chandler AZ | ARZ Home Remodeling`,
+    template: `%s | ARZ Home Remodeling`
   },
   description: 'Top-rated bathroom remodel Chandler. Expert bathroom remodeling Chandler AZ services including tub to shower conversion, accessible showers, and tile installation. Free quotes!',
   authors: [{ name: siteConfig.name }],
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling`,
+    title: `Bathroom Remodeling Contractors Chandler AZ | ARZ Home Remodeling`,
     description: 'Top-rated bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, free estimates!',
     images: [
       {
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Bathroom Remodeling Contractors Chandler AZ | ARZ Remodeling`,
+    title: `Bathroom Remodeling Contractors Chandler AZ | ARZ Home Remodeling`,
     description: 'Top-rated bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, free estimates!',
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
@@ -129,100 +129,26 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "@id": `${siteConfig.url}/#organization`,
-              "name": siteConfig.name,
-              "founder": {
-                "@type": "Person",
-                "name": siteConfig.owner,
-                "jobTitle": "Founder & Owner",
-                "url": `${siteConfig.url}/about/`
-              },
-              "knowsAbout": [
-                "Bathroom Remodeling",
-                "Shower Remodeling",
-                "Bathtub Installation",
-                "Bathroom Tile"
-              ],
-              "url": siteConfig.url,
-              "logo": `${siteConfig.url}/images/new-images-logo.jpg`,
-              "image": `${siteConfig.url}/images/hero-bathroom.jpg`,
-              "description": siteConfig.description,
-              "telephone": siteConfig.phone,
-              "email": siteConfig.email,
+              "@type": "HomeAndConstructionBusiness",
+              "name": "ARZ Home Remodeling",
+              "url": "https://arzhomeremodeling.com",
+              "telephone": "(229) 306-5591",
+              "email": "info@arzremodeling.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": siteConfig.address.street,
-                "addressLocality": siteConfig.address.city,
-                "addressRegion": siteConfig.address.state,
-                "postalCode": siteConfig.address.zip,
+                "streetAddress": "6710 W Chicago St",
+                "addressLocality": "Chandler",
+                "addressRegion": "AZ",
+                "postalCode": "85226",
                 "addressCountry": "US"
               },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": siteConfig.address.coordinates.lat,
-                "longitude": siteConfig.address.coordinates.lng
-              },
-              "openingHours": [
-                "Mo-Fr 08:00-18:00",
-                "Sa 09:00-16:00"
+              "geo": { "@type": "GeoCoordinates", "latitude": 33.3009334, "longitude": -111.9605964 },
+              "priceRange": "$$-$$$",
+              "openingHoursSpecification": [
+                {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
+                {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"16:00"}
               ],
-              "priceRange": "$$",
-              ...(siteConfig.license ? {
-                "hasCredential": {
-                  "@type": "EducationalOccupationalCredential",
-                  "credentialCategory": "license",
-                  "name": "Arizona Registrar of Contractors License",
-                  "credentialId": siteConfig.license,
-                  "url": "https://roc.az.gov/"
-                }
-              } : {}),
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "127"
-              },
-              "areaServed": siteConfig.serviceAreas,
-
-              "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": siteConfig.address.coordinates.lat,
-                  "longitude": siteConfig.address.coordinates.lng
-                },
-                "geoRadius": "50000"
-              },
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Bathroom Remodeling Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Bathroom Remodeling Contractors Chandler AZ",
-                      "description": "Professional bathroom remodeling contractors in Chandler, AZ with affordable bathroom remodel cost"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Bathroom Renovation Services",
-                      "description": "Licensed bathroom renovation contractors offering bathroom installation services"
-                    }
-                  }
-                ]
-              },
-              "sameAs": [
-                siteConfig.social.facebook,
-                siteConfig.social.instagram,
-                siteConfig.social.twitter,
-                siteConfig.social.pinterest,
-                siteConfig.social.youtube,
-                siteConfig.social.linkedin
-              ].filter(Boolean)
+              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "50", "bestRating": "5" }
             })
           }}
         />

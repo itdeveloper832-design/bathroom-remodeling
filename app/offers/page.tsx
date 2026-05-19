@@ -1,3 +1,4 @@
+import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
@@ -96,7 +97,9 @@ const offers = [
 export default function OffersPage() {
   return (
     <>
-      <Header />
+      
+      <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Offers", url: "https://arzhomeremodeling.com/offers/" } ]} />
+<Header />
       <main className="pt-32 md:pt-40 lg:pt-48">
         <section className="py-20 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">

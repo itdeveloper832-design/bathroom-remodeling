@@ -230,6 +230,20 @@ export default function RootLayout({
       <body className="font-sans antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
         {children}
         <StickyCallButton />
+
+        {/* Google Analytics GA4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Y9CGXJLLVJ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Y9CGXJLLVJ');
+          `}
+        </Script>
       </body>
     </html>
   )

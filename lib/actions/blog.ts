@@ -1,11 +1,15 @@
 import type { BlogPost, Category } from "@/lib/types";
 import { 
-  defaultBlogPost, 
-  secondBlogPost, 
-  thirdBlogPost,
-  kitchenCostPost,
-  flooringTipsPost,
-  remodelingRoiPost
+  post_1,
+  post_2,
+  post_3,
+  post_4,
+  post_5,
+  post_6,
+  post_7,
+  post_8,
+  post_9,
+  post_10
 } from "@/lib/seed-blog";
 import { submitToIndexNow } from "@/lib/indexnow";
 
@@ -19,12 +23,16 @@ function generateSlug(title: string): string {
 }
 
 const basePosts: BlogPost[] = [
-  defaultBlogPost, 
-  secondBlogPost, 
-  thirdBlogPost,
-  kitchenCostPost,
-  flooringTipsPost,
-  remodelingRoiPost
+  post_1,
+  post_2,
+  post_3,
+  post_4,
+  post_5,
+  post_6,
+  post_7,
+  post_8,
+  post_9,
+  post_10
 ].map((post, index) => ({
   id: `post-${index + 1}`,
   title: post.title,

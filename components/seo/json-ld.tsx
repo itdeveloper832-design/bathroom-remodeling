@@ -67,10 +67,7 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       siteConfig.social.linkedin,
     ].filter(Boolean),
     priceRange: "$$-$$$",
-    areaServed: siteConfig.serviceAreas.map((area) => ({
-      "@type": "Place",
-      name: `${area}, Arizona`,
-    })),
+    areaServed: ["Chandler AZ","Gilbert AZ","Mesa AZ","Tempe AZ","Queen Creek AZ","Sun Lakes AZ","Ocotillo AZ","Ahwatukee AZ"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Bathroom Remodeling Services in Chandler",

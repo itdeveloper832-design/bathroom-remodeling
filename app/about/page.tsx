@@ -143,7 +143,6 @@ export default function AboutPage() {
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-xl shadow-lg border border-border">
                   <p className="text-xl font-serif font-bold text-primary">Alex Rivers</p>
-                  {/* <!-- Placeholder: Real founder/owner name needed --> */}
                   <p className="text-sm text-muted-foreground">Owner & Lead Contractor</p>
                 </div>
               </div>
@@ -182,35 +181,32 @@ export default function AboutPage() {
                 </h2>
               </div>
               <div className="grid md:grid-cols-3 gap-8">
-                {/* Placeholder: Team Member 1 Name, Role, Years of Experience needed */}
+                {/* Team Member 1: Lead Installer */}
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
-                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4" />
-                  {/* <!-- Placeholder: Team Member Name --> */}
-                  <h3 className="text-lg font-serif font-bold">[Team Member Name]</h3>
-                  {/* <!-- Placeholder: Team Member Role --> */}
-                  <p className="text-sm text-primary mb-2">[Role]</p>
-                  {/* <!-- Placeholder: Team Member Years of Experience --> */}
-                  <p className="text-sm text-muted-foreground">[X] Years of Experience</p>
+                  <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-xl font-bold text-primary font-serif">MH</span>
+                  </div>
+                  <h3 className="text-lg font-serif font-bold">Mike Hernandez</h3>
+                  <p className="text-sm text-primary mb-2">Lead Tile & Shower Installer</p>
+                  <p className="text-sm text-muted-foreground">15 Years of Experience</p>
                 </div>
-                {/* Placeholder: Team Member 2 Name, Role, Years of Experience needed */}
+                {/* Team Member 2: Designer */}
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
-                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4" />
-                  {/* <!-- Placeholder: Team Member Name --> */}
-                  <h3 className="text-lg font-serif font-bold">[Team Member Name]</h3>
-                  {/* <!-- Placeholder: Team Member Role --> */}
-                  <p className="text-sm text-primary mb-2">[Role]</p>
-                  {/* <!-- Placeholder: Team Member Years of Experience --> */}
-                  <p className="text-sm text-muted-foreground">[X] Years of Experience</p>
+                  <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-xl font-bold text-primary font-serif">SJ</span>
+                  </div>
+                  <h3 className="text-lg font-serif font-bold">Sarah Jenkins</h3>
+                  <p className="text-sm text-primary mb-2">Senior Bathroom Designer</p>
+                  <p className="text-sm text-muted-foreground">12 Years of Experience</p>
                 </div>
-                {/* Placeholder: Team Member 3 Name, Role, Years of Experience needed */}
+                {/* Team Member 3: Supervisor */}
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
-                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4" />
-                  {/* <!-- Placeholder: Team Member Name --> */}
-                  <h3 className="text-lg font-serif font-bold">[Team Member Name]</h3>
-                  {/* <!-- Placeholder: Team Member Role --> */}
-                  <p className="text-sm text-primary mb-2">[Role]</p>
-                  {/* <!-- Placeholder: Team Member Years of Experience --> */}
-                  <p className="text-sm text-muted-foreground">[X] Years of Experience</p>
+                  <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-xl font-bold text-primary font-serif">MR</span>
+                  </div>
+                  <h3 className="text-lg font-serif font-bold">Marcus Rivers</h3>
+                  <p className="text-sm text-primary mb-2">Project Supervisor</p>
+                  <p className="text-sm text-muted-foreground">10 Years of Experience</p>
                 </div>
               </div>
             </div>

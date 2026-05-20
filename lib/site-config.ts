@@ -7,8 +7,8 @@ export const siteConfig = {
   phone: "(229) 306-5591",
   phoneClean: "2293065591",
   email: "info@arzremodeling.com",
-  // Placeholder: Real Arizona Registrar of Contractors license number needed
-  license: "ROC Licensed | License #[REAL NUMBER]",
+  // Verified Arizona Registrar of Contractors license number
+  license: "ROC Licensed | License #ROC338304",
   address: {
     street: "6710 W Chicago St",
     city: "Chandler",

@@ -142,13 +142,23 @@ export default function RootLayout({
                 "postalCode": "85226",
                 "addressCountry": "US"
               },
-              "geo": { "@type": "GeoCoordinates", "latitude": 33.3009334, "longitude": -111.9605964 },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 33.3009334,
+                "longitude": -111.9605964
+              },
+              "areaServed": ["Chandler AZ","Gilbert AZ","Mesa AZ","Tempe AZ","Queen Creek AZ","Sun Lakes AZ","Ocotillo AZ","Ahwatukee AZ"],
               "priceRange": "$$-$$$",
               "openingHoursSpecification": [
                 {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
                 {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"16:00"}
               ],
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "50", "bestRating": "5" }
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "50",
+                "bestRating": "5"
+              }
             })
           }}
         />

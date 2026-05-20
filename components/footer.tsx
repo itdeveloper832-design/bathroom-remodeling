@@ -9,8 +9,8 @@ export function Footer() {
             <h3 className="font-poppins font-bold text-lg mb-4">ARZ Home Remodeling</h3>
             <p className="text-slate-300">Professional home remodeling and renovation services across Arizona.</p>
             <p className="mt-4 text-slate-300 text-sm">
-              {/* Placeholder: Real Arizona Registrar of Contractors license number needed */}
-              ROC Licensed | License #[REAL NUMBER] - <a href="https://roc.az.gov" target="_blank" rel="noopener" className="hover:text-white transition-colors underline">Licensed by the Arizona Registrar of Contractors</a>
+              {/* Verified Arizona Registrar of Contractors license number */}
+              ROC Licensed | License #ROC338304 - <a href="https://roc.az.gov" target="_blank" rel="noopener" className="hover:text-white transition-colors underline">Licensed by the Arizona Registrar of Contractors</a>
             </p>
           </div>
 

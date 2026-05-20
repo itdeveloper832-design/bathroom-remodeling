@@ -1,10 +1,9 @@
 # ARZ Home Remodeling
 
-ARZ Home Remodeling is a premier renovation contractor based in Chandler, Arizona, specializing in high-quality bathroom and kitchen remodeling. We serve the entire Chandler area, including Ocotillo, Fulton Ranch, and Sun Lakes, providing licensed, professional, and custom home improvement solutions.
+ARZ Home Remodeling is a premier renovation contractor based in Chandler, Arizona, specializing in high-quality bathroom remodeling. We serve the entire Chandler area, including Ocotillo, Fulton Ranch, and Sun Lakes, providing licensed, professional, and custom bathroom renovation solutions.
 
 ## Core Services
 - Full Bathroom Remodeling
-- Kitchen Remodeling & Renovations
 - Shower & Bathtub Replacements
 - Custom Vanity Installation
 - Tile & Flooring Installation
@@ -14,7 +13,7 @@ ARZ Home Remodeling is a premier renovation contractor based in Chandler, Arizon
 
 ## Business Information
 - **Website:** https://arzhomeremodeling.com
-- **Phone:** (480) 306-5591
+- **Phone:** (229) 306-5591
 - **Email:** info@arzremodeling.com
 - **Address:** 6710 W Chicago St, Chandler, AZ 85226
 - **Service Areas:** Chandler, Sun Lakes, Ahwatukee, Tempe, Mesa, South Phoenix
@@ -22,7 +21,6 @@ ARZ Home Remodeling is a premier renovation contractor based in Chandler, Arizon
 ## Key Pages
 - [Home](https://arzhomeremodeling.com/)
 - [Bathroom Remodeling](https://arzhomeremodeling.com/bathroom-remodeling)
-- [Kitchen Remodeling](https://arzhomeremodeling.com/kitchen-remodeling)
 - [Gallery](https://arzhomeremodeling.com/gallery)
 - [Financing](https://arzhomeremodeling.com/financing)
 - [Offers](https://arzhomeremodeling.com/offers)

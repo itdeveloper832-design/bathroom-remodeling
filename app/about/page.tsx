@@ -6,14 +6,14 @@ import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
 import { Button } from "@/components/ui/button"
 import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, Hammer, Sparkles } from "lucide-react"
-import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
+import { BreadcrumbSchema, FAQSchema, PersonSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
   title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
-  description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
+  description: "Meet Alex Rivers, founder of ARZ Home Remodeling — Chandler's trusted bathroom contractor since 2010. Licensed ROC338304, NARI certified. 15+ years, 500+ projects. Call (480) 306-5591.",
   openGraph: {
     title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
-    description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
+    description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (480) 306-5591.",
     url: `${siteConfig.url}/about/`,
     type: "website",
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
-    description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (229) 306-5591.",
+    description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (480) 306-5591.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
@@ -91,6 +91,7 @@ export default function AboutPage() {
         ]} 
       />
       <FAQSchema faqs={aboutFaqs} />
+      <PersonSchema name={siteConfig.owner} jobTitle="Founder & Owner, ROC Licensed Contractor" />
       <Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
@@ -427,7 +428,7 @@ export default function AboutPage() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="tel:2293065591">
+                  <Link href="tel:4803065591">
                     Call {siteConfig.phone}
                   </Link>
                 </Button>

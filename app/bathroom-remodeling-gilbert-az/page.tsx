@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: `Bathroom remodeling Gilbert AZ: showers, tub-to-shower, master baths. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
-    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
+    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (480) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/`,
     type: "website",
   },
@@ -223,7 +223,7 @@ export default function GilbertPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:4803065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

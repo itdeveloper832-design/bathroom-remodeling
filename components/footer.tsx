@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { siteConfig } from '@/lib/site-config'
 
 export function Footer() {
   return (
@@ -30,7 +31,7 @@ export function Footer() {
               Address: 6710 W Chicago St, Chandler, AZ 85226
             </p>
             <p className="text-slate-300">
-              Phone: <a href="tel:2293065591" className="hover:text-white transition-colors">(229) 306-5591</a>
+              Phone: <a href={`tel:${siteConfig.phoneClean}`} className="hover:text-white transition-colors">{siteConfig.phone}</a>
             </p>
             <p className="text-slate-300">
               Email: <a href="mailto:info@arzremodeling.com" className="hover:text-white transition-colors">info@arzremodeling.com</a>

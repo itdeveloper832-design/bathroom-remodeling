@@ -6,8 +6,8 @@ export const siteConfig = {
   foundedYear: 2010,
   warranty: "2-year workmanship warranty on qualifying projects",
   url: "https://arzhomeremodeling.com",
-  phone: "(229) 306-5591",
-  phoneClean: "2293065591",
+  phone: "(480) 306-5591",
+  phoneClean: "4803065591",
   email: "info@arzremodeling.com",
   // Verified Arizona Registrar of Contractors license number
   license: "ROC Licensed | License #ROC338304",

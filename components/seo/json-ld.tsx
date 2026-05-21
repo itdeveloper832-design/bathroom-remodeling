@@ -16,7 +16,13 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       name: siteConfig.owner,
       jobTitle: "Founder & Owner",
       url: siteConfig.url,
+      credentials: {
+        "@type": "EducationalOccupationalCredential",
+        name: "Arizona Registrar of Contractors License",
+        identifier: "ROC338304"
+      }
     },
+    license: "ROC338304",
     knowsAbout: [
       "Bathroom Remodeling",
       "Shower Remodeling",
@@ -470,6 +476,64 @@ export function PriceSchema({
       "@type": "AggregateRating",
       ratingValue: "4.9",
       reviewCount: "127",
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+interface PersonSchemaProps {
+  name?: string;
+  jobTitle?: string;
+  affiliation?: string;
+  url?: string;
+  credentials?: string;
+  licenseNumber?: string;
+}
+
+export function PersonSchema({
+  name = siteConfig.owner,
+  jobTitle = "Founder & Owner, Licensed Contractor",
+  affiliation = "ARZ Home Remodeling",
+  url = siteConfig.url,
+  credentials = "Arizona Registrar of Contractors License",
+  licenseNumber = "ROC338304",
+}: PersonSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: name,
+    jobTitle: jobTitle,
+    affiliation: {
+      "@type": "Organization",
+      name: affiliation,
+      url: url,
+    },
+    url: url,
+    telephone: siteConfig.phone,
+    email: siteConfig.email,
+    credentials: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: credentials,
+        identifier: licenseNumber,
+      },
+    ],
+    knowsAbout: [
+      "Bathroom Remodeling",
+      "Home Construction",
+      "Arizona Building Codes",
+      "Customer Service",
+      "Project Management",
+    ],
+    workLocation: {
+      "@type": "Place",
+      name: "Chandler, Arizona",
     },
   };
 

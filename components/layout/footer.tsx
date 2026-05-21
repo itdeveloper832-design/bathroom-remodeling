@@ -30,7 +30,7 @@ export function Footer() {
             <div className="text-background/70 text-sm leading-relaxed mb-6 space-y-1">
               <p className="font-semibold text-background text-base">ARZ Home Remodeling</p>
               <p>6710 W Chicago St, Chandler, AZ 85226</p>
-              <p>Phone: <a href="tel:2293065591" className="text-background/80 hover:text-primary transition-colors no-underline">(229) 306-5591</a></p>
+              <p>Phone: <a href={`tel:${siteConfig.phoneClean}`} className="text-background/80 hover:text-primary transition-colors no-underline">{siteConfig.phone}</a></p>
               <p>Email: <a href="mailto:info@arzremodeling.com" className="text-background/80 hover:text-primary transition-colors no-underline">info@arzremodeling.com</a></p>
               <p className="text-xs pt-1 text-background/60">ROC Licensed | License #ROC338304 | Arizona Registrar of Contractors</p>
             </div>
@@ -153,7 +153,7 @@ export function Footer() {
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
                   <a
-                    href="tel:2293065591"
+                    href="`tel:${siteConfig.phoneClean}`"
                     className="text-background/80 hover:text-primary transition-colors text-sm no-underline"
                     aria-label={`Call us at ${siteConfig.phone}`}
                   >

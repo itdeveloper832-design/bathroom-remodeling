@@ -80,7 +80,7 @@ export default function ContactSection() {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                   <a
-                    href="tel:2293065591"
+                    href="`tel:${siteConfig.phoneClean}`"
                     className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 rounded"
                     aria-label={`Call us at ${siteConfig.phone}`}
                   >
@@ -178,7 +178,7 @@ export default function ContactSection() {
                           id="contact-phone"
                           name="phone"
                           type="tel"
-                          placeholder="(229) 306-5591"
+                          placeholder={siteConfig.phone}
                           required
                           className="bg-background h-11"
                         />

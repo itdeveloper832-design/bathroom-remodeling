@@ -11,6 +11,7 @@ import type { BlogPost, Category } from "@/lib/types"
 import { Calendar, Clock, ArrowRight, Search, ChevronRight, Filter } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { NewsletterForm } from "@/components/forms/newsletter-form"
 import { 
   defaultBlogPost, 
   secondBlogPost, 
@@ -297,17 +298,7 @@ export default function BlogContent() {
                 <p className="text-lg opacity-90 mb-10 max-w-xl mx-auto">
                   Subscribe to our seasonal journal for the latest design trends, cost guides, and homeowner tips from Chandler&apos;s pros.
                 </p>
-                <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
-                  <Input 
-                    type="email" 
-                    placeholder="Enter your email" 
-                    className="h-14 rounded-full bg-background border-none text-foreground px-6"
-                    required
-                  />
-                  <Button className="h-14 rounded-full bg-foreground text-background hover:bg-foreground/90 font-bold px-8 shadow-xl">
-                    Subscribe
-                  </Button>
-                </form>
+                <NewsletterForm />
                 <p className="mt-6 text-[10px] opacity-60 uppercase tracking-widest font-medium">
                   We respect your privacy. No spam, ever.
                 </p>

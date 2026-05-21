@@ -20,7 +20,7 @@ import {
   Plus
 } from "lucide-react"
 import { db } from "@/lib/firebase"
-import { collection, getDocs, query, orderBy, limit } from "firebase/firestore"
+import { collection, getDocs, query, orderBy, limit, getCountFromServer } from "firebase/firestore"
 
 interface DashboardStats {
   leads: number
@@ -47,11 +47,14 @@ export default function AdminDashboardPage() {
 
         // Fetch leads via one-time getDocs (no persistent WebSocket)
         const leadsQuery = query(collection(db, "leads"), orderBy("createdAt", "desc"), limit(5))
-        const leadsSnapshot = await getDocs(leadsQuery)
+        const [leadsSnapshot, leadsCountSnapshot] = await Promise.all([
+          getDocs(leadsQuery),
+          getCountFromServer(collection(db, "leads")),
+        ])
         const leads = leadsSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })) as Lead[]
 
         setStats({
-          leads: leads.length,
+          leads: leadsCountSnapshot.data().count,
           posts: postsCount,
           testimonials: testimonialsCount,
           gallery: galleryCount,

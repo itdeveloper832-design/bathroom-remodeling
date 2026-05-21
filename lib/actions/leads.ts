@@ -1,66 +1,121 @@
 import { Lead } from "@/lib/types";
 import { siteConfig } from "@/lib/site-config";
+import { db, firebaseProjectId } from "@/lib/firebase";
+import {
+  collection,
+  addDoc,
+  doc,
+  updateDoc,
+  deleteDoc,
+  serverTimestamp,
+} from "firebase/firestore";
+import type { FormMetadata } from "@/lib/form-metadata";
 
-import { db } from "@/lib/firebase";
-import { collection, addDoc, doc, updateDoc, deleteDoc } from "firebase/firestore";
+export type LeadSubmission = Omit<Lead, "id" | "createdAt" | "status">;
 
-// ─── PUBLIC: Submit a lead (addDoc only, no reads) ───────────────────────────
+function normalizeLeadInput(
+  data: LeadSubmission,
+  metadata?: Partial<FormMetadata>
+): Record<string, unknown> {
+  const name = data.name?.trim() ?? "";
+  const email = data.email?.trim() ?? "";
+  const phone = data.phone?.trim() ?? "";
+
+  if (!name) throw new Error("Name is required.");
+  if (!phone && !email) throw new Error("Phone or email is required.");
+
+  return {
+    name,
+    email,
+    phone,
+    service: (data.service?.trim() || "General inquiry").slice(0, 200),
+    message: (data.message?.trim() || "").slice(0, 5000),
+    zip: data.zip?.trim() || "",
+    type: data.type ?? "contact",
+    status: "new",
+    createdAt: new Date().toISOString(),
+    submittedAt: serverTimestamp(),
+    sourceUrl: metadata?.sourceUrl?.slice(0, 500) ?? "",
+    referrer: metadata?.referrer?.slice(0, 500) ?? "",
+    userAgent: metadata?.userAgent?.slice(0, 500) ?? "",
+    projectId: firebaseProjectId,
+  };
+}
 
 export async function createLead(
-  data: Omit<Lead, "id" | "createdAt" | "status">
+  data: LeadSubmission,
+  metadata?: Partial<FormMetadata>
 ): Promise<{ success: boolean; id?: string; error?: string }> {
   try {
-    const leadData = {
-      ...data,
-      status: "new" as const,
-      createdAt: new Date().toISOString(),
-    };
+    const leadData = normalizeLeadInput(data, metadata);
+
+    if (process.env.NODE_ENV === "development") {
+      console.info("[createLead] Writing to Firestore project:", firebaseProjectId);
+    }
 
     const docRef = await addDoc(collection(db, "leads"), leadData);
 
-    // Trigger email notification via Firebase Trigger Email extension
     try {
       await addDoc(collection(db, "mail"), {
         to: siteConfig.email,
         message: {
-          subject: `New ${data.type === "quote" ? "Quote Request" : "Contact Form"}: ${data.name}`,
+          subject: `New ${data.type === "quote" ? "Quote Request" : data.type === "newsletter" ? "Newsletter Signup" : "Contact Form"}: ${leadData.name}`,
           html: `
             <h3>New Lead Received</h3>
-            <p><strong>Type:</strong> ${data.type === "quote" ? "Quote Request" : "Contact Form"}</p>
-            <p><strong>Name:</strong> ${data.name}</p>
-            <p><strong>Phone:</strong> ${data.phone}</p>
-            <p><strong>Email:</strong> ${data.email}</p>
-            ${data.zip ? `<p><strong>ZIP Code:</strong> ${data.zip}</p>` : ""}
-            <p><strong>Service:</strong> ${data.service}</p>
-            <p><strong>Message:</strong> ${data.message}</p>
+            <p><strong>Type:</strong> ${leadData.type}</p>
+            <p><strong>Name:</strong> ${leadData.name}</p>
+            <p><strong>Phone:</strong> ${leadData.phone}</p>
+            <p><strong>Email:</strong> ${leadData.email}</p>
+            ${leadData.zip ? `<p><strong>ZIP Code:</strong> ${leadData.zip}</p>` : ""}
+            <p><strong>Service:</strong> ${leadData.service}</p>
+            <p><strong>Message:</strong> ${leadData.message}</p>
+            <p><strong>Source:</strong> ${leadData.sourceUrl}</p>
             <hr />
-            <p>This lead has been saved to your admin dashboard at <a href="${siteConfig.url}/admin/leads">${siteConfig.url}/admin/leads</a></p>
+            <p>View in admin: <a href="${siteConfig.url}/admin/leads">${siteConfig.url}/admin/leads</a></p>
           `,
         },
       });
     } catch (mailError) {
-      console.warn("Lead saved but email notification failed:", mailError);
+      console.warn("[createLead] Lead saved; email queue write failed:", mailError);
     }
 
     return { success: true, id: docRef.id };
-  } catch (error: any) {
-    console.error("Error creating lead:", error);
-    return { success: false, error: error.message };
+  } catch (error: unknown) {
+    const message =
+      error instanceof Error ? error.message : "Unknown error saving lead";
+    console.error("[createLead] Firestore write failed:", error);
+    return { success: false, error: message };
   }
 }
 
-// ─── ADMIN: Update / Delete (client SDK writes - allowed by Firestore rules) ──
+export async function createNewsletterLead(
+  email: string,
+  metadata?: Partial<FormMetadata>
+): Promise<{ success: boolean; id?: string; error?: string }> {
+  return createLead(
+    {
+      name: "Newsletter Subscriber",
+      email: email.trim(),
+      phone: "",
+      service: "Newsletter",
+      message: "Blog newsletter signup",
+      type: "newsletter",
+    },
+    metadata
+  );
+}
 
 export async function updateLeadStatus(
   id: string,
   status: Lead["status"]
 ): Promise<{ success: boolean; error?: string }> {
   try {
-    await updateDoc(doc(db, "leads", id), { status });
+    await updateDoc(doc(db, "leads", id), { status, updatedAt: serverTimestamp() });
     return { success: true };
-  } catch (error: any) {
-    console.error("Error updating lead status:", error);
-    return { success: false, error: error.message };
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : "Update failed";
+    console.error("[updateLeadStatus] Failed:", error);
+    return { success: false, error: message };
   }
 }
 
@@ -70,8 +125,9 @@ export async function deleteLead(
   try {
     await deleteDoc(doc(db, "leads", id));
     return { success: true };
-  } catch (error: any) {
-    console.error("Error deleting lead:", error);
-    return { success: false, error: error.message };
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : "Delete failed";
+    console.error("[deleteLead] Failed:", error);
+    return { success: false, error: message };
   }
 }

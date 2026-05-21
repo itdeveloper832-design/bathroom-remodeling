@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { bathroomServices } from "@/lib/bathroom-services";
 import { createLead } from "@/lib/actions/leads";
+import { getFormMetadata } from "@/lib/form-metadata";
 
 export function QuoteForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -16,8 +17,7 @@ export function QuoteForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    // Removed 20 words check
+    if (isSubmitting) return;
 
     const form = e.currentTarget;
     setIsSubmitting(true);
@@ -31,23 +31,24 @@ export function QuoteForm() {
         email: formData.get("email") as string,
         zip: formData.get("zip") as string,
         service: formData.get("service") as string,
-        message: formData.get("message") as string,
+        message: (formData.get("message") as string) || "",
         type: "quote" as const,
       };
 
-      const result = await createLead(data);
+      const result = await createLead(data, getFormMetadata());
 
-      if (!result.success) {
-        throw new Error(result.error || "Submission failed");
+      if (!result.success || !result.id) {
+        throw new Error(result.error || "Submission failed. Please call us directly.");
       }
 
       setSuccess(true);
       form.reset();
       setWordCount(0);
-      setError("");
-    } catch (err: any) {
-      console.error("Error submitting quote:", err);
-      setError("Failed to submit quote. Please try again or call us directly.");
+    } catch (err: unknown) {
+      const message =
+        err instanceof Error ? err.message : "Failed to submit quote. Please try again or call us directly.";
+      console.error("[QuoteForm] Submit error:", err);
+      setError(message);
     } finally {
       setIsSubmitting(false);
     }

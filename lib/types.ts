@@ -75,7 +75,10 @@ export interface Lead {
   createdAt: string;
   status: 'new' | 'contacted' | 'converted' | 'closed';
   zip?: string;
-  type?: 'quote' | 'contact';
+  type?: 'quote' | 'contact' | 'newsletter';
+  sourceUrl?: string;
+  referrer?: string;
+  userAgent?: string;
 }
 
 export interface SEOSettings {

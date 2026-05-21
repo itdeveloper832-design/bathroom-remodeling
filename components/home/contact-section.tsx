@@ -10,6 +10,7 @@ import { siteConfig } from "@/lib/site-config";
 
 import { bathroomServices } from "@/lib/bathroom-services";
 import { createLead } from "@/lib/actions/leads";
+import { getFormMetadata } from "@/lib/form-metadata";
 
 export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -18,6 +19,8 @@ export default function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (isSubmitting) return;
+
     const form = e.currentTarget;
     setIsSubmitting(true);
     setError("");
@@ -33,21 +36,22 @@ export default function ContactSection() {
     };
 
     try {
-      const result = await createLead(data);
+      const result = await createLead(data, getFormMetadata());
 
-      if (!result.success) {
-        throw new Error(result.error || "Submission failed");
+      if (!result.success || !result.id) {
+        throw new Error(result.error || "Submission failed. Please call us directly.");
       }
 
-      console.info("Contact form submission successful", data);
       setIsSubmitted(true);
       form.reset();
     } catch (err) {
-      console.error("Error submitting contact form:", err);
-      setError("Failed to submit form. Please try again or call us directly.");
+      const message =
+        err instanceof Error ? err.message : "Failed to submit form. Please try again or call us directly.";
+      console.error("[ContactSection] Submit error:", err);
+      setError(message);
+    } finally {
+      setIsSubmitting(false);
     }
-
-    setIsSubmitting(false);
   };
 
   return (

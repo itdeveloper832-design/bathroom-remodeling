@@ -118,7 +118,14 @@ const nextConfig = {
     tsconfigPath: './tsconfig.json',
   },
 
-  // Webpack optimizations
+  // Turbopack configuration for Next.js 16
+  turbopack: {
+    resolveAlias: {
+      '@': './src',
+    },
+  },
+
+  // Webpack optimizations (fallback for webpack mode)
   webpack(config, { dev, isServer }) {
     if (!dev && !isServer) {
       config.optimization.splitChunks = {

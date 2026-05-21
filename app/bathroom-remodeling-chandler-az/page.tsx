@@ -82,7 +82,7 @@ const chandlerFaqs = [
   {
     question: "Do you serve neighborhoods outside central Chandler?",
     answer:
-      "We serve all of Chandler including Sun Lakes, Ocotillo, Fulton Ranch, Dobson Road, Cooper Road, and McQueen Road, as well as surrounding East Valley cities including Gilbert, Tempe, and Mesa."
+      "We serve all of Chandler including Sun Lakes, Ocotillo, Fulton Ranch, Dobson Road, Cooper Road, and McQueen Road, as well as surrounding East Valley cities including Gilbert, Tempe, and Mesa. Our bathroom remodeling contractors are available throughout Chandler for shower remodeling services and tile shower installations."
   }
 ];
 
@@ -238,7 +238,7 @@ export default function ChandlerBathroomRemodelingPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:4803065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>
@@ -255,6 +255,7 @@ export default function ChandlerBathroomRemodelingPage() {
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground">
                 Our Chandler Bathroom Remodeling Services
               </h2>
+              <p className="text-muted-foreground text-lg mt-4">Professional bathroom remodeling contractor services including walk-in showers, accessible shower remodeling, and tile shower installation in Chandler.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {services.map((svc) => (

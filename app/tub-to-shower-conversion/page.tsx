@@ -21,8 +21,8 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Chandler, Mesa & Gilbert AZ | Free Estimate | ARZ",
-  description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
+  title: "Tub to Shower Conversion Chandler AZ | Tub Removal & Walk-In Installation | ARZ",
+  description: "Tub to shower conversion in Chandler, AZ. Remove garden tub, install walk-in shower. Conversion companies near you. Professional contractors. 1–2 week install, firm price, licensed AZ contractor, ROC338304.",
   openGraph: {
     title: "Tub to Shower Conversion Chandler, Mesa & Gilbert AZ | Free Estimate | ARZ",
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",

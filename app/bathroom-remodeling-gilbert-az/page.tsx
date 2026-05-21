@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: `Bathroom remodeling Gilbert AZ: showers, tub-to-shower, master baths. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
-    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
+    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (480) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/`,
     type: "website",
   },
@@ -71,7 +71,7 @@ const gilbertFaqs = [
   {
     question: "Do you serve neighborhoods outside central Gilbert?",
     answer:
-      "We serve all of Gilbert including Morrison Ranch, Power Ranch, Val Vista Lakes, Agritopia, Seville, Lyons Gate, and more, plus surrounding East Valley cities like Chandler, Mesa, and Tempe."
+      "We serve all of Gilbert including Morrison Ranch, Power Ranch, Val Vista Lakes, Agritopia, Seville, Lyons Gate, and more, plus surrounding East Valley cities like Chandler, Mesa, and Tempe. Our bathroom remodeling contractors provide expert shower remodeling services and accessible shower installation throughout Gilbert with professional bathroom remodeling company expertise."
   },
 ];
 
@@ -223,7 +223,7 @@ export default function GilbertPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:4803065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>
@@ -240,6 +240,7 @@ export default function GilbertPage() {
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground text-balance">
                 Our Gilbert Bathroom Remodeling Services
               </h2>
+              <p className="text-muted-foreground text-lg mt-4">Professional bathroom remodeling services in Gilbert including shower remodeling, tile installation, and accessible shower remodeling for families throughout the community.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {services.map((svc) => (

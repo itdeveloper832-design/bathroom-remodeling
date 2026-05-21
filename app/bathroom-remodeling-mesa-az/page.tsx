@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: `Bathroom remodel Mesa AZ: walk-in showers, tub-to-shower, master baths. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling Mesa: Licensed Contractors & Free Quotes",
-    description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
+    description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (480) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling-mesa-az/`,
     type: "website",
   },
@@ -71,7 +71,7 @@ const mesaFaqs = [
   {
     question: "Do you serve neighborhoods outside central Mesa?",
     answer:
-      "We serve all of Mesa including Dobson Ranch, Las Sendas, Eastmark, Red Mountain Ranch, Mulberry, and more, plus surrounding East Valley cities like Chandler, Gilbert, and Tempe."
+      "We serve all of Mesa including Dobson Ranch, Las Sendas, Eastmark, Red Mountain Ranch, Mulberry, and more, plus surrounding East Valley cities like Chandler, Gilbert, and Tempe. We are experts in all types of bathroom remodeling contractor services, from shower remodeling company work to complete bathroom renovations for families throughout Mesa."
   },
 ];
 
@@ -222,7 +222,7 @@ export default function MesaPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:4803065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>
@@ -236,9 +236,10 @@ export default function MesaPage() {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center mb-12">
               <span className="text-primary text-sm font-medium tracking-wider uppercase">What We Do</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground text-balance">
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground">
                 Our Mesa Bathroom Remodeling Services
               </h2>
+              <p className="text-muted-foreground text-lg mt-4">Expert bathroom remodeling contractor services in Mesa including tile shower installations, accessible shower remodeling, and complete bathroom renovations for families throughout the city.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {services.map((svc) => (

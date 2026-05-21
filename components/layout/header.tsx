@@ -79,7 +79,7 @@ export function Header() {
                     </Link>
                   ))}
                   <a
-                    href="tel:2293065591"
+                    href={`tel:${siteConfig.phoneClean}`}
                     className="flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors py-2"
                     aria-label={`Call us at ${siteConfig.phone}`}
                   >

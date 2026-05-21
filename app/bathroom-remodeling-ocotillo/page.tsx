@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: "Top-rated bathroom remodeling in Ocotillo, Chandler, AZ. Specializing in luxury walk-in showers, custom tile design, and master suite renovations in 85248.",
   openGraph: {
     title: "Bathroom Remodeling Ocotillo Chandler AZ | Custom Contractor",
-    description: "Expert bathroom design & remodeling in Ocotillo, Chandler, AZ. Licensed contractors, luxury designs, and custom tile installations. Free estimates: (229) 306-5591.",
+    description: "Expert bathroom design & remodeling in Ocotillo, Chandler, AZ. Licensed contractors, luxury designs, and custom tile installations. Free estimates: (480) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling-ocotillo/`,
     type: "website",
   },
@@ -180,9 +180,9 @@ export default function OcotilloPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:4803065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  (229) 306-5591
+                  (480) 306-5591
                 </Link>
               </Button>
             </div>

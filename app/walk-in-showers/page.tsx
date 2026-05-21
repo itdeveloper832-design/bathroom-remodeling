@@ -18,8 +18,8 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Walk-In Shower Installation Chandler AZ | ADA Options",
-  description: "Safe & stylish walk-in showers in Chandler AZ. Starting from $6,000. Handicap accessible options, curbless entries, and frameless glass. Get a free quote!",
+  title: "Walk-In Shower Installation & Company Services Chandler AZ | Licensed",
+  description: "Walk-in shower installation services and shower company in Chandler, AZ. Barrier-free designs, ADA accessibility, handicap showers. Professional contractors. Free quotes. Starting from $6,000.",
   openGraph: {
     title: "Walk-In Shower Installation Chandler AZ | ADA Options",
     description: "Professional walk-in shower installation in Chandler AZ. Barrier-free designs, ADA options, and luxury finishes. Licensed & insured. Free estimates!",

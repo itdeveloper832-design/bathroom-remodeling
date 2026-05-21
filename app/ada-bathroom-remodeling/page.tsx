@@ -20,8 +20,8 @@ import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "ADA Bathroom Remodeling Chandler AZ | Senior Safe Design",
-  description: "Specialized ADA bathroom remodeling in Chandler. Expert installers for walk-in showers, grab bars, roll-in entries, and senior-safe modifications. Licensed AZ contractor.",
+  title: "Accessible Shower Remodeling Chandler AZ | ADA Bathroom & Handicap Install | ARZ",
+  description: "Accessible shower remodeling, installation, and ADA bathroom remodeling in Chandler, AZ. Handicap bathroom remodel contractors. Walk-in showers, grab bars, roll-in entries, senior-safe modifications. Licensed ROC338304.",
   openGraph: {
     title: "ADA Bathroom Remodeling Chandler AZ | Senior Safe Design",
     description: "Expert ADA bathroom remodeling in Chandler. Safe walk-in showers, roll-in entries, and professional safety modifications for seniors and mobility needs.",
@@ -198,7 +198,7 @@ export default function ADAPage() {
                     <Link href="/contact/">Get A Free Quote</Link>
                  </Button>
                  <Button variant="outline" asChild size="lg">
-                    <Link href="tel:2293065591">{siteConfig.phone}</Link>
+                    <Link href="tel:4803065591">{siteConfig.phone}</Link>
                  </Button>
               </div>
             </div>

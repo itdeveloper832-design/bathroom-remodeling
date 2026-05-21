@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Professional Bathroom Remodeling Phoenix AZ | Licensed Contractors",
   description:
-    "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates: call (229) 306-5591 today!",
+    "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates: call (480) 306-5591 today!",
   openGraph: {
     title: "Bathroom Remodeling Phoenix AZ | ARZ Home Remodeling",
     description:
@@ -94,7 +94,7 @@ export default function PhoenixPage() {
                 <Link href="/contact/">Get Your Free Phoenix Quote</Link>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
+                <Link href="tel:4803065591">Call {siteConfig.phone}</Link>
               </Button>
             </div>
           </div>

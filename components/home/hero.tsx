@@ -37,11 +37,11 @@ export default function Hero() {
           </div>
 
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-6 text-balance">
-            Bathroom Remodeling in Chandler, AZ
+            Bathroom Remodeling Chandler AZ — Licensed, Local, Focused Only on Bathrooms
           </h1>
 
           <p className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed font-light">
-            ARZ Home Remodeling is a licensed Arizona bathroom contractor serving Chandler, Ocotillo, Fulton Ranch, Sun Lakes, and the East Valley. We build custom{" "}
+            ARZ Home Remodeling is a licensed Arizona bathroom contractor (ROC #338304) serving Chandler, Ocotillo, Fulton Ranch, Sun Lakes, and the East Valley since 2010. We specialize exclusively in bathroom remodeling, building custom{" "}
             <Link href="/shower-remodeling/" className="font-semibold underline hover:text-primary transition-colors">
               walk-in showers
             </Link>

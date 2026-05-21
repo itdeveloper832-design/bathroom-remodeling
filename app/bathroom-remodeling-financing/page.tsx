@@ -135,7 +135,7 @@ export default function FinancingPage() {
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <DollarSign className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
-                We work with top home improvement lenders to make financing simple. To review your pre-qualification terms without affecting your credit score, call us at <a href="tel:2293065591" className="text-primary hover:underline font-medium">(229) 306-5591</a>.
+                We work with top home improvement lenders to make financing simple. To review your pre-qualification terms without affecting your credit score, call us at <a href="tel:4803065591" className="text-primary hover:underline font-medium">(480) 306-5591</a>.
               </p>
             </div>
           </div>

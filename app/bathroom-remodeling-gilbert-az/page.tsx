@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
-  description: "Top-rated bathroom remodeling in Gilbert, AZ. Licensed experts for custom walk-in showers, master bath renovations, and tub-to-shower conversions. Free itemized quotes!",
+  title: "Bathroom Remodel Gilbert AZ | Licensed Contractor | ARZ",
+  description: `Bathroom remodeling Gilbert AZ: showers, tub-to-shower, master baths. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
     description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",

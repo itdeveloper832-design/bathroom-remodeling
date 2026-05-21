@@ -6,22 +6,22 @@ const financingOptions = [
   {
     icon: Percent,
     title: "0% APR for 12 Months",
-    description: "Enjoy interest-free financing on qualifying projects over $5,000.",
+    description: "On qualifying projects over $5,000, subject to lender approval.",
   },
   {
     icon: Calendar,
     title: "Flexible Payment Plans",
-    description: "Choose monthly payments that fit your budget, up to 60 months.",
+    description: "Monthly payments up to 60 months on approved credit.",
   },
   {
     icon: CreditCard,
-    title: "Quick Approval",
-    description: "Get approved in minutes with our simple online application process.",
+    title: "Quick Pre-Qualification",
+    description: "Simple application with options explained during your estimate visit.",
   },
   {
     icon: CheckCircle,
     title: "No Prepayment Penalty",
-    description: "Pay off your balance early without any additional fees.",
+    description: "Pay off early without extra fees when your lender allows it.",
   },
 ];
 
@@ -30,55 +30,38 @@ export default function Financing() {
     <section className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16 lg:mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <span className="text-primary text-sm font-medium tracking-wider uppercase">
-              Financing Options
-            </span>
+          <div className="text-center mb-16 lg:mb-20">
+            <span className="text-primary text-sm font-medium tracking-wider uppercase">Financing</span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
-              Make Your Dream Bathroom Affordable
+              Payment Options for Your Bathroom Project
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-              Don&apos;t let budget constraints hold you back. We offer flexible financing 
-              options to help you get the bathroom of your dreams today.
+              Spread the cost of a Chandler bathroom remodel with financing on qualifying work. Terms are explained before you commit.
             </p>
           </div>
 
-          {/* Financing Options Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {financingOptions.map((option, index) => (
+            {financingOptions.map((option) => (
               <div
                 key={option.title}
-                className="bg-card border border-border rounded-xl p-6 flex items-start gap-4 animate-in fade-in slide-in-from-bottom-4"
-                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
+                className="bg-card border border-border rounded-xl p-6 flex items-start gap-4"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
                   <option.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-serif text-lg font-semibold mb-2 text-foreground">
-                    {option.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {option.description}
-                  </p>
+                  <h3 className="font-serif text-lg font-semibold mb-2 text-foreground">{option.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{option.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="text-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
-            <Button
-              asChild
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
-            >
-              <Link href="/financing">Learn About Financing Options</Link>
+          <div className="text-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Link href="/financing/">Learn About Financing</Link>
             </Button>
-            <p className="text-muted-foreground text-sm mt-4">
-              Subject to credit approval. Terms and conditions apply.
-            </p>
+            <p className="text-muted-foreground text-sm mt-4">Subject to credit approval. Terms apply.</p>
           </div>
         </div>
       </div>

@@ -48,6 +48,13 @@ export function getRoutePriority(route: string): number {
   const highPriority = [
     '/bathroom-remodeling',
     '/bathroom-remodeling-chandler-az',
+    '/bathroom-remodeling-ocotillo',
+    '/bathroom-remodeling-fulton-ranch',
+    '/bathroom-remodeling-sun-lakes',
+    '/bathroom-remodeling-downtown-chandler',
+    '/bathroom-remodeling-cooper-commons',
+    '/shower-remodeling',
+    '/tub-to-shower-conversion',
   ];
   
   const midPriority = [

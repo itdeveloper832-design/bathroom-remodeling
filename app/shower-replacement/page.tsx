@@ -39,8 +39,9 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/shower-replacement-hero.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/shower-replacement`,
+    canonical: `${siteConfig.url}/shower-remodeling/`,
   },
+  robots: { index: false, follow: true },
 };
 
 const faqs = serviceContent["shower-replacement"].faqs;

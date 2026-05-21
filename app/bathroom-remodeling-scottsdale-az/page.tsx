@@ -37,6 +37,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-scottsdale-az/`,
   },
+  robots: { index: false, follow: true },
 };
 
 const scottsdaleFaqs = [

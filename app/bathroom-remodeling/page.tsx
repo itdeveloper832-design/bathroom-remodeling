@@ -19,10 +19,10 @@ import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Bathroom Remodeling Chandler: Licensed Pros & Free Estimates",
-  description: "Transform your bathroom with Chandler's top-rated remodelers. ROC Licensed experts for custom showers, master bath renovations, and tub-to-shower swaps. Get a free quote!",
+  description: "Bathroom remodeling in Chandler, AZ by licensed contractors. Custom showers, master baths, tub-to-shower conversions, and tile. ROC338304. Free estimate.",
   openGraph: {
     title: "Bathroom Remodeling Chandler: Licensed Pros & Free Estimates",
-    description: "Expert bathroom remodeling in Chandler, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
+    description: `Expert bathroom remodeling in Chandler, AZ. Licensed ROC338304. Free estimates: ${siteConfig.phone}.`,
     url: `${siteConfig.url}/bathroom-remodeling`,
     type: "website",
     images: [

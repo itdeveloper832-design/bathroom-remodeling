@@ -28,9 +28,9 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       "Vanity Installation",
       "Bathroom Flooring"
     ],
-    url: "https://arzhomeremodeling.com",
-    telephone: "(229) 306-5591",
-    email: "info@arzremodeling.com",
+    url: siteConfig.url,
+    telephone: siteConfig.phone,
+    email: siteConfig.email,
     address: {
       "@type": "PostalAddress",
       streetAddress: "6710 W Chicago St",
@@ -196,8 +196,8 @@ export function ServiceSchema({ serviceName, serviceDescription, serviceUrl }: S
       "@id": "https://arzhomeremodeling.com/#organization",
       "name": "ARZ Home Remodeling",
       "url": "https://arzhomeremodeling.com",
-      "telephone": "(229) 306-5591",
-      "email": "info@arzremodeling.com",
+      "telephone": siteConfig.phone,
+      "email": siteConfig.email,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "6710 W Chicago St",
@@ -250,7 +250,7 @@ export function ArticleSchema({
 }: ArticleSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: title,
     description: description,
     image: image,
@@ -288,6 +288,33 @@ export const BlogArticleJsonLd = ArticleSchema;
 
 interface FAQSchemaProps {
   faqs: { question: string; answer: string }[];
+}
+
+interface SpeakableSchemaProps {
+  url: string;
+  cssSelectors?: string[];
+}
+
+export function SpeakableSchema({
+  url,
+  cssSelectors = ["#main-content h1", "#quick-answers-heading", ".quick-answer-text"],
+}: SpeakableSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: cssSelectors,
+    },
+    url,
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
 }
 
 export function FAQSchema({ faqs }: FAQSchemaProps) {

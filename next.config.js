@@ -10,9 +10,9 @@ const nextConfig = {
   // Trailing slash ensures static export URLs match canonical tags
   trailingSlash: true,
 
-  // Redirects for legacy/duplicate pages
+  // Redirects for legacy/duplicate pages + SEO canonical consolidation
   async redirects() {
-    return [
+    const legacy = [
       {
         source: '/remodeling-gilbert-az/',
         destination: '/bathroom-remodeling-gilbert-az/',
@@ -29,6 +29,18 @@ const nextConfig = {
         permanent: true,
       },
     ];
+    let seo = [];
+    try {
+      const generated = require('./lib/seo-redirects.generated.json');
+      seo = generated.map((r) => ({
+        source: r.source,
+        destination: r.destination,
+        permanent: r.permanent !== false,
+      }));
+    } catch {
+      seo = [];
+    }
+    return [...legacy, ...seo];
   },
 
   // Security & Best Practices

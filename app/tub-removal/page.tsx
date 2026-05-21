@@ -39,8 +39,9 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/tub-removal-hero.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/tub-removal`,
+    canonical: `${siteConfig.url}/tub-to-shower-conversion/`,
   },
+  robots: { index: false, follow: true },
 };
 
 const faqs = serviceContent["tub-removal"].faqs;

@@ -1,79 +1,86 @@
-import { MetadataRoute } from 'next'
-import { siteConfig } from '@/lib/site-config'
-import { getAllAreaSlugs } from '@/lib/bathroom-remodeling-areas'
-import { generateAllLocationSlugs } from '@/lib/chandler-locations'
-import { getAppRoutes, getRoutePriority, getRouteFrequency, getRouteLastMod, isNoIndexRoute } from '@/lib/seo-utils'
+import { MetadataRoute } from "next";
+import { siteConfig } from "@/lib/site-config";
+import { getIndexableChandlerLocationSlugs } from "@/lib/seo-canonical-map";
+import {
+  getAppRoutes,
+  getRoutePriority,
+  getRouteFrequency,
+  getRouteLastMod,
+  isNoIndexRoute,
+} from "@/lib/seo-utils";
 
-export const dynamic = 'force-static'
+export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = siteConfig.url
-  
-  // 1. Discover all file-based routes automatically
-  const discoveredRoutes = getAppRoutes()
-  
+  const baseUrl = siteConfig.url;
+
+  const discoveredRoutes = getAppRoutes();
+
   const fileEntries = discoveredRoutes.map((route) => {
-    // Normalize path and ensure trailing slash
-    const normalizedRoute = route === '/' ? '' : route.endsWith('/') ? route : `${route}/`
-    const url = `${baseUrl}${normalizedRoute}`
-    
+    const normalizedRoute = route === "/" ? "" : route.endsWith("/") ? route : `${route}/`;
+    const url = `${baseUrl}${normalizedRoute}`;
+
     return {
       url,
       lastModified: getRouteLastMod(route),
       changeFrequency: getRouteFrequency(route),
       priority: getRoutePriority(route),
-    }
-  })
+    };
+  });
 
-  // 2. Add Programmatic Area Pages
-  const areaSlugs = getAllAreaSlugs()
-  const dynamicAreaEntries = areaSlugs.map((slug) => {
-    const route = `/bathroom-remodeling-areas/${slug}/`
-    return {
-      url: `${baseUrl}${route}`,
-      lastModified: getRouteLastMod(route),
-      changeFrequency: 'monthly' as const,
-      priority: 0.85,
-    }
-  })
+  // ZIP hub pages only (no duplicate neighborhood/combined programmatic URLs)
+  const indexableLocationSlugs = getIndexableChandlerLocationSlugs();
+  const zipHubEntries = indexableLocationSlugs
+    .filter((slug) => /^\d{5}$/.test(slug))
+    .map((slug) => {
+      const route = `/chandler-az-${slug}/`;
+      return {
+        url: `${baseUrl}${route}`,
+        lastModified: getRouteLastMod(route),
+        changeFrequency: "monthly" as const,
+        priority: 0.75,
+      };
+    });
 
-  // 3. Add Programmatic Location Pages
-  // These are critical for Rank & Rent local SEO discovery
-  const locationSlugs = generateAllLocationSlugs()
-  const dynamicLocationEntries = locationSlugs.map((slug) => {
-    const route = `/chandler-az-${slug}/`
-    return {
-      url: `${baseUrl}${route}`,
-      lastModified: getRouteLastMod(route),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    }
-  })
+  // Programmatic neighborhood pages without a dedicated route
+  const programmaticHoodEntries = indexableLocationSlugs
+    .filter((slug) => !/^\d{5}$/.test(slug))
+    .map((slug) => {
+      const route = `/chandler-az-${slug}/`;
+      return {
+        url: `${baseUrl}${route}`,
+        lastModified: getRouteLastMod(route),
+        changeFrequency: "monthly" as const,
+        priority: 0.72,
+      };
+    });
 
-  // 4. Combine and Filter
-  const allEntries = [
-    ...fileEntries,
-    ...dynamicAreaEntries,
-    ...dynamicLocationEntries,
-  ]
+  const allEntries = [...fileEntries, ...zipHubEntries, ...programmaticHoodEntries];
 
-  const uniqueEntriesMap = new Map()
-  
-  allEntries.forEach(entry => {
-    // 1. Skip dynamic route placeholders like [location]
-    if (entry.url.includes('[') || entry.url.includes(']')) return;
-    
-    // 2. Extract route from URL for checking noindex
-    const route = entry.url.replace(baseUrl, '').replace(/\/$/, '') || '/';
-    
-    // 3. Skip if noindex is detected
+  const uniqueEntriesMap = new Map<string, MetadataRoute.Sitemap[number]>();
+
+  const excludePatterns = [
+    "/bathroom-remodeling-areas/",
+    "/walk-in-showers/",
+    "/shower-replacement/",
+    "/shower-bathtub-upgrade/",
+    "/tub-removal/",
+  ];
+
+  allEntries.forEach((entry) => {
+    if (entry.url.includes("[") || entry.url.includes("]")) return;
+
+    const route = entry.url.replace(baseUrl, "").replace(/\/$/, "") || "/";
+
     if (isNoIndexRoute(route)) return;
 
-    uniqueEntriesMap.set(entry.url, entry)
-  })
+    if (excludePatterns.some((p) => entry.url.includes(p))) return;
 
-  return Array.from(uniqueEntriesMap.values())
+    // Drop combined chandler-az URLs if any slipped through
+    if (/\/chandler-az-.+-\d{5}\/?$/.test(entry.url)) return;
 
+    uniqueEntriesMap.set(entry.url, entry);
+  });
+
+  return Array.from(uniqueEntriesMap.values());
 }
-
-

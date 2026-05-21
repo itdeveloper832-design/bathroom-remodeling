@@ -29,10 +29,10 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Bathroom Remodeling Contractors Chandler AZ | ARZ Home Remodeling`,
+    default: `Bathroom Remodeling in Chandler AZ | ARZ Home Remodeling`,
     template: `%s | ARZ Home Remodeling`
   },
-  description: 'Top-rated bathroom remodel Chandler. Expert bathroom remodeling Chandler AZ services including tub to shower conversion, accessible showers, and tile installation. Free quotes!',
+  description: siteConfig.description,
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Bathroom Remodeling Contractors Chandler AZ | ARZ Home Remodeling`,
-    description: 'Top-rated bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, free estimates!',
+    title: `Bathroom Remodeling in Chandler AZ | ARZ Home Remodeling`,
+    description: siteConfig.description,
     images: [
       {
         url: `${siteConfig.url}/images/hero-bathroom.jpg`,
@@ -65,8 +65,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Bathroom Remodeling Contractors Chandler AZ | ARZ Home Remodeling`,
-    description: 'Top-rated bathroom remodeling contractors Chandler AZ. Affordable bathroom remodel cost, free estimates!',
+    title: `Bathroom Remodeling in Chandler AZ | ARZ Home Remodeling`,
+    description: siteConfig.description,
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   verification: {

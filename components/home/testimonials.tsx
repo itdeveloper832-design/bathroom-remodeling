@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getTestimonials, type TestimonialType } from "@/lib/testimonials-data";
+import { siteConfig } from "@/lib/site-config";
 
 interface TestimonialsProps {
   category?: string;
@@ -24,6 +25,46 @@ export default function Testimonials({ category }: TestimonialsProps) {
 
   return (
     <section className="py-20 lg:py-32 bg-secondary">
+      {/* Testimonials Review Schema */}
+      {testimonials.map((item, idx) => {
+        const reviewSchema = {
+          "@context": "https://schema.org",
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": item.rating.toString(),
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "author": {
+            "@type": "Person",
+            "name": item.name
+          },
+          "reviewBody": item.content,
+          "datePublished": "2025-10-15",
+          "itemReviewed": {
+            "@type": "HomeAndConstructionBusiness",
+            "name": "ARZ Home Remodeling",
+            "telephone": siteConfig.phone,
+            "image": "https://arzhomeremodeling.com/images/new-images-logo.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "6710 W Chicago St",
+              "addressLocality": "Chandler",
+              "addressRegion": "AZ",
+              "postalCode": "85226",
+              "addressCountry": "US"
+            }
+          }
+        };
+        return (
+          <script
+            key={item.id}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+          />
+        );
+      })}
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700">

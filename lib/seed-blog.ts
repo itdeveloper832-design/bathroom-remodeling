@@ -229,3 +229,98 @@ export const kitchenCostPost = post_3; // walk in shower cost
 export const flooringTipsPost = post_4; // hard water tile
 export const remodelingRoiPost = post_6; // tub to shower conversion ideas
 export const hardWaterPost = post_4; // duplicate alias
+
+// Default gallery images for bathroom
+export const defaultGalleryItems = [
+  {
+    title: "Modern Master Bathroom",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=2574&auto=format&fit=crop",
+    description: "Complete master bathroom renovation with walk-in shower and freestanding tub",
+    featured: true,
+  },
+  {
+    title: "Luxury Shower Remodel",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=2369&auto=format&fit=crop",
+    description: "Custom frameless glass shower with rainfall showerhead",
+    featured: true,
+  },
+  {
+    title: "Contemporary Vanity Design",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=2574&auto=format&fit=crop",
+    description: "Double vanity with quartz countertops and modern fixtures",
+    featured: false,
+  },
+  {
+    title: "Spa-Inspired Retreat",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2574&auto=format&fit=crop",
+    description: "Tranquil bathroom with natural stone and warm lighting",
+    featured: false,
+  },
+  {
+    title: "Small Bathroom Transformation",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2574&auto=format&fit=crop",
+    description: "Maximizing space in a compact bathroom with smart design",
+    featured: false,
+  },
+  {
+    title: "Classic White Bathroom",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600573472591-ee6c8e695948?q=80&w=2574&auto=format&fit=crop",
+    description: "Timeless white subway tile with chrome fixtures",
+    featured: false,
+  },
+  {
+    title: "Guest Bathroom Renovation",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600566752447-f4f7687c5e40?q=80&w=2574&auto=format&fit=crop",
+    description: "Elegant guest bathroom with floating vanity",
+    featured: false,
+  },
+  {
+    title: "Accessible Bathroom Design",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2574&auto=format&fit=crop",
+    description: "ADA-compliant bathroom with curbless shower entry",
+    featured: false,
+  },
+  {
+    title: "Spa Shower Upgrade",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2574&auto=format&fit=crop",
+    description: "Custom walk-in shower with glass enclosure and niche storage",
+    featured: false,
+  },
+  {
+    title: "Luxury Bathtub Suite",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=2574&auto=format&fit=crop",
+    description: "Freestanding soaking tub with coordinated fixtures and tile",
+    featured: false,
+  },
+  {
+    title: "Curbless Shower Design",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2574&auto=format&fit=crop",
+    description: "Accessible curbless shower with linear drain and bench",
+    featured: false,
+  },
+  {
+    title: "Vanity & Storage Refresh",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2574&auto=format&fit=crop",
+    description: "Double-sink vanity with ample storage and warm lighting",
+    featured: false,
+  },
+  {
+    title: "Tile Accent Bath",
+    category: "bathroom",
+    imageUrl: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=2574&auto=format&fit=crop",
+    description: "Statement tile feature wall with coordinated flooring",
+    featured: false,
+  },
+];

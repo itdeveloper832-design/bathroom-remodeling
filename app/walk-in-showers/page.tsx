@@ -32,8 +32,9 @@ export const metadata: Metadata = {
     description: "Safe & stylish walk-in showers in Chandler AZ. Starting from $6,000. Free estimates!",
   },
   alternates: {
-    canonical: `${siteConfig.url}/walk-in-showers/`,
+    canonical: `${siteConfig.url}/shower-remodeling/`,
   },
+  robots: { index: false, follow: true },
 };
 
 const faqs = serviceContent["walk-in-showers"].faqs;

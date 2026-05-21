@@ -27,12 +27,13 @@ export function Footer() {
                 Remodeling Contractors
               </span>
             </Link>
-            <p className="text-background/70 text-sm leading-relaxed mb-6">
-              Top-rated bathroom remodeling in Chandler, Arizona.{" "}
-              {/* <!-- Placeholder: Real Arizona Registrar of Contractors license number needed --> */}
-              {siteConfig.license} - <a href="https://roc.az.gov" target="_blank" rel="noopener" className="hover:text-primary transition-colors underline">Licensed by the Arizona Registrar of Contractors</a> •{" "}
-              Expert master bath renovations and shower upgrades since 2010.
-            </p>
+            <div className="text-background/70 text-sm leading-relaxed mb-6 space-y-1">
+              <p className="font-semibold text-background text-base">ARZ Home Remodeling</p>
+              <p>6710 W Chicago St, Chandler, AZ 85226</p>
+              <p>Phone: <a href="tel:2293065591" className="text-background/80 hover:text-primary transition-colors no-underline">(229) 306-5591</a></p>
+              <p>Email: <a href="mailto:info@arzremodeling.com" className="text-background/80 hover:text-primary transition-colors no-underline">info@arzremodeling.com</a></p>
+              <p className="text-xs pt-1 text-background/60">ROC Licensed | License #ROC338304 | Arizona Registrar of Contractors</p>
+            </div>
 
             <div className="flex gap-3" role="list" aria-label="Social media links">
               {siteConfig.social.facebook && (
@@ -219,6 +220,9 @@ export function Footer() {
               </Link>
               <Link href="/terms-of-service/" className="text-background/70 hover:text-background transition-colors text-sm no-underline">
                 Terms of Service
+              </Link>
+              <Link href="/warranty/" className="text-background/70 hover:text-background transition-colors text-sm no-underline">
+                Warranty
               </Link>
               <Link href="/sitemap.xml" className="text-background/70 hover:text-background transition-colors text-sm no-underline">
                 Sitemap

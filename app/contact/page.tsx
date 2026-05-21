@@ -7,38 +7,12 @@ import { siteConfig } from "@/lib/site-config"
 import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
-export const metadata: Metadata = {
-  title: "Get Your Free Bathroom Remodel Estimate in Chandler, AZ",
-  description: "Ready to transform your bathroom? Request your free estimate from Chandler's trusted remodeling contractors. Fast response and expert advice.",
-  openGraph: {
-    title: "Free Bathroom Remodel Estimate | ARZ Home Remodeling",
-    description: "Get a free, no-obligation estimate for your Chandler bathroom remodel. Licensed and insured experts.",
-    url: `${siteConfig.url}/contact/`,
-    type: "website",
-    images: [
-      {
-        url: `${siteConfig.url}/images/hero-bathroom.jpg`,
-        width: 1200,
-        height: 630,
-        alt: "Contact ARZ Home Remodeling",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Free Bathroom Remodel Estimate | ARZ Home Remodeling",
-    description: "Request your free bathroom renovation estimate in Chandler, AZ today.",
-    images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
-  },
-  alternates: {
-    canonical: `${siteConfig.url}/contact/`,
-  },
-}
+
 
 const contactFaqs = [
   {
     question: "How do I get an estimate for my bathroom remodel in Chandler?",
-    answer: "Getting started is easy. You can call us at (229) 306-5591 or fill out our online contact form. We typically respond within 2 business hours and can schedule a free in-home consultation at your convenience."
+    answer: `Call ${siteConfig.phone} or use our contact form. We usually respond within 2 business hours and can schedule a free in-home consultation in Chandler and the East Valley.`
   },
   {
     question: "What is the typical cost for a bathroom renovation in Chandler?",
@@ -95,7 +69,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-serif font-semibold text-foreground mb-2">Phone</h3>
                 <a 
-                  href="tel:2293065591" 
+                  href={`tel:${siteConfig.phoneClean}`} 
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   {siteConfig.phone}
@@ -247,7 +221,7 @@ export default function ContactPage() {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-serif font-semibold text-foreground mb-2">Phone</h3>
-                  <a href="tel:2293065591" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  <a href={`tel:${siteConfig.phoneClean}`} className="text-muted-foreground hover:text-primary transition-colors text-sm">
                     {siteConfig.phone}
                   </a>
                 </div>
@@ -272,6 +246,71 @@ export default function ContactPage() {
                 address={siteConfig.address.full}
               />
             </div>
+          </div>
+        </section>
+
+        {/* Service Area Zip Code List (Task 10C) */}
+        <section className="py-16 bg-secondary border-t border-border">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center mb-10">
+              <span className="text-sm font-medium tracking-widest text-primary uppercase">
+                Our Service Coverage
+              </span>
+              <h2 className="mt-4 text-3xl font-serif font-semibold text-foreground">
+                Bathroom Remodeling Service Areas & ZIP Codes
+              </h2>
+              <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
+                We provide professional, high-end bathroom design and remodeling services across Chandler and the surrounding East Valley neighborhoods.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-card border border-border rounded-2xl p-8 shadow-sm">
+              <div>
+                <h3 className="font-serif font-bold text-foreground text-lg mb-3 pb-2 border-b border-border text-primary">Chandler</h3>
+                <ul className="text-muted-foreground text-sm space-y-1.5">
+                  <li><strong>ZIP Codes:</strong> 85224, 85225, 85226, 85248, 85249</li>
+                  <li><strong>Neighborhoods:</strong> Ocotillo, Fulton Ranch, Dobson Ranch, Layton Lakes, Andersen Springs, Cooper Commons, Fox Crossing, Gila Springs</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="font-serif font-bold text-foreground text-lg mb-3 pb-2 border-b border-border text-primary">Gilbert</h3>
+                <ul className="text-muted-foreground text-sm space-y-1.5">
+                  <li><strong>ZIP Codes:</strong> 85233, 85234, 85295, 85296</li>
+                  <li><strong>Neighborhoods:</strong> Morrison Ranch, Power Ranch, Val Vista Lakes, Double Farms</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="font-serif font-bold text-foreground text-lg mb-3 pb-2 border-b border-border text-primary">Mesa & Tempe</h3>
+                <ul className="text-muted-foreground text-sm space-y-1.5">
+                  <li><strong>Mesa ZIPs:</strong> 85201, 85202, 85203, 85204, 85205, 85206, 85207, 85208, 85209, 85210, 85211, 85212, 85213</li>
+                  <li><strong>Tempe ZIPs:</strong> 85281, 85282, 85283, 85284</li>
+                </ul>
+              </div>
+
+              <div className="md:col-span-2 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-border">
+                <div>
+                  <h3 className="font-serif font-bold text-foreground text-lg mb-3 pb-2 border-b border-border text-primary">Sun Lakes & Ahwatukee</h3>
+                  <ul className="text-muted-foreground text-sm space-y-1.5">
+                    <li><strong>Sun Lakes:</strong> 85248 (Sun Lakes Country Club, Ironwood, Oakwood, Cottonwood)</li>
+                    <li><strong>Ahwatukee:</strong> Ahwatukee Foothills, Mountain Pointe</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-serif font-bold text-foreground text-lg mb-3 pb-2 border-b border-border text-primary">Queen Creek</h3>
+                  <ul className="text-muted-foreground text-sm space-y-1.5">
+                    <li><strong>ZIP Codes:</strong> 85140, 85142</li>
+                    <li><strong>Neighborhoods:</strong> Queen Creek Station, Sossaman Estates</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <p className="mt-8 text-center text-sm text-muted-foreground">
+              Don&apos;t see your neighborhood listed? Call <a href={`tel:${siteConfig.phoneClean}`} className="text-primary hover:underline font-semibold">{siteConfig.phone}</a> to see if we can handle your bathroom project.
+            </p>
           </div>
         </section>
       </main>

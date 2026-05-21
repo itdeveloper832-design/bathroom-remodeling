@@ -60,6 +60,7 @@ let inMemoryCategories: Category[] = [
   { id: "cat-3", name: "Costs & Budget", slug: "costs-budget", description: "Detailed pricing guides for Chandler bathroom remodels." },
   { id: "cat-4", name: "Materials", slug: "materials", description: "Expert advice on tile, fixtures, and surfaces." },
   { id: "cat-5", name: "Home Value", slug: "home-value", description: "ROI analysis and equity-building tips." },
+  { id: "cat-6", name: "Technical", slug: "technical", description: "Waterproofing systems, permits, and construction methods for bathroom projects." },
 ];
 
 export async function getPosts(): Promise<BlogPost[]> {

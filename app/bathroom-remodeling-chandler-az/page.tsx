@@ -24,9 +24,9 @@ import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
 export const metadata: Metadata = {
-  title: "Chandler Bathroom Remodeling Contractor | Free Estimates",
+  title: "Bathroom Remodeling Chandler AZ | Licensed Contractor | ARZ",
   description:
-    "Hire the best bathroom remodeling contractor in Chandler, AZ. We specialize in high quality walk in showers, tub to shower conversions, and master bath renovations. Licensed company, free estimates: call (229) 306-5591 today!",
+    `Bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions, master baths, and tile. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
     description:
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/`,
+    canonical: `${siteConfig.url}/bathroom-remodeling-chandler-az/`,
   },
 };
 

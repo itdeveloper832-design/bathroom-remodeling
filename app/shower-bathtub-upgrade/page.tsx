@@ -38,8 +38,9 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/shower-bathtub-upgrade-hero.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/shower-bathtub-upgrade`,
+    canonical: `${siteConfig.url}/shower-remodeling/`,
   },
+  robots: { index: false, follow: true },
 };
 
 const faqs = [

@@ -1,100 +1,26 @@
-# ARZ Home Remodeling — Apache .htaccess for Next.js Static Export on cPanel
-# ============================================================================
-# CRITICAL: This file must be present in the document root for routing to work.
-# Next.js static export creates folder/index.html files for every page.
-# Without these rewrite rules, Apache returns 404 for all non-root URLs.
-# ============================================================================
-
-# Set default document
-DirectoryIndex index.html
-
-# ============================================================================
-# 1. URL ROUTING — Most Important Section
-# ============================================================================
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-
-  # Force HTTPS
-  RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-  # Remove www
-  RewriteCond %{HTTP_HOST} ^www\.arzhomeremodeling\.com [NC]
-  RewriteRule ^(.*)$ https://arzhomeremodeling.com/$1 [L,R=301]
-
-  # --- Next.js Static Export Routing ---
-  # For a request like /shower-remodeling/ Apache must serve
-  # the file at shower-remodeling/index.html on disk.
-  # These rules handle both trailing-slash and non-trailing-slash variants.
-
-  # If the request is for an existing file (JS, CSS, images etc.) — serve it directly
-  RewriteCond %{REQUEST_FILENAME} -f
-  RewriteRule ^ - [L]
-
-  # If the request path IS a real directory AND it contains index.html — serve it
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteCond %{REQUEST_FILENAME}/index.html -f
-  RewriteRule ^(.*[^/])/?$ /$1/index.html [L]
-
-  # If the path without trailing slash has a matching folder with index.html, serve it
-  RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
-  RewriteRule ^([^.]+?)/?$ /$1/index.html [L]
-
-  # Fallback: anything not matched above falls to the root index.html (SPA fallback)
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^ /index.html [L]
-</IfModule>
-
-# ============================================================================
-# 2. COMPRESSION (mod_deflate)
-# ============================================================================
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json application/xml
-</IfModule>
-
-# ============================================================================
-# 3. BROWSER CACHING (mod_expires)
-# ============================================================================
-<IfModule mod_expires.c>
-  ExpiresActive On
-
-  # Images: 1 Year
-  ExpiresByType image/jpg "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType image/x-icon "access plus 1 year"
-
-  # Fonts: 1 Year
-  ExpiresByType font/ttf "access plus 1 year"
-  ExpiresByType font/otf "access plus 1 year"
-  ExpiresByType font/woff "access plus 1 year"
-  ExpiresByType font/woff2 "access plus 1 year"
-  ExpiresByType application/font-woff "access plus 1 year"
-
-  # CSS & JS: 1 Month
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType text/javascript "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-  ExpiresByType application/x-javascript "access plus 1 month"
-
-  # HTML: No cache (always fresh)
-  ExpiresByType text/html "access plus 0 seconds"
-</IfModule>
-
-# ============================================================================
-# 4. SECURITY HEADERS
-# ============================================================================
-<IfModule mod_headers.c>
-  Header set X-XSS-Protection "1; mode=block"
-  Header set X-Frame-Options "SAMEORIGIN"
-  Header set X-Content-Type-Options "nosniff"
-  Header set Referrer-Policy "strict-origin-when-cross-origin"
-</IfModule>
-
-# Disable directory listing
-Options -Indexes
+# ARZ SEO redirects — run: node scripts/generate-redirects.mjs
+Redirect permanent /bathroom-remodeling-areas/ocotillo/ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
+Redirect permanent /bathroom-remodeling-areas/sun-lakes/ https://arzhomeremodeling.com/bathroom-remodeling-sun-lakes/
+Redirect permanent /bathroom-remodeling-areas/downtown-chandler/ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
+Redirect permanent /bathroom-remodeling-areas/fulton-ranch/ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
+Redirect permanent /bathroom-remodeling-areas/cooper-commons/ https://arzhomeremodeling.com/bathroom-remodeling-cooper-commons/
+Redirect permanent /bathroom-remodeling-areas/fox-crossing/ https://arzhomeremodeling.com/bathroom-remodeling-cooper-commons/
+Redirect permanent /chandler-az-ocotillo/ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
+Redirect permanent /chandler-az-ocotillo-85248/ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
+Redirect permanent /chandler-az-fulton-ranch/ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
+Redirect permanent /chandler-az-fulton-ranch-85248/ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
+Redirect permanent /chandler-az-arden-park-85248/ https://arzhomeremodeling.com/chandler-az-arden-park/
+Redirect permanent /chandler-az-circle-g-85249/ https://arzhomeremodeling.com/chandler-az-circle-g/
+Redirect permanent /chandler-az-riggs-ranch-85249/ https://arzhomeremodeling.com/chandler-az-riggs-ranch/
+Redirect permanent /chandler-az-sun-groves-85249/ https://arzhomeremodeling.com/chandler-az-sun-groves/
+Redirect permanent /chandler-az-warner-ranch-85224/ https://arzhomeremodeling.com/chandler-az-warner-ranch/
+Redirect permanent /chandler-az-dobson-place-85224/ https://arzhomeremodeling.com/chandler-az-dobson-place/
+Redirect permanent /chandler-az-downtown-chandler/ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
+Redirect permanent /chandler-az-downtown-chandler-85225/ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
+Redirect permanent /chandler-az-clemente-ranch-85225/ https://arzhomeremodeling.com/chandler-az-clemente-ranch/
+Redirect permanent /chandler-az-kyrene-corridor-85226/ https://arzhomeremodeling.com/chandler-az-kyrene-corridor/
+Redirect permanent /chandler-az-stellar-airpark-85226/ https://arzhomeremodeling.com/chandler-az-stellar-airpark/
+Redirect permanent /walk-in-showers/ https://arzhomeremodeling.com/shower-remodeling/
+Redirect permanent /shower-replacement/ https://arzhomeremodeling.com/shower-remodeling/
+Redirect permanent /shower-bathtub-upgrade/ https://arzhomeremodeling.com/shower-remodeling/
+Redirect permanent /tub-removal/ https://arzhomeremodeling.com/tub-to-shower-conversion/

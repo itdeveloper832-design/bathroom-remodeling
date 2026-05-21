@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-phoenix-az/`,
   },
+  robots: { index: false, follow: true },
 };
 
 const phoenixFaqs = [

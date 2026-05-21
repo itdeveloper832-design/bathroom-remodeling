@@ -15,10 +15,10 @@ import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
-  description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities and full renovation. Licensed Chandler contractor.",
+  description: "Master bathroom remodel in Chandler, AZ. Custom tile showers, frameless glass, double vanities, quartz tops. Licensed ROC338304. Free estimate.",
   openGraph: {
     title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
-    description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities and full renovation. Licensed Chandler contractor.",
+    description: "Master bathroom remodel in Chandler, AZ. Custom tile showers, frameless glass, double vanities, quartz tops. Licensed ROC338304. Free estimate.",
     url: `${siteConfig.url}/master-bathroom-remodel/`,
     type: "website",
   },

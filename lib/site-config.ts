@@ -1,8 +1,10 @@
 export const siteConfig = {
   name: "ARZ Home Remodeling",
   owner: "Alex Rivers",
-  tagline: "Premium Bathroom Remodeling Services",
-  description: "Top-rated bathroom remodeling services in Chandler, Arizona. Expert bathroom remodeling contractors specializing in luxury master baths, showers, and tub conversions.",
+  tagline: "Licensed Bathroom Remodeling in Chandler, AZ",
+  description: "Licensed bathroom remodeling in Chandler, Arizona. Walk-in showers, tub-to-shower conversions, tile, vanities, and master bath remodels. ROC338304. Free estimates.",
+  foundedYear: 2010,
+  warranty: "2-year workmanship warranty on qualifying projects",
   url: "https://arzhomeremodeling.com",
   phone: "(229) 306-5591",
   phoneClean: "2293065591",

@@ -119,7 +119,7 @@ export const bathroomServices: BathroomService[] = [
   {
     name: "Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
-    description: "Transform your master bath into a luxury retreat with premium features and custom designs.",
+    description: "Full master bath remodels with custom tile showers, double vanities, quartz tops, and layout updates.",
     icon: Sparkles,
   },
 ];

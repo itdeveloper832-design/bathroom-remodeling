@@ -5,8 +5,9 @@ import { Footer } from "@/components/layout/footer";
 import {
   findLocationBySlug,
   getRelatedLocations,
-  generateAllLocationSlugs,
 } from "@/lib/chandler-locations";
+import { getZipHubFaqs } from "@/lib/chandler-zip-faqs";
+import { getCanonicalNeighborhoodLink } from "@/lib/seo-canonical-map";
 import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
 import { ChevronRight, MapPin, Clock, Phone, ShieldCheck, DollarSign, Droplets, ArrowRight } from "lucide-react";
@@ -28,17 +29,17 @@ export async function generateLocationMetadata({
         ? location.neighborhood.name
         : "Chandler, AZ";
 
-  const title = `Bathroom Remodeling in ${displayName} | Local Contractors`;
-  const description = `Expert bathroom remodeling Chandler AZ serving ${displayName}. Licensed local contractors delivering custom showers, tubs, and full renovations. Get a free quote!`;
+  const isZip = /^\d{5}$/.test(locationSlug);
+  const title = isZip
+    ? `Bathroom Remodeling ZIP ${location.zipData.zip} Chandler AZ | ARZ`
+    : `Bathroom Remodeling ${displayName} Chandler AZ | ARZ`;
+  const description = isZip
+    ? `Bathroom contractor for ZIP ${location.zipData.zip} in Chandler: ${location.zipData.neighborhoods.map((n) => n.name).join(", ")}. Walk-in showers, tub conversions, tile. ROC338304.`
+    : `Licensed bathroom remodeling in ${displayName}, Chandler AZ. Custom tile showers, tub-to-shower, vanities. Free estimate: ${siteConfig.phone}.`;
 
   return {
     title,
     description,
-    robots: {
-      index: true,
-      follow: true,
-      nocache: true,
-    },
     alternates: {
       canonical: `${siteConfig.url}/chandler-az-${locationSlug}/`,
     },
@@ -92,12 +93,14 @@ export async function LocationPageContent({
     neighborhood?.slug
   );
 
-  const localFaqs = getDynamicLocationFaqs(
-    displayName,
-    isZipPage,
-    zipData.zip,
-    neighborhood?.name || ""
-  );
+  const localFaqs = isZipPage
+    ? getZipHubFaqs(zipData)
+    : getDynamicLocationFaqs(
+        displayName,
+        isZipPage,
+        zipData.zip,
+        neighborhood?.name || ""
+      );
 
   return (
     <>
@@ -145,11 +148,11 @@ export async function LocationPageContent({
                   Get Free Estimate
                 </Link>
                 <a
-                  href="tel:2293065591"
+                  href={`tel:${siteConfig.phoneClean}`}
                   className="border border-primary text-primary px-8 py-3.5 rounded-lg hover:bg-primary/5 transition font-medium flex items-center justify-center gap-2"
                 >
                   <Phone className="w-5 h-5" />
-                  Call Now
+                  Call {siteConfig.phone}
                 </a>
               </div>
             </div>
@@ -235,8 +238,8 @@ export async function LocationPageContent({
                         </span>
                       ))}
                     </div>
-                    <Link href={`/chandler-az-${n.slug}/`} className="text-primary text-sm font-semibold hover:underline flex items-center gap-1.5">
-                      View {n.name} Remodeling Details <ArrowRight className="w-4 h-4" />
+                    <Link href={getCanonicalNeighborhoodLink(n.slug)} className="text-primary text-sm font-semibold hover:underline flex items-center gap-1.5">
+                      View {n.name} bathroom remodeling <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
                 ))}
@@ -343,7 +346,7 @@ export async function LocationPageContent({
                   {relatedLocations.sameZipNeighborhoods.map((n) => (
                     <Link
                       key={n.slug}
-                      href={`/chandler-az-${n.slug}/`}
+                      href={getCanonicalNeighborhoodLink(n.slug)}
                       className="p-4 border border-border bg-background rounded-lg hover:border-primary/50 transition"
                     >
                       <h4 className="font-semibold mb-2 text-foreground">{n.name}</h4>
@@ -385,7 +388,7 @@ export async function LocationPageContent({
         <section className="py-16 md:py-24 bg-primary text-white">
           <div className="container mx-auto px-4 text-center max-w-2xl">
             <h2 className="text-4xl font-serif font-semibold mb-6">
-              Ready to transform your {displayName} bathroom?
+              Ready to remodel your {displayName} bathroom?
             </h2>
             <p className="text-lg mb-8 opacity-90">
               Contact our local remodeling contractors for a free consultation and detailed estimate.
@@ -395,10 +398,10 @@ export async function LocationPageContent({
                 Schedule Consultation
               </Link>
               <a
-                href="tel:2293065591"
+                href={`tel:${siteConfig.phoneClean}`}
                 className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition font-semibold"
               >
-                (229) 306-5591
+                {siteConfig.phone}
               </a>
             </div>
           </div>

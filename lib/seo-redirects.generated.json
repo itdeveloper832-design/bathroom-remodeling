@@ -1,0 +1,127 @@
+[
+  {
+    "source": "/bathroom-remodeling-areas/ocotillo/",
+    "destination": "/bathroom-remodeling-ocotillo/",
+    "permanent": true
+  },
+  {
+    "source": "/bathroom-remodeling-areas/sun-lakes/",
+    "destination": "/bathroom-remodeling-sun-lakes/",
+    "permanent": true
+  },
+  {
+    "source": "/bathroom-remodeling-areas/downtown-chandler/",
+    "destination": "/bathroom-remodeling-downtown-chandler/",
+    "permanent": true
+  },
+  {
+    "source": "/bathroom-remodeling-areas/fulton-ranch/",
+    "destination": "/bathroom-remodeling-fulton-ranch/",
+    "permanent": true
+  },
+  {
+    "source": "/bathroom-remodeling-areas/cooper-commons/",
+    "destination": "/bathroom-remodeling-cooper-commons/",
+    "permanent": true
+  },
+  {
+    "source": "/bathroom-remodeling-areas/fox-crossing/",
+    "destination": "/bathroom-remodeling-cooper-commons/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-ocotillo/",
+    "destination": "/bathroom-remodeling-ocotillo/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-ocotillo-85248/",
+    "destination": "/bathroom-remodeling-ocotillo/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-fulton-ranch/",
+    "destination": "/bathroom-remodeling-fulton-ranch/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-fulton-ranch-85248/",
+    "destination": "/bathroom-remodeling-fulton-ranch/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-arden-park-85248/",
+    "destination": "/chandler-az-arden-park/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-circle-g-85249/",
+    "destination": "/chandler-az-circle-g/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-riggs-ranch-85249/",
+    "destination": "/chandler-az-riggs-ranch/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-sun-groves-85249/",
+    "destination": "/chandler-az-sun-groves/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-warner-ranch-85224/",
+    "destination": "/chandler-az-warner-ranch/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-dobson-place-85224/",
+    "destination": "/chandler-az-dobson-place/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-downtown-chandler/",
+    "destination": "/bathroom-remodeling-downtown-chandler/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-downtown-chandler-85225/",
+    "destination": "/bathroom-remodeling-downtown-chandler/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-clemente-ranch-85225/",
+    "destination": "/chandler-az-clemente-ranch/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-kyrene-corridor-85226/",
+    "destination": "/chandler-az-kyrene-corridor/",
+    "permanent": true
+  },
+  {
+    "source": "/chandler-az-stellar-airpark-85226/",
+    "destination": "/chandler-az-stellar-airpark/",
+    "permanent": true
+  },
+  {
+    "source": "/walk-in-showers/",
+    "destination": "/shower-remodeling/",
+    "permanent": true
+  },
+  {
+    "source": "/shower-replacement/",
+    "destination": "/shower-remodeling/",
+    "permanent": true
+  },
+  {
+    "source": "/shower-bathtub-upgrade/",
+    "destination": "/shower-remodeling/",
+    "permanent": true
+  },
+  {
+    "source": "/tub-removal/",
+    "destination": "/tub-to-shower-conversion/",
+    "permanent": true
+  }
+]

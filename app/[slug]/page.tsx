@@ -1,12 +1,10 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { generateAllLocationSlugs } from "@/lib/chandler-locations";
-
 import { generateLocationMetadata, LocationPageContent } from "./location-page";
+import { getChandlerLocationRedirect } from "@/lib/seo-canonical-map";
+import PermanentRedirectPage from "@/components/seo/permanent-redirect-page";
 
-// Only generate static params for location slugs.
-// Service pages have their own dedicated directories (e.g. app/shower-remodeling/)
-// and must NOT be duplicated here - that causes route conflicts and 404s.
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
@@ -26,6 +24,16 @@ export async function generateMetadata({
 
   if (slug.startsWith("chandler-az-")) {
     const locationSlug = slug.replace("chandler-az-", "");
+    const redirectTo = getChandlerLocationRedirect(locationSlug);
+
+    if (redirectTo) {
+      return {
+        title: "Redirecting",
+        alternates: { canonical: redirectTo },
+        robots: { index: false, follow: true },
+      };
+    }
+
     return generateLocationMetadata({ locationSlug });
   }
 
@@ -41,10 +49,14 @@ export default async function Page({
 
   if (slug.startsWith("chandler-az-")) {
     const locationSlug = slug.replace("chandler-az-", "");
+    const redirectTo = getChandlerLocationRedirect(locationSlug);
+
+    if (redirectTo) {
+      return <PermanentRedirectPage destination={redirectTo} />;
+    }
+
     return <LocationPageContent locationSlug={locationSlug} />;
   }
 
-  // Any slug not matching a location pattern is not found.
-  // All service pages are handled by their own dedicated routes.
   notFound();
 }

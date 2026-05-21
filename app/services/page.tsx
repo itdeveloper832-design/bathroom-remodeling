@@ -40,9 +40,8 @@ export default function ServicesPage() {
                 Professional Bathroom Remodeling Services
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Transform your home with our comprehensive bathroom remodeling services in Chandler, AZ. 
-                Our licensed contractors handle everything from custom shower installations and tub-to-shower conversions 
-                to complete master bath overhauls. Enjoy affordable, high-quality renovations designed for your style.
+                Licensed bathroom remodeling in Chandler, AZ: walk-in showers, tub-to-shower conversions, tile, vanities, and full bath updates. 
+                ROC338304. Written estimates and clear timelines on every project.
               </p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 <Link href="/contact/">Get Free Estimate</Link>

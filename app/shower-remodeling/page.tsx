@@ -20,8 +20,8 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ | Walk-In & Frameless Glass Showers | ARZ",
-  description: "Custom walk-in showers, frameless glass & curbless designs in Chandler. Licensed crew, Schluter waterproofing, 2-year warranty. Free quote - (480) 306-5591.",
+  title: "Shower Remodeling Chandler AZ | Walk-In Shower Company & Services | ARZ",
+  description: "Shower remodeling and shower renovation near you in Chandler, AZ. Walk-in shower installation services, frameless glass, curbless designs. Licensed crew, Schluter waterproofing, 2-year warranty. Free quote.",
   openGraph: {
     title: "Shower Remodeling Chandler AZ | Walk-In & Frameless Glass Showers | ARZ",
     description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Licensed crew. Free quotes!",

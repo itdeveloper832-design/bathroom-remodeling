@@ -71,7 +71,7 @@ const gilbertFaqs = [
   {
     question: "Do you serve neighborhoods outside central Gilbert?",
     answer:
-      "We serve all of Gilbert including Morrison Ranch, Power Ranch, Val Vista Lakes, Agritopia, Seville, Lyons Gate, and more, plus surrounding East Valley cities like Chandler, Mesa, and Tempe."
+      "We serve all of Gilbert including Morrison Ranch, Power Ranch, Val Vista Lakes, Agritopia, Seville, Lyons Gate, and more, plus surrounding East Valley cities like Chandler, Mesa, and Tempe. Our bathroom remodeling contractors provide expert shower remodeling services and accessible shower installation throughout Gilbert with professional bathroom remodeling company expertise."
   },
 ];
 
@@ -240,6 +240,7 @@ export default function GilbertPage() {
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 text-foreground text-balance">
                 Our Gilbert Bathroom Remodeling Services
               </h2>
+              <p className="text-muted-foreground text-lg mt-4">Professional bathroom remodeling services in Gilbert including shower remodeling, tile installation, and accessible shower remodeling for families throughout the community.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {services.map((svc) => (

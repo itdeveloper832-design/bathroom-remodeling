@@ -18,8 +18,8 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Bathroom Tile Installation Chandler AZ | Custom Flooring",
-  description: "Premium bathroom tile installation in Chandler AZ. Custom ceramic, porcelain, & marble flooring and shower walls. Get a free quote!",
+  title: "Tile Installation Chandler AZ | Shower Tile & Bathroom Flooring | Contractors",
+  description: "Professional tile installation and tile shower installation in Chandler, AZ. Ceramic, porcelain, marble flooring, shower tile, backsplash. Licensed tile installers near you. Free quote.",
   openGraph: {
     title: "Bathroom Tile Installation in Chandler AZ",
     description: "Professional tile setting in Chandler with shower walls, floor tiles, and backsplash work.",

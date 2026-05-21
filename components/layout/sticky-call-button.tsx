@@ -1,40 +1,13 @@
-"use client";
-
 import { Phone } from "lucide-react";
-import { siteConfig } from "@/lib/site-config";
-import { useEffect, useState } from "react";
 
 export function StickyCallButton() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          setIsVisible(window.scrollY > 300);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <div
-      className={`fixed bottom-6 right-6 z-50 transition-all duration-300 transform md:hidden ${
-        isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0 pointer-events-none"
-      }`}
+    <a
+      href="tel:2293065591"
+      className="fixed bottom-6 right-6 z-50 flex md:hidden items-center justify-center w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-lg hover:bg-primary/90 active:scale-95 transition-colors"
+      aria-label="Call Now"
     >
-      <a
-        href="tel:2293065591"
-        className="flex items-center justify-center w-14 h-14 bg-primary text-primary-foreground rounded-full shadow-lg hover:bg-primary/90 active:scale-95 transition-all animate-pulse"
-        aria-label="Call Now"
-      >
-        <Phone className="w-6 h-6 fill-current" />
-      </a>
-    </div>
+      <Phone className="w-6 h-6 fill-current" aria-hidden="true" />
+    </a>
   );
 }

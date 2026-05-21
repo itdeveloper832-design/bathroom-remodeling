@@ -6,18 +6,18 @@ import { siteConfig } from "@/lib/site-config";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-40 md:pt-48 lg:pt-56" aria-label="Hero section">
-      <div className="absolute inset-0 z-0">
+    <section className="relative min-h-[55vh] flex items-center overflow-hidden pt-28 md:pt-36 lg:pt-44" aria-label="Hero section">
+      <div className="absolute inset-0 z-0 bg-foreground/40">
         <Image
-          src="/images/optimized/photo-1620626011761-996317b8d101.webp"
+          src="/images/optimized/photo-1620626011761-996317b8d101.avif"
           alt="Custom walk-in shower and tile bathroom remodel in Chandler AZ by ARZ Home Remodeling"
           fill
           className="object-cover"
-          priority={true}
+          priority
           sizes="100vw"
-          quality={90}
+          quality={75}
           fetchPriority="high"
-          decoding="sync"
+          decoding="async"
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" aria-hidden="true" />

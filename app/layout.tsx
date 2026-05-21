@@ -3,27 +3,16 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/site-config'
 import './globals.css'
 
-import { Inter, Outfit } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { StickyCallButton } from '@/components/layout/sticky-call-button'
 
-// Load only 2 specific weights instead of the full variable font range
-// → eliminates ~60-80KB of font data the browser would otherwise parse
 const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '600'],
   display: 'swap',
   variable: '--font-inter',
   preload: true,
-  adjustFontFallback: true, // Prevents layout shift
-})
-
-const outfit = Outfit({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  display: 'swap',
-  variable: '--font-outfit',
-  preload: true,
-  adjustFontFallback: true, // Prevents layout shift
+  adjustFontFallback: true,
 })
 
 export const metadata: Metadata = {
@@ -97,71 +86,21 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${inter.variable} ${outfit.variable}`}>
+    <html lang="en" className={`scroll-smooth ${inter.variable}`}>
       <head>
-        {/* Preconnect to critical origins */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-
-        {/* Preload critical LCP image */}
-        <link 
-          rel="preload" 
-          as="image" 
-          href="/images/optimized/photo-1620626011761-996317b8d101.webp" 
-          type="image/webp" 
+        <link
+          rel="preload"
+          as="image"
+          href="/images/optimized/photo-1620626011761-996317b8d101.avif"
+          type="image/avif"
           fetchPriority="high"
         />
 
-        {/* Additional SEO meta tags */}
         <meta name="geo.region" content="US-AZ" />
         <meta name="geo.placename" content="Chandler" />
         <meta name="geo.position" content={`${siteConfig.address.coordinates.lat};${siteConfig.address.coordinates.lng}`} />
         <meta name="ICBM" content={`${siteConfig.address.coordinates.lat}, ${siteConfig.address.coordinates.lng}`} />
-        
-        {/* Security & Performance Headers (Simulated via Meta) */}
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-
-        {/* Business Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "HomeAndConstructionBusiness",
-              "name": "ARZ Home Remodeling",
-              "url": "https://arzhomeremodeling.com",
-              "telephone": "(229) 306-5591",
-              "email": "info@arzremodeling.com",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "6710 W Chicago St",
-                "addressLocality": "Chandler",
-                "addressRegion": "AZ",
-                "postalCode": "85226",
-                "addressCountry": "US"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 33.3009334,
-                "longitude": -111.9605964
-              },
-              "areaServed": ["Chandler AZ","Gilbert AZ","Mesa AZ","Tempe AZ","Queen Creek AZ","Sun Lakes AZ","Ocotillo AZ","Ahwatukee AZ"],
-              "priceRange": "$$-$$$",
-              "openingHoursSpecification": [
-                {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
-                {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"16:00"}
-              ],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "reviewCount": "50",
-                "bestRating": "5"
-              }
-            })
-          }}
-        />
       </head>
       <body className="font-sans antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
         {children}
@@ -170,9 +109,9 @@ export default function RootLayout({
         {/* Google Analytics GA4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Y9CGXJLLVJ"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

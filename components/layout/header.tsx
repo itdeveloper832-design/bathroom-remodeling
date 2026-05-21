@@ -1,136 +1,103 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
-import { Button } from "@/components/ui/button";
 import { InfoHeader } from "@/components/layout/info-header";
 
+const navLinkClass =
+  "text-base font-semibold text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1";
+
+const ctaClass =
+  "inline-flex items-center justify-center rounded-full bg-foreground hover:bg-foreground/90 text-background px-6 py-2 text-base font-semibold transition-colors";
+
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          setIsScrolled(window.scrollY > 20);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
-      <a href="#main-content" className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:top-4 focus-visible:left-4 focus-visible:z-[100] bg-primary text-primary-foreground px-4 py-2 rounded-lg">
+      <a
+        href="#main-content"
+        className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:top-4 focus-visible:left-4 focus-visible:z-[100] bg-primary text-primary-foreground px-4 py-2 rounded-lg"
+      >
         Skip to content
       </a>
       <InfoHeader />
       <header
-        className={`fixed left-0 right-0 z-40 transition-all duration-300 bg-background shadow-md lg:bg-background/95 lg:backdrop-blur-md ${isScrolled ? "top-0 py-1 lg:py-1.5" : "top-[40px] py-1.5 lg:py-2"}`}
+        className="fixed top-[40px] left-0 right-0 z-40 bg-background shadow-md py-1.5 lg:py-2 lg:bg-background/95 lg:backdrop-blur-md"
         role="banner"
       >
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Logo - Accessible - Responsive */}
-            <Link href="/" className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg" aria-label="ARZ Home Remodeling - Home">
-              <div className={`relative transition-all duration-300 ${
-                isScrolled 
-                  ? "h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14" 
-                  : "h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16"
-              }`}>
+            <Link
+              href="/"
+              className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 rounded-lg"
+              aria-label="ARZ Home Remodeling - Home"
+            >
+              <div className="relative h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16">
                 <Image
                   src="/images/web-logo-image.png"
                   alt="ARZ Home Remodeling - Bathroom Remodeling Chandler AZ"
                   fill
-                  priority
-                  fetchPriority="high"
+                  sizes="(max-width: 1024px) 56px, 64px"
                   className="object-contain object-left"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </Link>
 
-            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
               {siteConfig.navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-base font-semibold text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1"
-                >
+                <Link key={item.name} href={item.href} className={navLinkClass}>
                   {item.name}
                 </Link>
               ))}
             </nav>
 
-            {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <Button asChild className="bg-foreground hover:bg-foreground/90 text-background rounded-full px-6 py-2 text-base font-semibold">
-                <Link href="/contact/">Free Estimate</Link>
-              </Button>
+              <Link href="/contact/" className={ctaClass}>
+                Free Estimate
+              </Link>
             </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden p-2 focus:outline-none focus:ring-2 focus:ring-primary rounded-lg transition-colors"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMobileMenuOpen}
-              aria-controls="mobile-menu"
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" aria-hidden="true" />
-              ) : (
-                <Menu className="w-6 h-6" aria-hidden="true" />
-              )}
-            </button>
+            <details className="lg:hidden group relative">
+              <summary className="list-none cursor-pointer p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg [&::-webkit-details-marker]:hidden">
+                <span className="sr-only">Open menu</span>
+                <Menu className="w-6 h-6 group-open:hidden" aria-hidden="true" />
+                <X className="w-6 h-6 hidden group-open:block" aria-hidden="true" />
+              </summary>
+              <nav
+                className="absolute right-0 top-full mt-2 w-[min(100vw-2rem,20rem)] rounded-xl border border-border bg-background shadow-lg py-4 px-4"
+                aria-label="Mobile navigation"
+              >
+                <div className="flex flex-col gap-2">
+                  {siteConfig.navigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="text-lg font-medium py-2 border-b border-border text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 block rounded px-2 hover:text-primary transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                  <a
+                    href="tel:2293065591"
+                    className="flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors py-2"
+                    aria-label={`Call us at ${siteConfig.phone}`}
+                  >
+                    <Phone className="w-5 h-5 text-primary" aria-hidden="true" />
+                    {siteConfig.phone}
+                  </a>
+                  <Link
+                    href="/contact/"
+                    className="mt-2 inline-flex w-full items-center justify-center rounded-md bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-6 transition-colors"
+                  >
+                    Get Free Estimate
+                  </Link>
+                </div>
+              </nav>
+            </details>
           </div>
         </div>
-
-        {/* Mobile Menu */}
-        <nav
-          id="mobile-menu"
-          className={`lg:hidden bg-background border-t border-border overflow-hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
-          aria-label="Mobile navigation"
-        >
-          <div className="container mx-auto px-4 py-6">
-            <div className="flex flex-col gap-4">
-              {siteConfig.navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium py-2 border-b border-border text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 block rounded px-2 hover:text-primary transition-colors"
-                >
-                  {item.name}
-                </Link>
-              ))}
-
-              <div className="mt-6 space-y-4">
-                <a
-                  href="tel:2293065591"
-                  className="flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors"
-                  aria-label={`Call us at ${siteConfig.phone}`}
-                >
-                  <Phone className="w-5 h-5 text-primary" aria-hidden="true" />
-                  {siteConfig.phone}
-                </a>
-                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6">
-                  <Link href="/contact/">Get Free Estimate</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </nav>
       </header>
-
     </>
   );
 }

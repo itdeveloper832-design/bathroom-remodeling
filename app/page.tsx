@@ -22,7 +22,8 @@ const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-be
 const FAQ = dynamic(() => import("@/components/home/faq"));
 const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
-const Testimonials = dynamic(() => import("@/components/home/testimonials"));
+import { HomeBelowFold } from "@/components/home/home-below-fold";
+
 const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), {
   loading: () => (
     <div className="py-20 bg-background">
@@ -30,14 +31,6 @@ const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview")
     </div>
   ),
 });
-const ContactSection = dynamic(() => import("@/components/home/contact-section"), {
-  loading: () => (
-    <div className="py-20 bg-secondary">
-      <div className="container mx-auto px-4 h-96 bg-muted/30 rounded-2xl animate-pulse" />
-    </div>
-  ),
-});
-
 export const metadata: Metadata = {
   title: "Bathroom Remodeling in Chandler AZ | Licensed Contractor ROC338304 | ARZ",
   description: `Licensed bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions, tile & master baths. Free estimate: ${siteConfig.phone}. ROC338304.`,
@@ -82,9 +75,8 @@ export default function HomePage() {
           <ComparisonBenefits />
           <FAQ />
           <BlogPreview />
-          <Testimonials />
           <GalleryPreview />
-          <ContactSection />
+          <HomeBelowFold />
           <FinalCTA />
         </div>
       </main>

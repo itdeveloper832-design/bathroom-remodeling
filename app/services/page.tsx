@@ -8,8 +8,8 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Custom Bathroom Remodeling Services in Chandler",
-  description: "Professional bathroom remodeling services. From tub conversions to full master bath builds in Chandler, AZ. Schedule your free quote!",
+  title: "Bathroom Remodeling Services in Chandler, AZ | Walk-In Showers, Tub-to-Shower & More | ARZ Home Remodeling",
+  description: "Professional bathroom remodeling services in Chandler, AZ. Walk-in showers, tub-to-shower conversions, master baths, tile installation. Licensed ROC338304. Free in-home estimate: (480) 306-5591.",
   openGraph: {
     title: "Bathroom Remodeling Services in Chandler AZ",
     description: "Complete renovation solutions for your home. Professional installations by licensed contractors.",

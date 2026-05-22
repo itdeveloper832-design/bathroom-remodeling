@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, ShowerHead, Bath, LayoutGrid, Sparkles } from "lucide-react";
+import { ArrowUpRight, ShowerHead, Bath, LayoutGrid, Sparkles, Accessibility } from "lucide-react";
 
 const services = [
   {
@@ -37,6 +37,12 @@ const services = [
     href: "/small-bathroom-remodeling/",
     description: "Tight layouts, powder rooms, and hall baths with space-saving design.",
     icon: Bath,
+  },
+  {
+    name: "Handicap Accessible Bathroom",
+    href: "/handicap-accessible-bathroom/",
+    description: "ADA-compliant designs with curbless showers, grab bars, and accessible vanities.",
+    icon: Accessibility,
   },
 ];
 

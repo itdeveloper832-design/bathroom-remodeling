@@ -45,7 +45,15 @@ export default function Hero() {
           </p>
 
           <p className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed font-light">
-            Specializing in walk-in showers, tub-to-shower conversions, and custom tile work. Licensed and insured with a 2-year workmanship warranty. We handle every detail from permits to finishing touches.
+            Specializing in{" "}
+            <Link href="/walk-in-showers/" className="font-semibold underline hover:text-primary transition-colors">
+              walk-in showers
+            </Link>
+            ,{" "}
+            <Link href="/tub-to-shower-conversion/" className="font-semibold underline hover:text-primary transition-colors">
+              tub-to-shower conversions
+            </Link>
+            , and custom tile work. Licensed and insured with a 2-year workmanship warranty. We handle every detail from permits to finishing touches.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

@@ -9,7 +9,9 @@ import {
   post_7,
   post_8,
   post_9,
-  post_10
+  post_10,
+  post_11,
+  post_12
 } from "@/lib/seed-blog";
 import { submitToIndexNow } from "@/lib/indexnow";
 
@@ -32,7 +34,9 @@ const basePosts: BlogPost[] = [
   post_7,
   post_8,
   post_9,
-  post_10
+  post_10,
+  post_11,
+  post_12
 ].map((post, index) => ({
   id: `post-${index + 1}`,
   title: post.title,

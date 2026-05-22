@@ -11,11 +11,11 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Master Bathroom Remodel Cost Chandler AZ | 2025 Guide",
+  title: "Master Bathroom Remodel Cost Chandler AZ - 2025 Pricing Guide",
   description:
     "How much does a master bathroom remodel cost in Chandler, AZ? Compare pricing for custom double vanities, tile flooring, walk-in showers, and tubs.",
   openGraph: {
-    title: "Master Bathroom Remodel Cost Chandler AZ | 2025 Guide",
+    title: "Master Bathroom Remodel Cost Chandler AZ - 2025 Pricing Guide",
     description:
       "Planning a master bathroom renovation in Chandler? Explore transparent budgets for custom design layouts, waterproofing, and tile options.",
     url: `${siteConfig.url}/master-bathroom-remodel-cost/`,
@@ -159,7 +159,7 @@ export default function MasterBathroomRemodelCostPage() {
               Budgeting for Your Master Bathroom Transformation
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              A master bathroom is more than just a place to get ready—it is a private sanctuary where you start and end your day. A well-designed master suite also represents a massive selling point that adds substantial value to your property.
+              A master bathroom is more than just a place to get ready. It is a private sanctuary where you start and end your day. A well-designed master suite also represents a massive selling point that adds substantial value to your property and improves daily living.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Because master bathrooms are larger and feature more complex fixtures (like double sinks, toilets, soaking tubs, and custom showers), they require a larger investment. This guide outlines the options and costs so you can plan your renovation with clarity.
@@ -167,7 +167,7 @@ export default function MasterBathroomRemodelCostPage() {
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <Info className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
-                We provide <strong className="text-foreground">free, itemized written bids</strong>. No estimates scribbled on a napkin—we detail every line item of labor and materials. Call us at <a href="tel:4803065591" className="text-primary hover:underline font-medium">(480) 306-5591</a> to set up your consultation.
+                We provide <strong className="text-foreground">free, itemized written bids</strong>. No estimates scribbled on a napkin. We detail every line item of labor and materials so you know exactly what you are paying for. Call us at <a href="tel:4803065591" className="text-primary hover:underline font-medium">(480) 306-5591</a> to set up your consultation.
               </p>
             </div>
           </div>

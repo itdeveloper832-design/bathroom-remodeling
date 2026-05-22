@@ -24,11 +24,11 @@ import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Licensed Contractor | ARZ",
+  title: "Bathroom Remodeling Chandler AZ - Licensed Contractor - ARZ",
   description:
     `Bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions, master baths, and tile. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
+    title: "Bathroom Remodeling Chandler AZ - ARZ Home Remodeling",
     description:
       "Licensed Chandler bathroom contractors. Walk-in showers, tub conversions, master bath renovations. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-chandler-az/`,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Chandler AZ | Free Estimates",
+    title: "Bathroom Remodeling Chandler AZ - Free Estimates",
     description: "Licensed Chandler bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
@@ -77,7 +77,7 @@ const chandlerFaqs = [
   {
     question: "Are you licensed to do bathroom remodeling in Arizona?",
     answer:
-      "Yes. We are a licensed Arizona contractor operating under license ROC Licensed | License #ROC338304. We carry full insurance and provide a two year workmanship warranty on every project."
+      "Yes. We are a licensed Arizona contractor operating under license Licensed Contractor - ROC #338304. We carry full insurance and provide a two year workmanship warranty on every project."
   },
   {
     question: "Do you serve neighborhoods outside central Chandler?",

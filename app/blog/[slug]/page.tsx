@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 
   return {
-    title: `${post.metaTitle || post.title} | ${siteConfig.name}`,
+    title: `${post.metaTitle || post.title} - ${siteConfig.name}`,
     description: post.metaDescription || post.excerpt,
     openGraph: {
       title: post.metaTitle || post.title,

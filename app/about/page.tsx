@@ -9,11 +9,11 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema, PersonSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
-  description: "Meet Alex Rivers, founder of ARZ Home Remodeling — Chandler's trusted bathroom contractor since 2010. Licensed ROC338304, NARI certified. 15+ years, 500+ projects. Call (480) 306-5591.",
+  title: "About ARZ Home Remodeling - Licensed Bathroom Contractor in Chandler AZ Since 2010",
+  description: "Meet Alex Rivers, founder of ARZ Home Remodeling. Chandler's trusted bathroom contractor since 2010. Licensed ROC338304, NARI certified. 15+ years, 500+ projects. Call (480) 306-5591.",
   openGraph: {
-    title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
-    description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (480) 306-5591.",
+    title: "About ARZ Home Remodeling - Licensed Bathroom Contractor in Chandler AZ Since 2010",
+    description: "Meet the ARZ Home Remodeling team. Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (480) 306-5591.",
     url: `${siteConfig.url}/about/`,
     type: "website",
     images: [
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About ARZ Home Remodeling | Licensed Bathroom Contractor in Chandler AZ Since 2010",
-    description: "Meet the ARZ Home Remodeling team — Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (480) 306-5591.",
+    title: "About ARZ Home Remodeling - Licensed Bathroom Contractor in Chandler AZ Since 2010",
+    description: "Meet the ARZ Home Remodeling team. Chandler's trusted bathroom remodeling contractor since 2010. ROC licensed, NARI member. Real people, real results. Call (480) 306-5591.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
@@ -105,7 +105,7 @@ export default function AboutPage() {
                 Top-Rated Bathroom Remodeling Contractor in Chandler AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                ARZ Home Remodeling is a local residential contractor company operating under license ROC Licensed | License #ROC338304. Owner {siteConfig.owner} and our team have helped families across the East Valley update their homes for over 15 years.
+                ARZ Home Remodeling is a licensed Arizona residential contractor (ROC #338304) serving the East Valley for over 15 years. Owner {siteConfig.owner} and our team have helped families across Chandler, Gilbert, Mesa, and surrounding communities transform their bathrooms with quality craftsmanship and reliable service.
               </p>
             </div>
           </div>

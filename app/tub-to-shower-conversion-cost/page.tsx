@@ -11,11 +11,11 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tub-to-Shower Conversion Cost Chandler AZ | 2025 Guide",
+  title: "Tub-to-Shower Conversion Cost Chandler AZ - 2025 Pricing Guide",
   description:
     "How much does a tub-to-shower conversion cost in Chandler, AZ? Complete guide on demolition, plumbing modifications, waterproofing, and custom tile costs.",
   openGraph: {
-    title: "Tub-to-Shower Conversion Cost Chandler AZ | 2025 Guide",
+    title: "Tub-to-Shower Conversion Cost Chandler AZ - 2025 Pricing Guide",
     description:
       "Planning a tub-to-shower conversion in Chandler? Learn about pricing ranges for acrylic inserts, custom tile, plumbing adjustments, and glass.",
     url: `${siteConfig.url}/tub-to-shower-conversion-cost/`,

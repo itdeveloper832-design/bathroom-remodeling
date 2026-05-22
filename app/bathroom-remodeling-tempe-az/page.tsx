@@ -23,7 +23,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Tempe AZ | Licensed Contractor | ARZ",
+  title: "Bathroom Remodel Tempe AZ - Licensed Contractor - ARZ",
   description: `Bathroom remodeling Tempe AZ: showers, tub-to-shower, tile. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling Tempe: Licensed Contractors & Free Quotes",
@@ -66,7 +66,7 @@ const tempeFaqs = [
   {
     question: "Are you licensed to do bathroom remodeling in Tempe?",
     answer:
-      "Yes. We are a licensed Arizona contractor, fully insured, operating under license ROC Licensed | License #ROC338304. We provide a two year workmanship warranty on every project. We are experienced with Tempe's specific building codes and requirements."
+      "Yes. We are a licensed Arizona contractor, fully insured, operating under license Licensed Contractor - ROC #338304. We provide a two year workmanship warranty on every project. We are experienced with Tempe's specific building codes and requirements."
   },
   {
     question: "Do you serve neighborhoods near ASU and Downtown Tempe?",

@@ -24,11 +24,11 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Licensed Bathroom Contractor Ahwatukee AZ | Quality Craftsmanship",
+  title: "Licensed Bathroom Contractor Ahwatukee AZ - Quality Craftsmanship",
   description:
     "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates: call (480) 306-5591 today!",
   openGraph: {
-    title: "Bathroom Remodeling Ahwatukee AZ | ARZ Home Remodeling",
+    title: "Bathroom Remodeling Ahwatukee AZ - ARZ Home Remodeling",
     description:
       "Licensed Ahwatukee bathroom contractors. Walk-in showers, tub conversions, master bath renovations. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-ahwatukee-az/`,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Ahwatukee AZ | Free Estimates",
+    title: "Bathroom Remodeling Ahwatukee AZ - Free Estimates",
     description: "Licensed Ahwatukee bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-ahwatukee.jpg`],
   },
@@ -77,7 +77,7 @@ const ahwatukeeFaqs = [
   {
     question: "Are you licensed to do bathroom remodeling in Arizona?",
     answer:
-      "Yes. We are a licensed Arizona contractor operating under license ROC Licensed | License #ROC338304. We carry full insurance and provide a two year workmanship warranty on every project. We are familiar with the specific building standards in Ahwatukee."
+      "Yes. We are a licensed Arizona contractor operating under license Licensed Contractor - ROC #338304. We carry full insurance and provide a two year workmanship warranty on every project. We are familiar with the specific building standards in Ahwatukee."
   },
   {
     question: "Do you serve neighborhoods throughout Ahwatukee Foothills?",

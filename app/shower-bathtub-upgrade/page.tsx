@@ -15,10 +15,10 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Shower & Bathtub Upgrade Chandler AZ | Remodeling",
+  title: "Shower & Bathtub Upgrade Chandler AZ - Professional Service",
   description: "Professional shower and bathtub upgrade services in Chandler, Arizona. Modern fixtures, premium materials, and expert installation. Free estimates.",
   openGraph: {
-    title: "Shower & Bathtub Upgrade Chandler AZ | Remodeling",
+    title: "Shower & Bathtub Upgrade Chandler AZ - Professional Service",
     description: "Professional shower and bathtub upgrades in Chandler with modern fixtures and premium materials.",
     url: `${siteConfig.url}/shower-bathtub-upgrade`,
     type: "website",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower & Bathtub Upgrade Chandler AZ | Remodeling",
+    title: "Shower & Bathtub Upgrade Chandler AZ - Professional Service",
     description: "Professional shower and bathtub upgrades in Chandler with modern fixtures and premium materials.",
     images: [`${siteConfig.url}/images/shower-bathtub-upgrade-hero.jpg`],
   },

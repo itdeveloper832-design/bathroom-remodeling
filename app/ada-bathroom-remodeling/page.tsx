@@ -20,10 +20,10 @@ import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "Accessible Shower Remodeling Chandler AZ | ADA Bathroom & Handicap Install | ARZ",
+  title: "Accessible Shower Remodeling Chandler AZ - ADA Bathroom & Handicap Installation Services",
   description: "Accessible shower remodeling, installation, and ADA bathroom remodeling in Chandler, AZ. Handicap bathroom remodel contractors. Walk-in showers, grab bars, roll-in entries, senior-safe modifications. Licensed ROC338304.",
   openGraph: {
-    title: "ADA Bathroom Remodeling Chandler AZ | Senior Safe Design",
+    title: "ADA Bathroom Remodeling Chandler AZ - Senior Safe Design",
     description: "Expert ADA bathroom remodeling in Chandler. Safe walk-in showers, roll-in entries, and professional safety modifications for seniors and mobility needs.",
     url: `${siteConfig.url}/ada-bathroom-remodeling/`,
     type: "website",

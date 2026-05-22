@@ -19,10 +19,10 @@ import { Crown, Sparkles, Gem } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Luxury Bathroom Remodeling Chandler AZ | High End Design",
+  title: "Luxury Bathroom Remodeling Chandler AZ - Premium Design",
   description: "Experience the pinnacle of luxury bathroom remodeling in Chandler. High end master bath renovations, spa inspired showers, premium stone work, and custom cabinetry. Licensed AZ contractor.",
   openGraph: {
-    title: "Luxury Bathroom Remodeling Chandler AZ | High End Design",
+    title: "Luxury Bathroom Remodeling Chandler AZ - Premium Design",
     description: "Premium master bathroom transformations in Chandler. Spa showers, freestanding tubs, and high end materials. Licensed AZ contractor.",
     url: `${siteConfig.url}/luxury-bathroom-remodeling/`,
     type: "website",

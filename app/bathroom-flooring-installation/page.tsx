@@ -16,7 +16,7 @@ import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/j
 import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
-  title: "Bathroom Flooring Installation Chandler AZ | Professional Services",
+  title: "Bathroom Flooring Installation Chandler AZ - Professional Services",
   description: "Professional bathroom flooring installation in Chandler, AZ. Waterproof tile, luxury vinyl, and stone flooring with expert installation.",
   openGraph: {
     title: "Bathroom Flooring Installation Chandler AZ",

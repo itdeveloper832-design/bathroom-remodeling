@@ -20,7 +20,7 @@ const contactFaqs = [
   },
   {
     question: "Are your bathroom remodeling services licensed and insured?",
-    answer: "Yes, ARZ Home Remodeling is fully licensed (ROC Licensed | License #ROC338304), bonded, and insured. We have over 15 years of experience serving Chandler and the East Valley, ensuring every project meets the highest standards of safety and quality."
+    answer: "Yes, ARZ Home Remodeling is fully licensed (Licensed Contractor - ROC #338304), bonded, and insured. We have over 15 years of experience serving Chandler and the East Valley, ensuring every project meets the highest standards of safety and quality."
   },
   {
     question: "Do you offer financing for bathroom remodeling projects?",

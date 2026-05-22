@@ -11,11 +11,11 @@ import Link from "next/link";
 import { ArrowRight, Clock, CheckCircle2, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Timeline Chandler AZ | Project Schedule",
+  title: "Bathroom Remodeling Timeline Chandler AZ  - Project Schedule",
   description:
     "How long does a bathroom remodel take in Chandler, AZ? Complete step-by-step schedule from demolition and inspections to final tile and handoff.",
   openGraph: {
-    title: "Bathroom Remodeling Timeline Chandler AZ | Project Schedule",
+    title: "Bathroom Remodeling Timeline Chandler AZ  - Project Schedule",
     description:
       "Planning a bathroom remodel in Chandler? Learn about the exact day-by-day construction timeline and key milestones.",
     url: `${siteConfig.url}/bathroom-remodeling-timeline/`,
@@ -137,7 +137,7 @@ export default function TimelinePage() {
               Planning Your Remodeling Schedule
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              A bathroom remodel is an exciting home improvement project, but it can disrupt your daily routine. Understanding the construction schedule—knowing when water will be shut off, when inspections will happen, and when tile will dry—helps reduce stress.
+              A bathroom remodel is an exciting home improvement project, but it can disrupt your daily routine. Understanding the construction schedule, including when water will be shut off, when inspections will happen, and when tile will dry, helps reduce stress and keeps you informed.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               At ARZ Home Remodeling, we manage timelines using professional scheduling software. We align sub-trades, municipal inspectors, and materials before we pick up a sledgehammer. This guide breaks down our step-by-step construction schedule.

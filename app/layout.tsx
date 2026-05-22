@@ -18,8 +18,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Bathroom Remodeling in Chandler AZ | ARZ Home Remodeling`,
-    template: `%s | ARZ Home Remodeling`
+    default: `Bathroom Remodeling in Chandler AZ - Professional Contractor`,
+    template: `%s - ARZ Home Remodeling`
   },
   description: siteConfig.description,
   authors: [{ name: siteConfig.name }],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Bathroom Remodeling in Chandler AZ | ARZ Home Remodeling`,
+    title: `Bathroom Remodeling in Chandler AZ - Professional Contractor`,
     description: siteConfig.description,
     images: [
       {
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Bathroom Remodeling in Chandler AZ | ARZ Home Remodeling`,
+    title: `Bathroom Remodeling in Chandler AZ - Professional Contractor`,
     description: siteConfig.description,
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },

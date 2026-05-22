@@ -124,7 +124,7 @@ export default function PermitsPage() {
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
-                As a licensed contractor (<strong className="text-foreground">ROC338304</strong>), ARZ Home Remodeling handles the entire permit process. We prepare the design drawings, submit documentation to the City of Chandler, and host inspectors at your home. Call us at <a href="tel:4803065591" className="text-primary hover:underline font-medium">(480) 306-5591</a> to discuss your plans.
+                As a licensed contractor (<strong className="text-foreground">ROC338304</strong>), ARZ Home Remodeling handles the entire permit process. We prepare the design drawings, submit documentation to the City of Chandler, and host inspectors at your home. Call us at <a href="tel:2293065591" className="text-primary hover:underline font-medium">(229) 306-5591</a> to discuss your plans.
               </p>
             </div>
           </div>

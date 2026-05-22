@@ -199,7 +199,7 @@ export default function LuxuryPage() {
                   <Link href="/contact/">Start Your Design Consultation</Link>
                </Button>
                <Button variant="outline" asChild size="lg">
-                  <Link href="tel:4803065591">Call {siteConfig.phone}</Link>
+                  <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
                </Button>
             </div>
           </div>

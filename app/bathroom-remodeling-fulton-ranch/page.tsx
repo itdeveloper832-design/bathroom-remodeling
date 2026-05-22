@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: "Licensed bathroom remodeling contractor serving Fulton Ranch, Chandler, AZ. Specialty master bath designs, custom tile work, and walk-in showers in 85248.",
   openGraph: {
     title: "Bathroom Remodeling Fulton Ranch Chandler AZ - Custom Builder",
-    description: "Upgrade your master bath in Fulton Ranch, Chandler, AZ. Expert custom tile, curbless walk-in showers, and premium double vanities. Free quotes: (480) 306-5591.",
+    description: "Upgrade your master bath in Fulton Ranch, Chandler, AZ. Expert custom tile, curbless walk-in showers, and premium double vanities. Free quotes: (229) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling-fulton-ranch/`,
     type: "website",
   },
@@ -180,9 +180,9 @@ export default function FultonRanchPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:4803065591" className="flex items-center gap-2">
+                <Link href="tel:2293065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  (480) 306-5591
+                  (229) 306-5591
                 </Link>
               </Button>
             </div>

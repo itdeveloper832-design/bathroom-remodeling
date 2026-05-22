@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Bathroom Remodeling Apache Junction AZ - Free Estimates",
   description:
-    "Hire Apache Junction's top-rated bathroom remodeling contractor. Specializing in walk-in showers, tub-to-shower conversions, and premium desert-safe tiling. Licensed company, free quotes: call (480) 306-5591 today!",
+    "Hire Apache Junction's top-rated bathroom remodeling contractor. Specializing in walk-in showers, tub-to-shower conversions, and premium desert-safe tiling. Licensed company, free quotes: call (229) 306-5591 today!",
   openGraph: {
     title: "Bathroom Remodeling Apache Junction AZ - ARZ Home Remodeling",
     description:
@@ -93,7 +93,7 @@ export default function ApacheJunctionPage() {
                 <Link href="/contact/">Get Your Free Apache Junction Quote</Link>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <Link href="tel:4803065591">Call {siteConfig.phone}</Link>
+                <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
               </Button>
             </div>
           </div>

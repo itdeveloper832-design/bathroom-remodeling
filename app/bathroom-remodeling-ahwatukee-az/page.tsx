@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Licensed Bathroom Contractor Ahwatukee AZ - Quality Craftsmanship",
   description:
-    "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates: call (480) 306-5591 today!",
+    "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates: call (229) 306-5591 today!",
   openGraph: {
     title: "Bathroom Remodeling Ahwatukee AZ - ARZ Home Remodeling",
     description:
@@ -234,7 +234,7 @@ export default function AhwatukeePage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:4803065591" className="flex items-center gap-2">
+                <Link href="tel:2293065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

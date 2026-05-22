@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Luxury Bathroom Remodeling Scottsdale AZ - Premium Renovations",
   description:
-    "Scottsdale's premier bathroom remodeling contractor. We specialize in luxury master bath transformations, custom walk-in showers, and high-end materials. Licensed company, free estimates: call (480) 306-5591 today!",
+    "Scottsdale's premier bathroom remodeling contractor. We specialize in luxury master bath transformations, custom walk-in showers, and high-end materials. Licensed company, free estimates: call (229) 306-5591 today!",
   openGraph: {
     title: "Bathroom Remodeling Scottsdale AZ - ARZ Home Remodeling",
     description:
@@ -105,7 +105,7 @@ export default function ScottsdalePage() {
                 <Link href="/contact/">Get Your Free Scottsdale Quote</Link>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <Link href="tel:4803065591">Call {siteConfig.phone}</Link>
+                <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
               </Button>
             </div>
           </div>

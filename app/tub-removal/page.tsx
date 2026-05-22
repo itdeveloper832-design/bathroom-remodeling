@@ -16,10 +16,10 @@ import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/j
 import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
-  title: "Tub Removal Chandler AZ | Bathtub Removal Service",
+  title: "Tub Removal Service Chandler AZ - Professional Removal",
   description: "Professional bathtub removal services in Chandler, Arizona. Safe removal, proper disposal, and floor prep for your bathroom renovation project.",
   openGraph: {
-    title: "Tub Removal Chandler AZ | Bathtub Removal Service",
+    title: "Tub Removal Service Chandler AZ - Professional Removal",
     description: "Professional bathtub removal services in Chandler. Safe removal and proper disposal included.",
     url: `${siteConfig.url}/tub-removal`,
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tub Removal Chandler AZ | Bathtub Removal Service",
+    title: "Tub Removal Service Chandler AZ - Professional Removal",
     description: "Professional bathtub removal services in Chandler. Safe removal and proper disposal included.",
     images: [`${siteConfig.url}/images/tub-removal-hero.jpg`],
   },

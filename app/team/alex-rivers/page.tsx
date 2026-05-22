@@ -9,10 +9,10 @@ import { Award, Briefcase, MapPin, Phone, Mail, ExternalLink, Check } from "luci
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Alex Rivers | Licensed Bathroom Contractor | ROC338304 | ARZ Home Remodeling",
+  title: "Alex Rivers - Licensed Bathroom Contractor and Owner",
   description: "Meet Alex Rivers, founder and master bathroom contractor at ARZ Home Remodeling. Licensed ROC338304. 15+ years, 500+ completed projects in Chandler, Arizona. NARI certified.",
   openGraph: {
-    title: "Alex Rivers | Licensed Bathroom Contractor in Chandler AZ",
+    title: "Alex Rivers - Licensed Bathroom Contractor in Chandler AZ",
     description: "Founder of ARZ Home Remodeling. Licensed Arizona contractor with 15+ years of bathroom remodeling expertise.",
     type: "website",
     url: `${siteConfig.url}/team/alex-rivers/`,

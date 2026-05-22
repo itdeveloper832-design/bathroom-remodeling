@@ -20,17 +20,17 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ | Walk-In Shower Company Services",
+  title: "Shower Remodeling Chandler AZ - Expert Walk-In Shower Installation",
   description: "Shower remodeling and shower renovation near you in Chandler, AZ. Walk-in shower installation services, frameless glass, curbless designs. Licensed crew, Schluter waterproofing, 2-year warranty. Free quote.",
   openGraph: {
-    title: "Shower Remodeling Chandler AZ | Walk-In Showers with Frameless Glass Design",
+    title: "Shower Remodeling Chandler AZ - Walk-In Showers with Frameless Glass",
     description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Licensed crew. Free quotes!",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Remodeling Chandler AZ | Walk-In Showers with Frameless Glass Design",
+    title: "Shower Remodeling Chandler AZ - Walk-In Showers with Frameless Glass",
     description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Free estimates!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: "Senior-friendly bathroom remodeling in Sun Lakes, AZ. Licensed specialists for zero-threshold walk-in showers, grab bars, and ADA renovations in 85248.",
   openGraph: {
     title: "Bathroom Remodeling Sun Lakes AZ - Walk-in Showers & Walk-In Showers",
-    description: "Expert safety-focused bathroom remodeling in Sun Lakes, AZ. Zero-threshold walk-in showers, handicap accessible layouts, and custom safety bars. Free quotes: (480) 306-5591.",
+    description: "Expert safety-focused bathroom remodeling in Sun Lakes, AZ. Zero-threshold walk-in showers, handicap accessible layouts, and custom safety bars. Free quotes: (229) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling-sun-lakes/`,
     type: "website",
   },
@@ -180,9 +180,9 @@ export default function SunLakesPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:4803065591" className="flex items-center gap-2">
+                <Link href="tel:2293065591" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  (480) 306-5591
+                  (229) 306-5591
                 </Link>
               </Button>
             </div>

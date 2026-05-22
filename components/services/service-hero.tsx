@@ -95,7 +95,7 @@ export default function ServiceHero({
                 variant="outline"
                 className="bg-black text-white border-black hover:bg-black text-base px-8 py-6"
               >
-                <a href="`tel:${siteConfig.phoneClean}`">Call {siteConfig.phone}</a>
+                <a href={`tel:${siteConfig.phoneClean}`}>Call {siteConfig.phone}</a>
               </Button>
             </div>
           </div>

@@ -17,21 +17,26 @@ import SubServices from "@/components/sub-services";
 import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices } from "@/lib/bathroom-services";
 import Link from "next/link";
+import ShowerTypes from "@/components/shower-types";
+import ShowerCostSection from "@/components/shower-cost-section";
+import ChandlerShowerMaterials from "@/components/chandler-shower-materials";
+import ShowerCTAFooter from "@/components/shower-cta-footer";
+import ShowerGallery from "@/components/shower-gallery";
 
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ - Expert Walk-In Shower Installation",
-  description: "Shower remodeling and shower renovation near you in Chandler, AZ. Walk-in shower installation services, frameless glass, curbless designs. Licensed crew, Schluter waterproofing, 2-year warranty. Free quote.",
+  title: "Custom Shower Remodeling in Chandler, AZ - Walk-In Showers, Frameless Glass & Tile Installs",
+  description: "ARZ Home Remodeling builds custom showers in Chandler with Schluter-Kerdi waterproofing, frameless glass, and a 2-year workmanship warranty. Licensed, insured since 2010. ROC338304. Free in-home estimate.",
   openGraph: {
-    title: "Shower Remodeling Chandler AZ - Walk-In Showers with Frameless Glass",
-    description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Licensed crew. Free quotes!",
+    title: "Custom Shower Remodeling in Chandler, AZ - Walk-In Showers, Frameless Glass & Tile Installs",
+    description: "ARZ Home Remodeling builds custom showers in Chandler with Schluter-Kerdi waterproofing, frameless glass, and a 2-year workmanship warranty. Licensed, insured since 2010. ROC338304.",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Remodeling Chandler AZ - Walk-In Showers with Frameless Glass",
-    description: "Expert shower remodeling in Chandler AZ. Walk-in showers, frameless glass, custom tile. Free estimates!",
+    title: "Custom Shower Remodeling in Chandler, AZ - Walk-In Showers & Frameless Glass",
+    description: "Expert shower remodeling in Chandler AZ. Schluter-Kerdi waterproofing, frameless glass, custom tile. ROC Licensed #338304. Free estimates!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },
   alternates: {
@@ -61,15 +66,21 @@ export default function ShowerRemodelingPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Licensed Shower Remodeling in Chandler, AZ"
-          subtitle="Expert Walk-In Shower Installation & Custom Tile"
-          description="Elevate your bathroom with a custom shower designed for beauty and durability. From frameless glass enclosures to curbless walk-in entries, our Chandler team delivers high-end results with ROC Licensed expertise."
+          title="Custom Shower Remodeling in Chandler, AZ — Walk-In Showers, Frameless Glass & Tile Installs"
+          subtitle="ARZ Home Remodeling builds custom showers in Chandler the right way — Schluter-Kerdi waterproofing behind every tile, frameless glass cut to your exact opening, and a 2-year workmanship warranty on qualifying projects. Licensed, insured, and Chandler-based since 2010. ROC338304."
+          description="Free in-home estimate — same week availability. Shower remodels starting from $4,500. Serving Chandler, Ocotillo, Fulton Ranch, Sun Lakes & the East Valley"
           image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
           breadcrumbs={[
             { name: "Home", url: `${siteConfig.url}/` },
             { name: "Shower Remodeling Chandler AZ", url: `${siteConfig.url}/shower-remodeling/` },
           ]}
         />
+
+        <LocalTrust cityName="Chandler" />
+
+        <ShowerTypes />
+
+        <ShowerCostSection />
 
         <ServiceProcess
           title="Our Installation Process"
@@ -122,6 +133,11 @@ export default function ShowerRemodelingPage() {
           description="Discover how professional updates transform your daily routine and add value to your home. Whether you need a simple upgrade or a complete shower renovation near me, we provide expert results."
           benefits={showerData.benefits}
         />
+
+        <ShowerGallery />
+
+        <ChandlerShowerMaterials />
+
         <LocalTrust cityName="Chandler" />
 
         <section className="py-16 bg-background">
@@ -185,24 +201,6 @@ export default function ShowerRemodelingPage() {
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <Link
-                href="/"
-                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
-              >
-                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
-                  Bathroom Remodeling Chandler AZ
-                </p>
-                <p className="text-muted-foreground text-xs mt-1">Full bathroom renovation services</p>
-              </Link>
-              <Link
-                href="/bathtub-remodeling/"
-                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
-              >
-                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
-                  Bathtub Remodeling Chandler AZ
-                </p>
-                <p className="text-muted-foreground text-xs mt-1">Tub replacement & tub-to-shower conversion</p>
-              </Link>
-              <Link
                 href="/tub-to-shower-conversion/"
                 className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
               >
@@ -211,18 +209,31 @@ export default function ShowerRemodelingPage() {
                 </p>
                 <p className="text-muted-foreground text-xs mt-1">Convert unused garden tubs to walk-in showers</p>
               </Link>
+              <Link
+                href="/master-bathroom-remodel/"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
+              >
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
+                  Master Bathroom Remodel
+                </p>
+                <p className="text-muted-foreground text-xs mt-1">Luxury master bath renovations</p>
+              </Link>
+              <Link
+                href="/bathroom-tile-installation/"
+                className="bg-background border border-border rounded-xl p-5 hover:border-primary transition-colors group"
+              >
+                <p className="font-semibold text-foreground group-hover:text-primary text-sm">
+                  Bathroom Tile Installation
+                </p>
+                <p className="text-muted-foreground text-xs mt-1">Expert tile installation and replacement</p>
+              </Link>
             </div>
           </div>
         </section>
 
         <Testimonials category="shower-remodeling" />
 
-        <ContactSection />
-
-        <ServiceCTA 
-          title="Ready for shower remodeling in Chandler, AZ?" 
-          description="Call now for a same-week consultation and clear pricing on your new walk-in shower." 
-        />
+        <ShowerCTAFooter />
       </main>
       <Footer />
     </>

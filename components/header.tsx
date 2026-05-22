@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { Menu, X, Phone } from 'lucide-react'
 import { useState } from 'react'
+import { siteConfig } from '@/lib/site-config'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,7 +29,7 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <a href="`tel:${siteConfig.phoneClean}`" className="flex items-center gap-2 bg-blue-950 text-white px-4 py-2 rounded">
+          <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2 bg-blue-950 text-white px-4 py-2 rounded">
             <Phone size={16} />
             <span>Call Now</span>
           </a>
@@ -46,7 +47,7 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <a href="`tel:${siteConfig.phoneClean}`" className="flex items-center gap-2 bg-blue-950 text-white px-4 py-2 rounded w-fit">
+          <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2 bg-blue-950 text-white px-4 py-2 rounded w-fit">
             <Phone size={16} />
             Call Now
           </a>

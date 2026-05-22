@@ -177,7 +177,22 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How do you prevent leaks during a shower remodeling in Chandler?",
         answer:
-          "We use complete waterproofing membranes and proper substrate preparation. Our chandler shower remodeling experts ensure every seam is sealed, providing peace of mind for years to come.",
+          "We use complete waterproofing membranes and proper substrate preparation. Our Chandler shower remodeling experts ensure every seam is sealed, providing peace of mind for years to come.",
+      },
+      {
+        question: "What's the cost difference between frameless glass and a shower enclosure?",
+        answer:
+          "Frameless glass enclosures run $1,800–$4,500 depending on size and thickness, while traditional framed enclosures cost $800–$2,000. Frameless offers superior aesthetics and easier cleaning, making it a popular choice for modern Chandler homes.",
+      },
+      {
+        question: "How do I handle hard water stains on my new shower tile?",
+        answer:
+          "We recommend using a squeegee daily and wiping down glass after each shower. For stubborn stains on porcelain tile, a vinegar solution or commercial hard water remover works well. Prevention is easier than cleanup—proper ventilation and regular maintenance keep showers looking new for years.",
+      },
+      {
+        question: "Do I need a permit for shower remodeling in Chandler?",
+        answer:
+          "Most significant shower remodels in Chandler require a permit through the Chandler Development Services. Permits ensure proper waterproofing, drainage, and code compliance. We handle all permitting and inspections as part of our shower remodeling process—no hidden surprises.",
       },
     ],
   },

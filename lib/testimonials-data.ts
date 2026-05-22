@@ -114,6 +114,28 @@ export const testimonialsData: Record<string, TestimonialType[]> = {
       content: "Our old shower was leaking behind the walls. Alex caught the structural damage and fixed it properly before tiling. Now we have a beautiful, leak-proof shower with premium fixtures. Very honest and professional team.",
       image: "/images/testimonials/t9.png",
       verified: true,
+    },
+    {
+      id: "sr-4",
+      name: "Patricia Gonzalez",
+      initials: "PG",
+      location: "Fulton Ranch, Chandler",
+      rating: 5,
+      service: "Master Shower Remodel",
+      content: "I had the hardest time finding someone to handle our master shower properly. ARZ understood our vision immediately—we wanted a spa-like feel with Schluter waterproofing and rainfall showerhead. The execution was flawless. They really know their craft.",
+      image: "/images/testimonials/t11.png",
+      verified: true,
+    },
+    {
+      id: "sr-5",
+      name: "Richard Foster",
+      initials: "RF",
+      location: "Sun Lakes, Chandler",
+      rating: 5,
+      service: "Frameless Glass & Tile Installation",
+      content: "We upgraded from a builder-grade shower to a frameless glass enclosure with porcelain tile. The attention to detail was incredible—every edge is perfect, every seal is tight. My wife keeps saying it feels like we're at a hotel every morning.",
+      image: "/images/testimonials/t8.png",
+      verified: true,
     }
   ],
   "bathtub-remodeling": [

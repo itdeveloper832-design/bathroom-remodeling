@@ -11,7 +11,7 @@ export function InfoHeader() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-end gap-2 sm:gap-4">
           <a 
-            href="`tel:${siteConfig.phoneClean}`"
+            href={`tel:${siteConfig.phoneClean}`}
             className="flex items-center gap-2 hover:text-primary transition-colors min-h-[48px] px-2 no-underline"
             aria-label={`Call us at ${siteConfig.phone}`}
           >

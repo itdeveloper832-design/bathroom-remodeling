@@ -21,6 +21,7 @@ import ShowerTypes from "@/components/shower-types";
 import ShowerCostSection from "@/components/shower-cost-section";
 import ChandlerShowerMaterials from "@/components/chandler-shower-materials";
 import ShowerCTAFooter from "@/components/shower-cta-footer";
+import ShowerGallery from "@/components/shower-gallery";
 
 
 export const metadata: Metadata = {
@@ -132,6 +133,8 @@ export default function ShowerRemodelingPage() {
           description="Discover how professional updates transform your daily routine and add value to your home. Whether you need a simple upgrade or a complete shower renovation near me, we provide expert results."
           benefits={showerData.benefits}
         />
+
+        <ShowerGallery />
 
         <ChandlerShowerMaterials />
 

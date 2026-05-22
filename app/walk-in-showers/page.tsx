@@ -18,17 +18,17 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Walk-In Shower Installation & Company Services Chandler AZ | Licensed",
+  title: "Walk-In Shower Installation Chandler AZ - Professional Services",
   description: "Walk-in shower installation services and shower company in Chandler, AZ. Barrier-free designs, ADA accessibility, handicap showers. Professional contractors. Free quotes. Starting from $6,000.",
   openGraph: {
-    title: "Walk-In Shower Installation Chandler AZ | ADA Options",
+    title: "Walk-In Shower Installation Chandler AZ - ADA Options",
     description: "Professional walk-in shower installation in Chandler AZ. Barrier-free designs, ADA options, and luxury finishes. Licensed & insured. Free estimates!",
     url: `${siteConfig.url}/walk-in-showers/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Walk-In Shower Installation Chandler AZ | ADA Options",
+    title: "Walk-In Shower Installation Chandler AZ - ADA Options",
     description: "Safe & stylish walk-in showers in Chandler AZ. Starting from $6,000. Free estimates!",
   },
   alternates: {

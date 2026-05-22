@@ -14,7 +14,7 @@ import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Master Bathroom Remodel Near Me - Professional Luxury Design in Chandler AZ | ARZ",
+  title: "Master Bathroom Remodel Chandler AZ - Luxury Design Services",
   description: "Master bathroom remodel near you in Chandler, AZ. Luxury bathroom renovations with custom tile showers, frameless glass, double vanities, quartz countertops. Licensed ROC338304. Free estimate.",
   openGraph: {
     title: "Master Bathroom Remodel Chandler AZ - Premium Service",

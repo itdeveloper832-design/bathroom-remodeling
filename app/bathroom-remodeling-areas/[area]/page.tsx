@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!areaData) return {};
 
   return {
-    title: `${areaData.areaName} Bathroom Remodeling Chandler AZ | ARZ`,
+    title: `${areaData.areaName} Bathroom Remodeling Chandler AZ - Professional Service`,
     description: areaData.description,
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_SITE_URL || "https://arzhomeremodeling.com"}/bathroom-remodeling-areas/${areaSlug}/`,

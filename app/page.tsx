@@ -32,8 +32,8 @@ const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview")
   ),
 });
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling in Chandler AZ - ROC338304 Licensed Contractor | ARZ",
-  description: `Licensed bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions, tile & master baths. Free estimate: ${siteConfig.phone}. ROC338304.`,
+  title: "Bathroom Remodeling Chandler AZ - Licensed Contractor Specializing in Walk-In Showers",
+  description: `Licensed bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions, custom tile, and master baths. ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling in Chandler AZ - Professional Contractor",
     description:

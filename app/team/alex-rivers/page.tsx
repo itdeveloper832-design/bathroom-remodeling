@@ -91,7 +91,7 @@ export default function AlexRiversPage() {
                       Founder & Master Bathroom Contractor
                     </p>
                     <p className="text-lg text-muted-foreground">
-                      Licensed ROC #338304 | 15+ Years | 500+ Projects
+                      Licensed ROC #338304 - 15+ Years of Experience, 500+ Completed Projects
                     </p>
                   </div>
 

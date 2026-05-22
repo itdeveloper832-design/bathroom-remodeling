@@ -23,17 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Ocotillo Chandler AZ | Custom Contractor",
+  title: "Bathroom Remodeling Ocotillo Chandler AZ - Custom Contractor",
   description: "Top-rated bathroom remodeling in Ocotillo, Chandler, AZ. Specializing in luxury walk-in showers, custom tile design, and master suite renovations in 85248.",
   openGraph: {
-    title: "Bathroom Remodeling Ocotillo Chandler AZ | Custom Contractor",
+    title: "Bathroom Remodeling Ocotillo Chandler AZ - Custom Contractor",
     description: "Expert bathroom design & remodeling in Ocotillo, Chandler, AZ. Licensed contractors, luxury designs, and custom tile installations. Free estimates: (480) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling-ocotillo/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Ocotillo Chandler AZ | Custom Contractor",
+    title: "Bathroom Remodeling Ocotillo Chandler AZ - Custom Contractor",
     description: "Licensed Ocotillo bathroom contractors. Walk-in showers, custom tile, master bath renovations.",
     images: [`${siteConfig.url}/images/optimized/photo-1552321554-5fefe8c9ef14.webp`],
   },

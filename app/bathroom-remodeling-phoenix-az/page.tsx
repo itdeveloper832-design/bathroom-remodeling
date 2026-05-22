@@ -13,11 +13,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Professional Bathroom Remodeling Phoenix AZ | Licensed Contractors",
+  title: "Professional Bathroom Remodeling Phoenix AZ - Licensed Contractors",
   description:
     "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates: call (480) 306-5591 today!",
   openGraph: {
-    title: "Bathroom Remodeling Phoenix AZ | ARZ Home Remodeling",
+    title: "Bathroom Remodeling Phoenix AZ - ARZ Home Remodeling",
     description:
       "Licensed Phoenix bathroom contractors. Professional master bath renovations, shower replacements, and complete bathroom makeovers. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-phoenix-az/`,
@@ -38,7 +38,7 @@ const phoenixFaqs = [
   {
     question: "Are you licensed to work in Phoenix?",
     answer:
-      "Yes. We are a fully licensed Arizona contractor operating under license ROC Licensed | License #ROC338304 and carry comprehensive insurance for all Phoenix area residential remodeling projects."
+      "Yes. We are a fully licensed Arizona contractor operating under license Licensed Contractor - ROC #338304 and carry comprehensive insurance for all Phoenix area residential remodeling projects."
   },
   {
     question: "Do you handle the entire project from start to finish?",

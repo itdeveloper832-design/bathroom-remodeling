@@ -16,10 +16,10 @@ import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/j
 import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
-  title: "Shower Replacement Chandler AZ | Parts & Install",
+  title: "Shower Replacement Chandler AZ - Professional Installation",
   description: "Professional shower replacement Chandler AZ. Shower valve replacement, shower handle replacement, shower door replacement, shower pan replacement. Free quotes!",
   openGraph: {
-    title: "Shower Replacement Chandler AZ | Parts & Install",
+    title: "Shower Replacement Chandler AZ - Professional Installation",
     description: "Professional shower replacement Chandler AZ. Valve, handle, door, pan replacement. Free quotes!",
     url: `${siteConfig.url}/shower-replacement`,
     type: "website",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shower Replacement Chandler AZ | Parts & Install",
+    title: "Shower Replacement Chandler AZ - Professional Installation",
     description: "Professional shower replacement Chandler AZ. Valve, handle, door replacement!",
     images: [`${siteConfig.url}/images/shower-replacement-hero.jpg`],
   },
@@ -66,7 +66,7 @@ export default function ShowerReplacementPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Shower Replacement Chandler AZ | All Parts"
+          title="Shower Replacement Chandler AZ - Complete Service"
           subtitle="Shower Valve, Handle, Door & Pan Replacement Chandler AZ"
           description="Professional shower replacement Chandler AZ. Shower valve replacement, shower handle replacement, shower door replacement, shower pan replacement, shower drain replacement. Free estimates!"
           image="/images/optimized/photo-1620626011761-996317b8d101.webp"

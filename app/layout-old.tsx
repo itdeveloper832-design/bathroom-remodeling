@@ -6,8 +6,8 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Expert Home Remodeling – Chandler, AZ | ${siteConfig.name}`,
-    template: `%s | ${siteConfig.name}`
+    default: `Expert Home Remodeling – Chandler, AZ - ${siteConfig.name}`,
+    template: `%s - ${siteConfig.name}`
   },
   description: 'Professional bathroom and kitchen remodeling in Chandler, Arizona. Expert contractors, luxury renovations, free estimates. Top-rated home remodeling services.',
   authors: [{ name: siteConfig.name }],
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Expert Home Remodeling – Chandler, Arizona | ${siteConfig.name}`,
+    title: `Expert Home Remodeling – Chandler, Arizona - ${siteConfig.name}`,
     description: 'Professional bathroom and kitchen remodeling services in Chandler, Arizona. Transform your home with expert craftsmanship and quality service.',
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Expert Home Remodeling – Chandler, AZ | ${siteConfig.name}`,
+    title: `Expert Home Remodeling – Chandler, AZ - ${siteConfig.name}`,
     description: 'Professional bathroom and kitchen remodeling in Chandler, Arizona. Expert contractors, luxury renovations.',
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },

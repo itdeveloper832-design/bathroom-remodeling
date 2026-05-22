@@ -13,11 +13,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Professional Bathroom Remodeling Queen Creek AZ | Free Estimates",
+  title: "Professional Bathroom Remodeling Queen Creek AZ - Free Estimates",
   description:
     "Hire Queen Creek's top-rated bathroom remodeling company. We specialize in family-friendly renovations, walk-in showers, and master bath updates. Licensed company, free quotes: call (480) 306-5591 today!",
   openGraph: {
-    title: "Bathroom Remodeling Queen Creek AZ | ARZ Home Remodeling",
+    title: "Bathroom Remodeling Queen Creek AZ - ARZ Home Remodeling",
     description:
       "Licensed Queen Creek bathroom contractors. Walk-in showers, tub-to-shower conversions, and complete bathroom renovations. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-queen-creek-az/`,

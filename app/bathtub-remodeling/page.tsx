@@ -20,17 +20,17 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Bathtub Remodeling Chandler AZ | Replacement & Upgrades",
+  title: "Bathtub Remodeling Chandler AZ - Modern Upgrades & Upgrades",
   description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation, and luxury upgrades. Licensed AZ contractor. Free itemized estimates!",
   openGraph: {
-    title: "Bathtub Remodeling Chandler AZ | Replacement & Upgrades",
+    title: "Bathtub Remodeling Chandler AZ - Modern Upgrades & Upgrades",
     description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation, and luxury upgrades. Free estimates!",
     url: `${siteConfig.url}/bathtub-remodeling/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathtub Remodeling Chandler AZ | Replacement & Upgrades",
+    title: "Bathtub Remodeling Chandler AZ - Modern Upgrades & Upgrades",
     description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation. Free estimates!",
   },
   alternates: {

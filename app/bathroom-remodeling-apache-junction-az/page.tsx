@@ -13,11 +13,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Apache Junction AZ | Free Estimates",
+  title: "Bathroom Remodeling Apache Junction AZ - Free Estimates",
   description:
     "Hire Apache Junction's top-rated bathroom remodeling contractor. Specializing in walk-in showers, tub-to-shower conversions, and premium desert-safe tiling. Licensed company, free quotes: call (480) 306-5591 today!",
   openGraph: {
-    title: "Bathroom Remodeling Apache Junction AZ | ARZ Home Remodeling",
+    title: "Bathroom Remodeling Apache Junction AZ - ARZ Home Remodeling",
     description:
       "Licensed Apache Junction bathroom contractors. Custom walk-in showers, tub conversions, and complete bathroom renovations. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-apache-junction-az/`,

@@ -18,7 +18,7 @@ export async function generateMetadata(
     notFound()
   }
 
-  const title = `${areaData.fullName} | Bathroom Remodeling`
+  const title = `${areaData.fullName} - Bathroom Remodeling`
   const description = `Professional bathroom remodeling in ${areaData.areaName}. ${areaData.description} Expert contractors serving ${areaData.areaName} with quality renovations.`
   const url = `${siteConfig.url}/bathroom-remodeling-areas/${area}`
 

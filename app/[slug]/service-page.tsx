@@ -348,7 +348,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call now for a same-week consultation and clear pricing on your new shower.",
     },
     seo: {
-      title: "Shower Remodeling Chandler AZ | Local Experts",
+      title: "Shower Remodeling Chandler AZ - Local Experts",
       description:
         "Professional shower remodeling in Chandler. Custom tile, frameless glass, and waterproof installations from trusted local contractors.",
     },
@@ -508,7 +508,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call now for fast scheduling and a polished install that's ready to use.",
     },
     seo: {
-      title: "Bathtub Installation Chandler AZ | Tub Installers",
+      title: "Bathtub Installation Chandler AZ - Professional Installation",
       description:
         "Expert bathtub installation in Chandler. Level installs, proper drainage, and waterproof sealing. Get a free bathtub installation estimate.",
     },
@@ -668,7 +668,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call now for a fast quote and professional tub replacement scheduling.",
     },
     seo: {
-      title: "Bathtub Replacement Chandler AZ | Tub Upgrades",
+      title: "Bathtub Replacement Chandler AZ - Modern Solutions",
       description:
         "Bathtub replacement in Chandler. Clean removal, updated plumbing, level installs, and fresh finishes from top contractors. Get a fast quote.",
     },
@@ -988,7 +988,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call now for a tile installation estimate with waterproofing and cleanup included.",
     },
     seo: {
-      title: "Bathroom Tile Installation Services Chandler AZ | Tile Contractors",
+      title: "Bathroom Tile Installation Services Chandler AZ - Expert Service",
       description:
         "Expert bathroom tile installation services in Chandler, Arizona. Layout planning, waterproofing, precision installs, and sealed grout for showers, floors, and backsplashes by certified contractors.",
     },
@@ -1148,7 +1148,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call now for a precise vanity install with leveled tops and sealed plumbing.",
     },
     seo: {
-      title: "Bathroom Vanity Installation Services Chandler AZ | Vanity Contractors",
+      title: "Bathroom Vanity Installation Services Chandler AZ - Professional Installation",
       description:
         "Professional bathroom vanity installation services in Chandler, Arizona. Measurements, leveling, countertop install, plumbing hook-ups, and storage planning by local contractors.",
     },
@@ -1207,7 +1207,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call now for a free in-home consultation."
     },
     seo: {
-      title: "Master Bathroom Remodeling Services Chandler AZ | Luxury Renovations",
+      title: "Master Bathroom Remodeling Services Chandler AZ - Premium Design",
       description: "Top-rated master bathroom remodeling in Chandler, AZ. Custom design, luxury showers, and premium finishes by licensed contractors."
     }
   },
@@ -1245,7 +1245,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       finalDescription: "Call today to schedule your transformation."
     },
     seo: {
-      title: "Tub to Shower Conversion Chandler AZ | Walk-in Shower Upgrades",
+      title: "Tub to Shower Conversion Chandler AZ - Modern Solutions",
       description: "Professional tub-to-shower conversions in Chandler, AZ. Fast installation, accessible designs, and premium tile work by local experts."
     }
   }
@@ -1270,7 +1270,7 @@ export async function generateServiceMetadata({
     title,
     description,
     openGraph: {
-      title: `${title} | ARZ Home Remodeling`,
+      title: `${title} - ARZ Home Remodeling`,
       description,
       url,
       type: "website",

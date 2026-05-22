@@ -11,11 +11,11 @@ import Link from "next/link";
 import { ArrowRight, FileText, CheckCircle2, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Permits Chandler AZ | Guide & Requirements",
+  title: "Bathroom Remodeling Permits Chandler AZ - Guide & Requirements",
   description:
     "Do you need a permit for a bathroom remodel in Chandler, AZ? Learn City of Chandler permit rules, fees, and inspection guidelines.",
   openGraph: {
-    title: "Bathroom Remodeling Permits Chandler AZ | Guide & Requirements",
+    title: "Bathroom Remodeling Permits Chandler AZ - Guide & Requirements",
     description:
       "A complete guide to Chandler, AZ bathroom remodeling permits. Learn when city approval is required, fee schedules, and the inspection process.",
     url: `${siteConfig.url}/bathroom-remodeling-permits-chandler/`,

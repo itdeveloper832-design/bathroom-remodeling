@@ -23,7 +23,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Gilbert AZ | Licensed Contractor | ARZ",
+  title: "Bathroom Remodel Gilbert AZ - Licensed Contractor - ARZ",
   description: `Bathroom remodeling Gilbert AZ: showers, tub-to-shower, master baths. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
@@ -66,7 +66,7 @@ const gilbertFaqs = [
   {
     question: "Are you licensed to do bathroom remodeling in Arizona?",
     answer:
-      "Yes. We are a licensed Arizona contractor, fully insured, operating under license ROC Licensed | License #ROC338304. We provide a two year workmanship warranty on every project. We handle all required Gilbert city permits."
+      "Yes. We are a licensed Arizona contractor, fully insured, operating under license Licensed Contractor - ROC #338304. We provide a two year workmanship warranty on every project. We handle all required Gilbert city permits."
   },
   {
     question: "Do you serve neighborhoods outside central Gilbert?",

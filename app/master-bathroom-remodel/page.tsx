@@ -14,17 +14,17 @@ import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Master Bathroom Remodel Near Me | Luxury Remodeling Chandler AZ | ARZ",
+  title: "Master Bathroom Remodel Near Me - Professional Luxury Design in Chandler AZ | ARZ",
   description: "Master bathroom remodel near you in Chandler, AZ. Luxury bathroom renovations with custom tile showers, frameless glass, double vanities, quartz countertops. Licensed ROC338304. Free estimate.",
   openGraph: {
-    title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
+    title: "Master Bathroom Remodel Chandler AZ - Premium Service",
     description: "Master bathroom remodel in Chandler, AZ. Custom tile showers, frameless glass, double vanities, quartz tops. Licensed ROC338304. Free estimate.",
     url: `${siteConfig.url}/master-bathroom-remodel/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Master Bathroom Remodel Chandler AZ | Luxury Renovations",
+    title: "Master Bathroom Remodel Chandler AZ - Premium Service",
     description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities and full renovation.",
   },
   alternates: {

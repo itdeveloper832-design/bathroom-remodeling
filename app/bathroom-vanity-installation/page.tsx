@@ -18,7 +18,7 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Bathroom Vanity Installation Chandler AZ | Custom",
+  title: "Bathroom Vanity Installation Chandler AZ - Custom Service",
   description: "Custom bathroom vanity installation Chandler AZ. Single & double sink setups with luxury countertops. Transform your space today!",
   openGraph: {
     title: "Bathroom Vanity Installation Chandler AZ",

@@ -24,11 +24,11 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Luxury Bathroom Remodeling Scottsdale AZ | Premium Renovations",
+  title: "Luxury Bathroom Remodeling Scottsdale AZ - Premium Renovations",
   description:
     "Scottsdale's premier bathroom remodeling contractor. We specialize in luxury master bath transformations, custom walk-in showers, and high-end materials. Licensed company, free estimates: call (480) 306-5591 today!",
   openGraph: {
-    title: "Bathroom Remodeling Scottsdale AZ | ARZ Home Remodeling",
+    title: "Bathroom Remodeling Scottsdale AZ - ARZ Home Remodeling",
     description:
       "Licensed Scottsdale bathroom contractors. Luxury master bath renovations, spa-inspired showers, and high-end tile. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-scottsdale-az/`,

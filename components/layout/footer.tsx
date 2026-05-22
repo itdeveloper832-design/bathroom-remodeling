@@ -153,7 +153,7 @@ export function Footer() {
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
                   <a
-                    href="`tel:${siteConfig.phoneClean}`"
+                    href={`tel:${siteConfig.phoneClean}`}
                     className="text-background/80 hover:text-primary transition-colors text-sm no-underline"
                     aria-label={`Call us at ${siteConfig.phone}`}
                   >

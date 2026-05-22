@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { siteConfig } from "@/lib/site-config";
 
 export default function ShowerCTAFooter() {
   return (
@@ -17,8 +18,8 @@ export default function ShowerCTAFooter() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="text-center">
               <p className="text-muted-foreground mb-2">Call Us</p>
-              <a href="tel:+1229" className="text-3xl font-semibold text-primary hover:underline">
-                (229) XXX-XXXX
+              <a href={`tel:${siteConfig.phoneClean}`} className="text-3xl font-semibold text-primary hover:underline">
+                {siteConfig.phone}
               </a>
             </div>
             <div className="text-center">
@@ -46,10 +47,10 @@ export default function ShowerCTAFooter() {
               Schedule My Free Shower Estimate
             </Link>
             <a
-              href="tel:+1229"
+              href={`tel:${siteConfig.phoneClean}`}
               className="bg-primary/10 text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/20 transition-colors text-center border border-primary"
             >
-              Call (229) XXX-XXXX Now
+              Call {siteConfig.phone} Now
             </a>
           </div>
         </div>

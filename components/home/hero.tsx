@@ -45,7 +45,7 @@ export default function Hero() {
           </p>
 
           <p className="text-lg md:text-xl text-background/80 mb-10 leading-relaxed font-light">
-            Specializing in walk-in showers, tub-to-shower conversions, and custom tile work. ROC licensed, insured, and backed by our 2-year workmanship warranty. We handle every detail from permits to finishing touches.
+            Specializing in walk-in showers, tub-to-shower conversions, and custom tile work. Licensed and insured with a 2-year workmanship warranty. We handle every detail from permits to finishing touches.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

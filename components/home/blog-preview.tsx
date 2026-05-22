@@ -5,31 +5,31 @@ import { Button } from "@/components/ui/button";
 
 const blogPosts = [
   {
-    slug: "bathroom-remodeling-trends-2024",
-    title: "Top Bathroom Remodeling Trends for 2024",
+    slug: "complete-guide-bathroom-remodeling-chandler-arizona",
+    title: "Complete Guide to Bathroom Remodeling in Chandler, Arizona",
     excerpt:
-      "Discover the latest bathroom design trends transforming homes in Chandler, Arizona, from spa-like showers to smart technology.",
-    image: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
-    date: "January 15, 2024",
+      "The ultimate comprehensive guide to bathroom remodeling in Chandler. Learn planning, design, permits, timelines, and long-term maintenance.",
+    image: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
+    date: "May 20, 2026",
+    category: "Guides",
+  },
+  {
+    slug: "2024-bathroom-design-trends-chandler-arizona",
+    title: "2024-2025 Bathroom Design Trends for Chandler, Arizona Homes",
+    excerpt:
+      "Explore 2024-2025 bathroom design trends. Spa features, sustainable materials, minimalist design, and luxury fixtures trending now.",
+    image: "/images/optimized/photo-1620626011761-996317b8d101.webp",
+    date: "May 18, 2026",
     category: "Trends",
   },
   {
-    slug: "how-to-choose-bathroom-tiles",
-    title: "How to Choose the Perfect Bathroom Tiles",
+    slug: "bathroom-remodel-cost-chandler-az-2025",
+    title: "2025 Bathroom Remodel Cost in Chandler, AZ - Local Price Guide",
     excerpt:
-      "A comprehensive guide to selecting tiles that complement your bathroom design, from porcelain to natural stone options.",
-    image: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
-    date: "January 8, 2024",
-    category: "Tips",
-  },
-  {
-    slug: "small-bathroom-remodel-ideas",
-    title: "10 Small Bathroom Remodel Ideas That Maximize Space",
-    excerpt:
-      "Creative solutions for making the most of your compact bathroom. Learn design tricks that make small spaces feel larger.",
-    image: "/images/optimized/photo-1620626011761-996317b8d101.webp",
-    date: "December 28, 2023",
-    category: "Ideas",
+      "Complete analysis of bathroom remodeling costs in Chandler, Arizona. Compare prices by project size, materials, labor, and neighborhoods.",
+    image: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
+    date: "May 15, 2026",
+    category: "Pricing",
   },
 ];
 

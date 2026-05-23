@@ -206,14 +206,20 @@ export default function GilbertPage() {
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Your bathroom should be a sanctuary, but many Gilbert homes built in the 1990s and 2000s are showing their age. 
               Outdated tile, leaky shower pans, and garden tubs that go unused are common challenges we solve every day for 
-              local homeowners.
+              local homeowners. If you have been planning a professional <strong>bathroom remodel gilbert</strong>, <strong>bathroom remodeling gilbert</strong>, or premium <strong>bath remodeling gilbert</strong>, our local team is here to help.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in{" "}
-              <strong className="text-foreground">bathroom remodeling in Gilbert, AZ</strong>: from sleek 
+              At ARZ Home Remodeling, we specialize in 
+              <strong className="text-foreground"> bathroom remodeling in Gilbert, AZ</strong>: from sleek 
               tub-to-shower conversions in Power Ranch to full master bath transformations in Morrison Ranch. 
-              We are a licensed Arizona contractor, serving homeowners across{" "}
-              <span className="text-primary font-semibold">85234, 85295, 85296, 85297, and 85298</span>.
+              We are a licensed Arizona contractor, serving homeowners across 
+              <span className="text-primary font-semibold"> 85234, 85295, 85296, 85297, and 85298</span>. Whether you seek the best **gilbert bathroom remodel**, **bathroom remodel gilbert az**, or complete **gilbert bathroom remodeling** services, we coordinate everything seamlessly.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              As a full-service **gilbert bathroom remodeling company** and leading provider of **bathroom remodeling services in Gilbert, AZ** (including custom **bathroom remodeling gilbert az** and **bathroom remodeling service gilbert**), we ensure every component is top-notch. Our custom renovations include modern **bathroom renovations gilbert** and **bathroom renovations gilbert az** designs tailored to your family's needs.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Whether you are looking for a certified **bathroom remodeler gilbert**, **bathroom remodeler gilbert arizona**, **gilbert bathroom remodeler**, or are ready to execute a complete **master bathroom remodel gilbert** project, we focus on durability and clean styling. We provide free itemized estimates for all **gilbert bathroom remodeling service** projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">

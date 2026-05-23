@@ -113,11 +113,10 @@ export default function BathroomLightingInstallationPage() {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
-              Layered Task Design & GFCI Shock Safety in Chandler
+              Professional Bathroom Lighting Contractor & Upgrades
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Our <strong>bathroom lighting installation in Chandler AZ</strong> protects your family by executing professional electrical upgrades. 
-              Bathrooms are high humidity zones that require strict National Electrical Code compliance and vapor proof fixtures.
+              When searching for a qualified <strong>bathroom lighting contractor</strong> to manage your electrical needs, you need experience and precision. Our team provides top-tier <strong>bathroom lighting upgrades near me</strong> that enhance both safety and aesthetics. Our <strong>bathroom lighting installation in Chandler AZ</strong> protects your family by executing professional electrical upgrades. Whether you need a brand-new <strong>interior lighting installation chandler az</strong>, a custom <strong>light fixture installation chandler az</strong>, or a quick <strong>light fixture repair chandler az</strong>, our licensed crew handles it all in compliance with strict building codes.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="p-6 bg-secondary/50 rounded-2xl border border-border">

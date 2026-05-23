@@ -205,14 +205,17 @@ export default function TempePage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Tempe homeowners value both style and functionality. Whether you live in a classic home in South Tempe or a 
-              modern space near Downtown, your bathroom should be a reflection of your lifestyle.
+              modern space near Downtown, your bathroom should be a reflection of your lifestyle. If you've been searching for a professional <strong>bathroom remodel tempe</strong>, reliable <strong>bathroom remodeling tempe</strong>, or custom <strong>bathroom renovation tempe</strong>, our team provides the high-end craftsmanship you need.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in{" "}
-              <strong className="text-foreground">bathroom remodeling in Tempe, AZ</strong>: from custom walk-in 
+              At ARZ Home Remodeling, we specialize in 
+              <strong className="text-foreground"> bathroom remodeling in Tempe, AZ</strong>: from custom walk-in 
               showers in Warner Ranch to full master bath transformations near ASU. We are a licensed Arizona 
-              contractor, serving homeowners across{" "}
-              <span className="text-primary font-semibold">85281, 85282, 85283, and 85284</span>.
+              contractor, serving homeowners across 
+              <span className="text-primary font-semibold"> 85281, 85282, 85283, and 85284</span>. Whether you seek the best **tempe bathroom remodel**, **bathroom remodeling tempe az**, or **bathroom renovation tempe az** services, we coordinate every design element.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Our comprehensive services cover everything from full luxury layouts to custom safety additions, including complete **bathroom renovations tempe az** and modern upgrades. As a licensed team, we are proud to be among the top **bathroom remodel contractors tempe**, ensuring structural integrity and precise finishes on every single project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">

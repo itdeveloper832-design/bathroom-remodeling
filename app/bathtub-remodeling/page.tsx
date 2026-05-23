@@ -129,17 +129,13 @@ export default function BathtubRemodelingPage() {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
-              Tub Replacement vs. Refinishing in Chandler
+              Professional Bathtub Remodeling, Removal & Installation
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Many homeowners search for <strong>bathroom refinishers near me</strong> as a quick fix for a stained or outdated tub. 
-              While refinishing can provide a temporary cosmetic lift, it often fails within 2-3 years due to Chandler's heavy mineral usage. 
-              Our <strong>bathtub remodeling contractor chandler az</strong> team recommends a full tub replacement for a permanent, 
-              leak-proof solution that adds real value to your home.
+              Whether you are looking for <strong>bathtub remodeling in mesa</strong>, <strong>bathtub remodeling in apache junction</strong>, or are searching for top-tier <strong>bathtub installation chandler az</strong> options, our crew is here. Many homeowners search for **bathroom refinishers near me** or **bathtub repair chandler az** as a quick fix for a stained or damaged tub surround. Resurfacing or cosmetic patches are temporary and fail within 2-3 years due to hard water mineral deposits. A complete, professional tub replacement is the only permanent solution.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              We provide <strong>affordable bathtub remodeling in Chandler AZ</strong> that gives you a brand-new, modern tub 
-              backed by a workmanship warranty, which is something you will not get from a simple resurfacing job.
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              If you have asked <strong>how to take a bathtub out</strong> or looked for a safe <strong>bathtub removal near me</strong> to swap your tub, you will find that DIY demolition carries a high risk of water and wall damage. Our expert <strong>bathtub removal service</strong> ensures that the old tub is safely disconnected, extracted, and disposed of, protecting your drywall and flooring. We prepare the plumbing substrate and secure a flawless fit.
             </p>
           </div>
         </section>

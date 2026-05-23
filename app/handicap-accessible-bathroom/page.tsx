@@ -95,7 +95,10 @@ export default function AccessibleBathroomPage() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-6">Why Choose Accessible Bathroom Design?</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Whether you are aging in place, recovering from an injury, or planning for accessibility needs, an ADA-compliant bathroom provides safety, independence, and dignity. Our accessible bathroom remodels in Chandler are designed to exceed ADA standards while maintaining beautiful, modern aesthetics.
+                  Whether you are aging in place, recovering from an injury, or planning for accessibility needs, an ADA-compliant bathroom provides safety, independence, and dignity. If you are searching for expert <strong>accessible shower remodeling chandler</strong>, professional <strong>accessible shower installation chandler</strong>, or a custom <strong>handicap accessible shower chandler</strong>, our team has the specialized expertise required.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  We are leading <strong>handicap bathroom remodel contractors</strong> operating across the East Valley. Homeowners look to us for <strong>ada bathroom remodel arizona</strong> projects, as well as <strong>accessible shower remodeling arizona</strong> and <strong>accessible shower remodeling mesa</strong> updates. We also coordinate <strong>accessible shower remodeling gilbert</strong>, <strong>accessible shower installation gilbert</strong>, and <strong>accessible shower remodeling queen creek</strong> projects. Safety and style blend perfectly in our designs.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mt-8">
                   <div className="flex gap-4">

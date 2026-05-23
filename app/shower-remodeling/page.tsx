@@ -78,6 +78,38 @@ export default function ShowerRemodelingPage() {
 
         <LocalTrust cityName="Chandler" />
 
+        {/* REGIONAL SHOWER SERVICES COVERS */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              East Valley Shower Remodeling & Installation Services
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              When searching for a top-tier <strong>shower remodel near me</strong>, <strong>shower renovation near me</strong>, or the best <strong>shower remodel companies near me</strong>, homeowners in the Phoenix East Valley choose ARZ Home Remodeling. As a premier <strong>shower renovation company</strong> and leader in <strong>arizona shower remodeling</strong>, we deliver complete peace of mind. Our specialized <strong>walk-in shower company services</strong> and professional <strong>walk-in shower installation services</strong> cover everything from structural framing to final sealant.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mt-8 text-left">
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-semibold text-foreground mb-3">Chandler Shower Solutions</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We are the top-rated <strong>shower remodeling company chandler</strong> and provider of premium <strong>shower remodeling services chandler</strong>. From a custom <strong>shower remodel chandler az</strong> or standard <strong>shower remodel chandler</strong> to professional <strong>shower installation services chandler</strong>, <strong>shower installation chandler</strong>, and <strong>shower installation chandler az</strong>, our team handles every step. Hire the best for your <strong>chandler shower remodeling</strong> or <strong>shower remodeling chandler</strong>.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-semibold text-foreground mb-3">Mesa Shower Remodeling</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Looking for an expert <strong>shower remodeling company mesa</strong>? We provide high-end <strong>shower remodeling services mesa</strong> and custom <strong>shower remodeling in mesa</strong> layouts. Whether you are budgeting for standard <strong>shower remodeling mesa</strong> or a full luxury curbless bath upgrade, we use waterproof substrates to guarantee leak-proof results.
+                </p>
+              </div>
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-semibold text-foreground mb-3">Gilbert & Tempe Coverages</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We serve all of Gilbert as a trusted <strong>shower remodeling company gilbert</strong>. Homeowners seek us out for a custom <strong>shower remodel gilbert az</strong>, <strong>shower remodel gilbert</strong>, or complete <strong>shower remodeling gilbert az</strong>. Our team handles everything from standard <strong>shower remodeling gilbert</strong> and <strong>shower remodeling in gilbert</strong> to specialized <strong>shower remodel gilbert arizona</strong> designs. We also provide <strong>shower installation tempe az</strong> services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <ShowerTypes />
 
         <ShowerCostSection />

@@ -205,14 +205,20 @@ export default function MesaPage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Mesa homeowners deserve bathrooms that combine beauty with durability. Many homes in areas like Dobson Ranch 
-              or Eastmark are ready for a modern upgrade, replacing builder-grade materials with high-end, custom finishes.
+              or Eastmark are ready for a modern upgrade, replacing builder-grade materials with high-end, custom finishes. If you've been searching for a professional <strong>bathroom remodel mesa</strong>, reliable <strong>bathroom remodeling mesa</strong>, or premium <strong>bath remodeling mesa</strong>, we are here to help.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in{" "}
-              <strong className="text-foreground">bathroom remodeling in Mesa, AZ</strong>: from custom walk-in 
+              At ARZ Home Remodeling, we specialize in 
+              <strong className="text-foreground"> bathroom remodeling in Mesa, AZ</strong>: from custom walk-in 
               showers in Las Sendas to full master bath transformations in Eastmark. We are a licensed Arizona 
-              contractor, serving homeowners across{" "}
-              <span className="text-primary font-semibold">85201, 85204, 85208, and 85212</span>.
+              contractor, serving homeowners across 
+              <span className="text-primary font-semibold"> 85201, 85204, 85208, and 85212</span>. Whether you need a top-rated **mesa bathroom remodeling company**, a trusted **mesa bathroom remodeling contractor**, or are seeking custom **mesa bathroom renovation** solutions, our team delivers superior results.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              If you want the best **mesa bathroom remodel**, **bathroom remodel mesa az**, or **bathroom remodeling mesa az** services, you can trust our local craftsmanship. We also offer expert **mesa bathroom renovation services**, **bathroom renovations mesa**, and custom **bathroom renovations mesa az**. We handle every layout upgrade, plumbing line, and custom tile installation, making us the premier **bathroom remodeling contractor mesa** and **bathroom remodeling contractor in mesa**.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Finding a reliable **bathroom remodeler mesa**, **bathroom remodel contractors mesa**, or **mesa bathroom remodeling service** has never been easier. We pride ourselves on clear pricing and absolute transparency. Contact us today to explore our **bathroom renovation services in mesa**, **mesa az bathroom remodel**, or to start your custom **bathroom renovation mesa** project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">

@@ -100,8 +100,23 @@ export default function BathroomTileInstallationPage() {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
-              TCNA Standards and Advanced Substrate Waterproofing in Chandler
+              Premium Tile & Custom Shower Installation Services
             </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              If you have been searching for a professional <strong>tile installation near me</strong>, certified <strong>tile installers near me</strong>, or the best <strong>tiles installers near me</strong>, our team provides flawless craftsmanship. We specialize in all forms of custom stone and <strong>tile installation chandler</strong>, as well as <strong>tile installation chandler az</strong>, serving the entire East Valley as top-tier <strong>tile installation contractors near me</strong> and <strong>tile installation companies near me</strong>.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Our specialists are highly skilled in <strong>tile shower installation chandler</strong>, <strong>tile shower installation services chandler</strong>, <strong>tile shower installers near me</strong>, and general <strong>bathroom tile installers near me</strong>. We handle regional requests including <strong>tile shower installation mesa</strong>, <strong>tile shower installation gilbert</strong>, <strong>tile shower installation queen creek</strong>, and complete <strong>tile shower installation arizona</strong> layouts.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Whether you need a custom <strong>subway tile installation near me</strong>, <strong>mosaic tile installation near me</strong>, <strong>porcelain tile installation near me</strong>, <strong>large format tile installers near me</strong>, <strong>ceramic tile contractors near me</strong>, <strong>glass tile installers near me</strong>, or a custom <strong>backsplash installation chandler</strong>, our precision is unmatched. We handle the initial preparation, including <strong>chandler tile removal</strong>, specialized <strong>tile removal contractors chandler</strong>, <strong>tile removal contractors chandler az</strong>, and professional <strong>tile removal company chandler az</strong> solutions, so that the substrate is completely clean and flat.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Need floor updates? We provide custom <strong>tile flooring installation chandler az</strong> and complete <strong>tile floor installation chandler</strong> services. If you need <strong>tile floor removal chandler</strong>, <strong>tile floor removal chandler az</strong>, or a custom <strong>tile floor chandler az</strong>, we extract the old material efficiently. We also provide <strong>laundry room tile installation near me</strong> to keep your entire utility space safe and moisture-resistant.
+            </p>
+            <h3 className="font-serif text-2xl font-semibold mt-10 mb-6 text-foreground text-center">
+              TCNA Standards and Advanced Substrate Waterproofing in Chandler
+            </h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Our <strong>bathroom tile installation in Chandler AZ</strong> protects your framing from moisture damage. 
               We strictly follow Tile Council of North America standards to deliver leak free shower surrounds and flat floor tile layouts.

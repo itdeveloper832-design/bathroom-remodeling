@@ -133,14 +133,10 @@ export default function TubToShowerConversionPage() {
               Leading Tub to Shower Conversion Experts in Arizona
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              When searching for <strong>tub to shower conversion companies near me</strong>, you want a team that understands 
-              both the aesthetic and structural requirements of Arizona homes. We specialize in <strong>tub to shower conversion in Arizona</strong>, 
-              focusing on high-quality waterproofing and custom designs. While we primarily focus on <strong>tub to shower conversion near me</strong>, 
-              we can also discuss <strong>shower to tub conversions near me</strong> for those looking to add a soaking bath back into their home.
+              When searching for the best <strong>tub to shower conversion companies near me</strong>, you want an experienced team that understands both the aesthetic and structural requirements of Arizona homes. We specialize in professional <strong>tub to shower conversion chandler</strong>, custom <strong>tub to shower conversion arizona</strong>, and nearby regional solutions like a <strong>tub to shower conversion queen creek</strong>. While we primarily focus on <strong>tub to shower conversion near me</strong>, we can also discuss <strong>shower to tub conversions near me</strong> for those looking to add a soaking bath back into their home.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Our <strong>bath to shower conversion near me</strong> services are designed to maximize your bathroom's footprint, 
-              providing a more open and modern feel while significantly improving accessibility. As leading <Link href="/" className="font-semibold underline hover:text-primary transition-colors">bathroom renovation contractors in Chandler</Link>, we guarantee a flawless finish every time.
+              Our <strong>bath to shower conversion near me</strong> services are designed to maximize your bathroom's footprint, providing a more open and modern feel while significantly improving accessibility. As leading <Link href="/" className="font-semibold underline hover:text-primary transition-colors">bathroom renovation contractors in Chandler</Link>, we guarantee a flawless finish every time.
             </p>
             <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
               <p className="text-foreground font-medium mb-4">

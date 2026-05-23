@@ -113,11 +113,10 @@ export default function BathroomFlooringInstallationPage() {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
-              Anti-Fracture Membranes & Foundation Shifting in Chandler
+              Professional Bathroom Flooring Installation & Foundation Prep
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Our <strong>bathroom flooring installation in Chandler AZ</strong> protects your tile from structural cracking. 
-              Clay soil in the East Valley expands and contracts heavily between hot summers and monsoon seasons, causing concrete slabs to shift.
+              If you have been looking for the most reliable <strong>bathroom floor installation near me</strong>, our crew provides flawless tile and stone work. Our <strong>bathroom flooring installation in Chandler AZ</strong> protects your tile from structural cracking. Clay soil in the East Valley expands and contracts heavily between hot summers and monsoon seasons, causing concrete slabs to shift.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="p-6 bg-secondary/50 rounded-2xl border border-border">

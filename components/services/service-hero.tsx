@@ -29,7 +29,7 @@ export default function ServiceHero({
       <BreadcrumbSchema items={breadcrumbs} />
       
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-primary/40">
         <Image
           src={image}
           alt={`${title} - Professional bathroom remodeling in Chandler Arizona`}
@@ -39,7 +39,7 @@ export default function ServiceHero({
           fetchPriority="high"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-transparent" />
       </div>
 
       {/* Content */}
@@ -85,7 +85,7 @@ export default function ServiceHero({
               <Button
                 asChild
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 py-6"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6"
               >
                 <Link href="/contact">Get Your Free Estimate</Link>
               </Button>

@@ -8,7 +8,7 @@ const navLinkClass =
   "text-base font-semibold text-foreground hover:text-primary transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all hover:after:w-full focus-visible:outline-2 focus-visible:outline-offset-2 rounded px-2 py-1";
 
 const ctaClass =
-  "inline-flex items-center justify-center rounded-full bg-foreground hover:bg-foreground/90 text-background px-6 py-2 text-base font-semibold transition-colors";
+  "inline-flex items-center justify-center rounded-full bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-2 text-base font-semibold transition-colors";
 
 export function Header() {
   return (
@@ -88,7 +88,7 @@ export function Header() {
                   </a>
                   <Link
                     href="/contact/"
-                    className="mt-2 inline-flex w-full items-center justify-center rounded-md bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-6 transition-colors"
+                    className="mt-2 inline-flex w-full items-center justify-center rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-bold py-4 px-6 transition-colors"
                   >
                     Get Free Estimate
                   </Link>

@@ -58,7 +58,7 @@ export default function Financing() {
           </div>
 
           <div className="text-center">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
               <Link href="/financing/">Learn About Financing</Link>
             </Button>
             <p className="text-muted-foreground text-sm mt-4">Subject to credit approval. Terms apply.</p>

@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site-config";
 export default function Hero() {
   return (
     <section className="relative min-h-[55vh] flex items-center overflow-hidden pt-28 md:pt-36 lg:pt-44" aria-label="Hero section">
-      <div className="absolute inset-0 z-0 bg-foreground/40">
+      <div className="absolute inset-0 z-0 bg-primary/40">
         <Image
           src="/images/optimized/photo-1620626011761-996317b8d101.avif"
           alt="Custom walk-in shower and tile bathroom remodel in Chandler AZ by ARZ Home Remodeling"
@@ -20,7 +20,7 @@ export default function Hero() {
           decoding="async"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-transparent" aria-hidden="true" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pb-16 lg:pb-20 pt-4 md:pt-6 lg:pt-8">
@@ -60,7 +60,7 @@ export default function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-8 py-6"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6"
               aria-label="Get your free in-home bathroom remodel estimate"
             >
               <Link href="#contact">Get a Free In-Home Estimate</Link>

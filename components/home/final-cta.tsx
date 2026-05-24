@@ -25,7 +25,7 @@ export default function FinalCTA() {
             <Button
               asChild
               size="lg"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-base px-8 py-6 group"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-8 py-6 group"
             >
               <Link href="/contact/">
                 Schedule Your Free Quote

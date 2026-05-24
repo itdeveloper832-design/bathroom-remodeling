@@ -66,25 +66,25 @@ html {
 
 :root {
   /* Luxury Remodeling Color Palette */
-  --background: oklch(0.97 0.005 85); /* Warm off-white */
-  --foreground: oklch(0.25 0.01 250); /* Deep charcoal */
-  --card: oklch(0.99 0.003 85); /* Soft cream */
-  --card-foreground: oklch(0.25 0.01 250);
-  --popover: oklch(0.99 0.003 85);
-  --popover-foreground: oklch(0.25 0.01 250);
-  --primary: oklch(0.45 0.13 184); /* Darkened for better contrast */
-  --primary-foreground: oklch(0.99 0.003 85);
+  --background: #FFFFFF; /* Pure White */
+  --foreground: #222222; /* Dark Charcoal */
+  --card: #FFFFFF;
+  --card-foreground: #222222;
+  --popover: #FFFFFF;
+  --popover-foreground: #222222;
+  --primary: #1A2E4A; /* Deep Navy */
+  --primary-foreground: #FFFFFF;
   --secondary: oklch(0.94 0.01 85); /* Light beige */
-  --secondary-foreground: oklch(0.25 0.01 250);
+  --secondary-foreground: #222222;
   --muted: oklch(0.92 0.01 85);
   --muted-foreground: oklch(0.30 0.01 250); /* Darkened for better contrast */
-  --accent: oklch(0.55 0.08 85); /* Muted gold accent */
-  --accent-foreground: oklch(0.99 0.003 85);
+  --accent: #C9972B; /* Warm Gold */
+  --accent-foreground: #FFFFFF;
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.99 0.003 85);
+  --destructive-foreground: #FFFFFF;
   --border: oklch(0.88 0.015 85);
   --input: oklch(0.92 0.01 85);
-  --ring: oklch(0.55 0.08 85);
+  --ring: #C9972B;
   --chart-1: oklch(0.55 0.08 85);
   --chart-2: oklch(0.55 0.13 184);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -137,8 +137,8 @@ html {
 }
 
 @theme inline {
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-  --font-serif: var(--font-inter), system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Inter', system-ui, sans-serif;
   --font-mono: 'Geist Mono', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -184,6 +184,20 @@ html {
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2 {
+    font-weight: 800 !important;
+  }
+  h3 {
+    font-weight: 700 !important;
+  }
+  p {
+    font-weight: 400 !important;
+    line-height: 1.65 !important;
+  }
+  button, .cta, .btn, [role="button"] {
+    font-weight: 600 !important;
   }
 }
 
@@ -356,3 +370,29 @@ section {
   .gallery-card:focus-within .gallery-after { opacity: 1; }
   .gallery-card:focus-within .gallery-before { opacity: 0; }
 }
+
+/* ===== BRAND COLOR SCHEME & CTA OVERRIDES ===== */
+
+/* Ensure all solid buttons and links acting as primary CTAs use Warm Gold (#C9972B) with white text */
+a[class*="bg-primary"]:not([class*="bg-primary/5"]):not([class*="bg-primary/10"]):not([class*="bg-primary/20"]),
+button[class*="bg-primary"]:not([class*="bg-primary/5"]):not([class*="bg-primary/10"]):not([class*="bg-primary/20"]),
+a[class*="bg-foreground"]:not([class*="bg-foreground/5"]):not([class*="bg-foreground/10"]):not([class*="bg-foreground/20"]),
+button[class*="bg-foreground"]:not([class*="bg-foreground/5"]):not([class*="bg-foreground/10"]):not([class*="bg-foreground/20"]),
+.btn-primary,
+.cta-button {
+  background-color: #C9972B !important;
+  color: #FFFFFF !important;
+  border-color: #C9972B !important;
+}
+
+a[class*="bg-primary"]:hover,
+button[class*="bg-primary"]:hover,
+a[class*="bg-foreground"]:hover,
+button[class*="bg-foreground"]:hover,
+.btn-primary:hover,
+.cta-button:hover {
+  background-color: #b08120 !important;
+  color: #FFFFFF !important;
+  border-color: #b08120 !important;
+}
+

@@ -55,7 +55,7 @@ export default function BathroomSection() {
               ))}
             </div>
 
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground group">
+            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground group">
               <Link href="/bathroom-remodeling/">
                 Explore Bathroom Services
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

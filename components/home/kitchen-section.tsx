@@ -46,7 +46,7 @@ export default function LegacySection() {
             <Button
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground group h-12"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground group h-12"
             >
               <Link href="/">
                 View Bathroom Remodeling Options

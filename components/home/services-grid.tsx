@@ -84,7 +84,7 @@ export default function ServicesGrid() {
         <div className="text-center mt-12">
           <Link
             href="/services/"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-accent-foreground rounded-full font-semibold hover:bg-accent/90 transition-colors"
           >
             See All Services
             <ArrowUpRight className="w-5 h-5" />

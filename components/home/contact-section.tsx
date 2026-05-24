@@ -235,7 +235,7 @@ export default function ContactSection() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold h-12"
+                      className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold h-12"
                       disabled={isSubmitting}
                       aria-label="Submit your free estimate request"
                     >

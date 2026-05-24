@@ -214,7 +214,7 @@ export function QuoteForm() {
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-primary hover:bg-primary/90 text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2"
+          className="w-full bg-accent hover:bg-accent/90 text-accent-foreground focus-visible:outline-2 focus-visible:outline-offset-2"
           aria-label={
             isSubmitting
               ? "Sending quote request"

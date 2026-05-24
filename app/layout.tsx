@@ -3,17 +3,8 @@ import Script from 'next/script'
 import { siteConfig } from '@/lib/site-config'
 import './globals.css'
 
-import { Inter } from 'next/font/google'
 import { StickyCallButton } from '@/components/layout/sticky-call-button'
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '600'],
-  display: 'swap',
-  variable: '--font-inter',
-  preload: true,
-  adjustFontFallback: true,
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -72,7 +63,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#6BB3D9',
+  themeColor: '#1A2E4A',
   width: 'device-width',
   initialScale: 1,
   minimumScale: 1,
@@ -86,8 +77,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth ${inter.variable}`}>
+    <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
         <link
           rel="preload"
           as="image"
@@ -102,7 +96,7 @@ export default function RootLayout({
         <meta name="ICBM" content={`${siteConfig.address.coordinates.lat}, ${siteConfig.address.coordinates.lng}`} />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       </head>
-      <body className="font-sans antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
+      <body className="antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
         {children}
         <StickyCallButton />
 

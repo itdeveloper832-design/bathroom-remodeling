@@ -34,9 +34,9 @@ const reasons = [
   },
   {
     icon: FileCheck,
-    title: "2-Year Workmanship Warranty",
+    title: "5-Year Workmanship Warranty",
     description:
-      "We stand behind our install on qualifying projects. Ask about coverage during your estimate.",
+      "We stand behind our Schluter-Kerdi waterproofing systems with an industry-leading 5-year warranty on custom tile showers.",
   },
 ];
 

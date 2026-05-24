@@ -52,6 +52,15 @@ export default function AboutPreview() {
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               Homeowners call us from older ranch homes near <strong>Downtown Chandler</strong> and <strong>Arizona Avenue</strong>, from neighborhoods by <strong>Chandler Fashion Center</strong> and <strong>Alma School Road</strong>, and from <strong>Ocotillo</strong>, <strong>Fulton Ranch</strong>, <strong>Sun Lakes</strong>, and the <strong>Loop 202</strong> area near Intel. We know local HOA rules and how long Chandler inspections usually take.
             </p>
+            <div className="mb-8 p-4 rounded-xl bg-accent/5 border border-accent/20 flex items-start gap-3">
+              <span className="text-accent text-xl mt-0.5">💎</span>
+              <div>
+                <h4 className="text-sm font-bold text-foreground mb-1">Wholesale Sourcing Partners</h4>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  We guide you through private selection visits directly at our local wholesale distributors (<strong>Arizona Tile</strong>, <strong>Bedrosians</strong>, and <strong>MSI</strong>) so you select high-end slabs, quartz countertops, and porcelain tile at contractor-level builder pricing.
+                </p>
+              </div>
+            </div>
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground group">
               <Link href="/about/">
                 Learn More About Us

@@ -219,6 +219,55 @@ export function Footer() {
         </div>
       </div>
 
+      {/* NARI, NKBA, ROC Trust Badges Strip */}
+      <div className="border-t border-background/10 bg-background/5">
+        <div className="container mx-auto px-4 lg:px-8 py-8">
+          <div className="flex flex-wrap items-center justify-center lg:justify-between gap-8 text-center">
+            <div className="text-sm font-medium text-background/60">
+              Verified Professional Affiliations & Credentials:
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+              <a 
+                href="https://www.nari.org/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-2 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 no-underline"
+              >
+                <span className="font-serif font-extrabold text-background text-lg tracking-wider">NARI</span>
+                <span className="text-[10px] text-background/60 leading-none block border-l border-background/20 pl-2 text-left uppercase">Member<br/>National Assoc.<br/>Remodeling Industry</span>
+              </a>
+              <a 
+                href="https://nkba.org/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-2 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 no-underline"
+              >
+                <span className="font-serif font-extrabold text-background text-lg tracking-wider">NKBA</span>
+                <span className="text-[10px] text-background/60 leading-none block border-l border-background/20 pl-2 text-left uppercase">Member<br/>National Kitchen<br/>& Bath Assoc.</span>
+              </a>
+              <a 
+                href="https://roc.az.gov/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-2 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 no-underline"
+              >
+                <span className="font-serif font-bold text-accent text-lg">ROC338304</span>
+                <span className="text-[10px] text-background/60 leading-none block border-l border-background/20 pl-2 text-left uppercase">Arizona Licensed<br/>Bonded & Insured<br/>Contractor</span>
+              </a>
+              <a 
+                href={siteConfig.googleBusinessLink} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-2 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 no-underline"
+              >
+                <span className="font-serif font-extrabold text-accent text-lg">★★★★★</span>
+                <span className="text-[10px] text-background/60 leading-none block border-l border-background/20 pl-2 text-left uppercase">Google Verified<br/>4.9 Star Rating<br/>50+ Local Reviews</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-background/10">
         <div className="container mx-auto px-4 lg:px-8 py-6">

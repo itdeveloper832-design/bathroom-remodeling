@@ -12,7 +12,9 @@ const LocalTrust = dynamic(() => import("@/components/home/local-trust"));
 const AboutPreview = dynamic(() => import("@/components/home/about-preview"));
 const ServicesGrid = dynamic(() => import("@/components/home/services-grid"));
 const ChandlerProjects = dynamic(() => import("@/components/home/chandler-projects"));
+const DesignBuildShowcase = dynamic(() => import("@/components/home/design-build-showcase"));
 const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"));
+const PricingTable = dynamic(() => import("@/components/home/pricing-table"));
 const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"));
 const ProcessSection = dynamic(() => import("@/components/home/process-section"));
 const ChandlerExpertise = dynamic(() => import("@/components/home/chandler-expertise"));
@@ -67,7 +69,9 @@ export default function HomePage() {
           <AboutPreview />
           <ServicesGrid />
           <ChandlerProjects />
+          <DesignBuildShowcase />
           <WhyChooseUs />
+          <PricingTable />
           <BathroomSection />
           <ProcessSection />
           <ChandlerExpertise />

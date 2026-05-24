@@ -21,17 +21,17 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Chandler AZ - Professional Installation",
-  description: "Tub to shower conversion in Chandler, AZ. Remove garden tub, install walk-in shower. Conversion companies near you. Professional contractors. 1–2 week install, firm price, licensed AZ contractor, ROC338304.",
+  title: "Tub-to-Shower Conversion Chandler AZ | Save Space",
+  description: `Convert your unused tub into a spacious, curbless walk-in shower in days. Low-profile entry & custom tile. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Tub to Shower Conversion in Chandler, Mesa & Gilbert AZ - Free Estimate",
+    title: "Tub-to-Shower Conversion Chandler AZ | Save Space",
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
     url: `${siteConfig.url}/tub-to-shower-conversion/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tub to Shower Conversion in Chandler, Mesa & Gilbert AZ - Free Estimate",
+    title: "Tub-to-Shower Conversion Chandler AZ | Save Space",
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
   },
   alternates: {

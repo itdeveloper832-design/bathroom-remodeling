@@ -32,10 +32,10 @@ const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview")
   ),
 });
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ - Licensed Contractor Specializing in Walk-In Showers",
-  description: `Licensed bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions, custom tile, and master baths. ROC338304. Free estimate: ${siteConfig.phone}.`,
+  title: "Bathroom Remodeling Chandler AZ | Licensed ROC338304",
+  description: `Mesa & Chandler's trusted bathroom remodeler since 2010. Custom walk-in showers, master bath overhauls & tub conversions. Licensed ROC338304. Call ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling in Chandler AZ - Professional Contractor",
+    title: "Bathroom Remodeling Chandler AZ | Licensed ROC338304",
     description:
       "Licensed Chandler bathroom contractor for walk-in showers, tub conversions, and custom tile. Free in-home estimates.",
     type: "website",

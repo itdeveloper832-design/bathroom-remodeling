@@ -13,11 +13,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Apache Junction AZ - Free Estimates",
+  title: "Bathroom Remodeling Apache Junction AZ | Licensed ROC338304",
   description:
-    "Hire Apache Junction's top-rated bathroom remodeling contractor. Specializing in walk-in showers, tub-to-shower conversions, and premium desert-safe tiling. Licensed company, free quotes: call (229) 306-5591 today!",
+    `Apache Junction's trusted bathroom remodeler. Custom walk-in showers, tub conversions & premium tiling. Licensed ROC338304. Free quotes: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling Apache Junction AZ - ARZ Home Remodeling",
+    title: "Bathroom Remodeling Apache Junction AZ | Licensed ROC338304",
     description:
       "Licensed Apache Junction bathroom contractors. Custom walk-in showers, tub conversions, and complete bathroom renovations. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-apache-junction-az/`,
@@ -83,12 +83,18 @@ export default function ApacheJunctionPage() {
               from classic desert ranches to modern family builds. We help local residents enhance their comfort, 
               safety, and home equity with professional bathroom transformations.
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               We specialize in <strong>bathroom remodeling in Apache Junction, AZ</strong>, offering modern curbless 
               showers, tub-to-shower conversions, and premium tile services that withstand the harsh desert climate and 
               highly mineralized municipal water. We serve all local zip codes including <strong>85119 and 85120</strong>.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **Superstition Foothills & Gold Canyon Custom Styling:** For homeowners in Gold Canyon and the Superstition Foothills, we design custom bathrooms that highlight the surrounding natural desert beauty. Our popular 'desert-modern' design packages utilize premium travertine-look porcelain tiles, copper or warm oil-rubbed bronze plumbing hardware, and window layouts configured to maximize views of the Superstition Mountains while maintaining absolute privacy.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **Septic & Rural Plumbing Customizations:** Rural properties in Apache Junction often run on private septic systems and well-water supplies. We make sure all fixture installations are fully compatible, incorporating high-efficiency low-flow showerheads and Comfort Height toilets that conserve water without sacrificing pressure. We also integrate custom water-softener loops to defend your brand-new plumbing and tiles from mineral scale.
+            </p>
+            <div className="flex flex-wrap gap-4 mt-8">
               <Button asChild size="lg">
                 <Link href="/contact/">Get Your Free Apache Junction Quote</Link>
               </Button>

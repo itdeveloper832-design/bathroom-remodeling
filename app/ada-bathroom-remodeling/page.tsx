@@ -20,10 +20,10 @@ import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "Accessible Shower Remodeling Chandler AZ - ADA Bathroom & Handicap Installation Services",
-  description: "Accessible shower remodeling, installation, and ADA bathroom remodeling in Chandler, AZ. Handicap bathroom remodel contractors. Walk-in showers, grab bars, roll-in entries, senior-safe modifications. Licensed ROC338304.",
+  title: "Accessible Shower Remodeling Chandler | ADA Specialist",
+  description: `Safe, beautiful walk-in showers in Chandler & Mesa. Certified ADA modifications & senior-safe tub conversions. Licensed ROC338304. Call ${siteConfig.phone}.`,
   openGraph: {
-    title: "ADA Bathroom Remodeling Chandler AZ - Senior Safe Design",
+    title: "Accessible Shower Remodeling Chandler | ADA Specialist",
     description: "Expert ADA bathroom remodeling in Chandler. Safe walk-in showers, roll-in entries, and professional safety modifications for seniors and mobility needs.",
     url: `${siteConfig.url}/ada-bathroom-remodeling/`,
     type: "website",
@@ -75,7 +75,7 @@ export default function ADAPage() {
     <>
       
       <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Ada Bathroom Remodeling", url: "https://arzhomeremodeling.com/ada-bathroom-remodeling/" } ]} />
-<ServiceSchema 
+      <ServiceSchema 
         serviceName="ADA Bathroom Remodeling in Chandler" 
         serviceDescription="Professional senior-safe and handicap accessible bathroom modifications in Chandler, AZ. Curbless showers, grab bars, and roll-in entries." 
         serviceUrl={`${siteConfig.url}/ada-bathroom-remodeling/`} 
@@ -96,7 +96,7 @@ export default function ADAPage() {
             <div className="flex flex-wrap justify-center gap-8 md:gap-12 text-primary font-medium">
                <div className="flex items-center gap-2">
                  <Shield className="w-5 h-5" />
-                 <span>ROC Licensed #345678</span>
+                 <span>ROC Licensed #338304</span>
                </div>
                <div className="flex items-center gap-2">
                  <CheckCircle className="w-5 h-5" />
@@ -144,6 +144,15 @@ export default function ADAPage() {
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Our <strong>ADA bathroom remodeling in Chandler AZ</strong> protects your safety near Sun Lakes. 
               We utilize advanced framing adjustments and professional backing support to construct fully wheelchair roll-in compliant environments.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **Strict Technical Compliance Standards:** We don't guess at accessibility—we build exactly to ADA guidelines. We ensure all accessible showers have at least a **36" x 36" clear interior footprint** (or 30" x 60" for roll-in configurations), door clearances widened to a **full 36 inches**, and slip-resistance flooring rated at a **Dynamic Coefficient of Friction (DCOF) >= 0.42** to prevent slips when wet.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **VA SAH & HISA Grant Coordination:** If you are a disabled veteran living in the East Valley, we coordinate directly with the Department of Veterans Affairs. We design and document our bathroom builds to satisfy VA Specially Adapted Housing (SAH) and Home Improvements and Structural Alterations (HISA) grant requirements, ensuring veterans get the complete funding they are entitled to for safety improvements.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **Caregiver & Mobility Space Planning:** True accessibility goes beyond grab bars. We plan your bathroom layout with a **60-inch turning radius** to allow seamless wheelchair or walker navigation. We also design vanity and shower placements to provide comfortable, safe spacing for both the homeowner and their caregiver or family nurse.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="p-6 bg-secondary/50 rounded-2xl border border-border">

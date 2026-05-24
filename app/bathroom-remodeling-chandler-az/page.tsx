@@ -24,11 +24,11 @@ import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ - Licensed Contractor - ARZ",
+  title: "Bathroom Remodeling Chandler AZ | Licensed ROC338304",
   description:
-    `Bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions, master baths, and tile. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
+    `Chandler's trusted bathroom remodeler. Specializing in walk-in showers & custom baths. Licensed ROC338304. Family-owned. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ - ARZ Home Remodeling",
+    title: "Bathroom Remodeling Chandler AZ | Licensed ROC338304",
     description:
       "Licensed Chandler bathroom contractors. Walk-in showers, tub conversions, master bath renovations. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-chandler-az/`,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Chandler AZ - Free Estimates",
+    title: "Bathroom Remodeling Chandler AZ | Licensed ROC338304",
     description: "Licensed Chandler bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
@@ -55,14 +55,24 @@ export const metadata: Metadata = {
 
 const chandlerFaqs = [
   {
-    question: "How long does a bathroom remodel in Chandler, AZ take?",
+    question: "Do I need a permit to remodel my bathroom in Chandler, AZ?",
     answer:
-      "A guest bathroom remodel typically takes two to three weeks of active construction. A full master bathroom renovation runs four to six weeks depending on scope. We provide a firm timeline in your written proposal before any work begins."
+      "Yes. The City of Chandler requires a building permit for any structural changes, new electrical wiring, or major plumbing relocations (like moving a toilet or shower drain). Cosmetic changes, like replacing a vanity or tiling in the existing layout, typically do not require permits. ARZ Home Remodeling manages the entire permitting process with the Chandler Development Services Department to ensure your project is 100% compliant."
   },
   {
-    question: "Do you need a permit for bathroom remodeling in Chandler?",
+    question: "How does Chandler's hard water affect bathroom tile and glass choices?",
     answer:
-      "Cosmetic upgrades like replacing a vanity or laying new flooring generally do not require permits. Structural modifications, shower relocations, or electrical upgrades require a Chandler city permit. We handle all permitting as part of your project at no extra management cost."
+      "Chandler has exceptionally hard water, which leads to calcium and scale buildup on porous materials. We highly recommend installing non-porous large-format porcelain tile with epoxy grout and low-iron frameless glass treated with a protective hydrophobic coating (like EnduroShield). This prevents scale staining and makes cleaning simple."
+  },
+  {
+    question: "How long does a typical bathroom remodel take in Chandler?",
+    answer:
+      "A standard tub-to-shower conversion or guest bathroom remodel takes 5 to 9 business days of active construction. A complete master bathroom overhaul involving plumbing relocations, custom tiling, and double-vanity installations typically takes 2 to 3 weeks from demolition to final walkthrough."
+  },
+  {
+    question: "Do you offer senior-safe bathroom modifications in Sun Lakes?",
+    answer:
+      "Yes, we are highly experienced in senior-safe bathroom remodeling in Sun Lakes and south Chandler. We specialize in curbless (barrier-free) walk-in showers, ADA-compliant comfort-height toilets, heavy-duty secure grab bars, and slip-resistant floor tiling to ensure independence and peace of mind."
   },
   {
     question: "How much does a bathroom remodel chandler az cost and what are the average prices?",
@@ -78,16 +88,6 @@ const chandlerFaqs = [
     question: "Can you remodel my shower without replacing the whole bathroom?",
     answer:
       "Yes. We specialize in partial renovations including shower replacements, tub to shower conversions, and vanity installations without requiring a full bathroom gut."
-  },
-  {
-    question: "Are you licensed to do bathroom remodeling in Arizona?",
-    answer:
-      "Yes. We are a licensed Arizona contractor operating under license Licensed Contractor - ROC #338304. We carry full insurance and provide a two year workmanship warranty on every project."
-  },
-  {
-    question: "Do you serve neighborhoods outside central Chandler?",
-    answer:
-      "We serve all of Chandler including Sun Lakes, Ocotillo, Fulton Ranch, Dobson Road, Cooper Road, and McQueen Road, as well as surrounding East Valley cities including Gilbert, Tempe, and Mesa. Our bathroom remodeling contractors are available throughout Chandler for shower remodeling services and tile shower installations."
   }
 ];
 
@@ -228,6 +228,18 @@ export default function ChandlerBathroomRemodelingPage() {
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               At ARZ Home Remodeling, we provide smart solutions for homeowners, specializing in full renovations, a complete <strong>chandler bathroom remodel</strong>, and targeted upgrades. Whether you are looking for a <strong>luxury remodel chandler</strong>, an affordable <strong>home remodel chandler</strong>, or a functional <Link href='/tub-to-shower-conversion/' className='text-primary hover:underline font-medium'>tub-to-shower conversion</Link>, our team handles everything from design to final inspection. As a local business specializing in <strong>chandler bathroom remodeling</strong> and <strong>home remodeling chandler</strong>, we proudly serve communities across 
               <span className="text-primary font-semibold"> 85224, 85225, 85226, and 85249</span>.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **Navigating Chandler Building Codes & Permitting:** We coordinate all structural, plumbing, and electrical permit documentation directly with the **Chandler Development Services Department** (located in Downtown Chandler). If your remodel involves moving a toilet drain, running new circuits, or removing partition walls, we make sure everything is 100% compliant with City of Chandler building safety standards.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **Combating Chandler's Hard Water:** The municipal water supply in the East Valley contains extremely high mineral levels. To prevent hard water buildup and mold, we install **Schluter-Kerdi waterproofing systems**, large-format non-porous porcelain tiles, and premium **epoxy grout** that resists calcium staining and discoloration. We also treat frameless glass doors with protective hydrophobic coatings to ensure your shower remains crystal clear.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **Neighborhood-Specific Styling:** We customize our designs to match the architectural character of your Chandler community:
+              * **Ocotillo:** Luxury spa-like transformations featuring curbless frameless glass enclosures, freestanding soaking tubs, and floating double vanities.
+              * **Fulton Ranch:** Sleek, modern updates with premium quartz countertops, custom tiled shower niches, and high-efficiency smart fixtures.
+              * **Sun Lakes:** Certified senior-safe conversions featuring zero-threshold roll-in entries, sturdy wall-anchored grab bars, and beautiful high-traction mosaic floor tiling.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               From top-tier walk-in showers to precise tile work, we deliver results that blend durability with modern aesthetics. We offer transparent, itemized quotes to ensure you get exceptional value for your investment. If you have been searching for a reliable <strong>bathroom contractor in Chandler, AZ</strong>, specialized <strong>bath remodeling services chandler az</strong>, or professional <strong>bath remodeling companies chandler az</strong>, our team is here to help. You can also view our <Link href='/bathroom-remodel-cost-chandler/' className='text-primary hover:underline font-medium'>detailed pricing guide</Link> for current 2026 rates and affordable <strong>bathroom remodel chandler az prices</strong>.

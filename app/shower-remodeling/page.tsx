@@ -25,17 +25,17 @@ import ShowerGallery from "@/components/shower-gallery";
 
 
 export const metadata: Metadata = {
-  title: "Custom Shower Remodeling in Chandler, AZ - Walk-In Showers, Frameless Glass & Tile Installs",
-  description: "ARZ Home Remodeling builds custom showers in Chandler with Schluter-Kerdi waterproofing, frameless glass, and a 2-year workmanship warranty. Licensed, insured since 2010. ROC338304. Free in-home estimate.",
+  title: "Shower Remodeling Chandler AZ | Custom Tiled Showers",
+  description: `Ditch your old shower. We design custom tiled walk-in showers with frameless glass. Schluter waterproofed. Licensed ROC338304. Free quotes: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Custom Shower Remodeling in Chandler, AZ - Walk-In Showers, Frameless Glass & Tile Installs",
+    title: "Shower Remodeling Chandler AZ | Custom Tiled Showers",
     description: "ARZ Home Remodeling builds custom showers in Chandler with Schluter-Kerdi waterproofing, frameless glass, and a 2-year workmanship warranty. Licensed, insured since 2010. ROC338304.",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Shower Remodeling in Chandler, AZ - Walk-In Showers & Frameless Glass",
+    title: "Shower Remodeling Chandler AZ | Custom Tiled Showers",
     description: "Expert shower remodeling in Chandler AZ. Schluter-Kerdi waterproofing, frameless glass, custom tile. ROC Licensed #338304. Free estimates!",
     images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
   },

@@ -23,17 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Mesa AZ - Licensed Contractor - ARZ",
-  description: `Bathroom remodel Mesa AZ: walk-in showers, tub-to-shower, master baths. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
+  title: "Bathroom Remodel Mesa AZ | Licensed ROC338304 | ARZ",
+  description: `Professional bathroom remodeling in Mesa, AZ. Master baths, tub conversions & custom tiling. Licensed ROC338304. 5★ rated. Book a free quote: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling Mesa: Licensed Contractors & Free Quotes",
+    title: "Bathroom Remodel Mesa AZ | Licensed ROC338304 | ARZ",
     description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
     url: `${siteConfig.url}/bathroom-remodeling-mesa-az/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Mesa: Licensed Contractors & Free Quotes",
+    title: "Bathroom Remodel Mesa AZ | Licensed ROC338304 | ARZ",
     description: "Licensed Mesa bathroom contractors. Custom showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-mesa.jpg`],
   },
@@ -43,6 +43,21 @@ export const metadata: Metadata = {
 };
 
 const mesaFaqs = [
+  {
+    question: "Do I need HOA approval for a bathroom remodel in Mesa master-planned communities?",
+    answer:
+      "While interior cosmetic renovations do not require HOA approval, master-planned communities in Mesa (such as Las Sendas, Eastmark, and Red Mountain Ranch) have strict regulations regarding contractor working hours, parking, dumpster placement, and noise. ARZ Home Remodeling coordinates directly with your HOA manager to ensure all guidelines are fully respected."
+  },
+  {
+    question: "What are the top bathroom design trends in Mesa, AZ?",
+    answer:
+      "Currently, Mesa homeowners prefer 'desert modern' aesthetics, combining earthy-toned textured tiles, matte black or champagne bronze hardware, floating wood-toned vanities, and energy-efficient LED backlit mirrors. Frameless walk-in tile showers remain the #1 request to replace dated garden tubs."
+  },
+  {
+    question: "What is the difference between a standard shower remodel and an ADA-accessible shower?",
+    answer:
+      "A standard shower remodel features a 3-to-5-inch curb step-over. An ADA-accessible shower is built flat with the bathroom floor (curbless or zero-threshold) to allow easy entry or wheelchair access, measuring at least 36\" x 36\" (or 30\" x 60\" for roll-in), equipped with hand showers, grab bars, and a folding seat."
+  },
   {
     question: "How long does a bathroom remodel take in Mesa, AZ?",
     answer:
@@ -62,17 +77,7 @@ const mesaFaqs = [
     question: "Can you remodel my shower without replacing the whole bathroom?",
     answer:
       "Yes. We specialize in partial remodels including shower-only replacements, tub-to-shower conversions, and vanity replacements without requiring a full bathroom gut."
-  },
-  {
-    question: "Are you licensed to do bathroom remodeling in Arizona?",
-    answer:
-      "Yes. We are a licensed Arizona contractor, fully insured, operating under license Licensed Contractor - ROC #338304. We provide a two year workmanship warranty on every project. We handle all required Mesa city permits."
-  },
-  {
-    question: "Do you serve neighborhoods outside central Mesa?",
-    answer:
-      "We serve all of Mesa including Dobson Ranch, Las Sendas, Eastmark, Red Mountain Ranch, Mulberry, and more, plus surrounding East Valley cities like Chandler, Gilbert, and Tempe. We are experts in all types of bathroom remodeling contractor services, from shower remodeling company work to complete bathroom renovations for families throughout Mesa."
-  },
+  }
 ];
 
 const services = [
@@ -213,6 +218,15 @@ export default function MesaPage() {
               showers in Las Sendas to full master bath transformations in Eastmark. We are a licensed Arizona 
               contractor, serving homeowners across 
               <span className="text-primary font-semibold"> 85201, 85204, 85208, and 85212</span>. Whether you need a top-rated **mesa bathroom remodeling company**, a trusted **mesa bathroom remodeling contractor**, or are seeking custom **mesa bathroom renovation** solutions, our team delivers superior results.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **Inspections & Building Safety in Mesa:** Any structural layout changes (such as expanding a shower footprint or removing a load-bearing tub partition) require coordination with the **Mesa Building Safety Division**. ARZ Home Remodeling manages the entire architectural review, structural framing planning, and inspection pipeline, giving you complete peace of mind that your home's structural integrity is verified and protected.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **Mesa Historic District Specializations:** For homeowners in Mesa's historic neighborhoods (like the Robson Historic District and Temple Historic District), we specialize in restoring bathrooms to fit the home's original character. We pair modern plumbing and waterproofing systems with vintage classic aesthetics, including elegant clawfoot tub restorations, timeless subway tiling, and traditional custom wood vanities.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              **HOA Coordination in Master-Planned Communities:** If you reside in **Las Sendas**, **Eastmark**, or **Red Mountain Ranch**, we handle direct coordination with your HOA. We ensure full compliance regarding contractor working hours, parking spaces, and dumpster placement, preventing community friction.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               If you want the best **mesa bathroom remodel**, **bathroom remodel mesa az**, or **bathroom remodeling mesa az** services, you can trust our local craftsmanship. We also offer expert **mesa bathroom renovation services**, **bathroom renovations mesa**, and custom **bathroom renovations mesa az**. We handle every layout upgrade, plumbing line, and custom tile installation, making us the premier **bathroom remodeling contractor mesa** and **bathroom remodeling contractor in mesa**.

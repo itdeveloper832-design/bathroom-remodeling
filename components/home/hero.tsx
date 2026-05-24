@@ -26,19 +26,27 @@ export default function Hero() {
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pb-16 lg:pb-20 pt-4 md:pt-6 lg:pt-8">
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-foreground/10 border border-background/20 rounded-full px-4 py-2 mb-6">
-            <div className="flex" aria-hidden="true">
-              {[0, 1, 2, 3, 4].map((i) => (
-                <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-              ))}
-            </div>
             <span className="text-background text-sm font-medium">
-              4.9 on Google · ROC338304 · {siteConfig.foundedYear ? `Since ${siteConfig.foundedYear}` : "15+ years"}
+              ROC Licensed #ROC338304 · Family-Owned Since {siteConfig.foundedYear}
             </span>
           </div>
 
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-4 text-balance">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-background leading-tight mb-2 text-balance">
             Licensed Bathroom Remodeling Experts Serving Chandler AZ
           </h1>
+
+          <div className="mb-6">
+            <a 
+              href={siteConfig.googleBusinessLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-background hover:text-accent transition-colors duration-200 group no-underline"
+              aria-label="View our 4.9 star rating with 50+ Google Reviews"
+            >
+              <span className="text-accent text-lg">★★★★★</span>
+              <span className="text-base font-semibold group-hover:underline">4.9 · 50+ Google Reviews</span>
+            </a>
+          </div>
 
           <p className="text-lg md:text-lg text-background/90 mb-8 leading-relaxed font-medium italic">
             "Focused exclusively on high-quality bathroom renovations. Designed for homeowners who want their bathroom done right."

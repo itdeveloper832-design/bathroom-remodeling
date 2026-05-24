@@ -27,6 +27,18 @@ export function Footer() {
                 Remodeling Contractors
               </span>
             </Link>
+            <div className="mb-6">
+              <a 
+                href={siteConfig.googleBusinessLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-background hover:text-accent transition-colors no-underline"
+                aria-label="View our 4.9 star rating with 50+ Google Reviews"
+              >
+                <span className="text-accent">★★★★★</span>
+                <span>4.9 · 50+ Google Reviews</span>
+              </a>
+            </div>
             <div className="text-background/70 text-sm leading-relaxed mb-6 space-y-1">
               <p className="font-semibold text-background text-base">ARZ Home Remodeling</p>
               <p>6710 W Chicago St, Chandler, AZ 85226</p>

@@ -6,6 +6,7 @@ export const siteConfig = {
   foundedYear: 2010,
   warranty: "2-year workmanship warranty on qualifying projects",
   url: "https://arzhomeremodeling.com",
+  googleBusinessLink: "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ",
   phone: "(229) 306-5591",
   phoneClean: "2293065591",
   email: "info@arzremodeling.com",

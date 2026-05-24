@@ -11,6 +11,7 @@ import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 const LocalTrust = dynamic(() => import("@/components/home/local-trust"));
 const AboutPreview = dynamic(() => import("@/components/home/about-preview"));
 const ServicesGrid = dynamic(() => import("@/components/home/services-grid"));
+const ChandlerProjects = dynamic(() => import("@/components/home/chandler-projects"));
 const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"));
 const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"));
 const ProcessSection = dynamic(() => import("@/components/home/process-section"));
@@ -65,6 +66,7 @@ export default function HomePage() {
           <LocalTrust cityName="Chandler" />
           <AboutPreview />
           <ServicesGrid />
+          <ChandlerProjects />
           <WhyChooseUs />
           <BathroomSection />
           <ProcessSection />

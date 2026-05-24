@@ -146,7 +146,7 @@ export default function ADAPage() {
               We utilize advanced framing adjustments and professional backing support to construct fully wheelchair roll-in compliant environments.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              **Strict Technical Compliance Standards:** We don't guess at accessibility—we build exactly to ADA guidelines. We ensure all accessible showers have at least a **36" x 36" clear interior footprint** (or 30" x 60" for roll-in configurations), door clearances widened to a **full 36 inches**, and slip-resistance flooring rated at a **Dynamic Coefficient of Friction (DCOF) >= 0.42** to prevent slips when wet.
+              **Strict Technical Compliance Standards:** We don&apos;t guess at accessibility—we build exactly to ADA guidelines. We ensure all accessible showers have at least a **36&quot; x 36&quot; clear interior footprint** (or 30&quot; x 60&quot; for roll-in configurations), door clearances widened to a **full 36 inches**, and slip-resistance flooring rated at a **Dynamic Coefficient of Friction (DCOF) &ge; 0.42** to prevent slips when wet.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               **VA SAH & HISA Grant Coordination:** If you are a disabled veteran living in the East Valley, we coordinate directly with the Department of Veterans Affairs. We design and document our bathroom builds to satisfy VA Specially Adapted Housing (SAH) and Home Improvements and Structural Alterations (HISA) grant requirements, ensuring veterans get the complete funding they are entitled to for safety improvements.

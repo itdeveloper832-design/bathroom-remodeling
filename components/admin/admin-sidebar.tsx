@@ -15,12 +15,14 @@ import {
   Settings,
   LogOut,
   Home,
-  FolderOpen
+  FolderOpen,
+  BarChart3
 } from "lucide-react"
 
 const navItems = [
   { href: "/admin/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/admin/leads", label: "Leads", icon: Users },
+  { href: "/admin/analytics", label: "Analytics", icon: BarChart3 },
   { href: "/admin/blog", label: "Blog Posts", icon: FileText },
   { href: "/admin/categories", label: "Categories", icon: FolderOpen },
   { href: "/admin/gallery", label: "Gallery", icon: Image },

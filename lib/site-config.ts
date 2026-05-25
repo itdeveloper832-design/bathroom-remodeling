@@ -54,4 +54,6 @@ export const siteConfig = {
     "Queen Creek",
     "Apache Junction",
   ],
+  umamiWebsiteId: "", // Add your Umami website ID here (e.g. "9a38f712-...") to enable tracking
+  umamiShareUrl: "", // Add your Umami public share URL here to display the dashboard in your admin panel
 };

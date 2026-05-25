@@ -100,6 +100,15 @@ export default function RootLayout({
         {children}
         <StickyCallButton />
 
+        {/* Umami Analytics (Conditional on Website ID) */}
+        {siteConfig.umamiWebsiteId && (
+          <Script
+            src="https://cloud.umami.is/script.js"
+            data-website-id={siteConfig.umamiWebsiteId}
+            strategy="afterInteractive"
+          />
+        )}
+
         {/* Google Analytics GA4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-Y9CGXJLLVJ"

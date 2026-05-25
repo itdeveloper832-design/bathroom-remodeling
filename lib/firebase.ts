@@ -3,20 +3,13 @@ import { getFirestore, type Firestore } from "firebase/firestore";
 import { getAuth, type Auth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY ?? "AIzaSyBkklRQlC5Pe-H3FOYMEOVrevciSpfpY3U",
-  authDomain:
-    process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN ??
-    "bathroom-remodeling-ddafa.firebaseapp.com",
-  projectId:
-    process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID ?? "bathroom-remodeling-ddafa",
-  storageBucket:
-    process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET ??
-    "bathroom-remodeling-ddafa.firebasestorage.app",
-  messagingSenderId:
-    process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID ?? "1013887386970",
-  appId:
-    process.env.NEXT_PUBLIC_FIREBASE_APP_ID ??
-    "1:1013887386970:web:2c8a339fee21514674df63",
+  apiKey: "AIzaSyCxtPE4mUZV8dV39rRhVMC-F9CgphLTwUo",
+  authDomain: "portfolio-project-14a25.firebaseapp.com",
+  databaseURL: "https://portfolio-project-14a25-default-rtdb.firebaseio.com",
+  projectId: "portfolio-project-14a25",
+  storageBucket: "portfolio-project-14a25.firebasestorage.app",
+  messagingSenderId: "826236365085",
+  appId: "1:826236365085:web:eea249bf097a52244e59f4"
 };
 
 function createFirebaseApp(): FirebaseApp {

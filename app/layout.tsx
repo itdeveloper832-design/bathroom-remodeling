@@ -95,6 +95,17 @@ export default function RootLayout({
         <meta name="geo.position" content={`${siteConfig.address.coordinates.lat};${siteConfig.address.coordinates.lng}`} />
         <meta name="ICBM" content={`${siteConfig.address.coordinates.lat}, ${siteConfig.address.coordinates.lng}`} />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+
+        {/* Microsoft Clarity Tracking Script */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "wwkr52xfsa");
+          `}
+        </Script>
       </head>
       <body className="antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
         {children}

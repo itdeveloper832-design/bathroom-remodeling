@@ -177,7 +177,7 @@ export function QuoteForm() {
             required
             aria-required="true"
             aria-label="Select bathroom remodeling service"
-            className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-1.5"
+            className="flex h-9 w-full rounded-md border border-input bg-background px-3 py-1 text-sm shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-1.5 cursor-pointer"
           >
             <option value="">Select Service</option>
             {bathroomServices.map((service) => (
@@ -214,7 +214,7 @@ export function QuoteForm() {
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-accent hover:bg-accent/90 text-accent-foreground focus-visible:outline-2 focus-visible:outline-offset-2"
+          className="w-full bg-accent hover:bg-accent/90 text-accent-foreground focus-visible:outline-2 focus-visible:outline-offset-2 cursor-pointer"
           aria-label={
             isSubmitting
               ? "Sending quote request"

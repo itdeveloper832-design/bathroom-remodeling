@@ -63,7 +63,7 @@ export function NewsletterForm() {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="h-14 rounded-full bg-foreground text-background hover:bg-foreground/90 font-bold px-8 shadow-xl"
+        className="h-14 rounded-full bg-foreground text-background hover:bg-foreground/90 font-bold px-8 shadow-xl cursor-pointer"
       >
         {isSubmitting ? (
           <>

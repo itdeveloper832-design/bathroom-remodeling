@@ -56,7 +56,7 @@ export function AdminSidebar() {
                 <Link
                   href={item.href}
                   className={cn(
-                    "flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors",
+                    "flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer",
                     isActive 
                       ? "bg-primary text-primary-foreground" 
                       : "text-muted-foreground hover:bg-secondary hover:text-foreground"
@@ -72,7 +72,7 @@ export function AdminSidebar() {
       </nav>
 
       <div className="p-4 border-t border-border space-y-2">
-        <Button asChild variant="outline" className="w-full justify-start" size="sm">
+        <Button asChild variant="outline" className="w-full justify-start cursor-pointer" size="sm">
           <Link href="/" target="_blank">
             <Home className="mr-2 h-4 w-4" />
             View Site
@@ -85,7 +85,7 @@ export function AdminSidebar() {
         
         <Button 
           variant="ghost" 
-          className="w-full justify-start text-muted-foreground hover:text-destructive" 
+          className="w-full justify-start text-muted-foreground hover:text-destructive cursor-pointer" 
           size="sm"
           onClick={() => signOut()}
         >

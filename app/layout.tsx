@@ -85,7 +85,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/optimized/photo-1620626011761-996317b8d101.avif"
+          href="/images/hero/luxury-shower-remodel-chandler.avif"
           type="image/avif"
           fetchPriority="high"
         />

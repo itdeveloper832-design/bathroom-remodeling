@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: `Bathroom remodeling Tempe AZ: showers, tub-to-shower, tile. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling Tempe: Licensed Contractors & Free Quotes",
-    description: "Expert bathroom remodeling in Tempe, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
+    description: "Expert bathroom remodeling in Tempe, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-tempe-az/`,
     type: "website",
   },
@@ -193,7 +193,7 @@ export default function TempePage() {
           title="Licensed Bathroom Remodeling in Tempe, AZ"
           subtitle="Modern Transformations & Expert Local Contractors"
           description="Elevate your Tempe home with professional remodeling services tailored to your lifestyle. From custom walk-in showers near ASU to master suite renovations in South Tempe: we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Tempe AZ", url: `${siteConfig.url}/bathroom-remodeling-tempe-az/` },
@@ -225,7 +225,7 @@ export default function TempePage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:+15205693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

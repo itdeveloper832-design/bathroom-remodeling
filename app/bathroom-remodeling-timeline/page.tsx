@@ -122,7 +122,7 @@ export default function TimelinePage() {
           title="Bathroom Remodeling Timelines (Step-by-Step Guide)"
           subtitle="What to Expect from Demo to Final Handoff"
           description="Learn exactly how long it takes to remodel a bathroom in Chandler, AZ. Explore our daily schedules, permit inspection milestones, and project management timelines."
-          image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
+          image="/images/services/bathroom-flooring-chandler.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Costs", url: `${siteConfig.url}/bathroom-remodel-cost-chandler/` },
@@ -145,7 +145,7 @@ export default function TimelinePage() {
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
-                We guarantee our schedules in writing. If we run over our contract completion date, we pay you back. Call us at <a href="tel:2293065591" className="text-primary hover:underline font-medium">(229) 306-5591</a> to plan your project timeline.
+                We guarantee our schedules in writing. If we run over our contract completion date, we pay you back. Call us at <a href="tel:+15205693339" className="text-primary hover:underline font-medium">(520) 569-3339</a> to plan your project timeline.
               </p>
             </div>
           </div>

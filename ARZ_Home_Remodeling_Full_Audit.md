@@ -121,7 +121,7 @@ ARZ Home Remodeling has a well-structured Next.js site with solid technical foun
 - **Fix:** Either (a) remove these badge links entirely until proper profiles are claimed, or (b) replace with actual ARZ profiles on BBB/Yelp/Nextdoor. Create or claim profiles first.
 
 **Issue 3.3 - Phone Number Geographic Mismatch**
-- Phone: `(229) 306-5591` - Area code 229 is Albany, Georgia.
+- Phone: `(520) 569-3339` - Area code 229 is Albany, Georgia.
 - **Impact:** Any Chandler, AZ resident seeing a Georgia area code immediately loses trust. This is a serious local SEO and conversion issue.
 - **Fix:** Obtain a local Chandler/East Valley number (area codes 480, 602, or 623) as the primary number. Use a call tracking service like CallRail that provides local numbers.
 
@@ -233,7 +233,7 @@ ARZ Home Remodeling has a well-structured Next.js site with solid technical foun
 
 **Issue 5.1 - NAP Inconsistency Risk**
 - Address: 6710 W Chicago St, Chandler, AZ 85226
-- Phone: (229) 306-5591 - Georgia area code vs. Arizona location (CRITICAL - see 3.3)
+- Phone: (520) 569-3339 - Georgia area code vs. Arizona location (CRITICAL - see 3.3)
 - Email: info@arzremodeling.com (consistent)
 - **Fix:** Fix phone number. Audit all directory citations (Yelp, BBB, YellowPages, Bing Places) to ensure NAP matches exactly.
 
@@ -742,7 +742,7 @@ real ARZ profiles are created). Do NOT leave links pointing to Custom Fence and 
 
 1.3 FIX BROKEN IMAGES
 A) Find all references to `images/bathroom-showcase.jpg` - replace src with 
-   `/images/optimized/photo-1600566752355-35792bedcfea.webp` as a placeholder 
+   `/images/projects/luxury-bathtub-remodel-az.webp` as a placeholder 
    until the real image is provided.
 B) Find all references to `images/about-bathroom.jpg` - replace src with 
    `/images/optimized/photo-1581578731548-c64695cc6952.webp` as a placeholder.
@@ -858,9 +858,9 @@ BLOCK 4 - UI IMPROVEMENTS
 ═══════════════════════════════════════════
 
 4.1 PHONE NUMBER PLACEHOLDER UPDATE
-All instances of "(229) 306-5591" - add a TODO comment flagging this as a Georgia 
+All instances of "(520) 569-3339" - add a TODO comment flagging this as a Georgia 
 area code on an Arizona business:
-<!-- TODO: Replace (229) 306-5591 with an Arizona area code (480/602/623) number -->
+<!-- TODO: Replace (520) 569-3339 with an Arizona area code (480/602/623) number -->
 Do not change the actual number in the code without client confirmation of new number.
 
 4.2 SHOW 3 TESTIMONIALS SIMULTANEOUSLY

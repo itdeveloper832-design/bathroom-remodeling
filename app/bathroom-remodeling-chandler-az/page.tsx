@@ -209,7 +209,7 @@ export default function ChandlerBathroomRemodelingPage() {
           title="Chandler’s Top-Rated Bathroom Remodeling Contractor"
           subtitle="Hire the Best Local Remodelers - Free Estimates"
           description="From tub-to-shower conversions in Dobson Ranch to full master bath transformations in Ocotillo: ARZ Home Remodeling is the professional choice for Chandler homeowners. Licensed AZ contractor, 2-year warranty, fixed pricing."
-          image="/images/optimized/photo-1620626011761-996317b8d101.webp"
+          image="/images/hero/luxury-shower-remodel-chandler.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Chandler AZ", url: `${siteConfig.url}/bathroom-remodeling-chandler-az/` },
@@ -259,7 +259,7 @@ export default function ChandlerBathroomRemodelingPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:+15205693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

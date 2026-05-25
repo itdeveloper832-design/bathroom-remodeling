@@ -84,7 +84,7 @@ export default function ShowerBathtubUpgradePage() {
           title="Shower & Bathtub Upgrade in Chandler, Arizona"
           subtitle="Professional Bathroom Upgrades in Chandler AZ"
           description="Transform your shower and bathtub with modern fixtures, fresh tile, and premium materials for a spa-like bathroom experience."
-          image="/images/optimized/photo-1600566752355-35792bedcfea.webp"
+          image="/images/projects/luxury-bathtub-remodel-az.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Shower & Bathtub Upgrade", url: `${siteConfig.url}/shower-bathtub-upgrade` },

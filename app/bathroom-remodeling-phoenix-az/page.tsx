@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Professional Bathroom Remodeling Phoenix AZ - Licensed Contractors",
   description:
-    "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates: call (229) 306-5591 today!",
+    "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates: call (520) 569-3339 today!",
   openGraph: {
     title: "Bathroom Remodeling Phoenix AZ - ARZ Home Remodeling",
     description:
@@ -69,7 +69,7 @@ export default function PhoenixPage() {
           title="Phoenix’s Top Choice for Bathroom Remodeling"
           subtitle="Licensed Contractors - High-Quality Results"
           description="Transform your Phoenix home with a professionally remodeled bathroom. We bring years of expertise, transparent pricing, and superior craftsmanship to every project in the Valley of the Sun."
-          image="/images/optimized/photo-1620626011761-996317b8d101.webp"
+          image="/images/hero/luxury-shower-remodel-chandler.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Phoenix", url: `${siteConfig.url}/bathroom-remodeling-phoenix-az/` },
@@ -94,7 +94,7 @@ export default function PhoenixPage() {
                 <Link href="/contact/">Get Your Free Phoenix Quote</Link>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
+                <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>
               </Button>
             </div>
           </div>

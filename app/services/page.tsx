@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Bathroom Remodeling Services Chandler AZ - Showers, Tub Conversions & More",
-  description: "Professional bathroom remodeling services in Chandler, AZ. Walk-in showers, tub-to-shower conversions, master baths, tile installation. Licensed ROC338304. Free in-home estimate: (229) 306-5591.",
+  description: "Professional bathroom remodeling services in Chandler, AZ. Walk-in showers, tub-to-shower conversions, master baths, tile installation. Licensed ROC338304. Free in-home estimate: (520) 569-3339.",
   openGraph: {
     title: "Bathroom Remodeling Services in Chandler AZ",
     description: "Complete renovation solutions for your home. Professional installations by licensed contractors.",

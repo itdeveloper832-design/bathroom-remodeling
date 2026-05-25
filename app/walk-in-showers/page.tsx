@@ -66,7 +66,7 @@ export default function WalkInShowersPage() {
           title="Best Walk In Shower Installation Chandler AZ"
           subtitle="Professional Walk-In Shower Company Services in Chandler AZ"
           description="Best walk in shower installation Chandler AZ. We offer top-tier walk-in shower company services and affordable walk-in shower installation services. Get your free quote today!"
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Walk-In Showers", url: `${siteConfig.url}/walk-in-showers` },

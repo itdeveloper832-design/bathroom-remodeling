@@ -69,7 +69,7 @@ export default function ShowerRemodelingPage() {
           title="Custom Shower Remodeling in Chandler, AZ — Walk-In Showers, Frameless Glass & Tile Installs"
           subtitle="ARZ Home Remodeling builds custom showers in Chandler the right way — Schluter-Kerdi waterproofing behind every tile, frameless glass cut to your exact opening, and a 2-year workmanship warranty on qualifying projects. Licensed, insured, and Chandler-based since 2010. ROC338304."
           description="Free in-home estimate — same week availability. Shower remodels starting from $4,500. Serving Chandler, Ocotillo, Fulton Ranch, Sun Lakes & the East Valley"
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: `${siteConfig.url}/` },
             { name: "Shower Remodeling Chandler AZ", url: `${siteConfig.url}/shower-remodeling/` },

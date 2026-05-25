@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: "Licensed bathroom remodeling contractor serving Fulton Ranch, Chandler, AZ. Specialty master bath designs, custom tile work, and walk-in showers in 85248.",
   openGraph: {
     title: "Bathroom Remodeling Fulton Ranch Chandler AZ - Custom Builder",
-    description: "Upgrade your master bath in Fulton Ranch, Chandler, AZ. Expert custom tile, curbless walk-in showers, and premium double vanities. Free quotes: (229) 306-5591.",
+    description: "Upgrade your master bath in Fulton Ranch, Chandler, AZ. Expert custom tile, curbless walk-in showers, and premium double vanities. Free quotes: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-fulton-ranch/`,
     type: "website",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bathroom Remodeling Fulton Ranch Chandler AZ - Custom Builder",
     description: "Licensed Fulton Ranch bathroom remodeling. Custom tile, walk-in showers, master bath renovations.",
-    images: [`${siteConfig.url}/images/optimized/photo-1552321554-5fefe8c9ef14.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-fulton-ranch/`,
@@ -153,7 +153,7 @@ export default function FultonRanchPage() {
           title="Custom Bathroom Remodeling in Fulton Ranch, Chandler"
           subtitle="Luxury Master Renovations & Walk-In Showers"
           description="Upgrade your Fulton Ranch property with the East Valley's premier custom builder. Specializing in high-end tile, curbless walk-in showers, and master suite layouts, we offer fixed written quotes and ROC Licensed peace of mind."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Fulton Ranch Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-fulton-ranch/` },
@@ -180,9 +180,9 @@ export default function FultonRanchPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:+15205693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  (229) 306-5591
+                  (520) 569-3339
                 </Link>
               </Button>
             </div>

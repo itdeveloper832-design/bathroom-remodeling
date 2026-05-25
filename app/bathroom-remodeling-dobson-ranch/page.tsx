@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: "Top-rated bathroom remodeling in Dobson Ranch, Mesa/Chandler AZ. Specialized in layout upgrades, small bathroom solutions, and custom tiling in 85202.",
   openGraph: {
     title: "Bathroom Remodeling Dobson Ranch AZ - Custom Contractors",
-    description: "Expert bathroom remodeling in Dobson Ranch, Mesa/Chandler AZ. Licensed contractors, custom tile walk-in showers, and layout updates. Free estimates: (229) 306-5591.",
+    description: "Expert bathroom remodeling in Dobson Ranch, Mesa/Chandler AZ. Licensed contractors, custom tile walk-in showers, and layout updates. Free estimates: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-dobson-ranch/`,
     type: "website",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bathroom Remodeling Dobson Ranch AZ - Custom Contractors",
     description: "Licensed Dobson Ranch bathroom remodeling. Custom tile, walk-in showers, layout renovations.",
-    images: [`${siteConfig.url}/images/optimized/photo-1552321554-5fefe8c9ef14.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-dobson-ranch/`,
@@ -153,7 +153,7 @@ export default function DobsonRanchPage() {
           title="Custom Bathroom Remodeling in Dobson Ranch, AZ"
           subtitle="Modern Transformations for Older Layouts"
           description="Upgrade your Dobson Ranch home with the East Valley's trusted remodeling experts. From small guest bath optimizations to complete master suite expansions, we deliver elite tile and plumbing work with ROC Licensed peace of mind."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Dobson Ranch Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-dobson-ranch/` },
@@ -180,9 +180,9 @@ export default function DobsonRanchPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:+15205693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  (229) 306-5591
+                  (520) 569-3339
                 </Link>
               </Button>
             </div>

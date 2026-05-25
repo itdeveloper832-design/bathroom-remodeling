@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Professional Bathroom Remodeling Queen Creek AZ - Free Estimates",
   description:
-    "Hire Queen Creek's top-rated bathroom remodeling company. We specialize in family-friendly renovations, walk-in showers, and master bath updates. Licensed company, free quotes: call (229) 306-5591 today!",
+    "Hire Queen Creek's top-rated bathroom remodeling company. We specialize in family-friendly renovations, walk-in showers, and master bath updates. Licensed company, free quotes: call (520) 569-3339 today!",
   openGraph: {
     title: "Bathroom Remodeling Queen Creek AZ - ARZ Home Remodeling",
     description:
@@ -68,7 +68,7 @@ export default function QueenCreekPage() {
           title="Queen Creek’s Trusted Bathroom Remodeling Experts"
           subtitle="Quality Craftsmanship for Queen Creek Families"
           description="Looking to upgrade your space? We provide professional bathroom remodeling services tailored to Queen Creek homeowners. From modern guest baths to luxury master retreats, we deliver beautiful results on time and on budget."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Queen Creek", url: `${siteConfig.url}/bathroom-remodeling-queen-creek-az/` },
@@ -93,7 +93,7 @@ export default function QueenCreekPage() {
                 <Link href="/contact/">Get Your Free Queen Creek Quote</Link>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
+                <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>
               </Button>
             </div>
           </div>

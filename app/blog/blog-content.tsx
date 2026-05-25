@@ -1,62 +1,33 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { getPublishedPosts, getCategories } from "@/lib/actions/blog"
 import { siteConfig } from "@/lib/site-config"
 import type { BlogPost, Category } from "@/lib/types"
 import { Calendar, Clock, ArrowRight, Search, ChevronRight, Filter } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { NewsletterForm } from "@/components/forms/newsletter-form"
-import { 
-  defaultBlogPost, 
-  secondBlogPost, 
-  thirdBlogPost, 
-  kitchenCostPost, 
-  flooringTipsPost, 
-  remodelingRoiPost,
-  hardWaterPost
-} from "@/lib/seed-blog";
 
-export default function BlogContent() {
-  const [posts, setPosts] = useState<BlogPost[]>([])
-  const [categories, setCategories] = useState<Category[]>([])
+interface BlogContentProps {
+  initialPosts: BlogPost[];
+  initialCategories: Category[];
+}
+
+export default function BlogContent({ initialPosts = [], initialCategories = [] }: BlogContentProps) {
+  const [posts] = useState<BlogPost[]>(initialPosts)
+  const [categories] = useState<Category[]>(initialCategories)
   const [selectedCategory, setSelectedCategory] = useState<string>("all")
   const [searchQuery, setSearchQuery] = useState("")
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    async function fetchData() {
-      const [postsData, categoriesData] = await Promise.all([
-        getPublishedPosts(),
-        getCategories()
-      ])
-      if (postsData.length === 0) {
-        const defaultPosts: BlogPost[] = [
-          { ...defaultBlogPost, id: "default-post-1", readTime: 12 },
-          { ...secondBlogPost, id: "default-post-2", readTime: 8 },
-          { ...thirdBlogPost, id: "default-post-3", readTime: 5 },
-          { ...kitchenCostPost as any, id: "default-post-4", readTime: 10 },
-          { ...flooringTipsPost as any, id: "default-post-5", readTime: 7 },
-          { ...remodelingRoiPost as any, id: "default-post-6", readTime: 9 },
-          { ...hardWaterPost as any, id: "default-post-7", readTime: 6 }
-        ]
-        setPosts(defaultPosts)
-      } else {
-        setPosts(postsData)
-      }
-      setCategories(categoriesData)
-      setLoading(false)
-    }
-    fetchData()
-  }, [])
+  const [loading] = useState(false)
 
   const filteredPosts = posts.filter(post => {
-    const matchesCategory = selectedCategory === "all" || post.category === selectedCategory
+    const matchesCategory = selectedCategory === "all" || 
+      post.category === selectedCategory || 
+      post.category.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+/g, "-").trim() === selectedCategory;
     const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
     return matchesCategory && matchesSearch

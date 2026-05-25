@@ -101,7 +101,7 @@ export default function PermitsPage() {
           title="Bathroom Remodeling Permits in Chandler, AZ"
           subtitle="Navigating Municipal Building Codes"
           description="A complete guide on when you need a permit to remodel a bathroom in Chandler, what fees to expect, and how the city inspection process works."
-          image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
+          image="/images/services/bathroom-flooring-chandler.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Chandler Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-chandler-az/` },
@@ -124,7 +124,7 @@ export default function PermitsPage() {
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
-                As a licensed contractor (<strong className="text-foreground">ROC338304</strong>), ARZ Home Remodeling handles the entire permit process. We prepare the design drawings, submit documentation to the City of Chandler, and host inspectors at your home. Call us at <a href="tel:2293065591" className="text-primary hover:underline font-medium">(229) 306-5591</a> to discuss your plans.
+                As a licensed contractor (<strong className="text-foreground">ROC338304</strong>), ARZ Home Remodeling handles the entire permit process. We prepare the design drawings, submit documentation to the City of Chandler, and host inspectors at your home. Call us at <a href="tel:+15205693339" className="text-primary hover:underline font-medium">(520) 569-3339</a> to discuss your plans.
               </p>
             </div>
           </div>

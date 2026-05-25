@@ -7,24 +7,24 @@ const showerProjects = [
     title: "Walk-In Tile Shower in Ocotillo",
     neighborhood: "Ocotillo, Chandler",
     category: "Walk-In Shower - Completed April 2025",
-    before: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
-    after: "/images/optimized/photo-1620626011761-996317b8d101.webp",
+    before: "/images/services/chandler-bathroom-remodel.webp",
+    after: "/images/hero/luxury-shower-remodel-chandler.webp",
   },
   {
     id: 2,
     title: "Frameless Glass Enclosure in Fulton Ranch",
     neighborhood: "Fulton Ranch, Chandler",
     category: "Glass Enclosure - Completed March 2025",
-    before: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
-    after: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
+    before: "/images/projects/luxury-bathtub-remodel-az.webp",
+    after: "/images/services/chandler-bathroom-remodel.webp",
   },
   {
     id: 3,
     title: "Curbless Shower Upgrade in Sun Lakes",
     neighborhood: "Sun Lakes, Chandler",
     category: "Accessibility Remodel - Completed May 2025",
-    before: "/images/optimized/photo-1620626011761-996317b8d101.webp",
-    after: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
+    before: "/images/hero/luxury-shower-remodel-chandler.webp",
+    after: "/images/projects/luxury-bathtub-remodel-az.webp",
   },
 ];
 
@@ -108,7 +108,7 @@ export default function ShowerGallery() {
             Ready to start your shower remodeling project?
           </p>
           <a
-            href={`tel:(229)306-5591`}
+            href={`tel:(520) 569-3339`}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
           >
             Call for Your Free Estimate

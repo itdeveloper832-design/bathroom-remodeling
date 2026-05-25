@@ -86,7 +86,7 @@ export default function LuxuryPage() {
           title="Luxury Bathroom Remodeling in Chandler, AZ"
           subtitle="Bespoke Design & Master Suite Transformations"
           description="Elevate your home with a custom-designed luxury bathroom. We specialize in high-end materials, spa-inspired features, and master craftsmanship for Chandler's most prestigious communities."
-          image="/images/optimized/photo-1620626011761-996317b8d101.webp"
+          image="/images/hero/luxury-shower-remodel-chandler.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Luxury Remodeling", url: `${siteConfig.url}/luxury-bathroom-remodeling/` }]}
         />
 
@@ -199,7 +199,7 @@ export default function LuxuryPage() {
                   <Link href="/contact/">Start Your Design Consultation</Link>
                </Button>
                <Button variant="outline" asChild size="lg">
-                  <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
+                  <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>
                </Button>
             </div>
           </div>

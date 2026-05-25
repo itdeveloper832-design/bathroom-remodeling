@@ -9,7 +9,7 @@ const blogPosts = [
     title: "Complete Guide to Bathroom Remodeling in Chandler, Arizona",
     excerpt:
       "The ultimate comprehensive guide to bathroom remodeling in Chandler. Learn planning, design, permits, timelines, and long-term maintenance.",
-    image: "/images/optimized/photo-1552321554-5fefe8c9ef14.webp",
+    image: "/images/services/chandler-bathroom-remodel.webp",
     date: "May 20, 2026",
     category: "Guides",
   },
@@ -18,7 +18,7 @@ const blogPosts = [
     title: "2024-2025 Bathroom Design Trends for Chandler, Arizona Homes",
     excerpt:
       "Explore 2024-2025 bathroom design trends. Spa features, sustainable materials, minimalist design, and luxury fixtures trending now.",
-    image: "/images/optimized/photo-1620626011761-996317b8d101.webp",
+    image: "/images/hero/luxury-shower-remodel-chandler.webp",
     date: "May 18, 2026",
     category: "Trends",
   },
@@ -27,7 +27,7 @@ const blogPosts = [
     title: "2025 Bathroom Remodel Cost in Chandler, AZ - Local Price Guide",
     excerpt:
       "Complete analysis of bathroom remodeling costs in Chandler, Arizona. Compare prices by project size, materials, labor, and neighborhoods.",
-    image: "/images/optimized/photo-1600566752355-35792bedcfea.webp",
+    image: "/images/projects/luxury-bathtub-remodel-az.webp",
     date: "May 15, 2026",
     category: "Pricing",
   },

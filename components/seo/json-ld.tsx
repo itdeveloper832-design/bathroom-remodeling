@@ -1,7 +1,8 @@
 import { siteConfig } from "@/lib/site-config";
+import { testimonialsData } from "@/lib/testimonials-data";
 
 interface LocalBusinessSchemaProps {
-  type?: "LocalBusiness" | "HomeAndConstructionBusiness";
+  type?: "LocalBusiness" | "HomeAndConstructionBusiness" | "GeneralContractor";
 }
 
 export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: LocalBusinessSchemaProps) {
@@ -9,6 +10,7 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
     "@context": "https://schema.org",
     "@type": type,
     name: "ARZ Home Remodeling",
+    description: siteConfig.description,
     image: `${siteConfig.url}/images/new-images-logo.jpg`,
     "@id": `${siteConfig.url}/#organization`,
     founder: {
@@ -174,6 +176,21 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       reviewCount: "50",
       bestRating: "5"
     },
+    review: testimonialsData.default.map((t) => ({
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": t.rating.toString(),
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": t.name
+      },
+      "reviewBody": t.content,
+      "datePublished": "2025-10-15"
+    })),
+
   };
 
   return (
@@ -190,18 +207,18 @@ interface ServiceSchemaProps {
   serviceUrl: string;
 }
 
-export function ServiceSchema({ serviceName, serviceDescription, serviceUrl }: ServiceSchemaProps) {
+export function ServiceSchema({ serviceName, serviceDescription, serviceUrl, serviceType }: ServiceSchemaProps & { serviceType?: string }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "ConstructionBusiness",
+    "serviceType": serviceType || serviceName,
     "name": serviceName,
     "description": serviceDescription,
     "provider": {
       "@type": "HomeAndConstructionBusiness",
-      "@id": "https://arzhomeremodeling.com/#organization",
+      "@id": `${siteConfig.url}/#organization`,
       "name": "ARZ Home Remodeling",
-      "url": "https://arzhomeremodeling.com",
+      "url": siteConfig.url,
       "telephone": siteConfig.phone,
       "email": siteConfig.email,
       "address": {
@@ -261,7 +278,7 @@ export function ArticleSchema({
     description: description,
     image: image,
     author: {
-      "@type": "Organization",
+      "@type": "Person",
       name: author,
     },
     publisher: {
@@ -475,7 +492,7 @@ export function PriceSchema({
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5.0",
-      reviewCount: "127",
+      reviewCount: "50",
     },
   };
 
@@ -535,6 +552,56 @@ export function PersonSchema({
       "@type": "Place",
       name: "Chandler, Arizona",
     },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+interface OrganizationSchemaProps {
+  url?: string;
+  logo?: string;
+}
+
+export function OrganizationSchema({
+  url = siteConfig.url,
+  logo = `${siteConfig.url}/images/new-images-logo.jpg`,
+}: OrganizationSchemaProps = {}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${url}/#organization`,
+    "name": "ARZ Home Remodeling",
+    "url": url,
+    "logo": logo,
+    "image": logo,
+    "telephone": siteConfig.phone,
+    "email": siteConfig.email,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6710 W Chicago St",
+      "addressLocality": "Chandler",
+      "addressRegion": "AZ",
+      "postalCode": "85226",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      siteConfig.social.facebook,
+      siteConfig.social.instagram,
+      siteConfig.social.youtube,
+      siteConfig.social.linkedin,
+    ].filter(Boolean),
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": siteConfig.phone,
+      "contactType": "customer service",
+      "areaServed": "US",
+      "availableLanguage": "English"
+    }
   };
 
   return (

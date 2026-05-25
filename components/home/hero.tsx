@@ -10,7 +10,7 @@ export default function Hero() {
     <section className="relative min-h-[80vh] flex items-center overflow-hidden pt-28 md:pt-36 lg:pt-40" aria-label="Hero section">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/optimized/photo-1620626011761-996317b8d101.avif"
+          src="/images/hero/luxury-shower-remodel-chandler.avif"
           alt="Custom walk-in shower and tile bathroom remodel in Chandler AZ by ARZ Home Remodeling"
           fill
           className="object-cover"

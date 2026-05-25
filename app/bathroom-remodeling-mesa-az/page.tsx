@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: `Professional bathroom remodeling in Mesa, AZ. Master baths, tub conversions & custom tiling. Licensed ROC338304. 5★ rated. Book a free quote: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodel Mesa AZ | Licensed ROC338304 | ARZ",
-    description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
+    description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-mesa-az/`,
     type: "website",
   },
@@ -198,7 +198,7 @@ export default function MesaPage() {
           title="Licensed Bathroom Remodeling in Mesa, AZ"
           subtitle="Expert Transformations & Custom Shower Designs"
           description="Build the bathroom you've always wanted with Mesa's trusted remodeling team. From custom walk-in showers in Las Sendas to master suite renovations in Eastmark: we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Mesa AZ", url: `${siteConfig.url}/bathroom-remodeling-mesa-az/` },
@@ -242,7 +242,7 @@ export default function MesaPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:+15205693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

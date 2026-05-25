@@ -85,7 +85,7 @@ export default function AccessibleBathroomPage() {
           title="Handicap Accessible Bathroom Remodels in Chandler, AZ"
           subtitle="Create a safe, beautiful bathroom designed for accessibility and aging-in-place. ADA-compliant renovations with modern design and professional installation."
           ctaText="Get Free ADA Assessment"
-          imageSrc="/images/optimized/photo-1600585154340-be6161a56a0c.avif"
+          imageSrc="/images/projects/handicap-accessible-shower.avif"
           imageAlt="ADA-compliant curbless bathroom shower with grab bars"
         />
 

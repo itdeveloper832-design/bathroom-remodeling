@@ -26,7 +26,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Licensed Bathroom Contractor Ahwatukee AZ - Quality Craftsmanship",
   description:
-    "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates: call (229) 306-5591 today!",
+    "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates: call (520) 569-3339 today!",
   openGraph: {
     title: "Bathroom Remodeling Ahwatukee AZ - ARZ Home Remodeling",
     description:
@@ -204,7 +204,7 @@ export default function AhwatukeePage() {
           title="Ahwatukee’s Top-Rated Bathroom Remodeling Contractor"
           subtitle="Hire the Best Local Remodelers in Ahwatukee - Free Estimates"
           description="Bringing our 5-star bathroom remodeling services to homeowners in Ahwatukee, AZ. Licensed AZ contractors specializing in high-quality renovations, custom shower installs, and full bathroom transformations."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Ahwatukee", url: `${siteConfig.url}/bathroom-remodeling-ahwatukee-az/` },
@@ -234,7 +234,7 @@ export default function AhwatukeePage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:+15205693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

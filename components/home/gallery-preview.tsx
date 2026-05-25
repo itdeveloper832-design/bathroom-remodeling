@@ -10,14 +10,14 @@ const galleryItems = [
     id: 1,
     title: "Master Bath Remodel in Dobson Ranch",
     category: "Full Renovation - Completed March 2025",
-    before: "/images/optimized/photo-1584622650111-993a426fbf0a.webp",
+    before: "/images/services/bathroom-tile-remodel-az.webp",
     after: "/images/projects/project-shower.png",
   },
   {
     id: 2,
     title: "Luxury Master Vanity in Ocotillo",
     category: "Vanity & Stone Work - Completed Jan 2025",
-    before: "/images/optimized/photo-1507089947368-19c1da9775ae.webp",
+    before: "/images/services/bathroom-flooring-chandler.webp",
     after: "/images/projects/project-vanity.png",
   },
   {
@@ -31,8 +31,8 @@ const galleryItems = [
     id: 4,
     title: "Spa-Like Retreat in Fulton Ranch",
     category: "Master Bath Upgrade - Completed Dec 2024",
-    before: "/images/optimized/photo-1585412727339-54e4bae3bbf9.webp",
-    after: "/images/optimized/photo-1600607687939-ce8a6c25118c.webp",
+    before: "/images/gallery/bathroom-renovation-chandler.webp",
+    after: "/images/projects/modern-double-vanity-chandler.webp",
   },
 ];
 

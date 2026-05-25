@@ -8,7 +8,7 @@ import { getPostBySlug, getRelatedPosts, getPublishedPosts } from "@/lib/actions
 import { siteConfig } from "@/lib/site-config"
 import { Calendar, Clock, ArrowLeft, User, ArrowRight, Share2, Facebook, Twitter, Linkedin, List } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { BlogArticleJsonLd } from "@/components/seo/json-ld"
+import { BlogArticleJsonLd, BreadcrumbSchema } from "@/components/seo/json-ld"
 import { parseMarkdown, extractHeadings } from "@/lib/blog-utils"
 import type { BlogPost } from "@/lib/types"
 
@@ -81,6 +81,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         datePublished={post.publishedAt || post.createdAt}
         dateModified={post.updatedAt}
         author={post.author}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: `${siteConfig.url}/` },
+          { name: "Blog", url: `${siteConfig.url}/blog/` },
+          { name: post.title, url: `${siteConfig.url}/blog/${post.slug}/` }
+        ]}
       />
       <Header />
       
@@ -297,7 +304,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <Link href="/contact/">Get Your Free Estimate</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-background/20 hover:bg-background/10 text-background font-bold px-10 h-14 rounded-full transition-all">
-                  <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
+                  <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>
                 </Button>
               </div>
             </div>

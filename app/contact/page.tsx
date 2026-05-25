@@ -7,6 +7,22 @@ import { siteConfig } from "@/lib/site-config"
 import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
 
+export const metadata: Metadata = {
+  title: {
+    absolute: "Free Bathroom Remodel Estimates | ARZ Home Remodeling"
+  },
+  description: "Contact Chandler's top-rated bathroom remodeling contractor. Fill out our form or call (520) 569-3339 to schedule a free in-home consultation today.",
+  openGraph: {
+    title: "Free Bathroom Remodel Estimates | ARZ Home Remodeling",
+    description: "Contact Chandler's top-rated bathroom remodeling contractor. Fill out our form or call (520) 569-3339 to schedule a free in-home consultation today.",
+    url: `${siteConfig.url}/contact/`,
+    type: "website",
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/contact/`,
+  },
+}
+
 
 
 const contactFaqs = [

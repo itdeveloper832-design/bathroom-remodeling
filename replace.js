@@ -25,12 +25,12 @@ files.forEach(file => {
   let original = content;
 
   // Phone numbers
-  content = content.replace(/\+1\s*\(?480\)?[-.\s]*306[-.\s]*5591/g, '(229) 306-5591');
-  content = content.replace(/\(?480\)?[-.\s]*306[-.\s]*5591/g, '(229) 306-5591');
-  content = content.replace(/4803065591/g, '2293065591');
-  content = content.replace(/tel:4803065591/g, 'tel:2293065591');
-  content = content.replace(/tel:\+14803065591/g, 'tel:2293065591');
-  content = content.replace(/tel:\(?480\)?[-.\s]*306[-.\s]*5591/g, 'tel:2293065591');
+  content = content.replace(/\+1\s*\(?480\)?[-.\s]*306[-.\s]*5591/g, '(520) 569-3339');
+  content = content.replace(/\(?480\)?[-.\s]*306[-.\s]*5591/g, '(520) 569-3339');
+  content = content.replace(/4803065591/g, '(520) 569-3339');
+  content = content.replace(/tel:4803065591/g, 'tel:+15205693339');
+  content = content.replace(/tel:\+14803065591/g, 'tel:+15205693339');
+  content = content.replace(/tel:\(?480\)?[-.\s]*306[-.\s]*5591/g, 'tel:+15205693339');
 
   // Business Name variations
   content = content.replace(/ARZ Remodeling/g, 'ARZ Home Remodeling');

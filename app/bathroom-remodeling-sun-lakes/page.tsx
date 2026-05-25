@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: "Senior-friendly bathroom remodeling in Sun Lakes, AZ. Licensed specialists for zero-threshold walk-in showers, grab bars, and ADA renovations in 85248.",
   openGraph: {
     title: "Bathroom Remodeling Sun Lakes AZ - Walk-in Showers & Walk-In Showers",
-    description: "Expert safety-focused bathroom remodeling in Sun Lakes, AZ. Zero-threshold walk-in showers, handicap accessible layouts, and custom safety bars. Free quotes: (229) 306-5591.",
+    description: "Expert safety-focused bathroom remodeling in Sun Lakes, AZ. Zero-threshold walk-in showers, handicap accessible layouts, and custom safety bars. Free quotes: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-sun-lakes/`,
     type: "website",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bathroom Remodeling Sun Lakes AZ - Walk-in Showers & Walk-In Showers",
     description: "Licensed Sun Lakes bathroom contractors. ADA walk-in showers, tub conversions, senior safety upgrades.",
-    images: [`${siteConfig.url}/images/optimized/photo-1552321554-5fefe8c9ef14.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-sun-lakes/`,
@@ -153,7 +153,7 @@ export default function SunLakesPage() {
           title="Accessible Bathroom Remodeling in Sun Lakes, AZ"
           subtitle="Zero-Threshold Showers & Senior Safety Renovations"
           description="Maintain your independence with a safety-first bathroom upgrade. Serving active adult communities throughout Sun Lakes, we design low-threshold walk-in showers and ADA-compliant spaces with an ROC Licensed guarantee."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Sun Lakes Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-sun-lakes/` },
@@ -180,9 +180,9 @@ export default function SunLakesPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:+15205693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  (229) 306-5591
+                  (520) 569-3339
                 </Link>
               </Button>
             </div>

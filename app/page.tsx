@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
 import QuickAnswers from "@/components/home/quick-answers";
-import { LocalBusinessSchema, FAQSchema, SpeakableSchema } from "@/components/seo/json-ld";
+import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
@@ -35,12 +35,14 @@ const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview")
   ),
 });
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Licensed ROC338304",
-  description: `Mesa & Chandler's trusted bathroom remodeler since 2010. Custom walk-in showers, master bath overhauls & tub conversions. Licensed ROC338304. Call ${siteConfig.phone}.`,
+  title: {
+    absolute: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling"
+  },
+  description: "Chandler's premier bathroom remodeling contractor. Specializing in custom walk-in showers & tub conversions. Licensed ROC338304. Get a free estimate!",
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ | Licensed ROC338304",
+    title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
     description:
-      "Licensed Chandler bathroom contractor for walk-in showers, tub conversions, and custom tile. Free in-home estimates.",
+      "Chandler's premier bathroom remodeling contractor. Specializing in custom walk-in showers & tub conversions. Licensed ROC338304. Get a free estimate!",
     type: "website",
     url: `${siteConfig.url}/`,
   },
@@ -58,6 +60,7 @@ export default function HomePage() {
   return (
     <>
       <LocalBusinessSchema />
+      <OrganizationSchema />
       <FAQSchema faqs={faqSchemaItems} />
       <SpeakableSchema url={`${siteConfig.url}/`} />
       <Header />

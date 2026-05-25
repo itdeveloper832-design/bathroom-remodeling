@@ -2,13 +2,16 @@ import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import { Metadata } from "next"
 import { siteConfig } from "@/lib/site-config"
 import BlogContent from "./blog-content"
+import { getPublishedPosts, getCategories } from "@/lib/actions/blog"
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Blog Chandler AZ Tips",
-  description: "Expert bathroom remodeling tips, design trends, and ideas from Chandler, AZ contractors. Learn about costs, materials, and more!",
+  title: {
+    absolute: "Bathroom Remodeling Blog & Tips | ARZ Home Remodeling"
+  },
+  description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors. Learn about costs, materials, and master bath layouts.",
   openGraph: {
-    title: "Bathroom Remodeling Blog Chandler AZ Tips",
-    description: "Expert bathroom remodeling tips and design ideas from Chandler, AZ contractors.",
+    title: "Bathroom Remodeling Blog & Tips | ARZ Home Remodeling",
+    description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors. Learn about costs, materials, and master bath layouts.",
     url: `${siteConfig.url}/blog/`,
     type: "website",
     images: [
@@ -22,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Blog Chandler AZ Tips",
-    description: "Bathroom remodeling tips and ideas from Chandler, AZ contractors.",
+    title: "Bathroom Remodeling Blog & Tips | ARZ Home Remodeling",
+    description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
@@ -31,8 +34,21 @@ export const metadata: Metadata = {
   },
 }
 
-export default function BlogPage() {
-  return <BlogContent />
+export default async function BlogPage() {
+  const posts = await getPublishedPosts();
+  const categories = await getCategories();
+
+  return (
+    <>
+      <BreadcrumbSchema 
+        items={[
+          { name: "Home", url: `${siteConfig.url}/` },
+          { name: "Blog", url: `${siteConfig.url}/blog/` }
+        ]} 
+      />
+      <BlogContent initialPosts={posts} initialCategories={categories} />
+    </>
+  );
 }
 
 

@@ -7,8 +7,8 @@ export const siteConfig = {
   warranty: "Comprehensive 5-Year Workmanship Warranty on custom tile showers",
   url: "https://arzhomeremodeling.com",
   googleBusinessLink: "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ",
-  phone: "(229) 306-5591",
-  phoneClean: "2293065591",
+  phone: "(520) 569-3339",
+  phoneClean: "(520) 569-3339",
   email: "sales@arzhomeremodeling.com",
   // Verified Arizona Registrar of Contractors license number
   license: "ROC338304 - Arizona Licensed Contractor",
@@ -41,6 +41,7 @@ export const siteConfig = {
     { name: "Home", href: "/" },
     { name: "About", href: "/about/" },
     { name: "Services", href: "/services/" },
+    { name: "Gallery", href: "/gallery/" },
     { name: "Blog", href: "/blog/" },
     { name: "Contact", href: "/contact/" },
   ],

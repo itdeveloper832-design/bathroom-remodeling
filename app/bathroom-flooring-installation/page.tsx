@@ -52,7 +52,7 @@ export default function BathroomFlooringInstallationPage() {
           title="Bathroom Flooring Installation in Chandler, Arizona"
           subtitle="Professional Tile & Stone Flooring in Chandler AZ"
           description="Professional bathroom flooring installation with waterproof materials, expert craftsmanship, and durable finishes for your Chandler home."
-          image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
+          image="/images/services/bathroom-flooring-chandler.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Flooring", url: `${siteConfig.url}/bathroom-flooring-installation` },

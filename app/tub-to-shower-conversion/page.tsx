@@ -68,7 +68,7 @@ export default function TubToShowerConversionPage() {
           title="Premium Tub to Shower Conversion in Chandler, AZ"
           subtitle="Transform Your Space with Licensed Walk-In Shower Experts"
           description="Don't let an unused bathtub waste valuable space in your bathroom. Our ROC Licensed experts specialize in high-quality tub-to-shower swaps, providing a safer, more modern, and more accessible bathing experience for your Chandler home."
-          image="/images/optimized/photo-1584622650111-993a426fbf0a.webp"
+          image="/images/services/bathroom-tile-remodel-az.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Tub to Shower Conversion", url: `${siteConfig.url}/tub-to-shower-conversion` },

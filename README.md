@@ -688,7 +688,7 @@ Expected output:
 
 ### Business Details
 - **Name:** ARZ Home Remodeling
-- **Phone:** (229) 306-5591
+- **Phone:** (520) 569-3339
 - **Email:** info@arzremodeling.com
 - **Address:** 6710 W Chicago St, Chandler, AZ 85226
 - **Hours:** Mon-Fri 8AM-6PM, Sat 9AM-4PM, Sun Closed

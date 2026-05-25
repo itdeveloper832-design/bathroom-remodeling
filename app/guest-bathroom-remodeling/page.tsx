@@ -87,7 +87,7 @@ export default function GuestBathPage() {
           title="Guest Bathroom Remodeling in Chandler, AZ"
           subtitle="High-Impact Updates for Small Bathrooms & Powder Rooms"
           description="Make a lasting impression on your guests. We provide efficient, professional guest bathroom remodeling that combines style with practicality for your Chandler home."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Guest Bathroom", url: `${siteConfig.url}/guest-bathroom-remodeling/` }]}
         />
 
@@ -200,7 +200,7 @@ export default function GuestBathPage() {
                     <Link href="/contact/">Get Your Quote</Link>
                  </Button>
                  <Button variant="outline" asChild size="lg">
-                    <Link href="tel:2293065591">Call {siteConfig.phone}</Link>
+                    <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>
                  </Button>
               </div>
             </div>

@@ -69,7 +69,7 @@ export default function TubRemovalPage() {
           title="Tub Removal in Chandler, Arizona"
           subtitle="Professional Bathtub Removal Services in Chandler AZ"
           description="Expert bathtub removal with proper plumbing disconnection, safe extraction, and complete disposal for your renovation project."
-          image="/images/optimized/photo-1585412727339-54e4bae3bbf9.webp"
+          image="/images/gallery/bathroom-renovation-chandler.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Tub Removal", url: `${siteConfig.url}/tub-removal` },

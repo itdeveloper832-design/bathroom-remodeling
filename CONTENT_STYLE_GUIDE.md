@@ -130,7 +130,7 @@ around your schedule to minimize disruption."
 - **Length**: 150-160 characters
 - **Format**: Benefit + CTA + phone/location
 - **Examples**:
-  - ✅ "Professional walk-in shower installation in Chandler AZ. Licensed, insured, 2-year warranty. Free estimate: (229) 306-5591."
+  - ✅ "Professional walk-in shower installation in Chandler AZ. Licensed, insured, 2-year warranty. Free estimate: (520) 569-3339."
   - ❌ "Walk-in showers — modern bathroom design — Chandler AZ | Licensed contractor | Call today"
 
 ### H1 Tags
@@ -216,7 +216,7 @@ on accessibility and modern design."
 - [ ] No pipes (|) in meta titles/descriptions
 - [ ] No AI-style phrases ("let's dive in", "it's important to note")
 - [ ] Reads naturally out loud (test it)
-- [ ] Phone number is (229) 306-5591
+- [ ] Phone number is (520) 569-3339
 - [ ] ROC# is 338304
 - [ ] Location is accurate (Chandler primary, Mesa/Gilbert secondary)
 - [ ] One H1 per page
@@ -260,13 +260,13 @@ on accessibility and modern design."
 **Before:**
 ```
 "Bathroom remodeling in Chandler, AZ — walk-in showers, tub-to-shower conversions, 
-tile work & master baths. Licensed ROC338304. Free estimate: (229) 306-5591."
+tile work & master baths. Licensed ROC338304. Free estimate: (520) 569-3339."
 ```
 
 **After:**
 ```
 "Professional bathroom remodeling in Chandler, AZ. Walk-in showers, tub conversions, 
-tile & master baths. Licensed & insured. Free in-home estimate: (229) 306-5591."
+tile & master baths. Licensed & insured. Free in-home estimate: (520) 569-3339."
 ```
 
 ### Example 3: Blog Opening

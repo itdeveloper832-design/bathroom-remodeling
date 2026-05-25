@@ -2,12 +2,14 @@ import { Metadata } from "next"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Portfolio Chandler AZ - Completed Projects",
-  description: "View our stunning bathroom remodel portfolio in Chandler AZ. See recent master bath and shower transformations. Get inspired!",
+  title: {
+    absolute: "Bathroom Remodel Project Gallery | ARZ Home Remodeling"
+  },
+  description: "Explore our stunning gallery of completed bathroom remodels in Chandler, AZ. See custom tiled walk-in showers, master bath retreats & vanity upgrades.",
   openGraph: {
-    title: "Bathroom Remodeling Photos Chandler AZ - Portfolio",
-    description: "View bathroom remodeling before and after photos in Chandler, AZ.",
-    url: `${siteConfig.url}/gallery`,
+    title: "Bathroom Remodel Project Gallery | ARZ Home Remodeling",
+    description: "Explore our stunning gallery of completed bathroom remodels in Chandler, AZ. See custom tiled walk-in showers, master bath retreats & vanity upgrades.",
+    url: `${siteConfig.url}/gallery/`,
     type: "website",
     images: [
       {
@@ -20,12 +22,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Photos Chandler AZ - Portfolio",
-    description: "View bathroom remodeling before and after photos in Chandler, AZ.",
+    title: "Bathroom Remodel Project Gallery | ARZ Home Remodeling",
+    description: "Explore our stunning gallery of completed bathroom remodels in Chandler, AZ. See custom tiled walk-in showers, master bath retreats & vanity upgrades.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/gallery`,
+    canonical: `${siteConfig.url}/gallery/`,
   },
 }
 

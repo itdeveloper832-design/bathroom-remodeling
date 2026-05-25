@@ -31,15 +31,23 @@ export async function generateLocationMetadata({
 
   const isZip = /^\d{5}$/.test(locationSlug);
   const title = isZip
-    ? `Bathroom Remodeling ZIP ${location.zipData.zip} Chandler AZ - Licensed Contractor`
-    : `Bathroom Remodeling ${displayName} Chandler AZ - Professional Service`;
+    ? `Bathroom Remodeling ZIP ${location.zipData.zip} | ARZ Home Remodeling`
+    : `Bathroom Remodeling ${displayName} | ARZ Home Remodeling`;
   const description = isZip
-    ? `Bathroom contractor for ZIP ${location.zipData.zip} in Chandler: ${location.zipData.neighborhoods.map((n) => n.name).join(", ")}. Walk-in showers, tub conversions, tile. ROC338304.`
-    : `Licensed bathroom remodeling in ${displayName}, Chandler AZ. Custom tile showers, tub-to-shower, vanities. Free estimate: ${siteConfig.phone}.`;
+    ? `Licensed bathroom remodeling contractor in ZIP ${location.zipData.zip}, Chandler AZ. Custom walk-in showers & tub conversions. Free estimates!`
+    : `Licensed bathroom remodeling contractor in ${displayName}, Chandler AZ. Custom walk-in showers & tub conversions. Free estimates!`;
 
   return {
-    title,
+    title: {
+      absolute: title
+    },
     description,
+    openGraph: {
+      title,
+      description,
+      url: `${siteConfig.url}/chandler-az-${locationSlug}/`,
+      type: "website",
+    },
     alternates: {
       canonical: `${siteConfig.url}/chandler-az-${locationSlug}/`,
     },

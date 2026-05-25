@@ -112,7 +112,7 @@ export default function FinancingPage() {
           title="Bathroom Remodeling Financing in Chandler, AZ"
           subtitle="Flexible Payments for Your Dream Design"
           description="Explore unsecured home improvement loans, HELOC options, and contractor payment terms. Find low monthly payments that fit your budget."
-          image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
+          image="/images/services/bathroom-flooring-chandler.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Costs", url: `${siteConfig.url}/bathroom-remodel-cost-chandler/` },
@@ -135,7 +135,7 @@ export default function FinancingPage() {
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <DollarSign className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
-                We work with top home improvement lenders to make financing simple. To review your pre-qualification terms without affecting your credit score, call us at <a href="tel:2293065591" className="text-primary hover:underline font-medium">(229) 306-5591</a>.
+                We work with top home improvement lenders to make financing simple. To review your pre-qualification terms without affecting your credit score, call us at <a href="tel:+15205693339" className="text-primary hover:underline font-medium">(520) 569-3339</a>.
               </p>
             </div>
           </div>

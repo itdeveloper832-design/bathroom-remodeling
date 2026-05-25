@@ -97,7 +97,7 @@ export default function MasterBathPage() {
           title="Licensed Master Bathroom Remodeling in Chandler, AZ"
           subtitle="Luxury Transformations Managed by One Local Team"
           description="Elevate your master suite with a luxury renovation tailored to your style. We handle everything: from custom walk-in showers and double vanities to premium tile and lighting. Enjoy a stress-free transformation with a fixed-price guarantee."
-          image="/images/optimized/photo-1600607687939-ce8a6c25118c.webp"
+          image="/images/projects/modern-double-vanity-chandler.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Master Bathroom Remodel", url: `${siteConfig.url}/master-bathroom-remodel` },

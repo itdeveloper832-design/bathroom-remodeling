@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { getIndexableChandlerLocationSlugs } from "@/lib/seo-canonical-map";
+import { getPublishedPosts } from "@/lib/actions/blog";
 import {
   getAppRoutes,
   getRoutePriority,
@@ -11,7 +12,7 @@ import {
 
 export const dynamic = "force-static";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.url;
 
   const discoveredRoutes = getAppRoutes();
@@ -55,7 +56,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       };
     });
 
-  const allEntries = [...fileEntries, ...zipHubEntries, ...programmaticHoodEntries];
+  // Dynamic published blog posts
+  const posts = await getPublishedPosts();
+  const blogEntries = posts.map((post) => {
+    const route = `/blog/${post.slug}/`;
+    return {
+      url: `${baseUrl}${route}`,
+      lastModified: new Date(post.updatedAt || post.publishedAt || post.createdAt || "2026-05-19"),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    };
+  });
+
+  const allEntries = [
+    ...fileEntries,
+    ...zipHubEntries,
+    ...programmaticHoodEntries,
+    ...blogEntries,
+  ];
 
   const uniqueEntriesMap = new Map<string, MetadataRoute.Sitemap[number]>();
 

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: "Top-rated bathroom remodeling in Ocotillo, Chandler, AZ. Specializing in luxury walk-in showers, custom tile design, and master suite renovations in 85248.",
   openGraph: {
     title: "Bathroom Remodeling Ocotillo Chandler AZ - Custom Contractor",
-    description: "Expert bathroom design & remodeling in Ocotillo, Chandler, AZ. Licensed contractors, luxury designs, and custom tile installations. Free estimates: (229) 306-5591.",
+    description: "Expert bathroom design & remodeling in Ocotillo, Chandler, AZ. Licensed contractors, luxury designs, and custom tile installations. Free estimates: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-ocotillo/`,
     type: "website",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bathroom Remodeling Ocotillo Chandler AZ - Custom Contractor",
     description: "Licensed Ocotillo bathroom contractors. Walk-in showers, custom tile, master bath renovations.",
-    images: [`${siteConfig.url}/images/optimized/photo-1552321554-5fefe8c9ef14.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-ocotillo/`,
@@ -153,7 +153,7 @@ export default function OcotilloPage() {
           title="Premium Bathroom Remodeling in Ocotillo, Chandler"
           subtitle="Elevate Your Home with Custom Luxury Designs"
           description="Transform your Ocotillo home with the East Valley's premier bathroom contractor. From Mediterranean-style tiled master baths near Ocotillo Golf Club to sleek curbless walk-in showers, we deliver elite craftsmanship and ROC Licensed peace of mind."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Ocotillo Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-ocotillo/` },
@@ -180,9 +180,9 @@ export default function OcotilloPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:+15205693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  (229) 306-5591
+                  (520) 569-3339
                 </Link>
               </Button>
             </div>

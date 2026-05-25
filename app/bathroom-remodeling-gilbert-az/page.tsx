@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   description: `Bathroom remodeling Gilbert AZ: showers, tub-to-shower, master baths. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
     title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
-    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (229) 306-5591.",
+    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/`,
     type: "website",
   },
@@ -193,7 +193,7 @@ export default function GilbertPage() {
           title="Licensed Bathroom Remodeling in Gilbert, AZ"
           subtitle="Luxury Transformations & Quality Craftsmanship"
           description="Transform your Gilbert home with the East Valley's trusted remodeling experts. From custom walk-in showers in Power Ranch to master suite renovations in Morrison Ranch: we deliver stunning results with a fixed-price guarantee and ROC Licensed peace of mind."
-          image="/images/optimized/photo-1552321554-5fefe8c9ef14.webp"
+          image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Gilbert AZ", url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/` },
@@ -229,7 +229,7 @@ export default function GilbertPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:2293065591" className="flex items-center gap-2">
+                <Link href="tel:+15205693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

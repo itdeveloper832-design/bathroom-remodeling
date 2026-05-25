@@ -141,7 +141,7 @@ export default function WalkInShowerCostPage() {
           title="Walk-In Shower Installation Costs (2025 Pricing Guide)"
           subtitle="Transparent Shower Budgets"
           description="Detailed breakdown of the costs to build or convert a walk-in shower in Chandler, AZ. Prefabricated, custom tile, and curbless designs explained."
-          image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
+          image="/images/services/bathroom-flooring-chandler.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Walk-In Showers", url: `${siteConfig.url}/walk-in-showers/` },
@@ -164,7 +164,7 @@ export default function WalkInShowerCostPage() {
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <Info className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
               <p className="text-sm text-muted-foreground">
-                Need an exact figure? We provide <strong className="text-foreground">free, itemized written estimates</strong> for homeowners in Chandler, Gilbert, Sun Lakes, and Tempe. Call us at <a href="tel:2293065591" className="text-primary hover:underline font-medium">(229) 306-5591</a> to set up your consultation.
+                Need an exact figure? We provide <strong className="text-foreground">free, itemized written estimates</strong> for homeowners in Chandler, Gilbert, Sun Lakes, and Tempe. Call us at <a href="tel:+15205693339" className="text-primary hover:underline font-medium">(520) 569-3339</a> to set up your consultation.
               </p>
             </div>
           </div>

@@ -67,7 +67,7 @@ export default function BathtubRemodelingPage() {
           title="Bathtub Remodeling in Chandler, AZ"
           subtitle="Tub Replacement, Bathtub-to-Shower Conversion & Soaking Tubs"
           description="Ready to replace your outdated bathtub or convert that unused garden tub into a walk-in shower? Our licensed Chandler contractors handle tub removal, tub replacement, soaking tub installation, and tub-to-shower conversions with a fixed price and 2-year warranty."
-          image="/images/optimized/photo-1600566752355-35792bedcfea.webp"
+          image="/images/projects/luxury-bathtub-remodel-az.webp"
           breadcrumbs={[
             { name: "Home", url: `${siteConfig.url}/` },
             { name: "Bathtub Remodeling Chandler AZ", url: `${siteConfig.url}/bathtub-remodeling/` },

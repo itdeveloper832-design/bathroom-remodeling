@@ -70,7 +70,7 @@ export default function BathroomTileInstallationPage() {
           title="Premium Tile Installation in Chandler, Arizona"
           subtitle="Expert Tile Installation Chandler AZ"
           description="Elevate your space with flawless tiling work. From waterproof shower surrounds to stunning floor patterns, our precision craftsmanship ensures lasting beauty."
-          image="/images/optimized/photo-1507089947368-19c1da9775ae.webp"
+          image="/images/services/bathroom-flooring-chandler.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Tile Installation", url: `${siteConfig.url}/bathroom-tile-installation` }]}
         />
         <ServiceProcess

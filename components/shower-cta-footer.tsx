@@ -24,8 +24,8 @@ export default function ShowerCTAFooter() {
             </div>
             <div className="text-center">
               <p className="text-muted-foreground mb-2">Email</p>
-              <a href="mailto:info@arzremodeling.com" className="text-xl font-semibold text-primary hover:underline">
-                info@arzremodeling.com
+              <a href={`mailto:${siteConfig.email}`} className="text-xl font-semibold text-primary hover:underline">
+                {siteConfig.email}
               </a>
             </div>
           </div>

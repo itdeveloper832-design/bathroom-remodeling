@@ -34,7 +34,7 @@ export function Footer() {
               Phone: <a href={`tel:${siteConfig.phoneClean}`} className="hover:text-white transition-colors">{siteConfig.phone}</a>
             </p>
             <p className="text-slate-300">
-              Email: <a href="mailto:info@arzremodeling.com" className="hover:text-white transition-colors">info@arzremodeling.com</a>
+              Email: <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors">{siteConfig.email}</a>
             </p>
           </div>
         </div>

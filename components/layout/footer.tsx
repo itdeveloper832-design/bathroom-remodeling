@@ -43,7 +43,7 @@ export function Footer() {
               <p className="font-semibold text-background text-base">ARZ Home Remodeling</p>
               <p>6710 W Chicago St, Chandler, AZ 85226</p>
               <p>Phone: <a href={`tel:${siteConfig.phoneClean}`} className="text-background/80 hover:text-primary transition-colors no-underline">{siteConfig.phone}</a></p>
-              <p>Email: <a href="mailto:info@arzremodeling.com" className="text-background/80 hover:text-primary transition-colors no-underline">info@arzremodeling.com</a></p>
+              <p>Email: <a href={`mailto:${siteConfig.email}`} className="text-background/80 hover:text-primary transition-colors no-underline">{siteConfig.email}</a></p>
               <p className="text-xs pt-1 text-background/60">ROC Licensed | License #ROC338304 | Arizona Registrar of Contractors</p>
             </div>
 

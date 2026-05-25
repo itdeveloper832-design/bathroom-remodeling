@@ -170,7 +170,7 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
+      ratingValue: "5.0",
       reviewCount: "50",
       bestRating: "5"
     },
@@ -474,7 +474,7 @@ export function PriceSchema({
     offers: offerSchema,
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
+      ratingValue: "5.0",
       reviewCount: "127",
     },
   };

@@ -371,13 +371,11 @@ section {
   .gallery-card:focus-within .gallery-before { opacity: 0; }
 }
 
-/* ===== BRAND COLOR SCHEME & CTA OVERRIDES ===== */
-
 /* Ensure all solid buttons and links acting as primary CTAs use Warm Gold (#C9972B) with white text */
-a[class*="bg-primary"]:not([class*="bg-primary/5"]):not([class*="bg-primary/10"]):not([class*="bg-primary/20"]),
-button[class*="bg-primary"]:not([class*="bg-primary/5"]):not([class*="bg-primary/10"]):not([class*="bg-primary/20"]),
-a[class*="bg-foreground"]:not([class*="bg-foreground/5"]):not([class*="bg-foreground/10"]):not([class*="bg-foreground/20"]),
-button[class*="bg-foreground"]:not([class*="bg-foreground/5"]):not([class*="bg-foreground/10"]):not([class*="bg-foreground/20"]),
+a.bg-primary:not([class*="bg-primary/5"]):not([class*="bg-primary/10"]):not([class*="bg-primary/20"]),
+button.bg-primary:not([class*="bg-primary/5"]):not([class*="bg-primary/10"]):not([class*="bg-primary/20"]),
+a.bg-foreground:not([class*="bg-foreground/5"]):not([class*="bg-foreground/10"]):not([class*="bg-foreground/20"]),
+button.bg-foreground:not([class*="bg-foreground/5"]):not([class*="bg-foreground/10"]):not([class*="bg-foreground/20"]),
 .btn-primary,
 .cta-button {
   background-color: #C9972B !important;
@@ -385,10 +383,10 @@ button[class*="bg-foreground"]:not([class*="bg-foreground/5"]):not([class*="bg-f
   border-color: #C9972B !important;
 }
 
-a[class*="bg-primary"]:hover,
-button[class*="bg-primary"]:hover,
-a[class*="bg-foreground"]:hover,
-button[class*="bg-foreground"]:hover,
+a.bg-primary:hover,
+button.bg-primary:hover,
+a.bg-foreground:hover,
+button.bg-foreground:hover,
 .btn-primary:hover,
 .cta-button:hover {
   background-color: #b08120 !important;

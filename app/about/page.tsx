@@ -336,7 +336,7 @@ export default function AboutPage() {
                 {
                   award: "Yelp Top Rated",
                   issuer: "Client Reviews",
-                  year: "4.9/5.0 Rating",
+                  year: "5.0/5.0 Rating",
                   img: "/images/badges/yelp-badges.png"
                 },
                 {
@@ -395,9 +395,9 @@ export default function AboutPage() {
                 </a>
               </div>
               <div>
-                <a href="https://google.com" target="_blank" rel="noopener" aria-label="View our 4.9 Star Google Rating">
+                <a href="https://google.com" target="_blank" rel="noopener" aria-label="View our 5.0 Star Google Rating">
                   <div className="text-3xl font-bold text-primary mb-2">★</div>
-                  <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">Google 4.9★ Rating</p>
+                  <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">Google 5.0★ Rating</p>
                 </a>
               </div>
               <div>

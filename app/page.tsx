@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
 import QuickAnswers from "@/components/home/quick-answers";
-import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema } from "@/components/seo/json-ld";
+import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, WebSiteSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
@@ -60,6 +60,7 @@ export default function HomePage() {
   return (
     <>
       <LocalBusinessSchema />
+      <WebSiteSchema />
       <OrganizationSchema />
       <FAQSchema faqs={faqSchemaItems} />
       <SpeakableSchema url={`${siteConfig.url}/`} />

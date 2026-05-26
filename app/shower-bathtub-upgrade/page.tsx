@@ -63,8 +63,8 @@ const faqs = [
 ];
 
 const chandlerLocation = {
-  lat: 33.3062,
-  lng: -111.8413,
+  lat: 33.3009334,
+  lng: -111.9605964,
 };
 
 export default function ShowerBathtubUpgradePage() {

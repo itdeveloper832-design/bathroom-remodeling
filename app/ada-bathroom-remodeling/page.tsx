@@ -211,7 +211,7 @@ export default function ADAPage() {
                  </Button>
               </div>
             </div>
-            <div><GoogleMap lat={33.3062} lng={-111.8413} zoom={12} title="ADA Bathroom Remodeling Chandler" address="Chandler, AZ" /></div>
+            <div><GoogleMap lat={33.3009334} lng={-111.9605964} zoom={12} title="ADA Bathroom Remodeling Chandler" address="Chandler, AZ" /></div>
           </div>
         </section>
       </main>

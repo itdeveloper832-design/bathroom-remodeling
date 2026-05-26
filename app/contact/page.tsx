@@ -5,7 +5,7 @@ import ContactSection from "@/components/home/contact-section"
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config"
 import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
-import { BreadcrumbSchema, FAQSchema } from "@/components/seo/json-ld"
+import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
   title: {
@@ -54,6 +54,7 @@ export default function ContactPage() {
         ]} 
       />
       <FAQSchema faqs={contactFaqs} />
+      <ContactPageSchema />
       <Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}

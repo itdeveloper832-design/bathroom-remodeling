@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
 const faqs = serviceContent["bathroom-vanity-installation"].faqs;
 
-const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
+const chandlerLocation = { lat: 33.3009334, lng: -111.9605964 };
 
 const otherServices = bathroomServices
   .filter(s => s.href !== "/bathroom-vanity-installation")

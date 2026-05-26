@@ -365,7 +365,7 @@ export const defaultGalleryItems = [
   {
     title: "Tile Accent Bath",
     category: "bathroom",
-    imageUrl: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=2574&auto=format&fit=crop",
+    imageUrl: "/images/projects/spa-style-bathroom.webp",
     description: "Statement tile feature wall with coordinated flooring",
     featured: false,
   },

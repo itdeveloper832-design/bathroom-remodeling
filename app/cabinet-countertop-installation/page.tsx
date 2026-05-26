@@ -46,8 +46,8 @@ export const metadata: Metadata = {
 const faqs = serviceContent["cabinet-countertop-installation"].faqs;
 
 const chandlerLocation = {
-  lat: 33.3062,
-  lng: -111.8413,
+  lat: 33.3009334,
+  lng: -111.9605964,
 };
 
 export default function CabinetCountertopInstallationPage() {

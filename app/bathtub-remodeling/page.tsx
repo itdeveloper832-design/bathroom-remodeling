@@ -41,8 +41,8 @@ export const metadata: Metadata = {
 const faqs = serviceContent["bathtub-remodeling"].faqs;
 
 const chandlerLocation = {
-  lat: 33.3062,
-  lng: -111.8413,
+  lat: 33.3009334,
+  lng: -111.9605964,
 };
 
 const otherServices = bathroomServices

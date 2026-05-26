@@ -611,3 +611,69 @@ export function OrganizationSchema({
     />
   );
 }
+
+interface WebSiteSchemaProps {
+  url?: string;
+}
+
+export function WebSiteSchema({ url = siteConfig.url }: WebSiteSchemaProps = {}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": url,
+    "name": "ARZ Home Remodeling",
+    "alternateName": ["ARZ Remodeling", "ARZ Home Remodeling Chandler"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": `${url}/search?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+interface ContactPageSchemaProps {
+  url?: string;
+}
+
+export function ContactPageSchema({ url = `${siteConfig.url}/contact/` }: ContactPageSchemaProps = {}) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": `${url}#webpage`,
+    "url": url,
+    "name": "Contact ARZ Home Remodeling",
+    "description": "Contact Chandler's top-rated bathroom remodeling contractor. Get a free written estimate for your master bath or shower remodel.",
+    "mainEntity": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": `${siteConfig.url}/#organization`,
+      "name": "ARZ Home Remodeling",
+      "telephone": siteConfig.phone,
+      "email": siteConfig.email,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6710 W Chicago St",
+        "addressLocality": "Chandler",
+        "addressRegion": "AZ",
+        "postalCode": "85226",
+        "addressCountry": "US"
+      }
+    }
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}

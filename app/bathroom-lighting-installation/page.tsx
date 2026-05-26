@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 const faqs = serviceContent["bathroom-lighting-installation"].faqs;
 
-const chandlerLocation = { lat: 33.3062, lng: -111.8413 };
+const chandlerLocation = { lat: 33.3009334, lng: -111.9605964 };
 
 export default function BathroomLightingInstallationPage() {
   const serviceData = serviceContent["bathroom-lighting-installation"];

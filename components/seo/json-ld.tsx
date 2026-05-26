@@ -622,7 +622,7 @@ export function WebSiteSchema({ url = siteConfig.url }: WebSiteSchemaProps = {})
     "@type": "WebSite",
     "url": url,
     "name": "ARZ Home Remodeling",
-    "alternateName": ["ARZ Remodeling", "ARZ Home Remodeling Chandler"],
+    "alternateName": ["ARZ Home Remodeling", "ARZ Home Remodeling Chandler"],
     "potentialAction": {
       "@type": "SearchAction",
       "target": {

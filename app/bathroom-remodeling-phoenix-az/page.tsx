@@ -100,6 +100,30 @@ export default function PhoenixPage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-secondary border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Phoenix Community Landmarks & Local Bathroom Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Phoenix is a vast and dynamic metropolis distinguished by iconic desert landmarks like <strong>Camelback Mountain</strong>, the <strong>Desert Botanical Garden</strong>, and the historical hiking trails of <strong>Papago Park</strong>. When we execute bathroom upgrades across Phoenix, we adapt our designs to the local neighborhood contexts. For properties in the high-end <strong>Biltmore</strong> area or family estates near <strong>Desert Ridge</strong>, we deliver pristine custom craftsmanship.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Phoenix Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed near the <strong>Arcadia</strong> neighborhood involved a full guest bathroom space-optimization. We replaced a cramped tub enclosure with an open curbless shower featuring non-porous large-format porcelain slabs, a modern wall-mounted floating vanity with soft-close drawers, and energy-efficient LED backlit vanity mirrors.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Phoenix Permitting & Building Safety Guidelines:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              If your Phoenix bathroom renovation involves plumbing relocations, partition wall demo, or electrical circuit modifications, we coordinate the complete permitting process with the <strong>City of Phoenix Planning & Development Department</strong> (located at 200 W Washington St). We manage all planning, blueprint submissions, and municipal building inspections directly for code-compliant security.
+            </p>
+          </div>
+        </section>
+
         <AreaBenefits 
           benefits={[
             "Full Master Bathroom Gut & Remodel",

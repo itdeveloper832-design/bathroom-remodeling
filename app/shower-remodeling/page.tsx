@@ -15,7 +15,7 @@ import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/j
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import LocalTrust from "@/components/home/local-trust";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import ShowerTypes from "@/components/shower-types";
 import ShowerCostSection from "@/components/shower-cost-section";
@@ -46,9 +46,7 @@ export const metadata: Metadata = {
 
 const faqs = serviceContent["shower-remodeling"].faqs;
 
-const otherServices = bathroomServices
-  .filter(s => s.href !== "/shower-remodeling/")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/shower-remodeling/");
 
 export default function ShowerRemodelingPage() {
   const showerData = serviceContent["shower-remodeling"];
@@ -81,11 +79,11 @@ export default function ShowerRemodelingPage() {
         {/* REGIONAL SHOWER SERVICES COVERS */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
-            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
               East Valley Shower Remodeling & Installation Services
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              When searching for a top-tier <strong>shower remodel near me</strong>, <strong>shower renovation near me</strong>, or the best <strong>shower remodel companies near me</strong>, homeowners in the Phoenix East Valley choose ARZ Home Remodeling. As a premier <strong>shower renovation company</strong> and leader in <strong>arizona shower remodeling</strong>, we deliver complete peace of mind. Our specialized <strong>walk-in shower company services</strong> and professional <strong>walk-in shower installation services</strong> cover everything from structural framing to final sealant.
+              When searching for a top-tier <strong>shower remodel near me</strong>, <strong>shower renovation near me</strong>, or the best <strong>shower remodel companies near me</strong>, homeowners in the Phoenix East Valley choose ARZ Home Remodeling. If you are budgeting for a new installation, check our [walk-in shower cost Chandler](/blog/walk-in-shower-cost-chandler-az/) guide. As a premier <strong>shower renovation company</strong> and leader in <strong>arizona shower remodeling</strong>, we deliver complete peace of mind. Our specialized <strong>walk-in shower company services</strong> and professional <strong>walk-in shower installation services</strong> cover everything from structural framing to final sealant.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-8 text-left">
               <div className="p-6 bg-secondary rounded-2xl border border-border">

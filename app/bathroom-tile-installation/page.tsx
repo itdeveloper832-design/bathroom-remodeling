@@ -15,7 +15,7 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
   title: "Bathroom Tile Installer Chandler AZ | Custom Shower Tile",
@@ -47,9 +47,7 @@ export const metadata: Metadata = {
 
 const faqs = serviceContent["bathroom-tile-installation"].faqs;
 const chandlerLocation = { lat: 33.3009334, lng: -111.9605964 };
-const otherServices = bathroomServices
-  .filter(s => s.href !== "/bathroom-tile-installation")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/bathroom-tile-installation");
 
 export default function BathroomTileInstallationPage() {
   const tileData = serviceContent["bathroom-tile-installation"];
@@ -109,7 +107,7 @@ export default function BathroomTileInstallationPage() {
               Our specialists are highly skilled in <strong>tile shower installation chandler</strong>, <strong>tile shower installation services chandler</strong>, <strong>tile shower installers near me</strong>, and general <strong>bathroom tile installers near me</strong>. We handle regional requests including <strong>tile shower installation mesa</strong>, <strong>tile shower installation gilbert</strong>, <strong>tile shower installation queen creek</strong>, and complete <strong>tile shower installation arizona</strong> layouts.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Whether you need a custom <strong>subway tile installation near me</strong>, <strong>mosaic tile installation near me</strong>, <strong>porcelain tile installation near me</strong>, <strong>large format tile installers near me</strong>, <strong>ceramic tile contractors near me</strong>, <strong>glass tile installers near me</strong>, or a custom <strong>backsplash installation chandler</strong>, our precision is unmatched. We handle the initial preparation, including <strong>chandler tile removal</strong>, specialized <strong>tile removal contractors chandler</strong>, <strong>tile removal contractors chandler az</strong>, and professional <strong>tile removal company chandler az</strong> solutions, so that the substrate is completely clean and flat.
+              Whether you need a custom <strong>subway tile installation near me</strong>, <strong>mosaic tile installation near me</strong>, [porcelain tile installation](/blog/porcelain-vs-ceramic-tile-arizona-shower/) near me, <strong>large format tile installers near me</strong>, <strong>ceramic tile contractors near me</strong>, <strong>glass tile installers near me</strong>, or a custom <strong>backsplash installation chandler</strong>, our precision is unmatched. We handle the initial preparation, including <strong>chandler tile removal</strong>, specialized <strong>tile removal contractors chandler</strong>, <strong>tile removal contractors chandler az</strong>, and professional <strong>tile removal company chandler az</strong> solutions, so that the substrate is completely clean and flat.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Need floor updates? We provide custom <strong>tile flooring installation chandler az</strong> and complete <strong>tile floor installation chandler</strong> services. If you need <strong>tile floor removal chandler</strong>, <strong>tile floor removal chandler az</strong>, or a custom <strong>tile floor chandler az</strong>, we extract the old material efficiently. We also provide <strong>laundry room tile installation near me</strong> to keep your entire utility space safe and moisture-resistant.

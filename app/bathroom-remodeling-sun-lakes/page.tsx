@@ -189,6 +189,30 @@ export default function SunLakesPage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Sun Lakes Landmarks & Local Safety Remodeling Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Sun Lakes is a premier active adult community featuring beautiful landmarks like the <strong>Oakwood Country Club</strong>, <strong>Cottonwood Golf Course</strong>, and pristine residential lakes. When we execute bathroom renovations in Sun Lakes, we specialize in high-end, senior-safe designs that support independent living. For homeowners near the <strong>Ironwood Golf Course</strong>, we focus on curbless, barrier-free access.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Sun Lakes Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed near the <strong>Palo Verde Country Club</strong> area involved a tub-to-shower safety conversion. We removed a high-sided fiberglass tub and built a custom zero-threshold roll-in tiled shower with solid-wood wall backing supporting heavy-duty grab bars, a built-in tiled shower seat, slip-resistant mosaic flooring, and EPA WaterSense certified fixtures.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Maricopa County Permitting & Safety Compliance:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Because Sun Lakes is an unincorporated community in Maricopa County, major plumbing, structural, or electrical modifications require a building permit from the <strong>Maricopa County Planning & Development Department</strong>. Our team manages all structural drawing submissions, permit applications, and inspections directly to guarantee total safety compliance.
+            </p>
+          </div>
+        </section>
+
         {/* SERVICES */}
         <section className="py-16 lg:py-24 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">

@@ -16,7 +16,7 @@ import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/j
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import LocalTrust from "@/components/home/local-trust";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -45,9 +45,7 @@ const chandlerLocation = {
   lng: -111.9605964,
 };
 
-const otherServices = bathroomServices
-  .filter(s => s.href !== "/bathtub-remodeling/")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/bathtub-remodeling/");
 
 export default function BathtubRemodelingPage() {
   const serviceData = serviceContent["bathtub-remodeling"];
@@ -66,7 +64,7 @@ export default function BathtubRemodelingPage() {
         <ServiceHero
           title="Bathtub Remodeling in Chandler, AZ"
           subtitle="Tub Replacement, Bathtub-to-Shower Conversion & Soaking Tubs"
-          description="Ready to replace your outdated bathtub or convert that unused garden tub into a walk-in shower? Our licensed Chandler contractors handle tub removal, tub replacement, soaking tub installation, and tub-to-shower conversions with a fixed price and 2-year warranty."
+          description="Ready to replace your outdated bathtub or convert that unused garden tub into a walk-in shower? Our licensed Chandler contractors handle tub removal, tub replacement, soaking tub installation, and [tub-to-shower conversions](/blog/tub-to-shower-conversion-ideas-chandler/) with a fixed price and 2-year warranty."
           image="/images/projects/luxury-bathtub-remodel-az.webp"
           breadcrumbs={[
             { name: "Home", url: `${siteConfig.url}/` },

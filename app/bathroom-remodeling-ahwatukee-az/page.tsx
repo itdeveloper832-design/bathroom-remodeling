@@ -243,6 +243,30 @@ export default function AhwatukeePage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Ahwatukee Community Landmarks & Local Bathroom Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Ahwatukee is a unique and scenic community bounded by the spectacular <strong>Ahwatukee Foothills</strong> and <strong>South Mountain Park</strong>, providing homeowners with beautiful desert backdrops. When we remodel bathrooms in Ahwatukee, we take inspiration from this rugged landscape. In golf communities like <strong>Club West</strong> or family-focused neighborhoods like <strong>Mountain Park Ranch</strong>, we focus on designs that match the luxurious, natural aesthetic of the area.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Ahwatukee Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed near the <strong>Foothills Golf Club</strong> area involved converting a dated garden tub into a spacious curbless walk-in shower. We used large-format porcelain tile designed to resist local hard water mineral deposits, installed sleek frameless glass panels, and replaced the outdated vanity with a modern floating double-sink vanity in a rich wood finish.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Ahwatukee Permitting & Building Safety Guidelines:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Because Ahwatukee is part of Phoenix, structural modifications, layout reconfigurations, or major plumbing updates must be reviewed by the <strong>City of Phoenix Planning & Development Department</strong>. Our team handles all drafting, permit applications, and structural inspections, ensuring that your home's renovations are fully safe, code-compliant, and compliant with all local subdivision guidelines.
+            </p>
+          </div>
+        </section>
+
         {/* SERVICES */}
         <section className="py-16 lg:py-24 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">

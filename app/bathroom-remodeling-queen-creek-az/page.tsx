@@ -99,6 +99,30 @@ export default function QueenCreekPage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-secondary border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Queen Creek Community Landmarks & Local Bathroom Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Queen Creek is a rapidly growing family community located near the beautiful <strong>San Tan Mountain Regional Park</strong> and the popular <strong>Queen Creek Olive Mill</strong>. When we execute bathroom renovations in Queen Creek, we design spaces built for modern, active family life. In subdivisions like <strong>Queen Creek Station</strong> or adjacent custom home areas, we prioritize durable, easy-to-clean materials that stand up to daily use.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Queen Creek Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed on a newer single-family home near <strong>Ellsworth Road</strong> involved remodeling a family guest bathroom. We installed a farmhouse-style custom vanity with a double-sink quartz countertop and soft-close cabinet doors, paired with a modern tiled tub-to-shower walk-in conversion with slip-resistant tile flooring and epoxy grout.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Queen Creek Permitting & Building Safety Guidelines:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              If your Queen Creek bathroom renovation involves moving load-bearing partition walls, plumbing relocations, or new electrical circuits, we coordinate the complete permitting process with the <strong>Town of Queen Creek Community Development Department</strong> (located at 22358 S Ellsworth Rd). We manage all planning, blueprint submissions, and municipal building inspections directly for code-compliant security.
+            </p>
+          </div>
+        </section>
+
         <AreaBenefits 
           benefits={[
             "Custom Walk-in Shower Installs",

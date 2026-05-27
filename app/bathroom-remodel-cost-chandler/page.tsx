@@ -8,7 +8,7 @@ import Testimonials from "@/components/home/testimonials";
 import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
@@ -149,7 +149,7 @@ const costFactors = [
   },
 ];
 
-const otherServices = bathroomServices.slice(0, 3);
+const otherServices = getRelatedServices("/bathroom-remodel-cost-chandler/");
 
 export default function CostPage() {
   return (
@@ -183,7 +183,7 @@ export default function CostPage() {
               The most common question we get from Chandler homeowners is:{" "}
               <em>"What will this actually cost?"</em> The answer depends on your project type, material grade, and whether
               any plumbing is being relocated. This guide breaks down every tier with real line-item estimates so you can plan
-              accurately. Whether you're looking for <strong>cheap bathroom remodeling in Chandler AZ</strong> that doesn't sacrifice quality, 
+              accurately. To see an extensive neighborhood breakdown, read our comprehensive [2025 Chandler bathroom remodel cost guide](/blog/bathroom-remodel-cost-chandler-az-2025/). Whether you're looking for <strong>cheap bathroom remodeling in Chandler AZ</strong> that doesn't sacrifice quality, 
               or a high-end master suite renovation, we provide options for every budget.
             </p>
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">

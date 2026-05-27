@@ -234,6 +234,30 @@ export default function TempePage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Tempe Community Landmarks & Local Bathroom Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Tempe is a vibrant community with beautiful regional features like <strong>Tempe Town Lake</strong>, the historic <strong>Mill Avenue District</strong>, and the bustling <strong>ASU Campus</strong>. When we perform bathroom renovations in Tempe, we draw inspiration from the city's active lifestyle. For instance, in <strong>South Tempe</strong> homes near <strong>Kiwanis Park</strong>, we often design spacious family bathrooms with modern layouts and low-maintenance tiled surfaces.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Tempe Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed near <strong>Warner Ranch</strong> involved converting a dated 1990s guest bathroom. We removed the old fiberglass tub alcove and installed a custom, space-saving curbless walk-in shower with large-format porcelain tile and a sleek matte black frameless glass enclosure, along with a modern floating double-sink vanity.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Tempe Permitting & Building Safety Guidelines:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              For any structural changes, wall removals, or major plumbing reconfigurations, our team coordinates directly with the <strong>City of Tempe Community Development Department</strong> (located at 31 E 5th St). We handle all permit submissions and schedule the necessary municipal inspections to ensure that your home's upgrades comply fully with Tempe's strict local safety codes.
+            </p>
+          </div>
+        </section>
+
         {/* SERVICES */}
         <section className="py-16 lg:py-24 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">

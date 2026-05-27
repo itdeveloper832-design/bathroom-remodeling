@@ -13,7 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { Crown, Sparkles, Gem } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -65,9 +65,7 @@ const tipsList = [
   { title: "Protect Natural Stone Surfaces", description: "Apply premium oil based sealers to porous marble or granite surfaces to block hard water mineral scales." }
 ];
 
-const otherServices = bathroomServices
-  .filter(s => s.href !== "/luxury-bathroom-remodeling/")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/luxury-bathroom-remodeling/");
 
 export default function LuxuryPage() {
   return (
@@ -142,7 +140,7 @@ export default function LuxuryPage() {
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Our <strong>luxury bathroom remodeling in Chandler AZ</strong> delivers high end master transformations near Fulton Ranch. 
-              We utilize advanced waterproofing and professional mechanical design to engineer high performance personal spas.
+              To help budget for these high-end retreats, we provide a complete breakdown of features in our [master bathroom remodel cost Chandler](/blog/master-bathroom-remodel-cost-chandler/) guide. We utilize advanced waterproofing and professional mechanical design to engineer high performance personal spas.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="p-6 bg-secondary/50 rounded-2xl border border-border">

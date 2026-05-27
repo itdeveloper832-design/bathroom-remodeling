@@ -238,6 +238,30 @@ export default function GilbertPage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Gilbert Community Landmarks & Local Bathroom Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Gilbert is an incredibly popular family community characterized by the lush <strong>Riparian Preserve at Water Ranch</strong>, the iconic <strong>Gilbert Water Tower Plaza</strong>, and the bustling <strong>Heritage District</strong>. When we execute bathroom renovations in Gilbert, we design spaces that support dynamic family lifestyles. In communities like <strong>Power Ranch</strong> or <strong>Val Vista Lakes</strong>, we specialize in high-durability materials and modern aesthetic choices that add long-term property value.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Gilbert Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed on a spacious family home in <strong>Morrison Ranch</strong> involved converting a dated 2000s guest bathroom. We removed the old fiberglass tub alcove and installed a custom walk-in tile shower with Schluter-KERDI waterproofing, a frameless heavy glass enclosure, non-porous porcelain tile with high-performance epoxy grout, and a beautiful double vanity topped with stain-resistant quartz.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Gilbert Permitting & Building Safety Guidelines:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              For any structural changes, partition wall removals, or major plumbing re-routes in Gilbert, our team coordinates directly with the <strong>Town of Gilbert Planning & Development Department</strong> (located at 90 E Civic Center Dr). We handle all permit submissions and coordinate city inspections, ensuring that your home's structural framing and plumbing are fully compliant with local safety guidelines.
+            </p>
+          </div>
+        </section>
+
         {/* SERVICES */}
         <section className="py-16 lg:py-24 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">

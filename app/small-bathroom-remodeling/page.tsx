@@ -15,7 +15,7 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,9 +36,7 @@ const faqs = serviceContent["small-bathroom-remodeling"].faqs;
 
 const chandlerLocation = { lat: 33.3009334, lng: -111.9605964 };
 
-const otherServices = bathroomServices
-  .filter(s => s.href !== "/small-bathroom-remodeling")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/small-bathroom-remodeling/");
 
 export default function SmallBathroomRemodelingPage() {
   const smallBathData = serviceContent["small-bathroom-remodeling"];
@@ -89,7 +87,7 @@ export default function SmallBathroomRemodelingPage() {
               Chandler's Premier Small Bathroom Makeover Experts
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6 text-center">
-              Whether you live in a modern townhouse in <strong>Ocotillo</strong>, a family home in <strong>Fulton Ranch</strong>, or are updating a classic property in <strong>Sun Lakes</strong>, optimizing a small bathroom requires precise planning and expert craftsmanship. As specialized <strong>small bathroom remodeling contractors in Chandler AZ</strong>, we understand that every square inch matters.
+              Whether you live in a modern townhouse in <strong>Ocotillo</strong>, a family home in <strong>Fulton Ranch</strong>, or are updating a classic property in <strong>Sun Lakes</strong>, optimizing a small bathroom requires precise planning and expert craftsmanship. To get inspired, see our ultimate [small bathroom layout ideas for Chandler](/blog/small-bathroom-layout-ideas-chandler/) homes. As specialized <strong>small bathroom remodeling contractors in Chandler AZ</strong>, we understand that every square inch matters.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8 mb-12">
               <div className="p-6 bg-secondary/50 rounded-2xl border border-border">

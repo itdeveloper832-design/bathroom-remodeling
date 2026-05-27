@@ -9,7 +9,7 @@ import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema, PriceSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
@@ -71,9 +71,7 @@ const included = [
   "Final inspection and walkthrough"
 ];
 
-const otherServices = bathroomServices
-  .filter((s) => s.href !== "/master-bathroom-remodel")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/master-bathroom-remodel/");
 
 export default function MasterBathPage() {
   return (
@@ -115,8 +113,7 @@ export default function MasterBathPage() {
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                   Our master bath remodels in Chandler are designed to be true single-contractor experiences. You get one point of
-                  contact, one fixed price, and one team handling demolition through final walkthrough including plumbing and
-                  electrical coordination.
+                  contact, one fixed price, and one team handling demolition through final walkthrough. To see what options fit your budget, review our detailed [master bathroom remodel cost Chandler](/blog/master-bathroom-remodel-cost-chandler/) guide. We manage all trade specialists including plumbing and electrical coordination.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   Timeline: <strong className="text-foreground">three to five weeks</strong> depending on scope. We specify{" "}

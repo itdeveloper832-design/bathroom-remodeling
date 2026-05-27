@@ -11,6 +11,7 @@ const inter = Inter({
 })
 
 import { StickyCallButton } from '@/components/layout/sticky-call-button'
+import { LocalBusinessSchema, OrganizationSchema } from '@/components/seo/json-ld'
 
 
 export const metadata: Metadata = {
@@ -86,14 +87,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero/luxury-shower-remodel-chandler.avif"
-          type="image/avif"
-          fetchPriority="high"
-        />
-
         <meta name="geo.region" content="US-AZ" />
         <meta name="geo.placename" content="Chandler" />
         <meta name="geo.position" content={`${siteConfig.address.coordinates.lat};${siteConfig.address.coordinates.lng}`} />
@@ -112,6 +105,8 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
+        <LocalBusinessSchema />
+        <OrganizationSchema />
         {children}
         <StickyCallButton />
 

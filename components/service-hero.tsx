@@ -25,6 +25,14 @@ export default function ServiceHero({
 
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32 md:pt-40 lg:pt-48" aria-label={title}>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href={heroImage}
+          fetchPriority="high"
+        />
+      </head>
       {breadcrumbs && <BreadcrumbSchema items={breadcrumbs} />}
       {/* Background Image - LCP Optimized */}
       <div className="absolute inset-0 z-0">

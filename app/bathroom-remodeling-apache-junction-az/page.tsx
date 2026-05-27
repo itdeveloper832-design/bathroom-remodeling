@@ -105,6 +105,30 @@ export default function ApacheJunctionPage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-secondary border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Apache Junction Community Landmarks & Local Bathroom Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Apache Junction is framed by the jaw-dropping <strong>Superstition Mountains</strong> and the historical <strong>Lost Dutchman State Park</strong>. When we execute bathroom renovations in Apache Junction, we draw inspiration from the raw beauty of the Sonoran Desert. In communities bordering the <strong>Apache Trail</strong> or Gold Canyon, we specify color palettes and stone finishes that echo the natural desert landscape.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Apache Junction Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed near the <strong>Superstition Foothills</strong> community involved remodeling a spacious guest bathroom. We replaced an old builder-grade acrylic tub with a beautiful walk-in tile shower using sand-toned textured porcelain tile, secure wall-anchored grab bars, and dynamic slip-resistant mosaic flooring to ensure comfort, luxury, and safety.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Apache Junction Permitting & Building Safety Guidelines:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              When structural changes or plumbing re-routes are executed in Apache Junction, our team coordinates with the <strong>Apache Junction Development Services Department</strong> (located at 300 E Superstition Blvd). We manage all permit filings and structural inspections directly, ensuring your home's septic compatibility and local safety compliance are fully verified.
+            </p>
+          </div>
+        </section>
+
         <AreaBenefits 
           benefits={[
             "Custom Walk-in Shower Installs",

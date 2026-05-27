@@ -111,6 +111,30 @@ export default function ScottsdalePage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-secondary border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Scottsdale Landmarks & Local Remodeling Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Scottsdale is a world-renowned destination famous for its spectacular <strong>McCormick-Stillman Railroad Park</strong>, the upscale <strong>Scottsdale Fashion Square</strong>, and the historic cultural hubs of <strong>Old Town Scottsdale</strong>. When we execute bathroom makeovers here, we deliver premium, bespoke craftsmanship. In communities like <strong>Gainey Ranch</strong> or <strong>McCormick Ranch</strong>, we prioritize custom marble and high-end tile.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Scottsdale Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed near the <strong>DC Ranch</strong> area involved a custom master bathroom renovation. We replaced an oversized unused tub with a large curbless walk-in shower with premium Carrara marble tile, digital Moen U shower valves, floating double-sink vanities, and elegant backlit mirrors.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Scottsdale Permitting & Building Safety Guidelines:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              If your Scottsdale bathroom upgrade involves structural reconfigurations, partition wall removals, or electrical modifications, we coordinate the complete permitting process with the <strong>City of Scottsdale Planning & Development Department</strong> (located at 7447 E Indian School Rd). We manage all planning, blueprint submissions, and municipal inspections directly.
+            </p>
+          </div>
+        </section>
+
         <AreaBenefits 
           benefits={[
             "Custom 3D Bathroom Design",

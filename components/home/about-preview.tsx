@@ -19,13 +19,14 @@ export default function AboutPreview() {
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/optimized/photo-1581578731548-c64695cc6952.webp"
-                alt="ARZ Home Remodeling licensed bathroom contractors in Chandler Arizona"
+                src="/images/optimized/bathroom-remodeling-licensed-crew.webp"
+                alt="ARZ Home Remodeling licensed contractor crew performing bathroom remodel in Chandler AZ"
                 fill
                 className="object-cover"
                 quality={75}
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
+
             </div>
             <div className="absolute -bottom-10 left-4 right-4 lg:-bottom-12 lg:left-8 lg:right-8">
               <div className="grid grid-cols-4 gap-2 lg:gap-4 bg-card border border-border rounded-xl p-4 lg:p-6 shadow-xl">

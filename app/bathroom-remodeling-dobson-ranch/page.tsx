@@ -189,6 +189,30 @@ export default function DobsonRanchPage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Dobson Ranch Landmarks & Local Remodeling Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Dobson Ranch is a stellar master-planned community centered around the scenic <strong>Dobson Ranch Golf Course</strong> and its beautiful interconnected neighborhood lakes. When we execute bathroom upgrades here, we respect the architectural character of these established 1970s and 1980s homes. For properties near the <strong>Dobson Association Lakes</strong> or local parks, we design spaces that maximize utility while retaining classic suburban charm.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Dobson Ranch Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed on a classic ranch-style family home near the <strong>Dobson Ranch Park</strong> involved replacing a 1980s builder-grade vanity. We installed a durable plywood cabinet double-vanity with a quartz countertop, soft-close hardware, and custom-tiled backsplash. We also upgraded the old tub-shower combo to a gorgeous walk-in tile shower with Schluter-KERDI waterproofing.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Mesa Permitting & Inspections for Dobson Ranch:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Because Dobson Ranch is located in Mesa, major electrical additions, partition wall removals, or plumbing layout changes require a building permit from the <strong>City of Mesa Building Safety Division</strong> (located at 55 N Center St). We coordinate all submissions, plans, and city inspections, ensuring your new bathroom is fully compliant with local municipal codes.
+            </p>
+          </div>
+        </section>
+
         {/* SERVICES */}
         <section className="py-16 lg:py-24 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">

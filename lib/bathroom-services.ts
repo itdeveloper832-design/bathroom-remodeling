@@ -123,3 +123,108 @@ export const bathroomServices: BathroomService[] = [
     icon: Sparkles,
   },
 ];
+
+export function getRelatedServices(currentHref: string): BathroomService[] {
+  // Clean trailing/leading slashes for standard comparison
+  const cleanHref = currentHref.replace(/^\/|\/$/g, "");
+  
+  // Custom complimentary mapping
+  const relationships: Record<string, string[]> = {
+    "walk-in-showers": [
+      "/tub-to-shower-conversion/",
+      "/ada-bathroom-remodeling/",
+      "/shower-replacement/",
+    ],
+    "tub-to-shower-conversion": [
+      "/walk-in-showers/",
+      "/ada-bathroom-remodeling/",
+      "/bathroom-tile-installation/",
+    ],
+    "shower-replacement": [
+      "/walk-in-showers/",
+      "/shower-bathtub-upgrade/",
+      "/bathtub-remodeling/",
+    ],
+    "bathroom-vanity-installation": [
+      "/cabinet-countertop-installation/",
+      "/bathroom-lighting-installation/",
+      "/master-bathroom-remodel/",
+    ],
+    "cabinet-countertop-installation": [
+      "/bathroom-vanity-installation/",
+      "/bathroom-tile-installation/",
+      "/luxury-bathroom-remodeling/",
+    ],
+    "bathroom-flooring-installation": [
+      "/bathroom-tile-installation/",
+      "/bathroom-vanity-installation/",
+      "/small-bathroom-remodeling/",
+    ],
+    "bathroom-lighting-installation": [
+      "/bathroom-vanity-installation/",
+      "/bathroom-flooring-installation/",
+      "/bathroom-tile-installation/",
+    ],
+    "bathroom-tile-installation": [
+      "/bathroom-flooring-installation/",
+      "/bathroom-vanity-installation/",
+      "/walk-in-showers/",
+    ],
+    "luxury-bathroom-remodeling": [
+      "/master-bathroom-remodel/",
+      "/bathroom-vanity-installation/",
+      "/bathroom-tile-installation/",
+    ],
+    "ada-bathroom-remodeling": [
+      "/walk-in-showers/",
+      "/tub-to-shower-conversion/",
+      "/bathroom-vanity-installation/",
+    ],
+    "guest-bathroom-remodeling": [
+      "/small-bathroom-remodeling/",
+      "/shower-replacement/",
+      "/bathroom-vanity-installation/",
+    ],
+    "small-bathroom-remodeling": [
+      "/guest-bathroom-remodeling/",
+      "/shower-replacement/",
+      "/bathroom-vanity-installation/",
+    ],
+    "master-bathroom-remodel": [
+      "/shower-remodeling/",
+      "/bathroom-vanity-installation/",
+      "/bathroom-flooring-installation/",
+    ],
+    "shower-remodeling": [
+      "/walk-in-showers/",
+      "/tub-to-shower-conversion/",
+      "/bathroom-tile-installation/",
+    ],
+    "bathtub-remodeling": [
+      "/shower-bathtub-upgrade/",
+      "/tub-removal/",
+      "/walk-in-showers/",
+    ],
+    "tub-removal": [
+      "/tub-to-shower-conversion/",
+      "/walk-in-showers/",
+      "/bathroom-flooring-installation/",
+    ],
+    "shower-bathtub-upgrade": [
+      "/shower-remodeling/",
+      "/bathtub-remodeling/",
+      "/bathroom-tile-installation/",
+    ],
+  };
+
+  const relatedHrefs = relationships[cleanHref];
+  if (relatedHrefs) {
+    return bathroomServices.filter(s => relatedHrefs.includes(s.href));
+  }
+  
+  // Fallback to cycling if not explicitly mapped
+  return bathroomServices
+    .filter(s => s.href !== currentHref && s.href !== `${currentHref}/` && `/${s.href}` !== currentHref)
+    .slice(0, 3);
+}
+

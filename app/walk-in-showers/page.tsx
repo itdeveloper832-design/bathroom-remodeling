@@ -15,7 +15,8 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Walk-In Shower Installation Chandler AZ - Professional Services",
@@ -44,9 +45,7 @@ const chandlerLocation = {
   lng: -111.9605964,
 };
 
-const otherServices = bathroomServices
-  .filter(s => s.href !== "/walk-in-showers")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/walk-in-showers/");
 
 export default function WalkInShowersPage() {
   const serviceData = serviceContent["walk-in-showers"];
@@ -131,8 +130,7 @@ export default function WalkInShowersPage() {
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Home safety is important for everyone. Our <strong>walk-in shower company in Chandler AZ</strong> designs curbless, 
-              barrier-free showers that allow you to remain in your home comfortably and safely for years to come. We specialize in 
-              accessible remodeling that blends high-end styling with safety.
+              barrier-free showers that allow you to remain in your home comfortably and safely for years to come. If you're wondering what these modifications run, check our complete <Link href="/blog/walk-in-shower-cost-chandler-az/" className="text-primary hover:underline">walk-in shower cost Chandler</Link> guide. We specialize in accessible remodeling that blends high-end styling with safety.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="p-6 bg-secondary/50 rounded-2xl border border-border">

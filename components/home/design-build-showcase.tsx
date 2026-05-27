@@ -13,12 +13,13 @@ export default function DesignBuildShowcase() {
           <div className="relative order-2 lg:order-1">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border shadow-xl">
               <Image
-                src="/images/optimized/photo-1581578731548-c64695cc6952.webp"
-                alt="3D bathroom remodeling rendering and design preview in Chandler AZ"
+                src="/images/optimized/bathroom-remodeling-licensed-crew.webp"
+                alt="3D bathroom design visualizer and planning rendering software in Chandler Arizona"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
+
               <div className="absolute top-4 left-4 bg-accent text-accent-foreground text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5">
                 <Eye className="w-3.5 h-3.5" />
                 3D Visualizer Active

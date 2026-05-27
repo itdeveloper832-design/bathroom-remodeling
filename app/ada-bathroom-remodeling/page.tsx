@@ -13,7 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { Shield, CheckCircle, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -66,9 +66,7 @@ const tipsList = [
   { title: "Use Slide Bar Handhelds", description: "Installing vertical slide bar handheld showerheads allows for comfortable seated showering at any height." }
 ];
 
-const otherServices = bathroomServices
-  .filter(s => s.href !== "/ada-bathroom-remodeling/")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/ada-bathroom-remodeling/");
 
 export default function ADAPage() {
   return (
@@ -146,7 +144,7 @@ export default function ADAPage() {
               We utilize advanced framing adjustments and professional backing support to construct fully wheelchair roll-in compliant environments.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              **Strict Technical Compliance Standards:** We don&apos;t guess at accessibility—we build exactly to ADA guidelines. We ensure all accessible showers have at least a **36&quot; x 36&quot; clear interior footprint** (or 30&quot; x 60&quot; for roll-in configurations), door clearances widened to a **full 36 inches**, and slip-resistance flooring rated at a **Dynamic Coefficient of Friction (DCOF) &ge; 0.42** to prevent slips when wet.
+              **Strict Technical Compliance Standards:** We don&apos;t guess at accessibility—we build exactly to ADA guidelines. We ensure all accessible showers have at least a **36&quot; x 36&quot; clear interior footprint** (or 30&quot; x 60&quot; for roll-in configurations), door clearances widened to a **full 36 inches**, and slip-resistance flooring rated at a [Dynamic Coefficient of Friction (DCOF)](/blog/porcelain-vs-ceramic-tile-arizona-shower/) &ge; 0.42 to prevent slips when wet.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               **VA SAH & HISA Grant Coordination:** If you are a disabled veteran living in the East Valley, we coordinate directly with the Department of Veterans Affairs. We design and document our bathroom builds to satisfy VA Specially Adapted Housing (SAH) and Home Improvements and Structural Alterations (HISA) grant requirements, ensuring veterans get the complete funding they are entitled to for safety improvements.

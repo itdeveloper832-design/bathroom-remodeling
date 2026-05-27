@@ -251,6 +251,30 @@ export default function MesaPage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Mesa Community Landmarks & Local Bathroom Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Mesa is a vast and historic city featuring spectacular desert landmarks like the <strong>Las Sendas Golf Club</strong>, the scenic <strong>Red Mountain Park</strong>, and the bustling <strong>Mesa Arts Center</strong>. When we execute bathroom upgrades in Mesa, we tailor our designs to the local neighborhood contexts. For properties in the master-planned <strong>Eastmark</strong> development or established estates near the foothills, we construct layouts that optimize comfort and modern elegance.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Mesa Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed on a custom desert-modern property near the <strong>Red Mountain Ranch</strong> area involved a complete master bathroom overhaul. We replaced a massive builder-grade garden tub with a gorgeous, curb-free tiled walk-in shower with linear drains, integrated heated floor systems, solid-wood double-sink vanities, and a luxury freestanding soaking tub.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Mesa Permitting & Inspections Guidelines:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              If your Mesa bathroom renovation involves moving load-bearing partition walls, expanding your plumbing footprint, or upgrading electrical sub-panels, we coordinate the complete permitting process with the <strong>City of Mesa Building Safety Division</strong> (located at 55 N Center St). We manage all drafting submissions and city inspections, ensuring complete code compliance and long-term peace of mind.
+            </p>
+          </div>
+        </section>
+
         {/* SERVICES */}
         <section className="py-16 lg:py-24 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">

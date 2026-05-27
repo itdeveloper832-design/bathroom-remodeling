@@ -15,7 +15,7 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
   title: "Bathroom Vanity Installation Chandler AZ - Custom Service",
@@ -49,9 +49,7 @@ const faqs = serviceContent["bathroom-vanity-installation"].faqs;
 
 const chandlerLocation = { lat: 33.3009334, lng: -111.9605964 };
 
-const otherServices = bathroomServices
-  .filter(s => s.href !== "/bathroom-vanity-installation")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/bathroom-vanity-installation");
 
 export default function BathroomVanityInstallationPage() {
   const vanityData = serviceContent["bathroom-vanity-installation"];
@@ -112,7 +110,7 @@ export default function BathroomVanityInstallationPage() {
               Premium Bathroom Cabinets, Countertops & Vanity Installations
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              A professional bathroom vanity replacement requires advanced alignment, premium materials, and heavy weight support. At ARZ Home Remodeling, we offer custom <strong>bathroom cabinets chandler</strong> and professional <strong>cabinet installation chandler</strong> services. We specialize in luxury <strong>countertop installation chandler</strong>, coordinating stunning <strong>quartz countertops chandler</strong>, <strong>marble countertops chandler</strong>, and standard <strong>countertops chandler az</strong> slab selections. If you are shopping around local slab yards or a <strong>countertop showroom chandler</strong>, we help you secure wholesale pricing and coordinate professional fabrication.
+              A professional bathroom vanity replacement requires advanced alignment, premium materials, and heavy weight support. At ARZ Home Remodeling, we offer custom <strong>bathroom cabinets chandler</strong> and professional <strong>cabinet installation chandler</strong> services. We specialize in luxury <strong>countertop installation chandler</strong>, coordinating stunning [quartz countertops](/blog/master-bathroom-remodel-cost-chandler/) chandler, <strong>marble countertops chandler</strong>, and standard <strong>countertops chandler az</strong> slab selections. If you are shopping around local slab yards or a <strong>countertop showroom chandler</strong>, we help you secure wholesale pricing and coordinate professional fabrication.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               While our primary focus is bathroom vanity and cabinetry upgrades, we also coordinate <strong>kitchen countertops chandler</strong> and <strong>quartz kitchen countertops in chandler</strong> projects for complete home renovations. To complete the clean aesthetic of your space, we offer professional <strong>crown moulding installation chandler az</strong>, and related storage updates like a custom <strong>closet remodel chandler az</strong> or <strong>closet remodel gilbert az</strong>. 

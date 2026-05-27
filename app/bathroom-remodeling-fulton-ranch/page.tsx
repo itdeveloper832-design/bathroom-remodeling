@@ -189,6 +189,30 @@ export default function FultonRanchPage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Fulton Ranch Landmarks & Local Remodeling Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Fulton Ranch is an exclusive master-planned oasis in south Chandler, distinguished by its scenic <strong>Fulton Ranch Lakes</strong>, private walking trails, and premium custom estates. When we remodel master bathrooms in Fulton Ranch, we deliver top-tier craftsmanship that aligns with the neighborhood's high-end requirements. For homes near the <strong>Fulton Ranch Towne Center</strong>, we design custom spaces that provide a genuine resort experience.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Fulton Ranch Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed on a custom estate near <strong>Arizona Avenue and Ocotillo Road</strong> involved removing an outdated builder-grade garden tub. We converted the space into a massive, curbless walk-in master shower with dual shower head plumbing loops, digital Moen temperature controls, and solid-wood floating double vanities with premium quartz tops.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Chandler Permitting & Inspections for Fulton Ranch:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Because Fulton Ranch is part of Chandler, structural framing modifications, major plumbing movements, or new electrical circuits require a building permit from the <strong>Chandler Development Services Department</strong> (located at 175 S Arizona Ave). We manage all design drawings, permit submittals, and inspection scheduling directly, ensuring that your home's luxury upgrades comply fully with all local safety standards.
+            </p>
+          </div>
+        </section>
+
         {/* SERVICES */}
         <section className="py-16 lg:py-24 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">

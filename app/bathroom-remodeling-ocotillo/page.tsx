@@ -189,6 +189,30 @@ export default function OcotilloPage() {
           </div>
         </section>
 
+        {/* LOCAL COMMUNITY & PERMIT HIGHLIGHTS */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground">
+              Ocotillo Landmarks & Local Remodeling Projects
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Ocotillo is an upscale desert community famed for the stunning <strong>Ocotillo Golf Club</strong>, extensive water canals, and gorgeous luxury estates. When we remodel master suites in Ocotillo, we implement high-end details that reflect the neighborhood's resort-style aesthetic. For homes situated near Dobson Road and Queen Creek Road, we deliver customized layouts that provide absolute luxury and comfort.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Recent Ocotillo Remodeling Example:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              A recent project completed near the Ocotillo Golf Course involved converting a dark builder-grade bath into a modern oasis. We installed high-performance non-porous porcelain tile on the walls and shower pan, secure stain-resistant epoxy grout, and end-to-end frameless heavy glass shower panels treated with protective hydrophobic nano-coatings to combat Chandler's mineral-heavy water.
+            </p>
+            <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
+              Chandler Permitting & Inspections for Ocotillo:
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Because Ocotillo lies within Chandler city limits, structural framing modifications, plumbing line relocations, or electrical circuit updates require a building permit from the <strong>Chandler Development Services Department</strong> (located at 175 S Arizona Ave). We manage all design drawings, permit submittals, and structural inspections directly, ensuring that your home's luxury upgrades comply fully with all safety guidelines.
+            </p>
+          </div>
+        </section>
+
         {/* SERVICES */}
         <section className="py-16 lg:py-24 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">

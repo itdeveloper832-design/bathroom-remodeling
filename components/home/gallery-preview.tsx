@@ -24,7 +24,8 @@ const galleryItems = [
     id: 3,
     title: "Guest Bath Tile Upgrade in Sun Lakes",
     category: "Tile & Tub Upgrade - Completed Feb 2025",
-    before: "/images/optimized/photo-1581578731548-c64695cc6952.webp",
+    before: "/images/optimized/bathroom-remodeling-licensed-crew.webp",
+
     after: "/images/projects/project-guest.png",
   },
   {

@@ -13,7 +13,7 @@ import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import SubServices from "@/components/sub-services";
-import { bathroomServices } from "@/lib/bathroom-services";
+import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { Users, Layout, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -66,9 +66,7 @@ const tipsList = [
   { title: "Opt for a Floating Vanity", description: "Seeing more of the floor creates the optical illusion of more square footage in tight spaces." }
 ];
 
-const otherServices = bathroomServices
-  .filter(s => s.href !== "/guest-bathroom-remodeling/")
-  .slice(0, 3);
+const otherServices = getRelatedServices("/guest-bathroom-remodeling/");
 
 export default function GuestBathPage() {
   return (
@@ -147,7 +145,7 @@ export default function GuestBathPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="p-6 bg-secondary/50 rounded-2xl border border-border">
-                <h3 className="font-serif text-xl font-medium mb-3 text-foreground">Wall-Hung Floating Vanities</h3>
+                <h3 className="font-serif text-xl font-medium mb-3 text-foreground"><Link href="/blog/small-bathroom-layout-ideas-chandler/" className="hover:text-primary transition-colors">Wall-Hung Floating Vanities</Link></h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   Floor mounted vanity cabinets block sightlines, making small spaces feel tight. We anchor premium floating vanities directly 
                   to wall studs, exposing more floor tiling to create the optical illusion of extra square footage.

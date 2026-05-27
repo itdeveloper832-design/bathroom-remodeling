@@ -59,9 +59,7 @@ const faqSchemaItems = homeFaqs.map((f) => ({
 export default function HomePage() {
   return (
     <>
-      <LocalBusinessSchema />
       <WebSiteSchema />
-      <OrganizationSchema />
       <FAQSchema faqs={faqSchemaItems} />
       <SpeakableSchema url={`${siteConfig.url}/`} />
       <Header />

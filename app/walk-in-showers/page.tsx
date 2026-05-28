@@ -26,11 +26,20 @@ export const metadata: Metadata = {
     description: "Professional walk-in shower installation in Chandler AZ. Barrier-free designs, ADA options, and luxury finishes. Licensed & insured. Free estimates!",
     url: `${siteConfig.url}/walk-in-showers/`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-shower.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - Professional Walk-In Shower Installation in Chandler, AZ",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Walk-In Shower Installation Chandler AZ - ADA Options",
     description: "Safe & stylish walk-in showers in Chandler AZ. Starting from $6,000. Free estimates!",
+    images: [`${siteConfig.url}/images/og-shower.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/shower-remodeling/`,

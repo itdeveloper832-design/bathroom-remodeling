@@ -27,6 +27,20 @@ export const metadata: Metadata = {
     description: "Expert guest bathroom and powder room remodeling in Chandler. High impact updates, efficient timelines, and quality finishes.",
     url: `${siteConfig.url}/guest-bathroom-remodeling/`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-small-bath.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - Guest Bathroom and Powder Room Remodeling in Chandler, AZ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Guest Bathroom Remodeling Chandler AZ - Small Bath Renovations",
+    description: "Expert guest bathroom and powder room remodeling in Chandler. High impact updates, efficient timelines, and quality finishes.",
+    images: [`${siteConfig.url}/images/og-small-bath.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/guest-bathroom-remodeling/`,

@@ -274,8 +274,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                         With a deep understanding of Arizona&apos;s unique remodeling needs, {post.author} focuses on blending style with practical, long-lasting solutions.
                       </p>
                       <div className="flex gap-4">
-                        <a href="#" className="text-primary text-xs font-bold hover:underline">View Profile</a>
-                        <a href="#" className="text-primary text-xs font-bold hover:underline">Follow on Twitter</a>
+                        <Link href="/team/alex-rivers/" className="text-primary text-xs font-bold hover:underline">
+                          View Verified Profile
+                        </Link>
+                        <a 
+                          href="https://www.linkedin.com/in/alex-rivers-arz" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-primary text-xs font-bold hover:underline flex items-center gap-1"
+                        >
+                          Connect on LinkedIn
+                        </a>
                       </div>
                     </div>
                   </div>

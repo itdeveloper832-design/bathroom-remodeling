@@ -21,11 +21,20 @@ export const metadata: Metadata = {
     description: "Accessible bathroom remodels in Chandler, AZ. Curbless showers, grab bars, wider doorways, accessible vanities. ADA-compliant design.",
     url: `${siteConfig.url}/handicap-accessible-bathroom/`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-small-bath.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - ADA Handicap Accessible Bathroom Remodeling in Chandler, AZ",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Handicap Accessible Bathroom Chandler AZ - ADA Compliant",
     description: "Create a safe, accessible bathroom with ADA-compliant design. Curbless showers and grab bars for aging-in-place.",
+    images: [`${siteConfig.url}/images/og-small-bath.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/handicap-accessible-bathroom/`,

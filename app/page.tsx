@@ -45,6 +45,14 @@ export const metadata: Metadata = {
       "Chandler's premier bathroom remodeling contractor. Specializing in custom walk-in showers & tub conversions. Licensed ROC338304. Get a free estimate!",
     type: "website",
     url: `${siteConfig.url}/`,
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-homepage.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - Luxury Bathroom Remodeling in Chandler, AZ",
+      },
+    ],
   },
   alternates: {
     canonical: `${siteConfig.url}/`,

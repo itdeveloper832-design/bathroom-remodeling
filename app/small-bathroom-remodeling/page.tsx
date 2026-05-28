@@ -26,6 +26,20 @@ export const metadata: Metadata = {
     description: "Expert small bathroom remodeling in Chandler. Maximize space with clever designs, compact fixtures, and luxury finishes.",
     url: `${siteConfig.url}/small-bathroom-remodeling/`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-small-bath.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - Guest and Small Bathroom Remodeling in Chandler, AZ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Small Bathroom Remodeling Chandler AZ | Budget Friendly",
+    description: "Expert small bathroom remodeling in Chandler. Maximize space with clever designs, compact fixtures, and luxury finishes.",
+    images: [`${siteConfig.url}/images/og-small-bath.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/small-bathroom-remodeling/`,

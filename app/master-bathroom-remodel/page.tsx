@@ -21,11 +21,20 @@ export const metadata: Metadata = {
     description: "Master bathroom remodel in Chandler, AZ. Custom tile showers, frameless glass, double vanities, quartz tops. Licensed ROC338304. Free estimate.",
     url: `${siteConfig.url}/master-bathroom-remodel/`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-master-suite.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - Luxury Master Bathroom Remodel in Chandler, AZ",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Master Bathroom Remodel Chandler AZ | Custom Luxury",
     description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities and full renovation.",
+    images: [`${siteConfig.url}/images/og-master-suite.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/master-bathroom-remodel/`,

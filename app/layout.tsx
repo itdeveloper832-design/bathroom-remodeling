@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: `${siteConfig.url}/images/hero-bathroom.jpg`,
+        url: `${siteConfig.url}/images/og-homepage.png`,
         width: 1200,
         height: 630,
-        alt: 'ARZ Home Remodeling - Chandler Arizona',
+        alt: 'ARZ Home Remodeling - Premier Bathroom Contractor - Chandler Arizona',
       },
     ],
   },
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `Bathroom Remodeling in Chandler AZ - Professional Contractor`,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
+    images: [`${siteConfig.url}/images/og-homepage.png`],
   },
   verification: {
     google: 'FFV2ndN2ia6STi_P5mni2D73Ec1dbptXHNQuIVIl3YA',

@@ -32,12 +32,20 @@ export const metadata: Metadata = {
     description: "ARZ Home Remodeling builds custom showers in Chandler with Schluter-Kerdi waterproofing, frameless glass, and a 2-year workmanship warranty. Licensed, insured since 2010. ROC338304.",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-shower.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - Custom Tile Shower Remodeling in Chandler, AZ",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Shower Remodeling Chandler AZ | Custom Tiled Showers",
     description: "Expert shower remodeling in Chandler AZ. Schluter-Kerdi waterproofing, frameless glass, custom tile. ROC Licensed #338304. Free estimates!",
-    images: [`${siteConfig.url}/images/shower-remodeling-hero.jpg`],
+    images: [`${siteConfig.url}/images/og-shower.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/shower-remodeling/`,

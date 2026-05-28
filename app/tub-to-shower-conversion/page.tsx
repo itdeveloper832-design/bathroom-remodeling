@@ -28,11 +28,20 @@ export const metadata: Metadata = {
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
     url: `${siteConfig.url}/tub-to-shower-conversion/`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-shower.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - Professional Tub-to-Shower Conversion in Chandler, AZ",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tub-to-Shower Conversion Chandler AZ | Save Space",
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
+    images: [`${siteConfig.url}/images/og-shower.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/tub-to-shower-conversion/`,

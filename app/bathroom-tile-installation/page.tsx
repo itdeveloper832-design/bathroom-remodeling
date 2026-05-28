@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${siteConfig.url}/images/tile-installation-hero.jpg`,
+        url: `${siteConfig.url}/images/og-tile-install.png`,
         width: 1200,
         height: 630,
-        alt: "Custom Bathroom Tile Chandler",
+        alt: "ARZ Home Remodeling - Custom Bathroom Tile Installation in Chandler, AZ",
       },
     ],
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bathroom Tile Installer Chandler AZ | Custom Shower Tile",
     description: "Professional tiling services in Chandler with shower walls, floor tiles, and backsplashes.",
-    images: [`${siteConfig.url}/images/tile-installation-hero.jpg`],
+    images: [`${siteConfig.url}/images/og-tile-install.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-tile-installation`,

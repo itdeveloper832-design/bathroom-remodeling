@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${siteConfig.url}/images/vanity-installation-hero.jpg`,
+        url: `${siteConfig.url}/images/og-vanity-install.png`,
         width: 1200,
         height: 630,
-        alt: "Bathroom Vanity Installation - Chandler",
+        alt: "ARZ Home Remodeling - Custom Bathroom Vanity Installation in Chandler, AZ",
       },
     ],
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bathroom Vanity Installation Chandler AZ",
     description: "Professional vanity installation in Chandler with custom designs and expert installation.",
-    images: [`${siteConfig.url}/images/vanity-installation-hero.jpg`],
+    images: [`${siteConfig.url}/images/og-vanity-install.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-vanity-installation`,

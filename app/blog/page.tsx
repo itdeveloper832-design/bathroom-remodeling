@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${siteConfig.url}/images/hero-bathroom.jpg`,
+        url: `${siteConfig.url}/images/og-blog-index.png`,
         width: 1200,
         height: 630,
-        alt: "Bathroom Remodeling Blog",
+        alt: "ARZ Home Remodeling - Bathroom Remodeling Blog & Design Tips",
       },
     ],
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bathroom Remodeling Blog & Tips | ARZ Home Remodeling",
     description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors.",
-    images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
+    images: [`${siteConfig.url}/images/og-blog-index.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/blog/`,

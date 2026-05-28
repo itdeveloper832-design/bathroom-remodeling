@@ -26,6 +26,20 @@ export const metadata: Metadata = {
     description: "Premium master bathroom transformations in Chandler. Spa showers, freestanding tubs, and high end materials. Licensed AZ contractor.",
     url: `${siteConfig.url}/luxury-bathroom-remodeling/`,
     type: "website",
+    images: [
+      {
+        url: `${siteConfig.url}/images/og-master-suite.png`,
+        width: 1200,
+        height: 630,
+        alt: "ARZ Home Remodeling - High-End Luxury Bathroom Remodeling in Chandler, AZ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luxury Bathroom Remodeling Chandler AZ - Premium Design",
+    description: "Premium master bathroom transformations in Chandler. Spa showers, freestanding tubs, and high end materials. Licensed AZ contractor.",
+    images: [`${siteConfig.url}/images/og-master-suite.png`],
   },
   alternates: {
     canonical: `${siteConfig.url}/luxury-bathroom-remodeling/`,

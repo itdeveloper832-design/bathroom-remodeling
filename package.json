@@ -5,14 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "node scripts/generate-redirects.mjs",
-    "build": "next build",
-    "build:standalone": "next build",
-    "build:export": "next build",
+    "build": "next build && node scripts/post-build-seo.js",
+    "build:standalone": "next build && node scripts/post-build-seo.js",
+    "build:export": "next build && node scripts/post-build-seo.js",
     "start": "next start",
     "lint": "eslint .",
-    "export": "next build",
+    "export": "next build && node scripts/post-build-seo.js",
     "deploy:vercel": "vercel --prod",
-    "deploy:netlify": "SET NEXT_OUTPUT=export&& next build && netlify deploy --prod --dir=out"
+    "deploy:netlify": "SET NEXT_OUTPUT=export&& next build && node scripts/post-build-seo.js && netlify deploy --prod --dir=out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

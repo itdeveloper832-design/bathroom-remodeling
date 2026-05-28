@@ -15,16 +15,16 @@ const blogPosts = [
   },
   {
     slug: "2024-bathroom-design-trends-chandler-arizona",
-    title: "2024-2025 Bathroom Design Trends for Chandler, Arizona Homes",
+    title: "2025-2026 Bathroom Design Trends for Chandler, Arizona Homes",
     excerpt:
-      "Explore 2024-2025 bathroom design trends. Spa features, sustainable materials, minimalist design, and luxury fixtures trending now.",
+      "Explore 2025-2026 bathroom design trends. Spa features, sustainable materials, minimalist design, and luxury fixtures trending now.",
     image: "/images/hero/luxury-shower-remodel-chandler.webp",
     date: "May 18, 2026",
     category: "Trends",
   },
   {
     slug: "bathroom-remodel-cost-chandler-az-2025",
-    title: "2025 Bathroom Remodel Cost in Chandler, AZ - Local Price Guide",
+    title: "2026 Bathroom Remodel Cost in Chandler, AZ - Local Price Guide",
     excerpt:
       "Complete analysis of bathroom remodeling costs in Chandler, Arizona. Compare prices by project size, materials, labor, and neighborhoods.",
     image: "/images/projects/luxury-bathtub-remodel-az.webp",

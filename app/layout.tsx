@@ -103,10 +103,10 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "wwkr52xfsa");
           `}
         </Script>
-      </head>
-      <body className="antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
         <LocalBusinessSchema />
         <OrganizationSchema />
+      </head>
+      <body className="antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
         {children}
         <StickyCallButton />
 

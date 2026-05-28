@@ -194,10 +194,12 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
   };
 
   return (
+    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+    </head>
   );
 }
 
@@ -245,10 +247,12 @@ export function ServiceSchema({ serviceName, serviceDescription, serviceUrl, ser
   };
 
   return (
+    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+    </head>
   );
 }
 
@@ -299,10 +303,12 @@ export function ArticleSchema({
   };
 
   return (
+    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+    </head>
   );
 }
 
@@ -333,10 +339,12 @@ export function SpeakableSchema({
   };
 
   return (
+    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+    </head>
   );
 }
 
@@ -355,10 +363,12 @@ export function FAQSchema({ faqs }: FAQSchemaProps) {
   };
 
   return (
+    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+    </head>
   );
 }
 
@@ -379,10 +389,12 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
   };
 
   return (
+    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+    </head>
   );
 }
 
@@ -427,10 +439,12 @@ export function ReviewSchema({
   };
 
   return (
+    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+    </head>
   );
 }
 
@@ -497,10 +511,12 @@ export function PriceSchema({
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    </head>
   );
 }
 
@@ -555,10 +571,12 @@ export function PersonSchema({
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    </head>
   );
 }
 
@@ -605,10 +623,12 @@ export function OrganizationSchema({
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    </head>
   );
 }
 
@@ -634,10 +654,12 @@ export function WebSiteSchema({ url = siteConfig.url }: WebSiteSchemaProps = {})
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    </head>
   );
 }
 
@@ -671,9 +693,11 @@ export function ContactPageSchema({ url = `${siteConfig.url}/contact/` }: Contac
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    </head>
   );
 }

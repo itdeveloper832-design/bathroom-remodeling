@@ -169,6 +169,20 @@ export const chandlerLocations: ZipCodeData[] = [
           "Clients value solid craftsmanship, clear timelines, and functional storage options like recessed medicine cabinets and linen shelves.",
         localContext:
           "Dobson Place is located near Dobson Road and Warner Road, just minutes from the Dobson Ranch Golf Course and local retail centers."
+      },
+      {
+        name: "Copper Ridge Condominiums",
+        slug: "copper-ridge-condominiums",
+        zipCode: "85224",
+        description:
+          "A highly desirable condominium community in north central Chandler, popular for its modern floor plans and convenient East Valley access.",
+        marketInsight:
+          "Strong interest in space-efficient guest bath upgrades and tile flooring. Homeowners frequently request bathroom remodeling copper ridge condominiums packages that maximize compact layouts.",
+        homeStylesCommon: ["Modern Condominium", "Compact Contemporary", "Urban Transitional"],
+        customerBehavior:
+          "Residents choose floating vanities to expose more tile, space-saving sliding glass shower doors, and moisture-resistant vanity cabinets.",
+        localContext:
+          "Copper Ridge Condominiums are located near Ray Road and the Loop 101 Freeway, offering quiet residential living close to retail centers."
       }
     ]
   },

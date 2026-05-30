@@ -268,6 +268,18 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Local SEO Description Strip */}
+      <div className="border-t border-background/10 bg-background/5 text-background/60 text-[11px] py-8">
+        <div className="container mx-auto px-4 lg:px-8 max-w-6xl text-left">
+          <p className="leading-relaxed mb-4">
+            If you are searching for the <strong>best bathroom remodelers near me</strong> or looking for highly recommended <strong>bathroom remodel companies near me</strong>, ARZ Home Remodeling is your trusted regional partner. We are proud to be recognized among the premier <strong>bath remodeling contractors near me</strong> and <strong>licensed bathroom contractors near me</strong>, delivering elite craftsmanship with our team of expert <strong>bathroom designers near me</strong> and <strong>bathroom renovators near me</strong>. Whether you want to <strong>remodel bathroom near me</strong>, execute a <strong>full bathroom remodel near me</strong>, or are seeking specialized <strong>small bathroom contractors near me</strong> for a customized <strong>small bathroom remodel near me</strong>, our ROC-licensed team handles everything from planning to final inspection.
+          </p>
+          <p className="leading-relaxed">
+            We are also the top choice for specialized bathroom solutions, serving as one of the leading <strong>shower renovation companies</strong> in the East Valley. We design custom walk-in tile showers, handle complex <strong>shower to tub conversions near me</strong>, and perform seamless <strong>tub to shower conversion companies near me</strong> upgrades that resist hard water mineral staining. As a local business, we offer transparent pricing, flexible financing options, and fixed quotes to ensure your home renovations are both beautiful and highly affordable.
+          </p>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-background/10">
         <div className="container mx-auto px-4 lg:px-8 py-6">

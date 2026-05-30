@@ -210,7 +210,7 @@ export default function TempePage() {
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               At ARZ Home Remodeling, we specialize in 
               <strong className="text-foreground"> bathroom remodeling in Tempe, AZ</strong>: from custom walk-in 
-              showers in Warner Ranch to full master bath transformations near ASU. We are a licensed Arizona 
+              showers in Warner Ranch to full master bath transformations near ASU, as well as focused **bathroom remodeling north tempe** homeowners trust for university rental updates. We are a licensed Arizona 
               contractor, serving homeowners across 
               <span className="text-primary font-semibold"> 85281, 85282, 85283, and 85284</span>. Whether you seek the best **tempe bathroom remodel**, **bathroom remodeling tempe az**, or **bathroom renovation tempe az** services, we coordinate every design element.
             </p>

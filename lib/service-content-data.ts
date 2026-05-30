@@ -77,17 +77,17 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How long does a full bathroom remodel take in Chandler?",
         answer:
-          "A complete bathroom remodeling project typically takes 4-8 weeks depending on scope, permits, and any hidden issues discovered during demolition. As a leading bathroom remodeling contractor in Chandler, we provide a detailed timeline upfront.",
+          "A complete bathroom remodeling project typically takes 4-8 weeks depending on scope, permits, and any hidden issues discovered during demolition. As a leading bathroom remodeling contractor in Chandler, we provide a detailed timeline upfront to anyone looking to renovate bathroom near me.",
       },
       {
         question: "What's included in your bathroom remodeling services in Chandler?",
         answer:
-          "Our bathroom remodeling services in Chandler include demolition, new plumbing, electrical, flooring, tile work, vanity installation, lighting, mirrors, hardware, and final finishing. We offer affordable bathroom remodeling in Chandler AZ without compromising on quality.",
+          "Our bathroom remodeling services in Chandler include demolition, new plumbing, electrical, flooring, tile work, vanity installation, lighting, mirrors, hardware, and final finishing. As premier bathroom renovators near me, we offer affordable bathroom remodeling in Chandler AZ without compromising on quality.",
       },
       {
         question: "Do you handle permits and inspections for bathroom remodeling?",
         answer:
-          "Yes! We obtain all necessary permits for bathroom remodeling in Chandler, coordinate inspections, and ensure compliance with local building codes. Whether you need a simple bath remodel near me or a full renovation, we handle the paperwork.",
+          "Yes! We obtain all necessary permits for bathroom remodeling in Chandler, coordinate inspections, and ensure compliance with local building codes. Whether you need a simple bath remodel near me, a complete bathroom reconstruction near me, or a full renovation, we handle the paperwork.",
       },
       {
         question: "What is the typical bathroom remodel chandler az cost?",
@@ -97,7 +97,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "What makes you the best bathroom remodeler in Chandler AZ?",
         answer:
-          "We provide transparent pricing, dedicated project managers, and a 5-year warranty. Our Chandler bathroom remodeling team has 15+ years of local experience, making us a top-rated bath remodeler in Chandler AZ.",
+          "We provide transparent pricing, dedicated project managers, custom work from top-rated bathroom designers near me, and a 5-year warranty. Our Chandler bathroom remodeling team has 15+ years of local experience, making us a top-rated bath remodeler in Chandler AZ.",
       },
     ],
   },
@@ -633,7 +633,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How long does a tub to shower conversion take?",
         answer:
-          "A professional tub to shower conversion typically takes seven to ten days of active construction. This includes demolition of the old tub, expanding the drain line from one and a half inches to two inches, installing waterproofing systems, tile setting, and mounting the glass enclosures.",
+          "A professional tub to shower conversion typically takes seven to ten days of active construction. This includes demolition of the old tub, expanding the drain line from one and a half inches to two inches, installing waterproofing systems, tile setting, and mounting the glass enclosures. We provide detailed tub to shower conversions prices and pictures of completed projects during your consultation to help you choose the best layout.",
       },
       {
         question: "What is the difference between a curbless and curbed walk-in shower?",
@@ -643,7 +643,12 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "Do you offer financing options for conversions in Chandler?",
         answer:
-          "Yes, we provide competitive 0 percent financing options for tub-to-shower swap projects over $5,000 to help keep your home renovations highly affordable.",
+          "Yes, we provide competitive 0 percent financing options for tub-to-shower swap projects over $5,000 to help keep your home renovations highly affordable. Whether you are looking for a tub to shower conversion ahwatukee families trust or a standard local swap, we offer custom payment plans.",
+      },
+      {
+        question: "Can a tub to shower conversion be completed in a single day?",
+        answer:
+          "While some national franchises advertise a quick 1 day bath arizona tub to shower conversion, a high-quality custom conversion with proper physical subfloor waterproofing, high-traction tile setting, and code compliance inspections typically takes 7-10 days. We prioritize long-term durability and safety over rushed finishes.",
       },
       {
         question: "What waterproofing systems do you install behind tiles?",

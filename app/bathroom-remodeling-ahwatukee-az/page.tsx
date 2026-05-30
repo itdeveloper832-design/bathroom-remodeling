@@ -216,8 +216,7 @@ export default function AhwatukeePage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Ahwatukee homeowners deserve a bathroom that matches the beauty of the surrounding Foothills. 
-              Whether you are looking for a modern master bath or a functional guest bathroom update, we bring 
-              years of expertise to every project.
+              While we are known for our expert kitchen and bathroom designs, we can also advise on structural modifications similar to what an <strong>ahwatukee az room addition company</strong> would handle, helping you expand your layout for a larger master suite or new vanity footprint.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               At ARZ Home Remodeling, we specialize in{" "}

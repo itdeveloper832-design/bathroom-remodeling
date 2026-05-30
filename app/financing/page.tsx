@@ -114,7 +114,7 @@ export default function FinancingPage() {
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
                 Don&apos;t let budget constraints hold you back. Get affordable bathroom remodeling with flexible 
-                financing options. Low monthly payments and 0% APR available for Chandler homeowners.
+                financing options and **specialized home improvement loans arizona** homeowners trust. Low monthly payments and 0% APR available for Chandler homeowners.
               </p>
               <div className="mt-8">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -234,6 +234,43 @@ export default function FinancingPage() {
                     Once approved, we can begin your remodel right away with affordable monthly payments.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 md:py-24 bg-secondary/50">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-foreground">
+                Financing FAQ
+              </h2>
+            </div>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-serif font-semibold text-foreground mb-2">
+                  What credit score is needed for bathroom remodeling financing?
+                </h3>
+                <p className="text-muted-foreground">
+                  Our lending partners offer programs for a wide range of credit profiles. While the best rates are available for excellent credit, there are options available for average or fair credit scores as well.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-serif font-semibold text-foreground mb-2">
+                  How does local custom financing compare to national franchise programs like bath fitter financing?
+                </h3>
+                <p className="text-muted-foreground">
+                  National franchise programs (such as bath fitter financing) are often restricted to rigid retail installment contracts for their specific acrylic overlay inserts. Our independent local financing provides highly flexible home improvement loans that cover custom tile work, structural layouts, and premium plumbing upgrades at competitive East Valley bank rates.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-serif font-semibold text-foreground mb-2">
+                  Are there any prepayment penalties?
+                </h3>
+                <p className="text-muted-foreground">
+                  No, none of our promotional or standard financing plans have prepayment penalties. You can pay off your balance at any time without extra fees.
+                </p>
               </div>
             </div>
           </div>

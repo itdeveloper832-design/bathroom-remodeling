@@ -80,8 +80,7 @@ export default function QueenCreekPage() {
             <h2 className="font-serif text-3xl font-semibold mb-6">Local Bathroom Renovations in Queen Creek</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Queen Creek is one of Arizona's fastest growing communities, and we're proud to help local families 
-              enhance their homes with professional bathroom updates. Whether you are in a newer build in San Tan Valley 
-              or a custom home in the heart of Queen Creek, our team has the local expertise you need.
+              enhance their homes with professional bathroom updates. If you are looking for a complete **bathroom remodel queen creek** families count on for modern aesthetics, or if you reside in a newer build in San Tan Valley or a custom home in the heart of Queen Creek, our team has the local expertise you need.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               We specialize in <strong>bathroom remodeling in Queen Creek, AZ</strong>, offering everything from 

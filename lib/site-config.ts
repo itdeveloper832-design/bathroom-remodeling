@@ -30,8 +30,8 @@ export const siteConfig = {
     sunday: "Closed",
   },
   social: {
-    facebook: "https://web.facebook.com/profile.php?id=61590096110692",
-    instagram: "https://instagram.com/arzhomeremodeling",
+    facebook: "https://web.facebook.com/profile.php?id=61590076822852",
+    instagram: "https://www.instagram.com/arzhome_remodeling/",
     youtube: "https://youtube.com/arzhomeremodeling",
     linkedin: "https://linkedin.com/company/arzhomeremodeling",
     twitter: "", // Add if available

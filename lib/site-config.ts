@@ -33,7 +33,7 @@ export const siteConfig = {
     facebook: "https://web.facebook.com/profile.php?id=61590076822852",
     instagram: "https://www.instagram.com/arzhome_remodeling/",
     youtube: "https://youtube.com/arzhomeremodeling",
-    linkedin: "https://linkedin.com/company/arzhomeremodeling",
+    linkedin: "https://www.linkedin.com/company/arz-home-remodeling/",
     twitter: "", // Add if available
     pinterest: "", // Add if available
   },

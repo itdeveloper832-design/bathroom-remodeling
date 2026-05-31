@@ -172,8 +172,8 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "50",
+      ratingValue: "4.9",
+      reviewCount: "1258",
       bestRating: "5"
     },
     review: testimonialsData.default.map((t) => ({
@@ -190,7 +190,6 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       "reviewBody": t.content,
       "datePublished": "2025-10-15"
     })),
-
   };
 
   return (
@@ -243,6 +242,26 @@ export function ServiceSchema({ serviceName, serviceDescription, serviceUrl, ser
       "lowPrice": "12500",
       "highPrice": "38000"
     },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1258",
+      "bestRating": "5"
+    },
+    "review": testimonialsData.default.map((t) => ({
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": t.rating.toString(),
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": t.name
+      },
+      "reviewBody": t.content,
+      "datePublished": "2025-10-15"
+    })),
     "url": serviceUrl
   };
 
@@ -505,8 +524,9 @@ export function PriceSchema({
     offers: offerSchema,
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "50",
+      ratingValue: "4.9",
+      reviewCount: "1258",
+      bestRating: "5"
     },
   };
 

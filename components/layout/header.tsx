@@ -58,10 +58,10 @@ export function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-sm font-semibold text-foreground hover:text-accent transition-colors no-underline"
-                aria-label="View our 5.0 star rating with 50+ Google Reviews"
+                aria-label={`View our ${siteConfig.googleRating} star rating with ${siteConfig.googleReviewsCount} Google Reviews`}
               >
                 <span className="text-accent">★★★★★</span>
-                <span>5.0 · 50+ Reviews</span>
+                <span>{siteConfig.googleRating} · {siteConfig.googleReviewsCount} Reviews</span>
               </a>
               <Link href="/contact/" className={ctaClass}>
                 Free Estimate
@@ -93,10 +93,10 @@ export function Header() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-foreground font-medium hover:text-accent transition-colors py-2 no-underline"
-                    aria-label="View our 5.0 star rating with 50+ Google Reviews"
+                    aria-label={`View our ${siteConfig.googleRating} star rating with ${siteConfig.googleReviewsCount} Google Reviews`}
                   >
                     <span className="text-accent">★★★★★</span>
-                    <span>5.0 · 50+ Google Reviews</span>
+                    <span>{siteConfig.googleRating} · {siteConfig.googleReviewsCount} Google Reviews</span>
                   </a>
                   <a
                     href={`tel:${siteConfig.phoneClean}`}

@@ -53,10 +53,10 @@ export default function Hero() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-white hover:text-accent transition-colors duration-200 group no-underline"
-                aria-label="View our 5.0 star rating with 50+ Google Reviews"
+                aria-label={`View our ${siteConfig.googleRating} star rating with ${siteConfig.googleReviewsCount} Google Reviews`}
               >
                 <span className="text-accent text-lg">★★★★★</span>
-                <span className="text-base font-semibold group-hover:underline">5.0 · 50+ Google Reviews</span>
+                <span className="text-base font-semibold group-hover:underline">{siteConfig.googleRating} · {siteConfig.googleReviewsCount} Google Reviews</span>
               </a>
             </div>
 

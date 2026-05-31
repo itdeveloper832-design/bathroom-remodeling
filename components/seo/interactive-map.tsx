@@ -74,7 +74,7 @@ export default function InteractiveMap({
       <div className="relative z-10 flex items-center justify-between w-full">
         <div className="inline-flex items-center gap-1.5 bg-background/80 backdrop-blur-sm border border-border px-3 py-1 rounded-full text-xs font-bold shadow-sm">
           <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-          <span className="text-foreground">5.0 · 50+ Google Reviews</span>
+          <span className="text-foreground">4.9 · 1,258 Google Reviews</span>
         </div>
         <div className="bg-red-500/10 border border-red-500/30 text-red-400 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">
           ROC#338304

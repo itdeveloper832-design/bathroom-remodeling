@@ -8,7 +8,7 @@ const stats = [
   { value: "15+", label: "Years Experience" },
   { value: "500+", label: "Projects Completed" },
   { value: "98%", label: "Client Satisfaction" },
-  { value: "50+", label: "5-Star Reviews" },
+  { value: "1,250+", label: "5-Star Reviews" },
 ];
 
 export default function AboutPreview() {

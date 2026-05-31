@@ -9,6 +9,8 @@ let inMemoryGallery: GalleryItem[] = defaultGalleryItems.map((item, index) => ({
   imageUrl: item.imageUrl,
   description: item.description,
   featured: item.featured,
+  beforeImage: (item as any).beforeImage,
+  afterImage: (item as any).afterImage,
   createdAt: new Date(),
 }));
 

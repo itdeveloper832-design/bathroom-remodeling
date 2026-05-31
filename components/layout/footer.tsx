@@ -33,10 +33,10 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-background hover:text-accent transition-colors no-underline"
-                aria-label="View our 5.0 star rating with 50+ Google Reviews"
+                aria-label={`View our ${siteConfig.googleRating} star rating with ${siteConfig.googleReviewsCount} Google Reviews`}
               >
                 <span className="text-accent">★★★★★</span>
-                <span>5.0 · 50+ Google Reviews</span>
+                <span>{siteConfig.googleRating} · {siteConfig.googleReviewsCount} Google Reviews</span>
               </a>
             </div>
             <div className="text-background/70 text-sm leading-relaxed mb-6 space-y-1">
@@ -261,7 +261,7 @@ export function Footer() {
                 className="flex items-center gap-2 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 no-underline"
               >
                 <span className="font-serif font-extrabold text-accent text-lg">★★★★★</span>
-                <span className="text-[10px] text-background/60 leading-none block border-l border-background/20 pl-2 text-left uppercase">Google Verified<br/>5.0 Star Rating<br/>50+ Local Reviews</span>
+                <span className="text-[10px] text-background/60 leading-none block border-l border-background/20 pl-2 text-left uppercase">Google Verified<br/>{siteConfig.googleRating} Star Rating<br/>{siteConfig.googleReviewsCount}+ Local Reviews</span>
               </a>
             </div>
           </div>

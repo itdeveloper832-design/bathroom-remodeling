@@ -10,30 +10,29 @@ const galleryItems = [
     id: 1,
     title: "Master Bath Remodel in Dobson Ranch",
     category: "Full Renovation - Completed March 2025",
-    before: "/images/services/bathroom-tile-remodel-az.webp",
-    after: "/images/projects/project-shower.png",
+    before: "/images/projects/dobson-master-before.png",
+    after: "/images/projects/dobson-master-after.png",
   },
   {
     id: 2,
     title: "Luxury Master Vanity in Ocotillo",
     category: "Vanity & Stone Work - Completed Jan 2025",
-    before: "/images/services/bathroom-flooring-chandler.webp",
-    after: "/images/projects/project-vanity.png",
+    before: "/images/projects/ocotillo-shower-before.png",
+    after: "/images/projects/ocotillo-shower-after.png",
   },
   {
     id: 3,
     title: "Guest Bath Tile Upgrade in Sun Lakes",
     category: "Tile & Tub Upgrade - Completed Feb 2025",
-    before: "/images/optimized/bathroom-remodeling-licensed-crew.webp",
-
-    after: "/images/projects/project-guest.png",
+    before: "/images/projects/sun-lakes-guest-before.png",
+    after: "/images/projects/sun-lakes-guest-after.png",
   },
   {
     id: 4,
     title: "Spa-Like Retreat in Fulton Ranch",
     category: "Master Bath Upgrade - Completed Dec 2024",
-    before: "/images/gallery/bathroom-renovation-chandler.webp",
-    after: "/images/projects/modern-double-vanity-chandler.webp",
+    before: "/images/projects/fulton-spa-before.png",
+    after: "/images/projects/fulton-spa-after.png",
   },
 ];
 

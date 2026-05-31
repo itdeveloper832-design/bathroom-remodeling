@@ -36,13 +36,13 @@ const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview")
 });
 export const metadata: Metadata = {
   title: {
-    absolute: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling"
+    absolute: "Chandler Bathroom Remodeling | 5-Star Rated, Licensed Contractor | Free Estimate"
   },
-  description: "Chandler's premier bathroom remodeling contractor. Specializing in custom walk-in showers & tub conversions. Licensed ROC338304. Get a free estimate!",
+  description: "Custom walk-in showers & tub-to-shower conversions in Chandler. Fixed pricing from $6,000. ROC licensed since 2010. Serving Ocotillo, Fulton Ranch & East Valley. Call for a free in-home estimate.",
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
+    title: "Chandler Bathroom Remodeling | 5-Star Rated, Licensed Contractor | Free Estimate",
     description:
-      "Chandler's premier bathroom remodeling contractor. Specializing in custom walk-in showers & tub conversions. Licensed ROC338304. Get a free estimate!",
+      "Custom walk-in showers & tub-to-shower conversions in Chandler. Fixed pricing from $6,000. ROC licensed since 2010. Serving Ocotillo, Fulton Ranch & East Valley. Call for a free in-home estimate.",
     type: "website",
     url: `${siteConfig.url}/`,
     images: [

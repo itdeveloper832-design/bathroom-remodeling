@@ -8,17 +8,19 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Services Chandler AZ - Showers, Tub Conversions & More",
-  description: "Professional bathroom remodeling services in Chandler, AZ. Walk-in showers, tub-to-shower conversions, master baths, tile installation. Licensed ROC338304. Free in-home estimate: (520) 569-3339.",
+  title: {
+    absolute: "Bathroom Remodeling Services in Chandler AZ | Showers, Vanities & Tile | ARZ"
+  },
+  description: "Browse all bathroom services offered by ARZ Home Remodeling in Chandler AZ. Walk-in showers, tub conversions, tile, vanities, ADA baths. Licensed ROC contractor. Free estimates.",
   openGraph: {
-    title: "Bathroom Remodeling Services in Chandler AZ",
-    description: "Complete renovation solutions for your home. Professional installations by licensed contractors.",
+    title: "Bathroom Remodeling Services in Chandler AZ | Showers, Vanities & Tile | ARZ",
+    description: "Browse all bathroom services offered by ARZ Home Remodeling in Chandler AZ. Walk-in showers, tub conversions, tile, vanities, ADA baths. Licensed ROC contractor. Free estimates.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Services Chandler AZ",
-    description: "Complete home renovation solutions in Chandler. Free estimates!",
+    title: "Bathroom Remodeling Services in Chandler AZ | Showers, Vanities & Tile | ARZ",
+    description: "Browse all bathroom services offered by ARZ Home Remodeling in Chandler AZ. Walk-in showers, tub conversions, tile, vanities, ADA baths. Licensed ROC contractor. Free estimates.",
   },
 };
 

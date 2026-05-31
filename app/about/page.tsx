@@ -10,12 +10,12 @@ import { BreadcrumbSchema, FAQSchema, PersonSchema } from "@/components/seo/json
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Licensed Bathroom Contractors | ARZ Home Remodeling"
+    absolute: "About ARZ Home Remodeling | Chandler's Bathroom Contractor Since 2010"
   },
-  description: "Meet ARZ Home Remodeling, Chandler's trusted bathroom contractor since 2010. ROC licensed, NARI member. Custom tile, walk-in showers & spa baths.",
+  description: "Family-owned bathroom remodeling company serving Chandler AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member, BBB A+.",
   openGraph: {
-    title: "Licensed Bathroom Contractors | ARZ Home Remodeling",
-    description: "Meet ARZ Home Remodeling, Chandler's trusted bathroom contractor since 2010. ROC licensed, NARI member. Custom tile, walk-in showers & spa baths.",
+    title: "About ARZ Home Remodeling | Chandler's Bathroom Contractor Since 2010",
+    description: "Family-owned bathroom remodeling company serving Chandler AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member, BBB A+.",
     url: `${siteConfig.url}/about/`,
     type: "website",
     images: [
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Licensed Bathroom Contractors | ARZ Home Remodeling",
-    description: "Meet ARZ Home Remodeling, Chandler's trusted bathroom contractor since 2010. ROC licensed, NARI member. Custom tile, walk-in showers & spa baths.",
+    title: "About ARZ Home Remodeling | Chandler's Bathroom Contractor Since 2010",
+    description: "Family-owned bathroom remodeling company serving Chandler AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member, BBB A+.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {
@@ -186,8 +186,14 @@ export default function AboutPage() {
               <div className="grid md:grid-cols-3 gap-8">
                 {/* Team Member 1: Lead Installer */}
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
-                  <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-xl font-bold text-primary font-serif">MH</span>
+                  <div className="w-24 h-24 relative overflow-hidden rounded-full mx-auto mb-4">
+                    <Image
+                      src="/images/mike-hernandez.png"
+                      alt="Mike Hernandez, Lead Tile & Shower Installer at ARZ Home Remodeling in Chandler, AZ"
+                      fill
+                      className="object-cover"
+                      sizes="96px"
+                    />
                   </div>
                   <h3 className="text-lg font-serif font-bold">Mike Hernandez</h3>
                   <p className="text-sm text-primary mb-2">Lead Tile & Shower Installer</p>
@@ -195,8 +201,14 @@ export default function AboutPage() {
                 </div>
                 {/* Team Member 2: Designer */}
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
-                  <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-xl font-bold text-primary font-serif">SJ</span>
+                  <div className="w-24 h-24 relative overflow-hidden rounded-full mx-auto mb-4">
+                    <Image
+                      src="/images/sarah-jenkins.png"
+                      alt="Sarah Jenkins, Senior Bathroom Designer at ARZ Home Remodeling in Chandler, AZ"
+                      fill
+                      className="object-cover"
+                      sizes="96px"
+                    />
                   </div>
                   <h3 className="text-lg font-serif font-bold">Sarah Jenkins</h3>
                   <p className="text-sm text-primary mb-2">Senior Bathroom Designer</p>
@@ -204,8 +216,14 @@ export default function AboutPage() {
                 </div>
                 {/* Team Member 3: Supervisor */}
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
-                  <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-xl font-bold text-primary font-serif">MR</span>
+                  <div className="w-24 h-24 relative overflow-hidden rounded-full mx-auto mb-4">
+                    <Image
+                      src="/images/marcus-rivers.png"
+                      alt="Marcus Rivers, Project Supervisor at ARZ Home Remodeling in Chandler, AZ"
+                      fill
+                      className="object-cover"
+                      sizes="96px"
+                    />
                   </div>
                   <h3 className="text-lg font-serif font-bold">Marcus Rivers</h3>
                   <p className="text-sm text-primary mb-2">Project Supervisor</p>
@@ -319,7 +337,7 @@ export default function AboutPage() {
               {[
                 {
                   award: "Verified NARI Member",
-                  issuer: <a href="https://www.nari.org" target="_blank" rel="noopener" className="hover:underline hover:text-primary">National Association of the Remodeling Industry</a>,
+                  issuer: <a href="https://www.nari.org/Find-a-Remodeler?query=ARZ+Home+Remodeling" target="_blank" rel="noopener" className="hover:underline hover:text-primary">National Association of the Remodeling Industry</a>,
                   year: "Member ID #82910",
                   icon: <Award className="w-8 h-8 text-primary mx-auto mb-4" />
                 },
@@ -385,25 +403,25 @@ export default function AboutPage() {
             {/* Trust Badges */}
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
               <div>
-                <a href="https://www.bbb.org" target="_blank" rel="noopener" aria-label="Verify our BBB Accredited Business status">
+                <a href="https://www.bbb.org/search?find_text=ARZ+Home+Remodeling&find_loc=Chandler%2C+AZ" target="_blank" rel="noopener" aria-label="Verify our BBB Accredited Business status">
                   <div className="text-3xl font-bold text-primary mb-2">✓</div>
                   <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">BBB Accredited Business</p>
                 </a>
               </div>
               <div>
-                <a href="https://www.nari.org" target="_blank" rel="noopener" aria-label="Verify our NARI Membership">
+                <a href="https://www.nari.org/Find-a-Remodeler?query=ARZ+Home+Remodeling" target="_blank" rel="noopener" aria-label="Verify our NARI Membership">
                   <div className="text-3xl font-bold text-primary mb-2">✓</div>
                   <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">NARI Member</p>
                 </a>
               </div>
               <div>
-                <a href="https://google.com" target="_blank" rel="noopener" aria-label="View our 5.0 Star Google Rating">
+                <a href="https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ" target="_blank" rel="noopener" aria-label="View our 5.0 Star Google Rating">
                   <div className="text-3xl font-bold text-primary mb-2">★</div>
                   <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">Google 5.0★ Rating</p>
                 </a>
               </div>
               <div>
-                <a href="https://roc.az.gov" target="_blank" rel="noopener" aria-label="Verify our Arizona ROC License">
+                <a href="https://roc.az.gov/directory?search=338304" target="_blank" rel="noopener" aria-label="Verify our Arizona ROC License">
                   <div className="text-3xl font-bold text-primary mb-2">✓</div>
                   <p className="text-sm font-medium text-foreground hover:text-primary transition-colors">Arizona ROC Licensed</p>
                 </a>

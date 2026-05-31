@@ -228,7 +228,7 @@ export function Footer() {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
               <a 
-                href="https://www.nari.org/" 
+                href="https://www.nari.org/Find-a-Remodeler?query=ARZ+Home+Remodeling" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center gap-2 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 no-underline"
@@ -246,7 +246,7 @@ export function Footer() {
                 <span className="text-[10px] text-background/60 leading-none block border-l border-background/20 pl-2 text-left uppercase">Member<br/>National Kitchen<br/>& Bath Assoc.</span>
               </a>
               <a 
-                href="https://roc.az.gov/" 
+                href="https://roc.az.gov/directory?search=338304" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center gap-2 grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300 no-underline"

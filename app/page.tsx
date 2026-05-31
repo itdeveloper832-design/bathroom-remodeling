@@ -25,6 +25,7 @@ const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-be
 const FAQ = dynamic(() => import("@/components/home/faq"));
 const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
+const VideoShowcase = dynamic(() => import("@/components/home/video-showcase"));
 import { HomeBelowFold } from "@/components/home/home-below-fold";
 
 const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), {
@@ -88,6 +89,7 @@ export default function HomePage() {
           <ProcessSection />
           <ChandlerExpertise />
           <PopularProjects />
+          <VideoShowcase />
           <ServiceAreas />
           <Financing />
           <ComparisonBenefits />

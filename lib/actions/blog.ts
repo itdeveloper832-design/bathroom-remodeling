@@ -15,7 +15,11 @@ import {
   post_13,
   post_14,
   post_15,
-  post_16
+  post_16,
+  post_17,
+  post_18,
+  post_19,
+  post_20
 } from "@/lib/seed-blog";
 import { submitToIndexNow } from "@/lib/indexnow";
 
@@ -44,7 +48,11 @@ const basePosts: BlogPost[] = [
   post_13,
   post_14,
   post_15,
-  post_16
+  post_16,
+  post_17,
+  post_18,
+  post_19,
+  post_20
 ].map((post, index) => ({
 
   id: `post-${index + 1}`,

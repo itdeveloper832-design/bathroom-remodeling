@@ -10,11 +10,11 @@ import { BreadcrumbSchema, FAQSchema, PersonSchema } from "@/components/seo/json
 
 export const metadata: Metadata = {
   title: {
-    absolute: "About ARZ Home Remodeling | Chandler's Bathroom Contractor Since 2010"
+    absolute: "About ARZ Home Remodeling – Chandler, AZ Bathroom Contractors Since 2010"
   },
   description: "Family-owned bathroom remodeling company serving Chandler AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member, BBB A+.",
   openGraph: {
-    title: "About ARZ Home Remodeling | Chandler's Bathroom Contractor Since 2010",
+    title: "About ARZ Home Remodeling – Chandler, AZ Bathroom Contractors Since 2010",
     description: "Family-owned bathroom remodeling company serving Chandler AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member, BBB A+.",
     url: `${siteConfig.url}/about/`,
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About ARZ Home Remodeling | Chandler's Bathroom Contractor Since 2010",
+    title: "About ARZ Home Remodeling – Chandler, AZ Bathroom Contractors Since 2010",
     description: "Family-owned bathroom remodeling company serving Chandler AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member, BBB A+.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                   <Image
                     src="/images/alex-rivers.png"
-                    alt="Alex Rivers, Owner of ARZ Home Remodeling"
+                    alt="Alex Rivers, Owner of ARZ Home Remodeling in Chandler, AZ"
                     fill
                     className="object-cover"
                   />

@@ -17,7 +17,7 @@ import { LocalBusinessSchema, OrganizationSchema } from '@/components/seo/json-l
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Bathroom Remodeling in Chandler AZ - Professional Contractor`,
+    default: `Bathroom Remodeling Chandler AZ | Licensed, ROC-Certified | Free Estimate`,
     template: `%s - ARZ Home Remodeling`
   },
   description: siteConfig.description,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `Bathroom Remodeling in Chandler AZ - Professional Contractor`,
+    title: `Bathroom Remodeling Chandler AZ | Licensed, ROC-Certified | Free Estimate`,
     description: siteConfig.description,
     images: [
       {
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Bathroom Remodeling in Chandler AZ - Professional Contractor`,
+    title: `Bathroom Remodeling Chandler AZ | Licensed, ROC-Certified | Free Estimate`,
     description: siteConfig.description,
     images: [`${siteConfig.url}/images/og-homepage.png`],
   },
@@ -94,7 +94,7 @@ export default function RootLayout({
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
 
         {/* Microsoft Clarity Tracking Script */}
-        <Script id="microsoft-clarity" strategy="afterInteractive">
+        <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

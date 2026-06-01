@@ -10,7 +10,7 @@ export const siteConfig = {
   url: "https://arzhomeremodeling.com",
   googleBusinessLink: "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ",
   phone: "(520) 569-3339",
-  phoneClean: "(520) 569-3339",
+  phoneClean: "+15205693339",
   email: "sales@arzhomeremodeling.com",
   // Verified Arizona Registrar of Contractors license number
   license: "ROC338304 - Arizona Licensed Contractor",
@@ -25,15 +25,15 @@ export const siteConfig = {
       lng: -111.9605964,
     },
   },
-  zipCodes: ["85224", "85225", "85226", "85249"],
+  zipCodes: ["85224", "85225", "85226", "85248", "85249"],
   hours: {
     weekdays: "8:00 AM - 6:00 PM",
     saturday: "9:00 AM - 4:00 PM",
     sunday: "Closed",
   },
   social: {
-    facebook: "https://web.facebook.com/profile.php?id=61590076822852",
-    instagram: "https://www.instagram.com/arzhome_remodeling/",
+    facebook: "https://www.facebook.com/arzhomeremodeling",
+    instagram: "https://www.instagram.com/arzhomeremodeling/",
     youtube: "https://youtube.com/arzhomeremodeling",
     linkedin: "https://www.linkedin.com/company/arz-home-remodeling/",
     twitter: "", // Add if available

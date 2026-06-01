@@ -73,6 +73,10 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       siteConfig.social.pinterest,
       siteConfig.social.youtube,
       siteConfig.social.linkedin,
+      "https://www.bbb.org/search?find_text=ARZ+Home+Remodeling&find_loc=Chandler%2C+AZ",
+      "https://www.nari.org/Find-a-Remodeler?query=ARZ+Home+Remodeling",
+      "https://www.yelp.com/biz/arz-home-remodeling-chandler",
+      "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ"
     ].filter(Boolean),
     priceRange: "$$-$$$",
     areaServed: ["Chandler AZ","Gilbert AZ","Mesa AZ","Tempe AZ","Queen Creek AZ","Sun Lakes AZ","Ocotillo AZ","Ahwatukee AZ"],
@@ -172,8 +176,8 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "1258",
+      ratingValue: siteConfig.googleRating.toString(),
+      reviewCount: siteConfig.googleReviewsCount.toString(),
       bestRating: "5"
     },
     review: testimonialsData.default.map((t) => ({
@@ -193,12 +197,10 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
   };
 
   return (
-    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
-    </head>
   );
 }
 
@@ -244,8 +246,8 @@ export function ServiceSchema({ serviceName, serviceDescription, serviceUrl, ser
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1258",
+      "ratingValue": siteConfig.googleRating.toString(),
+      "reviewCount": siteConfig.googleReviewsCount.toString(),
       "bestRating": "5"
     },
     "review": testimonialsData.default.map((t) => ({
@@ -266,12 +268,10 @@ export function ServiceSchema({ serviceName, serviceDescription, serviceUrl, ser
   };
 
   return (
-    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
-    </head>
   );
 }
 
@@ -322,12 +322,10 @@ export function ArticleSchema({
   };
 
   return (
-    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
-    </head>
   );
 }
 
@@ -358,12 +356,10 @@ export function SpeakableSchema({
   };
 
   return (
-    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
-    </head>
   );
 }
 
@@ -382,12 +378,10 @@ export function FAQSchema({ faqs }: FAQSchemaProps) {
   };
 
   return (
-    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
-    </head>
   );
 }
 
@@ -408,12 +402,10 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
   };
 
   return (
-    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
-    </head>
   );
 }
 
@@ -458,12 +450,10 @@ export function ReviewSchema({
   };
 
   return (
-    <head>
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
-    </head>
   );
 }
 
@@ -524,19 +514,17 @@ export function PriceSchema({
     offers: offerSchema,
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "1258",
+      ratingValue: siteConfig.googleRating.toString(),
+      reviewCount: siteConfig.googleReviewsCount.toString(),
       bestRating: "5"
     },
   };
 
   return (
-    <head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-    </head>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }
 
@@ -591,12 +579,10 @@ export function PersonSchema({
   };
 
   return (
-    <head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-    </head>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }
 
@@ -632,6 +618,10 @@ export function OrganizationSchema({
       siteConfig.social.instagram,
       siteConfig.social.youtube,
       siteConfig.social.linkedin,
+      "https://www.bbb.org/search?find_text=ARZ+Home+Remodeling&find_loc=Chandler%2C+AZ",
+      "https://www.nari.org/Find-a-Remodeler?query=ARZ+Home+Remodeling",
+      "https://www.yelp.com/biz/arz-home-remodeling-chandler",
+      "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ"
     ].filter(Boolean),
     "contactPoint": {
       "@type": "ContactPoint",
@@ -643,12 +633,10 @@ export function OrganizationSchema({
   };
 
   return (
-    <head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-    </head>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }
 
@@ -674,12 +662,10 @@ export function WebSiteSchema({ url = siteConfig.url }: WebSiteSchemaProps = {})
   };
 
   return (
-    <head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-    </head>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }
 
@@ -713,11 +699,53 @@ export function ContactPageSchema({ url = `${siteConfig.url}/contact/` }: Contac
   };
 
   return (
-    <head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-    </head>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export interface VideoObjectProps {
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  uploadDate: string;
+  duration: string;
+  embedUrl: string;
+}
+
+interface VideoSchemaProps {
+  videos: VideoObjectProps[];
+}
+
+export function VideoSchema({ videos }: VideoSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": videos.map((video) => ({
+      "@type": "VideoObject",
+      "name": video.name,
+      "description": video.description,
+      "thumbnailUrl": video.thumbnailUrl,
+      "uploadDate": video.uploadDate,
+      "duration": video.duration,
+      "embedUrl": video.embedUrl,
+      "publisher": {
+        "@type": "Organization",
+        "@id": `${siteConfig.url}/#organization`,
+        "name": "ARZ Home Remodeling",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${siteConfig.url}/images/new-images-logo.jpg`
+        }
+      }
+    }))
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
   );
 }

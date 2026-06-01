@@ -33,13 +33,13 @@ export function Header() {
             >
               <div className="relative h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16">
                 <Image
-                  src="/images/web-logo-image.png"
+                  src="/images/web-logo-image.webp"
                   alt="ARZ Home Remodeling - Bathroom Remodeling Chandler AZ"
                   fill
                   sizes="(max-width: 1024px) 56px, 64px"
                   className="object-contain object-left"
-                  loading="lazy"
-                  decoding="async"
+                  priority
+                  decoding="sync"
                 />
               </div>
             </Link>

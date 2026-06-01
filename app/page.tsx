@@ -27,6 +27,7 @@ const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
 const VideoShowcase = dynamic(() => import("@/components/home/video-showcase"));
 import { HomeBelowFold } from "@/components/home/home-below-fold";
+import { LazySection } from "@/components/ui/lazy-section";
 
 const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), {
   loading: () => (
@@ -98,27 +99,67 @@ export default function HomePage() {
       <main id="main-content" role="main">
         <Hero />
         <QuickAnswers />
-        <div className="content-visibility-auto">
-          <LocalTrust cityName="Chandler" />
-          <AboutPreview />
-          <ServicesGrid />
-          <ChandlerProjects />
-          <DesignBuildShowcase />
-          <WhyChooseUs />
-          <PricingTable />
-          <BathroomSection />
-          <ProcessSection />
-          <ChandlerExpertise />
-          <PopularProjects />
-          <VideoShowcase />
-          <ServiceAreas />
-          <Financing />
-          <ComparisonBenefits />
-          <FAQ />
-          <BlogPreview />
-          <GalleryPreview />
-          <HomeBelowFold />
-          <FinalCTA />
+        <div>
+          <LazySection height="150px">
+            <LocalTrust cityName="Chandler" />
+          </LazySection>
+          <LazySection height="450px">
+            <AboutPreview />
+          </LazySection>
+          <LazySection height="600px">
+            <ServicesGrid />
+          </LazySection>
+          <LazySection height="600px">
+            <ChandlerProjects />
+          </LazySection>
+          <LazySection height="500px">
+            <DesignBuildShowcase />
+          </LazySection>
+          <LazySection height="500px">
+            <WhyChooseUs />
+          </LazySection>
+          <LazySection height="500px">
+            <PricingTable />
+          </LazySection>
+          <LazySection height="400px">
+            <BathroomSection />
+          </LazySection>
+          <LazySection height="600px">
+            <ProcessSection />
+          </LazySection>
+          <LazySection height="400px">
+            <ChandlerExpertise />
+          </LazySection>
+          <LazySection height="500px">
+            <PopularProjects />
+          </LazySection>
+          <LazySection height="450px">
+            <VideoShowcase />
+          </LazySection>
+          <LazySection height="300px">
+            <ServiceAreas />
+          </LazySection>
+          <LazySection height="400px">
+            <Financing />
+          </LazySection>
+          <LazySection height="500px">
+            <ComparisonBenefits />
+          </LazySection>
+          <LazySection height="600px">
+            <FAQ />
+          </LazySection>
+          <LazySection height="500px">
+            <BlogPreview />
+          </LazySection>
+          <LazySection height="600px">
+            <GalleryPreview />
+          </LazySection>
+          <LazySection height="800px">
+            <HomeBelowFold />
+          </LazySection>
+          <LazySection height="300px">
+            <FinalCTA />
+          </LazySection>
         </div>
       </main>
       <Footer />

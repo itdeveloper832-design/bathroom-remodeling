@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -8,34 +7,26 @@ import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, We
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
-const LocalTrust = dynamic(() => import("@/components/home/local-trust"));
-const AboutPreview = dynamic(() => import("@/components/home/about-preview"));
-const ServicesGrid = dynamic(() => import("@/components/home/services-grid"));
-const ChandlerProjects = dynamic(() => import("@/components/home/chandler-projects"));
-const DesignBuildShowcase = dynamic(() => import("@/components/home/design-build-showcase"));
-const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"));
-const PricingTable = dynamic(() => import("@/components/home/pricing-table"));
-const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"));
-const ProcessSection = dynamic(() => import("@/components/home/process-section"));
-const ChandlerExpertise = dynamic(() => import("@/components/home/chandler-expertise"));
-const PopularProjects = dynamic(() => import("@/components/home/popular-projects"));
-const ServiceAreas = dynamic(() => import("@/components/home/service-areas"));
-const Financing = dynamic(() => import("@/components/home/financing"));
-const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"));
-const FAQ = dynamic(() => import("@/components/home/faq"));
-const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
-const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
+import LocalTrust from "@/components/home/local-trust";
+import AboutPreview from "@/components/home/about-preview";
+import ServicesGrid from "@/components/home/services-grid";
+import ChandlerProjects from "@/components/home/chandler-projects";
+import DesignBuildShowcase from "@/components/home/design-build-showcase";
+import WhyChooseUs from "@/components/home/why-choose-us";
+import PricingTable from "@/components/home/pricing-table";
+import BathroomSection from "@/components/home/bathroom-section";
+import ProcessSection from "@/components/home/process-section";
+import ChandlerExpertise from "@/components/home/chandler-expertise";
+import PopularProjects from "@/components/home/popular-projects";
+import ServiceAreas from "@/components/home/service-areas";
+import Financing from "@/components/home/financing";
+import ComparisonBenefits from "@/components/home/comparison-benefits";
+import FAQ from "@/components/home/faq";
+import BlogPreview from "@/components/home/blog-preview";
+import FinalCTA from "@/components/home/final-cta";
 import VideoShowcase from "@/components/home/video-showcase";
 import { HomeBelowFold } from "@/components/home/home-below-fold";
-import { LazySection } from "@/components/ui/lazy-section";
-
-const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), {
-  loading: () => (
-    <div className="py-20 bg-background">
-      <div className="container mx-auto px-4 h-96 bg-muted/30 rounded-2xl animate-pulse" />
-    </div>
-  ),
-});
+import GalleryPreview from "@/components/home/gallery-preview";
 export const metadata: Metadata = {
   title: {
     absolute: "Bathroom Remodeling Chandler AZ - Licensed Contractor"
@@ -100,64 +91,26 @@ export default function HomePage() {
         <Hero />
         <QuickAnswers />
         <div>
-          <LazySection height="150px">
-            <LocalTrust cityName="Chandler" />
-          </LazySection>
-          <LazySection height="450px">
-            <AboutPreview />
-          </LazySection>
-          <LazySection height="600px">
-            <ServicesGrid />
-          </LazySection>
-          <LazySection height="600px">
-            <ChandlerProjects />
-          </LazySection>
-          <LazySection height="500px">
-            <DesignBuildShowcase />
-          </LazySection>
-          <LazySection height="500px">
-            <WhyChooseUs />
-          </LazySection>
-          <LazySection height="500px">
-            <PricingTable />
-          </LazySection>
-          <LazySection height="400px">
-            <BathroomSection />
-          </LazySection>
-          <LazySection height="600px">
-            <ProcessSection />
-          </LazySection>
-          <LazySection height="400px">
-            <ChandlerExpertise />
-          </LazySection>
-          <LazySection height="500px">
-            <PopularProjects />
-          </LazySection>
+          <LocalTrust cityName="Chandler" />
+          <AboutPreview />
+          <ServicesGrid />
+          <ChandlerProjects />
+          <DesignBuildShowcase />
+          <WhyChooseUs />
+          <PricingTable />
+          <BathroomSection />
+          <ProcessSection />
+          <ChandlerExpertise />
+          <PopularProjects />
           <VideoShowcase />
-          <LazySection height="300px">
-            <ServiceAreas />
-          </LazySection>
-          <LazySection height="400px">
-            <Financing />
-          </LazySection>
-          <LazySection height="500px">
-            <ComparisonBenefits />
-          </LazySection>
-          <LazySection height="600px">
-            <FAQ />
-          </LazySection>
-          <LazySection height="500px">
-            <BlogPreview />
-          </LazySection>
-          <LazySection height="600px">
-            <GalleryPreview />
-          </LazySection>
-          <LazySection height="800px">
-            <HomeBelowFold />
-          </LazySection>
-          <LazySection height="300px">
-            <FinalCTA />
-          </LazySection>
+          <ServiceAreas />
+          <Financing />
+          <ComparisonBenefits />
+          <FAQ />
+          <BlogPreview />
+          <GalleryPreview />
+          <HomeBelowFold />
+          <FinalCTA />
         </div>
       </main>
       <Footer />

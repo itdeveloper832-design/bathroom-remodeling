@@ -87,21 +87,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <head>
-        {/* Network Resource Hints (Preconnect & DNS-Prefetch) */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.clarity.ms" />
-        <link rel="preconnect" href="https://c.bing.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://c.bing.com" />
-        {siteConfig.umamiWebsiteId && (
-          <>
-            <link rel="preconnect" href="https://cloud.umami.is" crossOrigin="anonymous" />
-            <link rel="dns-prefetch" href="https://cloud.umami.is" />
-          </>
-        )}
 
         <meta name="geo.region" content="US-AZ" />
         <meta name="geo.placename" content="Chandler" />
@@ -109,17 +94,66 @@ export default function RootLayout({
         <meta name="ICBM" content={`${siteConfig.address.coordinates.lat}, ${siteConfig.address.coordinates.lng}`} />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
 
-        {/* Microsoft Clarity Tracking Script */}
-        <Script
-          id="microsoft-clarity"
-          strategy="lazyOnload"
+        {/* High-Performance Deferred Third-Party Script Loader */}
+        <script
           dangerouslySetInnerHTML={{
             __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "wwkr52xfsa");
+              (function() {
+                var scriptsLoaded = false;
+                function loadScripts() {
+                  if (scriptsLoaded) return;
+                  scriptsLoaded = true;
+                  
+                  // Load Microsoft Clarity
+                  (function(c,l,a,r,i,t,y){
+                      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                  })(window, document, "clarity", "script", "wwkr52xfsa");
+
+                  // Load Google Analytics GA4
+                  var ga = document.createElement('script');
+                  ga.async = true;
+                  ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-Y9CGXJLLVJ';
+                  document.head.appendChild(ga);
+
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-Y9CGXJLLVJ');
+
+                  // Load Umami (Conditional)
+                  ${siteConfig.umamiWebsiteId ? `
+                  var umami = document.createElement('script');
+                  umami.async = true;
+                  umami.src = 'https://cloud.umami.is/script.js';
+                  umami.setAttribute('data-website-id', '${siteConfig.umamiWebsiteId}');
+                  document.head.appendChild(umami);
+                  ` : ''}
+
+                  removeListeners();
+                }
+
+                var events = ['mouseover', 'keydown', 'touchstart', 'scroll', 'click'];
+                function removeListeners() {
+                  events.forEach(function(e) {
+                    window.removeEventListener(e, loadScripts, { passive: true });
+                  });
+                }
+                
+                events.forEach(function(e) {
+                  window.addEventListener(e, loadScripts, { passive: true });
+                });
+
+                // Fallback load after 4 seconds of idle time
+                if (window.requestIdleCallback) {
+                  window.requestIdleCallback(function() {
+                    setTimeout(loadScripts, 3500);
+                  });
+                } else {
+                  setTimeout(loadScripts, 4000);
+                }
+              })();
             `,
           }}
         />
@@ -129,33 +163,6 @@ export default function RootLayout({
       <body className="antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
         {children}
         <StickyCallButton />
-
-        {/* Umami Analytics (Conditional on Website ID) */}
-        {siteConfig.umamiWebsiteId && (
-          <Script
-            src="https://cloud.umami.is/script.js"
-            data-website-id={siteConfig.umamiWebsiteId}
-            strategy="afterInteractive"
-          />
-        )}
-
-        {/* Google Analytics GA4 */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-Y9CGXJLLVJ"
-          strategy="lazyOnload"
-        />
-        <Script
-          id="google-analytics"
-          strategy="lazyOnload"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-Y9CGXJLLVJ');
-            `,
-          }}
-        />
       </body>
     </html>
   )

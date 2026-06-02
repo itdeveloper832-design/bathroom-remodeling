@@ -3,6 +3,7 @@ import { Metadata } from "next"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
+import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {
   title: "Privacy Policy - ARZ Home Remodeling",
@@ -113,7 +114,7 @@ export default function PrivacyPolicyPage() {
               </h2>
               <p className="text-muted-foreground mb-6">
                 You have the right to access, correct, or delete your personal information at any time. 
-                To exercise these rights, please contact us at {siteConfig.email}.
+                To exercise these rights, please contact us at <ObscuredEmail className="text-primary hover:underline" />.
               </p>
 
               <h2 className="text-2xl font-serif font-semibold text-foreground mt-8 mb-4">
@@ -125,7 +126,7 @@ export default function PrivacyPolicyPage() {
               <div className="bg-secondary rounded-lg p-6">
                 <p className="text-foreground font-medium">{siteConfig.name}</p>
                 <p className="text-muted-foreground">{siteConfig.address.full}</p>
-                <p className="text-muted-foreground">{siteConfig.email}</p>
+                <p className="text-muted-foreground"><ObscuredEmail className="hover:text-primary transition-colors" /></p>
                 <p className="text-muted-foreground">{siteConfig.phone}</p>
               </div>
             </div>

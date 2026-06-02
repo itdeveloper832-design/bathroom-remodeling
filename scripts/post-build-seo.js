@@ -45,11 +45,12 @@ function processFile(filePath) {
     let text = titleText.trim();
     
     // Replace the long default suffix with a shorter, elegant branding suffix to save 15+ characters
-    if (text.includes(' - ARZ Home Remodeling')) {
-      text = text.replace(' - ARZ Home Remodeling', ' | ARZ');
-    }
     if (text.includes(' - ARZ - ARZ Home Remodeling')) {
-      text = text.replace(' - ARZ - ARZ Home Remodeling', ' | ARZ');
+      text = text.replace(' - ARZ - ARZ Home Remodeling', ' - ARZ');
+    } else if (text.includes(' - ARZ Home Remodeling')) {
+      text = text.replace(' - ARZ Home Remodeling', ' - ARZ');
+    } else if (text.includes(' | ARZ Home Remodeling')) {
+      text = text.replace(' | ARZ Home Remodeling', ' - ARZ');
     }
     
     // Clean double-phrasing errors or redundancy
@@ -57,17 +58,24 @@ function processFile(filePath) {
     text = text.replace(/Walk-in Showers &amp; Walk-In Showers/gi, 'Walk-In Showers');
     text = text.replace(/Bathroom Remodeling Timeline Chandler AZ\s+-/gi, 'Bathroom Remodel Timeline Chandler -');
     
-    // Truncate elegantly if still too long (> 65 chars)
-    if (text.length > 65) {
+    // Truncate elegantly if still too long (> 65 chars of plain text)
+    let plainText = text.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    if (plainText.length > 65) {
       text = text.replace(/\s*-\s*Professional Services?/gi, '');
       text = text.replace(/\s*-\s*Professional Installation/gi, '');
       text = text.replace(/\s*-\s*Modern Upgrades/gi, '');
       text = text.replace(/\s*-\s*Custom Builders?/gi, '');
       text = text.replace(/\s*-\s*Quality Craftsmanship/gi, '');
+      
+      // Recalculate plain text length
+      plainText = text.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
     }
     
-    if (text.length > 65) {
-      text = text.substring(0, 62) + '...';
+    if (plainText.length > 65) {
+      // Decode, truncate, re-encode
+      let temp = text.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+      temp = temp.substring(0, 62) + '...';
+      text = temp.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
     
     return `<title>${text}</title>`;

@@ -3,6 +3,7 @@ import { Metadata } from "next"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
+import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {
   title: "Terms of Service - ARZ Home Remodeling",
@@ -142,7 +143,7 @@ export default function TermsOfServicePage() {
               <div className="bg-secondary rounded-lg p-6">
                 <p className="text-foreground font-medium">{siteConfig.name}</p>
                 <p className="text-muted-foreground">{siteConfig.address.full}</p>
-                <p className="text-muted-foreground">{siteConfig.email}</p>
+                <p className="text-muted-foreground"><ObscuredEmail className="hover:text-primary transition-colors" /></p>
                 <p className="text-muted-foreground">{siteConfig.phone}</p>
               </div>
             </div>

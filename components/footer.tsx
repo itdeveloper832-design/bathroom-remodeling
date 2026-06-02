@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { siteConfig } from '@/lib/site-config'
+import { ObscuredEmail } from '@/components/ui/obscured-email'
 
 export function Footer() {
   return (
@@ -34,7 +35,7 @@ export function Footer() {
               Phone: <a href={`tel:${siteConfig.phoneClean}`} className="hover:text-white transition-colors">{siteConfig.phone}</a>
             </p>
             <p className="text-slate-300">
-              Email: <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors">{siteConfig.email}</a>
+              Email: <ObscuredEmail className="hover:text-white transition-colors" />
             </p>
           </div>
         </div>

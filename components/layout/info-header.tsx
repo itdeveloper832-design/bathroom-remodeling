@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Phone, Mail, Briefcase, Tag } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import { ObscuredEmail } from "@/components/ui/obscured-email";
 
 export function InfoHeader() {
   return (
@@ -19,14 +20,12 @@ export function InfoHeader() {
             <span className="hidden sm:inline">{siteConfig.phone}</span>
           </a>
 
-          <a 
-            href={`mailto:${siteConfig.email}`}
+          <ObscuredEmail 
             className="flex items-center gap-2 hover:text-primary transition-colors min-h-[48px] px-2 no-underline"
-            aria-label={`Email us at ${siteConfig.email}`}
           >
             <Mail className="w-4 h-4" aria-hidden="true" />
-            <span className="hidden sm:inline">{siteConfig.email}</span>
-          </a>
+            <span className="hidden sm:inline">sales [at] arzhomeremodeling.com</span>
+          </ObscuredEmail>
           
           <Link 
             href="/careers/"

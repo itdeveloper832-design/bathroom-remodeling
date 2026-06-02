@@ -25,7 +25,7 @@ const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-be
 const FAQ = dynamic(() => import("@/components/home/faq"));
 const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
 const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
-const VideoShowcase = dynamic(() => import("@/components/home/video-showcase"));
+import VideoShowcase from "@/components/home/video-showcase";
 import { HomeBelowFold } from "@/components/home/home-below-fold";
 import { LazySection } from "@/components/ui/lazy-section";
 
@@ -38,11 +38,11 @@ const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview")
 });
 export const metadata: Metadata = {
   title: {
-    absolute: "Bathroom Remodeling Chandler AZ | Licensed, ROC-Certified | Free Estimate"
+    absolute: "Bathroom Remodeling Chandler AZ - Licensed Contractor"
   },
   description: "Custom walk-in showers & tub-to-shower conversions in Chandler. Fixed pricing from $6,000. ROC licensed since 2010. Serving Ocotillo, Fulton Ranch & East Valley. Call for a free in-home estimate.",
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ - Licensed, ROC - Certified - Free Estimate",
+    title: "Bathroom Remodeling Chandler AZ - Licensed Contractor",
     description:
       "Custom walk-in showers & tub-to-shower conversions in Chandler. Fixed pricing from $6,000. ROC licensed since 2010. Serving Ocotillo, Fulton Ranch & East Valley. Call for a free in-home estimate.",
     type: "website",
@@ -133,9 +133,7 @@ export default function HomePage() {
           <LazySection height="500px">
             <PopularProjects />
           </LazySection>
-          <LazySection height="450px">
-            <VideoShowcase />
-          </LazySection>
+          <VideoShowcase />
           <LazySection height="300px">
             <ServiceAreas />
           </LazySection>

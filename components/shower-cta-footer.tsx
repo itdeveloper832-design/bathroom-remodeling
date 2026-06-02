@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { ObscuredEmail } from "@/components/ui/obscured-email";
 
 export default function ShowerCTAFooter() {
   return (
@@ -10,7 +11,7 @@ export default function ShowerCTAFooter() {
             Ready to Start Your Shower Remodel in Chandler, AZ?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            We serve homeowners across Chandler, Ocotillo, Fulton Ranch, Sun Lakes, Dobson Ranch, Gilbert, and the East Valley. Schedule a free in-home visit this week. We measure your shower, walk through tile and glass options with you in person, and send a written estimate with a timeline — before you commit to anything.
+            We serve homeowners across Chandler, Ocotillo, Fulton Ranch, Sun Lakes, Dobson Ranch, Gilbert, and the East Valley. Schedule a free in-home visit this week. We measure your shower, walk through tile and glass options with you in person, and send a written estimate with a timeline - before you commit to anything.
           </p>
         </div>
 
@@ -24,9 +25,7 @@ export default function ShowerCTAFooter() {
             </div>
             <div className="text-center">
               <p className="text-muted-foreground mb-2">Email</p>
-              <a href={`mailto:${siteConfig.email}`} className="text-xl font-semibold text-primary hover:underline">
-                {siteConfig.email}
-              </a>
+              <ObscuredEmail className="text-xl font-semibold text-primary hover:underline" />
             </div>
           </div>
 

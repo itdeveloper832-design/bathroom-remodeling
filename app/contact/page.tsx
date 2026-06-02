@@ -6,6 +6,7 @@ import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config"
 import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/seo/json-ld"
+import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {
   title: {
@@ -98,12 +99,9 @@ export default function ContactPage() {
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-serif font-semibold text-foreground mb-2">Email</h3>
-                <a 
-                  href={`mailto:${siteConfig.email}`} 
+                <ObscuredEmail 
                   className="text-muted-foreground hover:text-primary transition-colors block text-sm leading-snug"
-                >
-                  {siteConfig.email}
-                </a>
+                />
               </div>
 
               <div className="bg-card p-6 rounded-xl shadow-sm border border-border text-center">

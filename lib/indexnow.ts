@@ -3,7 +3,7 @@ import { siteConfig } from "./site-config";
 
 
 const INDEXNOW_API_URL = "https://api.indexnow.org/indexnow";
-const API_KEY = "82d2e4a5c3f04f53a18605d9cb430c1a";
+const API_KEY = "da8afcc853004a0e818760ae4b6b668e";
 const HOST = "arzhomeremodeling.com";
 const KEY_LOCATION = `https://${HOST}/${API_KEY}.txt`;
 

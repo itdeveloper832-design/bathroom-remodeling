@@ -11,8 +11,8 @@ header('Content-Type: application/json');
 
 // --- CONFIGURATION ---
 $host = "arzhomeremodeling.com";
-$key = "82d2e4a5c3f04f53a18605d9cb430c1a";
-$keyLocation = "https://arzhomeremodeling.com/82d2e4a5c3f04f53a18605d9cb430c1a.txt";
+$key = "da8afcc853004a0e818760ae4b6b668e";
+$keyLocation = "https://arzhomeremodeling.com/da8afcc853004a0e818760ae4b6b668e.txt";
 $endpoint = "https://api.indexnow.org/indexnow";
 // ---------------------
 

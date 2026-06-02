@@ -2,7 +2,9 @@ import { marked } from 'marked';
 
 export async function parseMarkdown(markdown: string) {
   // Convert markdown to HTML
-  return marked.parse(markdown);
+  const html = await marked.parse(markdown);
+  // Demote any H1 headings inside the post content to H2 to ensure there is only one H1 per page
+  return html.replace(/<h1([\s>])/gi, '<h2$1').replace(/<\/h1>/gi, '</h2>');
 }
 
 export function extractHeadings(markdown: string) {

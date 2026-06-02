@@ -19,45 +19,95 @@ function getHtmlFiles(dir, files = []) {
 
 function processFile(filePath) {
   let content = fs.readFileSync(filePath, 'utf8');
-  
-  // 1. Find all JSON-LD scripts
+  let cleanedContent = content;
+
+  // 1. Find and hoist all JSON-LD scripts if any exist
   const schemaRegex = /<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/gi;
   const schemas = [];
   let match;
   
-  // Collect all unique schemas in the file
   while ((match = schemaRegex.exec(content)) !== null) {
     schemas.push(match[0]);
   }
   
-  if (schemas.length === 0) return;
-  
-  // 2. Remove all JSON-LD scripts from their original locations
-  let cleanedContent = content.replace(schemaRegex, '');
-  
-  // 3. Remove any empty nested head tags like <head></head> or <head/> that might have been rendered by React
-  cleanedContent = cleanedContent.replace(/<head\s*>\s*<\/head\s*>/gi, '');
-  cleanedContent = cleanedContent.replace(/<head\s*\/>/gi, '');
-  
-  // 4. Find the main closing </head> tag of the document
-  const headEndIdx = cleanedContent.indexOf('</head>');
-  if (headEndIdx === -1) {
-    console.warn(`[Warning] </head> tag not found in ${filePath}`);
-    return;
+  if (schemas.length > 0) {
+    // Remove all JSON-LD scripts from their original locations
+    cleanedContent = cleanedContent.replace(schemaRegex, '');
   }
   
-  // 5. Format all gathered schemas uniquely (prevent duplicates)
-  const uniqueSchemas = Array.from(new Set(schemas));
-  const schemaBlock = '\n' + uniqueSchemas.join('\n') + '\n';
+  // 2. Remove any empty nested head tags like <head></head> or <head/> that might have been rendered by React
+  cleanedContent = cleanedContent.replace(/<head\s*>\s*<\/head\s*>/gi, '');
+  cleanedContent = cleanedContent.replace(/<head\s*\/>/gi, '');
+
+  // 3. Optimize HTML Title (Guideline 13: Title Tag Length)
+  const titleRegex = /<title>([\s\S]*?)<\/title>/gi;
+  cleanedContent = cleanedContent.replace(titleRegex, (match, titleText) => {
+    let text = titleText.trim();
+    
+    // Replace the long default suffix with a shorter, elegant branding suffix to save 15+ characters
+    if (text.includes(' - ARZ Home Remodeling')) {
+      text = text.replace(' - ARZ Home Remodeling', ' | ARZ');
+    }
+    if (text.includes(' - ARZ - ARZ Home Remodeling')) {
+      text = text.replace(' - ARZ - ARZ Home Remodeling', ' | ARZ');
+    }
+    
+    // Clean double-phrasing errors or redundancy
+    text = text.replace(/Upgrades &amp; Upgrades/gi, 'Upgrades');
+    text = text.replace(/Walk-in Showers &amp; Walk-In Showers/gi, 'Walk-In Showers');
+    text = text.replace(/Bathroom Remodeling Timeline Chandler AZ\s+-/gi, 'Bathroom Remodel Timeline Chandler -');
+    
+    // Truncate elegantly if still too long (> 65 chars)
+    if (text.length > 65) {
+      text = text.replace(/\s*-\s*Professional Services?/gi, '');
+      text = text.replace(/\s*-\s*Professional Installation/gi, '');
+      text = text.replace(/\s*-\s*Modern Upgrades/gi, '');
+      text = text.replace(/\s*-\s*Custom Builders?/gi, '');
+      text = text.replace(/\s*-\s*Quality Craftsmanship/gi, '');
+    }
+    
+    if (text.length > 65) {
+      text = text.substring(0, 62) + '...';
+    }
+    
+    return `<title>${text}</title>`;
+  });
+
+  // 4. Optimize Meta Description (Guideline 13: Meta Description Length)
+  const descRegex = /(<meta\s+name=["']description["']\s+content=["'])([\s\S]*?)(["'])/gi;
+  cleanedContent = cleanedContent.replace(descRegex, (match, prefix, descText, suffix) => {
+    let text = descText.trim();
+    if (text.length > 160) {
+      const sub = text.substring(0, 157);
+      const lastSpace = sub.lastIndexOf(' ');
+      if (lastSpace > 120) {
+        text = sub.substring(0, lastSpace) + '...';
+      } else {
+        text = sub + '...';
+      }
+    }
+    return `${prefix}${text}${suffix}`;
+  });
   
-  // 6. Inject the unified schema block into the main head section right before </head>
-  const finalContent = 
-    cleanedContent.substring(0, headEndIdx) + 
-    schemaBlock + 
-    cleanedContent.substring(headEndIdx);
+  // 5. Inject hoisted schemas if they exist, placing them right before </head>
+  if (schemas.length > 0) {
+    const headEndIdx = cleanedContent.indexOf('</head>');
+    if (headEndIdx !== -1) {
+      const uniqueSchemas = Array.from(new Set(schemas));
+      const schemaBlock = '\n' + uniqueSchemas.join('\n') + '\n';
+      cleanedContent = 
+        cleanedContent.substring(0, headEndIdx) + 
+        schemaBlock + 
+        cleanedContent.substring(headEndIdx);
+      console.log(`Successfully hoisted ${uniqueSchemas.length} schema(s) and optimized metadata for: ${path.relative(outDir, filePath)}`);
+    } else {
+      console.warn(`[Warning] </head> tag not found in ${filePath}, saving optimized metadata only`);
+    }
+  } else {
+    console.log(`Successfully optimized metadata for: ${path.relative(outDir, filePath)}`);
+  }
   
-  fs.writeFileSync(filePath, finalContent, 'utf8');
-  console.log(`Successfully hoisted ${uniqueSchemas.length} schema(s) into <head> for: ${path.relative(outDir, filePath)}`);
+  fs.writeFileSync(filePath, cleanedContent, 'utf8');
 }
 
 console.log('--- Running Post-Build SEO Schema Hoisting ---');

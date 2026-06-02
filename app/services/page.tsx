@@ -6,12 +6,16 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { bathroomServices } from "@/lib/bathroom-services";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: {
     absolute: "Bathroom Remodeling Services in Chandler AZ | Showers, Vanities & Tile | ARZ"
   },
   description: "Browse all bathroom services offered by ARZ Home Remodeling in Chandler AZ. Walk-in showers, tub conversions, tile, vanities, ADA baths. Licensed ROC contractor. Free estimates.",
+  alternates: {
+    canonical: `${siteConfig.url}/services/`,
+  },
   openGraph: {
     title: "Bathroom Remodeling Services in Chandler AZ | Showers, Vanities & Tile | ARZ",
     description: "Browse all bathroom services offered by ARZ Home Remodeling in Chandler AZ. Walk-in showers, tub conversions, tile, vanities, ADA baths. Licensed ROC contractor. Free estimates.",

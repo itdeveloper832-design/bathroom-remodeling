@@ -21,10 +21,10 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Tub-to-Shower Conversion Chandler AZ | Save Space",
+  title: "Tub - to - Shower Conversion Chandler AZ - Save Space",
   description: `Convert your unused tub into a spacious, curbless walk-in shower in days. Low-profile entry & custom tile. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Tub-to-Shower Conversion Chandler AZ | Save Space",
+    title: "Tub - to - Shower Conversion Chandler AZ - Save Space",
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
     url: `${siteConfig.url}/tub-to-shower-conversion/`,
     type: "website",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tub-to-Shower Conversion Chandler AZ | Save Space",
+    title: "Tub - to - Shower Conversion Chandler AZ - Save Space",
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
     images: [`${siteConfig.url}/images/og-shower.png`],
   },

@@ -119,7 +119,7 @@ export default function PermitsPage() {
               When planning a bathroom remodel, understanding local building codes is vital. A permit is a legal document issued by the City of Chandler that certifies your design and construction methods meet the International Residential Code (IRC) and local safety amendments.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Failing to secure required permits can lead to severe consequences. Homeowner's insurance policies often refuse to cover water damage or fire losses caused by unpermitted work. Furthermore, you may face fines and be forced to tear down finished tile work if code violations are discovered during a future home sale.
+              Failing to secure required permits can lead to severe consequences. Homeowner's insurance policies often refuse to cover water damage or fire losses caused by unpermitted work. also, you may face fines and be forced to tear down finished tile work if code violations are discovered during a future home sale.
             </p>
             <div className="flex items-start gap-3 bg-secondary border border-border rounded-xl p-5 mt-6">
               <FileText className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />

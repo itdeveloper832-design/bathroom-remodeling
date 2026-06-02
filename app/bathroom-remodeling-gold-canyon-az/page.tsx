@@ -23,17 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Gold Canyon AZ | Premium Renovations | ARZ",
+  title: "Bathroom Remodeling Gold Canyon AZ - Premium Renovations - ARZ",
   description: `Luxury bathroom remodeling in Gold Canyon, AZ. Walk-in showers, spa tub upgrades & custom tile. ROC Licensed, premium designs. Free quote: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling Gold Canyon AZ | Premium Renovations | ARZ",
+    title: "Bathroom Remodeling Gold Canyon AZ - Premium Renovations - ARZ",
     description: "Expert bathroom remodeling in Gold Canyon, AZ. Premium designs, zero-threshold tile walk-in showers, and master suite conversions. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-gold-canyon-az/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Gold Canyon AZ | Premium Renovations | ARZ",
+    title: "Bathroom Remodeling Gold Canyon AZ - Premium Renovations - ARZ",
     description: "Luxury bathroom remodeling in Gold Canyon, AZ. Licensed custom tile & spa shower experts.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
@@ -203,7 +203,7 @@ export default function GoldCanyonPage() {
               At ARZ Home Remodeling, we specialize in high-end **bathroom remodeling in Gold Canyon, AZ**, delivering custom tiled curbless showers, quartz vanity setups, and luxury master bath renovations in zip code **85118**. We operate under license **ROC #ROC338304**, utilizing Pinal County building code standards, advanced Schluter moisture waterproofing backing systems, and non-porous resin epoxy grouts.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              **Custom Septic & Specialized Drainage Inspections:** Homes in the scenic Gold Canyon foothills often feature private septic tanks or custom gravity drainage lines. Altering your plumbing footprint—such as moving a toilet drain or replacing an alcove tub with a zero-threshold custom sloped shower bed—requires precise venting knowledge to ensure perfect code compliance. We audit the drainage stack before tiling to prevent backup or slow drain issues, ensuring years of worry-free operation.
+              **Custom Septic & Specialized Drainage Inspections:** Homes in the scenic Gold Canyon foothills often feature private septic tanks or custom gravity drainage lines. Altering your plumbing footprint - such as moving a toilet drain or replacing an alcove tub with a zero-threshold custom sloped shower bed - requires precise venting knowledge to ensure perfect code compliance. We audit the drainage stack before tiling to prevent backup or slow drain issues, ensuring years of worry-free operation.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               **Pinal County Permitting & Building Safety:** Any structural alterations or major mechanical modifications require a permit through the **Pinal County Planning & Development Department** (processed out of Florence, AZ). ARZ Home Remodeling coordinates the entire structural framing blueprint creation, permit submission, and county inspections pipeline, ensuring complete building code compliance.

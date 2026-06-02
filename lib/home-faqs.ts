@@ -3,54 +3,44 @@ export type HomeFaq = { question: string; answer: string };
 /** Homepage + FAQ schema (plain text for JSON-LD; HTML for UI) */
 export const homeFaqs: HomeFaq[] = [
   {
-    question: "How much does bathroom remodeling cost in Chandler?",
+    question: "How much does a typical master bathroom remodel cost in Chandler?",
     answer:
-      "Most full bathroom remodels in Chandler run about <strong>$12,500 to $38,000+</strong> depending on size and finishes. Guest bath refreshes are often <strong>$6,500 to $15,000</strong>. Tub-to-shower conversions are commonly <strong>$8,500 to $16,000</strong>. We provide a written line-item estimate before work starts.",
+      "A professional master bathroom remodel in Chandler generally ranges from <strong>twenty thousand to forty five thousand dollars</strong>. Focused guest bathroom updates or standard tub replacements range from <strong>seven thousand five hundred to sixteen thousand dollars</strong>. Total costs depend on the size of the room, layout modifications, and material choices. We provide comprehensive, itemized quotes before any work begins.",
   },
   {
-    question: "How long does a bathroom remodel take?",
+    question: "How long does a standard bathroom remodel take?",
     answer:
-      "A typical guest or hall bath takes about <strong>2 to 3 weeks</strong> of construction. Tub-to-shower projects are often <strong>3 to 5 days</strong> once demolition begins. Large master baths with layout changes can take <strong>4 to 6 weeks</strong>. You get a day-by-day schedule before we start.",
+      "We complete most standard bathroom remodels in Chandler within <strong>two to three weeks</strong> of active construction. Outdated garden tub swaps or simple tub-to-shower conversions are completed in <strong>ten to fourteen days</strong> once demolition begins. Large custom master baths with complex plumbing re-routes can take <strong>four to five weeks</strong>.",
   },
   {
-    question: "Do you need a permit for a bathroom remodel in Chandler?",
+    question: "Do I need a building permit to remodel my bathroom in Chandler?",
     answer:
-      "Yes, when you move plumbing, change walls, or upgrade electrical. Swapping a vanity or retiling a floor usually does not require a permit. We handle Chandler Development Services permits and inspections when your project needs them. See our <a href=\"/bathroom-remodeling-permits-chandler/\" class=\"text-primary hover:underline\">Chandler permit guide</a> for details.",
+      "Yes, the City of Chandler requires a building permit for any structural alterations, major plumbing adjustments, or new electrical circuits. Cosmetic swaps like replacing vanity cabinets, updating faucets, or retiling a wall in the same layout do not require permits. We manage the entire permit filing and inspection process with the local development services office for you.",
   },
   {
-    question: "What is a tub-to-shower conversion?",
+    question: "Can I convert my unused garden bathtub into a modern walk-in tile shower?",
     answer:
-      "A tub-to-shower conversion removes the bathtub, resets the drain for a shower, waterproofs the pan and walls, and installs a walk-in shower with tile and glass. It is one of the most common upgrades in Chandler homes with unused garden tubs.",
+      "Yes. We specialize in converting outdated, high-step garden bathtubs into modern walk-in tile showers. Our process involves removing the old tub, re-routing the plumbing drains, installing a durable Schluter-KERDI waterproofing system, and laying custom slip-resistant tile. Most conversions are completed in <strong>ten to fourteen days</strong>.",
   },
   {
-    question: "Are walk-in showers worth it?",
+    question: "Are walk-in showers worth it for home resale value?",
     answer:
-      "For most homeowners, yes. Walk-in showers open up the room, are easier to clean than tub surrounds, and work well for aging in place when built with a low curb and slip-resistant tile.",
+      "Yes. Swapping an unused garden tub in the master bath for a spacious, modern walk-in shower almost always increases your property value and market appeal. Buyers in the East Valley favor open layouts, modern glass surrounds, and low-maintenance custom tile work over outdated garden tubs.",
   },
   {
-    question: "What tile works best in Arizona bathrooms?",
+    question: "What materials hold up best against Chandler’s hard water?",
     answer:
-      "<strong>Porcelain tile</strong> handles moisture and Chandler hard water well. We recommend <strong>epoxy grout</strong> on shower walls and floors where mineral buildup is a problem. Use a textured finish with COF 0.60 or higher on shower floors.",
+      "We highly recommend large-format porcelain tile paired with premium chemical-resistant epoxy grout. Porcelain is non-porous and resists the white calcium scaling common to high-mineral East Valley water, while epoxy grout prevents mineral penetration and staining, making your custom shower easy to clean.",
   },
   {
-    question: "Can you convert a bathtub into a shower?",
+    question: "Why should I hire a specialized bathroom remodeler rather than a general handyman?",
     answer:
-      "Yes. We remove the tub, modify the drain, install Schluter-Kerdi waterproofing, and set custom tile with a frameless or semi-frameless glass panel. Most projects keep the same footprint as the old tub alcove.",
+      "Hiring a specialized bathroom remodeler ensures your project is completed by technicians who specialize exclusively in wet-area waterproofing, subfloor structural reinforcement, and precise tile alignment. General handymen lack the specialized licensing (ROC #338304) and advanced tools required to protect your home from mold and structural rot.",
   },
   {
-    question: "What is included in ADA bathroom remodeling?",
+    question: "Do you offer financing options for bathroom remodeling in Chandler?",
     answer:
-      "Accessible baths often include <strong>curbless showers</strong>, grab bars anchored into studs, comfort-height toilets, slip-resistant tile, and open vanities for wheelchair approach. We follow universal design standards for aging in place in Arizona homes.",
-  },
-  {
-    question: "Does bathroom remodeling increase home value?",
-    answer:
-      "Updated bathrooms are one of the first rooms buyers notice in the East Valley. A well-done remodel often recovers a large share of the cost at resale, especially with a modern shower and double vanity.",
-  },
-  {
-    question: "What bathroom remodeling mistakes should homeowners avoid?",
-    answer:
-      "Skipping waterproofing behind tile, undersized exhaust fans, missing HOA approvals in master-planned areas like Ocotillo or Fulton Ranch, and hiring unlicensed trades for plumbing or electrical in wet areas.",
+      "Yes, we provide competitive financing options and custom monthly payment plans for remodeling projects over five thousand dollars. This helps keep your home upgrades affordable while ensuring the job is done by licensed professionals.",
   },
 ];
 
@@ -61,3 +51,4 @@ export function faqAnswerPlain(html: string): string {
     .replace(/\s+/g, " ")
     .trim();
 }
+

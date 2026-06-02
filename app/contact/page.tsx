@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   description: "Contact Chandler's top-rated bathroom remodeling contractor. Fill out our form or call (520) 569-3339 to schedule a free in-home consultation today.",
   openGraph: {
-    title: "Free Bathroom Remodel Estimates | ARZ Home Remodeling",
+    title: "Free Bathroom Remodel Estimates - ARZ Home Remodeling",
     description: "Contact Chandler's top-rated bathroom remodeling contractor. Fill out our form or call (520) 569-3339 to schedule a free in-home consultation today.",
     url: `${siteConfig.url}/contact/`,
     type: "website",

@@ -23,17 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Maricopa AZ | Licensed & Insured | ARZ",
+  title: "Bathroom Remodeling Maricopa AZ - Licensed & Insured - ARZ",
   description: `Top-rated bathroom remodeling in Maricopa, AZ. Zero-threshold curbless showers, tub conversions & senior safety conversions. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling Maricopa AZ | Licensed & Insured | ARZ",
+    title: "Bathroom Remodeling Maricopa AZ - Licensed & Insured - ARZ",
     description: "Expert bathroom remodeling in Maricopa, AZ. Specialized ADA curbless showers, tub-to-shower conversions, and guest bath transformations. Free quotes.",
     url: `${siteConfig.url}/bathroom-remodeling-maricopa-az/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Maricopa AZ | Licensed & Insured | ARZ",
+    title: "Bathroom Remodeling Maricopa AZ - Licensed & Insured - ARZ",
     description: "Expert bathroom remodels and curbless shower conversions in Maricopa, AZ. Fully licensed ROC338304.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },

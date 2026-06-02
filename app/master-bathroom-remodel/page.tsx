@@ -14,10 +14,10 @@ import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Master Bathroom Remodel Chandler AZ | Custom Luxury",
+  title: "Master Bathroom Remodel Chandler AZ - Custom Luxury",
   description: `Luxury master suite bathroom design & remodeling in Chandler & Mesa. Double vanities, freestanding tubs, smart lighting. ROC338304. Estimate: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Master Bathroom Remodel Chandler AZ | Custom Luxury",
+    title: "Master Bathroom Remodel Chandler AZ - Custom Luxury",
     description: "Master bathroom remodel in Chandler, AZ. Custom tile showers, frameless glass, double vanities, quartz tops. Licensed ROC338304. Free estimate.",
     url: `${siteConfig.url}/master-bathroom-remodel/`,
     type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Master Bathroom Remodel Chandler AZ | Custom Luxury",
+    title: "Master Bathroom Remodel Chandler AZ - Custom Luxury",
     description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities and full renovation.",
     images: [`${siteConfig.url}/images/og-master-suite.png`],
   },

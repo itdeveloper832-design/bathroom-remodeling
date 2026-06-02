@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors. Learn about costs, materials, and master bath layouts.",
   openGraph: {
-    title: "Bathroom Remodeling Blog & Tips | ARZ Home Remodeling",
+    title: "Bathroom Remodeling Blog & Tips - ARZ Home Remodeling",
     description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors. Learn about costs, materials, and master bath layouts.",
     url: `${siteConfig.url}/blog/`,
     type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Blog & Tips | ARZ Home Remodeling",
+    title: "Bathroom Remodeling Blog & Tips - ARZ Home Remodeling",
     description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors.",
     images: [`${siteConfig.url}/images/og-blog-index.png`],
   },

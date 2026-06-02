@@ -18,10 +18,10 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Bathroom Tile Installer Chandler AZ | Custom Shower Tile",
+  title: "Bathroom Tile Installer Chandler AZ - Custom Shower Tile",
   description: `Expert shower & bathroom floor tile installation in Chandler, AZ. Epoxy grout & hard water scale defense systems. Licensed ROC338304. Call ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Tile Installer Chandler AZ | Custom Shower Tile",
+    title: "Bathroom Tile Installer Chandler AZ - Custom Shower Tile",
     description: "Professional tile setting in Chandler with shower walls, floor tiles, and backsplash work.",
     url: `${siteConfig.url}/bathroom-tile-installation`,
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Tile Installer Chandler AZ | Custom Shower Tile",
+    title: "Bathroom Tile Installer Chandler AZ - Custom Shower Tile",
     description: "Professional tiling services in Chandler with shower walls, floor tiles, and backsplashes.",
     images: [`${siteConfig.url}/images/og-tile-install.png`],
   },

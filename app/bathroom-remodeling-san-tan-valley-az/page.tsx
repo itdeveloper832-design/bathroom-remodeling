@@ -23,17 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling San Tan Valley AZ | Licensed & Insured | ARZ",
+  title: "Bathroom Remodeling San Tan Valley AZ - Licensed & Insured - ARZ",
   description: `Top-rated bathroom remodeling in San Tan Valley, AZ. Master suite overhauls, tub conversions & custom tiling. ROC Licensed. Book a free quote: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling San Tan Valley AZ | Licensed & Insured | ARZ",
+    title: "Bathroom Remodeling San Tan Valley AZ - Licensed & Insured - ARZ",
     description: "Expert bathroom remodeling in San Tan Valley, AZ. Curbless walk-in tile showers, tub-to-shower conversions, and double vanities. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-san-tan-valley-az/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling San Tan Valley AZ | Licensed & Insured | ARZ",
+    title: "Bathroom Remodeling San Tan Valley AZ - Licensed & Insured - ARZ",
     description: "Licensed San Tan Valley bathroom contractors. Custom showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },

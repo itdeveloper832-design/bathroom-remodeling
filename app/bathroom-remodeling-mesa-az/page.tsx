@@ -23,17 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Mesa AZ | Licensed ROC338304 | ARZ",
+  title: "Bathroom Remodel Mesa AZ - Licensed ROC338304 - ARZ",
   description: `Professional bathroom remodeling in Mesa, AZ. Master baths, tub conversions & custom tiling. Licensed ROC338304. 5★ rated. Book a free quote: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodel Mesa AZ | Licensed ROC338304 | ARZ",
+    title: "Bathroom Remodel Mesa AZ - Licensed ROC338304 - ARZ",
     description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-mesa-az/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodel Mesa AZ | Licensed ROC338304 | ARZ",
+    title: "Bathroom Remodel Mesa AZ - Licensed ROC338304 - ARZ",
     description: "Licensed Mesa bathroom contractors. Custom showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-mesa.jpg`],
   },

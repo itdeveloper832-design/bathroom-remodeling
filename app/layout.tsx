@@ -87,6 +87,22 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth`}>
       <head>
+        {/* Network Resource Hints (Preconnect & DNS-Prefetch) */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.clarity.ms" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        <link rel="preconnect" href="https://c.bing.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://c.bing.com" />
+        {siteConfig.umamiWebsiteId && (
+          <>
+            <link rel="preconnect" href="https://cloud.umami.is" crossOrigin="anonymous" />
+            <link rel="dns-prefetch" href="https://cloud.umami.is" />
+          </>
+        )}
+
         <meta name="geo.region" content="US-AZ" />
         <meta name="geo.placename" content="Chandler" />
         <meta name="geo.position" content={`${siteConfig.address.coordinates.lat};${siteConfig.address.coordinates.lng}`} />

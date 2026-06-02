@@ -13,11 +13,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Apache Junction AZ | Licensed ROC338304",
+  title: "Bathroom Remodeling Apache Junction AZ - Licensed ROC338304",
   description:
     `Apache Junction's trusted bathroom remodeler. Custom walk-in showers, tub conversions & premium tiling. Licensed ROC338304. Free quotes: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling Apache Junction AZ | Licensed ROC338304",
+    title: "Bathroom Remodeling Apache Junction AZ - Licensed ROC338304",
     description:
       "Licensed Apache Junction bathroom contractors. Custom walk-in showers, tub conversions, and complete bathroom renovations. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-apache-junction-az/`,

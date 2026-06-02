@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   description: "Custom walk-in showers & tub-to-shower conversions in Chandler. Fixed pricing from $6,000. ROC licensed since 2010. Serving Ocotillo, Fulton Ranch & East Valley. Call for a free in-home estimate.",
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ | Licensed, ROC-Certified | Free Estimate",
+    title: "Bathroom Remodeling Chandler AZ - Licensed, ROC - Certified - Free Estimate",
     description:
       "Custom walk-in showers & tub-to-shower conversions in Chandler. Fixed pricing from $6,000. ROC licensed since 2010. Serving Ocotillo, Fulton Ranch & East Valley. Call for a free in-home estimate.",
     type: "website",

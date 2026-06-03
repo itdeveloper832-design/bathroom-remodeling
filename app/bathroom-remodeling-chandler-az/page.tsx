@@ -24,11 +24,11 @@ import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ - Licensed ROC338304",
+  title: "Bathroom Remodeling Chandler AZ | Licensed Contractor",
   description:
     `Chandler's trusted bathroom remodeler. Specializing in walk-in showers & custom baths. Licensed ROC338304. Family-owned. Free estimate: ${siteConfig.phone}.`,
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ - Licensed ROC338304",
+    title: "Bathroom Remodeling Chandler AZ | Licensed Contractor",
     description:
       "Licensed Chandler bathroom contractors. Walk-in showers, tub conversions, master bath renovations. Free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-chandler-az/`,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Chandler AZ - Licensed ROC338304",
+    title: "Bathroom Remodeling Chandler AZ | Licensed Contractor",
     description: "Licensed Chandler bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },

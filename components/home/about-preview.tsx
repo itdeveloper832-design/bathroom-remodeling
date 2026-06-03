@@ -19,7 +19,7 @@ export default function AboutPreview() {
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/optimized/bathroom-remodeling-licensed-crew.webp"
+                src="/images/optimized/bathroom-remodeling-licensed-crew.avif"
                 alt="ARZ Home Remodeling licensed contractor crew performing bathroom remodel in Chandler AZ"
                 fill
                 className="object-cover"

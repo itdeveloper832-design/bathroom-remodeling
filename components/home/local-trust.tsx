@@ -10,25 +10,25 @@ export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
     {
       name: "Better Business Bureau",
       href: "https://www.bbb.org/search?find_text=ARZ+Home+Remodeling&find_loc=Chandler%2C+AZ",
-      img: "/images/badges/bbb-badges.png",
+      img: "/images/badges/bbb-badges.avif",
       label: "Accredited Business",
     },
     {
       name: "Yelp Ratings",
       href: "https://www.yelp.com/search?find_desc=ARZ+Home+Remodeling&find_loc=Chandler%2C+AZ",
-      img: "/images/badges/yelp-badges.png",
+      img: "/images/badges/yelp-badges.avif",
       label: "5-Star Rated",
     },
     {
       name: "Nextdoor",
       href: "https://nextdoor.com/pages/arz-home-remodeling-chandler-az/",
-      img: "/images/badges/nextdoor-badges.png",
+      img: "/images/badges/nextdoor-badges.avif",
       label: "Neighborhood Favorite",
     },
     {
       name: "Chamber",
       href: "https://www.chandlerchamber.com/",
-      img: "/images/badges/chamber-badges.png",
+      img: "/images/badges/chamber-badges.avif",
       label: `${cityName} Chamber`,
     },
   ];

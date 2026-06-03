@@ -170,7 +170,7 @@ export default function DobsonRanchPage() {
               Dobson Ranch is Mesa's premier master-planned community, featuring beautiful parks, golf greens, and lakes. However, because many homes were built in the 1970s and 1980s, the bathrooms often suffer from outdated plumbing, small layouts, and deteriorated sub-floors. Upgrading these spaces not only prevents structural water damage but also brings a fresh, modern aesthetic that fits the active Dobson Ranch lifestyle.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in updating Dobson Ranch bathrooms. During demo, we replace old copper plumbing with modern, corrosion-resistant PEX water lines. We apply premium waterproofing systems like <Link href="/blog/why-we-use-schluter-kerdi-waterproofing-chandler/" className="text-primary hover:underline font-medium">Schluter-KERDI</Link> to ensure your custom shower is vapor-proof and leak-proof for the life of your home.
+              At ARZ Home Remodeling, we specialize in updating Dobson Ranch bathrooms. During demo, we replace old copper plumbing with modern, corrosion-resistant PEX water lines. We apply premium waterproofing systems like <Link href="/blog/schluter-kerdi-vs-redgard-arizona/" className="text-primary hover:underline font-medium">Schluter-KERDI</Link> to ensure your custom shower is vapor-proof and leak-proof for the life of your home.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">

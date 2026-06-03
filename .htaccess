@@ -16,6 +16,9 @@ DirectoryIndex index.html
   RewriteCond %{HTTP_HOST} ^www\.arzhomeremodeling\.com [NC]
   RewriteRule ^(.*)$ https://arzhomeremodeling.com/$1 [L,R=301]
   
+  # Redirect old Schluter-KERDI blog slug to the correct optimized URL (Bing Webmaster fix)
+  RewriteRule ^blog/why-we-use-schluter-kerdi-waterproofing-chandler/?$ /blog/schluter-kerdi-vs-redgard-arizona/ [L,R=301]
+  
   # Next.js routing - serve index.html for all non-file/non-directory requests
   # Exclude API routes and IndexNow files from rewrite
   RewriteCond %{REQUEST_FILENAME} !-f
@@ -56,6 +59,7 @@ DirectoryIndex index.html
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/x-icon "access plus 1 year"
   
@@ -112,6 +116,6 @@ Options -Indexes
 </FilesMatch>
 
 # Allow access to public files
-<FilesMatch "\.(jpg|jpeg|png|gif|webp|ico|css|js|svg|woff|woff2|ttf|otf)$">
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|ico|css|js|svg|woff|woff2|ttf|otf)$">
   Header set Cache-Control "public, max-age=31536000, immutable"
 </FilesMatch>

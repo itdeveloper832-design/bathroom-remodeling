@@ -21,7 +21,7 @@ const videos: VideoItem[] = [
     duration: "2:45 min",
     specs: ["Zero-threshold curbless entry", "Quartz double vanity", "Epoxy scale-free grout"],
     embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // High performance placeholder
-    previewImage: "/images/services/chandler-bathroom-remodel.webp",
+    previewImage: "/images/services/chandler-bathroom-remodel.avif",
   },
   {
     id: "vid-2",
@@ -30,7 +30,7 @@ const videos: VideoItem[] = [
     duration: "1:55 min",
     specs: ["5-day garden tub removal", "Schluter-KERDI waterproofing", "Hydrophobic frameless glass"],
     embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // High performance placeholder
-    previewImage: "/images/hero/luxury-shower-remodel-chandler.webp",
+    previewImage: "/images/hero/luxury-shower-remodel-chandler.avif",
   },
 ];
 

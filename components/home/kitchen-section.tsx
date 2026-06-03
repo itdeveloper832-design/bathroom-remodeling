@@ -59,7 +59,7 @@ export default function LegacySection() {
           <div className="relative order-1 lg:order-2 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
-                src="/images/kitchen-showcase.jpg"
+                src="/images/kitchen-showcase.avif"
                 alt="Legacy remodeling project preview"
                 fill
                 className="object-cover"

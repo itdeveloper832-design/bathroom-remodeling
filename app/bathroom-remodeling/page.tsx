@@ -18,10 +18,10 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler: Licensed Pros & Free Estimates",
+  title: "Bathroom Remodeling Chandler | Licensed Pros",
   description: "Bathroom remodeling in Chandler, AZ by licensed contractors. Custom showers, master baths, tub-to-shower conversions, and tile. ROC338304. Free estimate.",
   openGraph: {
-    title: "Bathroom Remodeling Chandler: Licensed Pros & Free Estimates",
+    title: "Bathroom Remodeling Chandler | Licensed Pros",
     description: `Expert bathroom remodeling in Chandler, AZ. Licensed ROC338304. Free estimates: ${siteConfig.phone}.`,
     url: `${siteConfig.url}/bathroom-remodeling`,
     type: "website",

@@ -13,7 +13,7 @@ export default function DesignBuildShowcase() {
           <div className="relative order-2 lg:order-1">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border shadow-xl">
               <Image
-                src="/images/optimized/bathroom-remodeling-licensed-crew.webp"
+                src="/images/optimized/bathroom-remodeling-licensed-crew.avif"
                 alt="3D bathroom design visualizer and planning rendering software in Chandler Arizona"
                 fill
                 className="object-cover"

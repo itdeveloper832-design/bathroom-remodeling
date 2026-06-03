@@ -170,7 +170,7 @@ export default function OcotilloPage() {
               Ocotillo is famous for its gorgeous water features, upscale estates, and Spanish-style architecture. However, many master baths in these homes are still outfitted with outdated garden tubs, dark vanity alcoves, and vulnerable grout systems. Ripping out these eyesores and designing a modern, light-filled bathroom increases both daily enjoyment and property values.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in high-end bathroom remodeling in Ocotillo. We utilize advanced materials like <Link href="/blog/why-we-use-schluter-kerdi-waterproofing-chandler/" className="text-primary hover:underline font-medium">Schluter-KERDI waterproofing systems</Link> and stain-resistant epoxy grouts to ensure your new bathroom resists mold and stands up to Arizona's harsh temperatures.
+              At ARZ Home Remodeling, we specialize in high-end bathroom remodeling in Ocotillo. We utilize advanced materials like <Link href="/blog/schluter-kerdi-vs-redgard-arizona/" className="text-primary hover:underline font-medium">Schluter-KERDI waterproofing systems</Link> and stain-resistant epoxy grouts to ensure your new bathroom resists mold and stands up to Arizona's harsh temperatures.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">

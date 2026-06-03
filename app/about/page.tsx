@@ -345,25 +345,25 @@ export default function AboutPage() {
                   award: "BBB A+ Accredited",
                   issuer: "Better Business Bureau",
                   year: "Accredited since 2018",
-                  img: "/images/badges/bbb-badges.png"
+                  img: "/images/badges/bbb-badges.avif"
                 },
                 {
                   award: "Nextdoor Favorite",
                   issuer: "Neighborhood Awards",
                   year: "2024 Winner",
-                  img: "/images/badges/nextdoor-badges.png"
+                  img: "/images/badges/nextdoor-badges.avif"
                 },
                 {
                   award: "Yelp Top Rated",
                   issuer: "Client Reviews",
                   year: "5.0/5.0 Rating",
-                  img: "/images/badges/yelp-badges.png"
+                  img: "/images/badges/yelp-badges.avif"
                 },
                 {
                   award: "Chamber Member",
                   issuer: "Chandler Chamber",
                   year: "Active Member",
-                  img: "/images/badges/chamber-badges.png"
+                  img: "/images/badges/chamber-badges.avif"
                 },
                 {
                   award: "Licensed & Insured",

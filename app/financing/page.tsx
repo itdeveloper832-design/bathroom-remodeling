@@ -9,10 +9,10 @@ import { siteConfig } from "@/lib/site-config"
 import { Check, Calculator, Clock, Shield, CreditCard } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Financing Chandler AZ - Payment Plans",
+  title: "Bathroom Remodel Financing | Chandler AZ",
   description: "Affordable bathroom remodel financing. Get the custom bathroom you want today with low monthly payments in Chandler, AZ.",
   openGraph: {
-    title: "Bathroom Remodeling Financing Chandler AZ",
+    title: "Bathroom Remodel Financing | Chandler AZ",
     description: "Flexible financing options with low monthly payments and competitive rates for your bathroom project.",
     url: `${siteConfig.url}/financing/`,
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Financing Chandler AZ",
+    title: "Bathroom Remodel Financing | Chandler AZ",
     description: "Flexible financing options with low monthly payments for your bathroom project.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },

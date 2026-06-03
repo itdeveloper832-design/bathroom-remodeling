@@ -23,17 +23,17 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Sun Lakes AZ - Walk-in Showers & Walk-In Showers",
+  title: "Bathroom Remodeling Sun Lakes AZ | Walk-In Showers",
   description: "Senior-friendly bathroom remodeling in Sun Lakes, AZ. Licensed specialists for zero-threshold walk-in showers, grab bars, and ADA renovations in 85248.",
   openGraph: {
-    title: "Bathroom Remodeling Sun Lakes AZ - Walk-in Showers & Walk-In Showers",
+    title: "Bathroom Remodeling Sun Lakes AZ | Walk-In Showers",
     description: "Expert safety-focused bathroom remodeling in Sun Lakes, AZ. Zero-threshold walk-in showers, handicap accessible layouts, and custom safety bars. Free quotes: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-sun-lakes/`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bathroom Remodeling Sun Lakes AZ - Walk-in Showers & Walk-In Showers",
+    title: "Bathroom Remodeling Sun Lakes AZ | Walk-In Showers",
     description: "Licensed Sun Lakes bathroom contractors. ADA walk-in showers, tub conversions, senior safety upgrades.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },

@@ -23,8 +23,8 @@ export function getDedicatedAreaMetadata(areaSlug: string, path: string) {
   if (!areaData) return null;
 
   return {
-    title: `${areaData.areaName} Bathroom Remodeling Chandler AZ - Professional Service`,
-    description: `Licensed bathroom remodeling in ${areaData.areaName}, Chandler AZ. ${areaData.description} ROC338304. Free estimate: ${siteConfig.phone}.`,
+    title: `${areaData.areaName} Bathroom Remodeling | Chandler AZ`,
+    description: `Licensed bathroom remodelers in ${areaData.areaName}, Chandler AZ. Custom showers & full renovations. Free estimate: ${siteConfig.phone}.`,
     canonical: `${siteConfig.url}${path}`,
   };
 }

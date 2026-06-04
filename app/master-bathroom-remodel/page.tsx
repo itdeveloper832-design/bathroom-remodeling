@@ -14,8 +14,8 @@ import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Master Bathroom Remodel Chandler AZ - Custom Luxury",
-  description: `Luxury master suite bathroom design & remodeling in Chandler & Mesa. Double vanities, freestanding tubs, smart lighting. ROC338304. Estimate: ${siteConfig.phone}.`,
+  title: "Master Bathroom Remodel Chandler AZ | Free Estimate",
+  description: "Professional master bathroom remodel in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Master Bathroom Remodel Chandler AZ - Custom Luxury",
     description: "Master bathroom remodel in Chandler, AZ. Custom tile showers, frameless glass, double vanities, quartz tops. Licensed ROC338304. Free estimate.",

@@ -11,9 +11,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Master Bathroom Remodel Cost Chandler AZ - 2025 Pricing Guide",
-  description:
-    "How much does a master bathroom remodel cost in Chandler, AZ? Compare pricing for custom double vanities, tile flooring, walk-in showers, and tubs.",
+  title: "Master Bathroom Remodel Cost Chandler AZ | Free Estimate",
+  description: "Professional master bathroom remodel cost in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Master Bathroom Remodel Cost Chandler AZ - 2025 Pricing Guide",
     description:

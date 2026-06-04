@@ -22,6 +22,15 @@ export async function generateLocationMetadata({
   const location = findLocationBySlug(locationSlug);
   if (!location) return {};
 
+  let locationOverrides: Record<string, { title: string; description: string }> = {};
+  try {
+    locationOverrides = require("../../lib/location-metadata-overrides.json");
+  } catch (e) {
+    // Safe fallback
+  }
+
+  const override = locationOverrides[locationSlug];
+
   const displayName =
     location.type === "zip"
       ? `Chandler, AZ ${location.zipData.zip}`
@@ -30,12 +39,15 @@ export async function generateLocationMetadata({
         : "Chandler, AZ";
 
   const isZip = /^\d{5}$/.test(locationSlug);
-  const title = isZip
+  const defaultTitle = isZip
     ? `Bathroom Remodeling ZIP ${location.zipData.zip} | ARZ Home Remodeling`
     : `Bathroom Remodeling ${displayName} | ARZ Home Remodeling`;
-  const description = isZip
+  const defaultDescription = isZip
     ? `Licensed bathroom remodeling contractor in ZIP ${location.zipData.zip}, Chandler AZ. Custom walk-in showers & tub conversions. Free estimates!`
     : `Licensed bathroom remodeling contractor in ${displayName}, Chandler AZ. Custom walk-in showers & tub conversions. Free estimates!`;
+
+  const title = override ? override.title : defaultTitle;
+  const description = override ? override.description : defaultDescription;
 
   return {
     title: {

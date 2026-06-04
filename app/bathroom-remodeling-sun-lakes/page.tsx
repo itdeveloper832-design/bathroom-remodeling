@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Sun Lakes AZ | Walk-In Showers",
-  description: "Senior-friendly bathroom remodeling in Sun Lakes, AZ. Licensed specialists for zero-threshold walk-in showers, grab bars, and ADA renovations in 85248.",
+  title: "Bathroom Remodeling Sun Lakes Chandler AZ | Free Estimate",
+  description: "Professional bathroom remodeling sun lakes in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Sun Lakes AZ | Walk-In Showers",
     description: "Expert safety-focused bathroom remodeling in Sun Lakes, AZ. Zero-threshold walk-in showers, handicap accessible layouts, and custom safety bars. Free quotes: (520) 569-3339.",

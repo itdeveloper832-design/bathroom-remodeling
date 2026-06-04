@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Fulton Ranch Chandler AZ - Custom Builder",
-  description: "Licensed bathroom remodeling contractor serving Fulton Ranch, Chandler, AZ. Specialty master bath designs, custom tile work, and walk-in showers in 85248.",
+  title: "Bathroom Remodeling Fulton Ranch Chandler AZ | Free Estimate",
+  description: "Professional bathroom remodeling fulton ranch in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Fulton Ranch Chandler AZ - Custom Builder",
     description: "Upgrade your master bath in Fulton Ranch, Chandler, AZ. Expert custom tile, curbless walk-in showers, and premium double vanities. Free quotes: (520) 569-3339.",

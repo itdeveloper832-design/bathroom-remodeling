@@ -6,8 +6,8 @@ import { siteConfig } from "@/lib/site-config"
 import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - ARZ Home Remodeling",
-  description: "Privacy Policy for ARZ Home Remodeling. Learn how we collect, use and protect your personal information.",
+  title: "Privacy Policy Chandler AZ | Free Estimate",
+  description: "Professional privacy policy in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Privacy Policy - ARZ Home Remodeling",
     description: "Learn how we collect, use and protect your personal information.",

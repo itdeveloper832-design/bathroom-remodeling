@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Mesa AZ | Licensed Contractor",
-  description: `Professional bathroom remodeling in Mesa, AZ. Master baths, tub conversions & custom tiling. Licensed ROC338304. 5★ rated. Book a free quote: ${siteConfig.phone}.`,
+  title: "Bathroom Remodeling Mesa Az Chandler AZ | Free Estimate",
+  description: "Professional bathroom remodeling mesa az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodel Mesa AZ | Licensed Contractor",
     description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",

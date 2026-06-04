@@ -24,9 +24,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Licensed Bathroom Contractor Ahwatukee AZ - Quality Craftsmanship",
-  description:
-    "Hire the top-rated bathroom remodeling company in Ahwatukee, AZ. We specialize in master bathroom renovations, shower replacements, and tub-to-shower conversions. Licensed company, free estimates: call (520) 569-3339 today!",
+  title: "Bathroom Remodeling Ahwatukee Az Chandler AZ | Free Estimate",
+  description: "Professional bathroom remodeling ahwatukee az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Ahwatukee AZ - ARZ Home Remodeling",
     description:

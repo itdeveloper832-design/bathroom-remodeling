@@ -13,9 +13,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Cost Chandler AZ - 2025 Pricing Guide",
-  description:
-    "Complete bathroom remodeling cost guide for Chandler, AZ. Guest bath updates from $4,500, tub-to-shower conversions $6,000–$13,000, master bath remodels $18,000–$45,000+. Free itemized estimates.",
+  title: "Bathroom Remodel Cost Chandler Chandler AZ | Free Estimate",
+  description: "Professional bathroom remodel cost chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Cost Chandler AZ - 2025 Pricing Guide",
     description:

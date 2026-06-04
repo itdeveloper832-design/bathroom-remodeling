@@ -13,9 +13,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Apache Junction | Licensed Contractor",
-  description:
-    `Apache Junction's trusted bathroom remodeler. Custom walk-in showers, tub conversions & premium tiling. Licensed ROC338304. Free quotes: ${siteConfig.phone}.`,
+  title: "Bathroom Remodeling Apache Junction Az Chandler AZ | Free Es",
+  description: "Professional bathroom remodeling apache junction az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Apache Junction | Licensed Contractor",
     description:

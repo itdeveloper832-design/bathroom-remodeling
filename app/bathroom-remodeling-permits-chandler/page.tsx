@@ -11,9 +11,8 @@ import Link from "next/link";
 import { ArrowRight, FileText, CheckCircle2, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Permits Chandler AZ - Guide & Requirements",
-  description:
-    "Do you need a permit for a bathroom remodel in Chandler, AZ? Learn City of Chandler permit rules, fees, and inspection guidelines.",
+  title: "Bathroom Remodeling Permits Chandler Chandler AZ | Free Esti",
+  description: "Professional bathroom remodeling permits chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Permits Chandler AZ - Guide & Requirements",
     description:

@@ -9,10 +9,8 @@ import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/seo
 import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {
-  title: {
-    absolute: "Free Bathroom Remodel Estimates | ARZ Home Remodeling"
-  },
-  description: "Contact Chandler's top-rated bathroom remodeling contractor. Fill out our form or call (520) 569-3339 to schedule a free in-home consultation today.",
+  title: "Contact ARZ Home Remodeling | Chandler AZ",
+  description: "Need a bathroom remodel in Chandler, AZ? Contact ARZ Home Remodeling today for a free consultation and project estimate.",
   openGraph: {
     title: "Free Bathroom Remodel Estimates - ARZ Home Remodeling",
     description: "Contact Chandler's top-rated bathroom remodeling contractor. Fill out our form or call (520) 569-3339 to schedule a free in-home consultation today.",

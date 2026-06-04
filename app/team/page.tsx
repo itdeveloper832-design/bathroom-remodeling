@@ -8,8 +8,8 @@ import { ExternalLink, Award, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Meet Our Team - Licensed Bathroom Contractors",
-  description: "Meet the expert team behind ARZ Home Remodeling. Licensed Arizona contractors specializing in bathroom remodeling in Chandler with 15+ years of experience.",
+  title: "Team Chandler AZ | Free Estimate",
+  description: "Professional team in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Meet Our Team - ARZ Home Remodeling",
     description: "Meet the licensed bathroom contractors and experts at ARZ Home Remodeling in Chandler, Arizona.",

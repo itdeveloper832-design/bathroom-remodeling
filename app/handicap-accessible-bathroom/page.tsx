@@ -14,8 +14,8 @@ import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Handicap Accessible Bathroom Chandler AZ - ADA Compliant Remodels",
-  description: "Handicap accessible bathroom remodels in Chandler, AZ. ADA-compliant design with curbless showers, grab bars, accessible vanities. Licensed ROC338304. Free estimate.",
+  title: "Handicap Accessible Bathroom Chandler AZ | Free Estimate",
+  description: "Professional handicap accessible bathroom in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Handicap Accessible Bathroom Chandler AZ - ADA Compliant",
     description: "Accessible bathroom remodels in Chandler, AZ. Curbless showers, grab bars, wider doorways, accessible vanities. ADA-compliant design.",

@@ -24,9 +24,8 @@ import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Licensed Contractor",
-  description:
-    `Chandler's trusted bathroom remodeler. Specializing in walk-in showers & custom baths. Licensed ROC338304. Family-owned. Free estimate: ${siteConfig.phone}.`,
+  title: "Bathroom Remodeling Chandler Az Chandler AZ | Free Estimate",
+  description: "Professional bathroom remodeling chandler az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | Licensed Contractor",
     description:

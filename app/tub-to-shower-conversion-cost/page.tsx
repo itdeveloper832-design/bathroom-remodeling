@@ -11,9 +11,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tub-to-Shower Conversion Cost | Chandler AZ",
-  description:
-    "How much does a tub-to-shower conversion cost in Chandler, AZ? Complete guide on demolition, plumbing modifications, waterproofing, and custom tile costs.",
+  title: "Tub To Shower Conversion Cost Chandler AZ | Free Estimate",
+  description: "Professional tub to shower conversion cost in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Tub-to-Shower Conversion Cost | Chandler AZ",
     description:

@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Tempe AZ - Licensed Contractor - ARZ",
-  description: `Bathroom remodeling Tempe AZ: showers, tub-to-shower, tile. Licensed ROC338304. Free estimate: ${siteConfig.phone}.`,
+  title: "Bathroom Remodeling Tempe Az Chandler AZ | Free Estimate",
+  description: "Professional bathroom remodeling tempe az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Tempe: Licensed Contractors & Free Quotes",
     description: "Expert bathroom remodeling in Tempe, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",

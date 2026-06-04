@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Maricopa AZ - Licensed & Insured - ARZ",
-  description: `Top-rated bathroom remodeling in Maricopa, AZ. Zero-threshold curbless showers, tub conversions & senior safety conversions. Free estimate: ${siteConfig.phone}.`,
+  title: "Bathroom Remodeling Maricopa Az Chandler AZ | Free Estimate",
+  description: "Professional bathroom remodeling maricopa az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Maricopa AZ - Licensed & Insured - ARZ",
     description: "Expert bathroom remodeling in Maricopa, AZ. Specialized ADA curbless showers, tub-to-shower conversions, and guest bath transformations. Free quotes.",

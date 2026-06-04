@@ -9,8 +9,8 @@ import { Award, Briefcase, MapPin, Phone, Mail, ExternalLink, Check } from "luci
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Alex Rivers - Licensed Bathroom Contractor and Owner",
-  description: "Meet Alex Rivers, founder and master bathroom contractor at ARZ Home Remodeling. Licensed ROC338304. 15+ years, 500+ completed projects in Chandler, Arizona. NARI certified.",
+  title: "Alex Rivers Chandler AZ | Free Estimate",
+  description: "Professional alex rivers in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Alex Rivers - Licensed Bathroom Contractor in Chandler AZ",
     description: "Founder of ARZ Home Remodeling. Licensed Arizona contractor with 15+ years of bathroom remodeling expertise.",

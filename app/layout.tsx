@@ -144,15 +144,6 @@ export default function RootLayout({
                 events.forEach(function(e) {
                   window.addEventListener(e, loadScripts, { passive: true });
                 });
-
-                // Fallback load after 4 seconds of idle time
-                if (window.requestIdleCallback) {
-                  window.requestIdleCallback(function() {
-                    setTimeout(loadScripts, 3500);
-                  });
-                } else {
-                  setTimeout(loadScripts, 4000);
-                }
               })();
             `,
           }}

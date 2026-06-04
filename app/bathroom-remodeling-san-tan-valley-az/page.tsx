@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling San Tan Valley AZ - Licensed & Insured - ARZ",
-  description: `Top-rated bathroom remodeling in San Tan Valley, AZ. Master suite overhauls, tub conversions & custom tiling. ROC Licensed. Book a free quote: ${siteConfig.phone}.`,
+  title: "Bathroom Remodeling San Tan Valley Az Chandler AZ | Free Est",
+  description: "Professional bathroom remodeling san tan valley az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling San Tan Valley AZ - Licensed & Insured - ARZ",
     description: "Expert bathroom remodeling in San Tan Valley, AZ. Curbless walk-in tile showers, tub-to-shower conversions, and double vanities. Free estimates.",

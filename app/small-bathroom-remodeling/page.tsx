@@ -19,8 +19,8 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Small Bathroom Remodeling Chandler AZ - Budget Friendly",
-  description: `Maximize space in your guest or hall bathroom. Smart space-saving vanities, curved corner showers, budget-friendly layouts. ROC338304. Call ${siteConfig.phone}.`,
+  title: "Small Bathroom Remodeling Chandler AZ | Free Estimate",
+  description: "Professional small bathroom remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Small Bathroom Remodeling Chandler AZ - Budget Friendly",
     description: "Expert small bathroom remodeling in Chandler. Maximize space with clever designs, compact fixtures, and luxury finishes.",

@@ -11,9 +11,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Walk-In Shower Cost Chandler AZ - 2025 Pricing Guide",
-  description:
-    "How much does a walk-in shower cost in Chandler, AZ? Learn the pricing for custom tile showers, curbless entries, frameless glass, and waterproofing packages.",
+  title: "Walk In Shower Cost Chandler AZ | Free Estimate",
+  description: "Professional walk in shower cost in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Walk-In Shower Cost Chandler AZ - 2025 Pricing Guide",
     description:

@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Gold Canyon AZ - Premium Renovations - ARZ",
-  description: `Luxury bathroom remodeling in Gold Canyon, AZ. Walk-in showers, spa tub upgrades & custom tile. ROC Licensed, premium designs. Free quote: ${siteConfig.phone}.`,
+  title: "Bathroom Remodeling Gold Canyon Az Chandler AZ | Free Estima",
+  description: "Professional bathroom remodeling gold canyon az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Remodeling Gold Canyon AZ - Premium Renovations - ARZ",
     description: "Expert bathroom remodeling in Gold Canyon, AZ. Premium designs, zero-threshold tile walk-in showers, and master suite conversions. Free estimates.",

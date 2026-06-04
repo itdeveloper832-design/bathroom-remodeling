@@ -32,6 +32,13 @@ function generateSlug(title: string): string {
     .trim();
 }
 
+let blogOverrides: Record<string, { title: string; description: string }> = {};
+try {
+  blogOverrides = require("../blog-metadata-overrides.json");
+} catch (e) {
+  // Safe fallback
+}
+
 const basePosts: BlogPost[] = [
   post_1,
   post_2,
@@ -53,26 +60,28 @@ const basePosts: BlogPost[] = [
   post_18,
   post_19,
   post_20
-].map((post, index) => ({
-
-  id: `post-${index + 1}`,
-  title: post.title,
-  slug: post.slug,
-  content: post.content,
-  excerpt: post.excerpt,
-  featuredImage: post.featuredImage,
-  category: post.category,
-  author: post.author,
-  status: post.status,
-  metaTitle: post.metaTitle,
-  metaDescription: post.metaDescription,
-  keywords: post.tags || [],
-  tags: post.tags,
-  readTime: index === 0 ? 12 : index === 1 ? 8 : index === 2 ? 5 : 10,
-  publishedAt: post.publishedAt,
-  createdAt: post.createdAt,
-  updatedAt: post.updatedAt,
-}));
+].map((post, index) => {
+  const override = blogOverrides[post.slug];
+  return {
+    id: `post-${index + 1}`,
+    title: post.title,
+    slug: post.slug,
+    content: post.content,
+    excerpt: post.excerpt,
+    featuredImage: post.featuredImage,
+    category: post.category,
+    author: post.author,
+    status: post.status,
+    metaTitle: override ? override.title : (post.metaTitle || post.title),
+    metaDescription: override ? override.description : (post.metaDescription || post.excerpt),
+    keywords: post.tags || [],
+    tags: post.tags,
+    readTime: index === 0 ? 12 : index === 1 ? 8 : index === 2 ? 5 : 10,
+    publishedAt: post.publishedAt,
+    createdAt: post.createdAt,
+    updatedAt: post.updatedAt,
+  };
+});
 
 let inMemoryPosts: BlogPost[] = [...basePosts];
 let inMemoryCategories: Category[] = [

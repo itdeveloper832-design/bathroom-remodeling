@@ -9,12 +9,12 @@ const SLUG = "downtown-chandler";
 const meta = getDedicatedAreaMetadata(SLUG, PATH)!;
 
 export const metadata: Metadata = {
-  title: meta.title,
-  description: meta.description,
+  title: "Bathroom Remodeling Downtown Chandler Chandler AZ | Free Est",
+  description: "Professional bathroom remodeling downtown chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   alternates: { canonical: meta.canonical },
   openGraph: {
-    title: meta.title,
-    description: meta.description,
+    title: "Bathroom Remodeling Downtown Chandler Chandler AZ | Free Est",
+    description: "Professional bathroom remodeling downtown chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
     url: meta.canonical,
     type: "website",
   },

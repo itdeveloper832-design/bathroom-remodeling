@@ -16,8 +16,8 @@ import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/j
 import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
-  title: "Bathroom Flooring Installation Chandler AZ - Professional Services",
-  description: "Professional bathroom flooring installation in Chandler, AZ. Waterproof tile, luxury vinyl, and stone flooring with expert installation.",
+  title: "Bathroom Flooring Installation Chandler AZ | Free Estimate",
+  description: "Professional bathroom flooring installation in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Flooring Installation Chandler AZ",
     description: "Professional bathroom flooring installation in Chandler with waterproof materials.",

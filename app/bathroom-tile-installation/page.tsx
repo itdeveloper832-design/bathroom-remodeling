@@ -18,8 +18,8 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 
 export const metadata: Metadata = {
-  title: "Bathroom Tile Installer Chandler AZ - Custom Shower Tile",
-  description: `Expert shower & bathroom floor tile installation in Chandler, AZ. Epoxy grout & hard water scale defense systems. Licensed ROC338304. Call ${siteConfig.phone}.`,
+  title: "Bathroom Tile Installation Chandler AZ | Free Estimate",
+  description: "Professional bathroom tile installation in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathroom Tile Installer Chandler AZ - Custom Shower Tile",
     description: "Professional tile setting in Chandler with shower walls, floor tiles, and backsplash work.",

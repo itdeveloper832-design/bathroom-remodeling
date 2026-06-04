@@ -20,8 +20,8 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Bathtub Remodeling Chandler | Tub Replacement",
-  description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation, and luxury upgrades. Licensed AZ contractor. Free itemized estimates!",
+  title: "Bathtub Remodeling Chandler AZ | Free Estimate",
+  description: "Professional bathtub remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {
     title: "Bathtub Remodeling Chandler | Tub Replacement",
     description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation, and luxury upgrades. Free estimates!",

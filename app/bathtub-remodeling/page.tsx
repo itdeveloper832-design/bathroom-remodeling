@@ -21,7 +21,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Bathtub Remodeling Chandler AZ | Free Estimate",
-  description: "Professional bathtub remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  description: "Refresh your bathroom with professional bathtub remodeling services. Custom solutions, quality finishes, and free quotes.",
   openGraph: {
     title: "Bathtub Remodeling Chandler | Tub Replacement",
     description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation, and luxury upgrades. Free estimates!",

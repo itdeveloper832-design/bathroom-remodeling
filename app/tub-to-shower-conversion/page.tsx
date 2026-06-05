@@ -21,8 +21,8 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Chandler AZ | Free Estimate",
-  description: "Professional tub to shower conversion in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Tub to Shower Conversion Chandler AZ | Free Quote",
+  description: "Replace your outdated bathtub with a modern walk-in shower. Fast installation and free estimates available.",
   openGraph: {
     title: "Tub-to-Shower Conversion | Chandler AZ",
     description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",

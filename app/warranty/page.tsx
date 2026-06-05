@@ -6,8 +6,8 @@ import { siteConfig } from "@/lib/site-config"
 import { Shield, CheckCircle, AlertTriangle, HelpCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Warranty Chandler AZ | Free Estimate",
-  description: "Professional warranty in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Remodeling Warranty Chandler AZ | Peace of Mind",
+  description: "Learn about our remodeling warranty coverage and commitment to quality workmanship and customer satisfaction.",
   openGraph: {
     title: "5-Year Workmanship Warranty - ARZ Home Remodeling",
     description: "Our 5-Year Workmanship Warranty guarantees the quality of our tile work, waterproofing, plumbing, and general bathroom remodeling.",

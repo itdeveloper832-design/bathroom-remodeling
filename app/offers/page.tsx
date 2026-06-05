@@ -8,8 +8,8 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Offers Chandler AZ | Free Estimate",
-  description: "Professional offers in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodeling Specials Chandler AZ | Save Now",
+  description: "Take advantage of limited-time remodeling offers and special discounts on bathroom renovation projects.",
   openGraph: {
     title: "Special Offers - Bathroom Remodeling",
     description: "Exclusive bathroom remodeling offers and promotions in Chandler, Arizona.",

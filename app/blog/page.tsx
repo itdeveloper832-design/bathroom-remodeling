@@ -5,8 +5,8 @@ import BlogContent from "./blog-content"
 import { getPublishedPosts, getCategories } from "@/lib/actions/blog"
 
 export const metadata: Metadata = {
-  title: "Blog Chandler AZ | Free Estimate",
-  description: "Professional blog in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodeling Blog | Chandler Homeowners Guide",
+  description: "Explore expert bathroom remodeling tips, design ideas, cost guides, and renovation advice for Chandler homeowners.",
   openGraph: {
     title: "Bathroom Remodeling Blog & Tips - ARZ Home Remodeling",
     description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors. Learn about costs, materials, and master bath layouts.",

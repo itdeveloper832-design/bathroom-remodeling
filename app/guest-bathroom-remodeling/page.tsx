@@ -20,8 +20,8 @@ import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "Guest Bathroom Remodeling Chandler AZ | Free Estimate",
-  description: "Professional guest bathroom remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Guest Bathroom Remodeling Chandler AZ | Free Quote",
+  description: "Create a welcoming guest bathroom with custom remodeling solutions, modern finishes, and expert craftsmanship.",
   openGraph: {
     title: "Guest Bathroom Remodeling Chandler AZ - Small Bath Renovations",
     description: "Expert guest bathroom and powder room remodeling in Chandler. High impact updates, efficient timelines, and quality finishes.",

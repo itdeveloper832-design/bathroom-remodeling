@@ -8,8 +8,8 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Careers Chandler AZ | Free Estimate",
-  description: "Professional careers in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Remodeling Careers Chandler AZ | Join Our Team",
+  description: "Explore rewarding career opportunities with ARZ Home Remodeling. Join a growing team dedicated to quality craftsmanship.",
   openGraph: {
     title: "Careers - Join Our Team",
     description: "Join our growing team in Chandler, Arizona. We're hiring experienced contractors.",

@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Mesa Az Chandler AZ | Free Estimate",
-  description: "Professional bathroom remodeling mesa az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodeling Mesa AZ | Trusted Local Experts",
+  description: "Create the bathroom you've always wanted with Mesa's remodeling experts. Quality craftsmanship and free consultations.",
   openGraph: {
     title: "Bathroom Remodel Mesa AZ | Licensed Contractor",
     description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",

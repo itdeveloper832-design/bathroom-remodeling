@@ -11,8 +11,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Master Bathroom Remodel Cost Chandler AZ | Free Estimate",
-  description: "Professional master bathroom remodel cost in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Master Bathroom Remodel Cost Chandler AZ | Guide",
+  description: "Discover master bathroom remodeling costs, budgeting tips, and pricing insights for Chandler homeowners.",
   openGraph: {
     title: "Master Bathroom Remodel Cost Chandler AZ - 2025 Pricing Guide",
     description:

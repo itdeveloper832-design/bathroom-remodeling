@@ -20,8 +20,8 @@ import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "ADA Bathroom Remodeling Chandler AZ | Free Estimate",
-  description: "Professional ada bathroom remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "ADA Bathroom Remodeling Chandler AZ | Free Quote",
+  description: "Safe, stylish ADA bathroom remodeling in Chandler, AZ. Improve accessibility, comfort, and independence with expert renovations.",
   openGraph: {
     title: "Accessible Shower Remodeling Chandler - ADA Specialist",
     description: "Expert ADA bathroom remodeling in Chandler. Safe walk-in showers, roll-in entries, and professional safety modifications for seniors and mobility needs.",

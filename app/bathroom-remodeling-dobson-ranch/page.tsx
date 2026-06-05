@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Dobson Ranch Chandler AZ | Free Estimate",
-  description: "Professional bathroom remodeling dobson ranch in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodeling Dobson Ranch | Local Experts",
+  description: "Transform your Dobson Ranch bathroom with custom showers, tile upgrades, vanities, and professional remodeling services.",
   openGraph: {
     title: "Bathroom Remodeling Dobson Ranch AZ - Custom Contractors",
     description: "Expert bathroom remodeling in Dobson Ranch, Mesa/Chandler AZ. Licensed contractors, custom tile walk-in showers, and layout updates. Free estimates: (520) 569-3339.",

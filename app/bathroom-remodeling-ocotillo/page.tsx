@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Ocotillo Chandler AZ | Free Estimate",
-  description: "Professional bathroom remodeling ocotillo in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodeling Ocotillo | Free Design Quote",
+  description: "Upgrade your Ocotillo bathroom with custom remodeling, premium finishes, and expert craftsmanship. Free estimates available.",
   openGraph: {
     title: "Bathroom Remodeling Ocotillo Chandler AZ - Custom Contractor",
     description: "Expert bathroom design & remodeling in Ocotillo, Chandler, AZ. Licensed contractors, luxury designs, and custom tile installations. Free estimates: (520) 569-3339.",

@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Garage Conversion Chandler Chandler AZ | Free Estimate",
-  description: "Professional garage conversion chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Garage Conversion Chandler AZ | Free Consultation",
+  description: "Convert your garage into valuable living space with Chandler's trusted remodeling professionals. Free estimates available.",
   openGraph: {
     title: "Garage Conversion Chandler AZ - Room Conversions - ARZ",
     description: "Expert garage conversions in Chandler, AZ. Convert underutilized garage space into luxury master suites, home offices, or guest quarters. Free estimates.",

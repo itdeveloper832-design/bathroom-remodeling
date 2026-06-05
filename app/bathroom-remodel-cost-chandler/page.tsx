@@ -13,8 +13,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Cost Chandler Chandler AZ | Free Estimate",
-  description: "Professional bathroom remodel cost chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodel Cost Chandler AZ | Pricing Guide",
+  description: "Discover bathroom remodeling costs in Chandler, AZ. Get accurate pricing, budgeting tips, and a free personalized estimate.",
   openGraph: {
     title: "Bathroom Remodeling Cost Chandler AZ - 2025 Pricing Guide",
     description:

@@ -9,8 +9,8 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema, PersonSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "About ARZ Home Remodeling | Chandler Remodeling",
-  description: "Learn why homeowners trust ARZ Home Remodeling for bathroom renovations in Chandler, AZ. Quality workmanship and free estimates.",
+  title: "About ARZ Home Remodeling | Chandler Bathroom Experts",
+  description: "Learn why Chandler homeowners trust ARZ Home Remodeling for quality bathroom renovations, transparent pricing & expert craftsmanship.",
   openGraph: {
     title: "About ARZ Home Remodeling – Chandler, AZ Bathroom Contractors Since 2010",
     description: "Family-owned bathroom remodeling company serving Chandler AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member, BBB A+.",

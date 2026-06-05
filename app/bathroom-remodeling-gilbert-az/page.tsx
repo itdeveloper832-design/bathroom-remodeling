@@ -23,8 +23,8 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Gilbert Az Chandler AZ | Free Estimate",
-  description: "Professional bathroom remodeling gilbert az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodeling Gilbert AZ | Trusted Local Pros",
+  description: "Upgrade your bathroom with Gilbert's trusted remodeling experts. Custom designs, quality craftsmanship & free estimates.",
   openGraph: {
     title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
     description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",

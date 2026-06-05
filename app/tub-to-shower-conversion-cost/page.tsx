@@ -11,8 +11,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tub To Shower Conversion Cost Chandler AZ | Free Estimate",
-  description: "Professional tub to shower conversion cost in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Tub to Shower Conversion Cost Chandler AZ",
+  description: "Learn the cost of converting a tub into a shower and get accurate pricing for your Chandler remodeling project.",
   openGraph: {
     title: "Tub-to-Shower Conversion Cost | Chandler AZ",
     description:

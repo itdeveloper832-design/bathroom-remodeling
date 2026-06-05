@@ -11,8 +11,8 @@ import Link from "next/link";
 import { ArrowRight, DollarSign, CheckCircle2, Percent } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Financing Chandler AZ | Free Estimate",
-  description: "Professional bathroom remodeling financing in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodeling Financing | Flexible Payment Plans",
+  description: "Explore affordable financing options for your bathroom remodel. Start your project now with flexible monthly payment plans.",
   openGraph: {
     title: "Bathroom Remodeling Financing | Chandler AZ",
     description:

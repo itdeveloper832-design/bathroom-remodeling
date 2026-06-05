@@ -13,8 +13,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Queen Creek Az Chandler AZ | Free Estima",
-  description: "Professional bathroom remodeling queen creek az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodeling Queen Creek AZ | Free Estimate",
+  description: "Transform your bathroom with Queen Creek's trusted remodeling professionals. Custom designs and quality workmanship.",
   openGraph: {
     title: "Bathroom Remodeling Queen Creek AZ - ARZ Home Remodeling",
     description:

@@ -16,8 +16,8 @@ import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/j
 import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
-  title: "Bathroom Lighting Installation Chandler AZ | Free Estimate",
-  description: "Professional bathroom lighting installation in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Lighting Installation Chandler AZ | Free Quote",
+  description: "Brighten your bathroom with modern lighting solutions. Chandler's trusted remodeling team delivers stylish, energy-efficient upgrades.",
   openGraph: {
     title: "Bathroom Lighting Installation Chandler AZ",
     description: "Professional bathroom lighting installation in Chandler with vanity and recessed LED fixtures.",

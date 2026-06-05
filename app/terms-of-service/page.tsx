@@ -6,8 +6,8 @@ import { siteConfig } from "@/lib/site-config"
 import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {
-  title: "Terms Of Service Chandler AZ | Free Estimate",
-  description: "Professional terms of service in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Terms of Service | ARZ Home Remodeling",
+  description: "Review the terms and conditions governing the use of ARZ Home Remodeling's website and services.",
   openGraph: {
     title: "Terms of Service - ARZ Home Remodeling",
     description: "Read our terms and conditions for using our services.",

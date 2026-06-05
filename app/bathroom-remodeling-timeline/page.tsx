@@ -11,8 +11,8 @@ import Link from "next/link";
 import { ArrowRight, Clock, CheckCircle2, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Timeline Chandler AZ | Free Estimate",
-  description: "Professional bathroom remodeling timeline in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  title: "Bathroom Remodeling Timeline | What to Expect",
+  description: "Learn how long a bathroom remodel takes and what to expect during each phase. Plan your renovation with confidence.",
   openGraph: {
     title: "Bathroom Remodeling Timeline Chandler AZ  - Project Schedule",
     description:

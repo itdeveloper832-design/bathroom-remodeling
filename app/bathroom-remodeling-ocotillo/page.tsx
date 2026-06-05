@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Ocotillo | Free Design Quote",
+  title: {
+    absolute: "Bathroom Remodeling Ocotillo | Free Design Quote"
+  },
   description: "Upgrade your Ocotillo bathroom with custom remodeling, premium finishes, and expert craftsmanship. Free estimates available.",
   openGraph: {
     title: "Bathroom Remodeling Ocotillo Chandler AZ - Custom Contractor",

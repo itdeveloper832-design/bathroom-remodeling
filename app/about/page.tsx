@@ -9,7 +9,9 @@ import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, H
 import { BreadcrumbSchema, FAQSchema, PersonSchema } from "@/components/seo/json-ld"
 
 export const metadata: Metadata = {
-  title: "About ARZ Home Remodeling | Chandler Bathroom Experts",
+  title: {
+    absolute: "About ARZ Home Remodeling | Chandler Bathroom Experts"
+  },
   description: "Learn why Chandler homeowners trust ARZ Home Remodeling for quality bathroom renovations, transparent pricing & expert craftsmanship.",
   openGraph: {
     title: "About ARZ Home Remodeling – Chandler, AZ Bathroom Contractors Since 2010",

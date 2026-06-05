@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Tempe AZ | Trusted Contractors",
+  title: {
+    absolute: "Bathroom Remodeling Tempe AZ | Trusted Contractors"
+  },
   description: "Upgrade your Tempe bathroom with custom remodeling solutions. Quality workmanship, transparent pricing & free quotes.",
   openGraph: {
     title: "Bathroom Remodeling Tempe: Licensed Contractors & Free Quotes",

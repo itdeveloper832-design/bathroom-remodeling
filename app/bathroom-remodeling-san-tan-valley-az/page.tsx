@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling San Tan Valley AZ | Free Quote",
+  title: {
+    absolute: "Bathroom Remodeling San Tan Valley AZ | Free Quote"
+  },
   description: "Create a beautiful new bathroom with expert remodeling services in San Tan Valley. Schedule your free consultation today.",
   openGraph: {
     title: "Bathroom Remodeling San Tan Valley AZ - Licensed & Insured - ARZ",

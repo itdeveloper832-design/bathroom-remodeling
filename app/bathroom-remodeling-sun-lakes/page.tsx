@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Sun Lakes | Local Experts",
+  title: {
+    absolute: "Bathroom Remodeling Sun Lakes | Local Experts"
+  },
   description: "Modern bathroom renovations for Sun Lakes homeowners. Premium materials, skilled craftsmanship, and free estimates.",
   openGraph: {
     title: "Bathroom Remodeling Sun Lakes AZ | Walk-In Showers",

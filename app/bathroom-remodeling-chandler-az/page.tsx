@@ -24,7 +24,9 @@ import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Trusted Contractors",
+  title: {
+    absolute: "Bathroom Remodeling Chandler AZ | Trusted Contractors"
+  },
   description: "Chandler homeowners trust us for stunning bathroom renovations. Get custom designs, quality work & a free estimate today.",
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ | Licensed Contractor",

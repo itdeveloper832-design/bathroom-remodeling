@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Fulton Ranch | Free Estimate",
+  title: {
+    absolute: "Bathroom Remodeling Fulton Ranch | Free Estimate"
+  },
   description: "Bring your dream bathroom to life in Fulton Ranch. Expert remodeling, premium materials, and free consultations available.",
   openGraph: {
     title: "Bathroom Remodeling Fulton Ranch Chandler AZ - Custom Builder",

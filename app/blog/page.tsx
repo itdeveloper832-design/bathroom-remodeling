@@ -5,7 +5,9 @@ import BlogContent from "./blog-content"
 import { getPublishedPosts, getCategories } from "@/lib/actions/blog"
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Blog | Chandler Homeowners Guide",
+  title: {
+    absolute: "Bathroom Remodeling Blog | Chandler Homeowners Guide"
+  },
   description: "Explore expert bathroom remodeling tips, design ideas, cost guides, and renovation advice for Chandler homeowners.",
   openGraph: {
     title: "Bathroom Remodeling Blog & Tips - ARZ Home Remodeling",

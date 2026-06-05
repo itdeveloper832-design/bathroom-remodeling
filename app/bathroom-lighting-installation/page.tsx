@@ -16,7 +16,9 @@ import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/j
 import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
-  title: "Bathroom Lighting Installation Chandler AZ | Free Quote",
+  title: {
+    absolute: "Bathroom Lighting Installation Chandler AZ | Free Quote"
+  },
   description: "Brighten your bathroom with modern lighting solutions. Chandler's trusted remodeling team delivers stylish, energy-efficient upgrades.",
   openGraph: {
     title: "Bathroom Lighting Installation Chandler AZ",

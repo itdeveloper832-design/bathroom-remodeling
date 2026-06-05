@@ -11,7 +11,9 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Walk-In Shower Cost Chandler AZ | Pricing Guide",
+  title: {
+    absolute: "Walk-In Shower Cost Chandler AZ | Pricing Guide"
+  },
   description: "Discover walk-in shower installation costs, design options, and budgeting tips for Chandler homeowners.",
   openGraph: {
     title: "Walk-In Shower Cost Chandler AZ - 2025 Pricing Guide",

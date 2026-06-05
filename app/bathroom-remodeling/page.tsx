@@ -18,7 +18,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Free Design Quote",
+  title: {
+    absolute: "Bathroom Remodeling Chandler AZ | Free Design Quote"
+  },
   description: "Upgrade your bathroom with custom remodeling in Chandler, AZ. Quality craftsmanship, modern designs & free consultations.",
   openGraph: {
     title: "Bathroom Remodeling Chandler | Licensed Pros",

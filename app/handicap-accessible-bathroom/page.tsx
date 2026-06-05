@@ -14,7 +14,9 @@ import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Handicap Accessible Bathroom Chandler AZ | Experts",
+  title: {
+    absolute: "Handicap Accessible Bathroom Chandler AZ | Experts"
+  },
   description: "Improve bathroom accessibility with safe, functional remodeling solutions designed for comfort and independence.",
   openGraph: {
     title: "Handicap Accessible Bathroom Chandler AZ - ADA Compliant",

@@ -8,7 +8,9 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Specials Chandler AZ | Save Now",
+  title: {
+    absolute: "Bathroom Remodeling Specials Chandler AZ | Save Now"
+  },
   description: "Take advantage of limited-time remodeling offers and special discounts on bathroom renovation projects.",
   openGraph: {
     title: "Special Offers - Bathroom Remodeling",

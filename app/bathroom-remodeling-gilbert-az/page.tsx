@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Gilbert AZ | Trusted Local Pros",
+  title: {
+    absolute: "Bathroom Remodeling Gilbert AZ | Trusted Local Pros"
+  },
   description: "Upgrade your bathroom with Gilbert's trusted remodeling experts. Custom designs, quality craftsmanship & free estimates.",
   openGraph: {
     title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",

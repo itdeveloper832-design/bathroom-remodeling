@@ -21,7 +21,9 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Chandler AZ | Free Quote",
+  title: {
+    absolute: "Tub to Shower Conversion Chandler AZ | Free Quote"
+  },
   description: "Replace your outdated bathtub with a modern walk-in shower. Fast installation and free estimates available.",
   openGraph: {
     title: "Tub-to-Shower Conversion | Chandler AZ",

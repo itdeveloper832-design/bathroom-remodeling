@@ -6,7 +6,9 @@ import { siteConfig } from "@/lib/site-config"
 import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {
-  title: "Terms of Service | ARZ Home Remodeling",
+  title: {
+    absolute: "Terms of Service | ARZ Home Remodeling"
+  },
   description: "Review the terms and conditions governing the use of ARZ Home Remodeling's website and services.",
   openGraph: {
     title: "Terms of Service - ARZ Home Remodeling",

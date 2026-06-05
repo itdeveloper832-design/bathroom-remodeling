@@ -9,7 +9,9 @@ const SLUG = "cooper-commons";
 const meta = getDedicatedAreaMetadata(SLUG, PATH)!;
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Cooper Commons | Free Estimate",
+  title: {
+    absolute: "Bathroom Remodeling Cooper Commons | Free Estimate"
+  },
   description: "Upgrade your bathroom in Cooper Commons with custom remodeling solutions, expert craftsmanship, and competitive pricing.",
   alternates: { canonical: meta.canonical },
   openGraph: {

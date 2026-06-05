@@ -20,7 +20,9 @@ import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "Guest Bathroom Remodeling Chandler AZ | Free Quote",
+  title: {
+    absolute: "Guest Bathroom Remodeling Chandler AZ | Free Quote"
+  },
   description: "Create a welcoming guest bathroom with custom remodeling solutions, modern finishes, and expert craftsmanship.",
   openGraph: {
     title: "Guest Bathroom Remodeling Chandler AZ - Small Bath Renovations",

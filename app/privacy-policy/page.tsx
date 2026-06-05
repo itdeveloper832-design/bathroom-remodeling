@@ -6,7 +6,9 @@ import { siteConfig } from "@/lib/site-config"
 import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | ARZ Home Remodeling",
+  title: {
+    absolute: "Privacy Policy | ARZ Home Remodeling"
+  },
   description: "Review ARZ Home Remodeling's privacy policy and learn how we collect, use, and protect your information.",
   openGraph: {
     title: "Privacy Policy - ARZ Home Remodeling",

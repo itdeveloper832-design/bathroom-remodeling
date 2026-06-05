@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Mesa AZ | Trusted Local Experts",
+  title: {
+    absolute: "Bathroom Remodeling Mesa AZ | Trusted Local Experts"
+  },
   description: "Create the bathroom you've always wanted with Mesa's remodeling experts. Quality craftsmanship and free consultations.",
   openGraph: {
     title: "Bathroom Remodel Mesa AZ | Licensed Contractor",

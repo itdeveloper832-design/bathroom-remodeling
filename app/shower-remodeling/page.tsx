@@ -25,7 +25,9 @@ import ShowerGallery from "@/components/shower-gallery";
 
 
 export const metadata: Metadata = {
-  title: "Shower Remodeling Chandler AZ | Free Estimate",
+  title: {
+    absolute: "Shower Remodeling Chandler AZ | Free Estimate"
+  },
   description: "Upgrade your shower with custom designs, modern materials, and expert installation from Chandler professionals.",
   openGraph: {
     title: "Shower Remodeling Chandler AZ - Custom Tiled Showers",

@@ -8,7 +8,9 @@ import { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Remodeling Careers Chandler AZ | Join Our Team",
+  title: {
+    absolute: "Remodeling Careers Chandler AZ | Join Our Team"
+  },
   description: "Explore rewarding career opportunities with ARZ Home Remodeling. Join a growing team dedicated to quality craftsmanship.",
   openGraph: {
     title: "Careers - Join Our Team",

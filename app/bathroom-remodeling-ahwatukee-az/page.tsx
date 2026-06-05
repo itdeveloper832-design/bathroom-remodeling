@@ -24,7 +24,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Ahwatukee AZ | Local Experts",
+  title: {
+    absolute: "Bathroom Remodeling Ahwatukee AZ | Local Experts"
+  },
   description: "Transform your Ahwatukee bathroom with custom remodeling services. Free estimates, premium materials, and expert installation.",
   openGraph: {
     title: "Bathroom Remodeling Ahwatukee AZ - ARZ Home Remodeling",

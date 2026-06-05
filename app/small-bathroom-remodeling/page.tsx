@@ -19,7 +19,9 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Small Bathroom Remodeling Chandler AZ | Smart Design",
+  title: {
+    absolute: "Small Bathroom Remodeling Chandler AZ | Smart Design"
+  },
   description: "Maximize space and style with custom small bathroom remodeling solutions tailored to your needs and budget.",
   openGraph: {
     title: "Small Bathroom Remodeling Chandler AZ - Budget Friendly",

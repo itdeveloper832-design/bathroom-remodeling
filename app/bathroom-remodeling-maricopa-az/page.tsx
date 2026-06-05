@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Maricopa AZ | Free Estimate",
+  title: {
+    absolute: "Bathroom Remodeling Maricopa AZ | Free Estimate"
+  },
   description: "Transform your Maricopa bathroom with modern remodeling solutions. Trusted contractors, premium finishes & free quotes.",
   openGraph: {
     title: "Bathroom Remodeling Maricopa AZ - Licensed & Insured - ARZ",

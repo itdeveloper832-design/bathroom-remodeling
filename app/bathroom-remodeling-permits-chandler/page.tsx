@@ -11,7 +11,9 @@ import Link from "next/link";
 import { ArrowRight, FileText, CheckCircle2, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Permits Chandler AZ | Complete Guide",
+  title: {
+    absolute: "Bathroom Remodel Permits Chandler AZ | Complete Guide"
+  },
   description: "Learn about bathroom remodeling permits in Chandler, AZ. Avoid delays, stay compliant, and start your project confidently.",
   openGraph: {
     title: "Bathroom Remodeling Permits Chandler AZ - Guide & Requirements",

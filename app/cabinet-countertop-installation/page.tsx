@@ -16,7 +16,9 @@ import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/j
 import { serviceContent } from "@/lib/service-content-data";
 
 export const metadata: Metadata = {
-  title: "Cabinet & Countertop Installation Chandler AZ",
+  title: {
+    absolute: "Cabinet & Countertop Installation Chandler AZ"
+  },
   description: "Upgrade your bathroom with custom cabinets and countertops. Professional installation and free design consultations.",
   openGraph: {
     title: "Cabinet & Countertop Installation Chandler AZ",

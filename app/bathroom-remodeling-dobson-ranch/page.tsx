@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Dobson Ranch | Local Experts",
+  title: {
+    absolute: "Bathroom Remodeling Dobson Ranch | Local Experts"
+  },
   description: "Transform your Dobson Ranch bathroom with custom showers, tile upgrades, vanities, and professional remodeling services.",
   openGraph: {
     title: "Bathroom Remodeling Dobson Ranch AZ - Custom Contractors",

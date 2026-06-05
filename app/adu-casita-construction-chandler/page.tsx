@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "ADU & Casita Construction Chandler AZ | Free Estimate",
+  title: {
+    absolute: "ADU & Casita Construction Chandler AZ | Free Estimate"
+  },
   description: "Build a custom ADU or casita in Chandler, AZ. Expert design, quality construction, and transparent pricing from local professionals.",
   openGraph: {
     title: "ADU & Casita Construction Chandler AZ - Guest Houses - ARZ",

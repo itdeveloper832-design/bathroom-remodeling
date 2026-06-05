@@ -30,7 +30,9 @@ import { HomeBelowFold } from "@/components/home/home-below-fold";
 import FinalCTA from "@/components/home/final-cta";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Chandler AZ | Free Design Quote",
+  title: {
+    absolute: "Bathroom Remodeling Chandler AZ | Free Design Quote"
+  },
   description: "Transform your bathroom with Chandler's trusted remodeling experts. Custom showers, tile, vanities & free in-home estimates.",
   openGraph: {
     title: "Bathroom Remodeling Chandler AZ - Licensed Contractor",

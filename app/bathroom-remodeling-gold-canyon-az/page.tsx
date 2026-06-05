@@ -23,7 +23,9 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Gold Canyon AZ | Free Quote",
+  title: {
+    absolute: "Bathroom Remodeling Gold Canyon AZ | Free Quote"
+  },
   description: "Professional bathroom remodeling in Gold Canyon, AZ. Custom showers, tile, vanities & expert installation services.",
   openGraph: {
     title: "Bathroom Remodeling Gold Canyon AZ - Premium Renovations - ARZ",

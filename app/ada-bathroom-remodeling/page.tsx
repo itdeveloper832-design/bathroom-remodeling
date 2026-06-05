@@ -20,7 +20,9 @@ import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
 export const metadata: Metadata = {
-  title: "ADA Bathroom Remodeling Chandler AZ | Free Quote",
+  title: {
+    absolute: "ADA Bathroom Remodeling Chandler AZ | Free Quote"
+  },
   description: "Safe, stylish ADA bathroom remodeling in Chandler, AZ. Improve accessibility, comfort, and independence with expert renovations.",
   openGraph: {
     title: "Accessible Shower Remodeling Chandler - ADA Specialist",

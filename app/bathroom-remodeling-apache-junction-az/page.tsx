@@ -13,7 +13,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Apache Junction AZ | Free Quote",
+  title: {
+    absolute: "Bathroom Remodeling Apache Junction AZ | Free Quote"
+  },
   description: "Expert bathroom remodeling in Apache Junction, AZ. Modern designs, quality craftsmanship, and free in-home consultations.",
   openGraph: {
     title: "Bathroom Remodeling Apache Junction | Licensed Contractor",

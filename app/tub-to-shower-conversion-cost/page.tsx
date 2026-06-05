@@ -11,7 +11,9 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tub to Shower Conversion Cost Chandler AZ",
+  title: {
+    absolute: "Tub to Shower Conversion Cost Chandler AZ"
+  },
   description: "Learn the cost of converting a tub into a shower and get accurate pricing for your Chandler remodeling project.",
   openGraph: {
     title: "Tub-to-Shower Conversion Cost | Chandler AZ",

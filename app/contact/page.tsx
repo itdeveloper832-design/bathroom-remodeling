@@ -9,7 +9,9 @@ import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/seo
 import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {
-  title: "Contact ARZ Home Remodeling | Free Estimate",
+  title: {
+    absolute: "Contact ARZ Home Remodeling | Free Estimate"
+  },
   description: "Ready to start your bathroom remodel? Contact our Chandler remodeling team today for a free consultation and quote.",
   openGraph: {
     title: "Free Bathroom Remodel Estimates - ARZ Home Remodeling",

@@ -8,7 +8,9 @@ import { ExternalLink, Award, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Meet Our Remodeling Team | Chandler AZ Experts",
+  title: {
+    absolute: "Meet Our Remodeling Team | Chandler AZ Experts"
+  },
   description: "Meet the experienced remodeling professionals dedicated to delivering exceptional bathroom renovation results.",
   openGraph: {
     title: "Meet Our Team - ARZ Home Remodeling",

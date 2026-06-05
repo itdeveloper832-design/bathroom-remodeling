@@ -6,7 +6,9 @@ import { siteConfig } from "@/lib/site-config"
 import { Shield, CheckCircle, AlertTriangle, HelpCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Remodeling Warranty Chandler AZ | Peace of Mind",
+  title: {
+    absolute: "Remodeling Warranty Chandler AZ | Peace of Mind"
+  },
   description: "Learn about our remodeling warranty coverage and commitment to quality workmanship and customer satisfaction.",
   openGraph: {
     title: "5-Year Workmanship Warranty - ARZ Home Remodeling",

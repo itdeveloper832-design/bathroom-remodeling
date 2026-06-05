@@ -9,7 +9,9 @@ import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodeling Services Chandler AZ | Experts",
+  title: {
+    absolute: "Bathroom Remodeling Services Chandler AZ | Experts"
+  },
   description: "Explore professional bathroom remodeling services including showers, tile, vanities, and complete renovations.",
   alternates: {
     canonical: `${siteConfig.url}/services/`,

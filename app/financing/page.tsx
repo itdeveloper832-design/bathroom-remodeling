@@ -9,7 +9,9 @@ import { siteConfig } from "@/lib/site-config"
 import { Check, Calculator, Clock, Shield, CreditCard } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Bathroom Remodel Financing Chandler AZ | Options",
+  title: {
+    absolute: "Bathroom Remodel Financing Chandler AZ | Options"
+  },
   description: "Make your dream bathroom affordable with flexible financing solutions. Explore available payment options today.",
   openGraph: {
     title: "Bathroom Remodel Financing | Chandler AZ",

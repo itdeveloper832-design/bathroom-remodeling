@@ -14,13 +14,13 @@ const blogPosts = [
     category: "Guides",
   },
   {
-    slug: "2024-bathroom-design-trends-chandler-arizona",
-    title: "2025-2026 Bathroom Design Trends for Chandler, Arizona Homes",
+    slug: "tub-to-shower-conversion-chandler-az-guide",
+    title: "Tub-to-Shower Conversion in Chandler, AZ: Everything You Need to Know Before You Start",
     excerpt:
-      "Explore 2025-2026 bathroom design trends. Spa features, sustainable materials, minimalist design, and luxury fixtures trending now.",
-    image: "/images/hero/luxury-shower-remodel-chandler.avif",
-    date: "May 18, 2026",
-    category: "Trends",
+      "Planning to convert your bathtub to a walk-in shower? Read our complete Chandler guide covering design choices, waterproofing, permits, costs, and contractor vetting.",
+    image: "/images/services/chandler-bathroom-remodel.webp",
+    date: "June 7, 2026",
+    category: "Bathroom Remodeling",
   },
   {
     slug: "bathroom-remodel-cost-chandler-az-2025",

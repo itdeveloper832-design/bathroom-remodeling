@@ -31,13 +31,13 @@ import FinalCTA from "@/components/home/final-cta";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Bathroom Remodeling Chandler AZ | Free Design Quote"
+    absolute: "Bathroom Remodeling Phoenix East Valley | ARZ Home Remodeling"
   },
-  description: "Transform your bathroom with Chandler's trusted remodeling experts. Custom showers, tile, vanities & free in-home estimates.",
+  description: "Transform your bathroom with East Valley's trusted local remodeling experts. Serving Chandler, Gilbert, Mesa, Tempe & surrounding areas. Free design quotes!",
   openGraph: {
-    title: "Bathroom Remodeling Chandler AZ - Licensed Contractor",
+    title: "Bathroom Remodeling Phoenix East Valley | ARZ Home Remodeling",
     description:
-      "Custom walk-in showers & tub-to-shower conversions in Chandler. Fixed pricing from $6,000. ROC licensed since 2010. Serving Ocotillo, Fulton Ranch & East Valley. Call for a free in-home estimate.",
+      "Transform your bathroom with East Valley's trusted local remodeling experts. Serving Chandler, Gilbert, Mesa, Tempe & surrounding areas. Free design quotes!",
     type: "website",
     url: `${siteConfig.url}/`,
     images: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         url: `${siteConfig.url}/images/og-homepage.png`,
         width: 1200,
         height: 630,
-        alt: "ARZ Home Remodeling - Luxury Bathroom Remodeling in Chandler, AZ",
+        alt: "ARZ Home Remodeling - Luxury Bathroom Remodeling in Phoenix East Valley, AZ",
       },
     ],
   },

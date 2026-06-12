@@ -153,32 +153,10 @@ export default function BathroomLightingInstallationPage() {
 
         <ServiceFAQ faqs={faqs} />
         
-        <Testimonials />
+        <Testimonials category="bathroom-lighting-installation" />
         
         <ContactSection />
-        
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground">Bathroom Lighting Installation in Chandler</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">Professional bathroom lighting services throughout Chandler, Arizona.</p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Modern LED fixtures and vanity lights</li>
-                <li>• Licensed electrical contractors</li>
-                <li>• Energy-efficient solutions</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap lat={chandlerLocation.lat} lng={chandlerLocation.lng} zoom={12} title="Bathroom Lighting Installation in Chandler, AZ" address="Chandler, Arizona" />
-            </div>
-          </div>
-        </section>
-        
-        <ServiceCTA 
-          title="Need bathroom lighting installation in Chandler, AZ?" 
-          description="Contact us today for professional installation with premium fixtures and expert electrical work." 
-        />
+
       </main>
       <Footer />
     </>

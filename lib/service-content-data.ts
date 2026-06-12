@@ -25,79 +25,71 @@ export const serviceContent: Record<string, ServiceContentData> = {
   "bathroom-remodeling": {
     benefits: [
       {
-        title: "Complete Bathroom Transformation",
-        description: "From layout to fixtures, we redesign your entire bathroom space for maximum functionality and beauty.",
+        title: "Luxury Master Suite Conversions",
+        description: "Expand your master bathroom footprint to accommodate freestanding soaking tubs, custom walk-in tile showers, and dedicated linen storage.",
         icon: "Sparkles",
       },
       {
-        title: "Modern Fixture Technology",
-        description: "Access to latest bathroom technologies including smart mirrors, touchless faucets, and heated floors.",
+        title: "Custom Double Vanity Upgrades",
+        description: "Install premium double vanities with quartz countertops, undermount sinks, and built-in electrical outlets for clean styling.",
         icon: "Zap",
       },
       {
-        title: "Increased Resale Value",
-        description: "A full bathroom remodel can add 60-80% return on investment when selling your home.",
+        title: "Zero-Threshold Curbless Showers",
+        description: "Redesign your bathing area with safe, zero-step entries, custom linear drains, and frameless glass enclosures.",
         icon: "TrendingUp",
       },
       {
-        title: "Customized Design Solutions",
-        description: "Personalized layouts tailored to your family's specific needs and daily routines.",
+        title: "Space-Optimized Small & Guest Baths",
+        description: "Configure secondary bathrooms and powder rooms with floating vanities and pocket doors to maximize utility without overcrowding.",
         icon: "Palette",
       },
     ],
     issues: [
       {
-        problem: "Cramped layouts that waste space and create poor traffic flow",
-        solution: "Strategic reconfiguration with floating vanities, corner showers, and open floor plans for better flow.",
+        problem: "Outdated layouts that waste space and create poor traffic flow",
+        solution: "Strategic floor plan re-engineering with floating vanities, space-saving shower layouts, and optimized traffic flow.",
       },
       {
-        problem: "Outdated plumbing causing low pressure, leaks, or mold growth",
-        solution: "Full replumbing with modern materials, improved drainage systems, and preventative waterproofing.",
+        problem: "Poor storage options leading to bathroom clutter",
+        solution: "Installation of custom cabinetry, linen towers, built-in wall niches, and floating shelving solutions.",
       },
       {
-        problem: "Poor lighting and ventilation leading to moisture damage and dark spaces",
-        solution: "Layered lighting design and professional ventilation systems to keep bathrooms dry and well-lit.",
-      },
-      {
-        problem: "Non-functional storage with clutter and disorganization",
-        solution: "Custom cabinetry, built-in shelving, and organizational systems designed for your lifestyle.",
-      },
-      {
-        problem: "Outdated style that doesn't match home aesthetic or personal preferences",
-        solution: "Contemporary design updates with material selections that complement your entire home.",
+        problem: "Hard water damage from Chandler's mineral-heavy supply",
+        solution: "Use of non-porous large-format porcelain tile, stain-resistant epoxy grout, and hydrophobic nano-coated glass to resist scale and staining.",
       },
     ],
     tips: [
-      "Plan for Future Accessibility: Consider grab bars, walk-in showers, and accessible vanities that work for all ages and abilities.",
-      "Invest in Quality Ventilation: Proper exhaust fans and humidity control are essential for preventing mold and extending fixture life.",
-      "Choose Durable, Water-Resistant Materials: Porcelain tiles, engineered stone, and epoxy-coated fixtures resist moisture and last decades.",
-      "Create Storage During Design Phase: Plan cabinets, niches, and organizers before construction to maximize functionality and style.",
+      "Incorporate Recessed Storage Niches: Plan built-in tile wall niches inside your walk-in shower early to avoid cluttering bench spaces.",
+      "Reroute Plumbing for Double Sinks: Upgrading from a single to a double vanity requires strategic drain and supply rerouting within local plumbing code.",
+      "Prioritize Schluter-KERDI Waterproofing: Ensure your luxury tile surround is backed by a continuous waterproofing membrane to prevent subfloor dry rot.",
+      "Select Arizona-Resilient Finishes: Use non-porous quartz countertops and stain-resistant epoxy grout to resist Chandler's hard water mineral scale.",
     ],
     faqs: [
       {
         question: "How long does a full bathroom remodel take in Chandler?",
         answer:
-          "A complete bathroom remodeling project typically takes 4-8 weeks depending on scope, permits, and any hidden issues discovered during demolition. As a leading bathroom remodeling contractor in Chandler, we provide a detailed timeline upfront to anyone looking to renovate bathroom near me.",
+          "A complete master bath remodel or custom walk-in shower conversion typically takes 4 to 6 weeks. We provide a detailed design-build timeline and a locked-in fixed-price contract for your Chandler home, handling everything from demo to custom cabinetry.",
       },
       {
         question: "What's included in your bathroom remodeling services in Chandler?",
         answer:
-          "Our bathroom remodeling services in Chandler include demolition, new plumbing, electrical, flooring, tile work, vanity installation, lighting, mirrors, hardware, and final finishing. As premier bathroom renovators near me, we offer affordable bathroom remodeling in Chandler AZ without compromising on quality.",
+          "From custom double vanity installations to complete walk-in shower tile setting, we handle all plumbing, structural framing, and Schluter-KERDI waterproofing under our single ROC license (ROC338304).",
       },
       {
         question: "Do you handle permits and inspections for bathroom remodeling?",
         answer:
-          "Yes! We obtain all necessary permits for bathroom remodeling in Chandler, coordinate inspections, and ensure compliance with local building codes. Whether you need a simple bath remodel near me, a complete bathroom reconstruction near me, or a full renovation, we handle the paperwork.",
+          "Yes! We obtain all necessary permits and coordinate inspections. Whether you are expanding a master bath or remodeling a secondary guest bathroom, we coordinate all structural and plumbing reviews with the Chandler Development Services department.",
       },
       {
         question: "What is the typical bathroom remodel chandler az cost?",
         answer:
-          "The bathroom remodel chandler az cost varies based on materials and scope, typically ranging from $8,000 for guest baths to $50,000+ for luxury master suites. We provide transparent bathroom remodel chandler az prices in every quote.",
+          "A master bathroom remodel or luxury renovation with custom tile walk-in showers starts at $22,000, while secondary guest bathroom updates generally range from $12,500 to $18,000 depending on fixture and vanity selections.",
       },
       {
-        question: "What makes you the best bathroom remodeler in Chandler AZ?",
+        question: "Why should Chandler homeowners choose your design-build services?",
         answer:
-          "We provide transparent pricing, dedicated project managers, custom work from top-rated bathroom designers near me, and a 5-year warranty. Our Chandler bathroom remodeling team has 15+ years of local experience, making us a top-rated bath remodeler in Chandler AZ.",
+          "We specialize exclusively in durable bathroom renovations. We do not use sub-contracted crews; our in-house tile specialists secure every wet area with Schluter-KERDI waterproofing systems, set large-format tile with epoxy grout to resist local hard water, and install custom double vanities under fixed-price contracts.",
       },
     ],
   },
@@ -602,20 +594,12 @@ export const serviceContent: Record<string, ServiceContentData> = {
     ],
     issues: [
       {
-        problem: "Dangerous Stepping Barriers",
-        solution: "We build curbless, zero entry showers that eliminate high step tub thresholds.",
+        problem: "Unsafe tub entry with high-step thresholds",
+        solution: "Safe tub removal and installation of curbless or low-profile walk-in showers with easy access.",
       },
       {
-        problem: "Low Water Pressure",
-        solution: "We install pressure balanced valve systems for excellent water flow and steady temperatures.",
-      },
-      {
-        problem: "Small, Cramped Bathrooms",
-        solution: "Converting to a walk in shower opens up your bathroom layout visually and physically.",
-      },
-      {
-        problem: "Plumbing Drain Clogs",
-        solution: "We expand old tub plumbing from one and a half inches to a two inch high flow shower drain.",
+        problem: "Accessibility issues for seniors or those with limited mobility",
+        solution: "Integration of ADA-compliant grab bars, built-in shower benches, slip-resistant floors, and handheld fixtures.",
       },
     ],
     tips: [

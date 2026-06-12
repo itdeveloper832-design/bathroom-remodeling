@@ -150,24 +150,9 @@ export default function SmallBathroomRemodelingPage() {
         />
 
         <ServiceFAQ faqs={faqs} />
-        <Testimonials />
+        <Testimonials category="small-bathroom-remodeling" />
         <ContactSection />
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">Small Bathroom Remodeling Service Area in Chandler, Arizona</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">Professional small bathroom remodeling services throughout Chandler, Arizona and surrounding communities.</p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and nearby areas</li>
-                <li>• Space-maximizing design specialists</li>
-                <li>• Small bathroom remodeling experts</li>
-              </ul>
-            </div>
-            <div><GoogleMap lat={chandlerLocation.lat} lng={chandlerLocation.lng} zoom={12} title="Small Bathroom Remodeling in Chandler, AZ" address="Chandler, Arizona" /></div>
-          </div>
-        </section>
-        <ServiceCTA title="Need small bathroom remodeling in Chandler, AZ?" description="Contact us for professional small bathroom remodeling with space-saving designs and smart solutions." />
+        
       </main>
       <Footer />
     </>

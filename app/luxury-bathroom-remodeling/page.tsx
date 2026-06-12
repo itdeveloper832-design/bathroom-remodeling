@@ -197,7 +197,7 @@ export default function LuxuryPage() {
         />
 
         <ServiceFAQ faqs={faqs} />
-        <Testimonials />
+        <Testimonials category="luxury-bathroom-remodeling" />
         <ContactSection />
         
         <section className="py-20 lg:py-32 bg-secondary text-center">

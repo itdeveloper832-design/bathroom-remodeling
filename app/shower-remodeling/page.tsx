@@ -11,7 +11,7 @@ import Tips from "@/components/tips";
 import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { siteConfig } from "@/lib/site-config";
-import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema, PriceSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import LocalTrust from "@/components/home/local-trust";
@@ -70,17 +70,22 @@ export default function ShowerRemodelingPage() {
         serviceDescription="Professional shower upgrades in Chandler, Arizona. Custom tile, frameless glass enclosures, waterproof installations, and premium fixtures."
         serviceUrl={`${siteConfig.url}/shower-remodeling/`}
       />
+      <PriceSchema
+        serviceName="Shower Remodeling"
+        priceRange="$4,500 - $15,000"
+        url={`${siteConfig.url}/shower-remodeling/`}
+      />
       <FAQSchema faqs={faqs} />
       <Header />
       <main>
         <ServiceHero
-          title="Custom Shower Remodeling in Chandler, AZ - Walk-In Showers, Frameless Glass & Tile Installs"
-          subtitle="ARZ Home Remodeling builds custom showers in Chandler the right way - Schluter-Kerdi waterproofing behind every tile, frameless glass cut to your exact opening, and a 2-year workmanship warranty on qualifying projects. Licensed, insured, and Chandler-based since 2010. ROC338304."
-          description="Free in-home estimate - same week availability. Shower remodels starting from $4,500. Serving Chandler, Ocotillo, Fulton Ranch, Sun Lakes & the East Valley"
+          title="Custom Shower Systems Engineered to Last"
+          subtitle="Vapor-Tight Schluter-KERDI Waterproofing & Custom Glass Enclosures"
+          description="Upgrade your daily routine with a premium tile or curbless walk-in shower. Our certified master installers secure every system with advanced waterproofing, custom-fit frameless glass, and stain-resistant epoxy grouting. We guarantee a fixed price and lifetime protection against leaks and moisture damage."
           image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: `${siteConfig.url}/` },
-            { name: "Shower Remodeling Chandler AZ", url: `${siteConfig.url}/shower-remodeling/` },
+            { name: "Shower Remodeling", url: `${siteConfig.url}/shower-remodeling/` },
           ]}
         />
 
@@ -123,39 +128,39 @@ export default function ShowerRemodelingPage() {
         <ShowerCostSection />
 
         <ServiceProcess
-          title="Our Installation Process"
-          subtitle="How We Work"
-          description="A streamlined, mess-managed approach built for Chandler homeowners who want a faster, cleaner upgrade."
+          title="Shower Remodel Process"
+          subtitle="Our Process"
+          description="A specialized, step-by-step approach to custom-building a beautiful, leak-proof shower in your Chandler home."
           steps={[
             {
               number: "01",
               icon: "PhoneCall",
-              title: "Consultation & Measurements",
-              description: "We review goals, measure your existing footprint, and plan waterproofing details.",
+              title: "Consultation & Shower Design",
+              description: "We review your shower goals, measure your existing footprint, and plan custom tile layouts, curb styles, and niche placements.",
             },
             {
               number: "02",
               icon: "Ruler",
-              title: "Design & Selections",
-              description: "Tile, glass, fixtures, and drainage layout tailored to your style and daily routine.",
+              title: "Substrate & Plumbing Prep",
+              description: "We demount the old enclosure, update or relocate valves and drain lines, install pressure-balanced fixtures, and run pre-tests.",
             },
             {
               number: "03",
-              icon: "Hammer",
-              title: "Demo & Prep",
-              description: "Clean demolition, substrate repair, and moisture barrier installation for durability.",
+              icon: "ShieldCheck",
+              title: "Schluter Waterproofing",
+              description: "We install a vapor-tight Schluter-KERDI waterproofing membrane on all shower walls and the floor pan to guarantee a 100% leak-proof backing.",
             },
             {
               number: "04",
               icon: "ShowerHead",
-              title: "Tile & Fixture Install",
-              description: "Precision tile setting, niche detailing, and valve/fixture installation for a spa feel.",
+              title: "Tile Setting & Fixture Install",
+              description: "Our tile specialists lay your ceramic or porcelain tiles, build integrated niches/benches, and secure premium fixtures.",
             },
             {
               number: "05",
-              icon: "ShieldCheck",
-              title: "Inspection & Walkthrough",
-              description: "Sealing, testing, and a final walkthrough to confirm drainage, fit, and finish.",
+              icon: "Sparkles",
+              title: "Glass Enclosure & Walkthrough",
+              description: "We install custom-cut frameless glass panels, mount premium hardware, run drainage flow checks, and complete the final walkthrough.",
             },
           ]}
         />

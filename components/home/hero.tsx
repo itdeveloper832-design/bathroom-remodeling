@@ -35,7 +35,7 @@ export default function Hero() {
             </div>
 
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-4 text-balance">
-              Bathroom Remodeling in Chandler, AZ - Licensed, ROC-Certified Since 2010
+              Custom Bathroom Remodeling Built to Last
             </h1>
 
             <div className="mb-6">
@@ -56,7 +56,7 @@ export default function Hero() {
             </p>
 
             <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed font-light">
-              Specializing in premium{" "}
+              Specializing in master-crafted{" "}
               <Link href="/walk-in-showers/" className="font-semibold underline text-white hover:text-accent transition-colors">
                 walk-in showers
               </Link>
@@ -64,7 +64,7 @@ export default function Hero() {
               <Link href="/tub-to-shower-conversion/" className="font-semibold underline text-white hover:text-accent transition-colors">
                 tub-to-shower conversions
               </Link>
-              , and hand-crafted custom tile work. We use vapor-tight Schluter-Kerdi waterproofing and stain-resistant epoxy grout—**never cheap, hollow prefabricated acrylic wall surrounds**. Backed by a solid 5-year workmanship warranty.
+              , and custom tile design. We use vapor-tight Schluter-KERDI waterproofing systems and stain-resistant epoxy grouting engineered to resist Arizona's hard water minerals. Every project is backed by a 2-year workmanship warranty and fixed-price contracts.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

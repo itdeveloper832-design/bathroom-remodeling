@@ -169,42 +169,11 @@ export default function TubRemovalPage() {
 
         <ServiceFAQ faqs={faqs} />
 
-        <Testimonials />
+        <Testimonials category="tub-removal" />
 
         <ContactSection />
 
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">
-                Tub Removal Service Area in Chandler, Arizona
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We provide professional bathtub removal services throughout Chandler and the East Valley area.
-              </p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and surrounding communities</li>
-                <li>• Same-day and next-day service available</li>
-                <li>• Disposal and hauling included</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap
-                lat={chandlerLocation.lat}
-                lng={chandlerLocation.lng}
-                zoom={12}
-                title="Tub Removal in Chandler, AZ"
-                address="Chandler, Arizona"
-              />
-            </div>
-          </div>
-        </section>
-
-        <ServiceCTA 
-          title="Need bathtub removal in Chandler, AZ?" 
-          description="Contact us for fast, professional tub removal with full disposal service." 
-        />
+        
       </main>
       <Footer />
     </>

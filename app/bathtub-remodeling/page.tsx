@@ -165,38 +165,7 @@ export default function BathtubRemodelingPage() {
 
         <ContactSection />
 
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">
-                Service Area Map for Tub Replacements in Chandler, Arizona
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We serve homeowners across Chandler, Arizona with premium bath upgrade services, quality materials, and expert installation.
-              </p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and surrounding areas</li>
-                <li>• Licensed and insured local contractors</li>
-                <li>• Free estimates and consultations available</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap
-                lat={chandlerLocation.lat}
-                lng={chandlerLocation.lng}
-                zoom={12}
-                title="Tub Replacement in Chandler, AZ"
-                address="Chandler, Arizona"
-              />
-            </div>
-          </div>
-        </section>
-
-        <ServiceCTA 
-          title="Need a tub upgrade in Chandler, AZ?" 
-          description="Contact us today for a free consultation and estimate on your new bathing space." 
-        />
+        
 
         <section className="py-12 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">

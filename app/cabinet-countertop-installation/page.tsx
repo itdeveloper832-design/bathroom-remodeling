@@ -170,42 +170,11 @@ export default function CabinetCountertopInstallationPage() {
 
         <ServiceFAQ faqs={faqs} />
 
-        <Testimonials />
+        <Testimonials category="cabinet-countertop-installation" />
 
         <ContactSection />
 
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">
-                Cabinet & Countertop Service Area in Chandler, Arizona
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We provide professional cabinet and countertop installation chandler homeowners trust throughout the greater Phoenix area.
-              </p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and surrounding areas</li>
-                <li>• Licensed and insured installation</li>
-                <li>• Free estimates and showroom visits</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap
-                lat={chandlerLocation.lat}
-                lng={chandlerLocation.lng}
-                zoom={12}
-                title="Cabinet & Countertop Installation in Chandler, AZ"
-                address="Chandler, Arizona"
-              />
-            </div>
-          </div>
-        </section>
-
-        <ServiceCTA 
-          title="Need cabinet and countertop installation in Chandler, AZ?" 
-          description="Contact us today for professional installation with premium materials." 
-        />
+        
       </main>
       <Footer />
     </>

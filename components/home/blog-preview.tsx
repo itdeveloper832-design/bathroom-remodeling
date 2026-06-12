@@ -23,13 +23,13 @@ const blogPosts = [
     category: "Bathroom Remodeling",
   },
   {
-    slug: "bathroom-remodel-cost-chandler-az-2025",
-    title: "2026 Bathroom Remodel Cost in Chandler, AZ - Local Price Guide",
+    slug: "walk-in-shower-cost-chandler-az-2026-price-guide",
+    title: "How Much Does a Walk-In Shower Cost in Chandler AZ (2026 Price Guide)",
     excerpt:
-      "Complete analysis of bathroom remodeling costs in Chandler, Arizona. Compare prices by project size, materials, labor, and neighborhoods.",
-    image: "/images/projects/luxury-bathtub-remodel-az.avif",
-    date: "May 15, 2026",
-    category: "Pricing",
+      "Planning a walk-in shower in Chandler? Get the latest breakdown of 2026 installation costs, custom tile, glass, permits, and desert hard water protection.",
+    image: "/images/hero/luxury-shower-remodel-chandler.webp",
+    date: "June 12, 2026",
+    category: "Costs & Budget",
   },
 ];
 

@@ -193,27 +193,8 @@ export default function ADAPage() {
         />
 
         <ServiceFAQ faqs={faqs} />
-        <Testimonials />
+        <Testimonials category="ada-bathroom-remodeling" />
         <ContactSection />
-        
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">Accessible Bathroom Services in Chandler</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">We provide expert <strong>walk-in shower installation services</strong> and ADA accessibility modifications throughout Chandler, Sun Lakes, and the surrounding communities.</p>
-              <div className="flex gap-4">
-                 <Button asChild size="lg">
-                    <Link href="/contact/">Get A Free Quote</Link>
-                 </Button>
-                 <Button variant="outline" asChild size="lg">
-                    <Link href="tel:+15205693339">{siteConfig.phone}</Link>
-                 </Button>
-              </div>
-            </div>
-            <div><GoogleMap lat={33.3009334} lng={-111.9605964} zoom={12} title="ADA Bathroom Remodeling Chandler" address="Chandler, AZ" /></div>
-          </div>
-        </section>
       </main>
       <Footer />
     </>

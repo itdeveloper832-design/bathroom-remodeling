@@ -198,29 +198,10 @@ export default function GuestBathPage() {
         />
 
         <ServiceFAQ faqs={faqs} />
-        <Testimonials />
+        <Testimonials category="guest-bathroom-remodeling" />
         <ContactSection />
         
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">Guest Bath Specialists in Chandler</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                From simple powder room updates to full guest bath renovations, we provide the expert service that Chandler homeowners rely on.
-              </p>
-              <div className="flex gap-4 flex-wrap">
-                 <Button asChild size="lg">
-                    <Link href="/contact/">Get Your Quote</Link>
-                 </Button>
-                 <Button variant="outline" asChild size="lg">
-                    <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>
-                 </Button>
-              </div>
-            </div>
-            <div><GoogleMap lat={33.3009334} lng={-111.9605964} zoom={12} title="Guest Bathroom Remodeling Chandler" address="Chandler, AZ" /></div>
-          </div>
-        </section>
+        
       </main>
       <Footer />
     </>

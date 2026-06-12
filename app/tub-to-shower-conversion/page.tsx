@@ -12,7 +12,7 @@ import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
-import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema, PriceSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import LocalTrust from "@/components/home/local-trust";
@@ -70,13 +70,18 @@ export default function TubToShowerConversionPage() {
         serviceDescription="Professional tub to shower conversion in Chandler, Arizona. Convert your bathtub to a modern walk-in shower with expert installation."
         serviceUrl={`${siteConfig.url}/tub-to-shower-conversion`}
       />
+      <PriceSchema
+        serviceName="Tub to Shower Conversion"
+        priceRange="$6,000 - $18,000"
+        url={`${siteConfig.url}/tub-to-shower-conversion/`}
+      />
       <FAQSchema faqs={faqs} />
       <Header />
       <main>
         <ServiceHero
-          title="Premium Tub to Shower Conversion in Chandler, AZ"
-          subtitle="Transform Your Space with Licensed Walk-In Shower Experts"
-          description="Don't let an unused bathtub waste valuable space in your bathroom. Our ROC Licensed experts specialize in high-quality tub-to-shower swaps, providing a safer, more modern, and more accessible bathing experience for your Chandler home."
+          title="Seamless Tub-to-Shower Conversions"
+          subtitle="Convert Unused Tubs Into Modern, High-Performance Walk-In Showers"
+          description="Maximize your bathroom's footprint by swapping your high-threshold bathtub for a spacious, leak-proof walk-in shower. Our certified team handles the entire conversion—including framing upgrades, high-capacity drain plumbing, and vapor-tight Schluter-KERDI waterproofing—backed by a clear fixed-price contract."
           image="/images/services/bathroom-tile-remodel-az.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
@@ -85,39 +90,39 @@ export default function TubToShowerConversionPage() {
         />
 
         <ServiceProcess
-          title="Tub to Shower Conversion Process"
+          title="Tub Conversion Process"
           subtitle="Our Process"
-          description="A complete conversion process that transforms your bathtub into a beautiful walk-in shower."
+          description="A detailed conversion workflow that transforms your unused, high-threshold bathtub into a safe, spacious walk-in shower."
           steps={[
             {
               number: "01",
               icon: "PhoneCall",
-              title: "Free Consultation",
-              description: "We assess your bathroom, discuss shower options, and plan the conversion layout.",
+              title: "Initial Consultation & Layout",
+              description: "We inspect your existing garden or alcove tub, measure the footprint, evaluate the drain alignment, and design the new walk-in shower configuration.",
             },
             {
               number: "02",
               icon: "Ruler",
-              title: "Design Planning",
-              description: "Select tile, fixtures, glass enclosure style, and accessibility features.",
+              title: "Bathtub Removal & Demolition",
+              description: "We carefully remove the heavy bathtub unit, extract the old surround materials down to the studs, check for mold or wood rot, and prepare the subfloor.",
             },
             {
               number: "03",
               icon: "Hammer",
-              title: "Tub Removal",
-              description: "Careful bathtub removal, plumbing modification, and subfloor preparation.",
+              title: "Drain & Plumbing Conversion",
+              description: "We expand your drain piping from a standard 1.5-inch tub drain to a high-capacity 2-inch shower drain to handle modern rainfall showerheads safely.",
             },
             {
               number: "04",
               icon: "ShowerHead",
-              title: "Shower Installation",
-              description: "Waterproofing, tile installation, glass enclosure, and fixture mounting.",
+              title: "Waterproofing & Shower Build",
+              description: "We install a pre-sloped shower pan, lay down vapor-tight Schluter waterproofing, build custom tile niches, and install your selected fixtures.",
             },
             {
               number: "05",
               icon: "ShieldCheck",
-              title: "Final Walkthrough",
-              description: "Complete testing, sealing, and inspection to ensure perfect results.",
+              title: "Glass Enclosure & Walkthrough",
+              description: "We set custom frameless glass enclosures, apply mold-resistant silicone sealant, test water flow, and review the final conversion with you.",
             },
           ]}
         />
@@ -183,38 +188,7 @@ export default function TubToShowerConversionPage() {
 
         <ContactSection />
 
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">
-                Tub to Shower Conversion Service Area in Chandler, Arizona
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We provide expert tub to shower conversion services throughout Chandler and the greater Phoenix area.
-              </p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and surrounding areas</li>
-                <li>• Licensed and insured contractors</li>
-                <li>• Free in-home estimates available</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap
-                lat={chandlerLocation.lat}
-                lng={chandlerLocation.lng}
-                zoom={12}
-                title="Tub to Shower Conversion in Chandler, AZ"
-                address="Chandler, Arizona"
-              />
-            </div>
-          </div>
-        </section>
-
-        <ServiceCTA 
-          title="Need tub to shower conversion in Chandler, AZ?" 
-          description="Contact us today for professional conversion services and a free estimate." 
-        />
+        
       </main>
       <Footer />
     </>

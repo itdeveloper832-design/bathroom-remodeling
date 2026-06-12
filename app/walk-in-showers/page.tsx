@@ -12,7 +12,7 @@ import Testimonials from "@/components/home/testimonials";
 import ContactSection from "@/components/home/contact-section";
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
-import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
+import {  ServiceSchema, FAQSchema , BreadcrumbSchema, PriceSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
@@ -67,13 +67,18 @@ export default function WalkInShowersPage() {
         serviceDescription="Professional walk-in shower installation in Chandler, Arizona. Barrier-free designs, frameless glass enclosures, and ADA-compliant options."
         serviceUrl={`${siteConfig.url}/walk-in-showers`}
       />
+      <PriceSchema
+        serviceName="Walk-In Shower Installation"
+        priceRange="$6,000 - $18,000"
+        url={`${siteConfig.url}/walk-in-showers/`}
+      />
       <FAQSchema faqs={faqs} />
       <Header />
       <main>
         <ServiceHero
-          title="Best Walk In Shower Installation Chandler AZ"
-          subtitle="Professional Walk-In Shower Company Services in Chandler AZ"
-          description="Best walk in shower installation Chandler AZ. We offer top-tier walk-in shower company services and affordable walk-in shower installation services. Get your free quote today!"
+          title="Curbless & Walk-In Shower Installations"
+          subtitle="Accessible, Zero-Threshold Showers Built with Waterproof Integrity"
+          description="Upgrade to a modern, barrier-free walk-in shower designed for safety, comfort, and premium aesthetics. Our certified specialists custom-build every project with heavy-duty structural framing, advanced Schluter-KERDI waterproofing systems, and durable, slip-resistant materials, all backed by a guaranteed fixed-price contract."
           image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
@@ -82,39 +87,39 @@ export default function WalkInShowersPage() {
         />
 
         <ServiceProcess
-          title="Walk-In Shower Installation Process"
+          title="Walk-In Shower Process"
           subtitle="Our Process"
-          description="A streamlined installation process designed to deliver your dream walk-in shower with minimal disruption."
+          description="A specialized design and construction workflow ensuring your walk-in shower is beautiful, safe, and built to last."
           steps={[
             {
               number: "01",
               icon: "PhoneCall",
-              title: "Free Consultation",
-              description: "We assess your space, discuss design preferences, and measure for your walk-in shower.",
+              title: "Space & Safety Consultation",
+              description: "We evaluate the current tub/shower space, check user mobility needs, and design a custom entry plan (curbed, low-profile, or zero-threshold curbless).",
             },
             {
               number: "02",
               icon: "Ruler",
-              title: "Design & Selection",
-              description: "Choose tile, glass enclosure style, fixtures, and accessibility features for your needs.",
+              title: "Plumbing & Valve Upgrades",
+              description: "We inspect the subfloor and wall framing, update the internal mixing valves, and prepare high-volume drain pipes to prevent shower pan overflows.",
             },
             {
               number: "03",
-              icon: "Hammer",
-              title: "Demo & Preparation",
-              description: "Careful removal of existing fixtures, waterproofing installation, and drainage setup.",
+              icon: "ShieldCheck",
+              title: "Waterproofing Membrane",
+              description: "We install a vapor-tight waterproofing barrier (like Schluter-KERDI) on all shower walls and the sloped floor pan to ensure 100% leak protection.",
             },
             {
               number: "04",
               icon: "ShowerHead",
-              title: "Installation",
-              description: "Professional tile setting, glass enclosure installation, and fixture mounting.",
+              title: "Tile Setting & Fixture Mounts",
+              description: "Our craftsmen set your selected porcelain, ceramic, or stone tile, install built-in wall niches/benches, and secure the sliding or frameless glass doors.",
             },
             {
               number: "05",
-              icon: "ShieldCheck",
-              title: "Final Inspection",
-              description: "Complete testing, sealing, and walkthrough to ensure perfect operation and finish.",
+              icon: "Sparkles",
+              title: "Sealing & Flow Walkthrough",
+              description: "We apply high-grade silicone sealant to prevent leaks, run multi-cycle drainage tests, and guide you through the finished walk-in shower features.",
             },
           ]}
         />
@@ -185,38 +190,7 @@ export default function WalkInShowersPage() {
 
         <ContactSection />
 
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">
-                Walk-In Shower Installation Service Area in Chandler, Arizona
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We serve homeowners throughout Chandler, Arizona and surrounding East Valley communities with professional walk-in shower installations.
-              </p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and nearby neighborhoods</li>
-                <li>• Licensed and insured contractors</li>
-                <li>• Same-week consultations available</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap
-                lat={chandlerLocation.lat}
-                lng={chandlerLocation.lng}
-                zoom={12}
-                title="Walk-In Showers in Chandler, AZ"
-                address="Chandler, Arizona"
-              />
-            </div>
-          </div>
-        </section>
-
-        <ServiceCTA 
-          title="Need walk-in shower installation in Chandler, AZ?" 
-          description="Call now for a free estimate and expert consultation on your walk-in shower project." 
-        />
+        
       </main>
       <Footer />
     </>

@@ -156,32 +156,10 @@ export default function BathroomVanityInstallationPage() {
         />
 
         <ServiceFAQ faqs={faqs} />
-        <Testimonials />
+        <Testimonials category="bathroom-vanity-installation" />
         <ContactSection />
 
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">
-                Service Area for Bathroom Vanity Installation in Chandler, Arizona
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We provide professional bathroom vanity installation services throughout Chandler, Arizona and surrounding areas.
-              </p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and nearby neighborhoods</li>
-                <li>• Licensed vanity installation contractors</li>
-                <li>• Free estimates and design consultations</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap lat={chandlerLocation.lat} lng={chandlerLocation.lng} zoom={12} title="Bathroom Vanity Installation in Chandler, AZ" address="Chandler, Arizona" />
-            </div>
-          </div>
-        </section>
-
-        <ServiceCTA title="Need bathroom vanity installation in Chandler, AZ?" description="Contact us today for professional vanity installation with quality materials and expert craftsmanship." />
+        
       </main>
       <Footer />
     </>

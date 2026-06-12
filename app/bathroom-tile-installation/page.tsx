@@ -158,22 +158,7 @@ export default function BathroomTileInstallationPage() {
         <ServiceFAQ faqs={faqs} />
         <Testimonials category="bathroom-tile-installation" />
         <ContactSection />
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">Tile Installation Service Area in Chandler, Arizona</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">Expert surface upgrades and <strong>tile installation in Chandler</strong>, along with professional flooring services throughout Chandler, Arizona and surrounding communities.</p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and nearby areas</li>
-                <li>• Licensed local contractors</li>
-                <li>• Waterproofing and precision specialists</li>
-              </ul>
-            </div>
-            <div><GoogleMap lat={chandlerLocation.lat} lng={chandlerLocation.lng} zoom={12} title="Tile Setting in Chandler, AZ" address="Chandler, Arizona" /></div>
-          </div>
-        </section>
-        <ServiceCTA title="Need a flooring update in Chandler, AZ?" description="Contact us for custom tiling with waterproof systems and expert craftsmanship." />
+
       </main>
       <Footer />
     </>

@@ -141,42 +141,11 @@ export default function ShowerReplacementPage() {
 
         <ServiceFAQ faqs={faqs} />
 
-        <Testimonials />
+        <Testimonials category="shower-replacement" />
 
         <ContactSection />
 
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground text-balance">
-                Shower Replacement Service Area in Chandler, Arizona
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                We provide professional shower replacement services throughout Chandler and the East Valley area.
-              </p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Chandler, AZ and surrounding communities</li>
-                <li>• Licensed and insured professionals</li>
-                <li>• Free estimates and consultations</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap
-                lat={chandlerLocation.lat}
-                lng={chandlerLocation.lng}
-                zoom={12}
-                title="Shower Replacement in Chandler, AZ"
-                address="Chandler, Arizona"
-              />
-            </div>
-          </div>
-        </section>
-
-        <ServiceCTA 
-          title="Need shower replacement in Chandler, AZ?" 
-          description="Contact us today for fast, professional shower replacement services." 
-        />
+        
       </main>
       <Footer />
     </>

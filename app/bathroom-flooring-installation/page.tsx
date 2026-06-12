@@ -153,32 +153,8 @@ export default function BathroomFlooringInstallationPage() {
 
         <ServiceFAQ faqs={faqs} />
         
-        <Testimonials />
-        
+        <Testimonials category="bathroom-flooring-installation" />
         <ContactSection />
-        
-        <section className="py-20 lg:py-32 bg-secondary">
-          <div className="container mx-auto px-4 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
-              <span className="text-primary text-sm font-medium tracking-wider uppercase">Chandler, AZ</span>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-foreground">Bathroom Flooring Installation in Chandler</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">Professional bathroom flooring installation services throughout Chandler, Arizona.</p>
-              <ul className="space-y-2 text-foreground">
-                <li>• Waterproof installation specialists</li>
-                <li>• Licensed and insured contractors</li>
-                <li>• Premium materials and craftsmanship</li>
-              </ul>
-            </div>
-            <div>
-              <GoogleMap lat={chandlerLocation.lat} lng={chandlerLocation.lng} zoom={12} title="Bathroom Flooring Installation in Chandler, AZ" address="Chandler, Arizona" />
-            </div>
-          </div>
-        </section>
-        
-        <ServiceCTA 
-          title="Need bathroom flooring installation in Chandler, AZ?" 
-          description="Contact us today for professional installation with premium tile and expert craftsmanship." 
-        />
       </main>
       <Footer />
     </>

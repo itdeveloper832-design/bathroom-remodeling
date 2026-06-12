@@ -244,26 +244,6 @@ export function ServiceSchema({ serviceName, serviceDescription, serviceUrl, ser
       "lowPrice": "12500",
       "highPrice": "38000"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": siteConfig.googleRating.toString(),
-      "reviewCount": siteConfig.googleReviewsCount.toString(),
-      "bestRating": "5"
-    },
-    "review": testimonialsData.default.map((t) => ({
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": t.rating.toString(),
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": t.name
-      },
-      "reviewBody": t.content,
-      "datePublished": "2025-10-15"
-    })),
     "url": serviceUrl
   };
 

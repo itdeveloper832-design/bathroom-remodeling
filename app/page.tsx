@@ -31,12 +31,12 @@ import FinalCTA from "@/components/home/final-cta";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Custom Bathroom Remodeling Chandler AZ | ARZ Home Remodeling"
+    absolute: "Custom Bath Remodeling Chandler AZ | ARZ Home Remodeling"
   },
-  description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Schedule a free design consultation today!",
+  description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Request your free design estimate today!",
   openGraph: {
-    title: "Custom Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
-    description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Schedule a free design consultation today!",
+    title: "Custom Bath Remodeling Chandler AZ | ARZ Home Remodeling",
+    description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Request your free design estimate today!",
     type: "website",
     url: `${siteConfig.url}/`,
     images: [

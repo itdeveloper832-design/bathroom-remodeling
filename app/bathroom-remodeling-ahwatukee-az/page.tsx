@@ -23,15 +23,10 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Ahwatukee AZ | Local Experts"
-  },
-  description: "Transform your Ahwatukee bathroom with custom remodeling services. Free estimates, premium materials, and expert installation.",
-  openGraph: {
-    title: "Bathroom Remodeling Ahwatukee AZ - ARZ Home Remodeling",
-    description:
-      "Licensed Ahwatukee bathroom contractors. Walk-in showers, tub conversions, master bath renovations. Free estimates.",
+export const metadata: Metadata = {title: {
+    absolute: "Ahwatukee Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ahwatukee bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Ahwatukee Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ahwatukee bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-ahwatukee-az/`,
     type: "website",
     images: [
@@ -44,9 +39,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Ahwatukee AZ - Free Estimates",
-    description: "Licensed Ahwatukee bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
+    card: "summary_large_image",title: "Ahwatukee Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ahwatukee bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-ahwatukee.jpg`],
   },
   alternates: {

@@ -12,14 +12,10 @@ import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: "Professional Bathroom Remodeling Phoenix AZ - Licensed Contractors",
-  description:
-    "Hire Phoenix's top-rated bathroom remodeling company. We specialize in master bathroom renovations, walk-in showers, and tub-to-shower conversions. Licensed company, free estimates: call (520) 569-3339 today!",
-  openGraph: {
-    title: "Bathroom Remodeling Phoenix AZ - ARZ Home Remodeling",
-    description:
-      "Licensed Phoenix bathroom contractors. Professional master bath renovations, shower replacements, and complete bathroom makeovers. Free estimates.",
+export const metadata: Metadata = {title: {
+    absolute: "Phoenix Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore phoenix bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Phoenix Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore phoenix bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-phoenix-az/`,
     type: "website",
   },

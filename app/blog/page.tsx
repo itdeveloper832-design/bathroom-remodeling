@@ -4,14 +4,10 @@ import { siteConfig } from "@/lib/site-config"
 import BlogContent from "./blog-content"
 import { getPublishedPosts, getCategories } from "@/lib/actions/blog"
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Blog | Chandler Homeowners Guide"
-  },
-  description: "Explore expert bathroom remodeling tips, design ideas, cost guides, and renovation advice for Chandler homeowners.",
-  openGraph: {
-    title: "Bathroom Remodeling Blog & Tips - ARZ Home Remodeling",
-    description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors. Learn about costs, materials, and master bath layouts.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Remodel Blog | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel blog, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bathroom Remodel Blog | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel blog, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/blog/`,
     type: "website",
     images: [
@@ -24,9 +20,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Blog & Tips - ARZ Home Remodeling",
-    description: "Expert bathroom remodeling tips, design trends, and guides from Chandler, AZ contractors.",
+    card: "summary_large_image",title: "Bathroom Remodel Blog | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel blog, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-blog-index.png`],
   },
   alternates: {

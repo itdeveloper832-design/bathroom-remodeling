@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Maricopa AZ | Free Estimate"
-  },
-  description: "Transform your Maricopa bathroom with modern remodeling solutions. Trusted contractors, premium finishes & free quotes.",
-  openGraph: {
-    title: "Bathroom Remodeling Maricopa AZ - Licensed & Insured - ARZ",
-    description: "Expert bathroom remodeling in Maricopa, AZ. Specialized ADA curbless showers, tub-to-shower conversions, and guest bath transformations. Free quotes.",
+export const metadata: Metadata = {title: {
+    absolute: "Maricopa Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore maricopa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Maricopa Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore maricopa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-maricopa-az/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Maricopa AZ - Licensed & Insured - ARZ",
-    description: "Expert bathroom remodels and curbless shower conversions in Maricopa, AZ. Fully licensed ROC338304.",
+    card: "summary_large_image",title: "Maricopa Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore maricopa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {

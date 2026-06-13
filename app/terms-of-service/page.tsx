@@ -5,14 +5,10 @@ import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
 import { ObscuredEmail } from "@/components/ui/obscured-email"
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Terms of Service | ARZ Home Remodeling"
-  },
-  description: "Review the terms and conditions governing the use of ARZ Home Remodeling's website and services.",
-  openGraph: {
-    title: "Terms of Service - ARZ Home Remodeling",
-    description: "Read our terms and conditions for using our services.",
+export const metadata: Metadata = {title: {
+    absolute: "Service Terms Details | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore service terms details, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Service Terms Details | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore service terms details, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/terms-of-service/`,
     type: "website",
     images: [
@@ -25,9 +21,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Terms of Service - ARZ Home Remodeling",
-    description: "Read our terms and conditions for using our services.",
+    card: "summary_large_image",title: "Service Terms Details | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore service terms details, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {

@@ -9,7 +9,7 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import { createLead } from "@/lib/actions/leads";
 import { getFormMetadata } from "@/lib/form-metadata";
 
-export function QuoteForm() {
+export function QuoteForm({ idPrefix = "quote" }: { idPrefix?: string }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [wordCount, setWordCount] = useState(0);
   const [error, setError] = useState("");
@@ -118,9 +118,9 @@ export function QuoteForm() {
         aria-label="Free bathroom remodel quote request"
       >
         <div>
-          <Label htmlFor="quote-name">Your Name</Label>
+          <Label htmlFor={`${idPrefix}-name`}>Your Name</Label>
           <Input
-            id="quote-name"
+            id={`${idPrefix}-name`}
             type="text"
             name="name"
             placeholder="Your Name"
@@ -131,9 +131,9 @@ export function QuoteForm() {
         </div>
 
         <div>
-          <Label htmlFor="quote-phone">Phone Number</Label>
+          <Label htmlFor={`${idPrefix}-phone`}>Phone Number</Label>
           <Input
-            id="quote-phone"
+            id={`${idPrefix}-phone`}
             type="tel"
             name="phone"
             placeholder="Phone Number"
@@ -144,9 +144,9 @@ export function QuoteForm() {
         </div>
 
         <div>
-          <Label htmlFor="quote-email">Email Address</Label>
+          <Label htmlFor={`${idPrefix}-email`}>Email Address</Label>
           <Input
-            id="quote-email"
+            id={`${idPrefix}-email`}
             type="email"
             name="email"
             placeholder="Email Address"
@@ -157,9 +157,9 @@ export function QuoteForm() {
         </div>
 
         <div>
-          <Label htmlFor="quote-zip">ZIP Code</Label>
+          <Label htmlFor={`${idPrefix}-zip`}>ZIP Code</Label>
           <Input
-            id="quote-zip"
+            id={`${idPrefix}-zip`}
             type="text"
             name="zip"
             placeholder="ZIP Code"
@@ -170,9 +170,9 @@ export function QuoteForm() {
         </div>
 
         <div>
-          <Label htmlFor="quote-service">Select Service</Label>
+          <Label htmlFor={`${idPrefix}-service`}>Select Service</Label>
           <select
-            id="quote-service"
+            id={`${idPrefix}-service`}
             name="service"
             required
             aria-required="true"
@@ -190,19 +190,19 @@ export function QuoteForm() {
         </div>
 
         <div>
-          <Label htmlFor="quote-message">Project Description</Label>
+          <Label htmlFor={`${idPrefix}-message`}>Project Description</Label>
           <Textarea
-            id="quote-message"
+            id={`${idPrefix}-message`}
             name="message"
             placeholder="Describe your project goals, timeline, or any specific requirements (Optional)."
             rows={3}
             className="resize-none mt-1.5"
-            aria-describedby={error ? "quote-message-error" : undefined}
+            aria-describedby={error ? `${idPrefix}-message-error` : undefined}
             onChange={handleMessageChange}
           />
           {error && (
             <p
-              id="quote-message-error"
+              id={`${idPrefix}-message-error`}
               className="text-sm text-destructive mt-1"
               role="alert"
             >

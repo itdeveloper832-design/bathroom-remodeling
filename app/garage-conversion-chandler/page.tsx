@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Garage Conversion Chandler AZ | Free Consultation"
-  },
-  description: "Convert your garage into valuable living space with Chandler's trusted remodeling professionals. Free estimates available.",
-  openGraph: {
-    title: "Garage Conversion Chandler AZ - Room Conversions - ARZ",
-    description: "Expert garage conversions in Chandler, AZ. Convert underutilized garage space into luxury master suites, home offices, or guest quarters. Free estimates.",
+export const metadata: Metadata = {title: {
+    absolute: "Garage Conversion Baths | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore garage conversion baths, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Garage Conversion Baths | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore garage conversion baths, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/garage-conversion-chandler/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Garage Conversion Chandler AZ - Room Conversions - ARZ",
-    description: "Licensed garage conversion experts in Chandler, AZ. Turn key room conversions, custom design.",
+    card: "summary_large_image",title: "Garage Conversion Baths | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore garage conversion baths, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {

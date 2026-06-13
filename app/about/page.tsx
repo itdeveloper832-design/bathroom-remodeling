@@ -8,14 +8,10 @@ import { Button } from "@/components/ui/button"
 import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, Hammer, Sparkles } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema, PersonSchema } from "@/components/seo/json-ld"
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "About ARZ Home Remodeling | Chandler Bathroom Experts"
-  },
-  description: "Learn why Chandler homeowners trust ARZ Home Remodeling for quality bathroom renovations, transparent pricing & expert craftsmanship.",
-  openGraph: {
-    title: "About ARZ Home Remodeling – Chandler, AZ Bathroom Contractors Since 2010",
-    description: "Family-owned bathroom remodeling company serving Chandler AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member, BBB A+.",
+export const metadata: Metadata = {title: {
+    absolute: "About ARZ Remodelers | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore about arz remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "About ARZ Remodelers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore about arz remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/about/`,
     type: "website",
     images: [
@@ -28,9 +24,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "About ARZ Home Remodeling – Chandler, AZ Bathroom Contractors Since 2010",
-    description: "Family-owned bathroom remodeling company serving Chandler AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member, BBB A+.",
+    card: "summary_large_image",title: "About ARZ Remodelers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore about arz remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {

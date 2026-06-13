@@ -15,12 +15,9 @@ import { LocalBusinessSchema, OrganizationSchema } from '@/components/seo/json-l
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
-  title: {
-    default: `Bathroom Remodeling Chandler AZ | Licensed, ROC-Certified | Free Estimate`,
-    template: `%s - ARZ Home Remodeling`
-  },
-  description: siteConfig.description,
+  metadataBase: new URL(siteConfig.url),title: {
+    absolute: "Licensed Bath Remodelers | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore licensed bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
@@ -39,9 +36,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: `Bathroom Remodeling Chandler AZ | Licensed, ROC-Certified | Free Estimate`,
-    description: siteConfig.description,
+    siteName: siteConfig.name,title: "Licensed Bath Remodelers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore licensed bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [
       {
         url: `${siteConfig.url}/images/og-homepage.png`,
@@ -52,9 +47,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: `Bathroom Remodeling Chandler AZ | Licensed, ROC-Certified | Free Estimate`,
-    description: siteConfig.description,
+    card: 'summary_large_image',title: "Licensed Bath Remodelers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore licensed bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-homepage.png`],
   },
   verification: {

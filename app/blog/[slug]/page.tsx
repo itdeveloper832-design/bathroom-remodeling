@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button"
 import { BlogArticleJsonLd, BreadcrumbSchema } from "@/components/seo/json-ld"
 import { parseMarkdown, extractHeadings } from "@/lib/blog-utils"
 import type { BlogPost } from "@/lib/types"
+import { createSeoDescription, createSeoTitle } from "@/lib/seo-metadata-standards"
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>
@@ -37,15 +38,20 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     }
   }
 
+  const title = createSeoTitle(post.metaTitle || post.title)
+  const description = createSeoDescription(post.metaDescription || post.title)
+
   return {
-    title: post.metaTitle || post.title,
-    description: post.metaDescription || post.excerpt,
+    title: {
+      absolute: title,
+    },
+    description,
     alternates: {
       canonical: `${siteConfig.url}/blog/${post.slug}/`,
     },
     openGraph: {
-      title: post.metaTitle || post.title,
-      description: post.metaDescription || post.excerpt,
+      title,
+      description,
       url: `${siteConfig.url}/blog/${post.slug}/`,
       type: "article",
       publishedTime: post.publishedAt || post.createdAt,
@@ -55,8 +61,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     },
     twitter: {
       card: "summary_large_image",
-      title: post.metaTitle || post.title,
-      description: post.metaDescription || post.excerpt,
+      title,
+      description,
       images: post.featuredImage ? [post.featuredImage] : undefined,
     }
   }

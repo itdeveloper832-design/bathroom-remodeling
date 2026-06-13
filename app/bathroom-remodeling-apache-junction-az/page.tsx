@@ -12,15 +12,10 @@ import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Apache Junction AZ | Free Quote"
-  },
-  description: "Expert bathroom remodeling in Apache Junction, AZ. Modern designs, quality craftsmanship, and free in-home consultations.",
-  openGraph: {
-    title: "Bathroom Remodeling Apache Junction | Licensed Contractor",
-    description:
-      "Licensed Apache Junction bathroom contractors. Custom walk-in showers, tub conversions, and complete bathroom renovations. Free estimates.",
+export const metadata: Metadata = {title: {
+    absolute: "Apache Junction Bath | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore apache junction bath, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Apache Junction Bath | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore apache junction bath, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-apache-junction-az/`,
     type: "website",
   },

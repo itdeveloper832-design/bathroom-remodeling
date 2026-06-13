@@ -12,15 +12,10 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodel Cost Chandler AZ | Pricing Guide"
-  },
-  description: "Discover bathroom remodeling costs in Chandler, AZ. Get accurate pricing, budgeting tips, and a free personalized estimate.",
-  openGraph: {
-    title: "Bathroom Remodeling Cost Chandler AZ - 2025 Pricing Guide",
-    description:
-      "Transparent bathroom remodeling pricing for Chandler, AZ homeowners. All project types covered.",
+export const metadata: Metadata = {title: {
+    absolute: "Bath Remodel Cost Chandler | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bath remodel cost chandler, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bath Remodel Cost Chandler | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bath remodel cost chandler, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodel-cost-chandler/`,
     type: "website",
   },

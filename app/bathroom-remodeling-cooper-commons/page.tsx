@@ -8,15 +8,11 @@ const SLUG = "cooper-commons";
 
 const meta = getDedicatedAreaMetadata(SLUG, PATH)!;
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Cooper Commons | Free Estimate"
-  },
-  description: "Upgrade your bathroom in Cooper Commons with custom remodeling solutions, expert craftsmanship, and competitive pricing.",
+export const metadata: Metadata = {title: {
+    absolute: "Cooper Commons Bath | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore cooper commons bath, custom showers, tile, vanities, clear pricing, and free estimates.",
   alternates: { canonical: meta.canonical },
-  openGraph: {
-    title: "Bathroom Remodeling Cooper Commons Chandler AZ | Free Estima",
-    description: "Professional bathroom remodeling cooper commons in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+  openGraph: {title: "Cooper Commons Bath | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore cooper commons bath, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: meta.canonical,
     type: "website",
   },

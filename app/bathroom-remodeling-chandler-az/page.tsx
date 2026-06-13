@@ -24,15 +24,10 @@ import {
 import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling"
-  },
-  description: "Transform your bathroom with Chandler's trusted local remodeling experts. Custom walk-in showers, tub conversions & premium vanities. Call for a free estimate!",
-  openGraph: {
-    title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
-    description:
-      "Transform your bathroom with Chandler's trusted local remodeling experts. Custom walk-in showers, tub conversions & premium vanities. Call for a free estimate!",
+export const metadata: Metadata = {title: {
+    absolute: "Chandler Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore chandler bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Chandler Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore chandler bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-chandler-az/`,
     type: "website",
     images: [
@@ -45,9 +40,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
-    description: "Transform your bathroom with Chandler's trusted local remodeling experts. Custom walk-in showers, tub conversions & premium vanities. Call for a free estimate!",
+    card: "summary_large_image",title: "Chandler Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore chandler bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
   alternates: {

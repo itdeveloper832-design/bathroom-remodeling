@@ -10,15 +10,10 @@ import { FAQSchema, BreadcrumbSchema } from "@/components/seo/json-ld";
 import Link from "next/link";
 import { ArrowRight, FileText, CheckCircle2, AlertTriangle } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodel Permits Chandler AZ | Complete Guide"
-  },
-  description: "Learn about bathroom remodeling permits in Chandler, AZ. Avoid delays, stay compliant, and start your project confidently.",
-  openGraph: {
-    title: "Bathroom Remodeling Permits Chandler AZ - Guide & Requirements",
-    description:
-      "A complete guide to Chandler, AZ bathroom remodeling permits. Learn when city approval is required, fee schedules, and the inspection process.",
+export const metadata: Metadata = {title: {
+    absolute: "Permits Chandler Guide | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore permits chandler guide, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Permits Chandler Guide | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore permits chandler guide, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-permits-chandler/`,
     type: "website",
   },

@@ -18,12 +18,10 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Walk-In Shower Installation Chandler AZ - Professional Services",
-  description: "Walk-in shower installation services and shower company in Chandler, AZ. Barrier-free designs, ADA accessibility, handicap showers. Professional contractors. Free quotes. Starting from $6,000.",
-  openGraph: {
-    title: "Walk-In Shower Installation Chandler AZ - ADA Options",
-    description: "Professional walk-in shower installation in Chandler AZ. Barrier-free designs, ADA options, and luxury finishes. Licensed & insured. Free estimates!",
+export const metadata: Metadata = {title: {
+    absolute: "Walk In Shower Designs | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore walk in shower designs, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Walk In Shower Designs | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore walk in shower designs, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/walk-in-showers/`,
     type: "website",
     images: [
@@ -36,9 +34,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Walk-In Shower Installation Chandler AZ - ADA Options",
-    description: "Safe & stylish walk-in showers in Chandler AZ. Starting from $6,000. Free estimates!",
+    card: "summary_large_image",title: "Walk In Shower Designs | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore walk in shower designs, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-shower.png`],
   },
   alternates: {

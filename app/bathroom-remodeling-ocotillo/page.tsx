@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Ocotillo | Free Design Quote"
-  },
-  description: "Upgrade your Ocotillo bathroom with custom remodeling, premium finishes, and expert craftsmanship. Free estimates available.",
-  openGraph: {
-    title: "Bathroom Remodeling Ocotillo Chandler AZ - Custom Contractor",
-    description: "Expert bathroom design & remodeling in Ocotillo, Chandler, AZ. Licensed contractors, luxury designs, and custom tile installations. Free estimates: (520) 569-3339.",
+export const metadata: Metadata = {title: {
+    absolute: "Ocotillo Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ocotillo bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Ocotillo Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ocotillo bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-ocotillo/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Ocotillo Chandler AZ - Custom Contractor",
-    description: "Licensed Ocotillo bathroom contractors. Walk-in showers, custom tile, master bath renovations.",
+    card: "summary_large_image",title: "Ocotillo Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ocotillo bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {

@@ -51,6 +51,11 @@ export default function Hero() {
               </a>
             </div>
 
+            {/* Mobile Quote Form - Visible immediately above the fold on mobile screens */}
+            <div className="block lg:hidden w-full mb-8 text-foreground">
+              <QuoteForm idPrefix="mobile" />
+            </div>
+
             <p className="text-lg md:text-lg text-white/90 mb-8 leading-relaxed font-medium italic">
               "Focused exclusively on high-quality bathroom renovations. Designed for homeowners who want their bathroom done right."
             </p>
@@ -71,7 +76,7 @@ export default function Hero() {
               <Button
                 asChild
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-semibold"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-semibold animate-pulse"
                 aria-label="Get your free in-home bathroom remodel estimate"
               >
                 <Link href="#contact">Get a Free In-Home Estimate</Link>
@@ -88,8 +93,9 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="lg:col-span-5 w-full flex justify-center lg:justify-end">
-            <QuoteForm />
+          {/* Desktop Quote Form - Hidden on mobile, visible on desktop */}
+          <div className="hidden lg:flex lg:col-span-5 w-full justify-center lg:justify-end text-foreground">
+            <QuoteForm idPrefix="desktop" />
           </div>
         </div>
       </div>

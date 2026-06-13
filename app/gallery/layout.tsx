@@ -1,14 +1,10 @@
 import { Metadata } from "next"
 import { siteConfig } from "@/lib/site-config"
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Gallery Chandler AZ | Projects"
-  },
-  description: "Browse completed bathroom remodeling projects in Chandler, AZ. Get inspiration for your next renovation project.",
-  openGraph: {
-    title: "Bathroom Remodel Project Gallery | ARZ Home Remodeling",
-    description: "Explore our stunning gallery of completed bathroom remodels in Chandler, AZ. See custom tiled walk-in showers, master bath retreats & vanity upgrades.",
+export const metadata: Metadata = {title: {
+    absolute: "Project Gallery Ideas | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore project gallery ideas, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Project Gallery Ideas | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore project gallery ideas, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/gallery/`,
     type: "website",
     images: [
@@ -21,9 +17,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodel Project Gallery | ARZ Home Remodeling",
-    description: "Explore our stunning gallery of completed bathroom remodels in Chandler, AZ. See custom tiled walk-in showers, master bath retreats & vanity upgrades.",
+    card: "summary_large_image",title: "Project Gallery Ideas | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore project gallery ideas, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {

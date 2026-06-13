@@ -18,14 +18,10 @@ import Link from "next/link";
 import { Crown, Sparkles, Gem } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Luxury Bathroom Remodeling Chandler AZ | Premium Design"
-  },
-  description: "Create a stunning luxury bathroom with custom features, premium materials, and expert craftsmanship in Chandler.",
-  openGraph: {
-    title: "Luxury Bathroom Remodeling Chandler AZ - Premium Design",
-    description: "Premium master bathroom transformations in Chandler. Spa showers, freestanding tubs, and high end materials. Licensed AZ contractor.",
+export const metadata: Metadata = {title: {
+    absolute: "Luxury Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore luxury bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Luxury Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore luxury bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/luxury-bathroom-remodeling/`,
     type: "website",
     images: [
@@ -38,9 +34,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Luxury Bathroom Remodeling Chandler AZ - Premium Design",
-    description: "Premium master bathroom transformations in Chandler. Spa showers, freestanding tubs, and high end materials. Licensed AZ contractor.",
+    card: "summary_large_image",title: "Luxury Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore luxury bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-master-suite.png`],
   },
   alternates: {

@@ -1,14 +1,10 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = {
-  title: "Best Bathroom Remodel Company Near Me in Chandler, Arizona  - Expert Service Services",
-  description:
-    "Looking for bathroom remodelers near me? Transform your bathroom with our expert remodeling services in Chandler, Arizona. Bathroom remodel financing near me available. Custom showers, bathtub installation, vanities, tile, and more. Free estimates!",
-  openGraph: {
-    title: "Best Bathroom Remodel Company Near Me in Chandler, Arizona",
-    description:
-      "Looking for bathroom remodelers near me? Transform your bathroom with our expert remodeling services in Chandler, Arizona. Financing available.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling`,
   },
 };

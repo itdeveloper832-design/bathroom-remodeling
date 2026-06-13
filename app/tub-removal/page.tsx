@@ -15,12 +15,10 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
-export const metadata: Metadata = {
-  title: "Tub Removal Service Chandler AZ - Professional Removal",
-  description: "Professional bathtub removal services in Chandler, Arizona. Safe removal, proper disposal, and floor prep for your bathroom renovation project.",
-  openGraph: {
-    title: "Tub Removal Service Chandler AZ - Professional Removal",
-    description: "Professional bathtub removal services in Chandler. Safe removal and proper disposal included.",
+export const metadata: Metadata = {title: {
+    absolute: "Tub Removal Services | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub removal services, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Tub Removal Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub removal services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/tub-removal`,
     type: "website",
     images: [
@@ -33,9 +31,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Tub Removal Service Chandler AZ - Professional Removal",
-    description: "Professional bathtub removal services in Chandler. Safe removal and proper disposal included.",
+    card: "summary_large_image",title: "Tub Removal Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub removal services, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/tub-removal-hero.jpg`],
   },
   alternates: {

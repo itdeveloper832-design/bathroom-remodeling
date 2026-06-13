@@ -5,14 +5,10 @@ import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
 import { ObscuredEmail } from "@/components/ui/obscured-email"
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Privacy Policy | ARZ Home Remodeling"
-  },
-  description: "Review ARZ Home Remodeling's privacy policy and learn how we collect, use, and protect your information.",
-  openGraph: {
-    title: "Privacy Policy - ARZ Home Remodeling",
-    description: "Learn how we collect, use and protect your personal information.",
+export const metadata: Metadata = {title: {
+    absolute: "Privacy Policy Details | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore privacy policy details, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Privacy Policy Details | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore privacy policy details, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/privacy-policy/`,
     type: "website",
     images: [
@@ -25,9 +21,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Privacy Policy - ARZ Home Remodeling",
-    description: "Learn how we collect, use and protect your personal information.",
+    card: "summary_large_image",title: "Privacy Policy Details | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore privacy policy details, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {

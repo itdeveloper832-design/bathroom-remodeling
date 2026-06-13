@@ -15,14 +15,10 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Cabinet & Countertop Installation Chandler AZ"
-  },
-  description: "Upgrade your bathroom with custom cabinets and countertops. Professional installation and free design consultations.",
-  openGraph: {
-    title: "Cabinet & Countertop Installation Chandler AZ",
-    description: "Professional cabinet and countertop installation in Chandler. Granite, quartz, and custom cabinetry.",
+export const metadata: Metadata = {title: {
+    absolute: "Vanity Cabinet Installs | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore vanity cabinet installs, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Vanity Cabinet Installs | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore vanity cabinet installs, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/cabinet-countertop-installation`,
     type: "website",
     images: [
@@ -35,9 +31,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Cabinet & Countertop Installation Chandler AZ",
-    description: "Professional cabinet and countertop installation in Chandler. Granite, quartz, and custom cabinetry.",
+    card: "summary_large_image",title: "Vanity Cabinet Installs | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore vanity cabinet installs, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/cabinet-countertop-hero.jpg`],
   },
   alternates: {

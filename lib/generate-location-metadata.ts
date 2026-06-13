@@ -5,6 +5,14 @@
  */
 
 import { findLocationBySlug, ZipCodeData, NeighborhoodData } from "./chandler-locations";
+import {
+  createSeoDescription,
+  createSeoTitle,
+  SEO_DESCRIPTION_MAX,
+  SEO_DESCRIPTION_MIN,
+  SEO_TITLE_MAX,
+  SEO_TITLE_MIN,
+} from "./seo-metadata-standards";
 
 export interface LocationMetadataConfig {
   title: string; // 50-60 chars
@@ -21,8 +29,9 @@ export function generateZipMetadata(
   zipData: ZipCodeData,
   baseUrl: string
 ): LocationMetadataConfig {
-  const title = `Bathroom Remodeling ${zipData.city} AZ ${zipData.zip}`;
-  const description = `Expert bathroom remodeling in ${zipData.city}, AZ ${zipData.zip}. Licensed contractors serving ${zipData.neighborhoods.length}+ neighborhoods. Free estimates.`;
+  const subject = `ZIP ${zipData.zip} Bath Remodel`;
+  const title = createSeoTitle(subject);
+  const description = createSeoDescription(subject);
 
   return {
     title, // 50-60 chars - COMPLIANT
@@ -46,8 +55,8 @@ export function generateNeighborhoodMetadata(
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
 
-  const title = `Bathroom Remodeling ${capitalizedName} Chandler AZ`;
-  const description = `Expert bathroom remodeling in ${capitalizedName}, Chandler AZ. Licensed contractors specializing in ${capitalizedName} renovations. Free consultation.`;
+  const title = createSeoTitle(`${capitalizedName} Bath Remodel`);
+  const description = createSeoDescription(`${capitalizedName} Bath Remodel`);
 
   return {
     title, // 50-60 chars - COMPLIANT
@@ -72,9 +81,8 @@ export function generateCombinedMetadata(
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
 
-  // Combined pages get more specific, geo-targeted titles
-  const title = `${capitalizedName} Bathroom Remodeling ${zipData.zip} AZ`;
-  const description = `Bathroom remodeling in ${capitalizedName}, Chandler ${zipData.zip}. Licensed local contractors with ${capitalizedName} expertise. Free estimates today.`;
+  const title = createSeoTitle(`${capitalizedName} ${zipData.zip} Bath`);
+  const description = createSeoDescription(`${capitalizedName} ${zipData.zip} Bath`);
 
   return {
     title, // 50-60 chars - COMPLIANT
@@ -137,18 +145,18 @@ export function validateMetadata(config: LocationMetadataConfig): {
     return { valid: false, errors };
   }
 
-  if (config.title.length < 50 || config.title.length > 60) {
+  if (config.title.length < SEO_TITLE_MIN || config.title.length > SEO_TITLE_MAX) {
     errors.push(
-      `Title length ${config.title.length} chars not in 50-60 range`
+      `Title length ${config.title.length} chars not in ${SEO_TITLE_MIN}-${SEO_TITLE_MAX} range`
     );
   }
 
   if (
-    config.description.length < 120 ||
-    config.description.length > 160
+    config.description.length < SEO_DESCRIPTION_MIN ||
+    config.description.length > SEO_DESCRIPTION_MAX
   ) {
     errors.push(
-      `Description length ${config.description.length} chars not in 120-160 range`
+      `Description length ${config.description.length} chars not in ${SEO_DESCRIPTION_MIN}-${SEO_DESCRIPTION_MAX} range`
     );
   }
 

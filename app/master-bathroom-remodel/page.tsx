@@ -13,14 +13,10 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Master Bathroom Remodel Chandler AZ | Free Quote"
-  },
-  description: "Transform your master bathroom with custom layouts, luxury finishes, and expert remodeling services in Chandler.",
-  openGraph: {
-    title: "Master Bathroom Remodel Chandler AZ - Custom Luxury",
-    description: "Master bathroom remodel in Chandler, AZ. Custom tile showers, frameless glass, double vanities, quartz tops. Licensed ROC338304. Free estimate.",
+export const metadata: Metadata = {title: {
+    absolute: "Master Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore master bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Master Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore master bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/master-bathroom-remodel/`,
     type: "website",
     images: [
@@ -33,9 +29,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Master Bathroom Remodel Chandler AZ - Custom Luxury",
-    description: "Transform your master bath into a private retreat. Custom tile, frameless glass, luxury vanities and full renovation.",
+    card: "summary_large_image",title: "Master Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore master bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-master-suite.png`],
   },
   alternates: {

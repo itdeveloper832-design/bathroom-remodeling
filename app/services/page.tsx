@@ -8,23 +8,17 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Services Chandler AZ | Experts"
-  },
-  description: "Explore professional bathroom remodeling services including showers, tile, vanities, and complete renovations.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
   alternates: {
     canonical: `${siteConfig.url}/services/`,
   },
-  openGraph: {
-    title: "Bathroom Remodeling Services in Chandler AZ - Showers, Vanities & Tile - ARZ",
-    description: "Browse all bathroom services offered by ARZ Home Remodeling in Chandler AZ. Walk-in showers, tub conversions, tile, vanities, ADA baths. Licensed ROC contractor. Free estimates.",
+  openGraph: {title: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Services in Chandler AZ - Showers, Vanities & Tile - ARZ",
-    description: "Browse all bathroom services offered by ARZ Home Remodeling in Chandler AZ. Walk-in showers, tub conversions, tile, vanities, ADA baths. Licensed ROC contractor. Free estimates.",
+    card: "summary_large_image",title: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
   },
 };
 

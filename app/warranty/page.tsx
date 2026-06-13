@@ -5,14 +5,10 @@ import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
 import { Shield, CheckCircle, AlertTriangle, HelpCircle } from "lucide-react"
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Remodeling Warranty Chandler AZ | Peace of Mind"
-  },
-  description: "Learn about our remodeling warranty coverage and commitment to quality workmanship and customer satisfaction.",
-  openGraph: {
-    title: "5-Year Workmanship Warranty - ARZ Home Remodeling",
-    description: "Our 5-Year Workmanship Warranty guarantees the quality of our tile work, waterproofing, plumbing, and general bathroom remodeling.",
+export const metadata: Metadata = {title: {
+    absolute: "Workmanship Warranty | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore workmanship warranty, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Workmanship Warranty | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore workmanship warranty, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/warranty/`,
     type: "website",
     images: [
@@ -25,9 +21,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "5-Year Workmanship Warranty - ARZ Home Remodeling",
-    description: "Comprehensive 5-Year Workmanship Warranty for all custom bathroom remodels in Chandler, AZ.",
+    card: "summary_large_image",title: "Workmanship Warranty | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore workmanship warranty, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {

@@ -19,14 +19,10 @@ import { Shield, CheckCircle, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "ADA Bathroom Remodeling Chandler AZ | Free Quote"
-  },
-  description: "Safe, stylish ADA bathroom remodeling in Chandler, AZ. Improve accessibility, comfort, and independence with expert renovations.",
-  openGraph: {
-    title: "Accessible Shower Remodeling Chandler - ADA Specialist",
-    description: "Expert ADA bathroom remodeling in Chandler. Safe walk-in showers, roll-in entries, and professional safety modifications for seniors and mobility needs.",
+export const metadata: Metadata = {title: {
+    absolute: "ADA Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ada bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "ADA Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ada bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/ada-bathroom-remodeling/`,
     type: "website",
   },

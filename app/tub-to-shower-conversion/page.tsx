@@ -20,14 +20,10 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Tub to Shower Conversion Chandler AZ | Free Quote"
-  },
-  description: "Replace your outdated bathtub with a modern walk-in shower. Fast installation and free estimates available.",
-  openGraph: {
-    title: "Tub-to-Shower Conversion | Chandler AZ",
-    description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
+export const metadata: Metadata = {title: {
+    absolute: "Tub To Shower Conversion | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower conversion, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Tub To Shower Conversion | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower conversion, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/tub-to-shower-conversion/`,
     type: "website",
     images: [
@@ -40,9 +36,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Tub-to-Shower Conversion | Chandler AZ",
-    description: "Remove your unused garden tub & upgrade to a modern walk-in shower. Most popular remodel in Chandler. 1–2 week install, firm price, licensed AZ contractor.",
+    card: "summary_large_image",title: "Tub To Shower Conversion | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower conversion, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-shower.png`],
   },
   alternates: {

@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Mesa AZ | Trusted Local Experts"
-  },
-  description: "Create the bathroom you've always wanted with Mesa's remodeling experts. Quality craftsmanship and free consultations.",
-  openGraph: {
-    title: "Bathroom Remodel Mesa AZ | Licensed Contractor",
-    description: "Expert bathroom remodeling in Mesa, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",
+export const metadata: Metadata = {title: {
+    absolute: "Mesa Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore mesa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Mesa Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore mesa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-mesa-az/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodel Mesa AZ | Licensed Contractor",
-    description: "Licensed Mesa bathroom contractors. Custom showers, tub conversions, master bath renovations.",
+    card: "summary_large_image",title: "Mesa Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore mesa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-mesa.jpg`],
   },
   alternates: {

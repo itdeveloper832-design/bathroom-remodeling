@@ -24,14 +24,10 @@ import ShowerCTAFooter from "@/components/shower-cta-footer";
 import ShowerGallery from "@/components/shower-gallery";
 
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Shower Remodeling Chandler AZ | Free Estimate"
-  },
-  description: "Upgrade your shower with custom designs, modern materials, and expert installation from Chandler professionals.",
-  openGraph: {
-    title: "Shower Remodeling Chandler AZ - Custom Tiled Showers",
-    description: "ARZ Home Remodeling builds custom showers in Chandler with Schluter-Kerdi waterproofing, frameless glass, and a 2-year workmanship warranty. Licensed, insured since 2010. ROC338304.",
+export const metadata: Metadata = {title: {
+    absolute: "Shower Remodeling | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower remodeling, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Shower Remodeling | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower remodeling, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",
     images: [
@@ -44,9 +40,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Shower Remodeling Chandler AZ - Custom Tiled Showers",
-    description: "Expert shower remodeling in Chandler AZ. Schluter-Kerdi waterproofing, frameless glass, custom tile. ROC Licensed #338304. Free estimates!",
+    card: "summary_large_image",title: "Shower Remodeling | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower remodeling, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-shower.png`],
   },
   alternates: {

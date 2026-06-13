@@ -15,14 +15,10 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Lighting Installation Chandler AZ | Free Quote"
-  },
-  description: "Brighten your bathroom with modern lighting solutions. Chandler's trusted remodeling team delivers stylish, energy-efficient upgrades.",
-  openGraph: {
-    title: "Bathroom Lighting Installation Chandler AZ",
-    description: "Professional bathroom lighting installation in Chandler with vanity and recessed LED fixtures.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Lighting Install | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom lighting install, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bathroom Lighting Install | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom lighting install, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-lighting-installation`,
     type: "website",
   },

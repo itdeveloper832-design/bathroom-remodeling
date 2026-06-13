@@ -15,12 +15,10 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
-export const metadata: Metadata = {
-  title: "Shower Replacement Chandler AZ - Professional Installation",
-  description: "Professional shower replacement Chandler AZ. Shower valve replacement, shower handle replacement, shower door replacement, shower pan replacement. Free quotes!",
-  openGraph: {
-    title: "Shower Replacement Chandler AZ - Professional Installation",
-    description: "Professional shower replacement Chandler AZ. Valve, handle, door, pan replacement. Free quotes!",
+export const metadata: Metadata = {title: {
+    absolute: "Shower Replacement | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower replacement, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Shower Replacement | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower replacement, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/shower-replacement`,
     type: "website",
     images: [
@@ -33,9 +31,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Shower Replacement Chandler AZ - Professional Installation",
-    description: "Professional shower replacement Chandler AZ. Valve, handle, door replacement!",
+    card: "summary_large_image",title: "Shower Replacement | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower replacement, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/shower-replacement-hero.jpg`],
   },
   alternates: {

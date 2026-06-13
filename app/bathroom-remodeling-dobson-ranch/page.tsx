@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Dobson Ranch | Local Experts"
-  },
-  description: "Transform your Dobson Ranch bathroom with custom showers, tile upgrades, vanities, and professional remodeling services.",
-  openGraph: {
-    title: "Bathroom Remodeling Dobson Ranch AZ - Custom Contractors",
-    description: "Expert bathroom remodeling in Dobson Ranch, Mesa/Chandler AZ. Licensed contractors, custom tile walk-in showers, and layout updates. Free estimates: (520) 569-3339.",
+export const metadata: Metadata = {title: {
+    absolute: "Dobson Ranch Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore dobson ranch bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Dobson Ranch Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore dobson ranch bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-dobson-ranch/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Dobson Ranch AZ - Custom Contractors",
-    description: "Licensed Dobson Ranch bathroom remodeling. Custom tile, walk-in showers, layout renovations.",
+    card: "summary_large_image",title: "Dobson Ranch Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore dobson ranch bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {

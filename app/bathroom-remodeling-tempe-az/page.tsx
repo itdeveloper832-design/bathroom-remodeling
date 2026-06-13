@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Tempe AZ | Trusted Contractors"
-  },
-  description: "Upgrade your Tempe bathroom with custom remodeling solutions. Quality workmanship, transparent pricing & free quotes.",
-  openGraph: {
-    title: "Bathroom Remodeling Tempe: Licensed Contractors & Free Quotes",
-    description: "Expert bathroom remodeling in Tempe, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",
+export const metadata: Metadata = {title: {
+    absolute: "Tempe Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tempe bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Tempe Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tempe bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-tempe-az/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Tempe: Licensed Contractors & Free Quotes",
-    description: "Licensed Tempe bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
+    card: "summary_large_image",title: "Tempe Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tempe bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-tempe.jpg`],
   },
   alternates: {

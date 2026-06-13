@@ -7,14 +7,10 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Specials Chandler AZ | Save Now"
-  },
-  description: "Take advantage of limited-time remodeling offers and special discounts on bathroom renovation projects.",
-  openGraph: {
-    title: "Special Offers - Bathroom Remodeling",
-    description: "Exclusive bathroom remodeling offers and promotions in Chandler, Arizona.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Remodel Offers | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel offers, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bathroom Remodel Offers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel offers, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/offers/`,
     type: "website",
     images: [
@@ -27,9 +23,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Special Offers - Bathroom Remodeling",
-    description: "Exclusive bathroom remodeling offers and promotions in Chandler.",
+    card: "summary_large_image",title: "Bathroom Remodel Offers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel offers, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {

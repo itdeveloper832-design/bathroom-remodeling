@@ -7,14 +7,10 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Remodeling Careers Chandler AZ | Join Our Team"
-  },
-  description: "Explore rewarding career opportunities with ARZ Home Remodeling. Join a growing team dedicated to quality craftsmanship.",
-  openGraph: {
-    title: "Careers - Join Our Team",
-    description: "Join our growing team in Chandler, Arizona. We're hiring experienced contractors.",
+export const metadata: Metadata = {title: {
+    absolute: "Remodeling Careers | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore remodeling careers, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Remodeling Careers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore remodeling careers, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/careers/`,
     type: "website",
     images: [
@@ -27,9 +23,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Careers - Join Our Team",
-    description: "Join our growing team in Chandler, Arizona.",
+    card: "summary_large_image",title: "Remodeling Careers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore remodeling careers, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {

@@ -19,14 +19,10 @@ import { Users, Layout, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Guest Bathroom Remodeling Chandler AZ | Free Quote"
-  },
-  description: "Create a welcoming guest bathroom with custom remodeling solutions, modern finishes, and expert craftsmanship.",
-  openGraph: {
-    title: "Guest Bathroom Remodeling Chandler AZ - Small Bath Renovations",
-    description: "Expert guest bathroom and powder room remodeling in Chandler. High impact updates, efficient timelines, and quality finishes.",
+export const metadata: Metadata = {title: {
+    absolute: "Guest Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore guest bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Guest Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore guest bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/guest-bathroom-remodeling/`,
     type: "website",
     images: [
@@ -39,9 +35,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Guest Bathroom Remodeling Chandler AZ - Small Bath Renovations",
-    description: "Expert guest bathroom and powder room remodeling in Chandler. High impact updates, efficient timelines, and quality finishes.",
+    card: "summary_large_image",title: "Guest Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore guest bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-small-bath.png`],
   },
   alternates: {

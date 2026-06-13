@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Fulton Ranch | Free Estimate"
-  },
-  description: "Bring your dream bathroom to life in Fulton Ranch. Expert remodeling, premium materials, and free consultations available.",
-  openGraph: {
-    title: "Bathroom Remodeling Fulton Ranch Chandler AZ - Custom Builder",
-    description: "Upgrade your master bath in Fulton Ranch, Chandler, AZ. Expert custom tile, curbless walk-in showers, and premium double vanities. Free quotes: (520) 569-3339.",
+export const metadata: Metadata = {title: {
+    absolute: "Fulton Ranch Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore fulton ranch bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Fulton Ranch Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore fulton ranch bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-fulton-ranch/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Fulton Ranch Chandler AZ - Custom Builder",
-    description: "Licensed Fulton Ranch bathroom remodeling. Custom tile, walk-in showers, master bath renovations.",
+    card: "summary_large_image",title: "Fulton Ranch Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore fulton ranch bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {

@@ -7,9 +7,9 @@ import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
 import { ArrowRight, Bath, ShowerHead, HelpCircle } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Flooring Services - ARZ Home Remodeling",
-  description: "ARZ Home Remodeling specializes exclusively in premium bathroom renovations in Chandler, AZ. Learn more about our custom shower and bath designs.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Flooring Pros | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom flooring pros, custom showers, tile, vanities, clear pricing, and free estimates.",
   robots: {
     index: false,
     follow: false,

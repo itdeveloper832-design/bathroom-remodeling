@@ -13,8 +13,8 @@ export default function DesignBuildShowcase() {
           <div className="relative order-2 lg:order-1">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border shadow-xl">
               <Image
-                src="/images/optimized/bathroom-remodeling-licensed-crew.avif"
-                alt="3D bathroom design visualizer and planning rendering software in Chandler Arizona"
+                src="/images/optimized/bathroom-planning-design.avif"
+                alt="Modern bathroom design used for Chandler remodeling planning inspiration"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

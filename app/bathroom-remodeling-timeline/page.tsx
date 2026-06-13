@@ -10,15 +10,10 @@ import { FAQSchema, BreadcrumbSchema } from "@/components/seo/json-ld";
 import Link from "next/link";
 import { ArrowRight, Clock, CheckCircle2, Calendar } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Timeline | What to Expect"
-  },
-  description: "Learn how long a bathroom remodel takes and what to expect during each phase. Plan your renovation with confidence.",
-  openGraph: {
-    title: "Bathroom Remodeling Timeline Chandler AZ  - Project Schedule",
-    description:
-      "Planning a bathroom remodel in Chandler? Learn about the exact day-by-day construction timeline and key milestones.",
+export const metadata: Metadata = {title: {
+    absolute: "Timeline Guide Services | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore timeline guide services, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Timeline Guide Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore timeline guide services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-timeline/`,
     type: "website",
   },

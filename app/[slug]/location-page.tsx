@@ -12,6 +12,7 @@ import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
 import { ChevronRight, MapPin, Clock, Phone, ShieldCheck, DollarSign, Droplets, ArrowRight } from "lucide-react";
 import CustomFAQ from "@/components/custom-faq";
+import { createSeoDescription, createSeoTitle } from "@/lib/seo-metadata-standards";
 
 // Generate metadata
 export async function generateLocationMetadata({
@@ -39,12 +40,11 @@ export async function generateLocationMetadata({
         : "Chandler, AZ";
 
   const isZip = /^\d{5}$/.test(locationSlug);
-  const defaultTitle = isZip
-    ? `Bathroom Remodeling ZIP ${location.zipData.zip} | ARZ Home Remodeling`
-    : `Bathroom Remodeling ${displayName} | ARZ Home Remodeling`;
-  const defaultDescription = isZip
-    ? `Licensed bathroom remodeling contractor in ZIP ${location.zipData.zip}, Chandler AZ. Custom walk-in showers & tub conversions. Free estimates!`
-    : `Licensed bathroom remodeling contractor in ${displayName}, Chandler AZ. Custom walk-in showers & tub conversions. Free estimates!`;
+  const defaultSubject = isZip
+    ? `ZIP ${location.zipData.zip} Bath Remodel`
+    : `${displayName} Bath Remodel`;
+  const defaultTitle = createSeoTitle(defaultSubject);
+  const defaultDescription = createSeoDescription(defaultSubject);
 
   const title = override ? override.title : defaultTitle;
   const description = override ? override.description : defaultDescription;

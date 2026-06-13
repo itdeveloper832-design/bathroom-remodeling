@@ -16,14 +16,10 @@ import { serviceContent } from "@/lib/service-content-data";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Chandler AZ | Free Design Quote"
-  },
-  description: "Transform your Chandler home with custom master bathroom remodeling, luxury walk-in showers, double vanities, and premium waterproofing. Free estimates.",
-  openGraph: {
-    title: "Bathroom Remodeling Chandler | Licensed Pros",
-    description: `Custom master bath design, luxury curbless showers, double vanities, and Schluter waterproofing in Chandler, AZ. ROC338304. Call: ${siteConfig.phone}.`,
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling`,
     type: "website",
     images: [
@@ -36,9 +32,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Bathroom Remodeling Services Chandler AZ',
-    description: 'Specialized bathroom renovations in Chandler, AZ. From luxury walk-in showers to custom double vanities. Fixed-price contracts. ROC338304.',
+    card: 'summary_large_image',title: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-chandler.jpg`],
   },
   alternates: {

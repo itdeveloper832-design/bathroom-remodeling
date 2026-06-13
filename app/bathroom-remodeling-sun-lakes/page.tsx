@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Sun Lakes | Local Experts"
-  },
-  description: "Modern bathroom renovations for Sun Lakes homeowners. Premium materials, skilled craftsmanship, and free estimates.",
-  openGraph: {
-    title: "Bathroom Remodeling Sun Lakes AZ | Walk-In Showers",
-    description: "Expert safety-focused bathroom remodeling in Sun Lakes, AZ. Zero-threshold walk-in showers, handicap accessible layouts, and custom safety bars. Free quotes: (520) 569-3339.",
+export const metadata: Metadata = {title: {
+    absolute: "Sun Lakes Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore sun lakes bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Sun Lakes Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore sun lakes bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-sun-lakes/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Sun Lakes AZ | Walk-In Showers",
-    description: "Licensed Sun Lakes bathroom contractors. ADA walk-in showers, tub conversions, senior safety upgrades.",
+    card: "summary_large_image",title: "Sun Lakes Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore sun lakes bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {

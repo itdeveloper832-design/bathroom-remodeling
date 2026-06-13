@@ -17,14 +17,10 @@ import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Tile Installation Chandler AZ | Free Quote"
-  },
-  description: "Professional bathroom tile installation in Chandler, AZ. Beautiful designs, expert craftsmanship, and lasting durability.",
-  openGraph: {
-    title: "Bathroom Tile Installer Chandler AZ - Custom Shower Tile",
-    description: "Professional tile setting in Chandler with shower walls, floor tiles, and backsplash work.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Tile Installation | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom tile installation, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bathroom Tile Installation | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom tile installation, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-tile-installation`,
     type: "website",
     images: [
@@ -37,9 +33,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Tile Installer Chandler AZ - Custom Shower Tile",
-    description: "Professional tiling services in Chandler with shower walls, floor tiles, and backsplashes.",
+    card: "summary_large_image",title: "Bathroom Tile Installation | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom tile installation, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-tile-install.png`],
   },
   alternates: {

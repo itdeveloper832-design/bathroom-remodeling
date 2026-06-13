@@ -10,15 +10,10 @@ import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/jso
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Tub to Shower Conversion Cost Chandler AZ"
-  },
-  description: "Learn the cost of converting a tub into a shower and get accurate pricing for your Chandler remodeling project.",
-  openGraph: {
-    title: "Tub-to-Shower Conversion Cost | Chandler AZ",
-    description:
-      "Planning a tub-to-shower conversion in Chandler? Learn about pricing ranges for acrylic inserts, custom tile, plumbing adjustments, and glass.",
+export const metadata: Metadata = {title: {
+    absolute: "Tub To Shower Convert Cost | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower convert cost, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Tub To Shower Convert Cost | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower convert cost, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/tub-to-shower-conversion-cost/`,
     type: "website",
   },

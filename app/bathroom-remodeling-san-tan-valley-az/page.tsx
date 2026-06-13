@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling San Tan Valley AZ | Free Quote"
-  },
-  description: "Create a beautiful new bathroom with expert remodeling services in San Tan Valley. Schedule your free consultation today.",
-  openGraph: {
-    title: "Bathroom Remodeling San Tan Valley AZ - Licensed & Insured - ARZ",
-    description: "Expert bathroom remodeling in San Tan Valley, AZ. Curbless walk-in tile showers, tub-to-shower conversions, and double vanities. Free estimates.",
+export const metadata: Metadata = {title: {
+    absolute: "San Tan Valley Bath | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore san tan valley bath, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "San Tan Valley Bath | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore san tan valley bath, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-san-tan-valley-az/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling San Tan Valley AZ - Licensed & Insured - ARZ",
-    description: "Licensed San Tan Valley bathroom contractors. Custom showers, tub conversions, master bath renovations.",
+    card: "summary_large_image",title: "San Tan Valley Bath | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore san tan valley bath, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {

@@ -18,14 +18,10 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Small Bathroom Remodeling Chandler AZ | Smart Design"
-  },
-  description: "Maximize space and style with custom small bathroom remodeling solutions tailored to your needs and budget.",
-  openGraph: {
-    title: "Small Bathroom Remodeling Chandler AZ - Budget Friendly",
-    description: "Expert small bathroom remodeling in Chandler. Maximize space with clever designs, compact fixtures, and luxury finishes.",
+export const metadata: Metadata = {title: {
+    absolute: "Small Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore small bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Small Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore small bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/small-bathroom-remodeling/`,
     type: "website",
     images: [
@@ -38,9 +34,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Small Bathroom Remodeling Chandler AZ - Budget Friendly",
-    description: "Expert small bathroom remodeling in Chandler. Maximize space with clever designs, compact fixtures, and luxury finishes.",
+    card: "summary_large_image",title: "Small Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore small bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-small-bath.png`],
   },
   alternates: {

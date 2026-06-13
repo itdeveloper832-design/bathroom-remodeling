@@ -17,14 +17,10 @@ import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Vanity Installation Chandler AZ | Experts"
-  },
-  description: "Upgrade your bathroom with a stylish new vanity. Professional installation, quality products, and free estimates.",
-  openGraph: {
-    title: "Bathroom Vanity Installation Chandler AZ",
-    description: "Professional vanity installation in Chandler with custom designs and expert installation.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Vanity Install | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom vanity install, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bathroom Vanity Install | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom vanity install, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-vanity-installation`,
     type: "website",
     images: [
@@ -37,9 +33,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Vanity Installation Chandler AZ",
-    description: "Professional vanity installation in Chandler with custom designs and expert installation.",
+    card: "summary_large_image",title: "Bathroom Vanity Install | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom vanity install, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-vanity-install.png`],
   },
   alternates: {

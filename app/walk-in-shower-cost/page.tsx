@@ -10,15 +10,10 @@ import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/jso
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Walk-In Shower Cost Chandler AZ | Pricing Guide"
-  },
-  description: "Discover walk-in shower installation costs, design options, and budgeting tips for Chandler homeowners.",
-  openGraph: {
-    title: "Walk-In Shower Cost Chandler AZ - 2025 Pricing Guide",
-    description:
-      "A complete guide to walk-in shower installation costs in Chandler. Transparent pricing for materials, plumbing moves, and waterproofing.",
+export const metadata: Metadata = {title: {
+    absolute: "Walk In Shower Cost | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore walk in shower cost, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Walk In Shower Cost | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore walk in shower cost, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/walk-in-shower-cost/`,
     type: "website",
   },

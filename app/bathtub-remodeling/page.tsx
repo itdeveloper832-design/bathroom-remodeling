@@ -19,21 +19,15 @@ import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathtub Remodeling Chandler AZ | Free Estimate"
-  },
-  description: "Refresh your bathroom with professional bathtub remodeling services. Custom solutions, quality finishes, and free quotes.",
-  openGraph: {
-    title: "Bathtub Remodeling Chandler | Tub Replacement",
-    description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation, and luxury upgrades. Free estimates!",
+export const metadata: Metadata = {title: {
+    absolute: "Bathtub Remodel Services | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathtub remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bathtub Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathtub remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathtub-remodeling/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathtub Remodeling Chandler | Tub Replacement",
-    description: "Expert bathtub remodeling in Chandler AZ. Tub replacement, soaking tub installation. Free estimates!",
+    card: "summary_large_image",title: "Bathtub Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathtub remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
   },
   alternates: {
     canonical: `${siteConfig.url}/bathtub-remodeling/`,

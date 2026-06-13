@@ -29,15 +29,10 @@ import GalleryPreview from "@/components/home/gallery-preview";
 import { HomeBelowFold } from "@/components/home/home-below-fold";
 import FinalCTA from "@/components/home/final-cta";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Phoenix East Valley | ARZ Home Remodeling"
-  },
-  description: "Transform your bathroom with East Valley's trusted local remodeling experts. Serving Chandler, Gilbert, Mesa, Tempe & surrounding areas. Free design quotes!",
-  openGraph: {
-    title: "Bathroom Remodeling Phoenix East Valley | ARZ Home Remodeling",
-    description:
-      "Transform your bathroom with East Valley's trusted local remodeling experts. Serving Chandler, Gilbert, Mesa, Tempe & surrounding areas. Free design quotes!",
+export const metadata: Metadata = {title: {
+    absolute: "Licensed Bath Remodelers | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore licensed bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Licensed Bath Remodelers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore licensed bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
     type: "website",
     url: `${siteConfig.url}/`,
     images: [

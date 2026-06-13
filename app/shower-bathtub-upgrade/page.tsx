@@ -14,12 +14,10 @@ import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 
-export const metadata: Metadata = {
-  title: "Shower & Bathtub Upgrade Chandler AZ - Professional Service",
-  description: "Professional shower and bathtub upgrade services in Chandler, Arizona. Modern fixtures, premium materials, and expert installation. Free estimates.",
-  openGraph: {
-    title: "Shower & Bathtub Upgrade Chandler AZ - Professional Service",
-    description: "Professional shower and bathtub upgrades in Chandler with modern fixtures and premium materials.",
+export const metadata: Metadata = {title: {
+    absolute: "Shower Bathtub Upgrade | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower bathtub upgrade, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Shower Bathtub Upgrade | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower bathtub upgrade, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/shower-bathtub-upgrade`,
     type: "website",
     images: [
@@ -32,9 +30,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Shower & Bathtub Upgrade Chandler AZ - Professional Service",
-    description: "Professional shower and bathtub upgrades in Chandler with modern fixtures and premium materials.",
+    card: "summary_large_image",title: "Shower Bathtub Upgrade | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower bathtub upgrade, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/shower-bathtub-upgrade-hero.jpg`],
   },
   alternates: {

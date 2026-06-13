@@ -8,14 +8,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { siteConfig } from "@/lib/site-config"
 import { Check, Calculator, Clock, Shield, CreditCard } from "lucide-react"
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodel Financing Chandler AZ | Options"
-  },
-  description: "Make your dream bathroom affordable with flexible financing solutions. Explore available payment options today.",
-  openGraph: {
-    title: "Bathroom Remodel Financing | Chandler AZ",
-    description: "Flexible financing options with low monthly payments and competitive rates for your bathroom project.",
+export const metadata: Metadata = {title: {
+    absolute: "Financing Options | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore financing options, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Financing Options | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore financing options, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/financing/`,
     type: "website",
     images: [
@@ -28,9 +24,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodel Financing | Chandler AZ",
-    description: "Flexible financing options with low monthly payments for your bathroom project.",
+    card: "summary_large_image",title: "Financing Options | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore financing options, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/hero-bathroom.jpg`],
   },
   alternates: {

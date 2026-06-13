@@ -8,17 +8,13 @@ import { Calendar, Clock, ArrowLeft, User, ArrowRight, Share2, Facebook, Twitter
 import { Button } from "@/components/ui/button"
 import { BlogArticleJsonLd, BreadcrumbSchema } from "@/components/seo/json-ld"
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Tub-to-Shower Conversion Chandler AZ | Complete Guide"
-  },
-  description: "Discover costs, waterproofing, permit rules, and design choices for your tub-to-shower conversion in Chandler, AZ. Free quote: (520) 569-3339.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Remodel Guide | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel guide, custom showers, tile, vanities, clear pricing, and free estimates.",
   alternates: {
     canonical: `${siteConfig.url}/blog/tub-to-shower-conversion-chandler-az-guide/`,
   },
-  openGraph: {
-    title: "Tub-to-Shower Conversion Chandler AZ | Complete Guide",
-    description: "Discover costs, waterproofing, permit rules, and design choices for your tub-to-shower conversion in Chandler, AZ. Free quote: (520) 569-3339.",
+  openGraph: {title: "Bathroom Remodel Guide | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel guide, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/blog/tub-to-shower-conversion-chandler-az-guide/`,
     type: "article",
     publishedTime: "2026-06-07T08:00:00Z",

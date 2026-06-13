@@ -13,14 +13,10 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Handicap Accessible Bathroom Chandler AZ | Experts"
-  },
-  description: "Improve bathroom accessibility with safe, functional remodeling solutions designed for comfort and independence.",
-  openGraph: {
-    title: "Handicap Accessible Bathroom Chandler AZ - ADA Compliant",
-    description: "Accessible bathroom remodels in Chandler, AZ. Curbless showers, grab bars, wider doorways, accessible vanities. ADA-compliant design.",
+export const metadata: Metadata = {title: {
+    absolute: "Handicap Accessible | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore handicap accessible, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Handicap Accessible | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore handicap accessible, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/handicap-accessible-bathroom/`,
     type: "website",
     images: [
@@ -33,9 +29,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Handicap Accessible Bathroom Chandler AZ - ADA Compliant",
-    description: "Create a safe, accessible bathroom with ADA-compliant design. Curbless showers and grab bars for aging-in-place.",
+    card: "summary_large_image",title: "Handicap Accessible | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore handicap accessible, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/og-small-bath.png`],
   },
   alternates: {

@@ -1,13 +1,11 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = {
-  title: "Service Not Available",
-  description: "This service is no longer offered.",
+export const metadata: Metadata = {title: {
+    absolute: "Kitchen Remodel Services | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore kitchen remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
   robots: { index: false, follow: false },
-  openGraph: {
-    title: "Service Not Available",
-    description: "This service is no longer offered.",
+  openGraph: {title: "Kitchen Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore kitchen remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/kitchen-remodeling`,
   },
 };

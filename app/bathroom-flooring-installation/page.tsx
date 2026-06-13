@@ -15,14 +15,10 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Flooring Installation Chandler AZ | Experts"
-  },
-  description: "Upgrade your bathroom with durable tile, luxury vinyl, or stone flooring. Professional installation and free estimates in Chandler.",
-  openGraph: {
-    title: "Bathroom Flooring Installation Chandler AZ",
-    description: "Professional bathroom flooring installation in Chandler with waterproof materials.",
+export const metadata: Metadata = {title: {
+    absolute: "Bathroom Flooring Install | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom flooring install, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Bathroom Flooring Install | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom flooring install, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-flooring-installation`,
     type: "website",
   },

@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Gilbert AZ | Trusted Local Pros"
-  },
-  description: "Upgrade your bathroom with Gilbert's trusted remodeling experts. Custom designs, quality craftsmanship & free estimates.",
-  openGraph: {
-    title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
-    description: "Expert bathroom remodeling in Gilbert, AZ. Licensed contractors, luxury designs, and affordable pricing. Free estimates: (520) 569-3339.",
+export const metadata: Metadata = {title: {
+    absolute: "Gilbert Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gilbert bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Gilbert Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gilbert bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Bathroom Remodeling Gilbert: Licensed Contractors & Free Quotes",
-    description: "Licensed Gilbert bathroom contractors. Walk-in showers, tub conversions, master bath renovations.",
+    card: "summary_large_image",title: "Gilbert Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gilbert bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-gilbert.jpg`],
   },
   alternates: {

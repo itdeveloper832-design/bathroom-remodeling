@@ -12,15 +12,10 @@ import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Queen Creek AZ | Free Estimate"
-  },
-  description: "Transform your bathroom with Queen Creek's trusted remodeling professionals. Custom designs and quality workmanship.",
-  openGraph: {
-    title: "Bathroom Remodeling Queen Creek AZ - ARZ Home Remodeling",
-    description:
-      "Licensed Queen Creek bathroom contractors. Walk-in showers, tub-to-shower conversions, and complete bathroom renovations. Free estimates.",
+export const metadata: Metadata = {title: {
+    absolute: "Queen Creek Bath Remodel | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore queen creek bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Queen Creek Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore queen creek bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-queen-creek-az/`,
     type: "website",
   },

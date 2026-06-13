@@ -10,15 +10,10 @@ import { FAQSchema, BreadcrumbSchema } from "@/components/seo/json-ld";
 import Link from "next/link";
 import { ArrowRight, DollarSign, CheckCircle2, Percent } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Bathroom Remodeling Financing | Flexible Payment Plans"
-  },
-  description: "Explore affordable financing options for your bathroom remodel. Start your project now with flexible monthly payment plans.",
-  openGraph: {
-    title: "Bathroom Remodeling Financing | Chandler AZ",
-    description:
-      "A complete guide to financing your bathroom remodel in Chandler. Learn about unsecured loans, low monthly payments, and home equity options.",
+export const metadata: Metadata = {title: {
+    absolute: "Financing Guide Services | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore financing guide services, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "Financing Guide Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore financing guide services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-financing/`,
     type: "website",
   },

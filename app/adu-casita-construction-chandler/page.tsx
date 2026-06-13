@@ -22,21 +22,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "ADU & Casita Construction Chandler AZ | Free Estimate"
-  },
-  description: "Build a custom ADU or casita in Chandler, AZ. Expert design, quality construction, and transparent pricing from local professionals.",
-  openGraph: {
-    title: "ADU & Casita Construction Chandler AZ - Guest Houses - ARZ",
-    description: "Expert accessory dwelling unit (ADU) & casita construction in Chandler, AZ. Custom design-build guest houses with premium finishes. Free quotes.",
+export const metadata: Metadata = {title: {
+    absolute: "ADU Bathroom Planning | Chandler AZ Bathroom Remodeling"
+  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore adu bathroom planning, custom showers, tile, vanities, clear pricing, and free estimates.",
+  openGraph: {title: "ADU Bathroom Planning | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore adu bathroom planning, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/adu-casita-construction-chandler/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "ADU & Casita Construction Chandler AZ - Guest Houses - ARZ",
-    description: "Licensed ADU and casita construction experts in Chandler, AZ. Premium guest suites, custom design.",
+    card: "summary_large_image",title: "ADU Bathroom Planning | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore adu bathroom planning, custom showers, tile, vanities, clear pricing, and free estimates.",
     images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
   },
   alternates: {

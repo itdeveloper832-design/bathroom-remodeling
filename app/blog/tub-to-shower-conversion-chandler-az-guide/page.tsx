@@ -279,7 +279,7 @@ export default function StandaloneBlogPost() {
 
                     <blockquote>
                       <p>
-                        <strong>Need a quick estimate for your Chandler home?</strong> Contact Mike Hernandez and our team of expert local remodelers today at <strong>(520) 569-3339</strong> to schedule your free, detailed in-home estimate.
+                        <strong>Need a quick estimate for your Chandler home?</strong> Contact Mike Hernandez and our team of expert local remodelers today at <strong>(480) 569-3339</strong> to schedule your free, detailed in-home estimate.
                       </p>
                     </blockquote>
 
@@ -404,7 +404,7 @@ export default function StandaloneBlogPost() {
                       Are you ready to replace your outdated tub with a beautiful, modern walk-in shower? At ARZ Home Remodeling, we specialize in high-end bathroom conversions, custom tiling, and layout transformations across Chandler, Ocotillo, Fulton Ranch, and Sun Lakes.
                     </p>
                     <p>
-                      Contact Mike Hernandez and our team of expert local remodelers today at <strong>(520) 569-3339</strong> to discuss your ideas and schedule your free, itemized project estimate.
+                      Contact Mike Hernandez and our team of expert local remodelers today at <strong>(480) 569-3339</strong> to discuss your ideas and schedule your free, itemized project estimate.
                     </p>
                     
                     <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -412,7 +412,7 @@ export default function StandaloneBlogPost() {
                         <Link href="/contact/">Get Your Free Estimate</Link>
                       </Button>
                       <Button asChild variant="outline" size="lg" className="border-foreground/20 hover:bg-foreground/5 text-foreground font-bold px-10 h-14 rounded-full transition-all">
-                        <Link href="tel:+15205693339">Call (520) 569-3339</Link>
+                        <Link href="tel:+14805693339">Call (480) 569-3339</Link>
                       </Button>
                     </div>
 
@@ -451,7 +451,7 @@ export default function StandaloneBlogPost() {
                   <Link href="/contact/">Get Your Free Estimate</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-background/20 hover:bg-background/10 text-background font-bold px-10 h-14 rounded-full transition-all">
-                  <Link href="tel:+15205693339">Call (520) 569-3339</Link>
+                  <Link href="tel:+14805693339">Call (480) 569-3339</Link>
                 </Button>
               </div>
             </div>

@@ -97,7 +97,7 @@ export default function ApacheJunctionPage() {
                 <Link href="/contact/">Get Your Free Apache Junction Quote</Link>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>
+                <Link href="tel:+14805693339">Call {siteConfig.phone}</Link>
               </Button>
             </div>
           </div>

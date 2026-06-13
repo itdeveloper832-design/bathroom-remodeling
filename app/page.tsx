@@ -3,7 +3,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
 import QuickAnswers from "@/components/home/quick-answers";
-import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, WebSiteSchema, VideoSchema } from "@/components/seo/json-ld";
+import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, WebSiteSchema, VideoSchema, PriceSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
@@ -29,10 +29,14 @@ import GalleryPreview from "@/components/home/gallery-preview";
 import { HomeBelowFold } from "@/components/home/home-below-fold";
 import FinalCTA from "@/components/home/final-cta";
 
-export const metadata: Metadata = {title: {
-    absolute: "Licensed Bath Remodelers | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore licensed bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
-  openGraph: {title: "Licensed Bath Remodelers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore licensed bath remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {
+  title: {
+    absolute: "Custom Bathroom Remodeling Chandler AZ | ARZ Home Remodeling"
+  },
+  description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Schedule a free design consultation today!",
+  openGraph: {
+    title: "Custom Bathroom Remodeling Chandler AZ | ARZ Home Remodeling",
+    description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Schedule a free design consultation today!",
     type: "website",
     url: `${siteConfig.url}/`,
     images: [
@@ -40,7 +44,7 @@ export const metadata: Metadata = {title: {
         url: `${siteConfig.url}/images/og-homepage.png`,
         width: 1200,
         height: 630,
-        alt: "ARZ Home Remodeling - Luxury Bathroom Remodeling in Phoenix East Valley, AZ",
+        alt: "ARZ Home Remodeling - Custom Bathroom Remodeling in Chandler, AZ",
       },
     ],
   },
@@ -83,6 +87,11 @@ export default function HomePage() {
         <FAQSchema faqs={faqSchemaItems} />
         <SpeakableSchema url={`${siteConfig.url}/`} />
         <VideoSchema videos={homepageVideos} />
+        <PriceSchema
+          serviceName="Bathroom Remodeling Services"
+          priceRange="$12,500 - $38,000"
+          url={`${siteConfig.url}/`}
+        />
       <Header />
       <main id="main-content" role="main">
         <Hero />

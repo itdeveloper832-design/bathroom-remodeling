@@ -212,7 +212,7 @@ export default function MaricopaPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:+15205693339" className="flex items-center gap-2">
+                <Link href="tel:+14805693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   {siteConfig.phone}
                 </Link>

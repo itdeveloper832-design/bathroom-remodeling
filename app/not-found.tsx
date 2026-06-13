@@ -33,7 +33,7 @@ export default function NotFound() {
         </div>
 
         <div className="pt-8 text-sm text-muted-foreground">
-          <p>Need help? Call us at <a href="tel:+15205693339" className="font-semibold hover:text-primary">(520) 569-3339</a></p>
+          <p>Need help? Call us at <a href="tel:+14805693339" className="font-semibold hover:text-primary">(480) 569-3339</a></p>
         </div>
       </div>
     </div>

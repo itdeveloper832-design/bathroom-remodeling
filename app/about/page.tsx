@@ -442,7 +442,7 @@ export default function AboutPage() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="tel:+15205693339">
+                  <Link href="tel:+14805693339">
                     Call {siteConfig.phone}
                   </Link>
                 </Button>

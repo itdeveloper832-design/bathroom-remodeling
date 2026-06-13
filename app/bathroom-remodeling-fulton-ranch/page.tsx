@@ -176,9 +176,9 @@ export default function FultonRanchPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:+15205693339" className="flex items-center gap-2">
+                <Link href="tel:+14805693339" className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  (520) 569-3339
+                  (480) 569-3339
                 </Link>
               </Button>
             </div>

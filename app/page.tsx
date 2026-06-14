@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Header } from "@/components/layout/header";
+import { LazyRender } from "@/components/ui/lazy-render";
 import { Footer } from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
 import QuickAnswers from "@/components/home/quick-answers";
@@ -34,10 +35,10 @@ export const metadata: Metadata = {
   title: {
     absolute: "Custom Bath Remodeling Chandler AZ | ARZ Home Remodeling"
   },
-  description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Request your free design estimate today!",
+  description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Request a free estimate today!",
   openGraph: {
     title: "Custom Bath Remodeling Chandler AZ | ARZ Home Remodeling",
-    description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Request your free design estimate today!",
+    description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Request a free estimate today!",
     type: "website",
     url: `${siteConfig.url}/`,
     images: [
@@ -99,25 +100,37 @@ export default function HomePage() {
         <QuickAnswers />
         <div>
           <LocalTrust cityName="Chandler" />
-          <AboutPreview />
-          <ServicesGrid />
-          <ChandlerProjects />
-          <DesignBuildShowcase />
-          <WhyChooseUs />
-          <PricingTable />
-          <BathroomSection />
-          <ProcessSection />
-          <ChandlerExpertise />
-          <PopularProjects />
-          <VideoShowcase />
-          <ServiceAreas />
-          <Financing />
-          <ComparisonBenefits />
-          <FAQ />
-          <BlogPreview />
-          <GalleryPreview />
-          <HomeBelowFold />
-          <FinalCTA />
+          <LazyRender placeholderHeight="500px">
+            <AboutPreview />
+            <ServicesGrid />
+          </LazyRender>
+          <LazyRender placeholderHeight="800px">
+            <ChandlerProjects />
+            <DesignBuildShowcase />
+            <WhyChooseUs />
+          </LazyRender>
+          <LazyRender placeholderHeight="800px">
+            <PricingTable />
+            <BathroomSection />
+            <ProcessSection />
+          </LazyRender>
+          <LazyRender placeholderHeight="1000px">
+            <ChandlerExpertise />
+            <PopularProjects />
+            <VideoShowcase />
+          </LazyRender>
+          <LazyRender placeholderHeight="800px">
+            <ServiceAreas />
+            <Financing />
+            <ComparisonBenefits />
+          </LazyRender>
+          <LazyRender placeholderHeight="1000px">
+            <FAQ />
+            <BlogPreview />
+            <GalleryPreview />
+            <HomeBelowFold />
+            <FinalCTA />
+          </LazyRender>
         </div>
       </main>
       <Footer />

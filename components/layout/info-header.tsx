@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, Briefcase, Tag } from "lucide-react";
+import { Phone, Mail, Briefcase } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { ObscuredEmail } from "@/components/ui/obscured-email";
 
@@ -34,15 +34,6 @@ export function InfoHeader() {
           >
             <Briefcase className="w-4 h-4" aria-hidden="true" />
             <span>Careers</span>
-          </Link>
-          
-          <Link 
-            href="/offers/"
-            className="flex items-center gap-2 hover:text-primary transition-colors min-h-[48px] px-2 no-underline"
-            aria-label="View special offers"
-          >
-            <Tag className="w-4 h-4" aria-hidden="true" />
-            <span>Special Offers</span>
           </Link>
         </div>
       </div>

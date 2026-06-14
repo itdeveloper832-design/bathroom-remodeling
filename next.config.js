@@ -131,4 +131,17 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+let config = nextConfig;
+
+if (process.env.ANALYZE === 'true') {
+  try {
+    const withBundleAnalyzer = require('@next/bundle-analyzer')({
+      enabled: true,
+    });
+    config = withBundleAnalyzer(config);
+  } catch (err) {
+    console.warn('\n[Warning] Please install @next/bundle-analyzer to run bundle analysis:\nnpm install -D @next/bundle-analyzer\n');
+  }
+}
+
+module.exports = config;

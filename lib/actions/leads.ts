@@ -1,21 +1,15 @@
 import { Lead } from "@/lib/types";
 import { siteConfig } from "@/lib/site-config";
-import { db, firebaseProjectId } from "@/lib/firebase";
-import {
-  collection,
-  addDoc,
-  doc,
-  updateDoc,
-  deleteDoc,
-  serverTimestamp,
-} from "firebase/firestore";
 import type { FormMetadata } from "@/lib/form-metadata";
 
 export type LeadSubmission = Omit<Lead, "id" | "createdAt" | "status">;
 
+const firebaseProjectId = "portfolio-project-14a25";
+
 function normalizeLeadInput(
   data: LeadSubmission,
-  metadata?: Partial<FormMetadata>
+  metadata: Partial<FormMetadata> | undefined,
+  serverTimestampVal: any
 ): Record<string, unknown> {
   const name = data.name?.trim() ?? "";
   const email = data.email?.trim() ?? "";
@@ -34,7 +28,7 @@ function normalizeLeadInput(
     type: data.type ?? "contact",
     status: "new",
     createdAt: new Date().toISOString(),
-    submittedAt: serverTimestamp(),
+    submittedAt: serverTimestampVal,
     sourceUrl: metadata?.sourceUrl?.slice(0, 500) ?? "",
     referrer: metadata?.referrer?.slice(0, 500) ?? "",
     userAgent: metadata?.userAgent?.slice(0, 500) ?? "",
@@ -47,7 +41,11 @@ export async function createLead(
   metadata?: Partial<FormMetadata>
 ): Promise<{ success: boolean; id?: string; error?: string }> {
   try {
-    const leadData = normalizeLeadInput(data, metadata);
+    // Dynamically import Firebase only when user submits a form
+    const { db } = await import("@/lib/firebase");
+    const { collection, addDoc, serverTimestamp } = await import("firebase/firestore");
+
+    const leadData = normalizeLeadInput(data, metadata, serverTimestamp());
 
     if (process.env.NODE_ENV === "development") {
       console.info("[createLead] Writing to Firestore project:", firebaseProjectId);
@@ -110,6 +108,8 @@ export async function updateLeadStatus(
   status: Lead["status"]
 ): Promise<{ success: boolean; error?: string }> {
   try {
+    const { db } = await import("@/lib/firebase");
+    const { doc, updateDoc, serverTimestamp } = await import("firebase/firestore");
     await updateDoc(doc(db, "leads", id), { status, updatedAt: serverTimestamp() });
     return { success: true };
   } catch (error: unknown) {
@@ -123,6 +123,8 @@ export async function deleteLead(
   id: string
 ): Promise<{ success: boolean; error?: string }> {
   try {
+    const { db } = await import("@/lib/firebase");
+    const { doc, deleteDoc } = await import("firebase/firestore");
     await deleteDoc(doc(db, "leads", id));
     return { success: true };
   } catch (error: unknown) {

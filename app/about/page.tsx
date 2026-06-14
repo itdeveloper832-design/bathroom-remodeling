@@ -59,7 +59,7 @@ const milestones = [
   { number: "15+", label: "Years Experience" },
   { number: "500+", label: "Projects Completed" },
   { number: "100%", label: "Satisfaction Rate" },
-  { number: "5", label: "Star Reviews" },
+  { number: "ROC#", label: "338304 Licensed" },
 ]
 
 const aboutFaqs = [

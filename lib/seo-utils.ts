@@ -61,7 +61,6 @@ export function getRoutePriority(route: string): number {
     '/about',
     '/gallery',
     '/blog',
-    '/offers',
     '/financing',
     '/contact'
   ];
@@ -79,7 +78,7 @@ export function getRoutePriority(route: string): number {
  * Returns a change frequency based on the route type.
  */
 export function getRouteFrequency(route: string): 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' {
-  if (route === '/' || route.includes('/blog') || route.includes('/offers')) return 'weekly';
+  if (route === '/' || route.includes('/blog')) return 'weekly';
   if (route.includes('/privacy-policy') || route.includes('/terms-of-service')) return 'yearly';
   return 'monthly';
 }
@@ -95,8 +94,8 @@ export function getRouteLastMod(route: string): Date {
  * Checks if a route should be excluded based on noindex metadata.
  */
 export function isNoIndexRoute(route: string): boolean {
-  // Exclude non-bathroom services completely
-  const excludedKeywords = ['kitchen', 'painting', 'roofing', 'home-renovation'];
+  // Exclude non-bathroom services and offers completely
+  const excludedKeywords = ['kitchen', 'painting', 'roofing', 'home-renovation', 'offers'];
   if (excludedKeywords.some(keyword => route.includes(keyword))) {
     return true;
   }

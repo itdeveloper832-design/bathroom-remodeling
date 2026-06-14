@@ -8,7 +8,7 @@ const stats = [
   { value: "15+", label: "Years Experience" },
   { value: "500+", label: "Projects Completed" },
   { value: "98%", label: "Client Satisfaction" },
-  { value: "1,250+", label: "5-Star Reviews" },
+  { value: "ROC#", label: "338304 Licensed" },
 ];
 
 export default function AboutPreview() {

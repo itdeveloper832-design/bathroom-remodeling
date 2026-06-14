@@ -22,30 +22,42 @@ function processFile(filePath) {
   let cleanedContent = content;
 
   // 0. Inline all local stylesheets to eliminate FOUC (Flash of Unstyled Content) and improve FCP/LCP
+  // Avoid inlining heavy stylesheets (e.g. >15KB Tailwind CSS bundle) which severely bloat HTML page sizes and degrade mobile LCP.
   const linkRegex = /<link\s+[^>]*href=["']([^"']+)["'][^>]*rel=["']stylesheet["'][^>]*\/?>|<link\s+[^>]*rel=["']stylesheet["'][^>]*href=["']([^"']+)["'][^>]*\/?>/gi;
+  const MAX_INLINE_CSS_SIZE = 15360; // 15 KB threshold
   
   cleanedContent = cleanedContent.replace(linkRegex, (match, href1, href2) => {
     const href = href1 || href2;
     if (href && href.startsWith('/')) {
       const localPath = path.join(outDir, href);
       if (fs.existsSync(localPath)) {
-        const cssContent = fs.readFileSync(localPath, 'utf8');
-        console.log(`Inlining CSS: ${href} into ${path.relative(outDir, filePath)}`);
-        return `<style data-inlined="true">${cssContent}</style>`;
+        const stats = fs.statSync(localPath);
+        if (stats.size <= MAX_INLINE_CSS_SIZE) {
+          const cssContent = fs.readFileSync(localPath, 'utf8');
+          console.log(`Inlining CSS: ${href} (${(stats.size/1024).toFixed(1)} KB) into ${path.relative(outDir, filePath)}`);
+          return `<style data-inlined="true">${cssContent}</style>`;
+        } else {
+          console.log(`Skipping CSS inlining (too large): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
+        }
       }
     }
     return match;
   });
 
-  // Remove preloads for inlined stylesheets to avoid redundant network requests
+  // Remove preloads for inlined stylesheets to avoid redundant network requests (keep for non-inlined)
   const preloadRegex = /<link\s+[^>]*rel=["']preload["'][^>]*as=["']style["'][^>]*href=["']([^"']+)["'][^>]*\/?>|<link\s+[^>]*href=["']([^"']+)["'][^>]*rel=["']preload["'][^>]*as=["']style["'][^>]*\/?>|<link\s+[^>]*as=["']style["'][^>]*rel=["']preload["'][^>]*href=["']([^"']+)["'][^>]*\/?>/gi;
   cleanedContent = cleanedContent.replace(preloadRegex, (match, href1, href2, href3) => {
     const href = href1 || href2 || href3;
     if (href && href.startsWith('/')) {
       const localPath = path.join(outDir, href);
       if (fs.existsSync(localPath)) {
-        console.log(`Removing CSS preload: ${href} in ${path.relative(outDir, filePath)}`);
-        return '';
+        const stats = fs.statSync(localPath);
+        if (stats.size <= MAX_INLINE_CSS_SIZE) {
+          console.log(`Removing CSS preload (inlined): ${href} in ${path.relative(outDir, filePath)}`);
+          return '';
+        } else {
+          console.log(`Keeping CSS preload (not inlined): ${href} in ${path.relative(outDir, filePath)}`);
+        }
       }
     }
     return match;

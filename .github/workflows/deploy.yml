@@ -45,7 +45,7 @@ jobs:
           protocol: ftps
           local-dir: ./out/
           server-dir: ./
-          state-name: .ftp-deploy-sync-state-v6.json
+          state-name: .ftp-deploy-sync-state-v7.json
           dangerous-clean-slate: false
           timeout: 120000
           log-level: verbose

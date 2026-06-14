@@ -8,6 +8,13 @@ import { QuoteForm } from "@/components/forms/quote-form";
 export default function Hero() {
   return (
     <section className="relative min-h-[80vh] flex items-center overflow-hidden pt-28 md:pt-36 lg:pt-40" aria-label="Hero section">
+      <link 
+        rel="preload" 
+        href="/images/hero/luxury-shower-remodel-chandler.avif" 
+        as="image" 
+        type="image/avif" 
+        fetchPriority="high" 
+      />
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero/luxury-shower-remodel-chandler.avif"

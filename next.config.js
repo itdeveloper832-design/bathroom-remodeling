@@ -7,9 +7,6 @@ const nextConfig = {
   // Output configuration - Force export for cPanel static hosting
   output: 'export',
 
-  // Disable Google Fonts optimization to prevent build failures in environments without network/internet access
-  optimizeFonts: false,
-
   // Trailing slash ensures static export URLs match canonical tags
   trailingSlash: true,
 

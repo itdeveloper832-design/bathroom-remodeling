@@ -18,7 +18,7 @@ const blogPosts = [
     title: "Tub-to-Shower Conversion in Chandler, AZ: Everything You Need to Know Before You Start",
     excerpt:
       "Planning to convert your bathtub to a walk-in shower? Read our complete Chandler guide covering design choices, waterproofing, permits, costs, and contractor vetting.",
-    image: "/images/services/chandler-bathroom-remodel.webp",
+    image: "/images/services/chandler-bathroom-remodel.avif",
     date: "June 7, 2026",
     category: "Bathroom Remodeling",
   },
@@ -27,7 +27,7 @@ const blogPosts = [
     title: "How Much Does a Walk-In Shower Cost in Chandler AZ (2026 Price Guide)",
     excerpt:
       "Planning a walk-in shower in Chandler? Get the latest breakdown of 2026 installation costs, custom tile, glass, permits, and desert hard water protection.",
-    image: "/images/hero/luxury-shower-remodel-chandler.webp",
+    image: "/images/hero/luxury-shower-remodel-chandler.avif",
     date: "June 12, 2026",
     category: "Costs & Budget",
   },

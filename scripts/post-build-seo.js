@@ -21,6 +21,36 @@ function processFile(filePath) {
   let content = fs.readFileSync(filePath, 'utf8');
   let cleanedContent = content;
 
+  // 0. Inline all local stylesheets to eliminate FOUC (Flash of Unstyled Content) and improve FCP/LCP
+  const linkRegex = /<link\s+[^>]*href=["']([^"']+)["'][^>]*rel=["']stylesheet["'][^>]*\/?>|<link\s+[^>]*rel=["']stylesheet["'][^>]*href=["']([^"']+)["'][^>]*\/?>/gi;
+  
+  cleanedContent = cleanedContent.replace(linkRegex, (match, href1, href2) => {
+    const href = href1 || href2;
+    if (href && href.startsWith('/')) {
+      const localPath = path.join(outDir, href);
+      if (fs.existsSync(localPath)) {
+        const cssContent = fs.readFileSync(localPath, 'utf8');
+        console.log(`Inlining CSS: ${href} into ${path.relative(outDir, filePath)}`);
+        return `<style data-inlined="true">${cssContent}</style>`;
+      }
+    }
+    return match;
+  });
+
+  // Remove preloads for inlined stylesheets to avoid redundant network requests
+  const preloadRegex = /<link\s+[^>]*rel=["']preload["'][^>]*as=["']style["'][^>]*href=["']([^"']+)["'][^>]*\/?>|<link\s+[^>]*href=["']([^"']+)["'][^>]*rel=["']preload["'][^>]*as=["']style["'][^>]*\/?>|<link\s+[^>]*as=["']style["'][^>]*rel=["']preload["'][^>]*href=["']([^"']+)["'][^>]*\/?>/gi;
+  cleanedContent = cleanedContent.replace(preloadRegex, (match, href1, href2, href3) => {
+    const href = href1 || href2 || href3;
+    if (href && href.startsWith('/')) {
+      const localPath = path.join(outDir, href);
+      if (fs.existsSync(localPath)) {
+        console.log(`Removing CSS preload: ${href} in ${path.relative(outDir, filePath)}`);
+        return '';
+      }
+    }
+    return match;
+  });
+
   // 1. Find and hoist all JSON-LD scripts if any exist
   const schemaRegex = /<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/gi;
   const schemas = [];

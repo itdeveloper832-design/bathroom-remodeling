@@ -34,15 +34,15 @@ jobs:
         env:
           NEXT_OUTPUT: export
 
-      # Try plain FTP first (port 21), then fall back to FTPS if it fails
-      - name: Deploy via FTP
+      # Deploy via FTPS (explicit TLS)
+      - name: Deploy via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          protocol: ftp
+          protocol: ftps
           local-dir: ./out/
           server-dir: ./
           state-name: .ftp-deploy-sync-state-v6.json

@@ -19,7 +19,7 @@ export default function ServiceHero({
   subtitle,
   image,
   breadcrumbs,
-  backgroundImage = "/images/hero/luxury-shower-remodel-chandler.webp"
+  backgroundImage = "/images/hero/luxury-shower-remodel-chandler.avif"
 }: ServiceHeroProps) {
   const heroImage = image ?? backgroundImage;
 

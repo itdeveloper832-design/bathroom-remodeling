@@ -132,7 +132,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                   <Image
-                    src="/images/alex-rivers.png"
+                    src="/images/alex-rivers.avif"
                     alt="Alex Rivers, Owner of ARZ Home Remodeling in Chandler, AZ"
                     fill
                     className="object-cover"
@@ -182,7 +182,7 @@ export default function AboutPage() {
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
                   <div className="w-24 h-24 relative overflow-hidden rounded-full mx-auto mb-4">
                     <Image
-                      src="/images/mike-hernandez.png"
+                      src="/images/mike-hernandez.avif"
                       alt="Mike Hernandez, Lead Tile & Shower Installer at ARZ Home Remodeling in Chandler, AZ"
                       fill
                       className="object-cover"
@@ -197,7 +197,7 @@ export default function AboutPage() {
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
                   <div className="w-24 h-24 relative overflow-hidden rounded-full mx-auto mb-4">
                     <Image
-                      src="/images/sarah-jenkins.png"
+                      src="/images/sarah-jenkins.avif"
                       alt="Sarah Jenkins, Senior Bathroom Designer at ARZ Home Remodeling in Chandler, AZ"
                       fill
                       className="object-cover"
@@ -212,7 +212,7 @@ export default function AboutPage() {
                 <div className="text-center p-6 bg-card rounded-xl border border-border">
                   <div className="w-24 h-24 relative overflow-hidden rounded-full mx-auto mb-4">
                     <Image
-                      src="/images/marcus-rivers.png"
+                      src="/images/marcus-rivers.avif"
                       alt="Marcus Rivers, Project Supervisor at ARZ Home Remodeling in Chandler, AZ"
                       fill
                       className="object-cover"

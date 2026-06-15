@@ -1,13 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
-import { QuoteForm } from "@/components/forms/quote-form";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[80vh] flex items-center overflow-hidden pt-28 md:pt-36 lg:pt-40" aria-label="Hero section">
+    <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-28 md:pt-36 lg:pt-40" aria-label="Hero section">
       <link 
         rel="preload" 
         href="/images/hero/luxury-shower-remodel-chandler.avif" 
@@ -28,81 +26,75 @@ export default function Hero() {
           decoding="async"
           loading="eager"
         />
-        {/* High-contrast overlays for peak legibility: solid primary on mobile, elegant side-fading gradient on desktop */}
-        <div className="absolute inset-0 bg-primary/85 lg:bg-gradient-to-r lg:from-primary/95 lg:via-primary/80 lg:to-primary/30" aria-hidden="true" />
+        {/* High-contrast overlay: centered layout utilizes a deep all-over navy tint overlay for peak readability */}
+        <div className="absolute inset-0 bg-primary/75 lg:bg-primary/70" aria-hidden="true" />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pb-16 lg:pb-24 pt-4 md:pt-6 lg:pt-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          <div className="lg:col-span-7 text-white">
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6">
-              <span className="text-white text-sm font-medium">
-                ROC Licensed #ROC338304 · Family-Owned Since {siteConfig.foundedYear}
-              </span>
-            </div>
-
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-4 text-balance">
-              Custom Bathroom Remodeling Built to Last
-            </h1>
-
-            <div className="mb-6">
-              <a 
-                href={siteConfig.googleBusinessLink} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white hover:text-accent transition-colors duration-200 group no-underline"
-                aria-label={`View our ${siteConfig.googleRating} star rating with ${siteConfig.googleReviewsCount} Google Reviews`}
-              >
-                <span className="text-accent text-lg">★★★★★</span>
-                <span className="text-base font-semibold group-hover:underline">{siteConfig.googleRating} · {siteConfig.googleReviewsCount} Google Reviews</span>
-              </a>
-            </div>
-
-            {/* Mobile Quote Form - Visible immediately above the fold on mobile screens */}
-            <div className="block lg:hidden w-full mb-8 text-foreground">
-              <QuoteForm idPrefix="mobile" />
-            </div>
-
-            <p className="text-lg md:text-lg text-white/90 mb-8 leading-relaxed font-medium italic">
-              "Focused exclusively on high-quality bathroom renovations. Designed for homeowners who want their bathroom done right."
-            </p>
-
-            <p className="text-base md:text-lg text-white/80 mb-10 leading-relaxed font-light">
-              Specializing in master-crafted{" "}
-              <Link href="/walk-in-showers/" className="font-semibold underline text-white hover:text-accent transition-colors">
-                walk-in showers
-              </Link>
-              ,{" "}
-              <Link href="/tub-to-shower-conversion/" className="font-semibold underline text-white hover:text-accent transition-colors">
-                tub-to-shower conversions
-              </Link>
-              , and custom tile design. We use vapor-tight Schluter-KERDI waterproofing systems and stain-resistant epoxy grouting engineered to resist Arizona's hard water minerals. Every project is backed by a 2-year workmanship warranty and fixed-price contracts.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                asChild
-                size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-semibold animate-pulse"
-                aria-label="Get your free in-home bathroom remodel estimate"
-              >
-                <Link href="#contact">Get a Free In-Home Estimate</Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white/20 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 text-base px-8 py-6 font-semibold"
-                aria-label="View completed bathroom remodel projects"
-              >
-                <Link href="/gallery/">View Our Work</Link>
-              </Button>
-            </div>
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 py-16 lg:py-28 flex justify-center">
+        <div className="max-w-4xl mx-auto text-center text-white flex flex-col items-center">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
+            <span className="text-white text-xs md:text-sm font-medium">
+              ROC Licensed #ROC338304 · Family-Owned Since {siteConfig.foundedYear}
+            </span>
           </div>
 
-          {/* Desktop Quote Form - Hidden on mobile, visible on desktop */}
-          <div className="hidden lg:flex lg:col-span-5 w-full justify-center lg:justify-end text-foreground">
-            <QuoteForm idPrefix="desktop" />
+          {/* Title */}
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6 text-balance animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
+            Custom Bathroom Remodeling Built to Last
+          </h1>
+
+          {/* Google Review Stars */}
+          <div className="mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
+            <a 
+              href={siteConfig.googleBusinessLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-white hover:text-accent transition-colors duration-200 group no-underline"
+              aria-label={`View our ${siteConfig.googleRating} star rating with ${siteConfig.googleReviewsCount} Google Reviews`}
+            >
+              <span className="text-accent text-lg">★★★★★</span>
+              <span className="text-base font-semibold group-hover:underline">{siteConfig.googleRating} · {siteConfig.googleReviewsCount} Google Reviews</span>
+            </a>
+          </div>
+
+          {/* Quote Block */}
+          <p className="text-lg md:text-xl text-accent font-serif mb-8 leading-relaxed font-semibold italic max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
+            &quot;Focused exclusively on high-quality bathroom renovations. Designed for homeowners who want their bathroom done right.&quot;
+          </p>
+
+          {/* Main Copy */}
+          <p className="text-base md:text-lg text-white/85 mb-10 leading-relaxed font-light max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+            Specializing in master-crafted{" "}
+            <Link href="/walk-in-showers/" className="font-semibold underline text-white hover:text-accent transition-colors">
+              walk-in showers
+            </Link>
+            ,{" "}
+            <Link href="/tub-to-shower-conversion/" className="font-semibold underline text-white hover:text-accent transition-colors">
+              tub-to-shower conversions
+            </Link>
+            , and custom tile design. We use vapor-tight Schluter-KERDI waterproofing systems and stain-resistant epoxy grouting engineered to resist Arizona&apos;s hard water minerals. Every project is backed by a 2-year workmanship warranty and fixed-price contracts.
+          </p>
+
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-400">
+            <Button
+              asChild
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-semibold animate-pulse"
+              aria-label="Get your free in-home bathroom remodel estimate"
+            >
+              <Link href="#contact">Get a Free In-Home Estimate</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white/20 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 text-base px-8 py-6 font-semibold"
+              aria-label="View completed bathroom remodel projects"
+            >
+              <Link href="/gallery/">View Our Work</Link>
+            </Button>
           </div>
         </div>
       </div>

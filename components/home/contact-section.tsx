@@ -1,256 +1,79 @@
 "use client";
 
-import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Send, Loader2 } from "lucide-react";
+import { Phone, Mail, Clock, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { siteConfig } from "@/lib/site-config";
 import { ObscuredEmail } from "@/components/ui/obscured-email";
 
-import { bathroomServices } from "@/lib/bathroom-services";
-import { createLead } from "@/lib/actions/leads";
-import { getFormMetadata } from "@/lib/form-metadata";
-
 export default function ContactSection() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState("");
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (isSubmitting) return;
-
-    const form = e.currentTarget;
-    setIsSubmitting(true);
-    setError("");
-
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name") as string,
-      phone: formData.get("phone") as string,
-      email: formData.get("email") as string,
-      service: formData.get("service") as string,
-      message: formData.get("message") as string,
-      type: "contact" as const,
-    };
-
-    try {
-      const result = await createLead(data, getFormMetadata());
-
-      if (!result.success || !result.id) {
-        throw new Error(result.error || "Submission failed. Please call us directly.");
-      }
-
-      setIsSubmitted(true);
-      form.reset();
-    } catch (err) {
-      const message =
-        err instanceof Error ? err.message : "Failed to submit form. Please try again or call us directly.";
-      console.error("[ContactSection] Submit error:", err);
-      setError(message);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <section id="contact" className="py-20 lg:py-32 bg-secondary overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
-          {/* Contact Info Side */}
-          <div className="animate-in fade-in slide-in-from-left-4 duration-1000">
-            <span className="text-primary text-sm font-medium tracking-wider uppercase">
-              Contact Us
-            </span>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
-              Ready to Start Your Project?
-            </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-              Get in touch with our team to schedule your free consultation. We&apos;ll
-              discuss your vision, answer your questions, and provide a detailed estimate.
+        {/* Section Header */}
+        <div className="max-w-3xl mx-auto text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+          <span className="text-primary text-sm font-semibold tracking-wider uppercase">
+            Get In Touch
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-foreground text-balance">
+            Ready to Start Your Project?
+          </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            Get in touch with our licensed team to schedule your free in-home consultation. We&apos;ll discuss your vision, answer your questions, and provide a detailed estimate with no obligation.
+          </p>
+        </div>
+
+        {/* 3-Column Contact Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
+          {/* Card 1: Phone */}
+          <div className="bg-card border border-border rounded-2xl p-8 shadow-sm flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:border-primary/20">
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 shrink-0">
+              <Phone className="w-7 h-7 text-primary" aria-hidden="true" />
+            </div>
+            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Call Us Directly</h3>
+            <p className="text-muted-foreground text-sm mb-8 leading-relaxed max-w-xs">
+              Speak with a project supervisor. We answer calls and return voicemails within 2 hours.
             </p>
+            <Button
+              asChild
+              size="lg"
+              className="mt-auto w-full bg-primary hover:bg-primary/95 text-white font-bold h-12"
+            >
+              <a href={`tel:${siteConfig.phoneClean}`} aria-label={`Call us at ${siteConfig.phone}`}>
+                {siteConfig.phone}
+              </a>
+            </Button>
+          </div>
 
-            {/* Contact Details */}
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <Phone className="w-6 h-6 text-primary" aria-hidden="true" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                  <a
-                    href={`tel:${siteConfig.phoneClean}`}
-                    className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 rounded"
-                    aria-label={`Call us at ${siteConfig.phone}`}
-                  >
-                    {siteConfig.phone}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <Mail className="w-6 h-6 text-primary" aria-hidden="true" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                  <ObscuredEmail
-                    className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 rounded"
-                  />
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <MapPin className="w-6 h-6 text-primary" aria-hidden="true" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Address</h3>
-                  <p className="text-muted-foreground">{siteConfig.address.full}</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                  <Clock className="w-6 h-6 text-primary" aria-hidden="true" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Hours</h3>
-                  <p className="text-muted-foreground">Mon-Fri: {siteConfig.hours.weekdays}</p>
-                  <p className="text-muted-foreground">Sat: {siteConfig.hours.saturday}</p>
-                  <p className="text-muted-foreground">Sun: {siteConfig.hours.sunday}</p>
-                </div>
-              </div>
+          {/* Card 2: Email */}
+          <div className="bg-card border border-border rounded-2xl p-8 shadow-sm flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:border-primary/20">
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 shrink-0">
+              <Mail className="w-7 h-7 text-primary" aria-hidden="true" />
+            </div>
+            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Email Inquiry</h3>
+            <p className="text-muted-foreground text-sm mb-8 leading-relaxed max-w-xs">
+              Send us your project details, sketches, or photos. We reply within 24 hours.
+            </p>
+            <div className="mt-auto w-full flex justify-center">
+              <ObscuredEmail className="w-full inline-flex items-center justify-center rounded-md text-sm font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-accent hover:bg-accent/90 text-accent-foreground h-12" />
             </div>
           </div>
 
-          {/* Form Side */}
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
-            <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 shadow-sm">
-              {isSubmitted ? (
-                <div className="text-center py-12">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <Send className="w-8 h-8 text-primary" aria-hidden="true" />
-                  </div>
-                  <h3 className="font-serif text-2xl font-semibold mb-3 text-foreground">
-                    Thank You!
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    We&apos;ve received your message and will get back to you within 24 hours.
-                  </p>
-                  <Button
-                    onClick={() => setIsSubmitted(false)}
-                    variant="outline"
-                    aria-label="Send another message"
-                  >
-                    Send Another Message
-                  </Button>
-                </div>
-              ) : (
-                <>
-                  <h3 className="font-serif text-2xl font-semibold mb-2 text-foreground">
-                    Get Your Free Estimate
-                  </h3>
-                  <p className="text-muted-foreground mb-8">
-                    Fill out the form below and we&apos;ll be in touch shortly.
-                  </p>
-
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="contact-name">Full Name</Label>
-                        <Input
-                          id="contact-name"
-                          name="name"
-                          placeholder="John Smith"
-                          required
-                          className="bg-background h-11"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="contact-phone">Phone Number</Label>
-                        <Input
-                          id="contact-phone"
-                          name="phone"
-                          type="tel"
-                          placeholder={siteConfig.phone}
-                          required
-                          className="bg-background h-11"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="contact-email">Email Address</Label>
-                      <Input
-                        id="contact-email"
-                        name="email"
-                        type="email"
-                        placeholder="john@example.com"
-                        required
-                        className="bg-background h-11"
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="contact-service">Service Interested In</Label>
-                      <select
-                        id="contact-service"
-                        name="service"
-                        required
-                        className="flex h-11 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
-                      >
-                        <option value="">Select a service</option>
-                        {bathroomServices.map((service) => (
-                          <option key={service.href} value={service.name}>
-                            {service.name}
-                          </option>
-                        ))}
-                        <option value="Other">Other</option>
-                      </select>
-                    </div>
-
-
-                    <div className="space-y-2">
-                      <Label htmlFor="contact-message">Tell Us About Your Project</Label>
-                      <Textarea
-                        id="contact-message"
-                        name="message"
-                        placeholder="Describe your project goals, timeline, and any specific requirements..."
-                        rows={4}
-                        className="bg-background resize-none min-h-[120px]"
-                        required
-                      />
-                    </div>
-
-                    {error && (
-                      <p className="text-sm text-destructive" role="alert">{error}</p>
-                    )}
-
-                    <Button
-                      type="submit"
-                      size="lg"
-                      className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold h-12 cursor-pointer"
-                      disabled={isSubmitting}
-                      aria-label="Submit your free estimate request"
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <Loader2 className="mr-2 w-4 h-4 animate-spin" />
-                          Submitting...
-                        </>
-                      ) : (
-                        <>
-                          <Send className="mr-2 w-4 h-4" />
-                          Request Free Estimate
-                        </>
-                      )}
-                    </Button>
-                  </form>
-                </>
-              )}
+          {/* Card 3: Hours & Licensing */}
+          <div className="bg-card border border-border rounded-2xl p-8 shadow-sm flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:border-primary/20">
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 shrink-0">
+              <Clock className="w-7 h-7 text-primary" aria-hidden="true" />
+            </div>
+            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Hours & Location</h3>
+            <p className="text-muted-foreground text-sm mb-4 leading-relaxed max-w-xs">
+              Serving Chandler, Gilbert, Mesa, Tempe, Phoenix, and surrounding East Valley communities.
+            </p>
+            <div className="text-sm font-semibold text-foreground space-y-1 mb-6">
+              <div>Mon-Fri: {siteConfig.hours.weekdays}</div>
+              <div>Sat: {siteConfig.hours.saturday}</div>
+            </div>
+            <div className="mt-auto pt-4 border-t border-border w-full flex items-center justify-center gap-2 text-xs font-semibold text-primary">
+              <ShieldCheck className="w-4 h-4 text-accent" />
+              <span>ROC Licensed #338304 · Bonded & Insured</span>
             </div>
           </div>
         </div>

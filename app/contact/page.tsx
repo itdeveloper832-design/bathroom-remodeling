@@ -25,7 +25,7 @@ export const metadata: Metadata = {title: {
 const contactFaqs = [
   {
     question: "How do I get an estimate for my bathroom remodel in Chandler?",
-    answer: `Call ${siteConfig.phone} or use our contact form. We usually respond within 2 business hours and can schedule a free in-home consultation in Chandler and the East Valley.`
+    answer: `Call ${siteConfig.phone} or send us an email. We usually respond within 2 business hours and can schedule a free in-home consultation in Chandler and the East Valley.`
   },
   {
     question: "What is the typical cost for a bathroom renovation in Chandler?",
@@ -65,7 +65,7 @@ export default function ContactPage() {
                 Get Your Free Bathroom Remodel Estimate in Chandler, AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Ready to get started? Fill out the form below or give us a call - we typically respond
+                Ready to get started? Give us a call or send us an email - we typically respond
                 within 2 business hours. We&apos;ll schedule a free in-home visit to measure your space,
                 discuss your vision, and give you a written quote with no obligation.
               </p>

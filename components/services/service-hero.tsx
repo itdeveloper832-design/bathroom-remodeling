@@ -1,13 +1,8 @@
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
-
-const QuoteForm = dynamic(() => import("@/components/forms/quote-form").then(mod => mod.QuoteForm), {
-  loading: () => <div className="h-[500px] bg-card/50 animate-pulse rounded-xl" />
-});
 
 interface ServiceHeroProps {
   title: string;
@@ -25,7 +20,7 @@ export default function ServiceHero({
   breadcrumbs,
 }: ServiceHeroProps) {
   return (
-    <section className="relative min-h-[70vh] flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-20">
       <BreadcrumbSchema items={breadcrumbs} />
       
       {/* Background Image */}
@@ -43,10 +38,10 @@ export default function ServiceHero({
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-10 pb-20 lg:pt-16 lg:pb-32">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-10 pb-20 lg:pt-16 lg:pb-24">
         <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
-          {/* Left Column - Hero Content */}
-          <div className="lg:col-span-2">
+          {/* Main Column - Hero Content (Occupies all 3 grid columns now) */}
+          <div className="lg:col-span-3 max-w-4xl">
             {/* Breadcrumbs */}
             <nav className="mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700" aria-label="Breadcrumb">
               <ol className="flex items-center gap-2 text-sm text-background/60">
@@ -85,24 +80,19 @@ export default function ServiceHero({
               <Button
                 asChild
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-bold"
               >
-                <Link href="/contact">Get Your Free Estimate</Link>
+                <Link href="/contact">Get a Free Estimate</Link>
               </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="bg-black text-white border-black hover:bg-black text-base px-8 py-6"
+                className="bg-black text-white border-black hover:bg-black text-base px-8 py-6 font-semibold"
               >
                 <a href={`tel:${siteConfig.phoneClean}`}>Call {siteConfig.phone}</a>
               </Button>
             </div>
-          </div>
-
-          {/* Right Column - Quote Form */}
-          <div className="lg:block">
-            <QuoteForm />
           </div>
         </div>
       </div>

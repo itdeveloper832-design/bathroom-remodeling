@@ -10,7 +10,7 @@ import type { BlogPost, Category } from "@/lib/types"
 import { Calendar, Clock, ArrowRight, Search, ChevronRight, Filter } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { NewsletterForm } from "@/components/forms/newsletter-form"
+
 
 interface BlogContentProps {
   initialPosts: BlogPost[];
@@ -255,7 +255,7 @@ export default function BlogContent({ initialPosts = [], initialCategories = [] 
           </div>
         </section>
 
-        {/* --- 5. NEWSLETTER / CTA --- */}
+        {/* --- 5. DIRECT CONTACT / CTA --- */}
         <section className="py-24 bg-secondary">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto bg-primary rounded-[32px] p-8 md:p-16 relative overflow-hidden text-center text-primary-foreground">
@@ -264,15 +264,32 @@ export default function BlogContent({ initialPosts = [], initialCategories = [] 
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-background/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl" />
               
               <div className="relative z-10">
-                <span className="text-xs font-bold uppercase tracking-[0.3em] mb-4 block opacity-80">Join Our Community</span>
-                <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">Expert Remodeling Tips in Your Inbox</h2>
+                <span className="text-xs font-bold uppercase tracking-[0.3em] mb-4 block opacity-80">Start Your Project</span>
+                <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">Planning a Bathroom Remodel?</h2>
                 <p className="text-lg opacity-90 mb-10 max-w-xl mx-auto">
-                  Subscribe to our seasonal journal for the latest design trends, cost guides, and homeowner tips from Chandler&apos;s pros.
+                  Explore our design guides, check our costs, or contact our licensed crew in Chandler, AZ to discuss your custom project.
                 </p>
-                <NewsletterForm />
-                <p className="mt-6 text-[10px] opacity-60 uppercase tracking-widest font-medium">
-                  We respect your privacy. No spam, ever.
-                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold h-12 w-full sm:w-auto px-8"
+                  >
+                    <a href={`tel:${siteConfig.phoneClean}`}>
+                      Call {siteConfig.phone}
+                    </a>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="border-white/20 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 font-bold h-12 w-full sm:w-auto px-8"
+                  >
+                    <Link href="/gallery/">
+                      View Our Gallery
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

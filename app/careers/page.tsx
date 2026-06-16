@@ -121,8 +121,8 @@ export default function CareersPage() {
                   </div>
 
                   <Button asChild className="bg-primary hover:bg-primary/90">
-                    <Link href="/contact/">Apply Now</Link>
-                  </Button>
+                  <a href={`tel:${siteConfig.phoneClean}`}>Apply Now</a>
+                </Button>
                 </div>
               ))}
             </div>

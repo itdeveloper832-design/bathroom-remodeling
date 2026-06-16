@@ -180,7 +180,7 @@ export default function StandaloneBlogPost() {
                       Licensed experts serving Chandler, Ocotillo, and all East Valley communities.
                     </p>
                     <Button asChild variant="secondary" className="w-full bg-background text-primary hover:bg-background/90 relative z-10">
-                      <Link href="/contact/">Get Free Quote</Link>
+                      <a href={`tel:${siteConfig.phoneClean}`}>Get Free Quote</a>
                     </Button>
                   </div>
                 </div>
@@ -409,7 +409,7 @@ export default function StandaloneBlogPost() {
                     
                     <div className="flex flex-col sm:flex-row gap-4 mt-8">
                       <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-10 h-14 rounded-full shadow-lg shadow-primary/20">
-                        <Link href="/contact/">Get Your Free Estimate</Link>
+                        <a href={`tel:${siteConfig.phoneClean}`}>Get Your Free Estimate</a>
                       </Button>
                       <Button asChild variant="outline" size="lg" className="border-foreground/20 hover:bg-foreground/5 text-foreground font-bold px-10 h-14 rounded-full transition-all">
                         <Link href="tel:+15205693339">Call (520) 569-3339</Link>
@@ -448,7 +448,7 @@ export default function StandaloneBlogPost() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-10 h-14 rounded-full shadow-lg shadow-primary/20">
-                  <Link href="/contact/">Get Your Free Estimate</Link>
+                  <a href={`tel:${siteConfig.phoneClean}`}>Get Your Free Estimate</a>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-background/20 hover:bg-background/10 text-background font-bold px-10 h-14 rounded-full transition-all">
                   <Link href="tel:+15205693339">Call (520) 569-3339</Link>

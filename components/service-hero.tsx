@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/json-ld";
+import { siteConfig } from "@/lib/site-config";
 
 interface ServiceHeroProps {
   title: string;
@@ -71,24 +72,24 @@ export default function ServiceHero({
               asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground min-w-[200px]"
-              aria-label="Call our bathroom remodeling team"
+              aria-label={`Call us at ${siteConfig.phone} to speak with our bathroom remodeling team`}
             >
-              <Link href="/contact/" className="flex items-center gap-2">
+              <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                 <Phone className="w-5 h-5" aria-hidden="true" />
                 Call Now
-              </Link>
+              </a>
             </Button>
             <Button
               asChild
               size="lg"
               variant="outline"
               className="border-white bg-white text-primary hover:bg-white/90 hover:text-primary min-w-[200px]"
-              aria-label="Request a free estimate for your project"
+              aria-label="Call for a free estimate on your project"
             >
-              <Link href="/contact/" className="flex items-center gap-2">
+              <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" aria-hidden="true" />
                 Get Free Quote
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

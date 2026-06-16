@@ -94,10 +94,10 @@ export default function ApacheJunctionPage() {
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <Button asChild size="lg">
-                <Link href="/contact/">Get Your Free Apache Junction Quote</Link>
+                <a href={`tel:${siteConfig.phoneClean}`}>Get Your Free Apache Junction Quote</a>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>
+                <a href={`tel:${siteConfig.phoneClean}`}>Call {siteConfig.phone}</a>
               </Button>
             </div>
           </div>

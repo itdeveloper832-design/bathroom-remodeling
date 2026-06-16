@@ -1,5 +1,6 @@
 import { Check, X, ShieldAlert, Award, Sparkles, AlertCircle } from "lucide-react";
 import Link from "next/link";
+import { siteConfig } from "@/lib/site-config";
 
 const keyDifferentiators = [
   {
@@ -161,12 +162,12 @@ export default function ComparisonBenefits() {
             </div>
 
             <div className="mt-8 text-center">
-              <Link
-                href="#contact"
+              <a
+                href={`tel:${siteConfig.phoneClean}`}
                 className="inline-flex items-center justify-center rounded-full bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3.5 text-base font-semibold shadow-lg transition-all hover:scale-105 active:scale-95"
               >
                 Choose Real Custom Tile — Request a Free Estimate
-              </Link>
+              </a>
             </div>
           </div>
         </div>

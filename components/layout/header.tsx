@@ -64,9 +64,9 @@ export function Header() {
                 <span className="text-accent">★★★★★</span>
                 <span>{siteConfig.googleRating} · {siteConfig.googleReviewsCount} Reviews</span>
               </a>
-              <Link href="/contact/" className={ctaClass}>
+              <a href={`tel:${siteConfig.phoneClean}`} className={ctaClass}>
                 Free Estimate
-              </Link>
+              </a>
             </div>
 
             <details className="lg:hidden group relative">
@@ -107,12 +107,12 @@ export function Header() {
                     <Phone className="w-5 h-5 text-primary" aria-hidden="true" />
                     {siteConfig.phone}
                   </a>
-                  <Link
-                    href="/contact/"
+                  <a
+                    href={`tel:${siteConfig.phoneClean}`}
                     className="mt-2 inline-flex w-full items-center justify-center rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-bold py-4 px-6 transition-colors"
                   >
                     Get Free Estimate
-                  </Link>
+                  </a>
                 </div>
               </nav>
             </details>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle } from "lucide-react";
+import { siteConfig } from "@/lib/site-config";
 
 interface ServiceCTAProps {
   title?: string;
@@ -30,10 +31,10 @@ export default function ServiceCTA({
               className="bg-background text-foreground hover:bg-background/90 min-w-[180px]"
               aria-label="Call our bathroom remodeling experts now"
             >
-              <Link href="/contact/" className="flex items-center gap-2">
+              <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                 <Phone className="w-5 h-5" aria-hidden="true" />
                 Call Now
-              </Link>
+              </a>
             </Button>
             <Button
               asChild
@@ -42,10 +43,10 @@ export default function ServiceCTA({
               className="bg-background text-foreground border-primary-foreground hover:bg-background hover:text-primary min-w-[180px]"
               aria-label="Get a free quote for your bathroom renovation"
             >
-              <Link href="/contact/" className="flex items-center gap-2">
+              <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" aria-hidden="true" />
                 Get Free Quote
-              </Link>
+              </a>
             </Button>
           </div>
           

@@ -39,12 +39,12 @@ export default function ShowerCTAFooter() {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-4">
-            <Link
-              href="/contact/"
+            <a
+              href={`tel:${siteConfig.phoneClean}`}
               className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-center"
             >
               Schedule My Free Shower Estimate
-            </Link>
+            </a>
             <a
               href={`tel:${siteConfig.phoneClean}`}
               className="bg-primary/10 text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/20 transition-colors text-center border border-primary"

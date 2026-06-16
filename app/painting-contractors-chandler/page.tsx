@@ -94,9 +94,7 @@ export default function PaintingPage() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/contact/">
-                Get a Free Estimate
-              </Link>
+              <a href={`tel:${siteConfig.phoneClean}`}>Get a Free Estimate</a>
             </Button>
           </div>
         </div>

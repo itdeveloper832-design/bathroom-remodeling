@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site-config";
 
 const pricingTiers = [
   {
@@ -82,10 +83,10 @@ export default function PricingTable() {
                 </ul>
               </div>
               <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                <Link href="/contact/">
+                <a href={`tel:${siteConfig.phoneClean}`}>
                   Get Itemized Quote
                   <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
+                </a>
               </Button>
             </div>
           ))}

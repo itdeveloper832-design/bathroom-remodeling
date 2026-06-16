@@ -146,7 +146,7 @@ export default function TeamPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
                 <Button size="lg" asChild>
-                  <Link href="/contact">Request Free Estimate</Link>
+                  <a href={`tel:${siteConfig.phoneClean}`}>Request Free Estimate</a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
                   <a href={`tel:${siteConfig.phoneClean}`}>{siteConfig.phone}</a>

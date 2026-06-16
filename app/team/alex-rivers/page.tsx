@@ -111,7 +111,7 @@ export default function AlexRiversPage() {
 
                   <div className="flex gap-3 pt-4">
                     <Button size="lg" asChild>
-                      <Link href="/contact">Get Free Estimate</Link>
+                      <a href={`tel:${siteConfig.phoneClean}`}>Get Free Estimate</a>
                     </Button>
                     <Button size="lg" variant="outline" asChild>
                       <a href={`tel:${siteConfig.phoneClean}`}>{siteConfig.phone}</a>
@@ -233,7 +233,7 @@ export default function AlexRiversPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
                 <Button size="lg" asChild>
-                  <Link href="/contact">Schedule Free Estimate</Link>
+                  <a href={`tel:${siteConfig.phoneClean}`}>Schedule Free Estimate</a>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
                   <a href={`tel:${siteConfig.phoneClean}`}>

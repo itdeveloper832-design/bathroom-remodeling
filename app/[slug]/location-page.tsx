@@ -164,9 +164,9 @@ export async function LocationPageContent({
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact/" className="bg-primary text-white px-8 py-3.5 rounded-lg hover:bg-primary/90 transition font-medium text-center">
+                <a href={`tel:${siteConfig.phoneClean}`} className="bg-primary text-white px-8 py-3.5 rounded-lg hover:bg-primary/90 transition font-medium text-center">
                   Get Free Estimate
-                </Link>
+                </a>
                 <a
                   href={`tel:${siteConfig.phoneClean}`}
                   className="border border-primary text-primary px-8 py-3.5 rounded-lg hover:bg-primary/5 transition font-medium flex items-center justify-center gap-2"
@@ -414,9 +414,9 @@ export async function LocationPageContent({
               Contact our local remodeling contractors for a free consultation and detailed estimate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact/" className="bg-white text-primary px-8 py-3 rounded-lg hover:bg-gray-100 transition font-semibold text-center">
+              <a href={`tel:${siteConfig.phoneClean}`} className="bg-white text-primary px-8 py-3 rounded-lg hover:bg-gray-100 transition font-semibold text-center">
                 Schedule Consultation
-              </Link>
+              </a>
               <a
                 href={`tel:${siteConfig.phoneClean}`}
                 className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition font-semibold"

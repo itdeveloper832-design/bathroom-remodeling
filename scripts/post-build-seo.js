@@ -100,9 +100,8 @@ function processFile(filePath) {
           console.log(`Inlining CSS: ${href} (${(stats.size/1024).toFixed(1)} KB) into ${path.relative(outDir, filePath)}`);
           return `<style data-inlined="true">${cssContent}</style>`;
         } else {
-          console.log(`Deferring CSS (too large): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
-          hasDeferredCss = true;
-          return `<link rel="preload" href="${href}" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="${href}"></noscript>`;
+          console.log(`Keeping CSS as normal (too large to inline): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
+          return match;
         }
       }
     }

@@ -30,10 +30,10 @@ export default function ServiceCTA({ title, description }: ServiceCTAProps) {
               size="lg"
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-base px-8 py-6 group"
             >
-              <Link href="/contact">
+              <a href={`tel:${siteConfig.phoneClean}`}>
                 Get Your Free Estimate
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </Button>
             <Button
               asChild

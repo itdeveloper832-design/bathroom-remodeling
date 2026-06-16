@@ -232,10 +232,10 @@ export default function MesaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href="/contact/" className="flex items-center gap-2">
+                <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
                   Call Now for Your Free No-Obligation Bathroom Quote!
-                </Link>
+                </a>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <Link href="tel:+15205693339" className="flex items-center gap-2">

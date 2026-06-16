@@ -437,14 +437,14 @@ export default function AboutPage() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg">
-                  <Link href="/contact/">
+                  <a href={`tel:${siteConfig.phoneClean}`}>
                     Get Free Estimate <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
+                  </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="tel:+15205693339">
+                  <a href={`tel:${siteConfig.phoneClean}`}>
                     Call {siteConfig.phone}
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>

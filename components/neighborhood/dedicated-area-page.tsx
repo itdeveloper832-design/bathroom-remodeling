@@ -75,7 +75,7 @@ export default function DedicatedAreaPage({ areaSlug, path }: DedicatedAreaPageP
             ))}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href="/contact/">Get a Free Estimate</Link>
+                <a href={`tel:${siteConfig.phoneClean}`}>Get a Free Estimate</a>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <a href={`tel:${siteConfig.phoneClean}`}>Call {siteConfig.phone}</a>

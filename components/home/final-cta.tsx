@@ -27,10 +27,10 @@ export default function FinalCTA() {
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-8 py-6 group"
             >
-              <Link href="/contact/">
+              <a href={`tel:${siteConfig.phoneClean}`}>
                 Schedule Your Free Quote
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </Button>
             <Button
               asChild

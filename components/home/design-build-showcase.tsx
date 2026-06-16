@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Eye, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/site-config";
 
 export default function DesignBuildShowcase() {
   return (
@@ -55,10 +56,10 @@ export default function DesignBuildShowcase() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground group">
-                <Link href="/contact/">
+                <a href={`tel:${siteConfig.phoneClean}`}>
                   Book Design Consultation
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

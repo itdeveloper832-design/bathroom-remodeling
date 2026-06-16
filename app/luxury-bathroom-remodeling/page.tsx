@@ -204,7 +204,7 @@ export default function LuxuryPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
                <Button asChild size="lg">
-                  <Link href="/contact/">Start Your Design Consultation</Link>
+                  <a href={`tel:${siteConfig.phoneClean}`}>Start Your Design Consultation</a>
                </Button>
                <Button variant="outline" asChild size="lg">
                   <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>

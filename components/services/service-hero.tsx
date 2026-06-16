@@ -82,7 +82,7 @@ export default function ServiceHero({
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-bold"
               >
-                <Link href="/contact">Get a Free Estimate</Link>
+                <a href={`tel:${siteConfig.phoneClean}`}>Get a Free Estimate</a>
               </Button>
               <Button
                 asChild

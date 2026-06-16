@@ -34,14 +34,25 @@ jobs:
         env:
           NEXT_OUTPUT: export
 
-      # Deploy via SFTP
-      - name: Deploy via SFTP
-        uses: wangyucode/sftp-upload-action@v3
+      # Deploy via FTP
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.FTP_SERVER }}
+          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 22
-          localDir: ./out/
-          remoteDir: /home/${{ secrets.FTP_USER }}/public_html/
-          exclude: '**/node_modules/**, **/.git*, **/.git*/**, **/.env*, cgi-bin/**'
+          port: 21
+          protocol: ftp
+          local-dir: ./out/
+          server-dir: ./
+          state-name: .ftp-deploy-sync-state-v7.json
+          dangerous-clean-slate: false
+          timeout: 120000
+          log-level: verbose
+          security: loose
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.env*
+            cgi-bin/**

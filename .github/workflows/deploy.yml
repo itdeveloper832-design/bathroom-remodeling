@@ -34,25 +34,14 @@ jobs:
         env:
           NEXT_OUTPUT: export
 
-      # Deploy via FTPS (explicit TLS)
-      - name: Deploy via FTPS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      # Deploy via SFTP
+      - name: Deploy via SFTP
+        uses: wangyucode/sftp-upload-action@v3
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          protocol: ftps
-          local-dir: ./out/
-          server-dir: ./
-          state-name: .ftp-deploy-sync-state-v7.json
-          dangerous-clean-slate: false
-          timeout: 120000
-          log-level: verbose
-          security: loose
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.env*
-            cgi-bin/**
+          port: 22
+          localDir: ./out/
+          remoteDir: /home/${{ secrets.FTP_USER }}/public_html/
+          exclude: '**/node_modules/**, **/.git*, **/.git*/**, **/.env*, cgi-bin/**'

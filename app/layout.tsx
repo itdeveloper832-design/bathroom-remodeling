@@ -71,13 +71,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link 
-          rel="preload" 
-          href="/images/web-logo-image.avif" 
-          as="image" 
-          type="image/avif" 
-          fetchPriority="high" 
-        />
         <meta name="geo.region" content="US-AZ" />
         <meta name="geo.placename" content="Chandler" />
         <meta name="geo.position" content={`${siteConfig.address.coordinates.lat};${siteConfig.address.coordinates.lng}`} />

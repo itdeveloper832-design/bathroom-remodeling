@@ -6,13 +6,6 @@ import { siteConfig } from "@/lib/site-config";
 export default function Hero() {
   return (
     <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-28 md:pt-36 lg:pt-40" aria-label="Hero section">
-      <link 
-        rel="preload" 
-        href="/images/hero/luxury-shower-remodel-chandler.avif" 
-        as="image" 
-        type="image/avif" 
-        fetchPriority="high" 
-      />
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero/luxury-shower-remodel-chandler.avif"
@@ -33,19 +26,19 @@ export default function Hero() {
       <div className="container mx-auto px-4 lg:px-8 relative z-10 py-16 lg:py-28 flex justify-center">
         <div className="max-w-4xl mx-auto text-center text-white flex flex-col items-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6">
             <span className="text-white text-xs md:text-sm font-medium">
               ROC Licensed #ROC338304 · Family-Owned Since {siteConfig.foundedYear}
             </span>
           </div>
 
           {/* Title */}
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6 text-balance animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6 text-balance">
             Custom Bathroom Remodeling Built to Last
           </h1>
 
           {/* Google Review Stars */}
-          <div className="mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150">
+          <div className="mb-8">
             <a 
               href={siteConfig.googleBusinessLink} 
               target="_blank" 
@@ -59,12 +52,12 @@ export default function Hero() {
           </div>
 
           {/* Quote Block */}
-          <p className="text-lg md:text-xl text-accent font-serif mb-8 leading-relaxed font-semibold italic max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
+          <p className="text-lg md:text-xl text-accent font-serif mb-8 leading-relaxed font-semibold italic max-w-2xl">
             &quot;Focused exclusively on high-quality bathroom renovations. Designed for homeowners who want their bathroom done right.&quot;
           </p>
 
           {/* Main Copy */}
-          <p className="text-base md:text-lg text-white/85 mb-10 leading-relaxed font-light max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+          <p className="text-base md:text-lg text-white/85 mb-10 leading-relaxed font-light max-w-3xl">
             Specializing in master-crafted{" "}
             <Link href="/walk-in-showers/" className="font-semibold underline text-white hover:text-accent transition-colors">
               walk-in showers
@@ -77,11 +70,11 @@ export default function Hero() {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-400">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
             <Button
               asChild
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-semibold animate-pulse"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-semibold"
               aria-label={`Call us at ${siteConfig.phone} to get your free in-home bathroom remodel estimate`}
             >
               <a href={`tel:${siteConfig.phoneClean}`}>Get a Free In-Home Estimate</a>

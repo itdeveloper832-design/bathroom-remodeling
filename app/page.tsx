@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { Header } from "@/components/layout/header";
-import { LazyRender } from "@/components/ui/lazy-render";
 import { Footer } from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
 import QuickAnswers from "@/components/home/quick-answers";
@@ -27,10 +25,8 @@ import FAQ from "@/components/home/faq";
 import BlogPreview from "@/components/home/blog-preview";
 import GalleryPreview from "@/components/home/gallery-preview";
 import FinalCTA from "@/components/home/final-cta";
-
-// Dynamically load only interactive client components to optimize bundle size, FCP, and LCP
-const VideoShowcase = dynamic(() => import("@/components/home/video-showcase"));
-const HomeBelowFold = dynamic(() => import("@/components/home/home-below-fold").then(mod => mod.HomeBelowFold));
+import VideoShowcase from "@/components/home/video-showcase";
+import { HomeBelowFold } from "@/components/home/home-below-fold";
 
 export const metadata: Metadata = {
   title: {
@@ -111,18 +107,14 @@ export default function HomePage() {
           <ProcessSection />
           <ChandlerExpertise />
           <PopularProjects />
-          <LazyRender placeholderHeight="400px">
-            <VideoShowcase />
-          </LazyRender>
+          <VideoShowcase />
           <ServiceAreas />
           <Financing />
           <ComparisonBenefits />
           <FAQ />
           <BlogPreview />
           <GalleryPreview />
-          <LazyRender placeholderHeight="600px">
-            <HomeBelowFold />
-          </LazyRender>
+          <HomeBelowFold />
           <FinalCTA />
         </div>
       </main>

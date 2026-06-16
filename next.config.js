@@ -101,7 +101,6 @@ const nextConfig = {
       '@radix-ui/react-tooltip',
     ],
   },
-  transpilePackages: ['firebase', '@firebase/app', 'firebase/firestore', '@firebase/auth', '@firebase/component', '@firebase/util'],
 
   // Production optimizations
   productionBrowserSourceMaps: false,

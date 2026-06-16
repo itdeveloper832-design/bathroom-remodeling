@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {title: {
     absolute: "Kitchen Remodel Services | Chandler AZ Bathroom Remodeling"
   },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore kitchen remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
   openGraph: {title: "Kitchen Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore kitchen remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/kitchen-remodeling`,
   },

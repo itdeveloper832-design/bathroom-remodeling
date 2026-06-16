@@ -39,6 +39,7 @@ export function Header() {
                   sizes="(max-width: 1024px) 56px, 64px"
                   className="object-contain object-left"
                   priority
+                  fetchPriority="high"
                   decoding="sync"
                 />
               </div>

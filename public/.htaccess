@@ -1,26 +1,156 @@
-# ARZ SEO redirects — run: node scripts/generate-redirects.mjs
-Redirect permanent /bathroom-remodeling-areas/ocotillo/ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
-Redirect permanent /bathroom-remodeling-areas/sun-lakes/ https://arzhomeremodeling.com/bathroom-remodeling-sun-lakes/
-Redirect permanent /bathroom-remodeling-areas/downtown-chandler/ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
-Redirect permanent /bathroom-remodeling-areas/fulton-ranch/ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
-Redirect permanent /bathroom-remodeling-areas/cooper-commons/ https://arzhomeremodeling.com/bathroom-remodeling-cooper-commons/
-Redirect permanent /bathroom-remodeling-areas/fox-crossing/ https://arzhomeremodeling.com/bathroom-remodeling-cooper-commons/
-Redirect permanent /chandler-az-ocotillo/ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
-Redirect permanent /chandler-az-ocotillo-85248/ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
-Redirect permanent /chandler-az-fulton-ranch/ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
-Redirect permanent /chandler-az-fulton-ranch-85248/ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
-Redirect permanent /chandler-az-arden-park-85248/ https://arzhomeremodeling.com/chandler-az-arden-park/
-Redirect permanent /chandler-az-circle-g-85249/ https://arzhomeremodeling.com/chandler-az-circle-g/
-Redirect permanent /chandler-az-riggs-ranch-85249/ https://arzhomeremodeling.com/chandler-az-riggs-ranch/
-Redirect permanent /chandler-az-sun-groves-85249/ https://arzhomeremodeling.com/chandler-az-sun-groves/
-Redirect permanent /chandler-az-warner-ranch-85224/ https://arzhomeremodeling.com/chandler-az-warner-ranch/
-Redirect permanent /chandler-az-dobson-place-85224/ https://arzhomeremodeling.com/chandler-az-dobson-place/
-Redirect permanent /chandler-az-downtown-chandler/ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
-Redirect permanent /chandler-az-downtown-chandler-85225/ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
-Redirect permanent /chandler-az-clemente-ranch-85225/ https://arzhomeremodeling.com/chandler-az-clemente-ranch/
-Redirect permanent /chandler-az-kyrene-corridor-85226/ https://arzhomeremodeling.com/chandler-az-kyrene-corridor/
-Redirect permanent /chandler-az-stellar-airpark-85226/ https://arzhomeremodeling.com/chandler-az-stellar-airpark/
-Redirect permanent /walk-in-showers/ https://arzhomeremodeling.com/shower-remodeling/
-Redirect permanent /shower-replacement/ https://arzhomeremodeling.com/shower-remodeling/
-Redirect permanent /shower-bathtub-upgrade/ https://arzhomeremodeling.com/shower-remodeling/
-Redirect permanent /tub-removal/ https://arzhomeremodeling.com/tub-to-shower-conversion/
+# ARZ Home Remodeling - cPanel .htaccess Configuration
+# Place this file in /home/digitalskills/arzhomeremodeling.com/
+
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# --- BEGIN REDIRECTS ---
+RedirectMatch 301 ^/bathroom-remodeling-areas/ocotillo/?$ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
+RedirectMatch 301 ^/bathroom-remodeling-areas/sun-lakes/?$ https://arzhomeremodeling.com/bathroom-remodeling-sun-lakes/
+RedirectMatch 301 ^/bathroom-remodeling-areas/downtown-chandler/?$ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
+RedirectMatch 301 ^/bathroom-remodeling-areas/fulton-ranch/?$ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
+RedirectMatch 301 ^/bathroom-remodeling-areas/cooper-commons/?$ https://arzhomeremodeling.com/bathroom-remodeling-cooper-commons/
+RedirectMatch 301 ^/bathroom-remodeling-areas/fox-crossing/?$ https://arzhomeremodeling.com/bathroom-remodeling-cooper-commons/
+RedirectMatch 301 ^/chandler-az-ocotillo/?$ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
+RedirectMatch 301 ^/chandler-az-ocotillo-85248/?$ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
+RedirectMatch 301 ^/chandler-az-fulton-ranch/?$ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
+RedirectMatch 301 ^/chandler-az-fulton-ranch-85248/?$ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
+RedirectMatch 301 ^/chandler-az-arden-park-85248/?$ https://arzhomeremodeling.com/chandler-az-arden-park/
+RedirectMatch 301 ^/chandler-az-circle-g-85249/?$ https://arzhomeremodeling.com/chandler-az-circle-g/
+RedirectMatch 301 ^/chandler-az-riggs-ranch-85249/?$ https://arzhomeremodeling.com/chandler-az-riggs-ranch/
+RedirectMatch 301 ^/chandler-az-sun-groves-85249/?$ https://arzhomeremodeling.com/chandler-az-sun-groves/
+RedirectMatch 301 ^/chandler-az-warner-ranch-85224/?$ https://arzhomeremodeling.com/chandler-az-warner-ranch/
+RedirectMatch 301 ^/chandler-az-dobson-place-85224/?$ https://arzhomeremodeling.com/chandler-az-dobson-place/
+RedirectMatch 301 ^/chandler-az-copper-ridge-condominiums-85224/?$ https://arzhomeremodeling.com/chandler-az-copper-ridge-condominiums/
+RedirectMatch 301 ^/chandler-az-downtown-chandler/?$ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
+RedirectMatch 301 ^/chandler-az-downtown-chandler-85225/?$ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
+RedirectMatch 301 ^/chandler-az-clemente-ranch-85225/?$ https://arzhomeremodeling.com/chandler-az-clemente-ranch/
+RedirectMatch 301 ^/chandler-az-kyrene-corridor-85226/?$ https://arzhomeremodeling.com/chandler-az-kyrene-corridor/
+RedirectMatch 301 ^/chandler-az-stellar-airpark-85226/?$ https://arzhomeremodeling.com/chandler-az-stellar-airpark/
+RedirectMatch 301 ^/walk-in-showers/?$ https://arzhomeremodeling.com/shower-remodeling/
+RedirectMatch 301 ^/shower-replacement/?$ https://arzhomeremodeling.com/shower-remodeling/
+RedirectMatch 301 ^/shower-bathtub-upgrade/?$ https://arzhomeremodeling.com/shower-remodeling/
+RedirectMatch 301 ^/tub-removal/?$ https://arzhomeremodeling.com/tub-to-shower-conversion/
+# --- END REDIRECTS ---
+
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Redirect HTTP to HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  
+  # Enforce non-www to https://arzhomeremodeling.com
+  RewriteCond %{HTTP_HOST} ^www\.arzhomeremodeling\.com [NC]
+  RewriteRule ^(.*)$ https://arzhomeremodeling.com/$1 [L,R=301]
+  
+  # Redirect old Schluter-KERDI blog slug to the correct optimized URL (Bing Webmaster fix)
+  RewriteRule ^blog/why-we-use-schluter-kerdi-waterproofing-chandler/?$ /blog/schluter-kerdi-vs-redgard-arizona/ [L,R=301]
+  
+  # Force trailing slash on all page URLs (SEO canonicalization)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !^/api/
+  RewriteCond %{REQUEST_URI} !\.php$
+  RewriteCond %{REQUEST_URI} !\.txt$
+  RewriteCond %{REQUEST_URI} !\.xml$
+  RewriteCond %{REQUEST_URI} !\.html$
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ^(.*)$ https://arzhomeremodeling.com/$1/ [L,R=301]
+  
+  # Ensure index.html is served for directories
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*)/$ /$1/index.html [L]
+</IfModule>
+
+# Enable Gzip Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/otf
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  
+  # CSS and JavaScript
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  
+  # Fonts
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  
+  # Default
+  ExpiresDefault "access plus 2 days"
+
+  # HTML files - Do not cache or set short cache
+  <FilesMatch "\.(html)$">
+    ExpiresActive Off
+    Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0"
+  </FilesMatch>
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+  # Prevent clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+  
+  # Prevent MIME type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+  
+  # Enable XSS protection
+  Header always set X-XSS-Protection "1; mode=block"
+  
+  # Referrer Policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(env|lock|log)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Allow access to public files & force static cache
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|ico|css|js|svg|woff|woff2|ttf|otf)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+</IfModule>

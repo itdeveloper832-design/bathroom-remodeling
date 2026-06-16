@@ -80,6 +80,11 @@
     "permanent": true
   },
   {
+    "source": "/chandler-az-copper-ridge-condominiums-85224/",
+    "destination": "/chandler-az-copper-ridge-condominiums/",
+    "permanent": true
+  },
+  {
     "source": "/chandler-az-downtown-chandler/",
     "destination": "/bathroom-remodeling-downtown-chandler/",
     "permanent": true

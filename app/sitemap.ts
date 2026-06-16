@@ -18,7 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const discoveredRoutes = getAppRoutes();
 
   const fileEntries = discoveredRoutes.map((route) => {
-    const normalizedRoute = route === "/" ? "" : route.endsWith("/") ? route : `${route}/`;
+    const normalizedRoute = route === "/" ? "/" : route.endsWith("/") ? route : `${route}/`;
     const url = `${baseUrl}${normalizedRoute}`;
 
     return {

@@ -17,14 +17,77 @@ function getHtmlFiles(dir, files = []) {
   return files;
 }
 
+const CRITICAL_CSS = `
+/* CRITICAL INLINED CSS TO PREVENT FOUC AND ACCELERATE FCP/LCP */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter-var.woff2') format('woff2');
+}
+:root {
+  --background: #FFFFFF;
+  --foreground: #222222;
+  --card: #FFFFFF;
+  --card-foreground: #222222;
+  --popover: #FFFFFF;
+  --popover-foreground: #222222;
+  --primary: #1A2E4A;
+  --primary-foreground: #FFFFFF;
+  --secondary: oklch(0.94 0.01 85);
+  --secondary-foreground: #222222;
+  --muted: oklch(0.92 0.01 85);
+  --muted-foreground: oklch(0.30 0.01 250);
+  --accent: #C9972B;
+  --accent-foreground: #FFFFFF;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: #FFFFFF;
+  --border: oklch(0.88 0.015 85);
+  --input: oklch(0.92 0.01 85);
+  --ring: #C9972B;
+  --radius: 0.5rem;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 112px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background-color: var(--background);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.hero {
+  position: relative;
+  min-height: 85vh;
+  background-color: var(--primary);
+}
+`;
+
 function processFile(filePath) {
   let content = fs.readFileSync(filePath, 'utf8');
   let cleanedContent = content;
 
-  // 0. Inline all local stylesheets to eliminate FOUC (Flash of Unstyled Content) and improve FCP/LCP
-  // Avoid inlining heavy stylesheets (e.g. >15KB Tailwind CSS bundle) which severely bloat HTML page sizes and degrade mobile LCP.
+  // 0. Inline local stylesheets if under threshold, otherwise defer them to improve FCP/LCP
   const linkRegex = /<link\s+[^>]*href=["']([^"']+)["'][^>]*rel=["']stylesheet["'][^>]*\/?>|<link\s+[^>]*rel=["']stylesheet["'][^>]*href=["']([^"']+)["'][^>]*\/?>/gi;
   const MAX_INLINE_CSS_SIZE = 15360; // 15 KB threshold
+  let hasDeferredCss = false;
   
   cleanedContent = cleanedContent.replace(linkRegex, (match, href1, href2) => {
     const href = href1 || href2;
@@ -37,14 +100,16 @@ function processFile(filePath) {
           console.log(`Inlining CSS: ${href} (${(stats.size/1024).toFixed(1)} KB) into ${path.relative(outDir, filePath)}`);
           return `<style data-inlined="true">${cssContent}</style>`;
         } else {
-          console.log(`Skipping CSS inlining (too large): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
+          console.log(`Deferring CSS (too large): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
+          hasDeferredCss = true;
+          return `<link rel="preload" href="${href}" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="${href}"></noscript>`;
         }
       }
     }
     return match;
   });
 
-  // Remove preloads for inlined stylesheets to avoid redundant network requests (keep for non-inlined)
+  // Remove preloads for inlined stylesheets, adjust for deferred
   const preloadRegex = /<link\s+[^>]*rel=["']preload["'][^>]*as=["']style["'][^>]*href=["']([^"']+)["'][^>]*\/?>|<link\s+[^>]*href=["']([^"']+)["'][^>]*rel=["']preload["'][^>]*as=["']style["'][^>]*\/?>|<link\s+[^>]*as=["']style["'][^>]*rel=["']preload["'][^>]*href=["']([^"']+)["'][^>]*\/?>/gi;
   cleanedContent = cleanedContent.replace(preloadRegex, (match, href1, href2, href3) => {
     const href = href1 || href2 || href3;
@@ -56,12 +121,23 @@ function processFile(filePath) {
           console.log(`Removing CSS preload (inlined): ${href} in ${path.relative(outDir, filePath)}`);
           return '';
         } else {
-          console.log(`Keeping CSS preload (not inlined): ${href} in ${path.relative(outDir, filePath)}`);
+          console.log(`Keeping CSS preload (deferred): ${href} in ${path.relative(outDir, filePath)}`);
         }
       }
     }
     return match;
   });
+
+  // Inject critical styles block if large stylesheet was deferred
+  if (hasDeferredCss) {
+    const headEndIdx = cleanedContent.indexOf('</head>');
+    if (headEndIdx !== -1) {
+      cleanedContent = 
+        cleanedContent.substring(0, headEndIdx) + 
+        `\n<style data-critical="true">${CRITICAL_CSS}</style>\n` + 
+        cleanedContent.substring(headEndIdx);
+    }
+  }
 
   // 1. Find and hoist all JSON-LD scripts if any exist
   const schemaRegex = /<script\s+type="application\/ld\+json">([\s\S]*?)<\/script>/gi;

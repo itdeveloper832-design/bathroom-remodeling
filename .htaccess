@@ -2,6 +2,36 @@
 # Place this file in /home/digitalskills/arzhomeremodeling.com/
 
 DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# --- BEGIN REDIRECTS ---
+RedirectMatch 301 ^/bathroom-remodeling-areas/ocotillo/?$ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
+RedirectMatch 301 ^/bathroom-remodeling-areas/sun-lakes/?$ https://arzhomeremodeling.com/bathroom-remodeling-sun-lakes/
+RedirectMatch 301 ^/bathroom-remodeling-areas/downtown-chandler/?$ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
+RedirectMatch 301 ^/bathroom-remodeling-areas/fulton-ranch/?$ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
+RedirectMatch 301 ^/bathroom-remodeling-areas/cooper-commons/?$ https://arzhomeremodeling.com/bathroom-remodeling-cooper-commons/
+RedirectMatch 301 ^/bathroom-remodeling-areas/fox-crossing/?$ https://arzhomeremodeling.com/bathroom-remodeling-cooper-commons/
+RedirectMatch 301 ^/chandler-az-ocotillo/?$ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
+RedirectMatch 301 ^/chandler-az-ocotillo-85248/?$ https://arzhomeremodeling.com/bathroom-remodeling-ocotillo/
+RedirectMatch 301 ^/chandler-az-fulton-ranch/?$ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
+RedirectMatch 301 ^/chandler-az-fulton-ranch-85248/?$ https://arzhomeremodeling.com/bathroom-remodeling-fulton-ranch/
+RedirectMatch 301 ^/chandler-az-arden-park-85248/?$ https://arzhomeremodeling.com/chandler-az-arden-park/
+RedirectMatch 301 ^/chandler-az-circle-g-85249/?$ https://arzhomeremodeling.com/chandler-az-circle-g/
+RedirectMatch 301 ^/chandler-az-riggs-ranch-85249/?$ https://arzhomeremodeling.com/chandler-az-riggs-ranch/
+RedirectMatch 301 ^/chandler-az-sun-groves-85249/?$ https://arzhomeremodeling.com/chandler-az-sun-groves/
+RedirectMatch 301 ^/chandler-az-warner-ranch-85224/?$ https://arzhomeremodeling.com/chandler-az-warner-ranch/
+RedirectMatch 301 ^/chandler-az-dobson-place-85224/?$ https://arzhomeremodeling.com/chandler-az-dobson-place/
+RedirectMatch 301 ^/chandler-az-copper-ridge-condominiums-85224/?$ https://arzhomeremodeling.com/chandler-az-copper-ridge-condominiums/
+RedirectMatch 301 ^/chandler-az-downtown-chandler/?$ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
+RedirectMatch 301 ^/chandler-az-downtown-chandler-85225/?$ https://arzhomeremodeling.com/bathroom-remodeling-downtown-chandler/
+RedirectMatch 301 ^/chandler-az-clemente-ranch-85225/?$ https://arzhomeremodeling.com/chandler-az-clemente-ranch/
+RedirectMatch 301 ^/chandler-az-kyrene-corridor-85226/?$ https://arzhomeremodeling.com/chandler-az-kyrene-corridor/
+RedirectMatch 301 ^/chandler-az-stellar-airpark-85226/?$ https://arzhomeremodeling.com/chandler-az-stellar-airpark/
+RedirectMatch 301 ^/walk-in-showers/?$ https://arzhomeremodeling.com/shower-remodeling/
+RedirectMatch 301 ^/shower-replacement/?$ https://arzhomeremodeling.com/shower-remodeling/
+RedirectMatch 301 ^/shower-bathtub-upgrade/?$ https://arzhomeremodeling.com/shower-remodeling/
+RedirectMatch 301 ^/tub-removal/?$ https://arzhomeremodeling.com/tub-to-shower-conversion/
+# --- END REDIRECTS ---
 
 # Enable Rewrite Engine
 <IfModule mod_rewrite.c>
@@ -19,16 +49,19 @@ DirectoryIndex index.html
   # Redirect old Schluter-KERDI blog slug to the correct optimized URL (Bing Webmaster fix)
   RewriteRule ^blog/why-we-use-schluter-kerdi-waterproofing-chandler/?$ /blog/schluter-kerdi-vs-redgard-arizona/ [L,R=301]
   
-  # Next.js routing - serve index.html for all non-file/non-directory requests
-  # Exclude API routes and IndexNow files from rewrite
+  # Force trailing slash on all page URLs (SEO canonicalization)
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_URI} !^/api/
   RewriteCond %{REQUEST_URI} !\.php$
   RewriteCond %{REQUEST_URI} !\.txt$
-  RewriteRule ^(.*)$ /index.html [L]
+  RewriteCond %{REQUEST_URI} !\.xml$
+  RewriteCond %{REQUEST_URI} !\.html$
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ^(.*)$ https://arzhomeremodeling.com/$1/ [L,R=301]
   
   # Ensure index.html is served for directories
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
   RewriteRule ^(.*)/$ /$1/index.html [L]
 </IfModule>
 
@@ -115,7 +148,9 @@ Options -Indexes
   Deny from all
 </FilesMatch>
 
-# Allow access to public files
-<FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|ico|css|js|svg|woff|woff2|ttf|otf)$">
-  Header set Cache-Control "public, max-age=31536000, immutable"
-</FilesMatch>
+# Allow access to public files & force static cache
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|ico|css|js|svg|woff|woff2|ttf|otf)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+</IfModule>

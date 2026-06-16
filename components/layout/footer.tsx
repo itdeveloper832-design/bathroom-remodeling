@@ -277,7 +277,7 @@ export function Footer() {
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-background/70 text-sm">
-              © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+              © 2026 {siteConfig.name}. All rights reserved.
             </p>
             <nav aria-label="Legal links" className="flex items-center gap-6">
               <Link href="/privacy-policy/" className="text-background/70 hover:text-background transition-colors text-sm no-underline">

@@ -1,18 +1,9 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
-import Script from 'next/script'
 import { siteConfig } from '@/lib/site-config'
 import './globals.css'
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-sans',
-})
-
 import { StickyCallButton } from '@/components/layout/sticky-call-button'
 import { LocalBusinessSchema, OrganizationSchema } from '@/components/seo/json-ld'
-
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),title: {
@@ -78,9 +69,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} scroll-smooth`}>
+    <html lang="en" className="scroll-smooth">
       <head>
-
+        <link 
+          rel="preload" 
+          href="/images/web-logo-image.avif" 
+          as="image" 
+          type="image/avif" 
+          fetchPriority="high" 
+        />
         <meta name="geo.region" content="US-AZ" />
         <meta name="geo.placename" content="Chandler" />
         <meta name="geo.position" content={`${siteConfig.address.coordinates.lat};${siteConfig.address.coordinates.lng}`} />
@@ -151,4 +148,3 @@ export default function RootLayout({
     </html>
   )
 }
-

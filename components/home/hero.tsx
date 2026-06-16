@@ -82,9 +82,9 @@ export default function Hero() {
               asChild
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-semibold animate-pulse"
-              aria-label="Get your free in-home bathroom remodel estimate"
+              aria-label={`Call us at ${siteConfig.phone} to get your free in-home bathroom remodel estimate`}
             >
-              <Link href="#contact">Get a Free In-Home Estimate</Link>
+              <a href={`tel:${siteConfig.phoneClean}`}>Get a Free In-Home Estimate</a>
             </Button>
             <Button
               asChild

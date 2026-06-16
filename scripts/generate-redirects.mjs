@@ -1,7 +1,7 @@
 /**
  * Generates public/_redirects, public/.htaccess, and lib/seo-redirects.generated.json
  */
-import { writeFileSync } from "fs";
+import { writeFileSync, readFileSync, existsSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -31,7 +31,7 @@ const LOCATION_SLUGS = [
   "85248", "ocotillo", "ocotillo-85248", "fulton-ranch", "fulton-ranch-85248",
   "arden-park", "arden-park-85248", "85249", "circle-g", "circle-g-85249",
   "riggs-ranch", "riggs-ranch-85249", "sun-groves", "sun-groves-85249",
-  "85224", "warner-ranch", "warner-ranch-85224", "dobson-place", "dobson-place-85224",
+  "85224", "warner-ranch", "warner-ranch-85224", "dobson-place", "dobson-place-85224", "copper-ridge-condominiums", "copper-ridge-condominiums-85224",
   "85225", "downtown-chandler", "downtown-chandler-85225", "clemente-ranch", "clemente-ranch-85225",
   "85226", "kyrene-corridor", "kyrene-corridor-85226", "stellar-airpark", "stellar-airpark-85226",
 ];
@@ -87,11 +87,38 @@ const netlifyLines = rules.map(
 );
 writeFileSync(path.join(root, "public/_redirects"), netlifyLines.join("\n") + "\n");
 
-const htaccessLines = [
-  "# ARZ SEO redirects — run: node scripts/generate-redirects.mjs",
-  ...rules.map((r) => `Redirect permanent ${r.source} ${siteUrl}${r.destination}`),
-];
-writeFileSync(path.join(root, "public/.htaccess"), htaccessLines.join("\n") + "\n");
+const htaccessRules = rules.map((r) => {
+  const cleanSource = r.source.replace(/\/$/, "");
+  return `RedirectMatch 301 ^${cleanSource}/?$ ${siteUrl}${r.destination}`;
+});
+
+// Read root .htaccess as a template
+const templatePath = path.join(root, ".htaccess");
+let htaccessContent = "";
+if (existsSync(templatePath)) {
+  htaccessContent = readFileSync(templatePath, "utf8");
+} else {
+  htaccessContent = "# --- BEGIN REDIRECTS ---\n# --- END REDIRECTS ---\n";
+}
+
+const redirectBlock = [
+  "# --- BEGIN REDIRECTS ---",
+  ...htaccessRules,
+  "# --- END REDIRECTS ---",
+].join("\n");
+
+if (htaccessContent.includes("# --- BEGIN REDIRECTS ---") && htaccessContent.includes("# --- END REDIRECTS ---")) {
+  htaccessContent = htaccessContent.replace(
+    /# --- BEGIN REDIRECTS ---[\s\S]*?# --- END REDIRECTS ---/,
+    redirectBlock
+  );
+} else {
+  htaccessContent = redirectBlock + "\n" + htaccessContent;
+}
+
+// Write the unified .htaccess to both folders
+writeFileSync(path.join(root, "public/.htaccess"), htaccessContent);
+writeFileSync(path.join(root, ".htaccess"), htaccessContent);
 
 writeFileSync(
   path.join(root, "lib/seo-redirects.generated.json"),

@@ -95,7 +95,7 @@ export function getRouteLastMod(route: string): Date {
  */
 export function isNoIndexRoute(route: string): boolean {
   // Exclude non-bathroom services and offers completely
-  const excludedKeywords = ['kitchen', 'painting', 'roofing', 'home-renovation', 'offers'];
+  const excludedKeywords = ['offers'];
   if (excludedKeywords.some(keyword => route.includes(keyword))) {
     return true;
   }

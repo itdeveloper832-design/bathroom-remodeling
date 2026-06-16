@@ -11,8 +11,8 @@ export const metadata: Metadata = {title: {
     absolute: "Bathroom Flooring Pros | Chandler AZ Bathroom Remodeling"
   },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom flooring pros, custom showers, tile, vanities, clear pricing, and free estimates.",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   alternates: {
     canonical: `${siteConfig.url}/flooring-installation-chandler/`,

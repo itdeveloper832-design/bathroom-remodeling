@@ -1,5 +1,3 @@
-"use client";
-
 import { Phone, Mail, Clock, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";

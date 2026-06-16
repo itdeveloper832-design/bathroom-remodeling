@@ -1,9 +1,20 @@
 @import 'tailwindcss';
+@source "../app/**/*.{ts,tsx,js,jsx}";
+@source "../components/**/*.{ts,tsx,js,jsx}";
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
 /* CRITICAL RENDERING PATH OPTIMIZATIONS */
+/* Self-host Inter variable font to prevent 404 font errors on cPanel/Apache */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter-var.woff2') format('woff2');
+}
+
 /* Use system fonts - no network requests needed */
 @font-face {
   font-family: 'system-ui';

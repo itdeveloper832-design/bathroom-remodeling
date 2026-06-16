@@ -11,8 +11,8 @@ export const metadata: Metadata = {title: {
     absolute: "Kitchen Remodel Services | Chandler AZ Bathroom Remodeling"
   },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore kitchen remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   alternates: {
     canonical: `${siteConfig.url}/kitchen-remodeling/`,

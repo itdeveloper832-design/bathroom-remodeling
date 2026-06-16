@@ -9,27 +9,28 @@ import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, We
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
-// Dynamically load below-the-fold components to optimize initial bundle size, FCP, and LCP
-const LocalTrust = dynamic(() => import("@/components/home/local-trust"));
-const AboutPreview = dynamic(() => import("@/components/home/about-preview"));
-const ServicesGrid = dynamic(() => import("@/components/home/services-grid"));
-const ChandlerProjects = dynamic(() => import("@/components/home/chandler-projects"));
-const DesignBuildShowcase = dynamic(() => import("@/components/home/design-build-showcase"));
-const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"));
-const PricingTable = dynamic(() => import("@/components/home/pricing-table"));
-const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"));
-const ProcessSection = dynamic(() => import("@/components/home/process-section"));
-const ChandlerExpertise = dynamic(() => import("@/components/home/chandler-expertise"));
-const PopularProjects = dynamic(() => import("@/components/home/popular-projects"));
+import LocalTrust from "@/components/home/local-trust";
+import AboutPreview from "@/components/home/about-preview";
+import ServicesGrid from "@/components/home/services-grid";
+import ChandlerProjects from "@/components/home/chandler-projects";
+import DesignBuildShowcase from "@/components/home/design-build-showcase";
+import WhyChooseUs from "@/components/home/why-choose-us";
+import PricingTable from "@/components/home/pricing-table";
+import BathroomSection from "@/components/home/bathroom-section";
+import ProcessSection from "@/components/home/process-section";
+import ChandlerExpertise from "@/components/home/chandler-expertise";
+import PopularProjects from "@/components/home/popular-projects";
+import ServiceAreas from "@/components/home/service-areas";
+import Financing from "@/components/home/financing";
+import ComparisonBenefits from "@/components/home/comparison-benefits";
+import FAQ from "@/components/home/faq";
+import BlogPreview from "@/components/home/blog-preview";
+import GalleryPreview from "@/components/home/gallery-preview";
+import FinalCTA from "@/components/home/final-cta";
+
+// Dynamically load only interactive client components to optimize bundle size, FCP, and LCP
 const VideoShowcase = dynamic(() => import("@/components/home/video-showcase"));
-const ServiceAreas = dynamic(() => import("@/components/home/service-areas"));
-const Financing = dynamic(() => import("@/components/home/financing"));
-const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"));
-const FAQ = dynamic(() => import("@/components/home/faq"));
-const BlogPreview = dynamic(() => import("@/components/home/blog-preview"));
-const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"));
 const HomeBelowFold = dynamic(() => import("@/components/home/home-below-fold").then(mod => mod.HomeBelowFold));
-const FinalCTA = dynamic(() => import("@/components/home/final-cta"));
 
 export const metadata: Metadata = {
   title: {
@@ -100,37 +101,29 @@ export default function HomePage() {
         <QuickAnswers />
         <div>
           <LocalTrust cityName="Chandler" />
-          <LazyRender placeholderHeight="500px">
-            <AboutPreview />
-            <ServicesGrid />
-          </LazyRender>
-          <LazyRender placeholderHeight="800px">
-            <ChandlerProjects />
-            <DesignBuildShowcase />
-            <WhyChooseUs />
-          </LazyRender>
-          <LazyRender placeholderHeight="800px">
-            <PricingTable />
-            <BathroomSection />
-            <ProcessSection />
-          </LazyRender>
-          <LazyRender placeholderHeight="1000px">
-            <ChandlerExpertise />
-            <PopularProjects />
+          <AboutPreview />
+          <ServicesGrid />
+          <ChandlerProjects />
+          <DesignBuildShowcase />
+          <WhyChooseUs />
+          <PricingTable />
+          <BathroomSection />
+          <ProcessSection />
+          <ChandlerExpertise />
+          <PopularProjects />
+          <LazyRender placeholderHeight="400px">
             <VideoShowcase />
           </LazyRender>
-          <LazyRender placeholderHeight="800px">
-            <ServiceAreas />
-            <Financing />
-            <ComparisonBenefits />
-          </LazyRender>
-          <LazyRender placeholderHeight="1000px">
-            <FAQ />
-            <BlogPreview />
-            <GalleryPreview />
+          <ServiceAreas />
+          <Financing />
+          <ComparisonBenefits />
+          <FAQ />
+          <BlogPreview />
+          <GalleryPreview />
+          <LazyRender placeholderHeight="600px">
             <HomeBelowFold />
-            <FinalCTA />
           </LazyRender>
+          <FinalCTA />
         </div>
       </main>
       <Footer />

@@ -16,7 +16,7 @@ export default function Hero() {
           sizes="100vw"
           quality={75}
           fetchPriority="high"
-          decoding="async"
+          decoding="sync"
           loading="eager"
         />
         {/* High-contrast overlay: centered layout utilizes a deep all-over navy tint overlay for peak readability */}

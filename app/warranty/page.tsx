@@ -137,10 +137,10 @@ export default function WarrantyPage() {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4">
                       <a 
-                        href="tel:+14805693339" 
+                        href="tel:+15205693339" 
                         className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-xl font-semibold transition-colors"
                       >
-                        Call (480) 569-3339
+                        Call (520) 569-3339
                       </a>
                       <a 
                         href="/contact/" 

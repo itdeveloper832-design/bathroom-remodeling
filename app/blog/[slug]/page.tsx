@@ -322,7 +322,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <Link href="/contact/">Get Your Free Estimate</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-background/20 hover:bg-background/10 text-background font-bold px-10 h-14 rounded-full transition-all">
-                  <Link href="tel:+14805693339">Call {siteConfig.phone}</Link>
+                  <Link href="tel:+15205693339">Call {siteConfig.phone}</Link>
                 </Button>
               </div>
             </div>

@@ -287,7 +287,7 @@ export default function FinancingPage() {
                   <Link href="/contact/">Get Free Estimate</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                  <a href="tel:+14805693339">Call {siteConfig.phone}</a>
+                  <a href="tel:+15205693339">Call {siteConfig.phone}</a>
                 </Button>
               </div>
             </div>

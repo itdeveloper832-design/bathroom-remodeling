@@ -47,7 +47,7 @@ jobs:
           server-dir: ./
           state-name: .ftp-deploy-sync-state-v7.json
           dangerous-clean-slate: false
-          timeout: 120000
+          timeout: 900000
           log-level: verbose
           security: loose
           exclude: |
@@ -56,3 +56,6 @@ jobs:
             **/node_modules/**
             **/.env*
             cgi-bin/**
+            **/__next*
+            **/index.txt
+

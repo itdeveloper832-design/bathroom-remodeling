@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
@@ -7,26 +8,26 @@ import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, We
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
-import LocalTrust from "@/components/home/local-trust";
-import AboutPreview from "@/components/home/about-preview";
-import ServicesGrid from "@/components/home/services-grid";
-import ChandlerProjects from "@/components/home/chandler-projects";
-import DesignBuildShowcase from "@/components/home/design-build-showcase";
-import WhyChooseUs from "@/components/home/why-choose-us";
-import PricingTable from "@/components/home/pricing-table";
-import BathroomSection from "@/components/home/bathroom-section";
-import ProcessSection from "@/components/home/process-section";
-import ChandlerExpertise from "@/components/home/chandler-expertise";
-import PopularProjects from "@/components/home/popular-projects";
-import ServiceAreas from "@/components/home/service-areas";
-import Financing from "@/components/home/financing";
-import ComparisonBenefits from "@/components/home/comparison-benefits";
-import FAQ from "@/components/home/faq";
-import BlogPreview from "@/components/home/blog-preview";
-import GalleryPreview from "@/components/home/gallery-preview";
-import FinalCTA from "@/components/home/final-cta";
-import VideoShowcase from "@/components/home/video-showcase";
-import { HomeBelowFold } from "@/components/home/home-below-fold";
+const LocalTrust = dynamic(() => import("@/components/home/local-trust"), { ssr: true });
+const AboutPreview = dynamic(() => import("@/components/home/about-preview"), { ssr: true });
+const ServicesGrid = dynamic(() => import("@/components/home/services-grid"), { ssr: true });
+const ChandlerProjects = dynamic(() => import("@/components/home/chandler-projects"), { ssr: true });
+const DesignBuildShowcase = dynamic(() => import("@/components/home/design-build-showcase"), { ssr: true });
+const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"), { ssr: true });
+const PricingTable = dynamic(() => import("@/components/home/pricing-table"), { ssr: true });
+const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"), { ssr: true });
+const ProcessSection = dynamic(() => import("@/components/home/process-section"), { ssr: true });
+const ChandlerExpertise = dynamic(() => import("@/components/home/chandler-expertise"), { ssr: true });
+const PopularProjects = dynamic(() => import("@/components/home/popular-projects"), { ssr: true });
+const ServiceAreas = dynamic(() => import("@/components/home/service-areas"), { ssr: true });
+const Financing = dynamic(() => import("@/components/home/financing"), { ssr: true });
+const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"), { ssr: true });
+const FAQ = dynamic(() => import("@/components/home/faq"), { ssr: true });
+const BlogPreview = dynamic(() => import("@/components/home/blog-preview"), { ssr: true });
+const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), { ssr: true });
+const FinalCTA = dynamic(() => import("@/components/home/final-cta"), { ssr: true });
+const VideoShowcase = dynamic(() => import("@/components/home/video-showcase"), { ssr: true });
+const HomeBelowFold = dynamic(() => import("@/components/home/home-below-fold").then((m) => m.HomeBelowFold), { ssr: true });
 
 export const metadata: Metadata = {
   title: {

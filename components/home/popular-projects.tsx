@@ -7,24 +7,28 @@ const projects = [
     description:
       "Remove a tub (often a garden tub), reset the drain, waterproof the pan and walls, and build a walk-in shower with tile and glass. Our most requested project in Chandler.",
     href: "/tub-to-shower-conversion/",
+    srText: " about Tub-to-Shower Conversions",
   },
   {
     title: "Walk-in shower with tile and glass",
     description:
       "Porcelain tile walls, shower niche, rainfall head, and frameless glass. Works well for aging in place with a low curb.",
     href: "/shower-remodeling/",
+    srText: " about Shower Remodeling",
   },
   {
     title: "Master bathroom remodel",
     description:
       "Double vanity, quartz countertops, new lighting, flooring, and a larger shower. Common in Fulton Ranch and Ocotillo primary suites.",
     href: "/master-bathroom-remodel/",
+    srText: " about Master Bathroom Remodeling",
   },
   {
     title: "Accessible and ADA bathroom updates",
     description:
       "Curbless showers, grab bars blocked into studs, comfort-height toilets, and slip-resistant tile (COF 0.60+).",
     href: "/ada-bathroom-remodeling/",
+    srText: " about ADA Bathroom Remodeling",
   },
 ];
 
@@ -53,8 +57,10 @@ export default function PopularProjects() {
               <Link
                 href={project.href}
                 className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:underline"
+                aria-label={`Learn more${project.srText}`}
               >
                 Learn more
+                <span className="sr-only">{project.srText}</span>
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
             </div>

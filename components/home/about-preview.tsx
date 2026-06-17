@@ -56,7 +56,7 @@ export default function AboutPreview() {
             <div className="mb-8 p-4 rounded-xl bg-accent/5 border border-accent/20 flex items-start gap-3">
               <span className="text-accent text-xl mt-0.5">💎</span>
               <div>
-                <h4 className="text-sm font-bold text-foreground mb-1">Wholesale Sourcing Partners</h4>
+                <h3 className="text-sm font-bold text-foreground mb-1">Wholesale Sourcing Partners</h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   We guide you through private selection visits directly at our local wholesale distributors (<strong>Arizona Tile</strong>, <strong>Bedrosians</strong>, and <strong>MSI</strong>) so you select high-end slabs, quartz countertops, and porcelain tile at contractor-level builder pricing.
                 </p>

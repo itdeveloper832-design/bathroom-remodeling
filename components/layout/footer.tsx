@@ -48,56 +48,60 @@ export function Footer() {
               <p className="text-xs pt-1 text-background/60">ROC Licensed | License #ROC338304 | Arizona Registrar of Contractors</p>
             </div>
 
-            <div className="flex gap-3" role="list" aria-label="Social media links">
+            <ul className="flex gap-3" role="list" aria-label="Social media links">
               {siteConfig.social.facebook && (
-                <a
-                  href={siteConfig.social.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Follow ARZ Home Remodeling on Facebook"
-                  role="listitem"
-                >
-                  <Facebook className="w-5 h-5" aria-hidden="true" />
-                </a>
+                <li>
+                  <a
+                    href={siteConfig.social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
+                    aria-label="Follow ARZ Home Remodeling on Facebook"
+                  >
+                    <Facebook className="w-5 h-5" aria-hidden="true" />
+                  </a>
+                </li>
               )}
               {siteConfig.social.instagram && (
-                <a
-                  href={siteConfig.social.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Follow ARZ Home Remodeling on Instagram"
-                  role="listitem"
-                >
-                  <Instagram className="w-5 h-5" aria-hidden="true" />
-                </a>
+                <li>
+                  <a
+                    href={siteConfig.social.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
+                    aria-label="Follow ARZ Home Remodeling on Instagram"
+                  >
+                    <Instagram className="w-5 h-5" aria-hidden="true" />
+                  </a>
+                </li>
               )}
               {siteConfig.social.youtube && (
-                <a
-                  href={siteConfig.social.youtube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Watch our bathroom remodeling projects on YouTube"
-                  role="listitem"
-                >
-                  <Youtube className="w-5 h-5" aria-hidden="true" />
-                </a>
+                <li>
+                  <a
+                    href={siteConfig.social.youtube}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
+                    aria-label="Watch our bathroom remodeling projects on YouTube"
+                  >
+                    <Youtube className="w-5 h-5" aria-hidden="true" />
+                  </a>
+                </li>
               )}
               {siteConfig.social.linkedin && (
-                <a
-                  href={siteConfig.social.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
-                  aria-label="Connect with ARZ Home Remodeling on LinkedIn"
-                  role="listitem"
-                >
-                  <Linkedin className="w-5 h-5" aria-hidden="true" />
-                </a>
+                <li>
+                  <a
+                    href={siteConfig.social.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-200 no-underline"
+                    aria-label="Connect with ARZ Home Remodeling on LinkedIn"
+                  >
+                    <Linkedin className="w-5 h-5" aria-hidden="true" />
+                  </a>
+                </li>
               )}
-            </div>
+            </ul>
           </div>
 
           {/* Services Column */}

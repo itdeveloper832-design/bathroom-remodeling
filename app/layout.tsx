@@ -1,6 +1,13 @@
 import type { Metadata, Viewport } from 'next'
+import { Inter } from 'next/font/google'
 import { siteConfig } from '@/lib/site-config'
 import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-sans',
+})
 
 import { StickyCallButton } from '@/components/layout/sticky-call-button'
 import { LocalBusinessSchema, OrganizationSchema } from '@/components/seo/json-ld'
@@ -134,7 +141,7 @@ export default function RootLayout({
         <LocalBusinessSchema />
         <OrganizationSchema />
       </head>
-      <body className="antialiased bg-background text-foreground selection:bg-primary/20" suppressHydrationWarning>
+      <body className={`${inter.variable} antialiased bg-background text-foreground selection:bg-primary/20`} suppressHydrationWarning>
         {children}
         <StickyCallButton />
       </body>

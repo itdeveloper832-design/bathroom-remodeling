@@ -83,9 +83,9 @@ export default function InteractiveMap({
 
       {/* Bottom Center interactive panel */}
       <div className="relative z-10 flex flex-col items-center text-center mt-auto w-full">
-        <h4 className="text-white font-serif text-lg font-bold mb-1 tracking-wide">
+        <h3 className="text-white font-serif text-lg font-bold mb-1 tracking-wide">
           ARZ Home Remodeling
-        </h4>
+        </h3>
         <p className="text-slate-400 text-xs mb-4 max-w-xs leading-relaxed">
           6710 W Chicago St, Chandler, AZ 85226
         </p>

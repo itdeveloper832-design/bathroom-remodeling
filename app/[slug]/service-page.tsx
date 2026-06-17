@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
+import "@/app/prose.css";
 
 import {
   Bath,

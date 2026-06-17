@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
 import { ObscuredEmail } from "@/components/ui/obscured-email"
+import "@/app/prose.css"
 
 export const metadata: Metadata = {title: {
     absolute: "Privacy Policy Details | Chandler AZ Bathroom Remodeling"

@@ -29,24 +29,8 @@ const CRITICAL_CSS = `
 :root {
   --background: #FFFFFF;
   --foreground: #222222;
-  --card: #FFFFFF;
-  --card-foreground: #222222;
-  --popover: #FFFFFF;
-  --popover-foreground: #222222;
   --primary: #1A2E4A;
-  --primary-foreground: #FFFFFF;
-  --secondary: oklch(0.94 0.01 85);
-  --secondary-foreground: #222222;
-  --muted: oklch(0.92 0.01 85);
-  --muted-foreground: oklch(0.30 0.01 250);
   --accent: #C9972B;
-  --accent-foreground: #FFFFFF;
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: #FFFFFF;
-  --border: oklch(0.88 0.015 85);
-  --input: oklch(0.92 0.01 85);
-  --ring: #C9972B;
-  --radius: 0.5rem;
 }
 html {
   scroll-behavior: smooth;
@@ -60,9 +44,22 @@ body {
   color: var(--foreground);
   font-family: 'Inter', system-ui, sans-serif;
   margin: 0;
+  padding-top: 112px;
 }
 * {
   box-sizing: border-box;
+}
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  background-color: var(--foreground);
+  color: var(--background);
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 header {
   position: fixed;
@@ -72,11 +69,30 @@ header {
   z-index: 40;
   background-color: var(--background);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  height: 72px;
+  display: flex;
+  align-items: center;
 }
-.hero {
+main section[aria-label="Hero section"], section.hero {
   position: relative;
   min-height: 85vh;
   background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 `;
 
@@ -100,8 +116,9 @@ function processFile(filePath) {
           console.log(`Inlining CSS: ${href} (${(stats.size/1024).toFixed(1)} KB) into ${path.relative(outDir, filePath)}`);
           return `<style data-inlined="true">${cssContent}</style>`;
         } else {
-          console.log(`Keeping CSS as normal (too large to inline): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
-          return match;
+          console.log(`Deferring CSS (too large to inline): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
+          hasDeferredCss = true;
+          return `<link rel="stylesheet" href="${href}" media="print" onload="this.media='all'"/><noscript><link rel="stylesheet" href="${href}"/></noscript>`;
         }
       }
     }

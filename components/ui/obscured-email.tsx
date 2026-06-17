@@ -15,16 +15,19 @@ export function ObscuredEmail({ className = "", children }: ObscuredEmailProps) 
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    // Return a safe placeholder in compiled static HTML to prevent scraper indexation
-    return <span className={className}>{children || "sales [at] arzhomeremodeling.com"}</span>;
-  }
-
-  // Active browser render
   const emailStr = siteConfig.email;
+  const hrefVal = mounted ? `mailto:${emailStr}` : "#";
+  const labelVal = mounted ? `Email us at ${emailStr}` : undefined;
+
   return (
-    <a href={`mailto:${emailStr}`} className={className} aria-label={`Email us at ${emailStr}`}>
-      {children || emailStr}
+    <a 
+      href={hrefVal} 
+      className={className} 
+      aria-label={labelVal}
+      onClick={!mounted ? (e) => e.preventDefault() : undefined}
+      suppressHydrationWarning
+    >
+      {mounted ? (children || emailStr) : (children || "sales [at] arzhomeremodeling.com")}
     </a>
   );
 }

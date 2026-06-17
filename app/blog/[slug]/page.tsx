@@ -8,6 +8,7 @@ import { getPostBySlug, getRelatedPosts, getPublishedPosts } from "@/lib/actions
 import { siteConfig } from "@/lib/site-config"
 import { Calendar, Clock, ArrowLeft, User, ArrowRight, Share2, Facebook, Twitter, Linkedin, List } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import "@/app/prose.css"
 import { BlogArticleJsonLd, BreadcrumbSchema } from "@/components/seo/json-ld"
 import { parseMarkdown, extractHeadings } from "@/lib/blog-utils"
 import type { BlogPost } from "@/lib/types"

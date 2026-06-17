@@ -17,7 +17,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-poppins font-semibold mb-4">Quick Links</h4>
+            <h3 className="font-poppins font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 text-slate-300">
               <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
               <li><Link href="/services" className="hover:text-white transition-colors">Services</Link></li>
@@ -27,7 +27,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-poppins font-semibold mb-4">Contact Info</h4>
+            <h3 className="font-poppins font-semibold text-lg mb-4">Contact Info</h3>
             <p className="text-slate-300">
               Address: 6710 W Chicago St, Chandler, AZ 85226
             </p>

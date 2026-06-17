@@ -7,6 +7,7 @@ import { siteConfig } from "@/lib/site-config"
 import { Calendar, Clock, ArrowLeft, User, ArrowRight, Share2, Facebook, Twitter, Linkedin, List } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { BlogArticleJsonLd, BreadcrumbSchema } from "@/components/seo/json-ld"
+import "@/app/prose.css";
 
 export const metadata: Metadata = {title: {
     absolute: "Bathroom Remodel Guide | Chandler AZ Bathroom Remodeling"

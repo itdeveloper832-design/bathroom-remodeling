@@ -37,7 +37,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
   margin: 0;
-  padding-top: 112px;
 }
 * {
   box-sizing: border-box;
@@ -114,9 +113,8 @@ function processFile(filePath) {
           console.log(`Inlining CSS: ${href} (${(stats.size/1024).toFixed(1)} KB) into ${path.relative(outDir, filePath)}`);
           return `<style data-inlined="true">${cssContent}</style>`;
         } else {
-          console.log(`Deferring CSS (too large to inline): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
-          hasDeferredCss = true;
-          return `<link rel="stylesheet" href="${href}" media="print" onload="this.media='all'"/><noscript><link rel="stylesheet" href="${href}"/></noscript>`;
+          console.log(`Keeping CSS (loading synchronously): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
+          return match;
         }
       }
     }

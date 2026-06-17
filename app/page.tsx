@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -8,26 +9,7 @@ import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, We
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
-const LocalTrust = dynamic(() => import("@/components/home/local-trust"), { ssr: true });
-const AboutPreview = dynamic(() => import("@/components/home/about-preview"), { ssr: true });
-const ServicesGrid = dynamic(() => import("@/components/home/services-grid"), { ssr: true });
-const ChandlerProjects = dynamic(() => import("@/components/home/chandler-projects"), { ssr: true });
-const DesignBuildShowcase = dynamic(() => import("@/components/home/design-build-showcase"), { ssr: true });
-const WhyChooseUs = dynamic(() => import("@/components/home/why-choose-us"), { ssr: true });
-const PricingTable = dynamic(() => import("@/components/home/pricing-table"), { ssr: true });
-const BathroomSection = dynamic(() => import("@/components/home/bathroom-section"), { ssr: true });
-const ProcessSection = dynamic(() => import("@/components/home/process-section"), { ssr: true });
-const ChandlerExpertise = dynamic(() => import("@/components/home/chandler-expertise"), { ssr: true });
-const PopularProjects = dynamic(() => import("@/components/home/popular-projects"), { ssr: true });
-const ServiceAreas = dynamic(() => import("@/components/home/service-areas"), { ssr: true });
-const Financing = dynamic(() => import("@/components/home/financing"), { ssr: true });
-const ComparisonBenefits = dynamic(() => import("@/components/home/comparison-benefits"), { ssr: true });
-const FAQ = dynamic(() => import("@/components/home/faq"), { ssr: true });
-const BlogPreview = dynamic(() => import("@/components/home/blog-preview"), { ssr: true });
-const GalleryPreview = dynamic(() => import("@/components/home/gallery-preview"), { ssr: true });
-const FinalCTA = dynamic(() => import("@/components/home/final-cta"), { ssr: true });
-const VideoShowcase = dynamic(() => import("@/components/home/video-showcase"), { ssr: true });
-const HomeBelowFold = dynamic(() => import("@/components/home/home-below-fold").then((m) => m.HomeBelowFold), { ssr: true });
+import BelowFoldLoader from "@/components/home/below-fold-loader";
 
 export const metadata: Metadata = {
   title: {
@@ -96,28 +78,9 @@ export default function HomePage() {
       <main id="main-content" role="main">
         <Hero />
         <QuickAnswers />
-        <div>
-          <LocalTrust cityName="Chandler" />
-          <AboutPreview />
-          <ServicesGrid />
-          <ChandlerProjects />
-          <DesignBuildShowcase />
-          <WhyChooseUs />
-          <PricingTable />
-          <BathroomSection />
-          <ProcessSection />
-          <ChandlerExpertise />
-          <PopularProjects />
-          <VideoShowcase />
-          <ServiceAreas />
-          <Financing />
-          <ComparisonBenefits />
-          <FAQ />
-          <BlogPreview />
-          <GalleryPreview />
-          <HomeBelowFold />
-          <FinalCTA />
-        </div>
+        <Suspense fallback={null}>
+          <BelowFoldLoader />
+        </Suspense>
       </main>
       <Footer />
     </>

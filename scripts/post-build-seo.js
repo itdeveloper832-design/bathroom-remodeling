@@ -19,13 +19,6 @@ function getHtmlFiles(dir, files = []) {
 
 const CRITICAL_CSS = `
 /* CRITICAL INLINED CSS TO PREVENT FOUC AND ACCELERATE FCP/LCP */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url('/fonts/inter-var.woff2') format('woff2');
-}
 :root {
   --background: #FFFFFF;
   --foreground: #222222;
@@ -42,7 +35,7 @@ html {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
   margin: 0;
   padding-top: 112px;
 }

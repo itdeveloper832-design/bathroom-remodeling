@@ -1,1 +1,5 @@
-defaults and supports es6-module
+chrome >= 87
+firefox >= 78
+safari >= 14
+edge >= 88
+node >= 18

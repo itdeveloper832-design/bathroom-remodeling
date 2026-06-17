@@ -62,9 +62,14 @@ header {
   z-index: 40;
   background-color: var(--background);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  height: 72px;
+  height: 60px;
   display: flex;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  header {
+    height: 72px;
+  }
 }
 main section[aria-label="Hero section"], section.hero {
   position: relative;

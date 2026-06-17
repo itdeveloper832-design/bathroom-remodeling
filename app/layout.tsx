@@ -83,7 +83,15 @@ export default function RootLayout({
         <meta name="geo.position" content={`${siteConfig.address.coordinates.lat};${siteConfig.address.coordinates.lng}`} />
         <meta name="ICBM" content={`${siteConfig.address.coordinates.lat}, ${siteConfig.address.coordinates.lng}`} />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <link rel="preload" href="/images/hero/luxury-shower-remodel-chandler.avif" as="image" type="image/avif" fetchPriority="high" />
+        <link
+          rel="preload"
+          href="/images/hero/luxury-shower-remodel-chandler.avif"
+          as="image"
+          type="image/avif"
+          fetchPriority="high"
+          imageSrcSet="/images/hero/luxury-shower-remodel-chandler-640.avif 640w, /images/hero/luxury-shower-remodel-chandler-828.avif 828w, /images/hero/luxury-shower-remodel-chandler.avif 1200w"
+          imageSizes="100vw"
+        />
 
         {/* High-Performance Deferred Third-Party Script Loader */}
         <script

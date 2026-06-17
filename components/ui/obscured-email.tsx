@@ -27,7 +27,7 @@ export function ObscuredEmail({ className = "", children }: ObscuredEmailProps) 
       onClick={!mounted ? (e) => e.preventDefault() : undefined}
       suppressHydrationWarning
     >
-      {mounted ? (children || emailStr) : (children || "sales [at] arzhomeremodeling.com")}
+      {children || emailStr}
     </a>
   );
 }

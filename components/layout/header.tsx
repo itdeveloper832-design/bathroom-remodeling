@@ -21,7 +21,7 @@ export function Header() {
       </a>
       <InfoHeader />
       <header
-        className="fixed top-[40px] left-0 right-0 z-40 bg-background shadow-md py-1.5 lg:py-2 lg:bg-background/95 lg:backdrop-blur-md"
+        className="fixed top-[40px] left-0 right-0 z-40 bg-background shadow-md h-[60px] lg:h-[72px] flex items-center lg:bg-background/95 lg:backdrop-blur-md"
         role="banner"
       >
         <div className="container mx-auto px-4 lg:px-8">

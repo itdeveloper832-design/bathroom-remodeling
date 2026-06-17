@@ -9,7 +9,7 @@ import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, We
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
-import BelowFoldLoader from "@/components/home/below-fold-loader";
+import LazyWrapper from "@/components/home/lazy-wrapper";
 
 export const metadata: Metadata = {
   title: {
@@ -79,7 +79,7 @@ export default function HomePage() {
         <Hero />
         <QuickAnswers />
         <Suspense fallback={null}>
-          <BelowFoldLoader />
+          <LazyWrapper />
         </Suspense>
       </main>
       <Footer />

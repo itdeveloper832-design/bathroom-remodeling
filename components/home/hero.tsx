@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
 
@@ -7,17 +6,14 @@ export default function Hero() {
   return (
     <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-28 md:pt-36 lg:pt-40" aria-label="Hero section">
       <div className="absolute inset-0 z-0">
-        <Image
+        <img
           src="/images/hero/luxury-shower-remodel-chandler.avif"
-          alt="Custom walk-in shower and tile bathroom remodel in Chandler AZ by ARZ Home Remodeling"
-          fill
-          className="object-cover"
-          priority
+          srcSet="/images/hero/luxury-shower-remodel-chandler-640.avif 640w, /images/hero/luxury-shower-remodel-chandler-828.avif 828w, /images/hero/luxury-shower-remodel-chandler.avif 1200w"
           sizes="100vw"
-          quality={75}
+          alt="Custom walk-in shower and tile bathroom remodel in Chandler AZ by ARZ Home Remodeling"
+          className="absolute inset-0 w-full h-full object-cover"
           fetchPriority="high"
           decoding="sync"
-          loading="eager"
         />
         {/* High-contrast overlay: centered layout utilizes a deep all-over navy tint overlay for peak readability */}
         <div className="absolute inset-0 bg-primary/75 lg:bg-primary/70" aria-hidden="true" />

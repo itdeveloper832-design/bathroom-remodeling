@@ -9,7 +9,7 @@ import { ObscuredEmail } from "@/components/ui/obscured-email";
 // Only the map is client-side
 // By keeping it in a dynamic import here, the footer itself stays a Server Component
 const GoogleMap = dynamic(() => import("@/components/google-map"), {
-  loading: () => <div className="mt-8 h-[150px] bg-background/10 animate-pulse rounded-xl" aria-label="Loading map" />,
+  loading: () => <div className="mt-8 h-[220px] bg-background/10 animate-pulse rounded-xl" aria-label="Loading map" />,
 });
 
 export function Footer() {

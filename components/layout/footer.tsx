@@ -2,9 +2,8 @@
 // GoogleMap is isolated in its own client wrapper below to avoid making the whole footer a client component
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Phone, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
-import { ObscuredEmail } from "@/components/ui/obscured-email";
 
 // Only the map is client-side
 // By keeping it in a dynamic import here, the footer itself stays a Server Component
@@ -44,7 +43,6 @@ export function Footer() {
               <p className="font-semibold text-background text-base">ARZ Home Remodeling</p>
               <p>6710 W Chicago St, Chandler, AZ 85226</p>
               <p>Phone: <a href={`tel:${siteConfig.phoneClean}`} className="text-background/80 hover:text-primary transition-colors no-underline">{siteConfig.phone}</a></p>
-              <p>Email: <ObscuredEmail className="text-background/80 hover:text-primary transition-colors no-underline" /></p>
               <p className="text-xs pt-1 text-background/60">ROC Licensed | License #ROC338304 | Arizona Registrar of Contractors</p>
             </div>
 
@@ -177,10 +175,7 @@ export function Footer() {
                     {siteConfig.phone}
                   </a>
                 </li>
-                <li className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
-                  <ObscuredEmail className="text-background/80 hover:text-primary transition-colors text-sm no-underline" />
-                </li>
+
                 <li className="flex items-start gap-3">
                   <Clock className="w-5 h-5 text-primary mt-0.5 shrink-0" aria-hidden="true" />
                   <div className="text-background/80 text-sm">

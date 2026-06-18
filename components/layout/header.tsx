@@ -65,7 +65,7 @@ export function Header() {
                 <span>{siteConfig.googleRating} · {siteConfig.googleReviewsCount} Reviews</span>
               </a>
               <a href={`tel:${siteConfig.phoneClean}`} className={ctaClass}>
-                Free Estimate
+                Call Now: {siteConfig.phone}
               </a>
             </div>
 
@@ -111,7 +111,7 @@ export function Header() {
                     href={`tel:${siteConfig.phoneClean}`}
                     className="mt-2 inline-flex w-full items-center justify-center rounded-md bg-accent hover:bg-accent/90 text-accent-foreground font-bold py-4 px-6 transition-colors"
                   >
-                    Get Free Estimate
+                    Call Now: {siteConfig.phone}
                   </a>
                 </div>
               </nav>

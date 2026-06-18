@@ -1,4 +1,4 @@
-import { Phone, Calendar } from "lucide-react";
+import { Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export function StickyCallButton() {
@@ -16,10 +16,10 @@ export function StickyCallButton() {
          <a
           href={`tel:${siteConfig.phoneClean}`}
           className="flex-1 flex items-center justify-center gap-2 bg-accent text-accent-foreground font-semibold rounded-xl py-3 px-4 shadow-sm hover:bg-accent/95 active:scale-[0.98] transition-all duration-200 no-underline"
-          aria-label="Get Free Estimate"
+          aria-label="Speak to a Project Supervisor"
         >
-          <Calendar className="w-5 h-5" aria-hidden="true" />
-          <span>Free Estimate</span>
+          <Phone className="w-5 h-5" aria-hidden="true" />
+          <span>Call Supervisor</span>
         </a>
       </div>
     </div>

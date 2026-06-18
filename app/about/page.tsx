@@ -438,12 +438,12 @@ export default function AboutPage() {
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg">
                   <a href={`tel:${siteConfig.phoneClean}`}>
-                    Get Free Estimate <ArrowRight className="ml-2 h-5 w-5" />
+                    Speak to a Project Supervisor <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <a href={`tel:${siteConfig.phoneClean}`}>
-                    Call {siteConfig.phone}
+                    Call Now: {siteConfig.phone}
                   </a>
                 </Button>
               </div>

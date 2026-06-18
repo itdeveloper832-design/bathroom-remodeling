@@ -15,7 +15,7 @@ export default function ChandlerShowerMaterials() {
               Hard Water & Grout
             </h3>
             <p className="text-foreground/90 leading-relaxed mb-4">
-              Chandler's water supply runs extremely hard — some of the highest mineral content in the Phoenix metro. Standard sanded or unsanded grout stains brown within 6–12 months in a busy shower.
+              Chandler's water supply runs extremely hard, with some of the highest mineral content in the Phoenix metro area. Standard sanded or unsanded grout stains brown within 6 to 12 months in a busy shower.
             </p>
             <p className="text-foreground/90 leading-relaxed">
               We use <strong>epoxy grout</strong> on all shower walls in Chandler projects. It does not absorb minerals, resists mold, and stays lighter for years longer than standard grout. Pair it with a <strong>porcelain tile</strong> (non-porous) and you have a shower that is easy to clean even after Chandler's notoriously hard tap water runs through it daily.
@@ -28,7 +28,7 @@ export default function ChandlerShowerMaterials() {
               Heat, AC, and Grout Movement
             </h3>
             <p className="text-foreground/90 leading-relaxed mb-4">
-              Arizona's temperature swings — 115°F outside in summer and 72°F inside with AC — expand and contract tile and grout more than in mild climates.
+              Arizona's temperature swings (115°F outside in summer and 72°F inside with AC) expand and contract tile and grout more than in mild climates.
             </p>
             <p className="text-foreground/90 leading-relaxed">
               This is why <strong>caulk at all inside corners (not grout)</strong> is mandatory in Arizona showers. We never grout inside corners. We caulk them with a flexible, mold-resistant sealant that moves with the tile instead of cracking.
@@ -57,7 +57,7 @@ export default function ChandlerShowerMaterials() {
               Most shower tile replacements within the same footprint do not require a Chandler permit. If we move the valve, add plumbing, or alter the drain, we pull a permit through Chandler Development Services and schedule the required rough-in inspection.
             </p>
             <p className="text-foreground/90 leading-relaxed">
-              We handle all of this — you don't need to call the city.
+              We handle all of this so you don't need to call the city.
             </p>
           </div>
         </div>

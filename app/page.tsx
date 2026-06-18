@@ -13,12 +13,12 @@ import BelowFoldLoader from "@/components/home/below-fold-loader";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Custom Bath Remodeling Chandler AZ | ARZ Home Remodeling"
+    absolute: "ARZ Home Remodeling | Bathroom Remodeling Chandler AZ"
   },
-  description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Request a free estimate today!",
+  description: "Licensed bathroom remodeling in Chandler & East Valley. Walk-in showers, tub conversions & custom tile. 2-year warranty. Free estimate: (520) 569-3339.",
   openGraph: {
-    title: "Custom Bath Remodeling Chandler AZ | ARZ Home Remodeling",
-    description: "Transform your bathroom with advanced waterproofing, custom double vanities, and curbless walk-in showers in Chandler. Request a free estimate today!",
+    title: "ARZ Home Remodeling | Bathroom Remodeling Chandler AZ",
+    description: "Licensed bathroom remodeling in Chandler & East Valley. Walk-in showers, tub conversions & custom tile. 2-year warranty. Free estimate: (520) 569-3339.",
     type: "website",
     url: `${siteConfig.url}/`,
     images: [

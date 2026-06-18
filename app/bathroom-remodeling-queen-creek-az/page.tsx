@@ -85,10 +85,10 @@ export default function QueenCreekPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">
-                <a href={`tel:${siteConfig.phoneClean}`}>Get Your Free Queen Creek Quote</a>
+                <a href={`tel:${siteConfig.phoneClean}`}>Speak to a Project Supervisor</a>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <a href={`tel:${siteConfig.phoneClean}`}>Call {siteConfig.phone}</a>
+                <a href={`tel:${siteConfig.phoneClean}`}>Call Now: {siteConfig.phone}</a>
               </Button>
             </div>
           </div>

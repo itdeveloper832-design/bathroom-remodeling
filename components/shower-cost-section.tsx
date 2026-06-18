@@ -74,13 +74,13 @@ export default function ShowerCostSection() {
             Closing Note
           </h3>
           <p className="text-foreground/90 mb-4 leading-relaxed">
-            These are Chandler-area ranges based on our recent projects. Your price depends on your existing layout, tile selection, and whether we need to move plumbing or pull a permit. We provide a written line-item estimate before any work starts — no vague "allowances."
+            These are Chandler-area ranges based on our recent projects. Your price depends on your existing layout, tile selection, and whether we need to move plumbing or pull a permit. We provide a written line-item estimate before any work starts, with no vague "allowances."
           </p>
           <a
             href={`tel:${siteConfig.phoneClean}`}
             className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
           >
-            Get a Free Written Estimate for Your Shower
+            Call Now for a Written Estimate: {siteConfig.phone}
           </a>
         </div>
       </div>

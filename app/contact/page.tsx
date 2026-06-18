@@ -4,9 +4,8 @@ import { Footer } from "@/components/layout/footer"
 import ContactSection from "@/components/home/contact-section"
 import { GoogleMap } from "@/components/services/google-map";
 import { siteConfig } from "@/lib/site-config"
-import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
+import { Phone, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/seo/json-ld"
-import { ObscuredEmail } from "@/components/ui/obscured-email"
 
 export const metadata: Metadata = {title: {
     absolute: "Free Bathroom Estimate | Chandler AZ Bathroom Remodeling"
@@ -25,7 +24,7 @@ export const metadata: Metadata = {title: {
 const contactFaqs = [
   {
     question: "How do I get an estimate for my bathroom remodel in Chandler?",
-    answer: `Call ${siteConfig.phone} or send us an email. We usually respond within 2 business hours and can schedule a free in-home consultation in Chandler and the East Valley.`
+    answer: `Call ${siteConfig.phone}. We usually answer immediately during business hours, ensuring you speak directly with a local project supervisor.`
   },
   {
     question: "What is the typical cost for a bathroom renovation in Chandler?",
@@ -62,12 +61,10 @@ export default function ContactPage() {
                 Get In Touch
               </span>
               <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground text-balance">
-                Get Your Free Bathroom Remodel Estimate in Chandler, AZ
+                Speak to a Project Supervisor in Chandler, AZ
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Ready to get started? Give us a call or send us an email - we typically respond
-                within 2 business hours. We&apos;ll schedule a free in-home visit to measure your space,
-                discuss your vision, and give you a written quote with no obligation.
+                Ready to get started? Give us a call - we typically answer immediately or return voicemails within 2 hours. We&apos;ll schedule a free in-home visit to measure your space, discuss your vision, and give you a written quote with no obligation.
               </p>
             </div>
           </div>
@@ -92,12 +89,15 @@ export default function ContactPage() {
 
               <div className="bg-card p-6 rounded-xl shadow-sm border border-border text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="h-6 w-6 text-primary" />
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-serif font-semibold text-foreground mb-2">Email</h3>
-                <ObscuredEmail 
-                  className="text-muted-foreground hover:text-primary transition-colors block text-sm leading-snug"
-                />
+                <h3 className="font-serif font-semibold text-foreground mb-2">Speak to a Supervisor</h3>
+                <a 
+                  href={`tel:${siteConfig.phoneClean}`} 
+                  className="text-muted-foreground hover:text-primary transition-colors block text-sm leading-snug font-semibold"
+                >
+                  {siteConfig.phone}
+                </a>
               </div>
 
               <div className="bg-card p-6 rounded-xl shadow-sm border border-border text-center">

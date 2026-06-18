@@ -44,7 +44,7 @@ export default function ServicesPage() {
                 ROC338304. Written estimates and clear timelines on every project.
               </p>
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <a href={`tel:${siteConfig.phoneClean}`}>Get Free Estimate</a>
+                <a href={`tel:${siteConfig.phoneClean}`}>Speak to a Project Supervisor</a>
               </Button>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="bg-background text-foreground hover:bg-background/90">
-                <a href={`tel:${siteConfig.phoneClean}`}>Get Free Estimate</a>
+                <a href={`tel:${siteConfig.phoneClean}`}>Call Now: {siteConfig.phone}</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 <Link href="/bathroom-remodeling/">Learn About Full Remodels</Link>

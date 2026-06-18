@@ -24,13 +24,13 @@ files.forEach(file => {
   let content = fs.readFileSync(file, 'utf8');
   let original = content;
 
-  // Phone numbers
-  content = content.replace(/\+1\s*\(?480\)?[-.\s]*306[-.\s]*5591/g, '(520) 569-3339');
-  content = content.replace(/\(?480\)?[-.\s]*306[-.\s]*5591/g, '(520) 569-3339');
-  content = content.replace(/4803065591/g, '(520) 569-3339');
-  content = content.replace(/tel:4803065591/g, 'tel:+15205693339');
-  content = content.replace(/tel:\+14803065591/g, 'tel:+15205693339');
-  content = content.replace(/tel:\(?480\)?[-.\s]*306[-.\s]*5591/g, 'tel:+15205693339');
+  // Phone numbers (replaces both old 480-306-5591 and 229-306-5591 with (520) 569-3339)
+  content = content.replace(/\+1\s*\(?(?:480|229)\)?[-.\s]*306[-.\s]*5591/g, '(520) 569-3339');
+  content = content.replace(/\(?(?:480|229)\)?[-.\s]*306[-.\s]*5591/g, '(520) 569-3339');
+  content = content.replace(/(?:480|229)3065591/g, '(520) 569-3339');
+  content = content.replace(/tel:(?:480|229)3065591/g, 'tel:+15205693339');
+  content = content.replace(/tel:\+1(?:480|229)3065591/g, 'tel:+15205693339');
+  content = content.replace(/tel:\(?(?:480|229)\)?[-.\s]*306[-.\s]*5591/g, 'tel:+15205693339');
 
   // Business Name variations
   content = content.replace(/ARZ Remodeling/g, 'ARZ Home Remodeling');
@@ -40,9 +40,8 @@ files.forEach(file => {
   // Email
   content = content.replace(/sales@arzhomeremodeling\.com/g, 'info@arzremodeling.com');
 
-  // Address - standardize
-  // Let's assume some variations
-  content = content.replace(/6710 W Chicago St[^\n]*/g, '6710 W Chicago St, Chandler, AZ 85226');
+  // Address - standardize (disabled to prevent truncating trailing quotes and syntax errors)
+  // content = content.replace(/6710 W Chicago St[^\n]*/g, '6710 W Chicago St, Chandler, AZ 85226');
   
   // ROC Number
   content = content.replace(/ROC #345678/g, 'ROC Licensed | License #ROC338304');

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
-import { ObscuredEmail } from "@/components/ui/obscured-email";
 
 export default function ShowerCTAFooter() {
   return (
@@ -18,14 +17,16 @@ export default function ShowerCTAFooter() {
         <div className="bg-background rounded-2xl p-8 border border-border mb-8">
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="text-center">
-              <p className="text-muted-foreground mb-2">Call Us</p>
+              <p className="text-muted-foreground mb-2">Call Now</p>
               <a href={`tel:${siteConfig.phoneClean}`} className="text-3xl font-semibold text-primary hover:underline">
                 {siteConfig.phone}
               </a>
             </div>
             <div className="text-center">
-              <p className="text-muted-foreground mb-2">Email</p>
-              <ObscuredEmail className="text-xl font-semibold text-primary hover:underline" />
+              <p className="text-muted-foreground mb-2">Speak to a Project Supervisor</p>
+              <a href={`tel:${siteConfig.phoneClean}`} className="text-3xl font-semibold text-primary hover:underline">
+                {siteConfig.phone}
+              </a>
             </div>
           </div>
 

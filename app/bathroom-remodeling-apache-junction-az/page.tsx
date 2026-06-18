@@ -11,11 +11,12 @@ import {  ServiceSchema, FAQSchema, PriceSchema , BreadcrumbSchema } from "@/com
 import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ShieldCheck, Droplets, Clock } from "lucide-react";
 
 export const metadata: Metadata = {title: {
-    absolute: "Apache Junction Bath | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore apache junction bath, custom showers, tile, vanities, clear pricing, and free estimates.",
-  openGraph: {title: "Apache Junction Bath | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore apache junction bath, custom showers, tile, vanities, clear pricing, and free estimates.",
+    absolute: "Bathroom Remodeling Apache Junction AZ | ARZ"
+  },description: "Licensed bathroom remodeling in Apache Junction, AZ. Custom showers, tub conversions & tile. Schluter waterproofing system. Free estimate: (520) 569-3339.",
+  openGraph: {title: "Bathroom Remodeling Apache Junction AZ | ARZ",description: "Licensed bathroom remodeling in Apache Junction, AZ. Custom showers, tub conversions & tile. Schluter waterproofing system. Free estimate: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-apache-junction-az/`,
     type: "website",
   },
@@ -94,10 +95,10 @@ export default function ApacheJunctionPage() {
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <Button asChild size="lg">
-                <a href={`tel:${siteConfig.phoneClean}`}>Get Your Free Apache Junction Quote</a>
+                <a href={`tel:${siteConfig.phoneClean}`}>Speak to a Project Supervisor</a>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <a href={`tel:${siteConfig.phoneClean}`}>Call {siteConfig.phone}</a>
+                <a href={`tel:${siteConfig.phoneClean}`}>Call Now: {siteConfig.phone}</a>
               </Button>
             </div>
           </div>
@@ -138,6 +139,66 @@ export default function ApacheJunctionPage() {
           ]} 
           cityName="Apache Junction" 
         />
+        
+        {/* TECHNICAL SPECIFICATIONS SECTION */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <div className="text-center mb-12">
+              <span className="text-primary text-sm font-medium tracking-wider uppercase">Engineering & Design Standards</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold mt-4 text-foreground">
+                Technical Remodeling Specifications & Building Codes
+              </h2>
+              <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                We build bathrooms to last decades, matching rigorous technical standards to combat Apache Junction's hard water and desert framing movement.
+              </p>
+            </div>
+            
+            <div className="space-y-8">
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <ShieldCheck className="w-6 h-6 text-primary" />
+                  1. Waterproofing & Moisture Control (TCNA Standards)
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  We build all custom tiled showers in compliance with the **Tile Council of North America (TCNA) B421 and B422** standards. Instead of traditional cement boards and PVC liners which degrade and leak, we install the **Schluter-KERDI waterproofing system**.
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground text-sm">
+                  <li><strong>Vapor Permeance:</strong> The KERDI membrane features a water vapor permeance rating of <strong>&lt; 0.5 perms</strong> (tested under ASTM E96 Procedure E), making it completely vapor-tight and preventing steam from rotting your wood framing.</li>
+                  <li><strong>Decoupling & Crack Isolation:</strong> The bonded sheet membrane decouples the tile layer from the subfloor, absorbing the natural expansion and contraction of desert framing, preventing grout joints from cracking.</li>
+                </ul>
+              </div>
+
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Droplets className="w-6 h-6 text-primary" />
+                  2. Hard Water Mitigation & Tile Standards (ANSI A118)
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  The municipal water supply in Apache Junction averages <strong>over 300 mg/L (18+ grains per gallon) of dissolved calcium and magnesium</strong>. This hard water destroys standard cement grout and stone. We resolve this by strictly adhering to ANSI material guidelines:
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground text-sm">
+                  <li><strong>Epoxy Grout (ANSI A118.3):</strong> We upgrade our grout to 100% solid epoxy resins. Unlike porous cement grouts, epoxy grout is completely non-porous and chemically inert, resisting staining, scale buildup, and acid cleaning.</li>
+                  <li><strong>Thin-Set Mortar (ANSI A118.15):</strong> We use improved modified dry-set cement mortar to bond dense, large-format porcelain tiles (water absorption rate <strong>&lt; 0.5%</strong> per ASTM C373), preventing tiles from releasing due to slab movement or moisture cycles.</li>
+                </ul>
+              </div>
+
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Clock className="w-6 h-6 text-primary" />
+                  3. Advanced Plumbing & Scald Prevention (ASSE 1016)
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Modern mechanical systems are essential to safety and system longevity. We upgrade and secure every in-wall plumbing component:
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground text-sm">
+                  <li><strong>Anti-Scald Mixing Valves:</strong> We install pressure-balancing and thermostatic mixing valves certified to <strong>ASSE 1016 / ASME A112.18.1</strong> standards. This maintains water temperature within &plusmn;3.6&deg;F (&plusmn;2&deg;C) despite pressure drops elsewhere in the home.</li>
+                  <li><strong>PEX-a Piping Systems:</strong> We utilize PEX-a (expansion-fitting) piping for supply lines. PEX-a resists hard water scaling, eliminates the risk of pinhole leaks common in aging copper pipes, and absorbs thermal expansion without stress.</li>
+                  <li><strong>Drain Expansion:</strong> In all tub-to-shower conversions, we expand the original 1.5-inch waste line to a code-compliant <strong>2-inch waste and vent line</strong> to handle high-flow modern shower heads without back-ponding.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
         
         <ServiceFAQ faqs={apacheJunctionFaqs} />
         <Testimonials />

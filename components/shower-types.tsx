@@ -21,13 +21,13 @@ const showerTypes: ShowerType[] = [
   {
     title: "Frameless Glass Shower Enclosures",
     description:
-      "Frameless glass panels cut to your exact opening — no aluminum channels collecting soap scum. Works on new tile installs and retrofits. Clear, low-iron, or frosted glass options. Most homeowners in Fulton Ranch and Ocotillo request frameless for a clean, modern look.",
+      "Frameless glass panels cut to your exact opening, leaving no aluminum channels collecting soap scum. Works on new tile installs and retrofits. Clear, low-iron, or frosted glass options. Most homeowners in Fulton Ranch and Ocotillo request frameless for a clean, modern look.",
     priceRange: "$1,800–$4,500",
   },
   {
     title: "Curbless / Zero-Threshold Showers",
     description:
-      "A curbless shower in Chandler eliminates the step-over lip — ideal for aging in place, ADA compliance, or just a cleaner look. We slope the pan floor to a linear or center drain and install slip-resistant tile (COF 0.60+). Common in Sun Lakes and near Chandler Regional Medical Center.",
+      "A curbless shower in Chandler eliminates the step-over lip, which is ideal for aging in place, ADA compliance, or just a cleaner look. We slope the pan floor to a linear or center drain and install slip-resistant tile (COF 0.60+). Common in Sun Lakes and near Chandler Regional Medical Center.",
     priceRange: "$8,000–$14,000",
   },
   {
@@ -39,7 +39,7 @@ const showerTypes: ShowerType[] = [
   {
     title: "Shower Tile Replacement",
     description:
-      "Cracked grout, failing caulk, or stained builder-grade tile? We demo the old tile down to the substrate, inspect for moisture damage, re-waterproof if needed, and install new porcelain. Chandler's hard water destroys standard grout fast — we recommend epoxy grout on all shower walls.",
+      "Cracked grout, failing caulk, or stained builder-grade tile? We demo the old tile down to the substrate, inspect for moisture damage, re-waterproof if needed, and install new porcelain. Chandler's hard water destroys standard grout fast, so we recommend epoxy grout on all shower walls.",
     priceRange: "$3,500–$6,500",
   },
   {

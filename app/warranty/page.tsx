@@ -74,7 +74,7 @@ export default function WarrantyPage() {
                     Why We Offer a 5-Year Warranty
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Most standard bathroom remodeling contractors only offer a 1-year warranty on workmanship. Because we utilize premium materials—including Schluter-Kerdi waterproofing systems and professional-grade grouts—and employ certified installation technicians, we confidently extend our warranty to 5 years.
+                    Most standard bathroom remodeling contractors only offer a 1-year warranty on workmanship. Because we utilize premium materials, including Schluter-Kerdi waterproofing systems and professional-grade grouts, and employ certified installation technicians, we confidently extend our warranty to 5 years.
                   </p>
                 </div>
               </div>

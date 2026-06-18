@@ -1,7 +1,6 @@
-import { Phone, Mail, Clock, ShieldCheck } from "lucide-react";
+import { Phone, Clock, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
-import { ObscuredEmail } from "@/components/ui/obscured-email";
 
 export default function ContactSection() {
   return (
@@ -42,18 +41,25 @@ export default function ContactSection() {
             </Button>
           </div>
 
-          {/* Card 2: Email */}
+          {/* Card 2: Speak to a Project Supervisor */}
           <div className="bg-card border border-border rounded-2xl p-8 shadow-sm flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:border-primary/20">
             <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 shrink-0">
-              <Mail className="w-7 h-7 text-primary" aria-hidden="true" />
+              <Phone className="w-7 h-7 text-primary" aria-hidden="true" />
             </div>
-            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Email Inquiry</h3>
+            <h3 className="font-serif text-xl font-semibold text-foreground mb-3">Speak to a Project Supervisor</h3>
             <p className="text-muted-foreground text-sm mb-8 leading-relaxed max-w-xs">
-              Send us your project details, sketches, or photos. We reply within 24 hours.
+              Call us directly to discuss your project design, scheduling, or to get an estimate fast.
             </p>
-            <div className="mt-auto w-full flex justify-center">
-              <ObscuredEmail className="w-full inline-flex items-center justify-center rounded-md text-sm font-bold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-accent hover:bg-accent/90 text-accent-foreground h-12" />
-            </div>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="mt-auto w-full border-primary hover:bg-primary/5 text-primary font-bold h-12"
+            >
+              <a href={`tel:${siteConfig.phoneClean}`} aria-label={`Speak to a supervisor at ${siteConfig.phone}`}>
+                {siteConfig.phone}
+              </a>
+            </Button>
           </div>
 
           {/* Card 3: Hours & Licensing */}

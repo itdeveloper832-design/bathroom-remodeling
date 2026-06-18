@@ -13,7 +13,7 @@ const keyDifferentiators = [
     icon: Sparkles,
     title: "Vapor-Tight Schluter-Kerdi Barriers",
     description:
-      "National brands glue sheets to your old drywall. ARZ strips your shower to the studs and installs a complete, vapor-impermeable Schluter-Kerdi waterproofing membrane—protecting your framing from Arizona's high humidity.",
+      "National brands glue sheets to your old drywall. ARZ strips your shower to the studs and installs a complete, vapor-impermeable Schluter-Kerdi waterproofing membrane, protecting your framing from Arizona's high humidity.",
   },
   {
     icon: ShieldAlert,
@@ -94,7 +94,7 @@ export default function ComparisonBenefits() {
                 Real Tile. Not Acrylic surrounds.
               </h3>
               <p className="text-muted-foreground leading-relaxed text-base">
-                Cheap acrylic shower walls are hollow and glued together using generic builder adhesives. In Chandler's dry heat and hard water environment, these adhesives degrade, trapping hot vapor behind the plastic panels—which creates the perfect breeding ground for toxic black mold.
+                Cheap acrylic shower walls are hollow and glued together using generic builder adhesives. In Chandler's dry heat and hard water environment, these adhesives degrade, trapping hot vapor behind the plastic panels, which creates the perfect breeding ground for toxic black mold.
               </p>
             </div>
 
@@ -166,7 +166,7 @@ export default function ComparisonBenefits() {
                 href={`tel:${siteConfig.phoneClean}`}
                 className="inline-flex items-center justify-center rounded-full bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3.5 text-base font-semibold shadow-lg transition-all hover:scale-105 active:scale-95"
               >
-                Choose Real Custom Tile — Request a Free Estimate
+                Choose Real Custom Tile, Speak to a Project Supervisor
               </a>
             </div>
           </div>

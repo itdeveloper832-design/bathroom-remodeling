@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
@@ -76,7 +76,7 @@ export default function ServiceHero({
             >
               <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                 <Phone className="w-5 h-5" aria-hidden="true" />
-                Call Now
+                Call Now: {siteConfig.phone}
               </a>
             </Button>
             <Button
@@ -84,11 +84,11 @@ export default function ServiceHero({
               size="lg"
               variant="outline"
               className="border-white bg-white text-primary hover:bg-white/90 hover:text-primary min-w-[200px]"
-              aria-label="Call for a free estimate on your project"
+              aria-label="Speak to a Project Supervisor"
             >
               <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
-                <MessageCircle className="w-5 h-5" aria-hidden="true" />
-                Get Free Quote
+                <Phone className="w-5 h-5" aria-hidden="true" />
+                Speak to a Project Supervisor
               </a>
             </Button>
           </div>

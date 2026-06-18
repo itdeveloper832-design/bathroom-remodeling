@@ -588,7 +588,7 @@ ${lead.message || "No message provided."}
                   <div className="flex items-baseline justify-between flex-wrap gap-x-2">
                     <span className="font-semibold text-slate-900 truncate text-sm">{selectedLead.name}</span>
                     <span className="text-[10px] font-mono text-slate-400">
-                      to sales@arzhomeremodeling.com
+                      to info@arzremodeling.com
                     </span>
                   </div>
                   <div className="text-xs text-slate-500 mt-1 flex flex-wrap gap-x-3 gap-y-1">
@@ -704,7 +704,7 @@ ${lead.message || "No message provided."}
                     href={`mailto:${selectedLead.email}?subject=${encodeURIComponent(
                       "Arz Home Remodeling - Bathroom Remodeling Consultation"
                     )}&body=${encodeURIComponent(
-                      `Hi ${selectedLead.name},\n\nThank you for reaching out to Arz Home Remodeling regarding your inquiry for ${selectedLead.service || "bathroom remodeling"} in ZIP code ${selectedLead.zip || ""}.\n\nI would love to schedule a quick call or a site visit to discuss your project details and provide a free estimate.\n\nAre you available sometime this week?\n\nBest regards,\nSales Team\nArz Home Remodeling\nsales@arzhomeremodeling.com`
+                      `Hi ${selectedLead.name},\n\nThank you for reaching out to Arz Home Remodeling regarding your inquiry for ${selectedLead.service || "bathroom remodeling"} in ZIP code ${selectedLead.zip || ""}.\n\nI would love to schedule a quick call or a site visit to discuss your project details and provide a free estimate.\n\nAre you available sometime this week?\n\nBest regards,\nSales Team\nArz Home Remodeling\ninfo@arzremodeling.com`
                     )}`}
                     className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 shadow-sm hover:bg-slate-50 hover:text-slate-900 transition-colors cursor-pointer"
                   >
@@ -714,7 +714,7 @@ ${lead.message || "No message provided."}
                     href={`mailto:${selectedLead.email}?subject=${encodeURIComponent(
                       "Regarding your bathroom remodeling inquiry"
                     )}&body=${encodeURIComponent(
-                      `Hi ${selectedLead.name},\n\nThank you for contacting us! I received your inquiry about ${selectedLead.service || "bathroom remodeling"}.\n\nTo help us better understand your project and provide a more accurate initial estimate, would you mind sending a few pictures of your current bathroom area?\n\nLooking forward to hearing from you!\n\nBest regards,\nSales Team\nArz Home Remodeling\nsales@arzhomeremodeling.com`
+                      `Hi ${selectedLead.name},\n\nThank you for contacting us! I received your inquiry about ${selectedLead.service || "bathroom remodeling"}.\n\nTo help us better understand your project and provide a more accurate initial estimate, would you mind sending a few pictures of your current bathroom area?\n\nLooking forward to hearing from you!\n\nBest regards,\nSales Team\nArz Home Remodeling\ninfo@arzremodeling.com`
                     )}`}
                     className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-medium text-slate-700 shadow-sm hover:bg-slate-50 hover:text-slate-900 transition-colors cursor-pointer"
                   >

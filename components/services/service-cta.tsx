@@ -31,7 +31,7 @@ export default function ServiceCTA({ title, description }: ServiceCTAProps) {
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 text-base px-8 py-6 group"
             >
               <a href={`tel:${siteConfig.phoneClean}`}>
-                Get Your Free Estimate
+                Speak to a Project Supervisor
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>

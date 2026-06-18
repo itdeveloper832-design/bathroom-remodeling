@@ -284,10 +284,10 @@ export default function FinancingPage() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" variant="secondary">
-                  <a href={`tel:${siteConfig.phoneClean}`}>Get Free Estimate</a>
+                  <a href={`tel:${siteConfig.phoneClean}`}>Speak to a Project Supervisor</a>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                  <a href="tel:+15205693339">Call {siteConfig.phone}</a>
+                  <a href={`tel:${siteConfig.phoneClean}`}>Call Now: {siteConfig.phone}</a>
                 </Button>
               </div>
             </div>

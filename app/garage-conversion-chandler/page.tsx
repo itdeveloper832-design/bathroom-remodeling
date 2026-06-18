@@ -312,7 +312,7 @@ export default function GarageConversionPage() {
         <ContactSection />
         <ServiceCTA
           title="Ready to Convert Your Garage in Chandler, AZ?"
-          description="Call us or fill out the form. We will discuss your project and schedule your free structural layout evaluation within forty-eight hours."
+          description="Call us directly to speak with a project supervisor. We will walk through your ideas, discuss budgeting, and schedule your free structural layout evaluation within forty-eight hours."
         />
       </main>
       <Footer />

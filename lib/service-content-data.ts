@@ -179,12 +179,12 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How do I handle hard water stains on my new shower tile?",
         answer:
-          "We recommend using a squeegee daily and wiping down glass after each shower. For stubborn stains on porcelain tile, a vinegar solution or commercial hard water remover works well. Prevention is easier than cleanup—proper ventilation and regular maintenance keep showers looking new for years.",
+          "We recommend using a squeegee daily and wiping down glass after each shower. For stubborn stains on porcelain tile, a vinegar solution or commercial hard water remover works well. Prevention is easier than cleanup, as proper ventilation and regular maintenance keep showers looking new for years.",
       },
       {
         question: "Do I need a permit for shower remodeling in Chandler?",
         answer:
-          "Most significant shower remodels in Chandler require a permit through the Chandler Development Services. Permits ensure proper waterproofing, drainage, and code compliance. We handle all permitting and inspections as part of our shower remodeling process—no hidden surprises.",
+          "Most significant shower remodels in Chandler require a permit through the Chandler Development Services. Permits ensure proper waterproofing, drainage, and code compliance. We handle all permitting and inspections as part of our shower remodeling process, with no hidden surprises.",
       },
     ],
   },

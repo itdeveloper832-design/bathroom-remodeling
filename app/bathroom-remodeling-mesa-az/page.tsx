@@ -23,14 +23,14 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {title: {
-    absolute: "Mesa Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore mesa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
-  openGraph: {title: "Mesa Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore mesa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+    absolute: "Bathroom Remodeling Mesa AZ | Licensed Contractor"
+  },description: "Professional bathroom remodeling in Mesa, AZ. Custom showers, vanities & tile. Fixed pricing, 2-year warranty. Call ARZ today: (520) 569-3339. Free estimate.",
+  openGraph: {title: "Bathroom Remodeling Mesa AZ | Licensed Contractor",description: "Professional bathroom remodeling in Mesa, AZ. Custom showers, vanities & tile. Fixed pricing, 2-year warranty. Call ARZ today: (520) 569-3339. Free estimate.",
     url: `${siteConfig.url}/bathroom-remodeling-mesa-az/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",title: "Mesa Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore mesa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+    card: "summary_large_image",title: "Bathroom Remodeling Mesa AZ | Licensed Contractor",description: "Professional bathroom remodeling in Mesa, AZ. Custom showers, vanities & tile. Fixed pricing, 2-year warranty. Call ARZ today: (520) 569-3339. Free estimate.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-mesa.jpg`],
   },
   alternates: {
@@ -225,23 +225,23 @@ export default function MesaPage() {
               **HOA Coordination in Master-Planned Communities:** If you reside in **Las Sendas**, **Eastmark**, or **Red Mountain Ranch**, we handle direct coordination with your HOA. We ensure full compliance regarding contractor working hours, parking spaces, and dumpster placement, preventing community friction.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              If you want the best **mesa bathroom remodel**, **bathroom remodel mesa az**, or **bathroom remodeling mesa az** services, you can trust our local craftsmanship. We also offer expert **mesa bathroom renovation services**, **bathroom renovations mesa**, and custom **bathroom renovations mesa az**. We handle every layout upgrade, plumbing line, and custom tile installation, making us the premier **bathroom remodeling contractor mesa** and **bathroom remodeling contractor in mesa**.
+              Our local craftsmanship is trusted by homeowners across Mesa, AZ. We handle every layout upgrade, plumbing line reconfiguration, and custom tile installation with precision, making us the premier choice for your next bathroom remodeling project.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Finding a reliable **bathroom remodeler mesa**, **bathroom remodel contractors mesa**, or **mesa bathroom remodeling service** has never been easier. We pride ourselves on clear pricing and absolute transparency. Contact us today to explore our **bathroom renovation services in mesa**, **mesa az bathroom remodel**, or to start your custom **bathroom renovation mesa** project.
+              Finding a reliable remodeling contractor has never been easier. We pride ourselves on clear pricing, absolute transparency, and outstanding customer service. Contact us today to discuss your vision and start planning your custom bathroom renovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  Call Now for Your Free No-Obligation Bathroom Quote!
+                  Call Now: {siteConfig.phone}
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:+15205693339" className="flex items-center gap-2">
+                <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  {siteConfig.phone}
-                </Link>
+                  Speak to a Project Supervisor: {siteConfig.phone}
+                </a>
               </Button>
             </div>
           </div>
@@ -422,12 +422,72 @@ export default function MesaPage() {
           </div>
         </section>
 
+        {/* TECHNICAL SPECIFICATIONS SECTION */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <div className="text-center mb-12">
+              <span className="text-primary text-sm font-medium tracking-wider uppercase">Engineering & Design Standards</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold mt-4 text-foreground">
+                Technical Remodeling Specifications & Building Codes
+              </h2>
+              <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                We build bathrooms to last decades, matching rigorous technical standards to combat Mesa's hard water and desert framing movement.
+              </p>
+            </div>
+            
+            <div className="space-y-8">
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <ShieldCheck className="w-6 h-6 text-primary" />
+                  1. Waterproofing & Moisture Control (TCNA Standards)
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  We build all custom tiled showers in compliance with the **Tile Council of North America (TCNA) B421 and B422** standards. Instead of traditional cement boards and PVC liners which degrade and leak, we install the **Schluter-KERDI waterproofing system**.
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground text-sm">
+                  <li><strong>Vapor Permeance:</strong> The KERDI membrane features a water vapor permeance rating of <strong>&lt; 0.5 perms</strong> (tested under ASTM E96 Procedure E), making it completely vapor-tight and preventing steam from rotting your wood framing.</li>
+                  <li><strong>Decoupling & Crack Isolation:</strong> The bonded sheet membrane decouples the tile layer from the subfloor, absorbing the natural expansion and contraction of desert framing, preventing grout joints from cracking.</li>
+                </ul>
+              </div>
+
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Droplets className="w-6 h-6 text-primary" />
+                  2. Hard Water Mitigation & Tile Standards (ANSI A118)
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  The municipal water supply in Mesa averages <strong>over 300 mg/L (18+ grains per gallon) of dissolved calcium and magnesium</strong>. This hard water destroys standard cement grout and stone. We resolve this by strictly adhering to ANSI material guidelines:
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground text-sm">
+                  <li><strong>Epoxy Grout (ANSI A118.3):</strong> We upgrade our grout to 100% solid epoxy resins. Unlike porous cement grouts, epoxy grout is completely non-porous and chemically inert, resisting staining, scale buildup, and acid cleaning.</li>
+                  <li><strong>Thin-Set Mortar (ANSI A118.15):</strong> We use improved modified dry-set cement mortar to bond dense, large-format porcelain tiles (water absorption rate <strong>&lt; 0.5%</strong> per ASTM C373), preventing tiles from releasing due to slab movement or moisture cycles.</li>
+                </ul>
+              </div>
+
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Clock className="w-6 h-6 text-primary" />
+                  3. Advanced Plumbing & Scald Prevention (ASSE 1016)
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Modern mechanical systems are essential to safety and system longevity. We upgrade and secure every in-wall plumbing component:
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground text-sm">
+                  <li><strong>Anti-Scald Mixing Valves:</strong> We install pressure-balancing and thermostatic mixing valves certified to <strong>ASSE 1016 / ASME A112.18.1</strong> standards. This maintains water temperature within &plusmn;3.6&deg;F (&plusmn;2&deg;C) despite pressure drops elsewhere in the home.</li>
+                  <li><strong>PEX-a Piping Systems:</strong> We utilize PEX-a (expansion-fitting) piping for supply lines. PEX-a resists hard water scaling, eliminates the risk of pinhole leaks common in aging copper pipes, and absorbs thermal expansion without stress.</li>
+                  <li><strong>Drain Expansion:</strong> In all tub-to-shower conversions, we expand the original 1.5-inch waste line to a code-compliant <strong>2-inch waste and vent line</strong> to handle high-flow modern shower heads without back-ponding.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <ServiceFAQ faqs={mesaFaqs} />
         <Testimonials />
         <ContactSection />
         <ServiceCTA
           title="Ready for a Free Estimate in Mesa, AZ?"
-          description="Call us or fill out the form. We will discuss your project and schedule your free in-home evaluation within forty eight hours."
+          description="Call us directly to speak with a project supervisor. We will discuss your project, provide a phone estimate, and schedule your free in-home evaluation within forty-eight hours."
         />
       </main>
       <Footer />

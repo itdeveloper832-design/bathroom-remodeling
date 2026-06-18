@@ -111,10 +111,10 @@ export default function AlexRiversPage() {
 
                   <div className="flex gap-3 pt-4">
                     <Button size="lg" asChild>
-                      <a href={`tel:${siteConfig.phoneClean}`}>Get Free Estimate</a>
+                      <a href={`tel:${siteConfig.phoneClean}`}>Speak to a Project Supervisor</a>
                     </Button>
                     <Button size="lg" variant="outline" asChild>
-                      <a href={`tel:${siteConfig.phoneClean}`}>{siteConfig.phone}</a>
+                      <a href={`tel:${siteConfig.phoneClean}`}>Call Now: {siteConfig.phone}</a>
                     </Button>
                   </div>
                 </div>

@@ -122,7 +122,7 @@ export const testimonialsData: Record<string, TestimonialType[]> = {
       location: "Fulton Ranch, Chandler",
       rating: 5,
       service: "Master Shower Remodel",
-      content: "I had the hardest time finding someone to handle our master shower properly. ARZ understood our vision immediately—we wanted a spa-like feel with Schluter waterproofing and rainfall showerhead. The execution was flawless. They really know their craft.",
+      content: "I had the hardest time finding someone to handle our master shower properly. ARZ understood our vision immediately: we wanted a spa-like feel with Schluter waterproofing and rainfall showerhead. The execution was flawless. They really know their craft.",
       image: "/images/testimonials/t11.avif",
       verified: true,
     },
@@ -133,7 +133,7 @@ export const testimonialsData: Record<string, TestimonialType[]> = {
       location: "Sun Lakes, Chandler",
       rating: 5,
       service: "Frameless Glass & Tile Installation",
-      content: "We upgraded from a builder-grade shower to a frameless glass enclosure with porcelain tile. The attention to detail was incredible—every edge is perfect, every seal is tight. My wife keeps saying it feels like we're at a hotel every morning.",
+      content: "We upgraded from a builder-grade shower to a frameless glass enclosure with porcelain tile. The attention to detail was incredible; every edge is perfect, every seal is tight. My wife keeps saying it feels like we're at a hotel every morning.",
       image: "/images/testimonials/t8.avif",
       verified: true,
     }

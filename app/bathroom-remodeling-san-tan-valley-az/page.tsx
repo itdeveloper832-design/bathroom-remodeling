@@ -357,7 +357,7 @@ export default function SanTanValleyPage() {
         <ContactSection />
         <ServiceCTA
           title="Ready for a Free Estimate in San Tan Valley, AZ?"
-          description="Call us or fill out the form. We will discuss your project and schedule your free in-home evaluation within forty-eight hours."
+          description="Call us directly to speak with a project supervisor. We will discuss your project, provide a phone estimate, and schedule your free in-home evaluation within forty-eight hours."
         />
       </main>
       <Footer />

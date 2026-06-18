@@ -165,7 +165,7 @@ export async function LocationPageContent({
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href={`tel:${siteConfig.phoneClean}`} className="bg-primary text-white px-8 py-3.5 rounded-lg hover:bg-primary/90 transition font-medium text-center">
-                  Get Free Estimate
+                  Speak to a Project Supervisor
                 </a>
                 <a
                   href={`tel:${siteConfig.phoneClean}`}

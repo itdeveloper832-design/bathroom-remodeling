@@ -23,14 +23,14 @@ import {
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {title: {
-    absolute: "Gilbert Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gilbert bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
-  openGraph: {title: "Gilbert Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gilbert bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+    absolute: "Bathroom Remodeling Gilbert AZ | Free Estimate"
+  },description: "Quality bathroom remodeling in Gilbert, AZ. Walk-in showers, tile work & full bath renovations. Licensed ROC338304 & 2-year warranty. Call (520) 569-3339.",
+  openGraph: {title: "Bathroom Remodeling Gilbert AZ | Free Estimate",description: "Quality bathroom remodeling in Gilbert, AZ. Walk-in showers, tile work & full bath renovations. Licensed ROC338304 & 2-year warranty. Call (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/`,
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",title: "Gilbert Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gilbert bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+    card: "summary_large_image",title: "Bathroom Remodeling Gilbert AZ | Free Estimate",description: "Quality bathroom remodeling in Gilbert, AZ. Walk-in showers, tile work & full bath renovations. Licensed ROC338304 & 2-year warranty. Call (520) 569-3339.",
     images: [`${siteConfig.url}/images/bathroom-remodeling-gilbert.jpg`],
   },
   alternates: {
@@ -200,35 +200,29 @@ export default function GilbertPage() {
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Your bathroom should be a sanctuary, but many Gilbert homes built in the 1990s and 2000s are showing their age. 
-              Outdated tile, leaky shower pans, and garden tubs that go unused are common challenges we solve every day for 
-              local homeowners. If you have been planning a professional <strong>bathroom remodel gilbert</strong>, <strong>bathroom remodeling gilbert</strong>, or premium <strong>bath remodeling gilbert</strong>, our local team is here to help.
+              Your bathroom should be a sanctuary, but many Gilbert homes built in the 1990s and 2000s are showing their age. Outdated tile, leaky shower pans, and garden tubs that go unused are common challenges we solve every day for local homeowners. If you have been planning a professional update, our local team is here to help.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in 
-              <strong className="text-foreground"> bathroom remodeling in Gilbert, AZ</strong>: from sleek 
-              tub-to-shower conversions in Power Ranch to full master bath transformations in Morrison Ranch. 
-              We are a licensed Arizona contractor, serving homeowners across 
-              <span className="text-primary font-semibold"> 85234, 85295, 85296, 85297, and 85298</span>. Whether you seek the best **gilbert bathroom remodel**, **bathroom remodel gilbert az**, or complete **gilbert bathroom remodeling** services, we coordinate everything seamlessly.
+              At ARZ Home Remodeling, we specialize in high-quality bathroom remodeling in Gilbert, AZ: from sleek tub-to-shower conversions in Power Ranch to full master bath transformations in Morrison Ranch. We are a licensed Arizona contractor, serving homeowners across the <span className="text-primary font-semibold">85234, 85295, 85296, 85297, and 85298</span> ZIP codes.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              As a full-service **gilbert bathroom remodeling company** and leading provider of **bathroom remodeling services in Gilbert, AZ** (including custom **bathroom remodeling gilbert az** and **bathroom remodeling service gilbert**), we ensure every component is top-notch. Our custom renovations include modern **bathroom renovations gilbert** and **bathroom renovations gilbert az** designs tailored to your family's needs.
+              As a full-service remodeling contractor, we coordinate everything seamlessly from design to completion. Our custom renovations include modern vanity installations, custom waterproof walk-in showers, and layout configurations tailored to your family's needs.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Whether you are looking for a certified **bathroom remodeler gilbert**, **bathroom remodeler gilbert arizona**, **gilbert bathroom remodeler**, or are ready to execute a complete **master bathroom remodel gilbert** project, we focus on durability and clean styling. We provide free itemized estimates for all **gilbert bathroom remodeling service** projects.
+              Whether you want to update a guest bath or execute a complete master suite renovation, we focus on durability and clean styling. We provide detailed project plans and clear timelines for every renovation we handle.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  Call Now for Your Free No-Obligation Bathroom Quote!
+                  Call Now: {siteConfig.phone}
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="tel:+15205693339" className="flex items-center gap-2">
+                <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                   <Phone className="w-5 h-5" />
-                  {siteConfig.phone}
-                </Link>
+                  Speak to a Project Supervisor: {siteConfig.phone}
+                </a>
               </Button>
             </div>
           </div>
@@ -412,12 +406,72 @@ export default function GilbertPage() {
           </div>
         </section>
 
+        {/* TECHNICAL SPECIFICATIONS SECTION */}
+        <section className="py-16 lg:py-24 bg-background border-t border-border">
+          <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+            <div className="text-center mb-12">
+              <span className="text-primary text-sm font-medium tracking-wider uppercase">Engineering & Design Standards</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold mt-4 text-foreground">
+                Technical Remodeling Specifications & Building Codes
+              </h2>
+              <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+                We build bathrooms to last decades, matching rigorous technical standards to combat Gilbert's hard water and desert framing movement.
+              </p>
+            </div>
+            
+            <div className="space-y-8">
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <ShieldCheck className="w-6 h-6 text-primary" />
+                  1. Waterproofing & Moisture Control (TCNA Standards)
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  We build all custom tiled showers in compliance with the **Tile Council of North America (TCNA) B421 and B422** standards. Instead of traditional cement boards and PVC liners which degrade and leak, we install the **Schluter-KERDI waterproofing system**.
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground text-sm">
+                  <li><strong>Vapor Permeance:</strong> The KERDI membrane features a water vapor permeance rating of <strong>&lt; 0.5 perms</strong> (tested under ASTM E96 Procedure E), making it completely vapor-tight and preventing steam from rotting your wood framing.</li>
+                  <li><strong>Decoupling & Crack Isolation:</strong> The bonded sheet membrane decouples the tile layer from the subfloor, absorbing the natural expansion and contraction of desert framing, preventing grout joints from cracking.</li>
+                </ul>
+              </div>
+
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Droplets className="w-6 h-6 text-primary" />
+                  2. Hard Water Mitigation & Tile Standards (ANSI A118)
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  The municipal water supply in Gilbert averages <strong>over 300 mg/L (18+ grains per gallon) of dissolved calcium and magnesium</strong>. This hard water destroys standard cement grout and stone. We resolve this by strictly adhering to ANSI material guidelines:
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground text-sm">
+                  <li><strong>Epoxy Grout (ANSI A118.3):</strong> We upgrade our grout to 100% solid epoxy resins. Unlike porous cement grouts, epoxy grout is completely non-porous and chemically inert, resisting staining, scale buildup, and acid cleaning.</li>
+                  <li><strong>Thin-Set Mortar (ANSI A118.15):</strong> We use improved modified dry-set cement mortar to bond dense, large-format porcelain tiles (water absorption rate <strong>&lt; 0.5%</strong> per ASTM C373), preventing tiles from releasing due to slab movement or moisture cycles.</li>
+                </ul>
+              </div>
+
+              <div className="p-6 bg-secondary rounded-2xl border border-border">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Clock className="w-6 h-6 text-primary" />
+                  3. Advanced Plumbing & Scald Prevention (ASSE 1016)
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  Modern mechanical systems are essential to safety and system longevity. We upgrade and secure every in-wall plumbing component:
+                </p>
+                <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground text-sm">
+                  <li><strong>Anti-Scald Mixing Valves:</strong> We install pressure-balancing and thermostatic mixing valves certified to <strong>ASSE 1016 / ASME A112.18.1</strong> standards. This maintains water temperature within &plusmn;3.6&deg;F (&plusmn;2&deg;C) despite pressure drops elsewhere in the home.</li>
+                  <li><strong>PEX-a Piping Systems:</strong> We utilize PEX-a (expansion-fitting) piping for supply lines. PEX-a resists hard water scaling, eliminates the risk of pinhole leaks common in aging copper pipes, and absorbs thermal expansion without stress.</li>
+                  <li><strong>Drain Expansion:</strong> In all tub-to-shower conversions, we expand the original 1.5-inch waste line to a code-compliant <strong>2-inch waste and vent line</strong> to handle high-flow modern shower heads without back-ponding.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <ServiceFAQ faqs={gilbertFaqs} />
         <Testimonials />
         <ContactSection />
         <ServiceCTA
           title="Ready for a Free Estimate in Gilbert, AZ?"
-          description="Call us or fill out the form. We will discuss your project and schedule your free in-home evaluation within forty eight hours."
+          description="Call us directly to speak with a project supervisor. We will discuss your project, provide a phone estimate, and schedule your free in-home evaluation within forty-eight hours."
         />
       </main>
       <Footer />

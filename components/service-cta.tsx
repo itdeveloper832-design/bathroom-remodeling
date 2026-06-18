@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 interface ServiceCTAProps {
@@ -33,7 +33,7 @@ export default function ServiceCTA({
             >
               <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
                 <Phone className="w-5 h-5" aria-hidden="true" />
-                Call Now
+                Call Now: {siteConfig.phone}
               </a>
             </Button>
             <Button
@@ -41,11 +41,11 @@ export default function ServiceCTA({
               size="lg"
               variant="outline"
               className="bg-background text-foreground border-primary-foreground hover:bg-background hover:text-primary min-w-[180px]"
-              aria-label="Get a free quote for your bathroom renovation"
+              aria-label="Speak to a Project Supervisor"
             >
               <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">
-                <MessageCircle className="w-5 h-5" aria-hidden="true" />
-                Get Free Quote
+                <Phone className="w-5 h-5" aria-hidden="true" />
+                Speak to a Project Supervisor
               </a>
             </Button>
           </div>
@@ -53,11 +53,11 @@ export default function ServiceCTA({
           <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-4 text-primary-foreground/80 text-sm font-medium">
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary-foreground/40" />
-              ROC Licensed #345678
+              ROC Licensed #338304
             </div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary-foreground/40" />
-              2-Year Workmanship Warranty
+              5-Year Workmanship Warranty
             </div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-primary-foreground/40" />

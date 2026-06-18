@@ -127,7 +127,7 @@ export async function LocationPageContent({
       <Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="pt-28 md:pt-40 lg:pt-48 pb-16 bg-gradient-to-b from-primary/10 to-transparent animate-in fade-in duration-700">
+        <section className="pt-24 md:pt-28 lg:pt-32 pb-12 bg-gradient-to-b from-primary/10 to-transparent animate-in fade-in duration-700">
           <div className="container mx-auto px-4">
             {/* Breadcrumb */}
             <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-8">

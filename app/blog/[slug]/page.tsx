@@ -103,7 +103,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       
       <main className="min-h-screen bg-background">
         {/* --- 1. HERO SECTION --- */}
-        <section className="relative pt-32 md:pt-40 lg:pt-48 pb-16 md:pb-24 bg-secondary overflow-hidden">
+        <section className="relative pt-24 md:pt-28 lg:pt-32 pb-16 md:pb-24 bg-secondary overflow-hidden">
           {/* Decorative background element */}
           <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 translate-x-1/2 pointer-events-none" />
           

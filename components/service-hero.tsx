@@ -25,15 +25,7 @@ export default function ServiceHero({
   const heroImage = image ?? backgroundImage;
 
   return (
-    <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32 md:pt-40 lg:pt-48" aria-label={title}>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href={heroImage}
-          fetchPriority="high"
-        />
-      </head>
+    <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-24 md:pt-28 lg:pt-32" aria-label={title}>
       {breadcrumbs && <BreadcrumbSchema items={breadcrumbs} />}
       {/* Background Image - LCP Optimized */}
       <div className="absolute inset-0 z-0">
@@ -53,7 +45,7 @@ export default function ServiceHero({
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center py-16 lg:py-20 animate-in fade-in slide-in-from-bottom-4 duration-700">
+      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center pt-10 pb-12 lg:pt-14 lg:pb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
         <div className="max-w-4xl mx-auto">
           {subtitle && (
             <p className="text-primary-foreground text-sm uppercase tracking-wider mb-4 font-medium">

@@ -28,7 +28,7 @@ export default function ServicesPage() {
       
       <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" } ]} />
 <Header />
-      <main className="pt-32 pb-20">
+      <main className="pt-24 pb-16">
         {/* Hero Section */}
         <section className="bg-secondary py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">

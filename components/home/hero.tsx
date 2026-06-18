@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-28 md:pt-36 lg:pt-40" aria-label="Hero section">
+    <section className="relative min-h-[75vh] flex items-center overflow-hidden pt-24 md:pt-28 lg:pt-32" aria-label="Hero section">
       <div className="absolute inset-0 z-0">
         <img
           src="/images/hero/luxury-shower-remodel-chandler.avif"
@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-primary/75 lg:bg-primary/70" aria-hidden="true" />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 py-16 lg:py-28 flex justify-center">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-12 pb-16 lg:pt-16 lg:pb-20 flex justify-center">
         <div className="max-w-4xl mx-auto text-center text-white flex flex-col items-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6">

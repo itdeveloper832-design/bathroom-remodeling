@@ -68,7 +68,7 @@ export default function CareersPage() {
       
       <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Careers", url: "https://arzhomeremodeling.com/careers/" } ]} />
 <Header />
-      <main className="pt-32 md:pt-40 lg:pt-48">
+      <main className="pt-24 md:pt-28 lg:pt-32">
         <section className="py-20 bg-secondary">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">

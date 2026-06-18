@@ -71,7 +71,7 @@ export default function GalleryPage() {
 <Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="pt-28 md:pt-40 lg:pt-48 pb-24 md:pb-32 bg-secondary overflow-hidden">
+        <section className="pt-24 md:pt-28 lg:pt-32 pb-16 md:pb-20 bg-secondary overflow-hidden">
           <div className="container mx-auto px-4 mt-4">
             <div className="max-w-3xl mx-auto text-center animate-in fade-in slide-in-from-bottom-4 duration-700">
               <span className="text-sm font-medium tracking-widest text-primary uppercase">

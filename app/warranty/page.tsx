@@ -40,7 +40,7 @@ export default function WarrantyPage() {
         ]} 
       />
       <Header />
-      <main className="min-h-screen bg-background pt-32 md:pt-40 lg:pt-48">
+      <main className="min-h-screen bg-background pt-24 md:pt-28 lg:pt-32">
         {/* Hero Section */}
         <section className="relative py-20 bg-slate-900 text-white overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900/50 via-slate-950 to-slate-950 z-0" />

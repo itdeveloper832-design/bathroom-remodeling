@@ -30,7 +30,7 @@ export default function TeamPage() {
       />
       <Header />
 
-      <main className="pt-32 pb-20">
+      <main className="pt-24 pb-16">
         {/* Hero Section */}
         <section className="bg-gradient-to-b from-primary/5 to-transparent py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">

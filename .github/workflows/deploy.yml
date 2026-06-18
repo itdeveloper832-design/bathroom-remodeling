@@ -57,5 +57,5 @@ jobs:
             **/.env*
             cgi-bin/**
             **/__next*
-            **/index.txt
+# Trigger redeployment to test cPanel FTP connection timeout status
 

@@ -594,51 +594,31 @@ export const serviceContent: Record<string, ServiceContentData> = {
     ],
     issues: [
       {
-        problem: "Unsafe tub entry with high-step thresholds",
-        solution: "Safe tub removal and installation of curbless or low-profile walk-in showers with easy access.",
+        problem: "Unsafe tub entry with high step thresholds",
+        solution: "Safe tub removal and installation of curbless or low profile walk in showers with easy access.",
       },
       {
         problem: "Accessibility issues for seniors or those with limited mobility",
-        solution: "Integration of ADA-compliant grab bars, built-in shower benches, slip-resistant floors, and handheld fixtures.",
+        solution: "Integration of ADA compliant grab bars, built in shower benches, slip resistant floors, and handheld fixtures.",
       },
     ],
     tips: [
       "Plan Drainage Carefully: Shower floors must slope properly toward drains to prevent pooling. Professional drain expansion is essential.",
       "Install Grab Bars for Safety: Grab bars in showers prevent slips and provide essential safety for seniors or mobility limited users.",
-      "Choose Anti-Slip Flooring: Textured mosaic tile or specialized slip resistant porcelain reduces slipping risk in wet shower environments.",
+      "Choose Anti Slip Flooring: Textured mosaic tile or specialized slip resistant porcelain reduces slipping risk in wet shower environments.",
       "Consider Waterproofing First: Proper waterproofing membranes protect subfloors from leaks; this quality investment pays for itself.",
     ],
     faqs: [
       {
-        question: "Will removing a bathtub affect my home resale value?",
+        question: "How long does it take to convert a tub to a walk in shower?",
         answer:
-          "Removing the only bathtub in your home can reduce the pool of potential buyers, particularly young families with toddlers. However, if your home has at least one other bathroom with a tub, swapping an unused garden tub in the master bath for a spacious walk in shower almost always increases your property value.",
+          "A tub to shower conversion takes between 3 and 5 days of active work. Day 1 is demolition of the old tub. Day 2 is plumbing valve updates and drain line expansion from 1.5 inches to 2 inches. Day 3 is waterproofing and laying the shower pan. Day 4 is tile setting and grouting. Day 5 is mounting the shower doors and final walkthrough."
       },
       {
-        question: "How long does a tub to shower conversion take?",
+        question: "Why is a 2 inch drain line required for a shower?",
         answer:
-          "A professional tub to shower conversion typically takes seven to ten days of active construction. This includes demolition of the old tub, expanding the drain line from one and a half inches to two inches, installing waterproofing systems, tile setting, and mounting the glass enclosures. We provide detailed tub to shower conversions prices and pictures of completed projects during your consultation to help you choose the best layout.",
-      },
-      {
-        question: "What is the difference between a curbless and curbed walk-in shower?",
-        answer:
-          "A curbed walk in shower has a small three to four inch step threshold to contain water. A curbless walk in shower is completely flat and level with the bathroom floor. Curbless showers require recessing the subfloor to slope toward the drain, which provides barrier free universal access.",
-      },
-      {
-        question: "Do you offer financing options for conversions in Chandler?",
-        answer:
-          "Yes, we provide competitive 0 percent financing options for tub-to-shower swap projects over $5,000 to help keep your home renovations highly affordable. Whether you are looking for a tub to shower conversion ahwatukee families trust or a standard local swap, we offer custom payment plans.",
-      },
-      {
-        question: "Can a tub to shower conversion be completed in a single day?",
-        answer:
-          "While some national franchises advertise a quick 1 day bath arizona tub to shower conversion, a high-quality custom conversion with proper physical subfloor waterproofing, high-traction tile setting, and code compliance inspections typically takes 7-10 days. We prioritize long-term durability and safety over rushed finishes.",
-      },
-      {
-        question: "What waterproofing systems do you install behind tiles?",
-        answer:
-          "We use full Schluter Kerdi waterproofing membranes and concrete backer boards behind all custom shower tiling. This creates an impenetrable moisture barrier that protects your home framing from mold and dry rot.",
-      },
+          "Building codes require a 2 inch drain line for walk in showers, whereas bathtubs only require a 1.5 inch drain. A shower pan holds less water than a tub, so water must drain faster to prevent flooding. Our plumbers upgrade this line during the demolition phase to ensure compliance with the International Plumbing Code."
+      }
     ],
   },
 

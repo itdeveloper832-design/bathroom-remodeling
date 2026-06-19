@@ -50,39 +50,19 @@ export const metadata: Metadata = {title: {
 
 const chandlerFaqs = [
   {
-    question: "Do I need a permit to remodel my bathroom in Chandler, AZ?",
+    question: "Do I need a permit to remodel a bathroom in Chandler, AZ?",
     answer:
-      "Yes. The City of Chandler requires a building permit for any structural changes, new electrical wiring, or major plumbing relocations (like moving a toilet or shower drain). Cosmetic changes, like replacing a vanity or tiling in the existing layout, typically do not require permits. ARZ Home Remodeling manages the entire permitting process with the Chandler Development Services Department to ensure your project is 100% compliant."
+      "Yes, the City of Chandler requires a building permit for any project that changes the layout of your bathroom, relocates plumbing pipes, or updates electrical wiring. Cosmetic updates like replacing cabinets, swapping a sink vanity, or installing new flooring in the same position do not require a permit. ARZ Home Remodeling manages the full permitting process directly with the Chandler Development Services Department located on Arizona Avenue."
   },
   {
-    question: "How does Chandler's hard water affect bathroom tile and glass choices?",
+    question: "What is the average cost of a bathroom remodel in Chandler?",
     answer:
-      "Chandler has exceptionally hard water, which leads to calcium and scale buildup on porous materials. We highly recommend installing non-porous large-format porcelain tile with epoxy grout and low-iron frameless glass treated with a protective hydrophobic coating (like EnduroShield). This prevents scale staining and makes cleaning simple."
+      "In Chandler, a standard guest bathroom update costs between 10,000 dollars and 18,000 dollars. A complete master bathroom remodel ranges from 20,000 dollars to 45,000 dollars or more. The total price depends on whether you move structural walls, relocate plumbing lines, or choose premium quartz countertops. You can preview quartz slab options at local wholesalers like Arizona Tile near the Chandler Fashion Center on Ray Road. ARZ Home Remodeling holds active license ROC338304 with the Arizona Registrar of Contractors."
   },
   {
-    question: "How long does a typical bathroom remodel take in Chandler?",
+    question: "How does Chandler water hardness affect bathroom tile and glass?",
     answer:
-      "A standard tub-to-shower conversion or guest bathroom remodel takes 5 to 9 business days of active construction. A complete master bathroom overhaul involving plumbing relocations, custom tiling, and double-vanity installations typically takes 2 to 3 weeks from demolition to final walkthrough."
-  },
-  {
-    question: "Do you offer senior-safe bathroom modifications in Sun Lakes?",
-    answer:
-      "Yes, we are highly experienced in senior-safe bathroom remodeling in Sun Lakes and south Chandler. We specialize in curbless (barrier-free) walk-in showers, ADA-compliant comfort-height toilets, heavy-duty secure grab bars, and slip-resistant floor tiling to ensure independence and peace of mind."
-  },
-  {
-    question: "How much does a bathroom remodel in Chandler, AZ cost on average?",
-    answer:
-      "A typical guest bathroom update ranges from $4,500 to $9,000 for standard cosmetic updates, and $10,000 to $18,000 for a full remodel. A custom master bathroom remodel in Chandler can range from $18,000 to $45,000+ depending on the layout changes and premium materials selected. We provide detailed, itemized pricing in our free bids."
-  },
-  {
-    question: "What are the top premium quartz countertop showrooms near Chandler Fashion Center in Chandler, AZ, and which offer professional installation?",
-    answer:
-      "For premium quartz countertops near the Chandler Fashion Center area, top local showrooms include Arizona Tile, MSI Chandler, and Bedrosians, all located a short drive away. While these showrooms display raw slabs, they typically do not handle the installation directly. As a full-service bathroom remodeler in Chandler, ARZ Home Remodeling handles the entire process: we help you select your slabs, purchase from local wholesalers, and provide professional fabrication and custom countertop installation."
-  },
-  {
-    question: "Can you remodel my shower without replacing the whole bathroom?",
-    answer:
-      "Yes. We specialize in partial renovations including shower replacements, tub to shower conversions, and vanity installations without requiring a full bathroom gut."
+      "Chandler has exceptionally hard water with high levels of calcium. This mineral content causes white scale buildup on traditional porous stone and standard glass doors. We recommend installing large format porcelain tiles with epoxy grout instead of natural stone. Porcelain does not absorb water, and epoxy grout resists staining. For shower doors, we use low iron glass treated with a protective hydrophobic coating."
   }
 ];
 
@@ -217,13 +197,13 @@ export default function ChandlerBathroomRemodelingPage() {
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Your bathroom is used twice a day, every day: but Chandler homes built in the 1980s through early 2000s were
-              never designed with modern comfort in mind. Fiberglass tub surrounds yellow, and builder-grade vanities fail to help your home value. Grout stains easily from Chandler's notoriously hard water. If you've been considering upgrading your space with professional **bathroom remodeling in Chandler, AZ**, now is the perfect time to start.
+              never designed with modern comfort in mind. Fiberglass tub surrounds yellow, and builder grade vanities fail to help your home value. Grout stains easily from Chandler's notoriously hard water. If you have been considering upgrading your space with professional **bathroom remodeling in Chandler, AZ**, now is the perfect time to start.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we provide smart design solutions for homeowners, specializing in full renovations, custom design layouts, and targeted upgrades. Whether you want a luxury master suite overhaul, a modern guest bathroom upgrade, or a functional <Link href='/tub-to-shower-conversion/' className='text-primary hover:underline font-medium'>tub-to-shower conversion</Link>, our team handles everything from initial concept to final inspection. As a licensed local contractor, we proudly serve communities across Chandler, including ZIP codes <span className="text-primary font-semibold"> 85224, 85225, 85226, and 85249</span>.
+              At ARZ Home Remodeling, we provide smart design solutions for homeowners, specializing in full renovations, custom design layouts, and targeted upgrades. Whether you want a luxury master suite overhaul, a modern guest bathroom upgrade, or a functional <Link href='/tub-to-shower-conversion/' className='text-primary hover:underline font-medium'>tub to shower conversion</Link>, our team handles everything from initial concept to final inspection. As a licensed local contractor, we proudly serve communities across Chandler, including ZIP codes <span className="text-primary font-semibold"> 85224, 85225, 85226, and 85249</span>.
             </p>
             <h3 className="font-serif text-2xl font-semibold mt-8 mb-3 text-foreground">
-              Navigating Chandler Building Codes & Permitting
+              Navigating Chandler Building Codes and Permitting
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               We coordinate all structural, plumbing, and electrical permit documentation directly with the **Chandler Development Services Department** (located in Downtown Chandler). If your remodel involves moving a toilet drain, running new circuits, or removing partition walls, we make sure everything is 100% compliant with City of Chandler building safety standards.
@@ -233,24 +213,24 @@ export default function ChandlerBathroomRemodelingPage() {
               Combating Chandler's Hard Water
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              The municipal water supply in the East Valley contains extremely high mineral levels. To prevent hard water buildup and mold, we install **Schluter-Kerdi waterproofing systems**, large-format non-porous porcelain tiles, and premium **epoxy grout** that resists calcium staining and discoloration. We also treat frameless glass doors with protective hydrophobic coatings to ensure your shower remains crystal clear.
+              The municipal water supply in the East Valley contains extremely high mineral levels. To prevent hard water buildup and mold, we install **Schluter-Kerdi waterproofing systems**, large format non porous porcelain tiles, and premium **epoxy grout** that resists calcium staining and discoloration. We also treat frameless glass doors with protective hydrophobic coatings to ensure your shower remains crystal clear.
             </p>
 
             <h3 className="font-serif text-2xl font-semibold mt-8 mb-3 text-foreground">
-              Neighborhood-Specific Remodeling & ZIP Code Topical Depth
+              Neighborhood Specific Remodeling and ZIP Code Topical Depth
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              We customize our design-build process to match the unique architectural eras and construction profiles across Chandler communities:
+              We customize our design build process to match the unique architectural eras and construction profiles across Chandler communities:
             </p>
             <ul className="space-y-4 mb-6">
               <li className="text-muted-foreground text-lg leading-relaxed">
-                <strong className="text-foreground">North & West Chandler (ZIP 85224 & 85226 - Dobson Ranch, Warner Ranch, Kyrene Corridor):</strong> Many homes in these established neighborhoods date back to the 1980s and 1990s. They commonly feature builder-grade fiberglass tub enclosures, low-profile vanities, and aging brass plumbing. We specialize in space-maximizing updates and modern tub-to-shower conversions here, dramatically upgrading both utility and home value.
+                <strong className="text-foreground">North and West Chandler (ZIP 85224 and 85226 serving Dobson Ranch, Warner Ranch, Kyrene Corridor):</strong> Many homes in these established neighborhoods date back to the 1980s and 1990s. They commonly feature builder grade fiberglass tub enclosures, low profile vanities, and aging brass plumbing. We specialize in space maximizing updates and modern tub to shower conversions here, dramatically upgrading both utility and home value.
               </li>
               <li className="text-muted-foreground text-lg leading-relaxed">
-                <strong className="text-foreground">Downtown & Central Chandler (ZIP 85225 - Clemente Ranch, Cooper Commons):</strong> Subdivisions in this zone often feature 1990s-era guest bathrooms in need of freshening. We focus on low-maintenance porcelain tile installations, modern comfort-height toilets, and beautiful custom vanities that stand up to daily use.
+                <strong className="text-foreground">Downtown and Central Chandler (ZIP 85225 serving Clemente Ranch, Cooper Commons):</strong> Subdivisions in this zone often feature 1990s era guest bathrooms in need of freshening. We focus on low maintenance porcelain tile installations, modern comfort height toilets, and beautiful custom vanities that stand up to daily use.
               </li>
               <li className="text-muted-foreground text-lg leading-relaxed">
-                <strong className="text-foreground">South Chandler (ZIP 85249 & 85248 - Ocotillo, Fulton Ranch, Sun Lakes):</strong> Known for luxury estates and active adult communities. In Ocotillo and Fulton Ranch, we deliver upscale master suites with freestanding soaking tubs, frameless glass walk-ins, and quartz double vanities. In Sun Lakes, we are certified experts in senior-safe curbless roll-in showers, secure grab bars, and high-traction non-slip mosaic tile flooring.
+                <strong className="text-foreground">South Chandler (ZIP 85249 and 85248 serving Ocotillo, Fulton Ranch, Sun Lakes):</strong> Known for luxury estates and active adult communities. In Ocotillo and Fulton Ranch, we deliver upscale master suites with freestanding soaking tubs, frameless glass walk ins, and quartz double vanities. In Sun Lakes, we are certified experts in senior safe curbless roll in showers, secure grab bars, and high traction non slip mosaic tile flooring.
               </li>
             </ul>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">

@@ -40,35 +40,15 @@ export const metadata: Metadata = {title: {
 
 const gilbertFaqs = [
   {
-    question: "How long does a bathroom remodel take in Gilbert, AZ?",
+    question: "Do I need a permit for a bathroom remodel in Gilbert, AZ?",
     answer:
-      "A guest bathroom remodel typically takes two to three weeks of active construction. A full master bathroom renovation runs four to six weeks depending on scope. We provide a firm timeline in your written proposal before any work begins."
+      "Yes, the Town of Gilbert requires a building permit for residential bathroom remodels that alter structural walls, relocate drain systems, or run new electrical circuits. Cosmetic work like replacing a mirror or installing a new faucet does not require building permits. ARZ Home Remodeling submits all plans directly to the Gilbert Building Permits department on Civic Center Drive. We guarantee our work passes all town inspections."
   },
   {
-    question: "Do you need a permit for bathroom remodeling in Gilbert?",
+    question: "What are the safety requirements for an ADA bathroom remodel in Gilbert?",
     answer:
-      "Cosmetic upgrades generally do not require permits. Structural changes, shower relocations, or major electrical upgrades require a Town of Gilbert permit. We handle all permitting as part of your project at no extra management cost."
-  },
-  {
-    question: "How much does a bathroom remodel cost in Gilbert, AZ?",
-    answer:
-      "Guest bath full remodels run ten thousand to eighteen thousand dollars. Tub to shower conversions are six thousand to thirteen thousand dollars. Master bathrooms range from eighteen thousand to forty five thousand dollars. We offer free, itemized estimates so you know exactly what you are getting."
-  },
-  {
-    question: "Can you remodel my shower without replacing the whole bathroom?",
-    answer:
-      "Yes. We specialize in partial remodels including shower-only replacements, tub-to-shower conversions, and vanity replacements without requiring a full bathroom gut."
-  },
-  {
-    question: "Are you licensed to do bathroom remodeling in Arizona?",
-    answer:
-      "Yes. We are a licensed Arizona contractor, fully insured, operating under license Licensed Contractor - ROC #338304. We provide a two year workmanship warranty on every project. We handle all required Gilbert city permits."
-  },
-  {
-    question: "Do you serve neighborhoods outside central Gilbert?",
-    answer:
-      "We serve all of Gilbert including Morrison Ranch, Power Ranch, Val Vista Lakes, Agritopia, Seville, Lyons Gate, and more, plus surrounding East Valley cities like Chandler, Mesa, and Tempe. Our bathroom remodeling contractors provide expert shower remodeling services and accessible shower installation throughout Gilbert with professional bathroom remodeling company expertise."
-  },
+      "An ADA compliant bathroom remodel focuses on safety and ease of use. The Americans with Disabilities Act standards require grab bars that support up to 250 pounds of force. We install grab bars directly into structural wall studs, not just drywall. Walk in showers must have a slip resistant floor rating. We use mosaic tiles because the extra grout lines provide traction. Toilets must have a seat height of 17 to 19 inches from the floor, which makes sitting and standing much easier."
+  }
 ];
 
 const services = [
@@ -203,10 +183,10 @@ export default function GilbertPage() {
               Your bathroom should be a sanctuary, but many Gilbert homes built in the 1990s and 2000s are showing their age. Outdated tile, leaky shower pans, and garden tubs that go unused are common challenges we solve every day for local homeowners. If you have been planning a professional update, our local team is here to help.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in high-quality bathroom remodeling in Gilbert, AZ: from sleek tub-to-shower conversions in Power Ranch to full master bath transformations in Morrison Ranch. We are a licensed Arizona contractor, serving homeowners across the <span className="text-primary font-semibold">85234, 85295, 85296, 85297, and 85298</span> ZIP codes.
+              At ARZ Home Remodeling, we specialize in high quality bathroom remodeling in Gilbert, AZ: from sleek tub to shower conversions in Power Ranch to full master bath transformations in Morrison Ranch. We are a licensed Arizona contractor, serving homeowners across the <span className="text-primary font-semibold">85234, 85295, 85296, 85297, and 85298</span> ZIP codes.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              As a full-service remodeling contractor, we coordinate everything seamlessly from design to completion. Our custom renovations include modern vanity installations, custom waterproof walk-in showers, and layout configurations tailored to your family's needs.
+              As a full service remodeling contractor, we coordinate everything seamlessly from design to completion. Our custom renovations include modern vanity installations, custom waterproof walk in showers, and layout configurations tailored to your family's needs.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Whether you want to update a guest bath or execute a complete master suite renovation, we focus on durability and clean styling. We provide detailed project plans and clear timelines for every renovation we handle.
@@ -235,19 +215,19 @@ export default function GilbertPage() {
               Gilbert Community Landmarks & Local Bathroom Projects
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Gilbert is an incredibly popular family community characterized by the lush <strong>Riparian Preserve at Water Ranch</strong>, the iconic <strong>Gilbert Water Tower Plaza</strong>, and the bustling <strong>Heritage District</strong>. When we execute bathroom renovations in Gilbert, we design spaces that support dynamic family lifestyles. In communities like <strong>Power Ranch</strong> or <strong>Val Vista Lakes</strong>, we specialize in high-durability materials and modern aesthetic choices that add long-term property value.
+              Gilbert is an incredibly popular family community characterized by the lush <strong>Riparian Preserve at Water Ranch</strong>, the iconic <strong>Gilbert Water Tower Plaza</strong>, and the bustling <strong>Heritage District</strong>. When we execute bathroom renovations in Gilbert, we design spaces that support dynamic family lifestyles. In communities like <strong>Power Ranch</strong> or <strong>Val Vista Lakes</strong>, we specialize in high durability materials and modern aesthetic choices that add long term property value.
             </p>
             <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
               Recent Gilbert Remodeling Example:
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              A recent project completed on a spacious family home in <strong>Morrison Ranch</strong> involved converting a dated 2000s guest bathroom. We removed the old fiberglass tub alcove and installed a custom walk-in tile shower with Schluter-KERDI waterproofing, a frameless heavy glass enclosure, non-porous porcelain tile with high-performance epoxy grout, and a beautiful double vanity topped with stain-resistant quartz.
+              A recent project completed on a spacious family home in <strong>Morrison Ranch</strong> involved converting a dated 2000s guest bathroom. We removed the old fiberglass tub alcove and installed a custom walk in tile shower with Schluter Kerdi waterproofing, a frameless heavy glass enclosure, non porous porcelain tile with high performance epoxy grout, and a beautiful double vanity topped with stain resistant quartz.
             </p>
             <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
-              Gilbert Permitting & Building Safety Guidelines:
+              Gilbert Permitting and Building Safety Guidelines:
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              For any structural changes, partition wall removals, or major plumbing re-routes in Gilbert, our team coordinates directly with the <strong>Town of Gilbert Planning & Development Department</strong> (located at 90 E Civic Center Dr). We handle all permit submissions and coordinate city inspections, ensuring that your home's structural framing and plumbing are fully compliant with local safety guidelines.
+              For any structural changes, partition wall removals, or major plumbing reroutes in Gilbert, our team coordinates directly with the <strong>Town of Gilbert Planning and Development Department</strong> (located at 90 E Civic Center Dr). We handle all permit submissions and coordinate city inspections, ensuring that your home's structural framing and plumbing are fully compliant with local safety guidelines.
             </p>
           </div>
         </section>

@@ -89,8 +89,6 @@ export default function RootLayout({
           as="image"
           type="image/avif"
           fetchPriority="high"
-          imageSrcSet="/images/hero/luxury-shower-remodel-chandler-640.avif 640w, /images/hero/luxury-shower-remodel-chandler-828.avif 828w, /images/hero/luxury-shower-remodel-chandler.avif 1200w"
-          imageSizes="100vw"
         />
 
         {/* High-Performance Deferred Third-Party Script Loader */}

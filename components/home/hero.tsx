@@ -8,8 +8,6 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/hero/luxury-shower-remodel-chandler.avif"
-          srcSet="/images/hero/luxury-shower-remodel-chandler-640.avif 640w, /images/hero/luxury-shower-remodel-chandler-828.avif 828w, /images/hero/luxury-shower-remodel-chandler.avif 1200w"
-          sizes="100vw"
           alt="Custom walk-in shower and tile bathroom remodel in Chandler AZ by ARZ Home Remodeling"
           className="absolute inset-0 w-full h-full object-cover"
           fetchPriority="high"

@@ -56,7 +56,7 @@ export default function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-7 font-bold rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 animate-pulse"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-7 font-bold rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
               aria-label={`Call us at ${siteConfig.phone} to speak with a project supervisor`}
             >
               <a href={`tel:${siteConfig.phoneClean}`}>

@@ -6,9 +6,7 @@ import { siteConfig } from "@/lib/site-config"
 import { ObscuredEmail } from "@/components/ui/obscured-email"
 import "@/app/prose.css"
 
-export const metadata: Metadata = {title: {
-    absolute: "Service Terms Details | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore service terms details, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Terms Of Service Chandler AZ | Free Estimate",description: "Professional terms of service in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Service Terms Details | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore service terms details, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/terms-of-service/`,
     type: "website",

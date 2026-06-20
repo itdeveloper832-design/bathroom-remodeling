@@ -20,9 +20,7 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
 
-export const metadata: Metadata = {title: {
-    absolute: "Tub To Shower Conversion | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower conversion, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Tub to Shower Conversion Chandler AZ | Free Estimate",description: "Professional tub to shower conversion in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Tub To Shower Conversion | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower conversion, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/tub-to-shower-conversion/`,
     type: "website",
@@ -66,7 +64,7 @@ export default function TubToShowerConversionPage() {
       />
       <PriceSchema
         serviceName="Tub to Shower Conversion"
-        priceRange="$6,000 - $18,000"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/tub-to-shower-conversion/`}
       />
       <FAQSchema faqs={faqs} />
@@ -148,7 +146,7 @@ export default function TubToShowerConversionPage() {
             </p>
             <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
               <p className="text-foreground font-medium mb-4">
-                We offer 0% financing on projects over $5,000: 
+                We offer competitive 0% financing options on qualifying projects: 
                 <Link href="/financing/" className="text-primary hover:underline ml-1">
                   see our bathroom remodeling financing options
                 </Link>.

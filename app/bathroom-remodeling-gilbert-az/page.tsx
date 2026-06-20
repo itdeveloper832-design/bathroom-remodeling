@@ -22,9 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "Bathroom Remodeling Gilbert AZ | Free Estimate"
-  },description: "Quality bathroom remodeling in Gilbert, AZ. Walk-in showers, tile work & full bath renovations. Licensed ROC338304 & 2-year warranty. Call (520) 569-3339.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Gilbert Az Chandler AZ | Free Estimate",description: "Professional bathroom remodeling gilbert az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Bathroom Remodeling Gilbert AZ | Free Estimate",description: "Quality bathroom remodeling in Gilbert, AZ. Walk-in showers, tile work & full bath renovations. Licensed ROC338304 & 2-year warranty. Call (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/`,
     type: "website",
@@ -57,21 +55,21 @@ const services = [
     href: "/shower-remodeling/",
     description:
       "We convert outdated tub and shower combos into open, curbless walk-in showers with frameless glass enclosures, custom tile work, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof installation rated for Arizona's temperature swings.",
-    price: "From $6,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Tub-to-Shower Conversion",
     href: "/tub-to-shower-conversion/",
     description:
       "One of the most requested services in Gilbert. We remove existing tubs, properly waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds usable space and strong ROI at resale.",
-    price: "$6,000 to $13,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Complete Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
     description:
       "Our master bath remodels typically include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: three to five weeks. We handle all plumbing and electrical coordination.",
-    price: "$18,000 to $45,000+",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -112,22 +110,22 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 to $9,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 to $18,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 to $13,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Master Bathroom Remodel",
     detail: "Full scope: shower, vanity, tile, lighting",
-    range: "$18,000 to $45,000+",
+    range: "Free Custom Estimate",
   },
 ];
 
@@ -159,7 +157,7 @@ export default function GilbertPage() {
       <FAQSchema faqs={gilbertFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling in Gilbert AZ"
-        priceRange="$4,500 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-gilbert-az/`}
       />
       <Header />
@@ -180,17 +178,28 @@ export default function GilbertPage() {
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Your bathroom should be a sanctuary, but many Gilbert homes built in the 1990s and 2000s are showing their age. Outdated tile, leaky shower pans, and garden tubs that go unused are common challenges we solve every day for local homeowners. If you have been planning a professional update, our local team is here to help.
+              Your bathroom is a sanctuary where you begin and end your day, yet many Gilbert homes built during the rapid expansions of the 1990s and early 2000s are showing significant wear. Builder-grade acrylic surrounds yellow and crack, structural subfloors leak from age, and massive garden tubs sit unused, consuming valuable footprint. Furthermore, Gilbert's mineral-rich water supply accelerates white calcium scale buildup, clogging fixtures and staining porous stone. If you are planning to update your space, our specialized team delivers durable, high-density craftsmanship designed for Arizona's unique environment.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in high quality bathroom remodeling in Gilbert, AZ: from sleek tub to shower conversions in Power Ranch to full master bath transformations in Morrison Ranch. We are a licensed Arizona contractor, serving homeowners across the <span className="text-primary font-semibold">85234, 85295, 85296, 85297, and 85298</span> ZIP codes.
+              At ARZ Home Remodeling, we specialize in delivering comprehensive, custom bathroom remodeling in Gilbert, AZ. From zero-threshold, curbless walk-in showers in Power Ranch to high-end master suite makeovers in Morrison Ranch and Val Vista Lakes, we handle the entire project under a single, fixed-price contract. We are actively licensed with the Arizona Registrar of Contractors (ROC #338304), providing services across communities in the <span className="text-primary font-semibold">85233, 85234, 85295, 85296, 85297, and 85298</span> ZIP codes.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              As a full service remodeling contractor, we coordinate everything seamlessly from design to completion. Our custom renovations include modern vanity installations, custom waterproof walk in showers, and layout configurations tailored to your family's needs.
+              Building codes and municipal oversight are critical for safety and home resale value. In the Town of Gilbert, shifting plumbing fixtures, removing load-bearing partitions, or adding dedicated electrical circuits requires formal permit submittals and code inspections. We handle all design planning and permit filings directly with the **Town of Gilbert Development Services Department** (located at the civic center complex on Civic Center Drive). We ensure that every wall modification, drain line slope, and ASSE 1016 anti-scald valve replacement complies with local residential code guidelines.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Whether you want to update a guest bath or execute a complete master suite renovation, we focus on durability and clean styling. We provide detailed project plans and clear timelines for every renovation we handle.
+              We customize our design-build workflow to match the architectural profiles across Gilbert's master-planned developments:
             </p>
+            <ul className="space-y-4 mb-6">
+              <li className="text-muted-foreground text-lg leading-relaxed">
+                <strong className="text-foreground">Morrison Ranch & Val Vista Lakes:</strong> Known for large estate homes with spacious layouts. We specialize in custom double vanity expansions (rerouting plumbing for dual sinks), building large curbless tile showers with integrated benches, and mounting custom frameless glass enclosures.
+              </li>
+              <li className="text-muted-foreground text-lg leading-relaxed">
+                <strong className="text-foreground">Power Ranch & Agritopia:</strong> Characterized by suburban residences with high-traffic guest and hall bathrooms. We focus on low-maintenance porcelain tile installations (ANSI A118.15 thin-sets) and solid wood storage vanities that resist swelling.
+              </li>
+              <li className="text-muted-foreground text-lg leading-relaxed">
+                <strong className="text-foreground">Seville & Adora Trails:</strong> We deliver modern luxury transformations, integrating freestanding soaking tubs, linear floor drains, and moisture-resistant LED lighting.
+              </li>
+            </ul>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">

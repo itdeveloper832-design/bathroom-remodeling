@@ -24,9 +24,7 @@ import {
 import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
-export const metadata: Metadata = {title: {
-    absolute: "Bathroom Remodeling Chandler AZ | Free Estimate"
-  },description: "Expert bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions & custom tile. Licensed ROC338304. Call (520) 569-3339 for a free quote.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Chandler Az Chandler AZ | Free Estimate",description: "Professional bathroom remodeling chandler az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Bathroom Remodeling Chandler AZ | Free Estimate",description: "Expert bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions & custom tile. Licensed ROC338304. Call (520) 569-3339 for a free quote.",
     url: `${siteConfig.url}/bathroom-remodeling-chandler-az/`,
     type: "website",
@@ -57,7 +55,7 @@ const chandlerFaqs = [
   {
     question: "What is the average cost of a bathroom remodel in Chandler?",
     answer:
-      "In Chandler, a standard guest bathroom update costs between 10,000 dollars and 18,000 dollars. A complete master bathroom remodel ranges from 20,000 dollars to 45,000 dollars or more. The total price depends on whether you move structural walls, relocate plumbing lines, or choose premium quartz countertops. You can preview quartz slab options at local wholesalers like Arizona Tile near the Chandler Fashion Center on Ray Road. ARZ Home Remodeling holds active license ROC338304 with the Arizona Registrar of Contractors."
+      "Bathroom remodeling costs are highly customized, depending on the size of the room, layout changes, tile choices, and fixture selections. Because every space is unique, we provide free on-site inspections and prepare a detailed, line-item written estimate before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your free design consultation."
   },
   {
     question: "How does Chandler water hardness affect bathroom tile and glass?",
@@ -72,21 +70,21 @@ const services = [
     href: "/shower-remodeling/",
     description:
       "We convert outdated tub and shower combos into open, curbless walk-in showers with frameless glass enclosures, custom tile work, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof installation rated for Arizona's temperature swings.",
-    price: "From $6,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Tub-to-Shower Conversion",
     href: "/tub-to-shower-conversion/",
     description:
       "One of the most requested services in Chandler, especially in homes with unused garden tubs. We remove the existing tub, properly waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds usable space and strong ROI at resale.",
-    price: "$6,000 to $13,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Complete Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
     description:
       "Our master bath remodels typically include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: three to five weeks. We handle all plumbing and electrical coordination without managing multiple contractors.",
-    price: "$18,000 to $45,000+",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -127,22 +125,22 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 to $9,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 to $18,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 to $13,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Master Bathroom Remodel",
     detail: "Full scope: shower, vanity, tile, lighting",
-    range: "$18,000 to $45,000+",
+    range: "Free Custom Estimate",
   },
 ];
 
@@ -175,7 +173,7 @@ export default function ChandlerBathroomRemodelingPage() {
       <FAQSchema faqs={chandlerFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling in Chandler AZ"
-        priceRange="$4,500 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-chandler-az/`}
       />
       <Header />
@@ -196,48 +194,47 @@ export default function ChandlerBathroomRemodelingPage() {
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Your bathroom is used twice a day, every day: but Chandler homes built in the 1980s through early 2000s were
-              never designed with modern comfort in mind. Fiberglass tub surrounds yellow, and builder grade vanities fail to help your home value. Grout stains easily from Chandler's notoriously hard water. If you have been considering upgrading your space with professional **bathroom remodeling in Chandler, AZ**, now is the perfect time to start.
+              Your bathroom is one of the most frequently used spaces in your home, serving as the start and end to your daily routine. However, many Chandler properties built between the 1980s and early 2000s feature outdated, cramped layouts and builder-grade fixtures that fail to meet modern standards of luxury or utility. Yellowing fiberglass tub surrounds, water-damaged particle board vanities, and mildewed tile grout are common issues that detract from both your daily comfort and your home’s resale value. Upgrading your space with professional **bathroom remodeling in Chandler, AZ** is a high-return investment that transforms outdated spaces into modern, functional retreats.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we provide smart design solutions for homeowners, specializing in full renovations, custom design layouts, and targeted upgrades. Whether you want a luxury master suite overhaul, a modern guest bathroom upgrade, or a functional <Link href='/tub-to-shower-conversion/' className='text-primary hover:underline font-medium'>tub to shower conversion</Link>, our team handles everything from initial concept to final inspection. As a licensed local contractor, we proudly serve communities across Chandler, including ZIP codes <span className="text-primary font-semibold"> 85224, 85225, 85226, and 85249</span>.
+              At ARZ Home Remodeling, we specialize in providing comprehensive design-build remodeling solutions tailored to the needs of Chandler homeowners. From luxury master bathroom overhauls featuring freestanding tubs and curbless entry walk-in showers to space-optimizing guest bathroom updates and expert <Link href='/tub-to-shower-conversion/' className='text-primary hover:underline font-medium'>tub-to-shower conversions</Link>, our in-house crew manages every phase. As an Arizona Registrar of Contractors (ROC) licensed, bonded, and insured team (ROC #338304), we proudly serve communities across the East Valley, including ZIP codes <span className="text-primary font-semibold">85224, 85225, 85226, and 85249</span>.
             </p>
             <h3 className="font-serif text-2xl font-semibold mt-8 mb-3 text-foreground">
               Navigating Chandler Building Codes and Permitting
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              We coordinate all structural, plumbing, and electrical permit documentation directly with the **Chandler Development Services Department** (located in Downtown Chandler). If your remodel involves moving a toilet drain, running new circuits, or removing partition walls, we make sure everything is 100% compliant with City of Chandler building safety standards.
+              Navigating structural modifications, drainage relocations, or electrical circuit expansion requires strict compliance with local building codes. In Chandler, major bathroom renovations require building permit filing and official inspections through the **Chandler Development Services Department** (located at the municipal complex on Arizona Avenue in Downtown Chandler). Our team manages the entire permitting pipeline, drafting and submitting all floor plans, framing details, and plumbing layout designs. We handle structural wall removals, coordinate inspections for wet-area rough-ins, and ensure that every outlet, exhaust fan, and mixing valve meets current safety guidelines.
             </p>
             
             <h3 className="font-serif text-2xl font-semibold mt-8 mb-3 text-foreground">
               Combating Chandler's Hard Water
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              The municipal water supply in the East Valley contains extremely high mineral levels. To prevent hard water buildup and mold, we install **Schluter-Kerdi waterproofing systems**, large format non porous porcelain tiles, and premium **epoxy grout** that resists calcium staining and discoloration. We also treat frameless glass doors with protective hydrophobic coatings to ensure your shower remains crystal clear.
+              East Valley municipal water is notorious for its exceptionally high mineral content, frequently measuring between 18 to 22 grains of hardness (well over 300 mg/L of dissolved calcium and magnesium). This high-mineral supply leaves heavy white scale buildup on traditional porous natural stone and standard cement grout, leading to discoloration, cracking, and water penetration. To combat this, we install vapor-tight **Schluter-KERDI waterproofing systems** on all shower substrates. We use large-format, non-porous porcelain tile (with water absorption ratings below 0.5% per ASTM C373) and upgrade all joints to 100% solid **epoxy resin grout** that repels minerals, resists staining, and remains easy to clean.
             </p>
 
             <h3 className="font-serif text-2xl font-semibold mt-8 mb-3 text-foreground">
               Neighborhood Specific Remodeling and ZIP Code Topical Depth
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              We customize our design build process to match the unique architectural eras and construction profiles across Chandler communities:
+              We customize our design-build process to match the unique structural profiles and architectural eras across Chandler's master-planned developments and subdivisions:
             </p>
             <ul className="space-y-4 mb-6">
               <li className="text-muted-foreground text-lg leading-relaxed">
-                <strong className="text-foreground">North and West Chandler (ZIP 85224 and 85226 serving Dobson Ranch, Warner Ranch, Kyrene Corridor):</strong> Many homes in these established neighborhoods date back to the 1980s and 1990s. They commonly feature builder grade fiberglass tub enclosures, low profile vanities, and aging brass plumbing. We specialize in space maximizing updates and modern tub to shower conversions here, dramatically upgrading both utility and home value.
+                <strong className="text-foreground">North and West Chandler (ZIPs 85224 & 85226 serving Dobson Ranch, Warner Ranch, Kyrene Corridor):</strong> Homes built during the 1980s and 1990s in these neighborhoods often feature low-profile vanities, aging copper pipes, and outdated fiberglass shower enclosures. We specialize in retrofitting these spaces, updating in-wall plumbing to flexible PEX-a piping, raising vanity heights, and executing space-maximizing tub-to-shower conversions that add immediate ROI.
               </li>
               <li className="text-muted-foreground text-lg leading-relaxed">
-                <strong className="text-foreground">Downtown and Central Chandler (ZIP 85225 serving Clemente Ranch, Cooper Commons):</strong> Subdivisions in this zone often feature 1990s era guest bathrooms in need of freshening. We focus on low maintenance porcelain tile installations, modern comfort height toilets, and beautiful custom vanities that stand up to daily use.
+                <strong className="text-foreground">Downtown and Central Chandler (ZIP 85225 serving Clemente Ranch, Cooper Commons, and Historic Districts):</strong> Subdivisions in this corridor frequently feature standard guest and hall bathrooms with high-traffic demands. We focus on durable, low-maintenance materials, installing comfort-height toilets, solid quartz countertops, and slip-resistant custom tiling designed for active families.
               </li>
               <li className="text-muted-foreground text-lg leading-relaxed">
-                <strong className="text-foreground">South Chandler (ZIP 85249 and 85248 serving Ocotillo, Fulton Ranch, Sun Lakes):</strong> Known for luxury estates and active adult communities. In Ocotillo and Fulton Ranch, we deliver upscale master suites with freestanding soaking tubs, frameless glass walk ins, and quartz double vanities. In Sun Lakes, we are certified experts in senior safe curbless roll in showers, secure grab bars, and high traction non slip mosaic tile flooring.
+                <strong className="text-foreground">South Chandler (ZIPs 85249 & 85248 serving Ocotillo, Fulton Ranch, Sun Lakes):</strong> This luxury corridor features custom executive estates and active adult communities. In Ocotillo and Fulton Ranch, we deliver high-end master suites with linear shower drains, custom accent niches, and double floating vanities. In Sun Lakes, we specialize in senior-friendly aging-in-place updates, building zero-threshold curbless roll-in showers, installing structural stud backing for grab bars, and laying high-traction mosaic tile flooring.
               </li>
             </ul>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              From top-tier walk-in showers to precise custom tile work, we deliver results that blend long-term durability with modern aesthetics. We offer transparent, itemized quotes to ensure you get exceptional value for your investment. If you have been searching for a reliable local bathroom contractor, our dedicated team is here to help. You can also view our <Link href='/bathroom-remodel-cost-chandler/' className='text-primary hover:underline font-medium'>detailed pricing guide</Link> for current 2026 rates and local bathroom remodeling costs.
+              From top-tier walk-in showers to precise custom tile work, we deliver results that blend long-term durability with modern aesthetics. We offer transparent, itemized scopes of work to ensure you get exceptional value for your investment. If you have been searching for a reliable local bathroom contractor, our dedicated team is here to help. You can also view our <Link href='/bathroom-remodel-cost-chandler/' className='text-primary hover:underline font-medium'>detailed pricing guide</Link> for current 2026 rates and local bathroom remodeling costs.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              We understand that every project is unique. Our team of expert remodelers is skilled in handling everything from simple cosmetic updates to complex structural changes, ensuring your project is completed on time and on budget.
+              We understand that every project is unique. Our team of expert remodelers is skilled in handling everything from simple cosmetic updates to complex structural changes, ensuring your project is completed on time and meets your expectations.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               At ARZ Home Remodeling, we focus on premium workmanship, transparent communication, and stunning results. We handle all elements of your project, from planning and permitting to the final tile sealing, making us the premier choice for bathroom renovations in the East Valley.

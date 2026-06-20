@@ -21,69 +21,54 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-12 pb-16 lg:pt-16 lg:pb-20 flex justify-center">
         <div className="max-w-4xl mx-auto text-center text-white flex flex-col items-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6">
-            <span className="text-white text-xs md:text-sm font-medium">
-              ROC Licensed #ROC338304 · Family-Owned Since {siteConfig.foundedYear}
-            </span>
+          {/* Trust Badges */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-6 text-white text-xs md:text-sm font-semibold tracking-wide uppercase">
+            <span className="bg-accent text-accent-foreground px-3.5 py-1.5 rounded-full shadow-sm">✓ Licensed ROC #338304</span>
+            <span className="bg-white/15 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/10">✓ Bonded & Insured</span>
+            <span className="bg-white/15 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/10">✓ Free In-Home Estimate</span>
           </div>
 
           {/* Title */}
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6 text-balance">
-            Custom Bathroom Remodeling Built to Last
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 text-balance tracking-tight">
+            Bathroom Remodeling Chandler AZ
           </h1>
 
-          {/* Google Review Stars */}
-          <div className="mb-8">
-            <a 
-              href={siteConfig.googleBusinessLink} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-white hover:text-accent transition-colors duration-200 group no-underline"
-              aria-label={`View our ${siteConfig.googleRating} star rating with ${siteConfig.googleReviewsCount} Google Reviews`}
-            >
-              <span className="text-accent text-lg">★★★★★</span>
-              <span className="text-base font-semibold group-hover:underline">{siteConfig.googleRating} · {siteConfig.googleReviewsCount} Google Reviews</span>
-            </a>
-          </div>
-
-          {/* Quote Block */}
-          <p className="text-lg md:text-xl text-accent font-serif mb-8 leading-relaxed font-semibold italic max-w-2xl">
-            &quot;Focused exclusively on high-quality bathroom renovations. Designed for homeowners who want their bathroom done right.&quot;
+          {/* Value Propositions */}
+          <p className="text-lg md:text-xl text-accent font-serif mb-6 leading-relaxed font-semibold italic max-w-2xl">
+            &quot;Professional Walk-In Showers, Tub-to-Shower Conversions & Custom Tile Services.&quot;
           </p>
 
           {/* Main Copy */}
-          <p className="text-base md:text-lg text-white/85 mb-10 leading-relaxed font-light max-w-3xl">
-            Specializing in master-crafted{" "}
-            <Link href="/walk-in-showers/" className="font-semibold underline text-white hover:text-accent transition-colors">
+          <p className="text-base md:text-lg text-white/90 mb-10 leading-relaxed font-light max-w-3xl">
+            Need a reliable local bathroom contractor? We specialize in master-crafted{" "}
+            <Link href="/walk-in-showers/" className="font-semibold underline text-accent hover:text-white transition-colors">
               walk-in showers
             </Link>
-            ,{" "}
-            <Link href="/tub-to-shower-conversion/" className="font-semibold underline text-white hover:text-accent transition-colors">
-              tub-to-shower conversions
+            , safety{" "}
+            <Link href="/tub-to-shower-conversion/" className="font-semibold underline text-accent hover:text-white transition-colors">
+              tub to shower conversions
             </Link>
-            , and custom tile design. We use vapor-tight Schluter-KERDI waterproofing systems and stain-resistant epoxy grouting engineered to resist Arizona&apos;s hard water minerals. Every project is backed by a 2-year workmanship warranty and fixed-price contracts.
+            , and custom tile installations. Engineered for Chandler&apos;s hard water using vapor-tight Schluter waterproofing and stain-resistant epoxy grouting. Backed by our 2-year workmanship warranty.
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto items-center">
             <Button
               asChild
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground text-base px-8 py-6 font-semibold"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-7 font-bold rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 animate-pulse"
               aria-label={`Call us at ${siteConfig.phone} to speak with a project supervisor`}
             >
-              <a href={`tel:${siteConfig.phoneClean}`}>Speak to a Project Supervisor: {siteConfig.phone}</a>
+              <a href={`tel:${siteConfig.phoneClean}`}>
+                📞 CALL NOW: {siteConfig.phone}
+              </a>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white/20 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 text-base px-8 py-6 font-semibold"
-              aria-label="View completed bathroom remodel projects"
+            <Link 
+              href="/gallery/" 
+              className="text-white hover:text-accent font-semibold text-base underline transition-colors py-2 px-4"
             >
-              <Link href="/gallery/">View Our Work</Link>
-            </Button>
+              Or View Completed Projects
+            </Link>
           </div>
         </div>
       </div>

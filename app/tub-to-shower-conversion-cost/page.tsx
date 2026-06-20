@@ -10,9 +10,7 @@ import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/jso
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
-export const metadata: Metadata = {title: {
-    absolute: "Tub To Shower Convert Cost | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower convert cost, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Tub To Shower Conversion Cost Chandler AZ | Free Estimate",description: "Professional tub to shower conversion cost in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Tub To Shower Convert Cost | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower convert cost, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/tub-to-shower-conversion-cost/`,
     type: "website",
@@ -26,12 +24,12 @@ const conversionFaqs = [
   {
     question: "What is the average cost to convert a tub to a walk-in shower in Chandler?",
     answer:
-      "The average cost for a tub-to-shower conversion in Chandler, AZ ranges from $6,000 to $14,000. Acrylic or fiberglass insert packages range from $6,000 to $9,000. Custom tiled conversions featuring the Schluter-KERDI waterproofing membrane system run between $9,500 and $15,000, while high-end luxury conversions with curbless pans and premium glass exceed $16,000."
+      "The cost of a tub-to-shower conversion in Chandler, AZ varies based on layout design, waterproofing requirements, and finish selections. Acrylic or fiberglass insert packages represent a standard scope. Custom tiled conversions featuring the Schluter-KERDI waterproofing membrane system represent a customized scope, while high-end luxury conversions with curbless pans and premium frameless glass panels represent a premium layout. We offer free on-site consultations to prepare detailed, line-item written estimates."
   },
   {
     question: "Why do we have to upgrade the drain line during a tub conversion?",
     answer:
-      "Building codes require a 2-inch drain line for showers, whereas standard bathtubs only use a 1.5-inch line. This is to handle the high volume of water from modern showerheads and prevent overflow. Modifying the drain under concrete or wood joists adds $600 to $1,500 to the project cost."
+      "Building codes require a 2-inch drain line for showers, whereas standard bathtubs only use a 1.5-inch line. This is to handle the high volume of water from modern showerheads and prevent overflow. Modifying the drain under concrete or wood joists requires specialized plumbing, structural trenching, and framing revisions."
   },
   {
     question: "Does removing a bathtub hurt my home's resale value?",
@@ -55,39 +53,39 @@ const pricingData = [
     category: "Standard Conversion Package",
     description: "Remove tub, install acrylic shower base & basic tiled surround",
     items: [
-      { name: "Demo of cast-iron or acrylic tub", cost: "$600–$1,200" },
-      { name: "Drain upgrade to 2-inch & valve rough-in", cost: "$800–$1,500" },
-      { name: "Standard acrylic base", cost: "$500–$900" },
-      { name: "Ceramic tile walls (subway/standard)", cost: "$3,000–$4,500" },
-      { name: "Semi-frameless glass sliding door", cost: "$600–$1,000" },
+      { name: "Demo of cast-iron or acrylic tub", cost: "Standard Level" },
+      { name: "Drain upgrade to 2-inch & valve rough-in", cost: "Standard Level" },
+      { name: "Standard acrylic base", cost: "Standard Level" },
+      { name: "Ceramic tile walls (subway/standard)", cost: "Standard Level" },
+      { name: "Semi-frameless glass sliding door", cost: "Standard Level" },
     ],
-    total: "$6,500–$9,500",
+    total: "Free Custom Estimate",
     highlight: false,
   },
   {
     category: "Custom Tiled Conversion",
     description: "Remove tub, custom mud-pan, full tile & frameless glass",
     items: [
-      { name: "Demo of tub and wall surround", cost: "$800–$1,500" },
-      { name: "Plumbing modifications (drain & valve)", cost: "$900–$1,800" },
-      { name: "Schluter waterproofing system", cost: "$800–$1,400" },
-      { name: "Custom porcelain tile pan & walls", cost: "$4,500–$7,500" },
-      { name: "3/8-inch thick frameless glass", cost: "$1,500–$2,800" },
+      { name: "Demo of tub and wall surround", cost: "Mid-Range Scope" },
+      { name: "Plumbing modifications (drain & valve)", cost: "Mid-Range Scope" },
+      { name: "Schluter waterproofing system", cost: "Mid-Range Scope" },
+      { name: "Custom porcelain tile pan & walls", cost: "Mid-Range Scope" },
+      { name: "3/8-inch thick frameless glass", cost: "Mid-Range Scope" },
     ],
-    total: "$10,000–$15,000",
+    total: "Free Custom Estimate",
     highlight: true,
   },
   {
     category: "Luxury Barrier-Free Conversion",
     description: "Curbless walk-in shower with premium finishes",
     items: [
-      { name: "Demo and concrete slab trenching", cost: "$1,800–$3,000" },
-      { name: "Plumbing, valve moves & linear drain", cost: "$1,500–$2,800" },
-      { name: "KERDI waterproofing & sloped pan", cost: "$1,200–$2,200" },
-      { name: "High-end large format tile & niches", cost: "$5,500–$8,500" },
-      { name: "Custom nano-coated frameless glass panel", cost: "$1,800–$3,200" },
+      { name: "Demo and concrete slab trenching", cost: "Luxury Custom Scope" },
+      { name: "Plumbing, valve moves & linear drain", cost: "Luxury Custom Scope" },
+      { name: "KERDI waterproofing & sloped pan", cost: "Luxury Custom Scope" },
+      { name: "High-end large format tile & niches", cost: "Luxury Custom Scope" },
+      { name: "Custom nano-coated frameless glass panel", cost: "Luxury Custom Scope" },
     ],
-    total: "$15,500–$23,000+",
+    total: "Free Custom Estimate",
     highlight: false,
   },
 ];
@@ -96,7 +94,7 @@ const costFactors = [
   {
     title: "Sub-Floor & Framing Condition",
     impact: "High",
-    detail: "Old bathtubs often hide slow leaks that rot wood joists or degrade concrete. Repairing water damage adds $500–$2,500 to the rough-in phase.",
+    detail: "Old bathtubs often hide slow leaks that rot wood joists or degrade concrete. Repairing water damage requires specialized subfloor rebuilding during the rough-in phase.",
   },
   {
     title: "Drain Line Retrofitting",
@@ -111,7 +109,7 @@ const costFactors = [
   {
     title: "Enclosure Selection",
     impact: "Medium",
-    detail: "Frameless glass enclosures look spectacular and add massive resale value, but cost $1,000 to $2,500 more than framed tracks.",
+    detail: "Frameless glass enclosures look spectacular and add massive resale value, but represent a premium upgrade over standard framed tracks.",
   },
 ];
 
@@ -134,7 +132,7 @@ export default function TubToShowerConversionCostPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Tub-to-Shower Conversion Costs (2025 Pricing Guide)"
+          title="Tub-to-Shower Conversion Guide (Project Scopes)"
           subtitle="Transparent Project Pricing"
           description="A complete guide on what it costs to remove an old bathtub and build a spacious walk-in shower in Chandler, AZ. All options detailed."
           image="/images/services/bathroom-flooring-chandler.webp"

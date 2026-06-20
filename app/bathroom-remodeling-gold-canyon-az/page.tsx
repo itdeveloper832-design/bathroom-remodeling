@@ -22,9 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "Gold Canyon Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gold canyon bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Gold Canyon Az Chandler AZ | Free Estima",description: "Professional bathroom remodeling gold canyon az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Gold Canyon Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gold canyon bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-gold-canyon-az/`,
     type: "website",
@@ -72,21 +70,21 @@ const services = [
     href: "/shower-remodeling/",
     description:
       "We convert standard tub surrounds into open, curbless walk-in showers with frameless glass enclosures, custom porcelain tile surrounds, built-in niches, and premium rainfall fixtures. Schluter-KERDI waterproofed substrate guarantees zero leaks.",
-    price: "From $8,500",
+    price: "Free Custom Estimate",
   },
   {
     title: "Tub-to-Shower Conversions",
     href: "/tub-to-shower-conversion/",
     description:
       "We remove dated alcove tubs and replace them with spacious tiled walk-in showers. This is our most requested service to optimize guest baths and master layouts.",
-    price: "$6,000 to $14,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Complete Master Suite Remodels",
     href: "/master-bathroom-remodel/",
     description:
       "Luxury master transformations featuring freestanding copper or acrylic soaking tubs, custom quartzite double vanities, tiled backsplashes, custom ambient lighting, and zero-threshold layouts.",
-    price: "$18,000 to $45,000+",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -127,22 +125,22 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 to $9,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 to $18,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 to $13,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Master Bathroom Remodel",
     detail: "Full scope: shower, vanity, tile, lighting",
-    range: "$18,000 to $45,000+",
+    range: "Free Custom Estimate",
   },
 ];
 
@@ -172,7 +170,7 @@ export default function GoldCanyonPage() {
       <FAQSchema faqs={goldCanyonFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling in Gold Canyon AZ"
-        priceRange="$4,500 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-gold-canyon-az/`}
       />
       <Header />

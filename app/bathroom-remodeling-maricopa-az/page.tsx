@@ -22,9 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "Maricopa Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore maricopa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Maricopa Az Chandler AZ | Free Estimate",description: "Professional bathroom remodeling maricopa az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Maricopa Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore maricopa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-maricopa-az/`,
     type: "website",
@@ -72,21 +70,21 @@ const services = [
     href: "/ada-bathroom-remodeling/",
     description:
       "Designed specifically for senior safety and modern aesthetic appeal. We lower the subfloor to build a flat, seamless entry tile shower, equipped with heavy-duty grab bars, custom seating, and high-flow linear drains.",
-    price: "From $8,500",
+    price: "Free Custom Estimate",
   },
   {
     title: "Tub-to-Shower Conversions",
     href: "/tub-to-shower-conversion/",
     description:
       "We remove old, unused acrylic bathtubs or high-sided garden tubs and replace them with spacious tiled walk-in showers. This is our most requested service for homeowners looking to maximize space.",
-    price: "$6,000 to $14,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Complete Master Bath Renovations",
     href: "/master-bathroom-remodel/",
     description:
       "Luxury master transformations featuring freestanding soaking tubs, custom double vanities with quartz tops, porcelain tile surrounds, custom lighting, and modern frameless glass enclosures.",
-    price: "$18,000 to $45,000+",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -127,22 +125,22 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 to $9,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 to $18,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 to $13,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Master Bathroom Remodel",
     detail: "Full scope: shower, vanity, tile, lighting",
-    range: "$18,000 to $45,000+",
+    range: "Free Custom Estimate",
   },
 ];
 
@@ -172,7 +170,7 @@ export default function MaricopaPage() {
       <FAQSchema faqs={maricopaFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling in Maricopa AZ"
-        priceRange="$4,500 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-maricopa-az/`}
       />
       <Header />

@@ -10,9 +10,7 @@ import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/jso
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
-export const metadata: Metadata = {title: {
-    absolute: "Master Bath Remodel Cost | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore master bath remodel cost, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Master Bathroom Remodel Cost Chandler AZ | Free Estimate",description: "Professional master bathroom remodel cost in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Master Bath Remodel Cost | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore master bath remodel cost, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/master-bathroom-remodel-cost/`,
     type: "website",
@@ -26,12 +24,12 @@ const masterFaqs = [
   {
     question: "What is the average cost of a master bathroom remodel in Chandler?",
     answer:
-      "A complete master bathroom remodel in Chandler, AZ averages between $18,000 and $45,000+. A mid-tier master renovation with a standard vanity and tiled walk-in shower ranges from $18,000 to $26,000. Full custom renovations that include plumbing relocations, quartz double vanities, freestanding soaking tubs, and curbless tile showers range from $28,000 to $50,000+."
+      "The cost of a master bathroom remodel depends on layout changes, material selections, and project scope. Mid-tier master renovations utilizing the existing footprint are very cost-effective, while custom luxury suites featuring layout alterations, curbless walk-in showers, freestanding tubs, and premium double vanities represent a larger investment. We provide free on-site inspections and prepare detailed, line-item written estimates before any work begins."
   },
   {
     question: "What are the biggest cost drivers in a master bath remodel?",
     answer:
-      "Plumbing relocation is the largest cost driver. Moving toilets, shower drains, or vanity locations requires slab cutting and adds $2,000 to $6,000. Other major drivers include custom double vanities, frameless glass enclosures, linear drains, and premium stone or porcelain tile selections."
+      "Plumbing relocation is the largest cost driver. Moving toilets, shower drains, or vanity locations requires concrete slab trenching or framing modifications and increases labor. Other major drivers include custom cabinetry, quartz or marble double vanities, frameless glass enclosures, linear drains, and premium large-format porcelain tile selections."
   },
   {
     question: "How long does a master bathroom remodel take?",
@@ -46,7 +44,7 @@ const masterFaqs = [
   {
     question: "Do you offer financing for master bathroom remodels?",
     answer:
-      "Yes. We offer financing options to help Chandler homeowners fund their master bathroom renovations. Qualifying customers can secure monthly payments starting around $350 to $480 depending on the scope of the project."
+      "Yes. We offer flexible financing options and custom monthly payment plans to help homeowners fund their master bathroom renovations. Qualifying customers can secure affordable monthly payments tailored to their project's scope. Contact us today to discuss financing."
   },
 ];
 
@@ -55,42 +53,42 @@ const pricingData = [
     category: "Mid-Tier Master Remodel",
     description: "Complete update within the existing layout",
     items: [
-      { name: "Demo and disposal of old fixtures", cost: "$1,200–$2,000" },
-      { name: "Tiled walk-in shower with Schluter system", cost: "$4,500–$7,500" },
-      { name: "Stock double vanity with quartz top", cost: "$2,200–$4,000" },
-      { name: "Porcelain tile flooring (standard)", cost: "$1,800–$3,200" },
-      { name: "New toilet, plumbing valves & faucets", cost: "$1,200–$2,500" },
-      { name: "Drywall prep, paint & lighting", cost: "$1,200–$2,200" },
+      { name: "Demo and disposal of old fixtures", cost: "Standard Level" },
+      { name: "Tiled walk-in shower with Schluter system", cost: "Standard Level" },
+      { name: "Stock double vanity with quartz top", cost: "Standard Level" },
+      { name: "Porcelain tile flooring (standard)", cost: "Standard Level" },
+      { name: "New toilet, plumbing valves & faucets", cost: "Standard Level" },
+      { name: "Drywall prep, paint & lighting", cost: "Standard Level" },
     ],
-    total: "$18,000–$26,000",
+    total: "Free Custom Estimate",
     highlight: false,
   },
   {
     category: "Full Custom Master Suite",
     description: "Layout expansion, premium tile & glass",
     items: [
-      { name: "Demo, wall changes & framing moves", cost: "$2,000–$4,000" },
-      { name: "Custom tiled shower & frameless glass", cost: "$6,500–$11,500" },
-      { name: "Freestanding soaking tub & floor filler", cost: "$2,500–$4,500" },
-      { name: "Custom double vanity & quartz top", cost: "$3,800–$7,500" },
-      { name: "Upgraded porcelain flooring & niches", cost: "$3,000–$5,500" },
-      { name: "Plumbing, electrical & permit fees", cost: "$2,500–$5,500" },
+      { name: "Demo, wall changes & framing moves", cost: "Mid-Range Scope" },
+      { name: "Custom tiled shower & frameless glass", cost: "Mid-Range Scope" },
+      { name: "Freestanding soaking tub & floor filler", cost: "Mid-Range Scope" },
+      { name: "Custom double vanity & quartz top", cost: "Mid-Range Scope" },
+      { name: "Upgraded porcelain flooring & niches", cost: "Mid-Range Scope" },
+      { name: "Plumbing, electrical & permit fees", cost: "Mid-Range Scope" },
     ],
-    total: "$28,000–$42,500",
+    total: "Free Custom Estimate",
     highlight: true,
   },
   {
     category: "Luxury Home Spa Suite",
     description: "Curbless double shower, heated floors & tech",
     items: [
-      { name: "Structural framing & slab trenching", cost: "$3,500–$6,500" },
-      { name: "Curbless shower with dual heads & bench", cost: "$8,500–$15,000" },
-      { name: "Heated tile floors & smart thermostat", cost: "$2,000–$4,500" },
-      { name: "Designer vanities, fixtures & smart mirror", cost: "$5,500–$11,000" },
-      { name: "Custom stone/porcelain tiles & details", cost: "$6,500–$12,000" },
-      { name: "Plumbing relocations & luxury upgrades", cost: "$4,500–$9,000" },
+      { name: "Structural framing & slab trenching", cost: "Luxury Custom Scope" },
+      { name: "Curbless shower with dual heads & bench", cost: "Luxury Custom Scope" },
+      { name: "Heated tile floors & smart thermostat", cost: "Luxury Custom Scope" },
+      { name: "Designer vanities, fixtures & smart mirror", cost: "Luxury Custom Scope" },
+      { name: "Custom stone/porcelain tiles & details", cost: "Luxury Custom Scope" },
+      { name: "Plumbing relocations & luxury upgrades", cost: "Luxury Custom Scope" },
     ],
-    total: "$45,000–$68,000+",
+    total: "Free Custom Estimate",
     highlight: false,
   },
 ];
@@ -99,12 +97,12 @@ const costFactors = [
   {
     title: "Layout Alterations",
     impact: "High",
-    detail: "Keeping the existing placement of the toilet, shower, and sink keeps costs low. Rearranging the layout adds $3,000–$8,000 for slab trenching and pipe moves.",
+    detail: "Keeping the existing placement of the toilet, shower, and sink keeps costs low. Rearranging the layout requires subfloor slab trenching, framing adjustments, and new drainage pipe routing.",
   },
   {
     title: "Cabinetry & Vanities",
     impact: "High",
-    detail: "Pre-assembled double vanities cost $1,500–$3,500. Custom cabinetry tailored to your walls with custom quartz or marble slabs runs $4,000–$9,000.",
+    detail: "Pre-assembled double vanities offer a standard setup. Custom cabinetry tailored to your walls with custom quartz or marble slabs represents a premium custom option.",
   },
   {
     title: "Shower & Tub Scope",

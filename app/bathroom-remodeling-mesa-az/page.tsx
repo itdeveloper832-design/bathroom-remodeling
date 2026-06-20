@@ -22,9 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "Bathroom Remodeling Mesa AZ | Licensed Contractor"
-  },description: "Professional bathroom remodeling in Mesa, AZ. Custom showers, vanities & tile. Fixed pricing, 2-year warranty. Call ARZ today: (520) 569-3339. Free estimate.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Mesa Az Chandler AZ | Free Estimate",description: "Professional bathroom remodeling mesa az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Bathroom Remodeling Mesa AZ | Licensed Contractor",description: "Professional bathroom remodeling in Mesa, AZ. Custom showers, vanities & tile. Fixed pricing, 2-year warranty. Call ARZ today: (520) 569-3339. Free estimate.",
     url: `${siteConfig.url}/bathroom-remodeling-mesa-az/`,
     type: "website",
@@ -47,7 +45,7 @@ const mesaFaqs = [
   {
     question: "How much does a tub to shower conversion cost in Mesa?",
     answer:
-      "A tub to shower conversion in Mesa averages between 8,000 dollars and 15,000 dollars. The price varies based on the shower base material, tile choices, and valve upgrades. Converting a tub to a walk in shower helps prevent slips and makes the room feel much larger. We install leak proof pan systems that carry a lifetime warranty."
+      "Tub-to-shower conversion costs in Mesa depend on layout changes, tile choices, and valve configurations. Converting a tub to a walk-in shower helps prevent slips and makes the room feel much larger. We provide free on-site inspections and prepare a detailed, line-item written estimate before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your quote."
   }
 ];
 
@@ -57,21 +55,21 @@ const services = [
     href: "/shower-remodeling/",
     description:
       "We convert outdated tub and shower combos into open, curbless walk-in showers with frameless glass enclosures, custom tile work, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof installation.",
-    price: "From $6,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Tub-to-Shower Conversion",
     href: "/tub-to-shower-conversion/",
     description:
       "One of the most requested services in Mesa. We remove existing tubs, properly waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds usable space and strong ROI at resale.",
-    price: "$6,000 to $13,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Complete Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
     description:
       "Our master bath remodels typically include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: three to five weeks. We handle all plumbing and electrical coordination.",
-    price: "$18,000 to $45,000+",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -112,22 +110,22 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 to $9,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 to $18,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 to $13,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Master Bathroom Remodel",
     detail: "Full scope: shower, vanity, tile, lighting",
-    range: "$18,000 to $45,000+",
+    range: "Free Custom Estimate",
   },
 ];
 
@@ -159,7 +157,7 @@ export default function MesaPage() {
       <FAQSchema faqs={mesaFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling in Mesa AZ"
-        priceRange="$4,500 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-mesa-az/`}
       />
       <Header />
@@ -180,31 +178,28 @@ export default function MesaPage() {
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Mesa homeowners deserve bathrooms that combine beauty with durability. Many homes in areas like Dobson Ranch 
-              or Eastmark are ready for a modern upgrade, replacing builder grade materials with high end, custom finishes. If you have been searching for a professional <strong>bathroom remodel mesa</strong>, reliable <strong>bathroom remodeling mesa</strong>, or premium <strong>bath remodeling mesa</strong>, we are here to help.
+              Your bathroom is a primary living space that directly influences your daily comfort and your home’s value. In Mesa, AZ, homes built from the mid-20th century to the early 2000s are often ready for significant updates. Outdated layout designs, leaky fiberglass enclosures, and plumbing systems damaged by heavy hard water scale are common problems. Expanding a shower enclosure, upgrading a vanity layout, or executing a modern tub-to-shower conversion are key updates that improve utility. If you are searching for custom **bathroom remodeling in Mesa, AZ**, our local design-build team is here to deliver high-density, leak-proof craftsmanship.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in 
-              <strong className="text-foreground"> bathroom remodeling in Mesa, AZ</strong>: from custom walk in 
-              showers in Las Sendas to full master bath transformations in Eastmark. We are a licensed Arizona 
-              contractor, serving homeowners across 
-              <span className="text-primary font-semibold"> 85201, 85204, 85208, and 85212</span>. Whether you need a top rated **mesa bathroom remodeling company**, a trusted **mesa bathroom remodeling contractor**, or are seeking custom **mesa bathroom renovation** solutions, our team delivers superior results.
+              At ARZ Home Remodeling, we provide end-to-end design and construction services tailored to the unique architectural profiles of Mesa neighborhoods. Whether you want to modernize a hall bathroom in Dobson Ranch, convert a garden tub to a walk-in shower in Las Sendas, or design a luxury master suite retreat in Eastmark, we handle the entire project. We hold active contracting license ROC #338304 and serve homeowners across ZIP codes **85201, 85202, 85203, 85204, 85205, 85206, 85207, 85208, 85212, and 85213**.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              **Inspections and Building Safety in Mesa:** Any structural layout changes (such as expanding a shower footprint or removing a load bearing tub partition) require coordination with the **Mesa Building Safety Division**. ARZ Home Remodeling manages the entire architectural review, structural framing planning, and inspection pipeline, giving you complete peace of mind that your home's structural integrity is verified and protected.
+              Relocating plumbing lines, expanding shower framing, or running new electrical circuits in Mesa requires strict code compliance. The **City of Mesa Building Safety Division** (located at 55 N Center Street) requires formal building permits and field inspections for these structural and mechanical changes. Our team handles the entire permit administration process, drafting code-compliant plans, coordinating inspections for in-wall rough-ins, and ensuring that all PEX supply lines, ASSE-certified anti-scald valves, and GFCI circuits meet current residential safety standards.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              **Mesa Historic District Specializations:** For homeowners in Mesa's historic neighborhoods (like the Robson Historic District and Temple Historic District), we specialize in restoring bathrooms to fit the home's original character. We pair modern plumbing and waterproofing systems with vintage classic aesthetics, including elegant clawfoot tub restorations, timeless subway tiling, and traditional custom wood vanities.
+              We adapt our craftsmanship to match the distinct community profiles across Mesa:
             </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              **HOA Coordination in Master Planned Communities:** If you reside in **Las Sendas**, **Eastmark**, or **Red Mountain Ranch**, we handle direct coordination with your HOA. We ensure full compliance regarding contractor working hours, parking spaces, and dumpster placement, preventing community friction.
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Our local craftsmanship is trusted by homeowners across Mesa, AZ. We handle every layout upgrade, plumbing line reconfiguration, and custom tile installation with precision, making us the premier choice for your next bathroom remodeling project.
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Finding a reliable remodeling contractor has never been easier. We pride ourselves on clear pricing, absolute transparency, and outstanding customer service. Contact us today to discuss your vision and start planning your custom bathroom renovation.
-            </p>
+            <ul className="space-y-4 mb-6">
+              <li className="text-muted-foreground text-lg leading-relaxed">
+                <strong className="text-foreground">Historic Mesa Districts (Robson & Temple Districts):</strong> Many historic homes feature plaster walls, aging cast-iron drains, and unique spatial limitations. We specialize in retrofitting these bathrooms, removing framing decay, reinforcing joists, and installing vintage-styled clawfoot tubs or subway tiling that preserves the historic character while utilizing modern Schluter-KERDI waterproofing substrates.
+              </li>
+              <li className="text-muted-foreground text-lg leading-relaxed">
+                <strong className="text-foreground">Las Sendas & Red Mountain Ranch:</strong> Built on sloped terrain, homes here feature concrete slab foundations. Shifting drains requires precise concrete trenching and sewer line layout adjustments. We handle slab cutting, stack re-routing, and coordinate with HOA guidelines regarding contractor parking and dumpster management.
+              </li>
+              <li className="text-muted-foreground text-lg leading-relaxed">
+                <strong className="text-foreground">Eastmark & Cadence:</strong> These newer developments feature contemporary framing layouts. We focus on modern floating vanities, quartz surfaces, large-format tile (reducing grout joints), and high-efficiency ventilation setups.
+              </li>
+            </ul>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <a href={`tel:${siteConfig.phoneClean}`} className="flex items-center gap-2">

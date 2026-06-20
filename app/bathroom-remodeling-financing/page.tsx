@@ -10,9 +10,7 @@ import { FAQSchema, BreadcrumbSchema } from "@/components/seo/json-ld";
 import Link from "next/link";
 import { ArrowRight, DollarSign, CheckCircle2, Percent } from "lucide-react";
 
-export const metadata: Metadata = {title: {
-    absolute: "Financing Guide Services | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore financing guide services, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Financing Chandler AZ | Free Estimate",description: "Professional bathroom remodeling financing in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Financing Guide Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore financing guide services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-financing/`,
     type: "website",
@@ -44,9 +42,9 @@ const financingFaqs = [
       "Yes. All of our direct partner lending options feature zero prepayment penalties. You can make extra payments or pay off the entire balance early to save on interest costs."
   },
   {
-    question: "How much is the monthly payment for a $20,000 master bathroom remodel?",
+    question: "How are monthly payments calculated for a master bathroom remodel?",
     answer:
-      "For a $20,000 project, a standard 84-month unsecured home improvement loan with an average interest rate (around 7.9% to 9.9%) yields a monthly payment of approximately $310 to $330. Excellent credit profiles can achieve lower payments."
+      "Monthly payments depend on the total project cost, the loan term (typically 3 to 15 years), and your credit profile. Unsecured home improvement loans offer fixed interest rates with predictable monthly payments and no prepayment penalties. Contact us today to get pre-qualified and receive custom payment estimates."
   },
 ];
 
@@ -70,23 +68,23 @@ const financingOptions = [
 const paymentEstimates = [
   {
     projectType: "Guest Bath Cosmetic Refresh",
-    cost: "$6,000",
-    term: "60 Months",
-    payment: "$120 - $140 /mo",
+    cost: "Standard Scope",
+    term: "Flexible Terms",
+    payment: "Low Monthly Option",
     highlight: false,
   },
   {
     projectType: "Full Guest Bath / Tub Conversion",
-    cost: "$15,000",
-    term: "84 Months",
-    payment: "$225 - $250 /mo",
+    cost: "Mid-Range Scope",
+    term: "Flexible Terms",
+    payment: "Affordable Monthly Option",
     highlight: true,
   },
   {
     projectType: "Luxury Master Suite Remodel",
-    cost: "$35,000",
-    term: "120 Months",
-    payment: "$390 - $430 /mo",
+    cost: "Luxury Custom Scope",
+    term: "Flexible Terms",
+    payment: "Custom Monthly Option",
     highlight: false,
   },
 ];

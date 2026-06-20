@@ -84,7 +84,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "What is the typical bathroom remodel chandler az cost?",
         answer:
-          "A master bathroom remodel or luxury renovation with custom tile walk-in showers starts at $22,000, while secondary guest bathroom updates generally range from $12,500 to $18,000 depending on fixture and vanity selections.",
+          "Bathroom remodeling costs vary based on design layout, footprint expansions, and material selections. Standard guest bathroom refreshes represent a standard scope, while custom master suite transformations with tiled walk-in showers represent a customized scope. We offer free on-site consultations to prepare detailed, line-item written estimates.",
       },
       {
         question: "Why should Chandler homeowners choose your design-build services?",
@@ -174,7 +174,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "What's the cost difference between frameless glass and a shower enclosure?",
         answer:
-          "Frameless glass enclosures run $1,800–$4,500 depending on size and thickness, while traditional framed enclosures cost $800–$2,000. Frameless offers superior aesthetics and easier cleaning, making it a popular choice for modern Chandler homes.",
+          "Frameless glass enclosures vary based on size and glass thickness, while traditional framed enclosures represent a standard option. Frameless glass offers superior aesthetics and easier cleaning, making it a popular choice for modern Chandler homes.",
       },
       {
         question: "How do I handle hard water stains on my new shower tile?",
@@ -1051,7 +1051,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "How much does a whole-home renovation cost in Chandler?",
         answer:
-          "Costs typically range from $100–$250 per square foot depending on finishes and structural changes. A full mid-range renovation for a 2,000 sq ft home often falls between $150,000 and $300,000.",
+          "Whole-home renovations vary based on material selection, structural layout shifts, and the age of the property. We offer free on-site consultations to discuss your design goals and prepare a detailed, line-item proposal for your project.",
       },
       {
         question: "How long will I be out of my kitchen or home during renovation?",

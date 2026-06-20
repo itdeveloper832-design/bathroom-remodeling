@@ -7,9 +7,7 @@ import { BreadcrumbSchema } from "@/components/seo/json-ld"
 import { ExternalLink, Award, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {title: {
-    absolute: "Bathroom Remodel Team | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel team, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Team Chandler AZ | Free Estimate",description: "Professional team in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Bathroom Remodel Team | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel team, custom showers, tile, vanities, clear pricing, and free estimates.",
     type: "website",
     url: `${siteConfig.url}/team/`,

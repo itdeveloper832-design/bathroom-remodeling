@@ -10,9 +10,7 @@ import { FAQSchema, BreadcrumbSchema } from "@/components/seo/json-ld";
 import Link from "next/link";
 import { ArrowRight, FileText, CheckCircle2, AlertTriangle } from "lucide-react";
 
-export const metadata: Metadata = {title: {
-    absolute: "Permits Chandler Guide | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore permits chandler guide, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Permits Chandler Chandler AZ | Free Esti",description: "Professional bathroom remodeling permits chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Permits Chandler Guide | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore permits chandler guide, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-permits-chandler/`,
     type: "website",
@@ -31,7 +29,7 @@ const permitFaqs = [
   {
     question: "How much do bathroom remodeling permits cost in Chandler?",
     answer:
-      "For a typical residential bathroom remodel, City of Chandler permit fees range from $250 to $800. The cost depends on the project valuation and the number of trade categories involved (structural, electrical, plumbing, mechanical). We include all permit procurement and coordination fees in our written bids."
+      "City of Chandler permit fees are calculated based on the project's overall valuation and the specific trade categories involved (such as structural, electrical, plumbing, or mechanical updates). We handle all permit applications, plans, and city coordinator fees, integrating them directly into our line-item written bids."
   },
   {
     question: "How long does it take to get a bathroom permit in Chandler?",

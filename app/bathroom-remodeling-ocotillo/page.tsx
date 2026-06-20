@@ -57,7 +57,7 @@ const ocotilloFaqs = [
   {
     question: "How much does a custom bathroom remodel cost in Ocotillo, Chandler?",
     answer:
-      "Ocotillo bathroom renovations range from $12,000 for standard guest bath updates up to $45,000+ for large master bathrooms with freestanding soaking tubs and glass walk-in showers. We provide free, detailed itemized quotes."
+      "Ocotillo bathroom renovations vary based on project scope, layout adjustments, and material selections. Standard guest bath updates are highly customizable, while luxury master suite transformations featuring premium freestanding tubs, walk-in tiled showers, and custom double vanities are designed to your specifications. We provide free, detailed itemized quotes."
   },
   {
     question: "Can you design a curbless walk-in shower?",
@@ -72,21 +72,21 @@ const services = [
     href: "/walk-in-showers/",
     description:
       "We build modern, curbless walk-in showers featuring frameless glass, custom benches, and dual rainfall showerheads. Every shower is built with Schluter-KERDI waterproofing to guarantee long-term protection.",
-    price: "From $6,500",
+    price: "Free Estimate",
   },
   {
     title: "Tub-to-Shower Conversions",
     href: "/tub-to-shower-conversion/",
     description:
       "Convert your unused garden tub into a spacious tiled walk-in shower. This is the #1 home ROI project in Chandler, opening up physical space and upgrading your home's resale value.",
-    price: "$6,500 to $14,000",
+    price: "Free Estimate",
   },
   {
     title: "Luxury Master Bath Remodeling",
     href: "/master-bathroom-remodel/",
     description:
       "Complete gut-and-rebuild transformations. We install premium double vanities, freestanding soaking tubs, custom ambient lighting, and high-end porcelain tile flooring.",
-    price: "$20,000 to $50,000+",
+    price: "Free Estimate",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function OcotilloPage() {
       <FAQSchema faqs={ocotilloFaqs} />
       <PriceSchema
         serviceName="Ocotillo Bathroom Remodeling"
-        priceRange="$5,000 - $50,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-ocotillo/`}
       />
       <Header />

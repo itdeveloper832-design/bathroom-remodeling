@@ -22,9 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "San Tan Valley Bath | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore san tan valley bath, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Bathroom Remodeling San Tan Valley Az Chandler AZ | Free Est",description: "Professional bathroom remodeling san tan valley az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "San Tan Valley Bath | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore san tan valley bath, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-san-tan-valley-az/`,
     type: "website",
@@ -72,21 +70,21 @@ const services = [
     href: "/ada-bathroom-remodeling/",
     description:
       "Ideal for modern luxury and universal access. We lower the subfloor substrate to build a perfectly flat, barrier-free tiled shower entry, equipped with safety grab bars, linear drains, and frameless glass panels.",
-    price: "From $8,500",
+    price: "Free Custom Estimate",
   },
   {
     title: "Tub-to-Shower Conversions",
     href: "/tub-to-shower-conversion/",
     description:
       "We replace old, high-sided acrylic bathtubs or fiberglass surrounds with spacious tiled walk-in showers. This is our most popular service to optimize floor plans.",
-    price: "$6,000 to $14,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Complete Master Bath Overhauls",
     href: "/master-bathroom-remodel/",
     description:
       "Transform your master bath with custom double vanities, premium quartz tops, luxury freestanding tubs, custom porcelain wall tiling, and updated ambient led lighting setups.",
-    price: "$18,000 to $45,000+",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -127,22 +125,22 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 to $9,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 to $18,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 to $13,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Master Bathroom Remodel",
     detail: "Full scope: shower, vanity, tile, lighting",
-    range: "$18,000 to $45,000+",
+    range: "Free Custom Estimate",
   },
 ];
 
@@ -172,7 +170,7 @@ export default function SanTanValleyPage() {
       <FAQSchema faqs={sanTanValleyFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling in San Tan Valley AZ"
-        priceRange="$4,500 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-san-tan-valley-az/`}
       />
       <Header />

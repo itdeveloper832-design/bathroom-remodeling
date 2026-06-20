@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 const pricingTiers = [
   {
     name: "Guest & Hall Bath Refresh",
-    price: "From $4,500",
+    price: "Free Custom Estimate",
     description: "Ideal for maximizing tight spaces and guest bathroom updates.",
     features: [
       "New custom single vanity & top",
@@ -19,7 +19,7 @@ const pricingTiers = [
   },
   {
     name: "Tub-to-Shower Conversion",
-    price: "From $6,000",
+    price: "Free Custom Estimate",
     description: "Our most popular service. Replace an unused tub with a safety walk-in shower.",
     features: [
       "Demolition of old cast iron/fiberglass tub",
@@ -32,7 +32,7 @@ const pricingTiers = [
   },
   {
     name: "Luxury Master Spa Suite",
-    price: "From $18,000",
+    price: "Free Custom Estimate",
     description: "Complete master bath reconfiguration for a premium spa-like retreat.",
     features: [
       "Custom double vanities & polished quartz",
@@ -51,13 +51,13 @@ export default function PricingTable() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <span className="text-primary text-sm font-semibold tracking-wider uppercase bg-primary/5 px-4 py-1.5 rounded-full">
-            Transparent Pricing
+            Project Scopes
           </span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mt-6 mb-6 text-foreground text-balance">
-            Average Project Scopes & Starting Costs
+            Average Project Scopes & Custom Estimates
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Every home is unique. We provide honest, upfront starting estimates so you can plan your Chandler bathroom remodel with absolute financial clarity.
+            Every home is unique, and pricing depends entirely on your layout, material choices, and plumbing/electrical needs. Call us today for a free, itemized, in-home estimate.
           </p>
         </div>
 

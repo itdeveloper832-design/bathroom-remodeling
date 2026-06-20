@@ -12,9 +12,7 @@ import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "Queen Creek Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore queen creek bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Queen Creek Az Chandler AZ | Free Estima",description: "Professional bathroom remodeling queen creek az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Queen Creek Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore queen creek bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-queen-creek-az/`,
     type: "website",
@@ -55,7 +53,7 @@ export default function QueenCreekPage() {
       <FAQSchema faqs={queenCreekFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling Queen Creek"
-        priceRange="$8,000 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-queen-creek-az/`}
       />
       <Header />

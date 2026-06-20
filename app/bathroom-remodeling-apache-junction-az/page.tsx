@@ -13,9 +13,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Clock } from "lucide-react";
 
-export const metadata: Metadata = {title: {
-    absolute: "Bathroom Remodeling Apache Junction AZ | ARZ"
-  },description: "Licensed bathroom remodeling in Apache Junction, AZ. Custom showers, tub conversions & tile. Schluter waterproofing system. Free estimate: (520) 569-3339.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Apache Junction Az Chandler AZ | Free Es",description: "Professional bathroom remodeling apache junction az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Bathroom Remodeling Apache Junction AZ | ARZ",description: "Licensed bathroom remodeling in Apache Junction, AZ. Custom showers, tub conversions & tile. Schluter waterproofing system. Free estimate: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-apache-junction-az/`,
     type: "website",
@@ -29,7 +27,7 @@ const apacheJunctionFaqs = [
   {
     question: "How much does a bathroom remodel cost in Apache Junction?",
     answer:
-      "A professional bathroom remodel in Apache Junction, Arizona typically averages between nine thousand five hundred and thirty four thousand dollars. Small guest bathroom updates or tub swaps range from seven thousand five hundred to sixteen thousand dollars, while custom master bathroom overhauls with high performance tile and frameless glass can go from twenty thousand to over forty five thousand dollars. We provide transparent, itemized quotes."
+      "Bathroom remodeling costs in Apache Junction depend on layout changes, square footage, tile selections, and fixture choices. We provide free on-site inspections and prepare a detailed, line-item written estimate before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your quote."
   },
   {
     question: "Do you need a permit for bathroom remodeling in Apache Junction?",
@@ -56,7 +54,7 @@ export default function ApacheJunctionPage() {
       <FAQSchema faqs={apacheJunctionFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling Apache Junction"
-        priceRange="$7,500 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-apache-junction-az/`}
       />
       <Header />

@@ -22,9 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "Garage Conversion Baths | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore garage conversion baths, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Garage Conversion Chandler Chandler AZ | Free Estimate",description: "Professional garage conversion chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Garage Conversion Baths | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore garage conversion baths, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/garage-conversion-chandler/`,
     type: "website",
@@ -72,21 +70,21 @@ const services = [
     href: "/contact/",
     description:
       "Convert your underutilized 2-car or 3-car garage into a spectacular, spacious master suite addition. Includes concrete slab trenching, custom spa-like walk-in tiled shower installation, custom walk-in closet, and premium insulation.",
-    price: "From $45,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Luxury Guest Quarters & Casitas",
     href: "/contact/",
     description:
       "Transform your garage into an attached guest casita with private exterior entry, high-efficiency ductless mini-split climate controls, luxury quartz kitchenette, and beautiful custom tile flooring.",
-    price: "From $48,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Professional Home Offices & Studios",
     href: "/contact/",
     description:
       "Create a private, insulated sanctuary to work from home. Complete with soundproof wall framing, recessed LED ambient lighting, dedicated ethernet/power drops, and elegant double french doors.",
-    price: "From $25,000",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -127,17 +125,17 @@ const pricingTiers = [
   {
     label: "Garage Home Office / Studio Conversion",
     detail: "Wall framing, R-19 insulation, drywall, flooring, mini-split AC",
-    range: "From $25,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Garage Guest Quarters (Attached Casita)",
     detail: "Framing, insulation, plumbing, private entry, kitchenette",
-    range: "From $45,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Garage Master Suite Conversion",
     detail: "Full custom layout: custom master bathroom, walk-in closet",
-    range: "From $48,000+",
+    range: "Free Custom Estimate",
   },
 ];
 
@@ -162,7 +160,7 @@ export default function GarageConversionPage() {
       <FAQSchema faqs={conversionFaqs} />
       <PriceSchema
         serviceName="Garage Conversion in Chandler AZ"
-        priceRange="$25,000 - $48,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/garage-conversion-chandler/`}
       />
       <Header />

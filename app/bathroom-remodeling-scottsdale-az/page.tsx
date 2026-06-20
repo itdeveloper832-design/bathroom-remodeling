@@ -39,7 +39,7 @@ const scottsdaleFaqs = [
   {
     question: "How much does a bathroom remodel cost in Scottsdale, AZ?",
     answer:
-      "Scottsdale bathroom remodels often range from twenty five thousand to seventy five thousand dollars for luxury master suites. Smaller guest bathrooms typically range from twelve thousand to twenty two thousand dollars. We provide fixed-price quotes based on your specific material selections."
+      "Bathroom remodeling costs in Scottsdale depend entirely on the scope of the project, including structural changes, luxury material selections, and fixture upgrades. We offer free design consultations and prepare a detailed, line-item written estimate before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your quote."
   },
   {
     question: "Do you handle permits for Scottsdale bathroom projects?",
@@ -66,7 +66,7 @@ export default function ScottsdalePage() {
       <FAQSchema faqs={scottsdaleFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling Scottsdale"
-        priceRange="$12,000 - $75,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-scottsdale-az/`}
       />
       <Header />

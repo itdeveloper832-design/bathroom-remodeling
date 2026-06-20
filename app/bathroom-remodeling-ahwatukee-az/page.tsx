@@ -61,7 +61,7 @@ const ahwatukeeFaqs = [
   {
     question: "How much does a bathroom remodel cost in Ahwatukee, AZ?",
     answer:
-      "Guest bath remodels run ten thousand to eighteen thousand dollars. Tub to shower conversions are six thousand to thirteen thousand dollars. Master bathrooms range from eighteen thousand to forty five thousand dollars. We offer free, itemized estimates so you know exactly what you are paying for."
+      "Bathroom remodeling costs in Ahwatukee are highly customized, depending on the layout, materials, and complexity of the project. We provide free on-site inspections and prepare detailed, line-item written estimates before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your quote."
   },
   {
     question: "Can you remodel my shower without replacing the whole bathroom?",
@@ -86,21 +86,21 @@ const services = [
     href: "/shower-remodeling/",
     description:
       "We convert outdated tub and shower combos into open, curbless walk-in showers with frameless glass, custom tile, and rainfall showerheads. We use the Schluter waterproofing system for a leak-proof result.",
-    price: "From $6,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Tub-to-Shower Conversion",
     href: "/tub-to-shower-conversion/",
     description:
       "A highly requested service in Ahwatukee. We remove existing tubs, waterproof the substrate, and install a custom walk-in shower tailored to your layout. Adds usable space and ROI.",
-    price: "$6,000 to $13,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Complete Master Bathroom Remodel",
     href: "/master-bathroom-remodel/",
     description:
       "Our master bath remodels include: new shower enclosure, vanity replacement, tile flooring, updated lighting, and fixture upgrades. Timeline: three to five weeks. We manage all coordination and trades.",
-    price: "$18,000 to $45,000+",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -141,22 +141,22 @@ const pricingTiers = [
   {
     label: "Guest Bathroom Update",
     detail: "Vanity, toilet, fixtures, paint",
-    range: "$4,500 to $9,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Guest Bathroom Full Remodel",
     detail: "Tile, shower, vanity, flooring",
-    range: "$10,000 to $18,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Tub-to-Shower Conversion",
     detail: "Demo, waterproofing, custom shower build",
-    range: "$6,000 to $13,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Master Bathroom Remodel",
     detail: "Full scope: shower, vanity, tile, lighting",
-    range: "$18,000 to $45,000+",
+    range: "Free Custom Estimate",
   },
 ];
 
@@ -188,7 +188,7 @@ export default function AhwatukeePage() {
       <FAQSchema faqs={ahwatukeeFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling in Ahwatukee AZ"
-        priceRange="$4,500 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-ahwatukee-az/`}
       />
       <Header />

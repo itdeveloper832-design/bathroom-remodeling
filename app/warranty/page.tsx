@@ -5,9 +5,7 @@ import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
 import { Shield, CheckCircle, AlertTriangle, HelpCircle } from "lucide-react"
 
-export const metadata: Metadata = {title: {
-    absolute: "Workmanship Warranty | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore workmanship warranty, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Warranty Chandler AZ | Free Estimate",description: "Professional warranty in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Workmanship Warranty | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore workmanship warranty, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/warranty/`,
     type: "website",

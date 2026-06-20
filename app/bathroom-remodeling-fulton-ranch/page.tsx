@@ -47,7 +47,7 @@ const fultonRanchFaqs = [
   {
     question: "How much does a master bathroom remodel cost in Fulton Ranch?",
     answer:
-      "Full master bathroom renovations in Fulton Ranch custom homes generally range from $22,000 to $50,000+ depending on layout changes, plumbing moves, and material quality (such as custom marble or quartz). We provide detailed, itemized quotes before starting."
+      "Full master bathroom renovations in Fulton Ranch custom homes vary depending on layout changes, plumbing moves, and material selections (such as custom stone, marble, or quartz). We provide detailed, itemized quotes before any construction starts, ensuring a fixed-price guarantee."
   },
   {
     question: "What is your workmanship warranty for Fulton Ranch remodels?",
@@ -72,21 +72,21 @@ const services = [
     href: "/master-bathroom-remodel/",
     description:
       "We design custom master suites featuring floating vanities, quartz countertops, heated floors, and freestanding tubs. We handle the entire process from design to construction.",
-    price: "From $20,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Walk-In Shower Design",
     href: "/walk-in-showers/",
     description:
       "Convert your standard shower into a resort-style walk-in shower. Featuring curbless entries, custom tile work, built-in benches, and high-flow fixtures.",
-    price: "From $6,500",
+    price: "Free Custom Estimate",
   },
   {
     title: "Premium Tile Installation",
     href: "/bathroom-tile-installation/",
     description:
       "Professional layout and installation of porcelain, ceramic, or natural stone tiles. We use high-performance epoxy grout to resist hard water stains.",
-    price: "$4,000 to $12,000",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function FultonRanchPage() {
       <FAQSchema faqs={fultonRanchFaqs} />
       <PriceSchema
         serviceName="Fulton Ranch Bathroom Remodeling"
-        priceRange="$6,000 - $55,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-fulton-ranch/`}
       />
       <Header />

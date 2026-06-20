@@ -84,8 +84,8 @@ function getDynamicLocationFaqs(displayName: string, isZip: boolean, zipCode: st
     {
       question: `What is the average cost of a bathroom remodel in ${displayName}?`,
       answer: isZip 
-        ? `In the ${zipCode} area, guest bathroom updates typically range from ten thousand to eighteen thousand dollars, while luxury master bath transformations range from twenty five thousand to seventy five thousand dollars. We provide a fixed, detailed written quote with zero hidden charges.`
-        : `For homes in ${name}, bathroom updates typically range from ten thousand to eighteen thousand dollars, and full master suite renovations range from twenty five thousand to seventy five thousand dollars depending on scope and finishes. We offer free on-site consultations to discuss your specific budget.`
+        ? `In the ${zipCode} area, guest bathroom updates are highly customizable depending on scope, while luxury master bath transformations are tailored to your specific choices of tile, fixtures, and layout. We provide a fixed, detailed written quote with zero hidden charges.`
+        : `For homes in ${name}, bathroom updates and full master suite renovations vary based on scope, fixtures, and materials selected. We offer free on-site consultations to discuss your specific layout and provide a detailed estimate.`
     }
   ];
 }

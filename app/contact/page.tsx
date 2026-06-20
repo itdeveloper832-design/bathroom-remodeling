@@ -7,9 +7,7 @@ import { siteConfig } from "@/lib/site-config"
 import { Phone, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/seo/json-ld"
 
-export const metadata: Metadata = {title: {
-    absolute: "Free Bathroom Estimate | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore free bathroom estimate, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Contact ARZ Home Remodeling | Chandler AZ",description: "Need a bathroom remodel in Chandler, AZ? Contact ARZ Home Remodeling today for a free consultation and project estimate.",
   openGraph: {title: "Free Bathroom Estimate | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore free bathroom estimate, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/contact/`,
     type: "website",
@@ -127,61 +125,6 @@ export default function ContactPage() {
         {/* Contact Form */}
         <ContactSection />
 
-        {/* Testimonials Section */}
-        <section className="py-20 md:py-28 bg-secondary">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto text-center mb-16">
-              <span className="text-sm font-medium tracking-widest text-primary uppercase">
-                What Customers Say
-              </span>
-              <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold text-foreground text-balance">
-                Trusted by Chandler Homeowners
-              </h2>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {[
-                {
-                  name: "Sarah Johnson",
-                  project: "Master Bathroom Remodel",
-                  text: "Chandler Bathroom Remodeling transformed our outdated bathroom into a luxury spa-like retreat. The craftsmanship is exceptional!",
-                  rating: 5
-                },
-                {
-                  name: "Mike Davis",
-                  project: "Walk-in Shower Installation",
-                  text: "Professional, punctual, and the quality of work exceeded all expectations. Highly recommend to anyone in Chandler!",
-                  rating: 5
-                },
-                {
-                  name: "Jennifer Martinez",
-                  project: "Bathroom Vanity Upgrade",
-                  text: "Best decision we made for our home. The team was respectful, clean, and the final result is stunning.",
-                  rating: 5
-                }
-              ].map((testimonial, index) => (
-                <div key={index} className="bg-card border border-border rounded-xl p-8">
-                  <div className="flex gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground italic mb-6">
-                    &quot;{testimonial.text}&quot;
-                  </p>
-                  <div>
-                    <p className="font-serif font-semibold text-foreground">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-sm text-primary">
-                      {testimonial.project}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Trust & Credentials */}
         <section className="py-16 bg-foreground text-background">

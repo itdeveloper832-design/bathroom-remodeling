@@ -16,9 +16,7 @@ import { serviceContent } from "@/lib/service-content-data";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {title: {
-    absolute: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Chandler AZ | Free Estimate",description: "Professional bathroom remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling`,
     type: "website",
@@ -56,7 +54,7 @@ export default function BathroomRemodelingPage() {
       />
       <PriceSchema
         serviceName="Bathroom Remodeling"
-        priceRange="$12,500 - $38,000"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling/`}
       />
       <FAQSchema faqs={serviceFaqs} />
@@ -203,7 +201,7 @@ export default function BathroomRemodelingPage() {
                 </p>
                 <div className="border-t border-border pt-6 mt-auto">
                   <p className="text-xs text-muted-foreground mb-1">Typical Investment Range</p>
-                  <p className="text-2xl font-semibold text-foreground font-serif">$4,500 – $9,000</p>
+                  <p className="text-2xl font-semibold text-foreground font-serif">Free Custom Estimate</p>
                 </div>
               </div>
 
@@ -219,7 +217,7 @@ export default function BathroomRemodelingPage() {
                 </p>
                 <div className="border-t border-border pt-6 mt-auto">
                   <p className="text-xs text-muted-foreground mb-1">Typical Investment Range</p>
-                  <p className="text-2xl font-semibold text-foreground font-serif">$10,000 – $18,000</p>
+                  <p className="text-2xl font-semibold text-foreground font-serif">Free Custom Estimate</p>
                 </div>
               </div>
 
@@ -232,7 +230,7 @@ export default function BathroomRemodelingPage() {
                 </p>
                 <div className="border-t border-border pt-6 mt-auto">
                   <p className="text-xs text-muted-foreground mb-1">Typical Investment Range</p>
-                  <p className="text-2xl font-semibold text-foreground font-serif">$18,000 – $45,000+</p>
+                  <p className="text-2xl font-semibold text-foreground font-serif">Free Custom Estimate</p>
                 </div>
               </div>
             </div>
@@ -309,7 +307,7 @@ export default function BathroomRemodelingPage() {
               </Link>
               <Link href="/tub-to-shower-conversion/" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">Tub-to-Shower Conversion</p>
-                <p className="text-muted-foreground text-xs mt-1">From $6,000</p>
+                <p className="text-muted-foreground text-xs mt-1">Free Custom Estimate</p>
               </Link>
               <Link href="/master-bathroom-remodel/" className="bg-background border border-border rounded-xl p-4 hover:border-primary transition-colors group">
                 <p className="font-semibold text-foreground group-hover:text-primary text-sm">Master Bathroom Remodel</p>

@@ -28,7 +28,7 @@ const phoenixFaqs = [
   {
     question: "How much does a bathroom remodel cost in Phoenix, AZ?",
     answer:
-      "Phoenix bathroom remodels typically range from twelve thousand dollars for guest bathrooms to forty thousand dollars for luxury master suites. Tub to shower conversions are a popular mid range option starting around six thousand dollars. We provide free, itemized estimates for every project."
+      "Bathroom remodeling costs in Phoenix are highly customized, depending on the layout, materials, and complexity of the project. We provide free on-site inspections and prepare detailed, line-item written estimates before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your quote."
   },
   {
     question: "Are you licensed to work in Phoenix?",
@@ -55,7 +55,7 @@ export default function PhoenixPage() {
       <FAQSchema faqs={phoenixFaqs} />
       <PriceSchema
         serviceName="Bathroom Remodeling Phoenix"
-        priceRange="$6,000 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-phoenix-az/`}
       />
       <Header />

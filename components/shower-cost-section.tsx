@@ -10,27 +10,27 @@ interface CostRow {
 const costData: CostRow[] = [
   {
     projectType: "Shower tile replacement (same footprint)",
-    range: "$3,500–$6,500",
+    range: "Standard Level",
     included: "Demo, waterproofing check, new porcelain tile, epoxy grout, caulk",
   },
   {
     projectType: "New walk-in tile shower",
-    range: "$6,500–$12,000",
+    range: "Mid-Range Scope",
     included: "Full demo, Schluter waterproofing, tile, niche, frameless glass panel",
   },
   {
     projectType: "Tub-to-shower conversion",
-    range: "$5,500–$12,000",
+    range: "Mid-Range Scope",
     included: "Tub removal, drain reset, waterproofing, tile, glass door or panel",
   },
   {
     projectType: "Curbless / ADA shower",
-    range: "$8,000–$14,000",
+    range: "Luxury Custom Scope",
     included: "Linear drain, sloped pan, slip-resistant tile, grab bars, optional glass",
   },
   {
     projectType: "Master bath shower expansion",
-    range: "$10,000–$18,000+",
+    range: "Luxury Custom Scope",
     included: "Layout changes, plumbing relocation, large-format tile, rainfall head",
   },
 ];
@@ -44,7 +44,7 @@ export default function ShowerCostSection() {
             How Much Does Shower Remodeling Cost in Chandler, AZ?
           </h2>
           <p className="text-lg text-muted-foreground mb-6">
-            Most shower remodels in Chandler run between $4,500 and $18,000 depending on size, tile choice, glass type, and whether plumbing moves. Here is what homeowners in the East Valley typically spend:
+            Shower remodeling updates vary in scope based on sizing, tile choice, glass type, and layout adjustments. We provide free on-site consultations to prepare detailed, line-item written estimates.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ export default function ShowerCostSection() {
             <thead>
               <tr className="bg-background border-b border-border">
                 <th className="px-6 py-4 text-left font-semibold text-foreground">Project Type</th>
-                <th className="px-6 py-4 text-left font-semibold text-foreground">Typical Range</th>
+                <th className="px-6 py-4 text-left font-semibold text-foreground">Project Scope</th>
                 <th className="px-6 py-4 text-left font-semibold text-foreground">What's Included</th>
               </tr>
             </thead>

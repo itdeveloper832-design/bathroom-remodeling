@@ -16,37 +16,37 @@ const showerTypes: ShowerType[] = [
     title: "Walk-In Tile Showers",
     description:
       "Custom porcelain or natural stone tile showers with a low curb or curbless entry. We handle waterproofing, niche installation, bench framing, and frameless glass. Most popular upgrade in Chandler homes replacing old fiberglass surrounds.",
-    priceRange: "$6,500–$14,000",
+    priceRange: "Mid-Range Scope",
   },
   {
     title: "Frameless Glass Shower Enclosures",
     description:
       "Frameless glass panels cut to your exact opening, leaving no aluminum channels collecting soap scum. Works on new tile installs and retrofits. Clear, low-iron, or frosted glass options. Most homeowners in Fulton Ranch and Ocotillo request frameless for a clean, modern look.",
-    priceRange: "$1,800–$4,500",
+    priceRange: "Standard to Custom Upgrade",
   },
   {
     title: "Curbless / Zero-Threshold Showers",
     description:
       "A curbless shower in Chandler eliminates the step-over lip, which is ideal for aging in place, ADA compliance, or just a cleaner look. We slope the pan floor to a linear or center drain and install slip-resistant tile (COF 0.60+). Common in Sun Lakes and near Chandler Regional Medical Center.",
-    priceRange: "$8,000–$14,000",
+    priceRange: "Luxury Custom Scope",
   },
   {
     title: "Tub-to-Shower Conversion",
     description:
       "Remove an unused garden tub, reset the drain, waterproof the floor pan and walls with Schluter-Kerdi, and build a full walk-in shower in the same footprint. Our most-requested project in older Chandler ranch homes.",
-    priceRange: "$5,500–$12,000",
+    priceRange: "Mid-Range Scope",
   },
   {
     title: "Shower Tile Replacement",
     description:
       "Cracked grout, failing caulk, or stained builder-grade tile? We demo the old tile down to the substrate, inspect for moisture damage, re-waterproof if needed, and install new porcelain. Chandler's hard water destroys standard grout fast, so we recommend epoxy grout on all shower walls.",
-    priceRange: "$3,500–$6,500",
+    priceRange: "Standard Level",
   },
   {
     title: "Master Bath Shower Upgrades",
     description:
       "Expand a small master shower into a double-entry or rain-head shower. Relocate the valve, add a bench, or convert a soaking tub alcove into a wet room. Popular in Chandler master suites built in the 2000s that have outdated tile and low ceilings.",
-    priceRange: "$10,000–$18,000+",
+    priceRange: "Luxury Custom Scope",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function ShowerTypes({ title = "Types of Shower Remodels We Do in
                   {showerType.title}
                 </h3>
                 <p className="text-sm font-medium text-primary mb-4">
-                  Starting around {showerType.priceRange}
+                  Project Scope: {showerType.priceRange}
                 </p>
               </div>
               <p className="text-foreground/90 leading-relaxed text-sm">

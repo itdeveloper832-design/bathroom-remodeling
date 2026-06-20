@@ -6,7 +6,7 @@ const answers = [
     icon: DollarSign,
     question: "How much does a bathroom remodel cost in Chandler?",
     answer:
-      "Most full remodels run about $12,500 to $38,000+. Guest baths are often $6,500 to $15,000. Tub-to-shower conversions are commonly $8,500 to $16,000. You get a written line-item estimate first.",
+      "Project costs depend entirely on square footage, layout changes, and material selections. We offer free on-site inspections and provide a detailed, line-item written estimate before any work begins. Call us today to schedule your quote.",
     link: { href: "/bathroom-remodel-cost-chandler/", label: "See Chandler cost guide" },
   },
   {

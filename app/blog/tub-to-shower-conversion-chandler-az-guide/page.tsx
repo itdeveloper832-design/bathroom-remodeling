@@ -233,12 +233,12 @@ export default function StandaloneBlogPost() {
 
                     <hr />
 
-                    <h2 id="costs">Real Cost Ranges for Tub-to-Shower Conversions in Chandler, AZ</h2>
+                    <h2 id="costs">Real Project Scopes for Tub-to-Shower Conversions in Chandler, AZ</h2>
                     <p>
-                      A tub-to-shower conversion is a highly customized project, and the total cost depends on the scope of plumbing changes, structural modifications, and material selections. In the East Valley, a professional conversion typically ranges from <strong>$4,500 to over $25,000</strong>.
+                      A tub-to-shower conversion is a highly customized project, and the total investment depends on the scope of plumbing changes, structural modifications, and material selections. In the East Valley, a professional conversion typically varies based on whether you choose a basic insert, custom tile, or curbless luxury wet room.
                     </p>
                     <p>
-                      Here is a realistic breakdown of project scopes and their associated cost ranges:
+                      Here is a realistic breakdown of project scopes and their associated details:
                     </p>
 
                     <div className="overflow-x-auto my-8">
@@ -246,7 +246,7 @@ export default function StandaloneBlogPost() {
                         <thead>
                           <tr className="bg-secondary">
                             <th className="p-3 border border-border/50 font-bold">Conversion Level</th>
-                            <th className="p-3 border border-border/50 font-bold">Average Cost Range</th>
+                            <th className="p-3 border border-border/50 font-bold">Pricing Scope</th>
                             <th className="p-3 border border-border/50 font-bold">Typical Project Specifications</th>
                             <th className="p-3 border border-border/50 font-bold">Estimated Timeline</th>
                           </tr>
@@ -254,19 +254,19 @@ export default function StandaloneBlogPost() {
                         <tbody>
                           <tr>
                             <td className="p-3 border border-border/50 font-bold">Budget-Friendly Refresh</td>
-                            <td className="p-3 border border-border/50">$4,500 – $8,500</td>
+                            <td className="p-3 border border-border/50">Standard Scope / Contact for Estimate</td>
                             <td className="p-3 border border-border/50">Acrylic or fiberglass shower pan, solid surface wall panels, and semi-frameless sliding glass door. Plumbing remains in place.</td>
                             <td className="p-3 border border-border/50">3 to 5 Days</td>
                           </tr>
                           <tr className="bg-secondary/20">
                             <td className="p-3 border border-border/50 font-bold">Standard Custom Tile Conversion</td>
-                            <td className="p-3 border border-border/50">$8,500 – $16,000</td>
+                            <td className="p-3 border border-border/50">Custom Tiled / Contact for Estimate</td>
                             <td className="p-3 border border-border/50">Demolition to studs, pre-sloped mortar bed, custom porcelain tile walls, built-in recessed niche, and 3/8-inch frameless glass panel. Includes expanding the drain line.</td>
                             <td className="p-3 border border-border/50">7 to 10 Days</td>
                           </tr>
                           <tr>
                             <td className="p-3 border border-border/50 font-bold">Luxury Wet Room / Master Suite</td>
-                            <td className="p-3 border border-border/50">$16,000 – $25,000+</td>
+                            <td className="p-3 border border-border/50">Luxury Custom / Contact for Estimate</td>
                             <td className="p-3 border border-border/50">Zero-threshold (curbless) entry, high-flow linear drain, custom tile shower pan, dual rain shower heads, bench seat, premium tile, and hydrophobic coated glass.</td>
                             <td className="p-3 border border-border/50">2 to 3 Weeks</td>
                           </tr>
@@ -275,7 +275,7 @@ export default function StandaloneBlogPost() {
                     </div>
 
                     <p>
-                      If you are budgeting for a broader renovation, you can also view our <Link href="/bathroom-remodel-cost-chandler/">bathroom remodel cost Chandler</Link> guide for additional tables and pricing factors.
+                      If you are budgeting for a broader renovation, you can also view our <Link href="/bathroom-remodel-cost-chandler/">bathroom remodel cost Chandler</Link> guide for additional layout and design factors.
                     </p>
 
                     <blockquote>

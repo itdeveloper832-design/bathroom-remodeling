@@ -13,9 +13,7 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {title: {
-    absolute: "Master Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore master bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Master Bathroom Remodel Chandler AZ | Free Estimate",description: "Professional master bathroom remodel in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Master Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore master bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/master-bathroom-remodel/`,
     type: "website",
@@ -51,7 +49,7 @@ const faqs = [
   {
     question: "How much does a master bathroom remodel cost in Chandler, AZ?",
     answer:
-      "Master bathroom remodels in Chandler range from eighteen thousand to forty five thousand dollars depending on the size, material selections, and whether plumbing is being relocated. We provide free, itemized written estimates before any work starts."
+      "Master bathroom remodeling costs vary depending on the size of the space, material selections (like custom cabinetry or quartz slabs), and whether you are shifting plumbing lines or reconfiguring the layout. We provide free on-site consultations and detailed, line-item written estimates before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your quote."
   },
   {
     question: "Do you handle permits for master bathroom remodels in Chandler?",
@@ -91,7 +89,7 @@ export default function MasterBathPage() {
       <FAQSchema faqs={faqs} />
       <PriceSchema
         serviceName="Master Bathroom Remodel Chandler AZ"
-        priceRange="$18,000 - $45,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/master-bathroom-remodel`}
       />
       <Header />
@@ -147,7 +145,7 @@ export default function MasterBathPage() {
               <div className="flex flex-col items-center gap-2">
                 <DollarSign className="w-8 h-8 text-primary" />
                 <p className="font-semibold text-foreground">Investment Range</p>
-                <p className="text-2xl font-bold text-primary">$18K to $45K+</p>
+                <p className="text-2xl font-bold text-primary">Free Quote</p>
                 <p className="text-muted-foreground text-sm">Based on scope and selections</p>
               </div>
               <div className="flex flex-col items-center gap-2">

@@ -42,7 +42,7 @@ export const metadata: Metadata = {title: {
 const faqs = [
   {
     question: "How much does a shower and bathtub upgrade cost in Chandler?",
-    answer: "A standard shower and bathtub upgrade project ranges from $3,000 to $15,000 depending on the scope. A simple fixture and trim upgrade starts around $3,000, while a complete tile replacement and custom frameless glass enclosure installation can exceed $15,000."
+    answer: "The cost of a shower and bathtub upgrade project varies depending on the scope of the updates, such as swapping out hardware fixtures, installing a new tub insert, or custom tiling the walls and shower pan. We provide free on-site inspections and prepare detailed, line-item written estimates before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your quote."
   },
   {
     question: "What are the signs that a shower valve needs to be upgraded?",

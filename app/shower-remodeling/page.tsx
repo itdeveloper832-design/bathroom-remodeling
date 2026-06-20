@@ -24,9 +24,7 @@ import ShowerCTAFooter from "@/components/shower-cta-footer";
 import ShowerGallery from "@/components/shower-gallery";
 
 
-export const metadata: Metadata = {title: {
-    absolute: "Shower Remodeling | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower remodeling, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Shower Remodeling Chandler AZ | Free Estimate",description: "Professional shower remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Shower Remodeling | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower remodeling, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",
@@ -66,7 +64,7 @@ export default function ShowerRemodelingPage() {
       />
       <PriceSchema
         serviceName="Shower Remodeling"
-        priceRange="$4,500 - $15,000"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/shower-remodeling/`}
       />
       <FAQSchema faqs={faqs} />
@@ -202,7 +200,7 @@ export default function ShowerRemodelingPage() {
             </div>
             <div className="mt-12 p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
               <p className="text-foreground font-medium mb-4">
-                We offer 0% financing on bathroom projects over $5,000 - 
+                We offer competitive 0% financing options on qualifying projects - 
                 <Link href="/financing/" className="text-primary hover:underline ml-1">
                   see our bathroom remodeling financing options
                 </Link>.

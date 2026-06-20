@@ -22,9 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "ADU Bathroom Planning | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore adu bathroom planning, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Adu Casita Construction Chandler Chandler AZ | Free Estimate",description: "Professional adu casita construction chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "ADU Bathroom Planning | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore adu bathroom planning, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/adu-casita-construction-chandler/`,
     type: "website",
@@ -72,21 +70,21 @@ const services = [
     href: "/contact/",
     description:
       "Complete design-build detached guest houses, mother-in-law suites, and pool houses. We manage the entire excavation, concrete foundation, structural framing, utility routing, and luxury custom interior finishes.",
-    price: "From $85,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Attached Guest Suite Additions",
     href: "/home-renovation-chandler-az/",
     description:
       "Expand your existing floor plan with an attached suite addition. Perfect for multi-generational living, featuring private exterior entrances, luxury custom spa bathrooms, and independent zone climate controls.",
-    price: "From $65,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Premium ADU Bathroom & Kitchenette Tiling",
     href: "/bathroom-tile-installation/",
     description:
       "Specialized interior finishing for existing ADU shells. We build spectacular custom walk-in tile showers, install luxury quartz countertops, custom vanities, and premium moisture-proof flooring.",
-    price: "From $12,000",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -127,17 +125,17 @@ const pricingTiers = [
   {
     label: "Detached Casita Shell (Framing & Utility Rough-Ins)",
     detail: "Foundation, framing, roof, rough-in plumbing/electric",
-    range: "From $55,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Attached Suite Addition (Complete)",
     detail: "Excavation, framing, custom spa bath, bedroom layout",
-    range: "From $65,000",
+    range: "Free Custom Estimate",
   },
   {
     label: "Complete Detached ADU (Custom Finished)",
     detail: "Move-in ready guest house with kitchenette & custom bath",
-    range: "From $95,000+",
+    range: "Free Custom Estimate",
   },
 ];
 
@@ -162,7 +160,7 @@ export default function AduPage() {
       <FAQSchema faqs={aduFaqs} />
       <PriceSchema
         serviceName="ADU & Casita Construction in Chandler AZ"
-        priceRange="$55,000 - $95,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/adu-casita-construction-chandler/`}
       />
       <Header />

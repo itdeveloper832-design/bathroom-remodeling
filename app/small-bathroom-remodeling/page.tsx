@@ -18,9 +18,7 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
-export const metadata: Metadata = {title: {
-    absolute: "Small Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore small bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Small Bathroom Remodeling Chandler AZ | Free Estimate",description: "Professional small bathroom remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Small Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore small bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/small-bathroom-remodeling/`,
     type: "website",
@@ -61,8 +59,8 @@ export default function SmallBathroomRemodelingPage() {
       <main>
         <ServiceHero
           title="Affordable Small Bathroom Remodel Cost Chandler AZ"
-          subtitle="Best Small Bathroom Remodeling Services in Chandler AZ"
-          description="Get the best small bathroom remodel cost in Chandler AZ. Our licensed small bathroom remodeling contractors deliver space-saving designs and professional bathroom renovation services."
+          subtitle="Professional Small Bathroom Remodeling Services in Chandler AZ"
+          description="Get a professional small bathroom remodel in Chandler AZ. Our licensed small bathroom remodeling contractors deliver space-saving designs and professional bathroom renovation services."
           image="/images/services/chandler-bathroom-remodel.webp"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Small Bathroom Remodeling", url: `${siteConfig.url}/small-bathroom-remodeling` }]}
         />
@@ -119,7 +117,7 @@ export default function SmallBathroomRemodelingPage() {
             </div>
             <div className="p-8 bg-primary/5 rounded-3xl border border-primary/20 text-center">
               <p className="text-foreground font-medium mb-4">
-                We offer zero percent financing on projects over five thousand dollars:
+                We offer competitive zero-percent financing options on qualifying projects:
                 <Link href="/financing/" className="text-primary hover:underline ml-1">
                   see our bathroom remodeling financing options
                 </Link>.

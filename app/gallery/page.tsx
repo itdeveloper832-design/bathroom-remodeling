@@ -81,8 +81,7 @@ export default function GalleryPage() {
                 Project Gallery
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Browse our portfolio of completed bathroom remodeling projects. 
-                Each transformation showcases our commitment to quality and craftsmanship.
+                Explore our portfolio of completed bathroom renovations, walk-in showers, and custom tile work in Chandler, AZ and surrounding areas.
               </p>
             </div>
           </div>
@@ -156,6 +155,37 @@ export default function GalleryPage() {
                 ))}
               </div>
             )}
+          </div>
+        </section>
+
+        {/* Gallery Content Expansion Section */}
+        <section className="py-16 bg-muted/30 border-t border-border">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="font-serif text-3xl font-semibold mb-6 text-foreground text-center">
+              Our Commitment to Quality Bathroom Remodeling in Chandler, AZ
+            </h2>
+            <div className="space-y-6 text-muted-foreground leading-relaxed text-base">
+              <p>
+                At ARZ Home Remodeling, we believe that a bathroom renovation is more than just updating fixtures—it is about creating a personalized retreat that combines daily functionality with long-lasting quality. Our project gallery highlights real transformations we have completed for homeowners in Chandler and the surrounding East Valley. From open-concept master suites to space-saving guest baths, our work reflects meticulous attention to detail and professional-grade standards.
+              </p>
+              <p>
+                Every project we undertake is built on a foundation of proper preparation. Unlike standard cosmetic updates, our team performs full demo work down to the studs to inspect for hidden water damage or mold—a common issue in older Chandler properties. We use industry-leading waterproofing materials like Schluter-Kerdi membranes and boards to ensure a completely water-tight seal. For high-traffic areas like shower floors and walls, we recommend epoxy grout to resist Chandler’s hard water stains, keeping your new tile looking pristine for years to come.
+              </p>
+              <p>
+                Our services include professional layout re-engineering, custom walk-in shower building, vanity conversions, zero-threshold curbless shower installations for improved accessibility, and premium plumbing relocation. We manage all municipal permitting processes, ensuring your project complies fully with local building safety codes. Whether you live in Fulton Ranch, Ocotillo, Dobson Ranch, or Sun Lakes, we coordinate with you step-by-step to bring your vision to life.
+              </p>
+              <div className="bg-card p-6 rounded-xl border border-border mt-8">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+                  Why Our Craftsmanship Stands Out
+                </h3>
+                <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
+                  <li><strong>Complete Waterproofing:</strong> We install full-system Schluter-Kerdi vapor barriers to prevent structural leaks and subfloor rot.</li>
+                  <li><strong>Hard Water Resilient:</strong> We apply high-performance epoxy grouts and sealers that resist mineral buildup and simplify cleaning.</li>
+                  <li><strong>Custom Glass Fits:</strong> Every glass enclosure is custom-measured and installed to fit the precise angle and level of your finished tile work.</li>
+                  <li><strong>Local Permitting:</strong> We handle all local municipal permit filings in Chandler, Mesa, and Gilbert for complete legal compliance.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -242,4 +272,3 @@ export default function GalleryPage() {
     </>
   )
 }
-

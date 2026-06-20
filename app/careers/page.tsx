@@ -7,9 +7,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = {title: {
-    absolute: "Remodeling Careers | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore remodeling careers, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Careers Chandler AZ | Free Estimate",description: "Professional careers in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Remodeling Careers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore remodeling careers, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/careers/`,
     type: "website",

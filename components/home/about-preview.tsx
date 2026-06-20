@@ -48,10 +48,10 @@ export default function AboutPreview() {
               Chandler Bathroom Remodelers Since {siteConfig.foundedYear ?? 2010}
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Since {siteConfig.foundedYear ?? 2010}, ARZ Home Remodeling has focused on bathrooms only. We are not a handyman listing. We are a licensed crew that handles demolition, plumbing coordination, tile, vanities, glass, and final walkthroughs.
+              Since {siteConfig.foundedYear ?? 2010}, ARZ Home Remodeling has focused exclusively on wet-area bathroom renovations and complete custom remodels. We are not a generic handyman list or a multi-service franchise. We are a dedicated, highly trained local installation crew that handles every phase of your project, including structural demolition, subfloor leveling, permit filing, plumbing stack rerouting, custom tile setting, glass mounting, and final walkthrough inspections.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Homeowners call us from older ranch homes near <strong>Downtown Chandler</strong> and <strong>Arizona Avenue</strong>, from neighborhoods by <strong>Chandler Fashion Center</strong> and <strong>Alma School Road</strong>, and from <strong>Ocotillo</strong>, <strong>Fulton Ranch</strong>, <strong>Sun Lakes</strong>, and the <strong>Loop 202</strong> area near Intel. We know local HOA rules and how long Chandler inspections usually take.
+              Our experience spans thousands of projects throughout the East Valley. Homeowners routinely call us from established ranch-style homes near <strong>Downtown Chandler</strong> and <strong>Arizona Avenue</strong> that require full tub-to-shower updates, from communities surrounding the <strong>Chandler Fashion Center</strong> along <strong>Ray Road</strong> and <strong>Alma School Road</strong>, and from premium master-planned neighborhoods like <strong>Ocotillo</strong>, <strong>Fulton Ranch</strong>, <strong>Arden Park</strong>, and <strong>Sun Lakes</strong> near the <strong>Loop 202</strong>. We are intimately familiar with local building layouts, residential zoning restrictions, HOA architectural guidelines, and the exact city code inspections pipeline.
             </p>
             <div className="mb-8 p-4 rounded-xl bg-accent/5 border border-accent/20 flex items-start gap-3">
               <span className="text-accent text-xl mt-0.5">💎</span>

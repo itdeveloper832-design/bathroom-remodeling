@@ -10,9 +10,7 @@ import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/jso
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
-export const metadata: Metadata = {title: {
-    absolute: "Walk In Shower Cost | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore walk in shower cost, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Walk In Shower Cost Chandler AZ | Free Estimate",description: "Professional walk in shower cost in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Walk In Shower Cost | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore walk in shower cost, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/walk-in-shower-cost/`,
     type: "website",
@@ -26,27 +24,27 @@ const showerFaqs = [
   {
     question: "What is the average cost to install a walk-in shower in Chandler?",
     answer:
-      "A standard walk-in shower installation ranges from $6,000 to $13,500. A basic project utilizing a prefabricated acrylic base and tiled walls starts around $6,000. Custom tiled curbless showers with frameless glass and high-end tile typically range from $10,000 to $18,000+ depending on sizing and plumbing updates."
+      "The cost of a walk-in shower installation in Chandler, AZ varies based on the design type, square footage, and chosen finishes. A basic project utilizing a prefabricated acrylic base and tiled walls represents a standard scope. Custom tiled curbless showers with frameless glass and high-end tile represent a customized design depending on sizing and plumbing upgrades. We offer free on-site consultations to prepare detailed, line-item written estimates."
   },
   {
     question: "How does a curbless walk-in shower affect the price?",
     answer:
-      "A curbless (zero-threshold) walk-in shower adds $1,500 to $3,000 to the cost. This is because the floor joists must be lowered or the concrete slab must be trenched to slope the shower floor down to the drain level. This requires expert plumbing, framing, and waterproofing work."
+      "A curbless (zero-threshold) walk-in shower requires additional structural adjustments. This is because the floor joists must be lowered or the concrete slab must be trenched to slope the shower floor down to the drain level. This requires expert plumbing, framing, and waterproofing work to ensure a seamless entry."
   },
   {
     question: "Why does shower waterproofing cost so much?",
     answer:
-      "Waterproofing is the most critical step of shower construction. We use the Schluter-KERDI membrane system. The materials and precise installation process add $800 to $1,500 to the budget, but this system protects your studs from rot and guarantees a lifetime leak-free shower."
+      "Waterproofing is the most critical step of shower construction. We use the premium Schluter-KERDI membrane system. The materials and precise installation process represent a crucial investment that protects your framing studs from rot and guarantees a lifetime leak-free shower."
   },
   {
     question: "How much does frameless shower glass cost?",
     answer:
-      "A professional 3/8-inch thick frameless glass enclosure costs between $1,200 and $3,200. The cost depends on the width of the glass, the number of panels, and whether you add a specialized hydrophobic coating like EnduroShield to repel hard water spots."
+      "A professional 3/8-inch thick frameless glass enclosure depends on the width of the glass, the number of panels, and whether you add a specialized hydrophobic coating like EnduroShield to repel hard water spots. We customize every glass layout to fit your custom tiled opening perfectly."
   },
   {
     question: "Can I convert my existing bathtub to a walk-in shower?",
     answer:
-      "Yes. Tub-to-shower conversions are our specialty. This conversion costs between $6,000 and $14,000, which includes removing the old tub, relocating the drain line to the center, upgrading the mixing valve, and tiling the walls."
+      "Yes. Tub-to-shower conversions are our specialty. This project involves removing the old tub, relocating the drain line to the center, upgrading the mixing valve, and tiling the walls to fit a modern walk-in layout. Contact us for a free estimate."
   },
 ];
 
@@ -55,39 +53,39 @@ const pricingData = [
     category: "Prefabricated Walk-In Shower",
     description: "Standard acrylic base with basic tiled walls",
     items: [
-      { name: "Demo of old shower unit", cost: "$500–$1,000" },
-      { name: "Acrylic pan & standard drain", cost: "$600–$1,200" },
-      { name: "Ceramic tile walls (standard layout)", cost: "$2,500–$4,000" },
-      { name: "Basic semi-frameless sliding glass door", cost: "$500–$900" },
-      { name: "Standard chrome fixture set", cost: "$250–$500" },
+      { name: "Demo of old shower unit", cost: "Standard Level" },
+      { name: "Acrylic pan & standard drain", cost: "Standard Level" },
+      { name: "Ceramic tile walls (standard layout)", cost: "Standard Level" },
+      { name: "Basic semi-frameless sliding glass door", cost: "Standard Level" },
+      { name: "Standard chrome fixture set", cost: "Standard Level" },
     ],
-    total: "$6,000–$9,000",
+    total: "Free Custom Estimate",
     highlight: false,
   },
   {
     category: "Custom Tiled Walk-In Shower",
     description: "Full tile pan, custom walls, and frameless glass",
     items: [
-      { name: "Demo to studs & subfloor repair", cost: "$800–$1,500" },
-      { name: "Schluter waterproofing system", cost: "$800–$1,500" },
-      { name: "Porcelain tile pan & walls", cost: "$4,500–$7,500" },
-      { name: "3/8-inch frameless glass door & panel", cost: "$1,400–$2,800" },
-      { name: "Mixing valve, showerhead & trim set", cost: "$500–$1,200" },
+      { name: "Demo to studs & subfloor repair", cost: "Mid-Range Scope" },
+      { name: "Schluter waterproofing system", cost: "Mid-Range Scope" },
+      { name: "Porcelain tile pan & walls", cost: "Mid-Range Scope" },
+      { name: "3/8-inch frameless glass door & panel", cost: "Mid-Range Scope" },
+      { name: "Mixing valve, showerhead & trim set", cost: "Mid-Range Scope" },
     ],
-    total: "$10,000–$15,500",
+    total: "Free Custom Estimate",
     highlight: true,
   },
   {
     category: "Luxury Curbless Shower Suite",
     description: "Zero-threshold walk-in with linear drain",
     items: [
-      { name: "Concrete slab/joist lowering for curbless", cost: "$1,800–$3,200" },
-      { name: "Schluter waterproofing & linear drain", cost: "$1,500–$2,500" },
-      { name: "Large-format tile & mosaic accent walls", cost: "$6,000–$9,500" },
-      { name: "Frameless glass with hydrophobic coating", cost: "$1,800–$3,500" },
-      { name: "Dual rainfall fixtures & handheld sprayer", cost: "$1,200–$2,800" },
+      { name: "Concrete slab/joist lowering for curbless", cost: "Luxury Custom Scope" },
+      { name: "Schluter waterproofing & linear drain", cost: "Luxury Custom Scope" },
+      { name: "Large-format tile & mosaic accent walls", cost: "Luxury Custom Scope" },
+      { name: "Frameless glass with hydrophobic coating", cost: "Luxury Custom Scope" },
+      { name: "Dual rainfall fixtures & handheld sprayer", cost: "Luxury Custom Scope" },
     ],
-    total: "$16,000–$24,000+",
+    total: "Free Custom Estimate",
     highlight: false,
   },
 ];
@@ -96,12 +94,12 @@ const costFactors = [
   {
     title: "Shower Pan Construction",
     impact: "High",
-    detail: "A prefabricated acrylic base is the cheapest option. A custom-tiled mortar bed requires precision tiling, and a curbless entry requires structural alterations.",
+    detail: "A prefabricated acrylic base is the standard budget-conscious option. A custom-tiled mortar bed requires precision tiling, and a curbless entry requires structural alterations.",
   },
   {
     title: "Waterproofing Integrity",
     impact: "High",
-    detail: "Substandard waterproofing will fail within 2 years. Investing in premium vapor-tight membranes (Schluter-KERDI) is mandatory for long-term home protection.",
+    detail: "Substandard waterproofing will fail rapidly. Investing in premium vapor-tight membranes (Schluter-KERDI) is mandatory for long-term home protection.",
   },
   {
     title: "Glass Enclosures",
@@ -111,7 +109,7 @@ const costFactors = [
   {
     title: "Plumbing Adjustments",
     impact: "Medium",
-    detail: "Upgrading from a 1.5-inch tub drain to a 2-inch shower drain is required by building codes and costs $600 to $1,500 during rough-in.",
+    detail: "Upgrading from a 1.5-inch tub drain to a 2-inch shower drain is required by building codes and involves layout alterations and concrete trenching during the rough-in phase.",
   },
 ];
 
@@ -134,7 +132,7 @@ export default function WalkInShowerCostPage() {
       <Header />
       <main>
         <ServiceHero
-          title="Walk-In Shower Installation Costs (2025 Pricing Guide)"
+          title="Walk-In Shower Guide (Project Scopes)"
           subtitle="Transparent Shower Budgets"
           description="Detailed breakdown of the costs to build or convert a walk-in shower in Chandler, AZ. Prefabricated, custom tile, and curbless designs explained."
           image="/images/services/bathroom-flooring-chandler.webp"

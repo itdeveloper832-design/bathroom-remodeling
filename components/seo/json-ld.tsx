@@ -1,5 +1,5 @@
 import { siteConfig } from "@/lib/site-config";
-import { testimonialsData } from "@/lib/testimonials-data";
+
 
 interface LocalBusinessSchemaProps {
   type?: "LocalBusiness" | "HomeAndConstructionBusiness" | "GeneralContractor";
@@ -180,20 +180,6 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       reviewCount: siteConfig.googleReviewsCount.toString(),
       bestRating: "5"
     },
-    review: testimonialsData.default.map((t) => ({
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": t.rating.toString(),
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": t.name
-      },
-      "reviewBody": t.content,
-      "datePublished": "2025-10-15"
-    })),
   };
 
   return (
@@ -236,13 +222,6 @@ export function ServiceSchema({ serviceName, serviceDescription, serviceUrl, ser
     "areaServed": {
       "@type": "Place",
       "name": "Chandler, AZ"
-    },
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "USD",
-      "priceRange": "$12,500 - $38,000",
-      "lowPrice": "12500",
-      "highPrice": "38000"
     },
     "url": serviceUrl
   };

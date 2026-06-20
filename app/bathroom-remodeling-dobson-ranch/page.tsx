@@ -57,7 +57,7 @@ const dobsonRanchFaqs = [
   {
     question: "What is the cost of a bathroom remodel in Dobson Ranch, AZ?",
     answer:
-      "A complete remodel ranges from $9,000 for compact guest bathrooms up to $35,000+ for large custom master bathrooms. We offer free, itemized estimates to help you choose options that fit your budget."
+      "Bathroom remodeling costs in Dobson Ranch vary based on layout changes, material selections, and square footage. We offer free on-site inspections and prepare a detailed, line-item written estimate before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your quote."
   },
   {
     question: "Can you help with small bathroom space optimization?",
@@ -72,21 +72,21 @@ const services = [
     href: "/small-bathroom-remodeling/",
     description:
       "We maximize space in narrow layouts. Installing compact vanities, smart shelving, recessed niches, and frameless glass showers to open up your guest bathrooms.",
-    price: "From $8,500",
+    price: "Free Custom Estimate",
   },
   {
     title: "Walk-In Shower Installation",
     href: "/walk-in-showers/",
     description:
       "We replace old tub surrounds with modern tiled walk-in showers. Built with leak-proof Schluter-KERDI waterproofing systems and custom tile designs.",
-    price: "From $6,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Tub-to-Shower Conversions",
     href: "/tub-to-shower-conversion/",
     description:
       "One of our most popular services. We remove old steel or cast-iron tubs and build custom tiled walk-in showers with slip-resistant tile floors.",
-    price: "$6,000 to $13,000",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function DobsonRanchPage() {
       <FAQSchema faqs={dobsonRanchFaqs} />
       <PriceSchema
         serviceName="Dobson Ranch Bathroom Remodeling"
-        priceRange="$5,000 - $35,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-dobson-ranch/`}
       />
       <Header />

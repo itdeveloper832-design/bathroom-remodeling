@@ -6,7 +6,7 @@ const financingOptions = [
   {
     icon: Percent,
     title: "0% APR for 12 Months",
-    description: "On qualifying projects over $5,000, subject to lender approval.",
+    description: "On qualifying projects, subject to lender approval.",
   },
   {
     icon: Calendar,

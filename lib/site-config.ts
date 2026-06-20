@@ -11,7 +11,7 @@ export const siteConfig = {
   googleBusinessLink: "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ",
   phone: "(520) 569-3339",
   phoneClean: "+15205693339",
-  email: "",
+  email: "estimates@arzhomeremodeling.com",
   // Verified Arizona Registrar of Contractors license number
   license: "ROC338304 - Arizona Licensed Contractor",
   address: {

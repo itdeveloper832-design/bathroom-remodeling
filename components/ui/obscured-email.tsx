@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { siteConfig } from "@/lib/site-config";
 
 interface ObscuredEmailProps {
@@ -9,23 +8,13 @@ interface ObscuredEmailProps {
 }
 
 export function ObscuredEmail({ className = "", children }: ObscuredEmailProps) {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const emailStr = siteConfig.email;
-  const hrefVal = mounted ? `mailto:${emailStr}` : "#";
-  const labelVal = mounted ? `Email us at ${emailStr}` : undefined;
+  const emailStr = siteConfig.email || "estimates@arzhomeremodeling.com";
 
   return (
     <a 
-      href={hrefVal} 
+      href={`mailto:${emailStr}`} 
       className={className} 
-      aria-label={labelVal}
-      onClick={!mounted ? (e) => e.preventDefault() : undefined}
-      suppressHydrationWarning
+      aria-label={`Email us at ${emailStr}`}
     >
       {children || emailStr}
     </a>

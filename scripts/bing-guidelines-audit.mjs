@@ -148,7 +148,10 @@ htmlFiles.forEach(filePath => {
   }
 
   // 5. Image Accessibility / Alt tags (Guideline 12: Optimize Images and Video)
-  const imgTags = content.match(/<img[\s\S]*?>/gi) || [];
+  const cleanContent = content.replace(/<script[\s\S]*?<\/script>/gi, '')
+                              .replace(/<style[\s\S]*?<\/style>/gi, '');
+
+  const imgTags = cleanContent.match(/<img[\s\S]*?>/gi) || [];
   let missingAltCount = 0;
   imgTags.forEach(img => {
     // Check if alt attribute is missing or empty
@@ -170,7 +173,7 @@ htmlFiles.forEach(filePath => {
   }
 
   // 6. Crawlable links (Guideline 5: Use Links for Structure)
-  const links = content.match(/<a\b[\s\S]*?>/gi) || [];
+  const links = cleanContent.match(/<a\b[\s\S]*?>/gi) || [];
   let uncrawlableLinkCount = 0;
   const uncrawlableList = [];
   links.forEach(link => {
@@ -199,11 +202,9 @@ htmlFiles.forEach(filePath => {
 
   // 7. Content Quality / Thin Content (Guideline 11: Clear, Focused, Useful Content)
   // Strip HTML tags to get approximate word count
-  const textContent = content.replace(/<script[\s\S]*?<\/script>/gi, '')
-                             .replace(/<style[\s\S]*?<\/style>/gi, '')
-                             .replace(/<[\s\S]*?>/g, ' ')
-                             .replace(/\s+/g, ' ')
-                             .trim();
+  const textContent = cleanContent.replace(/<[\s\S]*?>/g, ' ')
+                                  .replace(/\s+/g, ' ')
+                                  .trim();
   const words = textContent.split(' ').filter(w => w.length > 0);
   if (words.length < 250) {
     violations.push({

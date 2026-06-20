@@ -4,39 +4,39 @@ import { Shield, Clock, DollarSign, Droplets, HardHat, FileCheck } from "lucide-
 const reasons = [
   {
     icon: Shield,
-    title: "Licensed Work in Wet Areas",
+    title: "Licensed Code-Compliant Work",
     description:
-      "Plumbing and electrical changes are done to Chandler code by licensed trades, not guesswork.",
+      "Every structural plumbing adjustment, electrical circuit rerouting, and wet-area valve replacement is executed to strict City of Chandler building safety standards by licensed trade specialists, ensuring total compliance and code compliance.",
   },
   {
     icon: Droplets,
-    title: "Waterproofing First",
+    title: "Vapor-Tight Waterproofing Systems",
     description:
-      "Schluter-Kerdi (or equal) behind tile so water does not sit in the wall cavity.",
+      "We install a complete, vapor-impermeable Schluter-KERDI waterproofing membrane system behind every tile installation. This advanced vapor barrier completely isolates your framing from moisture, protecting wall studs from structural mold rot.",
   },
   {
     icon: Clock,
-    title: "Clear Schedule",
+    title: "Day-by-Day Project Scheduling",
     description:
-      "You get a day-by-day plan before demo. You know when the shower is offline.",
+      "You receive a firm, written day-by-day project calendar before demolition begins. You will know exactly which construction phase is occurring each day and when code compliance inspections are scheduled to happen.",
   },
   {
     icon: HardHat,
-    title: "Respect for Your Home",
+    title: "Respectful Site Cleanliness & HOAs",
     description:
-      "Floor protection, daily cleanup, and work hours that fit HOA rules in planned communities.",
+      "Our team lays down heavy-duty neoprene floor protection, installs containment dust barriers, performs cleanups at the end of each workday, and adheres strictly to planned community HOA contractor parking and working hours.",
   },
   {
     icon: DollarSign,
-    title: "Written Line-Item Estimates",
+    title: "Detailed Written Estimates",
     description:
-      "No vague allowances. Materials and labor are spelled out before you sign.",
+      "We provide a comprehensive, itemized line-item written estimate before any work starts. Every tile substrate, valve upgrade, custom vanity fabrication, and labor block is fully detailed so you know the exact scope upfront.",
   },
   {
     icon: FileCheck,
     title: "5-Year Workmanship Warranty",
     description:
-      "We stand behind our Schluter-Kerdi waterproofing systems with an industry-leading 5-year warranty on custom tile showers.",
+      "We stand behind our craftsmanship and Schluter waterproofing installations with an industry-leading 5-year workmanship warranty on custom tiled showers. If a leak or tile joint fails, we correct it at zero cost to you.",
   },
 ];
 

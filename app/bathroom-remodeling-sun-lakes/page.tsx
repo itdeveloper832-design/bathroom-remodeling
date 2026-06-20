@@ -72,21 +72,21 @@ const services = [
     href: "/ada-bathroom-remodeling/",
     description:
       "We design accessible bathrooms featuring curbless entries, wider doorways, wheelchair-accessible vanities, and wall-mounted toilets. Safety and style blended perfectly.",
-    price: "From $8,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Tub-to-Shower Conversion",
     href: "/tub-to-shower-conversion/",
     description:
       "Step safely into your shower. We replace hazardous tubs with low-profile or zero-threshold walk-in showers, complete with built-in shower seats and grab bars.",
-    price: "$6,000 to $13,000",
+    price: "Free Custom Estimate",
   },
   {
     title: "Walk-In Shower Installation",
     href: "/walk-in-showers/",
     description:
       "Open walk-in showers with frameless glass enclosures, handheld shower wands, and customized niche storage. Built with commercial-grade Schluter waterproofing.",
-    price: "From $6,000",
+    price: "Free Custom Estimate",
   },
 ];
 
@@ -139,7 +139,7 @@ export default function SunLakesPage() {
       <FAQSchema faqs={sunLakesFaqs} />
       <PriceSchema
         serviceName="Sun Lakes Bathroom Remodeling"
-        priceRange="$6,000 - $40,000+"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/bathroom-remodeling-sun-lakes/`}
       />
       <Header />
@@ -163,10 +163,13 @@ export default function SunLakesPage() {
               Age-in-Place Bathroom Upgrades in Sun Lakes (85248)
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              As we plan for the future, home safety becomes a top priority. Standard residential bathrooms built in the 1980s and 1990s in Sun Lakes often feature high-sided acrylic tubs, cramped shower stalls, and slick sheet flooring. These elements represent serious fall hazards. Upgrading to a modern, barrier-free walk-in shower reduces stress and creates a safe environment.
+              As we plan for long-term comfort and security in our homes, standard builder-grade bathrooms present significant hazards. In Sun Lakes, AZ, many properties built in the 1970s through the late 1990s feature high-sided cast iron or fiberglass bathtubs, narrow doorways, slick vinyl flooring, and cramped layouts. These elements create serious fall risks for seniors. Upgrading your space with professional, barrier-free walk-in showers and age-in-place layout reconfigurations improves daily utility, ensures safety, and provides peace of mind.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              At ARZ Home Remodeling, we specialize in adapting master and guest bathrooms for seniors. We install heavy-duty backing boards for grab bars, wide curbless shower entries, built-in benches, and handheld shower wands. We utilize the <Link href="/blog/ada-bathroom-requirements-arizona/" className="text-primary hover:underline font-medium">ADA requirements for Arizona bathrooms</Link> to ensure full comfort, accessibility, and peace of mind.
+              At ARZ Home Remodeling, we specialize in design-build bathroom remodeling tailored to the requirements of active adult communities in Sun Lakes, AZ. From zero-threshold curbless roll-in showers and customized walk-in tubs to floating, wheelchair-accessible vanities and structural blocking for secure grab bars, we handle every detail. We carry full Arizona contractor licensing (ROC #338304), providing premium workmanship across ZIP codes **85248 and 85249**.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              To ensure full safety compliance, we adhere strictly to the <Link href="/blog/ada-bathroom-requirements-arizona/" className="text-primary hover:underline font-medium">ADA requirements for Arizona bathrooms</Link>. We reinforce the wall framing by installing solid wood blocking behind the drywall or tile backing. This allows our heavy-duty grab bars to support up to 250 pounds of downward force, preventing failure when under stress. We also select floor materials that feature high coefficient of friction (COF 0.60 or higher per ANSI A326.3 standards), utilizing small-format slip-resistant mosaic tiling that increases traction under wet conditions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
@@ -192,7 +195,7 @@ export default function SunLakesPage() {
               Sun Lakes Landmarks & Local Safety Remodeling Projects
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Sun Lakes is a premier active adult community featuring beautiful landmarks like the <strong>Oakwood Country Club</strong>, <strong>Cottonwood Golf Course</strong>, and pristine residential lakes. When we execute bathroom renovations in Sun Lakes, we specialize in high-end, senior-safe designs that support independent living. For homeowners near the <strong>Ironwood Golf Course</strong>, we focus on curbless, barrier-free access.
+              Sun Lakes is a premier active adult community featuring beautiful local landmarks like the <strong>Oakwood Country Club</strong>, <strong>Cottonwood Golf Course</strong>, <strong>Palo Verde Country Club</strong>, and pristine residential lakes. When we execute bathroom renovations in Sun Lakes, we customize the layout to match the community contexts. For properties in Oakwood or Ironwood, we deliver curbless shower conversions that feature high-end porcelain tile, custom linear drains, and handheld shower wands. For residents near Cottonwood or Palo Verde, we specialize in retrofitting older alcove tubs with low-threshold entry bases and safety fixtures.
             </p>
             <h3 className="font-serif text-xl font-semibold mb-4 text-foreground">
               Recent Sun Lakes Remodeling Example:
@@ -204,7 +207,7 @@ export default function SunLakesPage() {
               Maricopa County Permitting & Safety Compliance:
             </h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Because Sun Lakes is an unincorporated community in Maricopa County, major plumbing, structural, or electrical modifications require a building permit from the <strong>Maricopa County Planning & Development Department</strong>. Our team manages all structural drawing submissions, permit applications, and inspections directly to guarantee total safety compliance.
+              Because Sun Lakes is an unincorporated community in Maricopa County, any structural, plumbing stack, or electrical sub-panel modifications require formal building permit submittals and code inspections through the <strong>Maricopa County Planning & Development Department</strong>. We manage the entire county permit process, drafting code-compliant plans, coordinating field inspections, and ensuring that your remodel meets all safety standards.
             </p>
           </div>
         </section>

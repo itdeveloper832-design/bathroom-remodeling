@@ -9,7 +9,7 @@ export function getZipHubFaqs(zipData: ZipCodeData) {
     },
     {
       question: `How much does a bathroom remodel cost in ${zipData.zip}?`,
-      answer: `In ZIP ${zipData.zip}, guest bath updates often run $10,000–$18,000. Tub-to-shower conversions are commonly $8,500–$16,000. Master suites in premium areas of this ZIP can reach $25,000–$55,000+. We provide itemized written estimates.`,
+      answer: `In ZIP ${zipData.zip}, guest bath updates and tub-to-shower conversions vary based on the selected tile, layout complexity, and plumbing moves. Master suite transformations in premium developments are custom tailored to your specifications. We offer free consultations to provide detailed, line-item written estimates.`,
     },
     {
       question: `How long does a remodel take in the ${zipData.zip} area?`,

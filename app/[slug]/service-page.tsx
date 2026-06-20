@@ -108,7 +108,7 @@ const serviceFaqs: Record<string, { question: string; answer: string }[]> = {
     },
     {
       question: "What is the cost of shower remodeling in Chandler?",
-      answer: "Shower remodeling costs in Chandler typically range from $5,000-$15,000 depending on size, materials, and features. Basic tile showers start around $5,000, while luxury showers with premium tile, frameless glass, and custom features can exceed $15,000. We offer free estimates with transparent pricing."
+      answer: "Shower remodeling costs depend on layout adjustments, sizing, tile type, and plumbing reconfigurations. We provide free on-site inspections and prepare a detailed, line-item written estimate before any work begins, ensuring a fixed-price contract. Contact us for a free estimate."
     },
     {
       question: "Do you offer waterproof shower installations?",
@@ -122,7 +122,7 @@ const serviceFaqs: Record<string, { question: string; answer: string }[]> = {
   "bathtub-installation": [
     {
       question: "How much does bathtub installation cost in Chandler, AZ?",
-      answer: "Bathtub installation in Chandler typically costs $1,500-$5,000 depending on tub type and complexity. Standard alcove tubs start around $1,500-$2,500, while freestanding soaking tubs and whirlpool installations range from $3,000-$5,000+. Contact us for a free estimate."
+      answer: "Bathtub installation costs vary based on the type of tub (such as standard alcove vs. luxury freestanding soaking tubs), plumbing changes, and structural reinforcing. We offer free design consultations and fixed written quotes. Contact us today."
     },
     {
       question: "How long does bathtub installation take?",
@@ -140,10 +140,10 @@ const serviceFaqs: Record<string, { question: string; answer: string }[]> = {
   "bathtub-replacement": [
     {
       question: "How much does bathtub replacement cost in Chandler?",
-      answer: "Bathtub replacement in Chandler typically costs $2,000-$6,000 including removal, disposal, and installation. Costs vary based on tub type, plumbing updates needed, and surround finishing. We provide free estimates with all costs outlined upfront."
+      answer: "Bathtub replacement costs depend on the replacement tub type, wall surround finishing (such as tiling), and plumbing updates. We handle complete removal, disposal, and rebuild, providing a detailed proposal. Call for a free estimate."
     },
     {
-      question: "Can you replace a bathtub in one day?",
+      question: "How can you replace a bathtub in one day?",
       answer: "In many cases, yes! Standard tub-to-tub replacements can often be completed in 1-2 days. More complex replacements with plumbing updates or surround work may take 2-3 days. We'll provide an accurate timeline during your consultation."
     },
     {
@@ -158,7 +158,7 @@ const serviceFaqs: Record<string, { question: string; answer: string }[]> = {
   "walk-in-shower-installation": [
     {
       question: "How much does walk-in shower installation cost in Chandler?",
-      answer: "Walk-in shower installation in Chandler typically costs $6,000-$15,000 depending on size, features, and accessibility requirements. Curbless showers with custom tile and glass start around $8,000, while luxury accessible showers can exceed $15,000."
+      answer: "Walk-in shower installation costs vary depending on structural prep, custom glass options, curbless base conversions, and tile selections. We install leak-proof Schluter-KERDI systems and offer free on-site inspections. Call today."
     },
     {
       question: "What is a curbless walk-in shower?",
@@ -176,7 +176,7 @@ const serviceFaqs: Record<string, { question: string; answer: string }[]> = {
   "bathroom-tile-installation": [
     {
       question: "How much does bathroom tile installation cost in Chandler?",
-      answer: "Bathroom tile installation in Chandler costs $8-$25 per square foot depending on tile type and complexity. Basic ceramic tile starts around $8-$12/sq ft, while premium porcelain or natural stone ranges from $15-$25/sq ft. This includes materials, labor, and waterproofing."
+      answer: "Bathroom tile installation costs vary depending on layout complexity, substrate preparation, and tile material (ceramic, porcelain, or natural stone). Our estimates include waterproofing and solid epoxy grout options. Call for a custom estimate."
     },
     {
       question: "What type of tile is best for bathroom showers?",
@@ -194,7 +194,7 @@ const serviceFaqs: Record<string, { question: string; answer: string }[]> = {
   "bathroom-vanity-installation": [
     {
       question: "How much does bathroom vanity installation cost in Chandler?",
-      answer: "Bathroom vanity installation in Chandler costs $500-$2,000 for labor, plus the cost of the vanity itself. Standard single vanities range from $800-$2,500, while custom double vanities can exceed $3,000. We provide free estimates including all materials and labor."
+      answer: "Bathroom vanity installation costs depend on the cabinet width (single vs. double sink), plumbing stack rerouting, quartz countertop selections, and fixture upgrades. We provide complete estimates for labor and materials. Contact us today."
     },
     {
       question: "Can you install a double sink vanity?",
@@ -1204,7 +1204,7 @@ const serviceContent: Record<string, ServiceDetail> = {
     ctas: {
       midTitle: "Ready for a luxury master bath?",
       midDescription: "Get a custom design plan and estimate today.",
-      finalTitle: "Best master bathroom remodelers in Chandler.",
+      finalTitle: "Licensed master bathroom remodelers in Chandler.",
       finalDescription: "Call now for a free in-home consultation."
     },
     seo: {

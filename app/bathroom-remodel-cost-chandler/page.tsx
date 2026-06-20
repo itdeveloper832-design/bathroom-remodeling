@@ -12,9 +12,7 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
-export const metadata: Metadata = {title: {
-    absolute: "Bath Remodel Cost Chandler | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bath remodel cost chandler, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Bathroom Remodel Cost Chandler Chandler AZ | Free Estimate",description: "Professional bathroom remodel cost chandler in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Bath Remodel Cost Chandler | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bath remodel cost chandler, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodel-cost-chandler/`,
     type: "website",
@@ -28,7 +26,7 @@ const faqs = [
   {
     question: "What is the average bathroom remodel chandler az cost?",
     answer:
-      "The average bathroom remodel chandler az cost depends on scope. A guest bathroom cosmetic update runs $4,500–$9,000. A full guest bath remodel costs $10,000–$18,000. Master bathroom remodels range from $18,000–$45,000+. We provide free, itemized estimates with competitive bathroom remodel chandler az prices.",
+      "Bathroom remodeling costs depend on layout changes, square footage, tile selections, and fixture choices. Entry-level updates for guest baths are very cost-effective, while custom master bath renovations represent a larger investment. We provide free on-site inspections and prepare a detailed, line-item written estimate before any work begins, ensuring a fixed-price guarantee. Contact us today to schedule your quote.",
   },
   {
     question: "Why does bathroom remodeling cost more in Chandler than national averages?",
@@ -43,17 +41,17 @@ const faqs = [
   {
     question: "What drives up bathroom remodel costs the most?",
     answer:
-      "Plumbing relocation is the biggest cost driver. Moving a toilet, shower valve, or drain adds $2,000–$6,000 to a project. Custom tile layouts, frameless glass, and high-end fixture packages also significantly increase costs.",
+      "Plumbing relocation is the biggest cost factor. Shifting toilet drains, moving shower valves, or adding new lines underneath subfloors requires additional framing and plumbing labor. Intricate custom tile layouts, frameless heavy glass shower enclosures, and premium solid brass fixtures also increase the budget.",
   },
   {
     question: "Does a bathroom remodel add value to my Chandler home?",
     answer:
-      "Yes. Mid-range bathroom remodels in the Phoenix metro recover approximately 55–70% of their cost at resale, with master bath upgrades often recouping more due to buyer demand. Tub-to-shower conversions are particularly high-ROI in Chandler's 35–55 buyer demographic.",
+      "Yes. Mid-range bathroom remodels in the Phoenix metro recover a high percentage of their cost at resale, with master bath upgrades often recouping more due to buyer demand. Tub-to-shower conversions are particularly high-ROI in Chandler's 35–55 buyer demographic.",
   },
   {
     question: "Do you offer financing for bathroom remodels in Chandler?",
     answer:
-      "Yes. We offer financing options for qualified homeowners. We can discuss financing during your free estimate - many Chandler homeowners finance master bath remodels with monthly payments starting around $350–$450/month.",
+      "Yes. We offer financing options and custom monthly payment plans for qualified homeowners. This helps keep your bathroom upgrades affordable while ensuring the job is done by licensed professionals. Contact us today to discuss financing options.",
   },
 ];
 
@@ -62,52 +60,52 @@ const pricingData = [
     category: "Guest Bathroom Update",
     description: "Cosmetic refresh - no structural changes",
     items: [
-      { name: "Vanity & countertop replacement", cost: "$800–$2,500" },
-      { name: "Toilet replacement", cost: "$300–$800" },
-      { name: "Fixture & faucet upgrade", cost: "$200–$600" },
-      { name: "Paint & accessories", cost: "$300–$500" },
+      { name: "Vanity & countertop replacement", cost: "Standard Level" },
+      { name: "Toilet replacement", cost: "Standard Level" },
+      { name: "Fixture & faucet upgrade", cost: "Standard Level" },
+      { name: "Paint & accessories", cost: "Standard Level" },
     ],
-    total: "$4,500–$9,000",
+    total: "Free Custom Estimate",
     highlight: false,
   },
   {
     category: "Guest Bathroom Full Remodel",
     description: "Complete gut and rebuild",
     items: [
-      { name: "Shower tile & waterproofing", cost: "$3,000–$6,000" },
-      { name: "Floor tile installation", cost: "$1,500–$3,500" },
-      { name: "Vanity, countertop & sink", cost: "$1,200–$3,000" },
-      { name: "Plumbing & fixture upgrades", cost: "$800–$2,000" },
-      { name: "Demo, drywall & finishing", cost: "$1,500–$3,000" },
+      { name: "Shower tile & waterproofing", cost: "Mid-Range Scope" },
+      { name: "Floor tile installation", cost: "Mid-Range Scope" },
+      { name: "Vanity, countertop & sink", cost: "Mid-Range Scope" },
+      { name: "Plumbing & fixture upgrades", cost: "Mid-Range Scope" },
+      { name: "Demo, drywall & finishing", cost: "Mid-Range Scope" },
     ],
-    total: "$10,000–$18,000",
+    total: "Free Custom Estimate",
     highlight: true,
   },
   {
     category: "Tub-to-Shower Conversion",
     description: "Remove tub, install walk-in shower",
     items: [
-      { name: "Tub removal & plumbing modification", cost: "$800–$2,000" },
-      { name: "Schluter waterproofing system", cost: "$600–$1,200" },
-      { name: "Custom tile shower", cost: "$2,500–$5,500" },
-      { name: "Frameless glass door or enclosure", cost: "$800–$2,500" },
-      { name: "Drain, valve & fixture installation", cost: "$600–$1,500" },
+      { name: "Tub removal & plumbing modification", cost: "Mid-Range Scope" },
+      { name: "Schluter waterproofing system", cost: "Mid-Range Scope" },
+      { name: "Custom tile shower", cost: "Mid-Range Scope" },
+      { name: "Frameless glass door or enclosure", cost: "Mid-Range Scope" },
+      { name: "Drain, valve & fixture installation", cost: "Mid-Range Scope" },
     ],
-    total: "$6,000–$13,000",
+    total: "Free Custom Estimate",
     highlight: false,
   },
   {
     category: "Master Bathroom Remodel",
     description: "Full-scope master suite renovation",
     items: [
-      { name: "Walk-in shower enclosure & tile", cost: "$5,000–$12,000" },
-      { name: "Double vanity with quartz countertop", cost: "$2,500–$7,000" },
-      { name: "Tile flooring (heated optional)", cost: "$2,000–$5,000" },
-      { name: "Lighting, mirrors & accessories", cost: "$800–$2,500" },
-      { name: "Plumbing & electrical coordination", cost: "$2,000–$6,000" },
-      { name: "Demo, drywall & finishing", cost: "$2,000–$5,000" },
+      { name: "Walk-in shower enclosure & tile", cost: "Luxury Custom Scope" },
+      { name: "Double vanity with quartz countertop", cost: "Luxury Custom Scope" },
+      { name: "Tile flooring (heated optional)", cost: "Luxury Custom Scope" },
+      { name: "Lighting, mirrors & accessories", cost: "Luxury Custom Scope" },
+      { name: "Plumbing & electrical coordination", cost: "Luxury Custom Scope" },
+      { name: "Demo, drywall & finishing", cost: "Luxury Custom Scope" },
     ],
-    total: "$18,000–$45,000+",
+    total: "Free Custom Estimate",
     highlight: false,
   },
 ];
@@ -116,7 +114,7 @@ const costFactors = [
   {
     title: "Plumbing Relocation",
     impact: "High",
-    detail: "Moving a toilet, shower drain, or supply lines adds $2,000–$6,000 to any project.",
+    detail: "Moving a toilet, shower drain, or supply lines adds significant complexity and labor to any project.",
   },
   {
     title: "Hard Water Materials",
@@ -126,22 +124,22 @@ const costFactors = [
   {
     title: "Tile Selection",
     impact: "High",
-    detail: "Builder-grade ceramic vs. natural stone or large-format porcelain can swing costs by $3,000–$8,000.",
+    detail: "Builder-grade ceramic vs. natural stone or large-format porcelain can swing layout and labor times.",
   },
   {
     title: "Glass Enclosure Style",
     impact: "Medium",
-    detail: "Frameless glass runs $800–$2,500 more than framed alternatives. Worth it for resale value.",
+    detail: "Frameless glass enclosures require custom-fit measurement and heavy hardware compared to framed units.",
   },
   {
     title: "Fixture Grade",
     impact: "Medium",
-    detail: "Entry-level to luxury fixtures vary by $500–$3,000 depending on brand and finish.",
+    detail: "Entry-level to luxury fixtures vary based on solid brass bodies, finish options, and smart valves.",
   },
   {
     title: "Permit Requirements",
     impact: "Low",
-    detail: "Chandler permits for structural/plumbing/electrical work typically cost $300–$800. We handle all permitting.",
+    detail: "Chandler permits for structural/plumbing/electrical work are required for code compliance. We handle the process.",
   },
 ];
 

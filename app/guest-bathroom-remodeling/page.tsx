@@ -19,9 +19,7 @@ import { Users, Layout, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
-export const metadata: Metadata = {title: {
-    absolute: "Guest Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore guest bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Guest Bathroom Remodeling Chandler AZ | Free Estimate",description: "Professional guest bathroom remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
   openGraph: {title: "Guest Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore guest bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/guest-bathroom-remodeling/`,
     type: "website",

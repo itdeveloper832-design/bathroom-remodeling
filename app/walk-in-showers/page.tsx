@@ -65,7 +65,7 @@ export default function WalkInShowersPage() {
       />
       <PriceSchema
         serviceName="Walk-In Shower Installation"
-        priceRange="$6,000 - $18,000"
+        priceRange="Free Custom Estimate"
         url={`${siteConfig.url}/walk-in-showers/`}
       />
       <FAQSchema faqs={faqs} />

@@ -9,7 +9,7 @@ import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, We
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
-import BelowFoldLoader from "@/components/home/below-fold-loader";
+const BelowFoldLoader = dynamic(() => import("@/components/home/below-fold-loader"));
 
 export const metadata: Metadata = {
   title: "Licensed Bath Remodelers | Chandler AZ Bathroom Remodeling",

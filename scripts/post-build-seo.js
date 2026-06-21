@@ -113,8 +113,9 @@ function processFile(filePath) {
           console.log(`Inlining CSS: ${href} (${(stats.size/1024).toFixed(1)} KB) into ${path.relative(outDir, filePath)}`);
           return `<style data-inlined="true">${cssContent}</style>`;
         } else {
-          console.log(`Keeping CSS (loading synchronously): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
-          return match;
+          console.log(`Keeping CSS (deferring loading): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
+          hasDeferredCss = true;
+          return `<link rel="stylesheet" href="${href}" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="${href}"></noscript>`;
         }
       }
     }
@@ -149,6 +150,29 @@ function processFile(filePath) {
         `\n<style data-critical="true">${CRITICAL_CSS}</style>\n` + 
         cleanedContent.substring(headEndIdx);
     }
+  }
+
+  // Preload LCP hero images (fetchpriority="high")
+  const imgRegex = /<img\s+[^>]*fetch[pP]riority=["']high["'][^>]*>/gi;
+  const lcpMatches = cleanedContent.match(imgRegex);
+  if (lcpMatches) {
+    lcpMatches.forEach(tag => {
+      const srcMatch = tag.match(/src=["']([^"']+)["']/i);
+      if (srcMatch) {
+        const src = srcMatch[1];
+        // Only preload if it's not already preloaded in some other way
+        if (!cleanedContent.includes(`href="${src}"`) || !cleanedContent.includes('rel="preload"')) {
+          console.log(`Injecting image preload for LCP resource: ${src} in ${path.relative(outDir, filePath)}`);
+          const headEndIdx = cleanedContent.indexOf('</head>');
+          if (headEndIdx !== -1) {
+            cleanedContent = 
+              cleanedContent.substring(0, headEndIdx) + 
+              `\n<link rel="preload" as="image" href="${src}" fetchpriority="high">\n` + 
+              cleanedContent.substring(headEndIdx);
+          }
+        }
+      }
+    });
   }
 
   // 1. Find and hoist all JSON-LD scripts if any exist

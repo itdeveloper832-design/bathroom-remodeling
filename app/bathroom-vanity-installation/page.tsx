@@ -17,9 +17,9 @@ import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 
-export const metadata: Metadata = {title: "Bathroom Vanity Installation Chandler AZ | Free Estimate",description: "Professional bathroom vanity installation in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Vanity Installation Chandler AZ | Custom Cabinets | ARZ",description: "Custom vanity installation in Chandler, AZ. Single & double sink setups, quartz/granite countertops, and custom cabinet layouts. Call for a quote today!",
   openGraph: {title: "Bathroom Vanity Install | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom vanity install, custom showers, tile, vanities, clear pricing, and free estimates.",
-    url: `${siteConfig.url}/bathroom-vanity-installation`,
+    url: `${siteConfig.url}/bathroom-vanity-installation/`,
     type: "website",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {title: "Bathroom Vanity Installation Chandler
     images: [`${siteConfig.url}/images/og-vanity-install.png`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/bathroom-vanity-installation`,
+    canonical: `${siteConfig.url}/bathroom-vanity-installation/`,
   },
 };
 
@@ -55,7 +55,7 @@ export default function BathroomVanityInstallationPage() {
 <ServiceSchema
         serviceName="Bathroom Vanity Installation in Chandler, Arizona"
         serviceDescription="Professional bathroom vanity installation in Chandler, Arizona. Custom designs, expert installation, and coordinated fixtures."
-        serviceUrl={`${siteConfig.url}/bathroom-vanity-installation`}
+        serviceUrl={`${siteConfig.url}/bathroom-vanity-installation/`}
       />
       <FAQSchema faqs={faqs} />
       <Header />

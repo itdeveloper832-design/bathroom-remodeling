@@ -18,7 +18,7 @@ import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
-export const metadata: Metadata = {title: "Small Bathroom Remodeling Chandler AZ | Free Estimate",description: "Professional small bathroom remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Small Bathroom Remodeling Chandler AZ | Space Savers | ARZ",description: "Maximize storage and style in your small guest or hall bathroom in Chandler, AZ. Smart floating vanities, pocket doors, and curbless layouts. Call now!",
   openGraph: {title: "Small Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore small bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/small-bathroom-remodeling/`,
     type: "website",

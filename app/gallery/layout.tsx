@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import { siteConfig } from "@/lib/site-config"
 
-export const metadata: Metadata = {title: "Gallery Chandler AZ | Free Estimate",description: "Professional gallery in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Project Gallery | Custom Showers | ARZ",description: "Explore our stunning gallery of completed bathroom remodels in Chandler, AZ. Custom tiled walk-in showers, luxury master baths, & vanity upgrades.",
   openGraph: {title: "Project Gallery Ideas | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore project gallery ideas, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/gallery/`,
     type: "website",

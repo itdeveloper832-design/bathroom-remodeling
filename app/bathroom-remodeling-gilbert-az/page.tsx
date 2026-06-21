@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Gilbert Az Chandler AZ | Free Estimate",description: "Professional bathroom remodeling gilbert az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Licensed Bath Renovations Gilbert | Custom Tile | ARZ",description: "Beautiful bathroom renovations in Gilbert, AZ. High-quality curbless showers, tile installation, and vanity updates. Schedule a free quote today!",
   openGraph: {title: "Bathroom Remodeling Gilbert AZ | Free Estimate",description: "Quality bathroom remodeling in Gilbert, AZ. Walk-in showers, tile work & full bath renovations. Licensed ROC338304 & 2-year warranty. Call (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/`,
     type: "website",

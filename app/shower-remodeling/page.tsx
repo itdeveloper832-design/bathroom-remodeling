@@ -24,7 +24,7 @@ import ShowerCTAFooter from "@/components/shower-cta-footer";
 import ShowerGallery from "@/components/shower-gallery";
 
 
-export const metadata: Metadata = {title: "Shower Remodeling Chandler AZ | Free Estimate",description: "Professional shower remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Custom Shower Remodeling Chandler AZ | Walk-In Tile | ARZ",description: "Ditch your old tub for a custom tiled walk-in shower in Chandler, AZ. Waterproof Schluter-Kerdi systems, frameless glass, and custom benches. Call now!",
   openGraph: {title: "Shower Remodeling | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore shower remodeling, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/shower-remodeling/`,
     type: "website",

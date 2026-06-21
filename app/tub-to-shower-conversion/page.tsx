@@ -20,7 +20,7 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
 
-export const metadata: Metadata = {title: "Tub to Shower Conversion Chandler AZ | Free Estimate",description: "Professional tub to shower conversion in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Tub-to-Shower Conversions Chandler AZ | Walk-In Showers | ARZ",description: "Convert your unused tub into a spacious curbless walk-in shower in Chandler, AZ. Low-profile entry, custom tile work, and fast installs. Free quote!",
   openGraph: {title: "Tub To Shower Conversion | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower conversion, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/tub-to-shower-conversion/`,
     type: "website",

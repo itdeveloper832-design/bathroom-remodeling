@@ -16,7 +16,7 @@ import { serviceContent } from "@/lib/service-content-data";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Chandler AZ | Free Estimate",description: "Professional bathroom remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Chandler AZ | Custom Layouts | ARZ",description: "Get expert bathroom remodeling in Chandler, AZ by ARZ. Specialized in custom walk-in showers, tub conversions, & tile work. Call for a free quote!",
   openGraph: {title: "Bathroom Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling`,
     type: "website",

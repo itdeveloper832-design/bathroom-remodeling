@@ -24,7 +24,7 @@ import {
 import { Button } from "@/components/ui/button";
 import LocalTrust from "@/components/home/local-trust";
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Chandler Az Chandler AZ | Free Estimate",description: "Professional bathroom remodeling chandler az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Chandler AZ | Licensed Pros - ARZ",description: "Upgrade your bathroom in Chandler, AZ with our licensed crew. Custom showers, double vanities, and premium tiling. Get a free project estimate today!",
   openGraph: {title: "Bathroom Remodeling Chandler AZ | Free Estimate",description: "Expert bathroom remodeling in Chandler, AZ. Walk-in showers, tub-to-shower conversions & custom tile. Licensed ROC338304. Call (520) 569-3339 for a free quote.",
     url: `${siteConfig.url}/bathroom-remodeling-chandler-az/`,
     type: "website",

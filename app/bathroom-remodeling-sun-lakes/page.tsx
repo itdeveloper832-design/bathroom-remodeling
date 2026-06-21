@@ -22,9 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "Sun Lakes Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore sun lakes bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Licensed Bath Renovations Sun Lakes | Custom Tile | ARZ",description: "Beautiful bathroom renovations in Sun Lakes, AZ. High-quality curbless showers, tile installation, and vanity updates. Schedule a free quote today!",
   openGraph: {title: "Sun Lakes Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore sun lakes bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-sun-lakes/`,
     type: "website",

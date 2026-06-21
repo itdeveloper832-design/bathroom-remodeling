@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, Hammer, Sparkles } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema, PersonSchema } from "@/components/seo/json-ld"
 
-export const metadata: Metadata = {title: "About ARZ Home Remodeling | Chandler Remodeling",description: "Learn why homeowners trust ARZ Home Remodeling for bathroom renovations in Chandler, AZ. Quality workmanship and free estimates.",
+export const metadata: Metadata = {title: "About ARZ Home Remodeling | Licensed Chandler Contractors",description: "Family-owned bathroom remodeling company serving Chandler, AZ since 2010. Meet owner Alex Rivers and our licensed crew. ROC #338304, NARI member.",
   openGraph: {title: "About ARZ Remodelers | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore about arz remodelers, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/about/`,
     type: "website",

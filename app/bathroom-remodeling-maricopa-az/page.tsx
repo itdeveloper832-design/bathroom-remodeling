@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Maricopa Az Chandler AZ | Free Estimate",description: "Professional bathroom remodeling maricopa az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Remodelers in Maricopa | Custom Showers | ARZ",description: "Upgrade your bathroom in Maricopa, AZ with our licensed crew. Custom showers, double vanities, and premium tiling. Get a free project estimate today!",
   openGraph: {title: "Maricopa Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore maricopa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-maricopa-az/`,
     type: "website",

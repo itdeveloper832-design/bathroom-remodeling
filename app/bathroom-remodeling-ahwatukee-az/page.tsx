@@ -23,9 +23,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "Ahwatukee Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ahwatukee bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Licensed Bath Renovations Ahwatukee | Custom Tile | ARZ",description: "Beautiful bathroom renovations in Ahwatukee, AZ. High-quality curbless showers, tile installation, and vanity updates. Schedule a free quote today!",
   openGraph: {title: "Ahwatukee Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ahwatukee bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-ahwatukee-az/`,
     type: "website",

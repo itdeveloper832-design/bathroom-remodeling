@@ -13,7 +13,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Clock } from "lucide-react";
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Apache Junction Az Chandler AZ | Free Es",description: "Professional bathroom remodeling apache junction az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Apache Junction | Licensed Contractor | ARZ",description: "Top-rated bathroom remodeling in Apache Junction, AZ by ARZ. Specialized in custom walk-in showers, tub conversions, & tile work. Call for a free quote!",
   openGraph: {title: "Bathroom Remodeling Apache Junction AZ | ARZ",description: "Licensed bathroom remodeling in Apache Junction, AZ. Custom showers, tub conversions & tile. Schluter waterproofing system. Free estimate: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-apache-junction-az/`,
     type: "website",
@@ -77,7 +77,7 @@ export default function ApacheJunctionPage() {
               Nestled near the beautiful Superstition Mountains, Apache Junction is home to unique properties, 
               from classic desert ranches to modern family builds. We help local residents enhance their comfort, 
               safety, and home equity with professional bathroom transformations. Whether you are looking for an 
-              extensive master suite overhaul or a focused **indoor bathroom remodel apache junction az** families trust 
+              extensive master suite overhaul or a focused bathroom remodel in Apache Junction that families trust 
               for quality and speed, we have you covered.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">

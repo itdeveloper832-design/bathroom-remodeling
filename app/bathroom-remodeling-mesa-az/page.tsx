@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Mesa Az Chandler AZ | Free Estimate",description: "Professional bathroom remodeling mesa az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Mesa Bathroom Remodeling | Free Estimates | ARZ",description: "Looking for a licensed bath remodeler in Mesa, AZ? ARZ specializes in custom tile showers, layouts, & fixtures. Call for your free consultation!",
   openGraph: {title: "Bathroom Remodeling Mesa AZ | Licensed Contractor",description: "Professional bathroom remodeling in Mesa, AZ. Custom showers, vanities & tile. Fixed pricing, 2-year warranty. Call ARZ today: (520) 569-3339. Free estimate.",
     url: `${siteConfig.url}/bathroom-remodeling-mesa-az/`,
     type: "website",

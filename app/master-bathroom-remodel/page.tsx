@@ -13,7 +13,7 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {title: "Master Bathroom Remodel Chandler AZ | Free Estimate",description: "Professional master bathroom remodel in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Master Bathroom Remodeling Chandler AZ | Custom Designs | ARZ",description: "Luxury master suite bathroom renovations in Chandler, AZ. Custom tiled walk-in showers, freestanding tubs, and double vanity installations. Get a quote!",
   openGraph: {title: "Master Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore master bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/master-bathroom-remodel/`,
     type: "website",

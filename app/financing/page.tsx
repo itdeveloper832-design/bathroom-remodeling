@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { siteConfig } from "@/lib/site-config"
 import { Check, Calculator, Clock, Shield, CreditCard } from "lucide-react"
 
-export const metadata: Metadata = {title: "Financing Chandler AZ | Free Estimate",description: "Professional financing in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Remodel Financing Chandler AZ | Payment Plans",description: "Affordable bathroom remodel financing options in Chandler, AZ. Learn about low-APR home improvement loans, HELOCs, and flexible payment plans.",
   openGraph: {title: "Financing Options | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore financing options, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/financing/`,
     type: "website",

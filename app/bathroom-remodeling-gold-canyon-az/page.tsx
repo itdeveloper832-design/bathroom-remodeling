@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Gold Canyon Az Chandler AZ | Free Estima",description: "Professional bathroom remodeling gold canyon az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Remodeling Gold Canyon | Licensed Contractor | ARZ",description: "Top-rated bathroom remodeling in Gold Canyon, AZ by ARZ. Specialized in custom walk-in showers, tub conversions, & tile work. Call for a free quote!",
   openGraph: {title: "Gold Canyon Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gold canyon bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-gold-canyon-az/`,
     type: "website",

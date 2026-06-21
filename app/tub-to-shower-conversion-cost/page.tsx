@@ -10,7 +10,7 @@ import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/jso
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
-export const metadata: Metadata = {title: "Tub To Shower Conversion Cost Chandler AZ | Free Estimate",description: "Professional tub to shower conversion cost in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Tub-to-Shower Conversion Cost Guide | Chandler AZ | ARZ",description: "How much does a tub-to-shower conversion cost in Chandler, AZ? Learn about demolition, plumbing relocations, waterproofing, and tile costs.",
   openGraph: {title: "Tub To Shower Convert Cost | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore tub to shower convert cost, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/tub-to-shower-conversion-cost/`,
     type: "website",

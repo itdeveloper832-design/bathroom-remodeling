@@ -12,7 +12,7 @@ import AreaBenefits from "@/components/area-benefits";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Queen Creek Az Chandler AZ | Free Estima",description: "Professional bathroom remodeling queen creek az in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Remodelers in Queen Creek | Custom Showers | ARZ",description: "Upgrade your bathroom in Queen Creek, AZ with our licensed crew. Custom showers, double vanities, and premium tiling. Get a free project estimate today!",
   openGraph: {title: "Queen Creek Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore queen creek bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-queen-creek-az/`,
     type: "website",
@@ -74,7 +74,7 @@ export default function QueenCreekPage() {
             <h2 className="font-serif text-3xl font-semibold mb-6">Local Bathroom Renovations in Queen Creek</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Queen Creek is one of Arizona's fastest growing communities, and we're proud to help local families 
-              enhance their homes with professional bathroom updates. If you are looking for a complete **bathroom remodel queen creek** families count on for modern aesthetics, or if you reside in a newer build in San Tan Valley or a custom home in the heart of Queen Creek, our team has the local expertise you need.
+              enhance their homes with professional bathroom updates. If you are looking for a complete bathroom remodel that Queen Creek families count on for modern aesthetics, or if you reside in a newer build in San Tan Valley or a custom home in the heart of Queen Creek, our team has the local expertise you need.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               We specialize in <strong>bathroom remodeling in Queen Creek, AZ</strong>, offering everything from 

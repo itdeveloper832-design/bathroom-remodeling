@@ -15,13 +15,13 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
-export const metadata: Metadata = {title: "Bathroom Lighting Installation Chandler AZ | Free Estimate",description: "Professional bathroom lighting installation in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Lighting Contractor Chandler AZ | LED Upgrades | ARZ",description: "Enhance your bath with custom lighting in Chandler, AZ. Recessed LEDs, vanity light fixtures, and safety-compliant GFCI circuits. Schedule a free quote!",
   openGraph: {title: "Bathroom Lighting Install | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom lighting install, custom showers, tile, vanities, clear pricing, and free estimates.",
-    url: `${siteConfig.url}/bathroom-lighting-installation`,
+    url: `${siteConfig.url}/bathroom-lighting-installation/`,
     type: "website",
   },
   alternates: {
-    canonical: `${siteConfig.url}/bathroom-lighting-installation`,
+    canonical: `${siteConfig.url}/bathroom-lighting-installation/`,
   },
 };
 
@@ -39,7 +39,7 @@ export default function BathroomLightingInstallationPage() {
 <ServiceSchema 
         serviceName="Bathroom Lighting Installation in Chandler, Arizona" 
         serviceDescription="Professional bathroom lighting installation in Chandler, Arizona. Recessed LED layout, layered vanity lights, and GFCI shock safety." 
-        serviceUrl={`${siteConfig.url}/bathroom-lighting-installation`} 
+        serviceUrl={`${siteConfig.url}/bathroom-lighting-installation/`} 
       />
       <FAQSchema faqs={faqs} />
       <Header />

@@ -13,7 +13,7 @@ import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 import { CheckCircle2, Clock, DollarSign, ArrowRight } from "lucide-react";
 
-export const metadata: Metadata = {title: "Handicap Accessible Bathroom Chandler AZ | Free Estimate",description: "Professional handicap accessible bathroom in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Handicap Accessible Bathrooms Chandler AZ | ADA Pros | ARZ",description: "Expert handicap accessible bathroom remodeling in Chandler, AZ. Zero-threshold roll-in showers, safety grab bars, and custom vanities. Free estimate!",
   openGraph: {title: "Handicap Accessible | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore handicap accessible, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/handicap-accessible-bathroom/`,
     type: "website",

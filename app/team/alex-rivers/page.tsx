@@ -8,7 +8,7 @@ import { PersonSchema, BreadcrumbSchema } from "@/components/seo/json-ld"
 import { Award, Briefcase, MapPin, Phone, Mail, ExternalLink, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {title: "Alex Rivers Chandler AZ | Free Estimate",description: "Professional alex rivers in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Alex Rivers | Licensed Bathroom Contractor & Owner | ARZ",description: "Meet Alex Rivers, founder of ARZ Home Remodeling. Over 15 years and 500+ completed bathroom remodeling projects in Chandler, AZ. ROC License #338304.",
   openGraph: {title: "Alex Rivers Remodeler | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore alex rivers remodeler, custom showers, tile, vanities, clear pricing, and free estimates.",
     type: "website",
     url: `${siteConfig.url}/team/alex-rivers/`,

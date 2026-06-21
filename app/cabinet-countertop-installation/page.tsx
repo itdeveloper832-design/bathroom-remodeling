@@ -15,9 +15,9 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
-export const metadata: Metadata = {title: "Cabinet Countertop Installation Chandler AZ | Free Estimate",description: "Professional cabinet countertop installation in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Vanity Cabinets & Countertops Chandler AZ | Install | ARZ",description: "Upgrade your bathroom with custom cabinets and quartz, granite, or marble countertops in Chandler, AZ. ROC licensed installation. Get a free estimate!",
   openGraph: {title: "Vanity Cabinet Installs | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore vanity cabinet installs, custom showers, tile, vanities, clear pricing, and free estimates.",
-    url: `${siteConfig.url}/cabinet-countertop-installation`,
+    url: `${siteConfig.url}/cabinet-countertop-installation/`,
     type: "website",
     images: [
       {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {title: "Cabinet Countertop Installation Chand
     images: [`${siteConfig.url}/images/cabinet-countertop-hero.jpg`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/cabinet-countertop-installation`,
+    canonical: `${siteConfig.url}/cabinet-countertop-installation/`,
   },
 };
 
@@ -50,10 +50,10 @@ export default function CabinetCountertopInstallationPage() {
     <>
       
       <BreadcrumbSchema items={[ { name: "Home", url: "https://arzhomeremodeling.com/" }, { name: "Services", url: "https://arzhomeremodeling.com/services/" }, { name: "Cabinet Countertop Installation", url: "https://arzhomeremodeling.com/cabinet-countertop-installation/" } ]} />
-<ServiceSchema
+      <ServiceSchema
         serviceName="Cabinet & Countertop Installation in Chandler, Arizona"
         serviceDescription="Professional cabinet and countertop installation in Chandler, Arizona. Granite, quartz, marble countertops and custom cabinetry with expert installation."
-        serviceUrl={`${siteConfig.url}/cabinet-countertop-installation`}
+        serviceUrl={`${siteConfig.url}/cabinet-countertop-installation/`}
       />
       <FAQSchema faqs={faqs} />
       <Header />
@@ -64,8 +64,8 @@ export default function CabinetCountertopInstallationPage() {
           description="Upgrade your bathroom with custom cabinets and premium countertops in granite, quartz, or marble with expert installation."
           image="/images/projects/modern-double-vanity-chandler.webp"
           breadcrumbs={[
-            { name: "Home", url: siteConfig.url },
-            { name: "Cabinet & Countertop Installation", url: `${siteConfig.url}/cabinet-countertop-installation` },
+            { name: "Home", url: `${siteConfig.url}/` },
+            { name: "Cabinet & Countertop Installation", url: `${siteConfig.url}/cabinet-countertop-installation/` },
           ]}
         />
 

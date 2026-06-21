@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site-config"
 import { Phone, MapPin, Clock, Star } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema, ContactPageSchema } from "@/components/seo/json-ld"
 
-export const metadata: Metadata = {title: "Contact ARZ Home Remodeling | Chandler AZ",description: "Need a bathroom remodel in Chandler, AZ? Contact ARZ Home Remodeling today for a free consultation and project estimate.",
+export const metadata: Metadata = {title: "Free Bathroom Remodeling Quotes | Contact ARZ in Chandler",description: "Contact Chandler's top-rated bathroom remodeling contractor. Fill out our form or call (520) 569-3339 to schedule a free in-home consultation today.",
   openGraph: {title: "Free Bathroom Estimate | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore free bathroom estimate, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/contact/`,
     type: "website",

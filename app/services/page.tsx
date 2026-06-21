@@ -8,7 +8,7 @@ import { bathroomServices } from "@/lib/bathroom-services";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = {title: "Services Chandler AZ | Free Estimate",description: "Professional services in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Custom Bathroom Remodeling Services Chandler AZ | ARZ",description: "Browse all bathroom services offered by ARZ in Chandler, AZ: walk-in showers, tub conversions, custom tile, vanity cabinetry, and ADA retrofits.",
   alternates: {
     canonical: `${siteConfig.url}/services/`,
   },

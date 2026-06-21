@@ -19,7 +19,7 @@ import LocalTrust from "@/components/home/local-trust";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 import Link from "next/link";
 
-export const metadata: Metadata = {title: "Bathtub Remodeling Chandler AZ | Free Estimate",description: "Professional bathtub remodeling in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathtub Remodeling Chandler AZ | Soaker Tub Upgrades | ARZ",description: "Upgrade your bathroom with custom bathtub remodeling in Chandler, AZ. Soaking tubs, freestanding tub installations, & custom surrounds. Call today!",
   openGraph: {title: "Bathtub Remodel Services | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathtub remodel services, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathtub-remodeling/`,
     type: "website",

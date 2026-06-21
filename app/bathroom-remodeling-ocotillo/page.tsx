@@ -22,9 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: {
-    absolute: "Ocotillo Bath Remodel | Chandler AZ Bathroom Remodeling"
-  },description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ocotillo bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
+export const metadata: Metadata = {title: "Licensed Bath Renovations Ocotillo | Custom Tile | ARZ",description: "Beautiful bathroom renovations in Ocotillo, Chandler. High-quality curbless showers, tile installation, and vanity updates. Schedule a free quote today!",
   openGraph: {title: "Ocotillo Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ocotillo bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-ocotillo/`,
     type: "website",

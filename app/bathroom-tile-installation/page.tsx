@@ -17,9 +17,9 @@ import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 
-export const metadata: Metadata = {title: "Bathroom Tile Installation Chandler AZ | Free Estimate",description: "Professional bathroom tile installation in Chandler, AZ. Quality craftsmanship, honest pricing, and free estimates. Call today.",
+export const metadata: Metadata = {title: "Bathroom Tile Installer Chandler AZ | Custom Shower Tiling | ARZ",description: "Premium floor and shower wall tile setting in Chandler, AZ. Epoxy grout, porcelain, ceramic, and custom mosaics with expert installation. Free estimate!",
   openGraph: {title: "Bathroom Tile Installation | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom tile installation, custom showers, tile, vanities, clear pricing, and free estimates.",
-    url: `${siteConfig.url}/bathroom-tile-installation`,
+    url: `${siteConfig.url}/bathroom-tile-installation/`,
     type: "website",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {title: "Bathroom Tile Installation Chandler A
     images: [`${siteConfig.url}/images/og-tile-install.png`],
   },
   alternates: {
-    canonical: `${siteConfig.url}/bathroom-tile-installation`,
+    canonical: `${siteConfig.url}/bathroom-tile-installation/`,
   },
 };
 
@@ -53,7 +53,7 @@ export default function BathroomTileInstallationPage() {
 <ServiceSchema 
         serviceName="Bathroom Tile Installation in Chandler, Arizona" 
         serviceDescription="Expert bathroom tile setting in Chandler, Arizona. Custom flooring, waterproof shower walls, and premium ceramics." 
-        serviceUrl={`${siteConfig.url}/bathroom-tile-installation`} 
+        serviceUrl={`${siteConfig.url}/bathroom-tile-installation/`} 
       />
       <FAQSchema faqs={faqs} />
       <Header />

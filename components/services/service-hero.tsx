@@ -19,6 +19,8 @@ export default function ServiceHero({
   image,
   breadcrumbs,
 }: ServiceHeroProps) {
+  const heroImage = image.endsWith('.webp') ? image.replace(/\.webp$/, '.avif') : image;
+
   return (
     <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-20">
       <BreadcrumbSchema items={breadcrumbs} />
@@ -26,7 +28,7 @@ export default function ServiceHero({
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-primary/40">
         <Image
-          src={image}
+          src={heroImage}
           alt={`${title} - Professional bathroom remodeling in Chandler Arizona`}
           fill
           className="object-cover"

@@ -22,7 +22,8 @@ export default function ServiceHero({
   breadcrumbs,
   backgroundImage = "/images/hero/luxury-shower-remodel-chandler.avif"
 }: ServiceHeroProps) {
-  const heroImage = image ?? backgroundImage;
+  const rawImage = image ?? backgroundImage;
+  const heroImage = rawImage.endsWith('.webp') ? rawImage.replace(/\.webp$/, '.avif') : rawImage;
 
   return (
     <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-24 md:pt-28 lg:pt-32" aria-label={title}>

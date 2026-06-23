@@ -339,7 +339,19 @@ function processFile(filePath) {
           if (headEndIdx !== -1) {
             let preloadTag = `<link rel="preload" as="image" href="${src}" fetchpriority="high">`;
             if (src === '/images/hero/luxury-shower-remodel-chandler.avif') {
-              preloadTag = `<link rel="preload" as="image" href="${src}" imagesrcset="/images/hero/luxury-shower-remodel-chandler-640.avif 640w, /images/hero/luxury-shower-remodel-chandler-828.avif 828w, /images/hero/luxury-shower-remodel-chandler.avif 1200w" imagesizes="100vw" fetchpriority="high">`;
+              const fs = require('fs');
+              const path = require('path');
+              let base64MobileHero = "";
+              try {
+                const filePath = path.join(__dirname, '../public/images/hero/luxury-shower-remodel-chandler-640.avif');
+                if (fs.existsSync(filePath)) {
+                  base64MobileHero = `data:image/avif;base64,${fs.readFileSync(filePath).toString('base64')}`;
+                }
+              } catch (e) {
+                console.error("Failed to read image in post-build-seo:", e.message);
+              }
+              const mobileSrc = base64MobileHero || "/images/hero/luxury-shower-remodel-chandler-640.avif";
+              preloadTag = `<link rel="preload" as="image" href="${src}" imagesrcset="${mobileSrc} 640w, /images/hero/luxury-shower-remodel-chandler-828.avif 828w, /images/hero/luxury-shower-remodel-chandler.avif 1200w" imagesizes="100vw" fetchpriority="high">`;
             }
             cleanedContent = 
               cleanedContent.substring(0, headEndIdx) + 

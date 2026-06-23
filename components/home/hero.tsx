@@ -1,13 +1,24 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
+import fs from "fs";
+import path from "path";
 
 export default function Hero() {
+  // Inline the mobile 640px hero image as base64 to eliminate the network request round-trip on mobile
+  let base64MobileHero = "";
+  try {
+    const filePath = path.join(process.cwd(), "public/images/hero/luxury-shower-remodel-chandler-640.avif");
+    base64MobileHero = `data:image/avif;base64,${fs.readFileSync(filePath).toString("base64")}`;
+  } catch (err) {
+    console.error("Failed to inline mobile hero image:", err);
+  }
+
   return (
     <section className="relative min-h-[75vh] flex items-center overflow-hidden pt-24 md:pt-28 lg:pt-32" aria-label="Hero section">
       <div className="absolute inset-0 z-0">
         <picture className="absolute inset-0 w-full h-full">
-          <source srcSet="/images/hero/luxury-shower-remodel-chandler-640.avif" media="(max-width: 640px)" type="image/avif" />
+          <source srcSet={base64MobileHero || "/images/hero/luxury-shower-remodel-chandler-640.avif"} media="(max-width: 640px)" type="image/avif" />
           <source srcSet="/images/hero/luxury-shower-remodel-chandler-828.avif" media="(max-width: 828px)" type="image/avif" />
           <img
             src="/images/hero/luxury-shower-remodel-chandler.avif"

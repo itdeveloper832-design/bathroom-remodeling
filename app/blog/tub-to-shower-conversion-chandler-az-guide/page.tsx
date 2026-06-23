@@ -21,7 +21,7 @@ export const metadata: Metadata = {title: {
     publishedTime: "2026-06-07T08:00:00Z",
     images: [
       {
-        url: `${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`,
+        url: `${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`,
         width: 1200,
         height: 630,
         alt: "Tub-to-Shower Conversion in Chandler, AZ"
@@ -52,7 +52,7 @@ export default function StandaloneBlogPost() {
         title="Tub-to-Shower Conversion in Chandler, AZ: Everything You Need to Know Before You Start"
         description="Thinking about converting your bathtub to a walk-in shower? Read our complete Chandler guide covering design choices, waterproofing, permits, costs, and contractor vetting."
         url={`${siteConfig.url}/blog/tub-to-shower-conversion-chandler-az-guide/`}
-        image="/images/services/chandler-bathroom-remodel.webp"
+        image="/images/services/chandler-bathroom-remodel.jpg"
         datePublished="2026-06-07T08:00:00Z"
         author={author}
       />
@@ -133,7 +133,7 @@ export default function StandaloneBlogPost() {
             <div className="max-w-5xl mx-auto">
               <div className="relative aspect-[21/9] overflow-hidden rounded-2xl shadow-2xl border-4 border-background">
                 <Image
-                  src="/images/services/chandler-bathroom-remodel.webp"
+                  src="/images/services/chandler-bathroom-remodel.jpg"
                   alt="Tub to Shower Conversion in Chandler AZ"
                   fill
                   className="object-cover"

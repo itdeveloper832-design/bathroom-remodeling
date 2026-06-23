@@ -187,7 +187,7 @@ export default function TempePage() {
           title="Licensed Bathroom Remodeling in Tempe, AZ"
           subtitle="Modern Transformations & Expert Local Contractors"
           description="Elevate your Tempe home with professional remodeling services tailored to your lifestyle. From custom walk-in showers near ASU to master suite renovations in South Tempe: we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Tempe AZ", url: `${siteConfig.url}/bathroom-remodeling-tempe-az/` },

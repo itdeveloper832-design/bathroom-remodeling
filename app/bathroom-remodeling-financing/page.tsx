@@ -106,7 +106,7 @@ export default function FinancingPage() {
           title="Bathroom Remodeling Financing in Chandler, AZ"
           subtitle="Flexible Payments for Your Dream Design"
           description="Explore unsecured home improvement loans, HELOC options, and contractor payment terms. Find low monthly payments that fit your budget."
-          image="/images/services/bathroom-flooring-chandler.webp"
+          image="/images/services/bathroom-flooring-chandler.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Costs", url: `${siteConfig.url}/bathroom-remodel-cost-chandler/` },

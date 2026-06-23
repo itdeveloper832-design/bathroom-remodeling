@@ -56,7 +56,7 @@ export default function DedicatedAreaPage({ areaSlug, path }: DedicatedAreaPageP
           title={areaData.heroTitle}
           subtitle={areaData.heroSubtitle}
           description={areaData.heroDescription.replace(/^Transform your/i, "Update your")}
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: areaData.areaName, url: pageUrl },

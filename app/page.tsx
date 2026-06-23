@@ -44,7 +44,7 @@ const homepageVideos = [
   {
     name: "Ocotillo Luxury Master Suite Tour",
     description: "Walkthrough tour of a completed luxury master suite bathroom remodel in Ocotillo, Chandler, AZ. Features custom curbless walk-in shower and epoxy grout.",
-    thumbnailUrl: `${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`,
+    thumbnailUrl: `${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`,
     uploadDate: "2025-03-15T08:00:00Z",
     duration: "PT2M45S",
     embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"

@@ -63,7 +63,7 @@ export default function ApacheJunctionPage() {
           title="Apache Junction’s Trusted Bathroom Remodeling Experts"
           subtitle="Quality Craftsmanship Near the Superstition Mountains"
           description="Ready to upgrade your space? We provide professional bathroom remodeling services tailored to Apache Junction homeowners. From curbless walk-in showers to custom vanity installations, we deliver beautiful, desert-ready results on time and on budget."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Apache Junction", url: `${siteConfig.url}/bathroom-remodeling-apache-junction-az/` },

@@ -29,7 +29,7 @@ export const metadata: Metadata = {title: "Licensed Bath Renovations Dobson Ranc
   },
   twitter: {
     card: "summary_large_image",title: "Dobson Ranch Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore dobson ranch bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
-    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-dobson-ranch/`,
@@ -147,7 +147,7 @@ export default function DobsonRanchPage() {
           title="Custom Bathroom Remodeling in Dobson Ranch, AZ"
           subtitle="Modern Transformations for Older Layouts"
           description="Upgrade your Dobson Ranch home with the East Valley's trusted remodeling experts. From small guest bath optimizations to complete master suite expansions, we deliver elite tile and plumbing work with ROC Licensed peace of mind."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Dobson Ranch Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-dobson-ranch/` },

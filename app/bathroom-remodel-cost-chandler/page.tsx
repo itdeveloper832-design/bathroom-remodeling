@@ -162,7 +162,7 @@ export default function CostPage() {
           title="How Much Does a Bathroom Remodel Cost in Chandler, AZ? (2025 Pricing Guide)"
           subtitle="Transparent 2025 Pricing"
           description="Straight answers on what bathroom remodeling costs in Chandler. Every tier broken down by line item - no guessing, no surprises."
-          image="/images/services/bathroom-flooring-chandler.webp"
+          image="/images/services/bathroom-flooring-chandler.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Chandler AZ", url: `${siteConfig.url}/bathroom-remodeling-chandler-az/` },

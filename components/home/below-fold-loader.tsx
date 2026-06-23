@@ -8,9 +8,8 @@ import ChandlerProjects from "@/components/home/chandler-projects";
 import ProcessSection from "@/components/home/process-section";
 import WhyChooseUs from "@/components/home/why-choose-us";
 import FAQ from "@/components/home/faq";
-import MapSection from "@/components/home/map-section";
 import ServiceAreas from "@/components/home/service-areas";
-import ContactFormSection from "@/components/home/contact-form-section";
+import ContactSection from "@/components/home/contact-section";
 
 export default function BelowFoldLoader() {
   return (
@@ -23,9 +22,8 @@ export default function BelowFoldLoader() {
       <ProcessSection />
       <WhyChooseUs />
       <FAQ />
-      <MapSection />
       <ServiceAreas />
-      <ContactFormSection />
+      <ContactSection />
     </>
   );
 }

@@ -95,7 +95,7 @@ export default function PermitsPage() {
           title="Bathroom Remodeling Permits in Chandler, AZ"
           subtitle="Navigating Municipal Building Codes"
           description="A complete guide on when you need a permit to remodel a bathroom in Chandler, what fees to expect, and how the city inspection process works."
-          image="/images/services/bathroom-flooring-chandler.webp"
+          image="/images/services/bathroom-flooring-chandler.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Chandler Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-chandler-az/` },

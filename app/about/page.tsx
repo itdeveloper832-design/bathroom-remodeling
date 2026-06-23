@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { siteConfig } from "@/lib/site-config"
 import { Button } from "@/components/ui/button"
+import LocalTrust from "@/components/home/local-trust"
 import { Award, Users, Clock, Shield, CheckCircle2, ArrowRight, Phone, Pencil, Hammer, Sparkles } from "lucide-react"
 import { BreadcrumbSchema, FAQSchema, PersonSchema } from "@/components/seo/json-ld"
 

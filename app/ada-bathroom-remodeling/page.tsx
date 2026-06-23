@@ -77,7 +77,7 @@ export default function ADAPage() {
           title="ADA Bathroom Remodeling in Chandler, AZ"
           subtitle="Senior-Safe Design & Accessible Transformations"
           description="Maintain your independence with a bathroom designed for safety and comfort. We are Chandler's experts in ADA-compliant remodeling, senior-safe showers, and accessible master bath renovations."
-          image="/images/services/bathroom-tile-remodel-az.webp"
+          image="/images/services/bathroom-tile-remodel-az.jpg"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "ADA Remodeling", url: `${siteConfig.url}/ada-bathroom-remodeling/` }]}
         />
 

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
@@ -11,6 +14,20 @@ const ctaClass =
   "inline-flex items-center justify-center rounded-full bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-2 text-base font-semibold transition-colors";
 
 export function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 40) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <a
@@ -19,9 +36,11 @@ export function Header() {
       >
         Skip to content
       </a>
-      <InfoHeader />
+      <InfoHeader scrolled={scrolled} />
       <header
-        className="fixed top-[40px] left-0 right-0 z-40 bg-background shadow-md h-[60px] lg:h-[72px] flex items-center lg:bg-background/95 lg:backdrop-blur-md"
+        className={`fixed left-0 right-0 z-40 bg-background shadow-md h-[60px] lg:h-[72px] flex items-center lg:bg-background/95 lg:backdrop-blur-md transition-all duration-300 ${
+          scrolled ? "top-0" : "top-[40px]"
+        }`}
         role="banner"
       >
         <div className="container mx-auto px-4 lg:px-8">

@@ -29,7 +29,7 @@ export const metadata: Metadata = {title: "Licensed Bath Renovations Ocotillo | 
   },
   twitter: {
     card: "summary_large_image",title: "Ocotillo Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore ocotillo bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
-    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-ocotillo/`,
@@ -147,7 +147,7 @@ export default function OcotilloPage() {
           title="Premium Bathroom Remodeling in Ocotillo, Chandler"
           subtitle="Elevate Your Home with Custom Luxury Designs"
           description="Transform your Ocotillo home with the East Valley's premier bathroom contractor. From Mediterranean-style tiled master baths near Ocotillo Golf Club to sleek curbless walk-in showers, we deliver elite craftsmanship and ROC Licensed peace of mind."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Ocotillo Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-ocotillo/` },

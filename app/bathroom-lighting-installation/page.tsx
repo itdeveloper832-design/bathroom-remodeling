@@ -48,7 +48,7 @@ export default function BathroomLightingInstallationPage() {
           title="Bathroom Lighting Installation in Chandler, Arizona"
           subtitle="Professional LED & Vanity Lighting in Chandler AZ"
           description="Professional lighting installation with modern LED fixtures, vanity lights, and expert electrical work for beautiful, functional bathrooms."
-          image="/images/services/bathroom-tile-remodel-az.webp"
+          image="/images/services/bathroom-tile-remodel-az.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Lighting", url: `${siteConfig.url}/bathroom-lighting-installation` },

@@ -29,7 +29,7 @@ export const metadata: Metadata = {title: "Licensed Bath Renovations Sun Lakes |
   },
   twitter: {
     card: "summary_large_image",title: "Sun Lakes Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore sun lakes bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
-    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-sun-lakes/`,
@@ -147,7 +147,7 @@ export default function SunLakesPage() {
           title="Accessible Bathroom Remodeling in Sun Lakes, AZ"
           subtitle="Zero-Threshold Showers & Senior Safety Renovations"
           description="Maintain your independence with a safety-first bathroom upgrade. Serving active adult communities throughout Sun Lakes, we design low-threshold walk-in showers and ADA-compliant spaces with an ROC Licensed guarantee."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Sun Lakes Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-sun-lakes/` },

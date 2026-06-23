@@ -196,7 +196,7 @@ export default function AhwatukeePage() {
           title="Ahwatukee’s Top-Rated Bathroom Remodeling Contractor"
           subtitle="Hire the Best Local Remodelers in Ahwatukee - Free Estimates"
           description="Bringing our 5-star bathroom remodeling services to homeowners in Ahwatukee, AZ. Licensed AZ contractors specializing in high-quality renovations, custom shower installs, and full bathroom transformations."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Ahwatukee", url: `${siteConfig.url}/bathroom-remodeling-ahwatukee-az/` },

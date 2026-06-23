@@ -135,7 +135,7 @@ export default function WalkInShowerCostPage() {
           title="Walk-In Shower Guide (Project Scopes)"
           subtitle="Transparent Shower Budgets"
           description="Detailed breakdown of the costs to build or convert a walk-in shower in Chandler, AZ. Prefabricated, custom tile, and curbless designs explained."
-          image="/images/services/bathroom-flooring-chandler.webp"
+          image="/images/services/bathroom-flooring-chandler.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Walk-In Showers", url: `${siteConfig.url}/walk-in-showers/` },

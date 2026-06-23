@@ -29,7 +29,7 @@ export const metadata: Metadata = {title: "Licensed Garage Conversions Chandler 
   },
   twitter: {
     card: "summary_large_image",title: "Garage Conversion Baths | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore garage conversion baths, custom showers, tile, vanities, clear pricing, and free estimates.",
-    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/garage-conversion-chandler/`,
@@ -170,7 +170,7 @@ export default function GarageConversionPage() {
           title="Premium Garage Conversion in Chandler, AZ"
           subtitle="Convert Underutilized Space Into Luxury Living Areas"
           description="Unlock the hidden square footage of your home. Specializing in turnkey garage conversions in Chandler, Arizona: converting uninsulated garages into beautiful master suites, guest apartments, or professional home offices with ROC licensed expertise."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Garage Conversion Chandler AZ", url: `${siteConfig.url}/garage-conversion-chandler/` },

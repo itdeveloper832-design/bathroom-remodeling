@@ -12,7 +12,7 @@ export const post_1 = {
     "budget",
     "pricing"
   ],
-  "featuredImage": "/images/services/chandler-bathroom-remodel.webp",
+  "featuredImage": "/images/services/chandler-bathroom-remodel.jpg",
   "metaTitle": "2026 Bathroom Remodel Cost in Chandler, AZ - Local Pricing",
   "metaDescription": "Compare 2026 guest, master suite, and tub-to-shower remodel costs in Chandler, AZ. See real local pricing charts by neighborhood & zip code →",
   "author": "Alex Rivers",
@@ -34,7 +34,7 @@ export const post_2 = {
     "hiring tips",
     "questions to ask"
   ],
-  "featuredImage": "/images/gallery/contemporary-bathroom-az.webp",
+  "featuredImage": "/images/gallery/bathroom-renovation-chandler.webp",
   "metaTitle": "Choosing a Chandler Bathroom Contractor - 15 Questions to Ask",
   "metaDescription": "Protect your Chandler, AZ home. Get the checklist of 15 questions to ask any bathroom contractor about ROC licensing, permits, & warranties →",
   "author": "Alex Rivers",
@@ -78,7 +78,7 @@ export const post_4 = {
     "grout care",
     "maintenance tips"
   ],
-  "featuredImage": "/images/services/bathroom-tile-remodel-az.webp",
+  "featuredImage": "/images/services/bathroom-tile-remodel-az.jpg",
   "metaTitle": "Chandler Hard Water vs. Bathroom Tile & Grout | Guide",
   "metaDescription": "Chandler's hard water mineral scale can ruin your tile. Learn which dense porcelain tile & epoxy grout selections defend against scaling in AZ →",
   "author": "Alex Rivers",
@@ -100,7 +100,7 @@ export const post_5 = {
     "RedGard",
     "shower construction"
   ],
-  "featuredImage": "/images/services/bathroom-tile-remodel-az.webp",
+  "featuredImage": "/images/services/bathroom-tile-remodel-az.jpg",
   "metaTitle": "Schluter-KERDI vs. RedGard | Arizona Shower Waterproofing",
   "metaDescription": "Waterproofing battle: Compare Schluter-KERDI vs RedGard liquid membranes for Arizona's shifting framing & high desert heat. See key findings →",
   "author": "Alex Rivers",
@@ -122,7 +122,7 @@ export const post_6 = {
     "remodeling trends",
     "layout options"
   ],
-  "featuredImage": "/images/services/chandler-bathroom-remodel.webp",
+  "featuredImage": "/images/services/chandler-bathroom-remodel.jpg",
   "metaTitle": "Tub-to-Shower Conversion Ideas in Chandler, AZ",
   "metaDescription": "Upgrade your Chandler, AZ home with 2026 tub-to-shower conversion layout ideas. Save space, optimize custom tile, & increase property ROI →",
   "author": "Alex Rivers",
@@ -144,7 +144,7 @@ export const post_7 = {
     "universal design",
     "senior safety"
   ],
-  "featuredImage": "/images/projects/handicap-accessible-shower.webp",
+  "featuredImage": "/images/projects/guest-bath-tile-upgrade-sun-lakes-chandler.webp",
   "metaTitle": "ADA Bathroom Requirements & Universal Design in Arizona",
   "metaDescription": "Learn Arizona ADA residential guidelines. Get local specifications for handicap curbless showers, grab bars, & wheelchair clearances in Chandler →",
   "author": "Alex Rivers",
@@ -166,7 +166,7 @@ export const post_8 = {
     "chandler az",
     "regulations"
   ],
-  "featuredImage": "/images/services/bathroom-tile-remodel-az.webp",
+  "featuredImage": "/images/services/bathroom-tile-remodel-az.jpg",
   "metaTitle": "Bathroom Remodeling Permits in Chandler, Arizona | Guide",
   "metaDescription": "Do you need a permit to remodel a bathroom in Chandler, AZ? Learn the city's plumbing & structural code filings and inspection schedules →",
   "author": "Alex Rivers",
@@ -188,7 +188,7 @@ export const post_9 = {
     "design options",
     "glass care"
   ],
-  "featuredImage": "/images/gallery/contemporary-bathroom-az.webp",
+  "featuredImage": "/images/gallery/bathroom-renovation-chandler.webp",
   "metaTitle": "Is Frameless Shower Glass Worth It in Chandler, AZ?",
   "metaDescription": "Is frameless shower glass worth the cost in Chandler, AZ? Compare pricing, hard water protection, & resale equity value for your custom bath →",
   "author": "Alex Rivers",
@@ -210,7 +210,7 @@ export const post_10 = {
     "project management",
     "phases"
   ],
-  "featuredImage": "/images/services/chandler-bathroom-remodel.webp",
+  "featuredImage": "/images/services/chandler-bathroom-remodel.jpg",
   "metaTitle": "Bathroom Remodeling Timeline in Chandler, Arizona",
   "metaDescription": "How long does a bathroom renovation take? Get our week-by-week demolition, waterproofing, & city inspection schedule for Chandler, AZ homes →",
   "author": "Alex Rivers",
@@ -233,7 +233,7 @@ export const post_11 = {
     "planning",
     "design"
   ],
-  "featuredImage": "/images/services/chandler-bathroom-remodel.webp",
+  "featuredImage": "/images/services/chandler-bathroom-remodel.jpg",
   "metaTitle": "Complete Guide to Bathroom Remodeling in Chandler, Arizona",
   "metaDescription": "The ultimate 2026 bathroom remodeling guide for Chandler, AZ. Plan layout designs, calculate budgets, choose materials, & hire local experts →",
   "author": "Alex Rivers",
@@ -278,7 +278,7 @@ export const post_13 = {
     "space saving",
     "chandler homes"
   ],
-  "featuredImage": "/images/services/bathroom-tile-remodel-az.webp",
+  "featuredImage": "/images/services/bathroom-tile-remodel-az.jpg",
   "metaTitle": "Small Bathroom Layout & Space Optimization | Chandler, AZ",
   "metaDescription": "Struggling with a small bath? Maximize visual space & storage in Chandler, AZ with pocket doors, custom floating vanities, & curbless shower layouts →",
   "author": "Alex Rivers",
@@ -300,7 +300,7 @@ export const post_14 = {
     "shower design",
     "arizona home"
   ],
-  "featuredImage": "/images/services/bathroom-tile-remodel-az.webp",
+  "featuredImage": "/images/services/bathroom-tile-remodel-az.jpg",
   "metaTitle": "Porcelain vs. Ceramic Shower Tile | Arizona Remodeling",
   "metaDescription": "Is porcelain or ceramic tile better for your Arizona shower? Compare water absorption, durability under hard water, & cost for Chandler builds →",
   "author": "Alex Rivers",
@@ -344,7 +344,7 @@ export const post_16 = {
     "homeowner tips",
     "construction guide"
   ],
-  "featuredImage": "/images/services/bathroom-tile-remodel-az.webp",
+  "featuredImage": "/images/services/bathroom-tile-remodel-az.jpg",
   "metaTitle": "How to Prepare for a Bathroom Remodel | Chandler, AZ",
   "metaDescription": "Prepare your home for bathroom construction. Get our complete checklist for Chandler, AZ, covering HOA approvals, dust barriers, & schedules →",
   "author": "Alex Rivers",
@@ -366,7 +366,7 @@ export const post_17 = {
     "guest house zoning",
     "arizona adu"
   ],
-  "featuredImage": "/images/services/chandler-bathroom-remodel.webp",
+  "featuredImage": "/images/services/chandler-bathroom-remodel.jpg",
   "metaTitle": "ADU & Casita Construction Guide for Arizona | ARZ",
   "metaDescription": "Plan your detached guest house or casita in Chandler, AZ. Complete design-build guide covering municipal zoning codes, plumbing trenching, & cost models →",
   "author": "Alex Rivers",
@@ -388,7 +388,7 @@ export const post_18 = {
     "chandler az permits",
     "remodeling ideas"
   ],
-  "featuredImage": "/images/services/chandler-bathroom-remodel.webp",
+  "featuredImage": "/images/services/chandler-bathroom-remodel.jpg",
   "metaTitle": "Garage Conversions in Chandler, AZ: Complete Guide | ARZ",
   "metaDescription": "Everything you need to know about converting a 2-car or 3-car garage in Chandler, AZ. View cost tables, slab saw-cutting tips, HVAC mini-splits, and permitting →",
   "author": "Alex Rivers",
@@ -410,7 +410,7 @@ export const post_19 = {
     "home improvement",
     "budgeting tips"
   ],
-  "featuredImage": "/images/services/chandler-bathroom-remodel.webp",
+  "featuredImage": "/images/services/chandler-bathroom-remodel.jpg",
   "metaTitle": "Bathroom Remodel vs. Renovation: The Real Differences | ARZ",
   "metaDescription": "Cosmetic updates vs. structural overhauls. We explain the differences between bathroom remodeling and renovation in Arizona, detailing permit rules & costs →",
   "author": "Alex Rivers",
@@ -432,7 +432,7 @@ export const post_20 = {
     "porcelain tile",
     "epoxy grout"
   ],
-  "featuredImage": "/images/services/chandler-bathroom-remodel.webp",
+  "featuredImage": "/images/services/chandler-bathroom-remodel.jpg",
   "metaTitle": "Designing a Low-Maintenance Bathroom in Arizona | ARZ",
   "metaDescription": "Tired of scrubbing calcium water spots? Learn the dense materials, non-porous epoxy grouts, and treated shower glass coatings that repel hard water scaling in AZ →",
   "author": "Alex Rivers",
@@ -602,7 +602,7 @@ export const post_22 = {
     "epoxy grout",
     "bathroom tile"
   ],
-  "featuredImage": "/images/services/bathroom-tile-remodel-az.webp",
+  "featuredImage": "/images/services/bathroom-tile-remodel-az.jpg",
   "metaTitle": "Chandler AZ Hard Water Grout Guide - ARZ Home Remodeling",
   "metaDescription": "Learn why Chandler's 18+ grains of hard water ruin standard grout and how upgrading to ANSI A118.3 epoxy grout protects your new bathroom remodel.",
   "author": "Mike Hernandez",
@@ -729,7 +729,7 @@ export const defaultGalleryItems = [
   {
     title: "Small Bathroom Transformation",
     category: "bathroom",
-    imageUrl: "/images/services/bathroom-tile-remodel-az.webp",
+    imageUrl: "/images/services/bathroom-tile-remodel-az.jpg",
     description: "Maximizing space in a compact bathroom with smart design",
     featured: false,
   },

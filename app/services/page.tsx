@@ -1,6 +1,7 @@
 import { BreadcrumbSchema } from "@/components/seo/json-ld";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -56,20 +57,36 @@ export default function ServicesPage() {
                 <Link
                   key={service.name}
                   href={service.href}
-                  className="group block bg-card border border-border rounded-xl p-8 h-full hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+                  className="group block bg-card border border-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
                 >
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
-                      <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
+                  {/* Service Image */}
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    {/* Icon overlay badge */}
+                    <div className="absolute top-3 left-3 w-10 h-10 rounded-lg bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-md">
+                      <service.icon className="w-5 h-5 text-primary-foreground" aria-hidden="true" />
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
-                  <h2 className="font-serif text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
-                    {service.name}
-                  </h2>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {service.description}
-                  </p>
+
+                  {/* Content */}
+                  <div className="p-6">
+                    <div className="flex items-start justify-between mb-3">
+                      <h2 className="font-serif text-lg font-semibold text-foreground group-hover:text-primary transition-colors leading-tight">
+                        {service.name}
+                      </h2>
+                      <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0 ml-2 mt-0.5" />
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+                      {service.description}
+                    </p>
+                  </div>
                 </Link>
               ))}
             </div>

@@ -75,7 +75,7 @@ export default function WalkInShowersPage() {
           title="Curbless & Walk-In Shower Installations"
           subtitle="Accessible, Zero-Threshold Showers Built with Waterproof Integrity"
           description="Upgrade to a modern, barrier-free walk-in shower designed for safety, comfort, and premium aesthetics. Our certified specialists custom-build every project with heavy-duty structural framing, advanced Schluter-KERDI waterproofing systems, and durable, slip-resistant materials, all backed by a guaranteed fixed-price contract."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Walk-In Showers", url: `${siteConfig.url}/walk-in-showers` },

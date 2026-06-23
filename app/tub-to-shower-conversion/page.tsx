@@ -74,7 +74,7 @@ export default function TubToShowerConversionPage() {
           title="Seamless Tub-to-Shower Conversions"
           subtitle="Convert Unused Tubs Into Modern, High-Performance Walk-In Showers"
           description="Maximize your bathroom's footprint by swapping your high-threshold bathtub for a spacious, leak-proof walk-in shower. Our certified team handles the entire conversion, including framing upgrades, high-capacity drain plumbing, and vapor-tight Schluter-KERDI waterproofing, backed by a clear fixed-price contract."
-          image="/images/services/bathroom-tile-remodel-az.webp"
+          image="/images/services/bathroom-tile-remodel-az.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Tub to Shower Conversion", url: `${siteConfig.url}/tub-to-shower-conversion` },

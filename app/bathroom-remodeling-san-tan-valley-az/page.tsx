@@ -29,7 +29,7 @@ export const metadata: Metadata = {title: "San Tan Valley Bathroom Remodeling | 
   },
   twitter: {
     card: "summary_large_image",title: "San Tan Valley Bath | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore san tan valley bath, custom showers, tile, vanities, clear pricing, and free estimates.",
-    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-san-tan-valley-az/`,
@@ -180,7 +180,7 @@ export default function SanTanValleyPage() {
           title="Licensed Bathroom Remodeling in San Tan Valley, AZ"
           subtitle="Custom Tiled Showers & Luxury Master Suite Transformations"
           description="Elegantly transform your bathroom into a beautiful, functional retreat. Specializing in high-end curbless walk-in showers, tub-to-shower conversions, and premium master suite bathroom renovations in Encanterra, Johnson Ranch, and across San Tan Valley."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling San Tan Valley AZ", url: `${siteConfig.url}/bathroom-remodeling-san-tan-valley-az/` },

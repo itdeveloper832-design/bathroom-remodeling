@@ -3,10 +3,16 @@ import { Phone, Briefcase, MapPin } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 
-export function InfoHeader() {
+interface InfoHeaderProps {
+  scrolled?: boolean;
+}
+
+export function InfoHeader({ scrolled = false }: InfoHeaderProps) {
   return (
     <aside 
-      className="fixed top-0 left-0 right-0 z-30 bg-foreground text-background h-[40px] flex items-center text-sm"
+      className={`fixed top-0 left-0 right-0 z-30 bg-foreground text-background h-[40px] flex items-center text-sm transition-transform duration-300 ${
+        scrolled ? "-translate-y-full" : "translate-y-0"
+      }`}
       aria-label="Top contact information"
     >
       <div className="container mx-auto px-4 lg:px-8">

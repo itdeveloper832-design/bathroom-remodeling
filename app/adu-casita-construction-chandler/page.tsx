@@ -29,7 +29,7 @@ export const metadata: Metadata = {title: "ADU & Casita Construction Chandler AZ
   },
   twitter: {
     card: "summary_large_image",title: "ADU Bathroom Planning | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore adu bathroom planning, custom showers, tile, vanities, clear pricing, and free estimates.",
-    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/adu-casita-construction-chandler/`,
@@ -170,7 +170,7 @@ export default function AduPage() {
           title="Premium ADU & Casita Construction in Chandler, AZ"
           subtitle="Custom Detached Guest Houses & Suite Additions"
           description="Expand your living space and maximize your property value with Chandler's leading design-build ADU team. From luxurious detached mother-in-law suites in Fulton Ranch to attached pool casitas in Ocotillo: we manage the complete zoning, engineering, permits, and premium construction pipeline."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "ADU & Casita Construction Chandler AZ", url: `${siteConfig.url}/adu-casita-construction-chandler/` },

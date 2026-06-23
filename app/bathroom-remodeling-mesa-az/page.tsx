@@ -167,7 +167,7 @@ export default function MesaPage() {
           title="Licensed Bathroom Remodeling in Mesa, AZ"
           subtitle="Expert Transformations & Custom Shower Designs"
           description="Build the bathroom you've always wanted with Mesa's trusted remodeling team. From custom walk-in showers in Las Sendas to master suite renovations in Eastmark: we deliver high-end results with ROC Licensed expertise and fixed-price guarantees."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Mesa AZ", url: `${siteConfig.url}/bathroom-remodeling-mesa-az/` },

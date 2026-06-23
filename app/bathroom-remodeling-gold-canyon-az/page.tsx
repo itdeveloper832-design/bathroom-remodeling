@@ -29,7 +29,7 @@ export const metadata: Metadata = {title: "Bathroom Remodeling Gold Canyon | Lic
   },
   twitter: {
     card: "summary_large_image",title: "Gold Canyon Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore gold canyon bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
-    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-gold-canyon-az/`,
@@ -180,7 +180,7 @@ export default function GoldCanyonPage() {
           title="Premium Bathroom Remodeling in Gold Canyon, AZ"
           subtitle="Custom Tiled Showers & Luxury Master Suite Transformations"
           description="Elevate your desert lifestyle with Gold Canyon's leading luxury bathroom remodeling team. Specializing in premium walk-in tile showers, freestanding spa tubs, and custom double vanities in gated golf developments and mountain properties across Gold Canyon."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Gold Canyon AZ", url: `${siteConfig.url}/bathroom-remodeling-gold-canyon-az/` },

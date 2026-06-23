@@ -135,7 +135,7 @@ export default function TubToShowerConversionCostPage() {
           title="Tub-to-Shower Conversion Guide (Project Scopes)"
           subtitle="Transparent Project Pricing"
           description="A complete guide on what it costs to remove an old bathtub and build a spacious walk-in shower in Chandler, AZ. All options detailed."
-          image="/images/services/bathroom-flooring-chandler.webp"
+          image="/images/services/bathroom-flooring-chandler.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Tub-to-Shower Conversion", url: `${siteConfig.url}/tub-to-shower-conversion/` },

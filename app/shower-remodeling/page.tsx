@@ -20,7 +20,7 @@ import Link from "next/link";
 import ShowerTypes from "@/components/shower-types";
 import ShowerCostSection from "@/components/shower-cost-section";
 import ChandlerShowerMaterials from "@/components/chandler-shower-materials";
-import ShowerCTAFooter from "@/components/shower-cta-footer";
+
 import ShowerGallery from "@/components/shower-gallery";
 
 
@@ -74,7 +74,7 @@ export default function ShowerRemodelingPage() {
           title="Custom Shower Systems Engineered to Last"
           subtitle="Vapor-Tight Schluter-KERDI Waterproofing & Custom Glass Enclosures"
           description="Upgrade your daily routine with a premium tile or curbless walk-in shower. Our certified master installers secure every system with advanced waterproofing, custom-fit frameless glass, and stain-resistant epoxy grouting. We guarantee a fixed price and lifetime protection against leaks and moisture damage."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: `${siteConfig.url}/` },
             { name: "Shower Remodeling", url: `${siteConfig.url}/shower-remodeling/` },
@@ -270,7 +270,7 @@ export default function ShowerRemodelingPage() {
 
         <Testimonials category="shower-remodeling" />
 
-        <ShowerCTAFooter />
+        <ContactSection />
       </main>
       <Footer />
     </>

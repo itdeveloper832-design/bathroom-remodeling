@@ -62,7 +62,7 @@ export default function QueenCreekPage() {
           title="Queen Creek’s Trusted Bathroom Remodeling Experts"
           subtitle="Quality Craftsmanship for Queen Creek Families"
           description="Looking to upgrade your space? We provide professional bathroom remodeling services tailored to Queen Creek homeowners. From modern guest baths to luxury master retreats, we deliver beautiful results on time and on budget."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Queen Creek", url: `${siteConfig.url}/bathroom-remodeling-queen-creek-az/` },

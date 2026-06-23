@@ -167,7 +167,7 @@ export default function GilbertPage() {
           title="Licensed Bathroom Remodeling in Gilbert, AZ"
           subtitle="Luxury Transformations & Quality Craftsmanship"
           description="Transform your Gilbert home with the East Valley's trusted remodeling experts. From custom walk-in showers in Power Ranch to master suite renovations in Morrison Ranch: we deliver stunning results with a fixed-price guarantee and ROC Licensed peace of mind."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Gilbert AZ", url: `${siteConfig.url}/bathroom-remodeling-gilbert-az/` },

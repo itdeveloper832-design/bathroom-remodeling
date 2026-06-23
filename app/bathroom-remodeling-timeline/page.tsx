@@ -116,7 +116,7 @@ export default function TimelinePage() {
           title="Bathroom Remodeling Timelines (Step-by-Step Guide)"
           subtitle="What to Expect from Demo to Final Handoff"
           description="Learn exactly how long it takes to remodel a bathroom in Chandler, AZ. Explore our daily schedules, permit inspection milestones, and project management timelines."
-          image="/images/services/bathroom-flooring-chandler.webp"
+          image="/images/services/bathroom-flooring-chandler.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Costs", url: `${siteConfig.url}/bathroom-remodel-cost-chandler/` },

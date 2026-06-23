@@ -29,7 +29,7 @@ export const metadata: Metadata = {title: "Fulton Ranch Bathroom Remodeling | Fr
   },
   twitter: {
     card: "summary_large_image",title: "Fulton Ranch Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore fulton ranch bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
-    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-fulton-ranch/`,
@@ -147,7 +147,7 @@ export default function FultonRanchPage() {
           title="Custom Bathroom Remodeling in Fulton Ranch, Chandler"
           subtitle="Luxury Master Renovations & Walk-In Showers"
           description="Upgrade your Fulton Ranch property with the East Valley's premier custom builder. Specializing in high-end tile, curbless walk-in showers, and master suite layouts, we offer fixed written quotes and ROC Licensed peace of mind."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Fulton Ranch Bathroom Remodeling", url: `${siteConfig.url}/bathroom-remodeling-fulton-ranch/` },

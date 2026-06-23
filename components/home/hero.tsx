@@ -32,8 +32,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-primary/75 lg:bg-primary/70 hero-overlay" aria-hidden="true" />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-12 pb-16 lg:pt-16 lg:pb-20 flex justify-center hero-container">
-        <div className="max-w-4xl mx-auto text-center text-white flex flex-col items-center hero-content">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-4 pb-6 lg:pt-6 lg:pb-8 flex justify-center hero-container">
+        <div className="max-w-5xl mx-auto text-center text-white flex flex-col items-center hero-content">
           {/* Trust Badges */}
           <div className="flex flex-wrap items-center justify-center gap-3 mb-6 text-white text-xs md:text-sm font-semibold tracking-wide uppercase hero-badges">
             <span className="bg-accent text-accent-foreground px-3.5 py-1.5 rounded-full shadow-sm badge-gold">✓ Licensed ROC #338304</span>
@@ -42,17 +42,17 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4 text-balance tracking-tight hero-title">
+          <h1 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white leading-tight mb-4 tracking-tight hero-title">
             Bathroom Remodeling in Chandler, AZ: Licensed Custom Tile & Design Contractors
           </h1>
 
           {/* Value Propositions */}
-          <p className="text-base md:text-lg text-accent font-serif mb-4 leading-relaxed font-semibold italic max-w-2xl hero-subtitle">
+          <p className="text-base md:text-lg text-accent font-serif mb-3 leading-relaxed font-semibold italic max-w-2xl hero-subtitle">
             &quot;Professional Walk-In Showers, Tub-to-Shower Conversions & Custom Tile Services.&quot;
           </p>
 
           {/* Main Copy */}
-          <p className="text-sm md:text-base text-white/90 mb-6 leading-relaxed font-light max-w-3xl hero-description">
+          <p className="text-sm md:text-base text-white/90 mb-4 leading-relaxed font-light max-w-3xl hero-description">
             Licensed bathroom remodeling contractor (ROC #338304) in Chandler, AZ. We build custom walk-in showers, tub-to-shower conversions, and tile installations designed to withstand desert hard water.
           </p>
 

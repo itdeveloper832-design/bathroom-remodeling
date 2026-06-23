@@ -138,7 +138,7 @@ export default function MasterBathroomRemodelCostPage() {
           title="Master Bathroom Remodel Costs (2025 Pricing Guide)"
           subtitle="Transparent Master Suite Budgets"
           description="Detailed breakdown of the costs to remodel a master bathroom in Chandler, AZ. Mid-tier updates, custom layouts, and luxury home spa packages."
-          image="/images/services/bathroom-flooring-chandler.webp"
+          image="/images/services/bathroom-flooring-chandler.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Master Bathroom Remodeling", url: `${siteConfig.url}/master-bathroom-remodel/` },

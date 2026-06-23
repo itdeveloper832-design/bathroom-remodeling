@@ -93,7 +93,7 @@ export default function GuestBathPage() {
           title="Guest Bathroom Remodeling in Chandler, AZ"
           subtitle="High-Impact Updates for Small Bathrooms & Powder Rooms"
           description="Make a lasting impression on your guests. We provide efficient, professional guest bathroom remodeling that combines style with practicality for your Chandler home."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[{ name: "Home", url: siteConfig.url }, { name: "Guest Bathroom", url: `${siteConfig.url}/guest-bathroom-remodeling/` }]}
         />
 

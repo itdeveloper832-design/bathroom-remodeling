@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Wrench, ShieldAlert, Award, MapPin } from "lucide-react";
 
 interface ProjectCaseStudy {
@@ -6,6 +7,7 @@ interface ProjectCaseStudy {
   problem: string;
   fix: string;
   result: string;
+  image: string;
 }
 
 const projects: ProjectCaseStudy[] = [
@@ -15,6 +17,7 @@ const projects: ProjectCaseStudy[] = [
     problem: "Outdated garden tub was unused and taking up valuable floor space in a tight master bathroom layout.",
     fix: "Removed the tub, recessed the floor joists to install a flat base, reset the drain, and completed a frameless walk-in shower with custom porcelain tile and premium waterproofing.",
     result: "Homeowner reclaimed 12 sq ft of floor space and gained a safer, highly functional, and beautiful daily walk-in shower.",
+    image: "/images/tub-to-shower-1.webp",
   },
   {
     location: "Fulton Ranch, Chandler",
@@ -22,6 +25,7 @@ const projects: ProjectCaseStudy[] = [
     problem: "Outdated 1995 double vanity and leaking gold fixtures with severe municipal hard water scale buildup.",
     fix: "Installed modern double vanities made of premium wood, high-density quartz countertops, and a custom tile shower utilizing epoxy grout defense.",
     result: "Created a modern desert-spa retreat that resists hard water mineral deposits and dramatically simplified daily cleanup.",
+    image: "/images/bathroom-showcase.webp",
   },
   {
     location: "Sun Lakes, Chandler",
@@ -29,6 +33,7 @@ const projects: ProjectCaseStudy[] = [
     problem: "A high 16-inch step-in bathtub wall created a major slip hazard and barrier for an elderly senior aging in place.",
     fix: "Converted the tub into a zero-threshold, barrier-free curbless roll-in shower. Installed solid structural backing, certified grab bars, and non-slip mosaic tile flooring.",
     result: "Homeowner achieved total bathing independence and peace of mind under complete ADA-compliance guidelines.",
+    image: "/images/bathroom-remodel-1.webp",
   },
 ];
 
@@ -52,57 +57,70 @@ export default function ChandlerProjects() {
           {projects.map((project, index) => (
             <article 
               key={index}
-              className="group relative bg-card border border-border rounded-2xl p-6 lg:p-8 hover:shadow-xl hover:border-primary/20 transition-all duration-300 flex flex-col justify-between"
+              className="group relative bg-card border border-border rounded-2xl overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300 flex flex-col justify-between"
             >
               {/* Card Accent Glow */}
               <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-accent/20 transition-colors pointer-events-none" />
               
               <div>
-                {/* Header Info */}
-                <div className="flex items-start justify-between gap-4 mb-6">
-                  <div>
-                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-accent uppercase tracking-wider mb-2">
-                      <MapPin className="w-3.5 h-3.5" />
-                      {project.location}
-                    </span>
-                    <h3 className="font-serif text-xl font-bold text-foreground">
-                      {project.projectType}
-                    </h3>
-                  </div>
+                {/* Project Image */}
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
+                  <Image
+                    src={project.image}
+                    alt={`${project.projectType} project in ${project.location} by ARZ Home Remodeling`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                  />
                 </div>
 
-                {/* Case Study Details */}
-                <div className="space-y-5 my-6">
-                  {/* Problem */}
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0 mt-0.5">
-                      <ShieldAlert className="w-4 h-4 text-destructive" />
-                    </div>
+                <div className="p-6 lg:p-8">
+                  {/* Header Info */}
+                  <div className="flex items-start justify-between gap-4 mb-6">
                     <div>
-                      <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Problem</h4>
-                      <p className="text-foreground/90 text-sm leading-relaxed">{project.problem}</p>
+                      <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-accent uppercase tracking-wider mb-2">
+                        <MapPin className="w-3.5 h-3.5" />
+                        {project.location}
+                      </span>
+                      <h3 className="font-serif text-xl font-bold text-foreground">
+                        {project.projectType}
+                      </h3>
                     </div>
                   </div>
 
-                  {/* Fix */}
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-                      <Wrench className="w-4 h-4 text-primary" />
+                  {/* Case Study Details */}
+                  <div className="space-y-5 my-6">
+                    {/* Problem */}
+                    <div className="flex gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0 mt-0.5">
+                        <ShieldAlert className="w-4 h-4 text-destructive" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Problem</h4>
+                        <p className="text-foreground/90 text-sm leading-relaxed">{project.problem}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Our Solution</h4>
-                      <p className="text-foreground/90 text-sm leading-relaxed">{project.fix}</p>
-                    </div>
-                  </div>
 
-                  {/* Result */}
-                  <div className="flex gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
-                      <Award className="w-4 h-4 text-accent" />
+                    {/* Fix */}
+                    <div className="flex gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                        <Wrench className="w-4 h-4 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Our Solution</h4>
+                        <p className="text-foreground/90 text-sm leading-relaxed">{project.fix}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Result</h4>
-                      <p className="text-foreground/90 text-sm leading-relaxed font-medium">{project.result}</p>
+
+                    {/* Result */}
+                    <div className="flex gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
+                        <Award className="w-4 h-4 text-accent" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Result</h4>
+                        <p className="text-foreground/90 text-sm leading-relaxed font-medium">{project.result}</p>
+                      </div>
                     </div>
                   </div>
                 </div>

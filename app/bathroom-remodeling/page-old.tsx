@@ -37,7 +37,7 @@ const subServices = [
     title: "Shower Remodeling",
     description:
       "Upgrade your shower with a layout, finish palette, and fixture package tailored to your bathroom. From frameless glass to premium tilework, we create showers that feel elevated and easy to maintain.",
-    image: "/images/services/chandler-bathroom-remodel.webp",
+    image: "/images/services/chandler-bathroom-remodel.jpg",
     features: [
       "Frameless glass enclosures",
       "Custom tile layouts and accent details",
@@ -82,7 +82,7 @@ const subServices = [
     title: "Walk-in Shower Installation",
     description:
       "Create a more open, accessible bathing experience with a walk-in shower designed around your space, preferred features, and safety needs.",
-    image: "/images/services/bathroom-tile-remodel-az.webp",
+    image: "/images/services/bathroom-tile-remodel-az.jpg",
     features: [
       "Low-threshold and curbless options",
       "Custom glass enclosures",
@@ -97,7 +97,7 @@ const subServices = [
     title: "Bathroom Tile Installation",
     description:
       "Enhance your bathroom with tile installation that balances durability, moisture resistance, and style. We install tile across shower walls, backsplashes, and wet-area surfaces.",
-    image: "/images/services/bathroom-flooring-chandler.webp",
+    image: "/images/services/bathroom-flooring-chandler.jpg",
     features: [
       "Porcelain, ceramic, and natural stone options",
       "Custom layouts and accent patterns",
@@ -228,7 +228,7 @@ export default function BathroomRemodelingPage() {
           title="Best Bathroom Remodeling Company in Chandler, Arizona"
           subtitle="Best Bathroom Remodelers Near Me"
           description="Looking for bathroom remodelers near me? Create the bathroom of your dreams with our comprehensive remodeling services in Chandler. From showers and tubs to tile, vanities, lighting, sinks, flooring, and plumbing upgrades, we deliver stunning results. Bathroom remodel financing near me available."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={breadcrumbs}
         />
         <SubServices

@@ -11,7 +11,7 @@ export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
     {
       name: "Google Reviews",
       href: siteConfig.googleBusinessLink || "https://google.com/",
-      img: "/images/badges/google-badges.avif",
+      img: "/images/badges/google-arzhomeremodeling.png",
       label: "5.0 ★ (120+ Reviews)",
     },
     {

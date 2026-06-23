@@ -29,7 +29,7 @@ export const metadata: Metadata = {title: "Bathroom Remodelers in Maricopa | Cus
   },
   twitter: {
     card: "summary_large_image",title: "Maricopa Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore maricopa bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
-    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.webp`],
+    images: [`${siteConfig.url}/images/services/chandler-bathroom-remodel.jpg`],
   },
   alternates: {
     canonical: `${siteConfig.url}/bathroom-remodeling-maricopa-az/`,
@@ -180,7 +180,7 @@ export default function MaricopaPage() {
           title="Licensed Bathroom Remodeling in Maricopa, AZ"
           subtitle="Zero-Threshold Curbless Showers & Full Renovations"
           description="Transform your bathroom into a safe, luxurious, and functional retreat. Specializing in curbless walk-in showers, tub-to-shower conversions, and premium master bathroom renovations tailored for active adults in Province, Rancho El Dorado, and across Maricopa."
-          image="/images/services/chandler-bathroom-remodel.webp"
+          image="/images/services/chandler-bathroom-remodel.jpg"
           breadcrumbs={[
             { name: "Home", url: siteConfig.url },
             { name: "Bathroom Remodeling Maricopa AZ", url: `${siteConfig.url}/bathroom-remodeling-maricopa-az/` },

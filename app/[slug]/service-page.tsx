@@ -24,7 +24,7 @@ import {
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import ServiceHero from "@/components/services/service-hero";
-import ServiceCTA from "@/components/services/service-cta";
+
 const ServiceFAQ = dynamic(() => import("@/components/services/service-faq"));
 import ServiceProcess from "@/components/services/service-process";
 import IssuesSolved from "@/components/services/issues-solved";
@@ -219,7 +219,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Upgrade to a watertight, spa-inspired shower with premium tilework, glass, and fixtures tailored to your Chandler home.",
       image:
-        "/images/services/chandler-bathroom-remodel.webp",
+        "/images/services/chandler-bathroom-remodel.jpg",
     },
     content: {
       intro:
@@ -701,7 +701,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Create an open, safer walk-in shower with slip-resistant materials, glass, and storage tailored to your Chandler home.",
       image:
-        "/images/services/bathroom-tile-remodel-az.webp",
+        "/images/services/bathroom-tile-remodel-az.jpg",
     },
     content: {
       intro:
@@ -861,7 +861,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       description:
         "Precision tile installation for shower walls, floors, and backsplashes that stay aligned, sealed, and beautiful.",
       image:
-        "/images/services/bathroom-flooring-chandler.webp",
+        "/images/services/bathroom-flooring-chandler.jpg",
     },
     content: {
       intro:
@@ -1179,7 +1179,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       title: "Master Bathroom Remodeling in Chandler, Arizona",
       subtitle: "Luxury Master Suite Renovations",
       description: "Transform your master bath into a luxury retreat with custom showers, dual vanities, and premium finishes.",
-      image: "/images/services/chandler-bathroom-remodel.webp",
+      image: "/images/services/chandler-bathroom-remodel.jpg",
     },
     content: {
       intro: "Elevate your home's most private space with our professional master bathroom remodeling in Chandler, AZ. We specialize in high-end transformations that blend luxury with functionality.",
@@ -1217,7 +1217,7 @@ const serviceContent: Record<string, ServiceDetail> = {
       title: "Tub to Shower Conversion in Chandler, AZ",
       subtitle: "Fast & Modern Conversions",
       description: "Replace your unused bathtub with a spacious, modern walk-in shower in as little as 3-5 days.",
-      image: "/images/services/bathroom-tile-remodel-az.webp",
+      image: "/images/services/bathroom-tile-remodel-az.jpg",
     },
     content: {
       intro: "Maximize your bathroom's potential with a tub-to-shower conversion in Chandler. This popular upgrade increases safety and creates a more modern look.",
@@ -1415,8 +1415,6 @@ export async function ServicePageContent({
           tips={content.tips}
         />
 
-        <ServiceCTA title={content.ctas.midTitle} description={content.ctas.midDescription} />
-
         <ServiceFAQ faqs={faqs} />
 
         <Testimonials />
@@ -1452,7 +1450,6 @@ export async function ServicePageContent({
           </div>
         </section>
 
-        <ServiceCTA title={content.ctas.finalTitle} description={content.ctas.finalDescription} />
       </main>
       <Footer />
     </>

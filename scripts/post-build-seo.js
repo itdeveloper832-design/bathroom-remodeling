@@ -369,7 +369,10 @@ function processFile(filePath) {
   cleanedContent = cleanedContent.replace(/<head\s*>\s*<\/head\s*>/gi, '');
   cleanedContent = cleanedContent.replace(/<head\s*\/>/gi, '');
 
-  // 3. Optimize HTML Title (Guideline 13: Title Tag Length)
+  // 3. Optimize HTML Title (Enforce under 60 characters)
+  let finalTitle = "";
+  let finalDesc = "";
+
   const titleRegex = /<title>([\s\S]*?)<\/title>/gi;
   cleanedContent = cleanedContent.replace(titleRegex, (match, titleText) => {
     let text = titleText.trim();
@@ -388,35 +391,45 @@ function processFile(filePath) {
     text = text.replace(/Walk-in Showers &amp; Walk-In Showers/gi, 'Walk-In Showers');
     text = text.replace(/Bathroom Remodeling Timeline Chandler AZ\s+-/gi, 'Bathroom Remodel Timeline Chandler -');
     
-    // Truncate elegantly if still too long (> 65 chars of plain text)
+    // Truncate elegantly if still too long (>= 60 chars of plain text)
     let plainText = text.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-    if (plainText.length > 65) {
+    if (plainText.length >= 60) {
       text = text.replace(/\s*-\s*Professional Services?/gi, '');
       text = text.replace(/\s*-\s*Professional Installation/gi, '');
       text = text.replace(/\s*-\s*Modern Upgrades/gi, '');
       text = text.replace(/\s*-\s*Custom Builders?/gi, '');
       text = text.replace(/\s*-\s*Quality Craftsmanship/gi, '');
+      text = text.replace(/\s*-\s*ARZ/g, ''); // strip branding if it makes it too long
       
       // Recalculate plain text length
       plainText = text.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
     }
     
-    if (plainText.length > 65) {
-      // Decode, truncate, re-encode
+    if (plainText.length >= 60) {
+      // Decode, truncate, re-encode to ensure it fits under 60 characters
       let temp = text.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-      temp = temp.substring(0, 62) + '...';
+      temp = temp.substring(0, 56) + '...';
       text = temp.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
     
+    finalTitle = text;
     return `<title>${text}</title>`;
   });
 
-  // 4. Optimize Meta Description (Guideline 13: Meta Description Length)
+  // 4. Optimize Meta Description (Enforce between 120 and 158 characters)
   const descRegex = /(<meta\s+name=["']description["']\s+content=["'])([\s\S]*?)(["'])/gi;
   cleanedContent = cleanedContent.replace(descRegex, (match, prefix, descText, suffix) => {
     let text = descText.trim();
-    if (text.length > 160) {
-      const sub = text.substring(0, 157);
+    
+    // If it's too short, pad it elegantly
+    if (text.length < 120) {
+      const padding = " Licensed, bonded, and insured bathroom remodelers. Call for a free estimate today!";
+      text = (text + padding).substring(0, 155);
+    }
+    
+    // If it's too long, truncate it
+    if (text.length > 158) {
+      const sub = text.substring(0, 155);
       const lastSpace = sub.lastIndexOf(' ');
       if (lastSpace > 120) {
         text = sub.substring(0, lastSpace) + '...';
@@ -424,8 +437,39 @@ function processFile(filePath) {
         text = sub + '...';
       }
     }
+    
+    // Double check that it meets the min-length of 120 after truncation
+    if (text.length < 120) {
+      text = descText.trim().substring(0, 155) + '...';
+    }
+    
+    finalDesc = text;
     return `${prefix}${text}${suffix}`;
   });
+
+  // 4b. Sync OG & Twitter Title Meta Tags
+  if (finalTitle) {
+    const ogTitleRegex = /(<meta\s+(?:property|name)=["']og:title["']\s+content=["'])([\s\S]*?)(["'])/gi;
+    cleanedContent = cleanedContent.replace(ogTitleRegex, (match, prefix, content, suffix) => {
+      return `${prefix}${finalTitle}${suffix}`;
+    });
+    const twitterTitleRegex = /(<meta\s+(?:property|name)=["']twitter:title["']\s+content=["'])([\s\S]*?)(["'])/gi;
+    cleanedContent = cleanedContent.replace(twitterTitleRegex, (match, prefix, content, suffix) => {
+      return `${prefix}${finalTitle}${suffix}`;
+    });
+  }
+
+  // 4c. Sync OG & Twitter Description Meta Tags
+  if (finalDesc) {
+    const ogDescRegex = /(<meta\s+(?:property|name)=["']og:description["']\s+content=["'])([\s\S]*?)(["'])/gi;
+    cleanedContent = cleanedContent.replace(ogDescRegex, (match, prefix, content, suffix) => {
+      return `${prefix}${finalDesc}${suffix}`;
+    });
+    const twitterDescRegex = /(<meta\s+(?:property|name)=["']twitter:description["']\s+content=["'])([\s\S]*?)(["'])/gi;
+    cleanedContent = cleanedContent.replace(twitterDescRegex, (match, prefix, content, suffix) => {
+      return `${prefix}${finalDesc}${suffix}`;
+    });
+  }
   
   // 5. Inject hoisted schemas if they exist, placing them right before </head>
   if (schemas.length > 0) {

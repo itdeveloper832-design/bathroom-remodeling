@@ -76,41 +76,15 @@ function processFile(filePath) {
   let hasDeferredCss = false;
   
   cleanedContent = cleanedContent.replace(linkRegex, (match, href1, href2) => {
-    const href = href1 || href2;
-    if (href && href.startsWith('/')) {
-      const localPath = path.join(outDir, href);
-      if (fs.existsSync(localPath)) {
-        const stats = fs.statSync(localPath);
-        if (stats.size <= MAX_INLINE_CSS_SIZE) {
-          const cssContent = fs.readFileSync(localPath, 'utf8');
-          console.log(`Inlining CSS: ${href} (${(stats.size/1024).toFixed(1)} KB) into ${path.relative(outDir, filePath)}`);
-          return `<style data-inlined="true">${cssContent}</style>`;
-        } else {
-          console.log(`Keeping CSS (deferring loading): ${href} (${(stats.size/1024).toFixed(1)} KB) in ${path.relative(outDir, filePath)}`);
-          hasDeferredCss = true;
-          return `<link rel="stylesheet" href="${href}" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="${href}"></noscript>`;
-        }
-      }
-    }
+    // Return original match without deferring, let Next.js handle its own CSS optimization
+    // Next.js automatically chunks CSS and prevents render blocking properly
     return match;
   });
 
   // Remove preloads for inlined stylesheets, adjust for deferred
   const preloadRegex = /<link\s+[^>]*rel=["']preload["'][^>]*as=["']style["'][^>]*href=["']([^"']+)["'][^>]*\/?>|<link\s+[^>]*href=["']([^"']+)["'][^>]*rel=["']preload["'][^>]*as=["']style["'][^>]*\/?>|<link\s+[^>]*as=["']style["'][^>]*rel=["']preload["'][^>]*href=["']([^"']+)["'][^>]*\/?>/gi;
   cleanedContent = cleanedContent.replace(preloadRegex, (match, href1, href2, href3) => {
-    const href = href1 || href2 || href3;
-    if (href && href.startsWith('/')) {
-      const localPath = path.join(outDir, href);
-      if (fs.existsSync(localPath)) {
-        const stats = fs.statSync(localPath);
-        if (stats.size <= MAX_INLINE_CSS_SIZE) {
-          console.log(`Removing CSS preload (inlined): ${href} in ${path.relative(outDir, filePath)}`);
-          return '';
-        } else {
-          console.log(`Keeping CSS preload (deferred): ${href} in ${path.relative(outDir, filePath)}`);
-        }
-      }
-    }
+    // Return original match, do not strip Next.js CSS preloads
     return match;
   });
 

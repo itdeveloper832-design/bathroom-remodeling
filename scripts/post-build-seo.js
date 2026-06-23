@@ -501,24 +501,6 @@ function processFile(filePath) {
     console.log(`Successfully optimized metadata for: ${path.relative(outDir, filePath)}`);
   }
 
-  // 6. Inject LeadSmart tracking script before </head>
-  if (!cleanedContent.includes('leads.leadsmartinc.com/js/embed/embed.js')) {
-    const headEndIdx = cleanedContent.indexOf('</head>');
-    if (headEndIdx !== -1) {
-      const leadsmartScript = `\n<script type="text/javascript">
-var po_host=(("https:"==document.location.protocol)?"https://":"http://");
-document.write(unescape("%3Cscript src='"+po_host+"leads.leadsmartinc.com/js/embed/embed.js?apikey=eccf565586cda416df8b89f66df641fee9a1bcb8&affiliate_source=momran1&buttons=btn-success' type='text/javascript'%3E%3C/script%3E"));
-</script>\n`;
-      cleanedContent = 
-        cleanedContent.substring(0, headEndIdx) + 
-        leadsmartScript + 
-        cleanedContent.substring(headEndIdx);
-      console.log(`Injected LeadSmart tracking script into: ${path.relative(outDir, filePath)}`);
-    } else {
-      console.warn(`[Warning] </head> tag not found in ${filePath}, could not inject LeadSmart script`);
-    }
-  }
-  
   fs.writeFileSync(filePath, cleanedContent, 'utf8');
 }
 

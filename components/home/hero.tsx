@@ -42,17 +42,17 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 text-balance tracking-tight hero-title">
+          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4 text-balance tracking-tight hero-title">
             Bathroom Remodeling in Chandler, AZ: Licensed Custom Tile & Design Contractors
           </h1>
 
           {/* Value Propositions */}
-          <p className="text-lg md:text-xl text-accent font-serif mb-6 leading-relaxed font-semibold italic max-w-2xl hero-subtitle">
+          <p className="text-base md:text-lg text-accent font-serif mb-4 leading-relaxed font-semibold italic max-w-2xl hero-subtitle">
             &quot;Professional Walk-In Showers, Tub-to-Shower Conversions & Custom Tile Services.&quot;
           </p>
 
           {/* Main Copy */}
-          <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed font-light max-w-3xl hero-description">
+          <p className="text-sm md:text-base text-white/90 mb-6 leading-relaxed font-light max-w-3xl hero-description">
             Licensed bathroom remodeling contractor (ROC #338304) in Chandler, AZ. We build custom walk-in showers, tub-to-shower conversions, and tile installations designed to withstand desert hard water.
           </p>
 

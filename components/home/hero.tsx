@@ -46,8 +46,6 @@ export default function Hero() {
             Bathroom Remodeling in Chandler, AZ: Licensed Custom Tile & Design Contractors
           </h1>
 
-          <h3 className="text-red-500 text-xl font-bold bg-white/20 px-4 py-1 rounded mb-4 z-50">hi</h3>
-
           {/* Value Propositions */}
           <p className="text-base md:text-lg text-accent font-serif mb-3 leading-relaxed font-semibold italic max-w-2xl hero-subtitle">
             &quot;Professional Walk-In Showers, Tub-to-Shower Conversions & Custom Tile Services.&quot;

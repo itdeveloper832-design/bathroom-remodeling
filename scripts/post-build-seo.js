@@ -64,6 +64,7 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
+  transition: top 0.3s;
 }
 @media (min-width: 1024px) {
   header {
@@ -79,16 +80,16 @@ main section[aria-label="Hero section"], section.hero {
   justify-content: center;
   overflow: hidden;
   color: #FFFFFF;
-  padding-top: 6rem;
+  padding-top: 8rem;
 }
 @media (min-width: 768px) {
   main section[aria-label="Hero section"], section.hero {
-    padding-top: 7rem;
+    padding-top: 9rem;
   }
 }
 @media (min-width: 1024px) {
   main section[aria-label="Hero section"], section.hero {
-    padding-top: 8rem;
+    padding-top: 10rem;
   }
 }
 .hero-overlay {

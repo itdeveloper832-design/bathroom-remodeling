@@ -4,39 +4,27 @@ import { Shield, Clock, DollarSign, Droplets, HardHat, FileCheck } from "lucide-
 const reasons = [
   {
     icon: Shield,
-    title: "Licensed Code-Compliant Work",
+    title: "AZ Licensed Contractor (ROC #338304)",
     description:
-      "Every structural plumbing adjustment, electrical circuit rerouting, and wet-area valve replacement is executed to strict City of Chandler building safety standards by licensed trade specialists, ensuring total compliance and code compliance.",
+      "We are licensed with the Arizona Registrar of Contractors. Every electrical, plumbing, and framing change meets the 2021 International Residential Code. We handle municipal permits directly at the Chandler Development Services office on Buffalo St.",
   },
   {
     icon: Droplets,
-    title: "Vapor-Tight Waterproofing Systems",
+    title: "Vapor-Tight Schluter-KERDI Substrates",
     description:
-      "We install a complete, vapor-impermeable Schluter-KERDI waterproofing membrane system behind every tile installation. This advanced vapor barrier completely isolates your framing from moisture, protecting wall studs from structural mold rot.",
+      "We install the complete Schluter-KERDI vapor-tight membrane system behind your tile. This membrane isolates wood studs from steam, preventing mold and wood rot. It also handles natural desert framing shifts without cracking grout.",
   },
   {
     icon: Clock,
-    title: "Day-by-Day Project Scheduling",
+    title: "2-Year Workmanship Warranty",
     description:
-      "You receive a firm, written day-by-day project calendar before demolition begins. You will know exactly which construction phase is occurring each day and when code compliance inspections are scheduled to happen.",
+      "We stand behind our craftsmanship with a written 2-year warranty on all installations. From the plumbing valves inside the wall to the custom tile joints outside, if anything fails due to our work, we repair it at zero cost.",
   },
   {
     icon: HardHat,
-    title: "Respectful Site Cleanliness & HOAs",
+    title: "Hard Water Scale Defense",
     description:
-      "Our team lays down heavy-duty neoprene floor protection, installs containment dust barriers, performs cleanups at the end of each workday, and adheres strictly to planned community HOA contractor parking and working hours.",
-  },
-  {
-    icon: DollarSign,
-    title: "Detailed Written Estimates",
-    description:
-      "We provide a comprehensive, itemized line-item written estimate before any work starts. Every tile substrate, valve upgrade, custom vanity fabrication, and labor block is fully detailed so you know the exact scope upfront.",
-  },
-  {
-    icon: FileCheck,
-    title: "5-Year Workmanship Warranty",
-    description:
-      "We stand behind our craftsmanship and Schluter waterproofing installations with an industry-leading 5-year workmanship warranty on custom tiled showers. If a leak or tile joint fails, we correct it at zero cost to you.",
+      "Chandler water averages 18 to 22 grains of hardness. We defend your investment by using non-porous porcelain tile (ASTM C373) and solid epoxy resin grout (ANSI A118.3). This grout repels scale, stains, and acid cleaners for years.",
   },
 ];
 
@@ -66,7 +54,7 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((reason) => (
             <div
               key={reason.title}

@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import Hero from "@/components/home/hero";
-import QuickAnswers from "@/components/home/quick-answers";
 import { LocalBusinessSchema, FAQSchema, SpeakableSchema, OrganizationSchema, WebSiteSchema, VideoSchema } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
@@ -70,7 +69,6 @@ export default function HomePage() {
       <Header />
       <main id="main-content" role="main">
         <Hero />
-        <QuickAnswers />
         <BelowFoldLoader />
       </main>
       <Footer />

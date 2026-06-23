@@ -13,7 +13,7 @@ export default function ChandlerExpertise() {
                 Built for Chandler Homes: Hard Water, Heat, and HOAs
               </h2>
               <p className="text-primary-foreground/85 text-lg leading-relaxed mb-6">
-                Chandler and the East Valley present unique environmental challenges along major corridors like <strong>Arizona Avenue</strong>, <strong>Alma School Road</strong>, and the <strong>Loop 202</strong>. Extreme summer temperatures outside, coupled with constant indoor air conditioning, put high physical stress on structural framing, drywall, cabinetry, and tile grout. We select specific commercial-grade materials and engineering details to ensure your bathroom remodel withstands these conditions for decades.
+                Chandler and the East Valley present unique environmental challenges along major corridors like <strong>Arizona Avenue</strong>, <strong>Alma School Road</strong>, <strong>Ray Road</strong>, <strong>Dobson Road</strong>, and the <strong>Loop 202</strong>. Extreme summer heat outside, coupled with indoor air conditioning, puts stress on home framing, drywall, cabinets, and tile grout. Whether you live near <strong>Chandler High School</strong> or the <strong>Downtown Chandler Historic District</strong>, we build bathroom systems to handle these conditions for decades.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -23,7 +23,7 @@ export default function ChandlerExpertise() {
                     Hard Water and Grout Scaling Defense
                   </h3>
                   <p className="text-sm text-primary-foreground/85 leading-relaxed">
-                    Chandler municipal water contains exceptionally high mineral levels, often exceeding 18 grains of hardness (over 300 mg/L of dissolved calcium). Evaporating water leaves behind rock-hard calcium scale. To prevent this, we specify dense, non-porous porcelain tiles and upgrade our installations to 100% solid epoxy resin grout (conforming to ANSI A118.3 standards) that completely repels mineral penetration.
+                    Chandler municipal water contains exceptionally high mineral levels, often exceeding 18 grains of hardness (over 300 mg/L of dissolved calcium). Evaporating water leaves behind rock-hard calcium scale. To prevent this, we specify dense, non-porous porcelain tiles. We also upgrade our installations to 100% solid epoxy resin grout conforming to [ANSI A118.3 standards](https://www.ansi.org/). This completely repels mineral penetration.
                   </p>
                 </div>
 
@@ -59,7 +59,7 @@ export default function ChandlerExpertise() {
               </div>
 
               <p className="text-primary-foreground/85 text-lg leading-relaxed mb-6">
-                Underneath every tiled surface, we secure your home using the <strong>Schluter-KERDI waterproofing system</strong>. This vapor-impermeable sheet membrane completely isolates the tile substrate from wood framing, preventing steam from rotting wall studs.
+                Underneath every tiled surface, we secure your home using the [Schluter-KERDI waterproofing system](https://www.schluter.com/). This vapor-tight sheet membrane isolates the tile substrate from the wood framing. This simple layer prevents steam from rotting wall studs.
               </p>
 
               <div className="mt-16 pt-16 border-t border-white/10">
@@ -67,7 +67,7 @@ export default function ChandlerExpertise() {
                   Our Professional Design-Build & 3D Rendering Process
                 </h3>
                 <p className="text-primary-foreground/80 leading-relaxed mb-6">
-                  A successful bathroom renovation requires meticulous preparation before demolition begins. To guarantee you love the final results, we combine advanced 3D visual rendering technology with an integrated day-by-day scheduling process.
+                  A successful bathroom renovation requires careful preparation before demolition begins. To guarantee you love the final results, we combine advanced 3D visual rendering technology with an integrated day-by-day scheduling process.
                 </p>
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   <div className="bg-white/5 border border-white/10 rounded-xl p-6">
@@ -96,16 +96,16 @@ export default function ChandlerExpertise() {
             ADA and Aging-in-Place Bathroom Remodeling
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-            Safe bathrooms do not have to look institutional. We build curbless showers, grab bars blocked into studs, comfort-height toilets, and open vanities for wheelchair approach. Popular near <strong>Chandler Regional</strong> and in <strong>Sun Lakes</strong> retirement communities.
+            Safe bathrooms do not have to look like hospitals. We build curbless showers, comfort-height toilets, and accessible layouts. These meet the official [ADA design standards](https://www.ada.gov/law-and-regs/design-standards/). They are highly popular near <strong>Chandler Regional Medical Center</strong> on Dobson Road and in active senior communities like <strong>Sun Lakes</strong>, <strong>Solera</strong>, and <strong>Springfield</strong>.
           </p>
           <ul className="space-y-3 text-muted-foreground mb-8">
             <li className="flex items-start gap-3">
               <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-              <span><strong>Curbless showers</strong> for wheelchair access and fewer trip hazards.</span>
+              <span><strong>Curbless showers</strong> for easy wheelchair access and fewer trip hazards.</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-              <span><strong>Grab bars</strong> anchored into framing, not only into tile.</span>
+              <span><strong>Grab bars</strong> anchored into the wall framing, rather than just the tile.</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />

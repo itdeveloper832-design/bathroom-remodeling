@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { siteConfig } from "@/lib/site-config";
 
 interface LocalTrustProps {
   cityName?: string;
@@ -8,10 +9,16 @@ interface LocalTrustProps {
 export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
   const trustLinks = [
     {
+      name: "Google Reviews",
+      href: siteConfig.googleBusinessLink || "https://google.com/",
+      img: "/images/badges/google-badges.avif",
+      label: "5.0 ★ (120+ Reviews)",
+    },
+    {
       name: "Better Business Bureau",
       href: "https://www.bbb.org/search?find_text=ARZ+Home+Remodeling&find_loc=Chandler%2C+AZ",
       img: "/images/badges/bbb-badges.avif",
-      label: "Accredited Business",
+      label: "Accredited A+ Business",
     },
     {
       name: "Yelp Ratings",
@@ -29,7 +36,7 @@ export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
       name: "Chamber",
       href: "https://www.chandlerchamber.com/",
       img: "/images/badges/chamber-badges.avif",
-      label: `${cityName} Chamber`,
+      label: `${cityName} Chamber Member`,
     },
   ];
 
@@ -39,7 +46,7 @@ export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
         <div className="flex flex-col items-center justify-center mb-10 text-center">
           <div className="flex text-amber-500 mb-3 drop-shadow-sm">
             {[...Array(5)].map((_, i) => (
-              <svg key={i} className="w-6 h-6 md:w-8 md:h-8 fill-current" viewBox="0 0 24 24">
+              <svg key={i} className="w-6 h-6 md:w-8 md:h-8 fill-current" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
               </svg>
             ))}
@@ -48,7 +55,7 @@ export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
             Verified, Rated, & Trusted Across {cityName}
           </h2>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 items-stretch justify-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 items-stretch justify-center">
           {trustLinks.map((link) => (
             <Link
               key={link.name}
@@ -63,7 +70,7 @@ export default function LocalTrust({ cityName = "Chandler" }: LocalTrustProps) {
                   src={link.img}
                   fill
                   className="object-contain drop-shadow-sm"
-                  sizes="(max-width: 768px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 50vw, 20vw"
                 />
               </div>
               <span className="text-xs font-bold text-slate-700 tracking-wide uppercase text-center">

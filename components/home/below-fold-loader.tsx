@@ -1,49 +1,31 @@
 "use client";
 
-import LocalTrust from "@/components/home/local-trust";
+import UspBar from "@/components/home/usp-bar";
 import AboutPreview from "@/components/home/about-preview";
 import ServicesGrid from "@/components/home/services-grid";
+import LocalTrust from "@/components/home/local-trust";
 import ChandlerProjects from "@/components/home/chandler-projects";
-import DesignBuildShowcase from "@/components/home/design-build-showcase";
-import WhyChooseUs from "@/components/home/why-choose-us";
-import PricingTable from "@/components/home/pricing-table";
-import BathroomSection from "@/components/home/bathroom-section";
 import ProcessSection from "@/components/home/process-section";
-import ChandlerExpertise from "@/components/home/chandler-expertise";
-import PopularProjects from "@/components/home/popular-projects";
-import VideoShowcase from "@/components/home/video-showcase";
-import ServiceAreas from "@/components/home/service-areas";
-import Financing from "@/components/home/financing";
-import ComparisonBenefits from "@/components/home/comparison-benefits";
+import WhyChooseUs from "@/components/home/why-choose-us";
 import FAQ from "@/components/home/faq";
-import BlogPreview from "@/components/home/blog-preview";
-import GalleryPreview from "@/components/home/gallery-preview";
-import { HomeBelowFold } from "@/components/home/home-below-fold";
-import FinalCTA from "@/components/home/final-cta";
+import MapSection from "@/components/home/map-section";
+import ServiceAreas from "@/components/home/service-areas";
+import ContactFormSection from "@/components/home/contact-form-section";
 
 export default function BelowFoldLoader() {
   return (
     <>
-      <LocalTrust cityName="Chandler" />
+      <UspBar />
       <AboutPreview />
       <ServicesGrid />
+      <LocalTrust cityName="Chandler" />
       <ChandlerProjects />
-      <DesignBuildShowcase />
-      <WhyChooseUs />
-      <PricingTable />
-      <BathroomSection />
       <ProcessSection />
-      <ChandlerExpertise />
-      <PopularProjects />
-      <VideoShowcase />
-      <ServiceAreas />
-      <Financing />
-      <ComparisonBenefits />
+      <WhyChooseUs />
       <FAQ />
-      <BlogPreview />
-      <GalleryPreview />
-      <HomeBelowFold />
-      <FinalCTA />
+      <MapSection />
+      <ServiceAreas />
+      <ContactFormSection />
     </>
   );
 }

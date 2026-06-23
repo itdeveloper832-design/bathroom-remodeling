@@ -213,6 +213,44 @@ export default function ChandlerBathroomRemodelingPage() {
               East Valley municipal water is notorious for its exceptionally high mineral content, frequently measuring between 18 to 22 grains of hardness (well over 300 mg/L of dissolved calcium and magnesium). This high-mineral supply leaves heavy white scale buildup on traditional porous natural stone and standard cement grout, leading to discoloration, cracking, and water penetration. To combat this, we install vapor-tight **Schluter-KERDI waterproofing systems** on all shower substrates. We use large-format, non-porous porcelain tile (with water absorption ratings below 0.5% per ASTM C373) and upgrade all joints to 100% solid **epoxy resin grout** that repels minerals, resists staining, and remains easy to clean.
             </p>
 
+            <div className="my-8 overflow-hidden rounded-xl border border-border shadow-sm">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-secondary text-foreground font-semibold">
+                  <tr>
+                    <th className="p-4 border-b border-border">Water Quality Metric</th>
+                    <th className="p-4 border-b border-border">Chandler Municipal Level</th>
+                    <th className="p-4 border-b border-border">Remodeling Recommendation</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border text-muted-foreground bg-background">
+                  <tr>
+                    <td className="p-4 font-medium text-foreground">Grains per Gallon (GPG)</td>
+                    <td className="p-4">18 to 22+ GPG (Extremely Hard)</td>
+                    <td className="p-4 font-medium text-primary">Resin Epoxy Grout (ANSI A118.3)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-medium text-foreground">Total Dissolved Solids (TDS)</td>
+                    <td className="p-4">300+ mg/L (High Mineralization)</td>
+                    <td className="p-4">Large-Format Porcelain Tile (ASTM C373)</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-medium text-foreground">pH Level Range</td>
+                    <td className="p-4">7.4 to 7.9 (Slightly Alkaline)</td>
+                    <td className="p-4">Hydrophobic treated shower glass</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="my-8 p-6 bg-secondary/80 border-l-4 border-primary rounded-r-xl shadow-sm italic text-foreground">
+              <p className="text-lg leading-relaxed mb-3">
+                &ldquo;When remodeling a bathroom in Chandler, you aren't just updating fixtures; you are designing a system to withstand some of the hardest water in the nation. We strictly specify epoxy grout and non-porous porcelain to ensure your investment stays pristine without hours of scrubbing.&rdquo;
+              </p>
+              <cite className="not-italic text-sm font-semibold text-primary block">
+                Mike Hernandez, Lead Contractor at ARZ Home Remodeling
+              </cite>
+            </div>
+
             <h3 className="font-serif text-2xl font-semibold mt-8 mb-3 text-foreground">
               Neighborhood Specific Remodeling and ZIP Code Topical Depth
             </h3>
@@ -230,6 +268,16 @@ export default function ChandlerBathroomRemodelingPage() {
                 <strong className="text-foreground">South Chandler (ZIPs 85249 & 85248 serving Ocotillo, Fulton Ranch, Sun Lakes):</strong> This luxury corridor features custom executive estates and active adult communities. In Ocotillo and Fulton Ranch, we deliver high-end master suites with linear shower drains, custom accent niches, and double floating vanities. In Sun Lakes, we specialize in senior-friendly aging-in-place updates, building zero-threshold curbless roll-in showers, installing structural stud backing for grab bars, and laying high-traction mosaic tile flooring.
               </li>
             </ul>
+            <h3 className="font-serif text-2xl font-semibold mt-8 mb-3 text-foreground">
+              Serving Communities Near Chandler Landmarks, Schools, and Main Corridors
+            </h3>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Our service crews work daily throughout the city. We coordinate projects near major local institutions. If you live near **Hamilton High School** off Arizona Avenue, **Basha High School** on Val Vista Drive, or **Chandler High School** near the historic downtown, we handle all logistics. We pull municipal permits directly through the city office near the **Downtown Chandler Historic District** and coordinate dumpster drops that meet strict HOA guidelines in Fulton Ranch and Ocotillo.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Whether you reside near **Chandler-Gilbert Community College** in the south, **Tumbleweed Park** off Germann Road, or shop at the **Chandler Fashion Center** near the Loop 101, our trucks are in your neighborhood. We also specialize in senior-friendly walk-in showers and accessibility updates for homes surrounding the **Chandler Regional Medical Center** on Dobson Road. We utilize local material suppliers along **Ray Road**, **Alma School Road**, and **McQueen Road** to keep schedules running on time.
+            </p>
+
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               From top-tier walk-in showers to precise custom tile work, we deliver results that blend long-term durability with modern aesthetics. We offer transparent, itemized scopes of work to ensure you get exceptional value for your investment. If you have been searching for a reliable local bathroom contractor, our dedicated team is here to help. You can also view our <Link href='/bathroom-remodel-cost-chandler/' className='text-primary hover:underline font-medium'>detailed pricing guide</Link> for current 2026 rates and local bathroom remodeling costs.
             </p>

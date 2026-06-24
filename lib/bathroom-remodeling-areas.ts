@@ -382,6 +382,306 @@ export const bathroomRemodelingAreas: Record<string, AreaData> = {
       "Full-service management",
     ],
   },
+  "chandler-heights": {
+    areaSlug: "chandler-heights",
+    areaName: "Chandler Heights",
+    fullName: "Bathroom Remodeling in Chandler Heights, Chandler",
+    description: "Premium bathroom and home remodeling services for custom estates and acreage properties in Chandler Heights.",
+    heroTitle: "Professional Bathroom Remodeling in Chandler Heights, Chandler",
+    heroSubtitle: "Premium Remodeling for Chandler Heights Homeowners",
+    heroDescription:
+      "Transform your Chandler Heights home with expert remodeling services. We design custom walk-in showers, open-concept kitchens, and high-performance spaces.",
+    introSection: {
+      title: "Custom Bathroom Renovations Designed for Chandler Heights Properties",
+      description:
+        "Chandler Heights features unique acreage lots, horse properties, and custom estates. Upgrading these properties requires a remodeling contractor with expertise in custom plumbing configurations, structural updates, and hard water mitigation. We specialize in converting old garden tubs into modern curbless walk-in showers, installing solid wood double vanities with quartz tops, and complete space modernizations.\n\nWe utilize Schluter-KERDI waterproofing systems to protect your home's structure and epoxy grouts to repel the region's mineral-heavy hard water scale. Whether you need city or Maricopa County permits, we handle all drawings, submittals, and inspections on your behalf, guaranteeing a stress-free renovation process.",
+    },
+    localTrustSignals: [
+      "Licensed Arizona contractor - ROC338304 certified",
+      "Comprehensive two-year workmanship warranty on every project",
+      "Expert permit management for Maricopa County & City of Chandler",
+      "Advanced hard water defenses with epoxy grout and nano-coated glass",
+      "Free detailed in-home estimates for local homeowners",
+    ],
+    areaBenefits: [
+      "Schluter-KERDI waterproofing for lifetime leak protection",
+      "Stain-resistant epoxy grout that prevents mineral scaling",
+      "Custom layout modifications and structural wall removals",
+      "Energy-efficient LED lighting and code-compliant plumbing upgrades",
+      "Fixed written pricing with zero hidden fees or change orders",
+    ],
+    areaFaqs: [
+      {
+        question: "Do you handle HOA approvals in Chandler Heights?",
+        answer:
+          "Yes. We coordinate with local HOA committees to submit material sheets, architectural drawings, and certificate of insurance documents, ensuring quick approval.",
+      },
+      {
+        question: "How do you protect showers from local hard water?",
+        answer:
+          "We use non-porous porcelain tiles, high-performance epoxy grout, and treat frameless shower glass with EnduroShield hydrophobic protective coatings to prevent scaling.",
+      },
+      {
+        question: "How long does a master suite renovation take?",
+        answer:
+          "A full master bath suite renovation typically takes four to six weeks. Guest bathroom updates take two to three weeks, and we provide a firm written schedule.",
+      },
+      {
+        question: "Do you handle the permit process for Chandler Heights?",
+        answer:
+          "Yes. We determine if your property is under Maricopa County or City of Chandler jurisdiction, prepare and submit drawings, and coordinate all safety inspections.",
+      },
+    ],
+    homeStyles: ["Custom Ranch", "Modern Farmhouse", "Contemporary Desert", "Transitional"],
+    serviceHighlights: [
+      "Master suite transformations",
+      "Zero-threshold walk-in showers",
+      "Custom double vanities",
+      "Kitchen wall removals",
+      "Water conservation upgrades",
+      "Luxury porcelain tile work",
+    ],
+  },
+  "andersen-springs": {
+    areaSlug: "andersen-springs",
+    areaName: "Andersen Springs",
+    fullName: "Bathroom Remodeling in Andersen Springs, Chandler",
+    description: "Premium bathroom and home remodeling services for custom properties and lakeside estates in Andersen Springs.",
+    heroTitle: "Professional Bathroom Remodeling in Andersen Springs, Chandler",
+    heroSubtitle: "Premium Remodeling for Andersen Springs Homeowners",
+    heroDescription:
+      "Transform your Andersen Springs home with expert remodeling services. We design custom walk-in showers, open-concept kitchens, and high-performance spaces.",
+    introSection: {
+      title: "Custom Bathroom Renovations Designed for Andersen Springs Properties",
+      description:
+        "Andersen Springs features unique lakeside custom estates, greenbelts, and mature properties. Upgrading these properties requires a remodeling contractor with expertise in custom plumbing configurations, structural updates, and hard water mitigation. We specialize in converting old garden tubs into modern curbless walk-in showers, installing solid wood double vanities with quartz tops, and complete space modernizations.\n\nWe utilize Schluter-KERDI waterproofing systems to protect your home's structure and epoxy grouts to repel the region's mineral-heavy hard water scale. We handle all drawings, permit submittals, and safety inspections directly through the City of Chandler building division, guaranteeing a stress-free renovation process.",
+    },
+    localTrustSignals: [
+      "Licensed Arizona contractor - ROC338304 certified",
+      "Comprehensive two-year workmanship warranty on every project",
+      "Expert permit management for the City of Chandler building division",
+      "Advanced hard water defenses with epoxy grout and nano-coated glass",
+      "Free detailed in-home estimates for local homeowners",
+    ],
+    areaBenefits: [
+      "Schluter-KERDI waterproofing for lifetime leak protection",
+      "Stain-resistant epoxy grout that prevents mineral scaling",
+      "Custom layout modifications and structural wall removals",
+      "Energy-efficient LED lighting and code-compliant plumbing upgrades",
+      "Fixed written pricing with zero hidden fees or change orders",
+    ],
+    areaFaqs: [
+      {
+        question: "Do you handle HOA approvals in Andersen Springs?",
+        answer:
+          "Yes. We coordinate with local HOA committees to submit material sheets, architectural drawings, and certificate of insurance documents, ensuring quick approval.",
+      },
+      {
+        question: "How do you protect showers from local hard water?",
+        answer:
+          "We use non-porous porcelain tiles, high-performance epoxy grout, and treat frameless shower glass with EnduroShield hydrophobic protective coatings to prevent scaling.",
+      },
+      {
+        question: "How long does a master suite renovation take?",
+        answer:
+          "A full master bath suite renovation typically takes four to six weeks. Guest bathroom updates take two to three weeks, and we provide a firm written schedule.",
+      },
+      {
+        question: "Do you handle the permit process for Andersen Springs?",
+        answer:
+          "Yes. We prepare and submit design layouts to the City of Chandler Development Services Department and coordinate all inspections on your behalf.",
+      },
+    ],
+    homeStyles: ["Custom Mediterranean", "Contemporary Desert", "Modern Ranch", "Transitional"],
+    serviceHighlights: [
+      "Master suite transformations",
+      "Zero-threshold walk-in showers",
+      "Custom double vanities",
+      "Kitchen wall removals",
+      "Water conservation upgrades",
+      "Luxury porcelain tile work",
+    ],
+  },
+  "layton-lakes": {
+    areaSlug: "layton-lakes",
+    areaName: "Layton Lakes",
+    fullName: "Bathroom Remodeling in Layton Lakes, Chandler",
+    description: "Premium bathroom and home remodeling services for modern family homes and lakeside properties in Layton Lakes.",
+    heroTitle: "Professional Bathroom Remodeling in Layton Lakes, Chandler",
+    heroSubtitle: "Premium Remodeling for Layton Lakes Homeowners",
+    heroDescription:
+      "Transform your Layton Lakes home with expert remodeling services. We design custom walk-in showers, open-concept kitchens, and high-performance spaces.",
+    introSection: {
+      title: "Custom Bathroom Renovations Designed for Layton Lakes Properties",
+      description:
+        "Layton Lakes is a modern master-planned community featuring gorgeous parks, streams, and single-family properties. Upgrading these properties requires a remodeling contractor with expertise in contemporary layouts, HOA design-build coordination, and hard water mitigation. We specialize in converting old tub-shower inserts into modern walk-in tile showers, installing floating double vanities with quartz tops, and open-concept reconfigurations.\n\nWe utilize Schluter-KERDI waterproofing systems to protect your home's framing and epoxy grouts to repel the region's mineral-heavy hard water scale. We handle all drawings, permit submittals, and safety inspections directly through the City of Chandler or the Town of Gilbert, guaranteeing a stress-free renovation process.",
+    },
+    localTrustSignals: [
+      "Licensed Arizona contractor - ROC338304 certified",
+      "Comprehensive two-year workmanship warranty on every project",
+      "Expert permit management for Chandler & Gilbert building divisions",
+      "Advanced hard water defenses with epoxy grout and nano-coated glass",
+      "Free detailed in-home estimates for local homeowners",
+    ],
+    areaBenefits: [
+      "Schluter-KERDI waterproofing for lifetime leak protection",
+      "Stain-resistant epoxy grout that prevents mineral scaling",
+      "Custom layout modifications and structural wall removals",
+      "Energy-efficient LED lighting and code-compliant plumbing upgrades",
+      "Fixed written pricing with zero hidden fees or change orders",
+    ],
+    areaFaqs: [
+      {
+        question: "Do you handle HOA approvals in Layton Lakes?",
+        answer:
+          "Yes. We coordinate with the Layton Lakes HOA committee to submit material lists, design drawings, and insurance documentation, securing fast approvals.",
+      },
+      {
+        question: "How do you protect showers from local hard water?",
+        answer:
+          "We use non-porous porcelain tiles, high-performance epoxy grout, and treat frameless shower glass with EnduroShield hydrophobic protective coatings to prevent scaling.",
+      },
+      {
+        question: "How long does a master suite renovation take?",
+        answer:
+          "A full master bath suite renovation typically takes four to six weeks. Guest bathroom updates take two to three weeks, and we provide a firm written schedule.",
+      },
+      {
+        question: "Do you handle the permit process for Layton Lakes?",
+        answer:
+          "Yes. We determine if your home is in the Chandler or Gilbert portion, submit layouts to the appropriate building division, and coordinate all inspections.",
+      },
+    ],
+    homeStyles: ["Contemporary Desert", "Modern Ranch", "Transitional", "Southwestern Suburban"],
+    serviceHighlights: [
+      "Master suite transformations",
+      "Zero-threshold walk-in showers",
+      "Custom double vanities",
+      "Kitchen wall removals",
+      "Water conservation upgrades",
+      "Luxury porcelain tile work",
+    ],
+  },
+  "the-islands": {
+    areaSlug: "the-islands",
+    areaName: "The Islands",
+    fullName: "Bathroom Remodeling in The Islands, Chandler",
+    description: "Premium bathroom and home remodeling services for custom lakeside properties and townhomes in The Islands.",
+    heroTitle: "Professional Bathroom Remodeling in The Islands, Chandler",
+    heroSubtitle: "Premium Remodeling for The Islands Homeowners",
+    heroDescription:
+      "Transform your The Islands home with expert remodeling services. We design custom walk-in showers, open-concept kitchens, and high-performance spaces.",
+    introSection: {
+      title: "Custom Bathroom Renovations Designed for The Islands Properties",
+      description:
+        "The Islands features unique lakeside custom estates, greenbelts, and mature properties. Upgrading these properties requires a remodeling contractor with expertise in custom plumbing configurations, structural updates, and hard water mitigation. We specialize in converting old garden tubs into modern curbless walk-in showers, installing solid wood double vanities with quartz tops, and complete space modernizations.\n\nWe utilize Schluter-KERDI waterproofing systems to protect your home's structure and epoxy grouts to repel the region's mineral-heavy hard water scale. We handle all drawings, permit submittals, and safety inspections directly through the City of Chandler building division, guaranteeing a stress-free renovation process.",
+    },
+    localTrustSignals: [
+      "Licensed Arizona contractor - ROC338304 certified",
+      "Comprehensive two-year workmanship warranty on every project",
+      "Expert permit management for the City of Chandler building division",
+      "Advanced hard water defenses with epoxy grout and nano-coated glass",
+      "Free detailed in-home estimates for local homeowners",
+    ],
+    areaBenefits: [
+      "Schluter-KERDI waterproofing for lifetime leak protection",
+      "Stain-resistant epoxy grout that prevents mineral scaling",
+      "Custom layout modifications and structural wall removals",
+      "Energy-efficient LED lighting and code-compliant plumbing upgrades",
+      "Fixed written pricing with zero hidden fees or change orders",
+    ],
+    areaFaqs: [
+      {
+        question: "Do you handle HOA approvals in The Islands?",
+        answer:
+          "Yes. We coordinate with local HOA committees to submit material sheets, architectural drawings, and certificate of insurance documents, ensuring quick approval.",
+      },
+      {
+        question: "How do you protect showers from local hard water?",
+        answer:
+          "We use non-porous porcelain tiles, high-performance epoxy grout, and treat frameless shower glass with EnduroShield hydrophobic protective coatings to prevent scaling.",
+      },
+      {
+        question: "How long does a master suite renovation take?",
+        answer:
+          "A full master bath suite renovation typically takes four to six weeks. Guest bathroom updates take two to three weeks, and we provide a firm written schedule.",
+      },
+      {
+        question: "Do you handle the permit process for The Islands?",
+        answer:
+          "Yes. We prepare and submit design layouts to the City of Chandler Development Services Department and coordinate all inspections on your behalf.",
+      },
+    ],
+    homeStyles: ["Custom Mediterranean", "Contemporary Desert", "Waterfront Townhome", "Transitional"],
+    serviceHighlights: [
+      "Master suite transformations",
+      "Zero-threshold walk-in showers",
+      "Custom double vanities",
+      "Kitchen wall removals",
+      "Water conservation upgrades",
+      "Luxury porcelain tile work",
+    ],
+  },
+  "pecos-ranch": {
+    areaSlug: "pecos-ranch",
+    areaName: "Pecos Ranch",
+    fullName: "Bathroom Remodeling in Pecos Ranch, Chandler",
+    description: "Premium bathroom and home remodeling services for custom properties and lakeside estates in Pecos Ranch.",
+    heroTitle: "Professional Bathroom Remodeling in Pecos Ranch, Chandler",
+    heroSubtitle: "Premium Remodeling for Pecos Ranch Homeowners",
+    heroDescription:
+      "Transform your Pecos Ranch home with expert remodeling services. We design custom walk-in showers, open-concept kitchens, and high-performance spaces.",
+    introSection: {
+      title: "Custom Bathroom Renovations Designed for Pecos Ranch Properties",
+      description:
+        "Pecos Ranch features unique lakeside custom estates, greenbelts, and mature properties. Upgrading these properties requires a remodeling contractor with expertise in custom plumbing configurations, structural updates, and hard water mitigation. We specialize in converting old garden tubs into modern curbless walk-in showers, installing solid wood double vanities with quartz tops, and complete space modernizations.\n\nWe utilize Schluter-KERDI waterproofing systems to protect your home's structure and epoxy grouts to repel the region's mineral-heavy hard water scale. We handle all drawings, permit submittals, and safety inspections directly through the City of Chandler building division, guaranteeing a stress-free renovation process.",
+    },
+    localTrustSignals: [
+      "Licensed Arizona contractor - ROC338304 certified",
+      "Comprehensive two-year workmanship warranty on every project",
+      "Expert permit management for the City of Chandler building division",
+      "Advanced hard water defenses with epoxy grout and nano-coated glass",
+      "Free detailed in-home estimates for local homeowners",
+    ],
+    areaBenefits: [
+      "Schluter-KERDI waterproofing for lifetime leak protection",
+      "Stain-resistant epoxy grout that prevents mineral scaling",
+      "Custom layout modifications and structural wall removals",
+      "Energy-efficient LED lighting and code-compliant plumbing upgrades",
+      "Fixed written pricing with zero hidden fees or change orders",
+    ],
+    areaFaqs: [
+      {
+        question: "Do you handle HOA approvals in Pecos Ranch?",
+        answer:
+          "Yes. We coordinate with local HOA committees to submit material sheets, architectural drawings, and certificate of insurance documents, ensuring quick approval.",
+      },
+      {
+        question: "How do you protect showers from local hard water?",
+        answer:
+          "We use non-porous porcelain tiles, high-performance epoxy grout, and treat frameless shower glass with EnduroShield hydrophobic protective coatings to prevent scaling.",
+      },
+      {
+        question: "How long does a master suite renovation take?",
+        answer:
+          "A full master bath suite renovation typically takes four to six weeks. Guest bathroom updates take two to three weeks, and we provide a firm written schedule.",
+      },
+      {
+        question: "Do you handle the permit process for Pecos Ranch?",
+        answer:
+          "Yes. We prepare and submit design layouts to the City of Chandler Development Services Department and coordinate all inspections on your behalf.",
+      },
+    ],
+    homeStyles: ["Custom Mediterranean", "Contemporary Desert", "Lakeside Estate", "Transitional"],
+    serviceHighlights: [
+      "Master suite transformations",
+      "Zero-threshold walk-in showers",
+      "Custom double vanities",
+      "Kitchen wall removals",
+      "Water conservation upgrades",
+      "Luxury porcelain tile work",
+    ],
+  },
 };
 
 export function getAreaData(areaSlug: string): AreaData | undefined {

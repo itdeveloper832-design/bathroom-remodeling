@@ -10,6 +10,11 @@ export const DEDICATED_NEIGHBORHOOD_PATHS: Record<string, string> = {
   "downtown-chandler": "/bathroom-remodeling-downtown-chandler/",
   "cooper-commons": "/bathroom-remodeling-cooper-commons/",
   "fox-crossing": "/bathroom-remodeling-cooper-commons/",
+  "chandler-heights": "/bathroom-remodeling-chandler-heights/",
+  "andersen-springs": "/bathroom-remodeling-andersen-springs/",
+  "layton-lakes": "/bathroom-remodeling-layton-lakes/",
+  "the-islands": "/bathroom-remodeling-the-islands/",
+  "pecos-ranch": "/bathroom-remodeling-pecos-ranch/",
 };
 
 /** Shower cluster: thin pages canonical to hub */

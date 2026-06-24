@@ -12,6 +12,7 @@ interface ServiceHeroProps {
   image?: string;
   breadcrumbs?: Array<{ name: string; url: string }>;
   backgroundImage?: string;
+  titleClassName?: string;
 }
 
 export default function ServiceHero({ 
@@ -20,7 +21,8 @@ export default function ServiceHero({
   subtitle,
   image,
   breadcrumbs,
-  backgroundImage = "/images/hero/luxury-shower-remodel-chandler.avif"
+  backgroundImage = "/images/hero/luxury-shower-remodel-chandler.avif",
+  titleClassName
 }: ServiceHeroProps) {
   const rawImage = image ?? backgroundImage;
   const heroImage = rawImage.endsWith('.webp') ? rawImage.replace(/\.webp$/, '.avif') : rawImage;
@@ -53,7 +55,7 @@ export default function ServiceHero({
               {subtitle}
             </p>
           )}
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className={titleClassName || "font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"}>
             {title}
           </h1>
           <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">

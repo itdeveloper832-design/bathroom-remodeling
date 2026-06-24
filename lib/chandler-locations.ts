@@ -132,6 +132,34 @@ export const chandlerLocations: ZipCodeData[] = [
           "Homeowners select sustainable materials, VOC free finishes, high efficiency LED lighting, and low flow shower heads.",
         localContext:
           "Sun Groves is situated near Riggs Road and Basha Road, just south of Basha High School and the Sun Groves community park."
+      },
+      {
+        name: "Chandler Heights",
+        slug: "chandler-heights",
+        zipCode: "85249",
+        description:
+          "Rural-suburban community in southern Chandler featuring spacious custom estates, horse properties, and stunning desert foothills views.",
+        marketInsight:
+          "Premium custom home market with strong demand for full master suite transformations, open-concept kitchen structural reconfigurations, and large walk-in tiled showers. Homeowners invest twenty thousand to sixty thousand dollars in high-end remodeling.",
+        homeStylesCommon: ["Custom Ranch", "Modern Farmhouse", "Contemporary Desert", "Transitional"],
+        customerBehavior:
+          "Homeowners prioritize non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated frameless glass to protect against hard water mineral scale.",
+        localContext:
+          "Chandler Heights borders Queen Creek near Chandler Heights Road and Riggs Road, close to Veterans Oasis Park and San Tan Mountain Regional Park."
+      },
+      {
+        name: "Layton Lakes",
+        slug: "layton-lakes",
+        zipCode: "85249",
+        description:
+          "Modern master-planned community in southeast Chandler featuring scenic lakes, streams, parks, and walking paths.",
+        marketInsight:
+          "Active home remodel market with demand for modern walk-in tile showers, open-concept kitchen reconfigurations, and quartz updates. Average budgets range from fifteen thousand to forty thousand dollars.",
+        homeStylesCommon: ["Contemporary Desert", "Modern Ranch", "Transitional", "Southwestern Suburban"],
+        customerBehavior:
+          "Homeowners choose non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated glass to counter local hard water.",
+        localContext:
+          "Layton Lakes is situated near Queen Creek Road and Lindsay Road, close to local parks and retail centers."
       }
     ]
   },
@@ -183,6 +211,34 @@ export const chandlerLocations: ZipCodeData[] = [
           "Residents choose floating vanities to expose more tile, space-saving sliding glass shower doors, and moisture-resistant vanity cabinets.",
         localContext:
           "Copper Ridge Condominiums are located near Ray Road and the Loop 101 Freeway, offering quiet residential living close to retail centers."
+      },
+      {
+        name: "Andersen Springs",
+        slug: "andersen-springs",
+        zipCode: "85224",
+        description:
+          "Beautiful lakeside master-planned community in central Chandler featuring greenbelts, scenic lakes, and established custom homes.",
+        marketInsight:
+          "Established custom home market with strong demand for full master suite transformations, kitchen updates, and tub-to-shower conversions. Homeowners invest fifteen thousand to forty-five thousand dollars in high-end remodeling.",
+        homeStylesCommon: ["Custom Mediterranean", "Contemporary Desert", "Modern Ranch", "Transitional"],
+        customerBehavior:
+          "Homeowners prioritize non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated frameless glass to protect against hard water mineral scale.",
+        localContext:
+          "Andersen Springs is situated near Dobson Road and Ray Road, close to Dobson Ranch Golf Course and local retail centers."
+      },
+      {
+        name: "Pecos Ranch",
+        slug: "pecos-ranch",
+        zipCode: "85224",
+        description:
+          "Prestigious master-planned community in central-west Chandler featuring beautiful lakes, greenbelts, and spacious custom homes.",
+        marketInsight:
+          "Desirable home remodeling market with demand for large walk-in tile showers, open-concept kitchen transformations, and premium updates. Average budgets range from twenty thousand to fifty thousand dollars.",
+        homeStylesCommon: ["Custom Mediterranean", "Contemporary Desert", "Lakeside Estate", "Transitional"],
+        customerBehavior:
+          "Homeowners choose non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated glass to counter local hard water.",
+        localContext:
+          "Pecos Ranch is situated near Dobson Road and Pecos Road, close to the Loop 202 Freeway and Price Corridor."
       }
     ]
   },
@@ -220,6 +276,20 @@ export const chandlerLocations: ZipCodeData[] = [
           "Practical homeowners focus on durably sealed tile shower enclosures, quiet exhaust fans, and water saving EPA WaterSense plumbing fixtures.",
         localContext:
           "Clemente Ranch is situated near Alma School Road and Germann Road, close to Dobson Road and the local Clemente Park."
+      },
+      {
+        name: "The Islands",
+        slug: "the-islands",
+        zipCode: "85225",
+        description:
+          "Waterfront master-planned community in central Chandler featuring three large lakes, docks, parks, and custom residential estates.",
+        marketInsight:
+          "High-end custom home market with strong demand for full master suite transformations, open-concept kitchen reconfigurations, and large walk-in tiled showers. Homeowners invest twenty-five thousand to sixty thousand dollars in high-end remodeling.",
+        homeStylesCommon: ["Custom Mediterranean", "Contemporary Desert", "Waterfront Townhome", "Transitional"],
+        customerBehavior:
+          "Homeowners prioritize non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated frameless glass to protect against hard water mineral scale.",
+        localContext:
+          "The Islands borders McQueen Road and Warner Road, surrounding custom community lake access and docks."
       }
     ]
   },

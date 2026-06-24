@@ -11,6 +11,22 @@ const GoogleMap = dynamic(() => import("@/components/google-map"), {
   loading: () => <div className="mt-8 h-[220px] bg-background/10 animate-pulse rounded-xl" aria-label="Loading map" />,
 });
 
+const serviceAreaLinks: Record<string, string> = {
+  "Chandler": "/bathroom-remodeling-chandler-az/",
+  "Ahwatukee": "/bathroom-remodeling-ahwatukee-az/",
+  "Sun Lakes": "/bathroom-remodeling-sun-lakes/",
+  "Ocotillo": "/bathroom-remodeling-ocotillo/",
+  "Dobson Ranch": "/bathroom-remodeling-dobson-ranch/",
+  "Fulton Ranch": "/bathroom-remodeling-fulton-ranch/",
+  "Queen Creek": "/bathroom-remodeling-queen-creek-az/",
+  "Apache Junction": "/bathroom-remodeling-apache-junction-az/",
+  "Chandler Heights": "/bathroom-remodeling-chandler-heights/",
+  "Andersen Springs": "/bathroom-remodeling-andersen-springs/",
+  "Layton Lakes": "/bathroom-remodeling-layton-lakes/",
+  "The Islands": "/bathroom-remodeling-the-islands/",
+  "Pecos Ranch": "/bathroom-remodeling-pecos-ranch/",
+};
+
 export function Footer() {
   return (
     <footer className="bg-foreground text-background" role="contentinfo">
@@ -199,14 +215,35 @@ export function Footer() {
           <div className="grid md:grid-cols-2 gap-8 text-center md:text-left">
             <div>
               <h4 className="text-sm font-medium text-background/70 mb-3 uppercase tracking-wider">Service Areas</h4>
-              <p className="text-background/80 text-sm leading-relaxed">
-                {siteConfig.serviceAreas.join(" • ")}
+              <p className="text-background/80 text-sm leading-relaxed flex flex-wrap justify-center md:justify-start gap-x-2 gap-y-1">
+                {siteConfig.serviceAreas.map((area, i) => {
+                  const href = serviceAreaLinks[area];
+                  return (
+                    <span key={area} className="flex items-center">
+                      {i > 0 && <span className="mr-2 text-background/40">•</span>}
+                      {href ? (
+                        <Link href={href} className="hover:text-primary transition-colors text-background/80 hover:underline">
+                          {area}
+                        </Link>
+                      ) : (
+                        <span>{area}</span>
+                      )}
+                    </span>
+                  );
+                })}
               </p>
             </div>
             <div className="md:text-right">
               <h4 className="text-sm font-medium text-background/70 mb-3 uppercase tracking-wider">Chandler Zip Codes</h4>
-              <p className="text-background/80 text-sm leading-relaxed">
-                {(siteConfig as any).zipCodes?.join(" • ")}
+              <p className="text-background/80 text-sm leading-relaxed flex flex-wrap justify-center md:justify-end gap-x-2 gap-y-1">
+                {(siteConfig as any).zipCodes?.map((zip: string, i: number) => (
+                  <span key={zip} className="flex items-center">
+                    {i > 0 && <span className="mr-2 text-background/40">•</span>}
+                    <Link href={`/chandler-az-${zip}/`} className="hover:text-primary transition-colors text-background/80 hover:underline">
+                      {zip}
+                    </Link>
+                  </span>
+                ))}
               </p>
             </div>
           </div>

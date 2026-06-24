@@ -25,7 +25,7 @@ export const siteConfig = {
       lng: -111.9605964,
     },
   },
-  zipCodes: ["85224", "85225", "85226", "85248", "85249"],
+  zipCodes: ["85224", "85225", "85226", "85244", "85246", "85248", "85249", "85286"],
   hours: {
     weekdays: "8:00 AM - 6:00 PM",
     saturday: "9:00 AM - 4:00 PM",
@@ -55,6 +55,11 @@ export const siteConfig = {
     "Fulton Ranch",
     "Queen Creek",
     "Apache Junction",
+    "Chandler Heights",
+    "Andersen Springs",
+    "Layton Lakes",
+    "The Islands",
+    "Pecos Ranch",
   ],
   umamiWebsiteId: "", // Add your Umami website ID here (e.g. "9a38f712-...") to enable tracking
   umamiShareUrl: "", // Add your Umami public share URL here to display the dashboard in your admin panel

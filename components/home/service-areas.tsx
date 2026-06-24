@@ -18,6 +18,11 @@ const areas = [
   { name: "Cooper Commons", href: getCanonicalNeighborhoodLink("cooper-commons") },
   { name: "Dobson Ranch", href: "/bathroom-remodeling-dobson-ranch/" },
   { name: "Ahwatukee", href: "/bathroom-remodeling-ahwatukee-az/" },
+  { name: "Chandler Heights", href: getCanonicalNeighborhoodLink("chandler-heights") },
+  { name: "Andersen Springs", href: getCanonicalNeighborhoodLink("andersen-springs") },
+  { name: "Layton Lakes", href: getCanonicalNeighborhoodLink("layton-lakes") },
+  { name: "The Islands", href: getCanonicalNeighborhoodLink("the-islands") },
+  { name: "Pecos Ranch", href: getCanonicalNeighborhoodLink("pecos-ranch") },
 ];
 
 export default function ServiceAreas() {
@@ -51,7 +56,7 @@ export default function ServiceAreas() {
             </div>
             <p className="text-sm text-muted-foreground mt-6">
               Chandler ZIP hubs:{" "}
-              {["85248", "85249", "85224", "85225", "85226"].map((zip, i) => (
+              {["85224", "85225", "85226", "85244", "85246", "85248", "85249", "85286"].map((zip, i) => (
                 <span key={zip}>
                   {i > 0 ? " · " : ""}
                   <Link href={`/chandler-az-${zip}/`} className="text-primary hover:underline">

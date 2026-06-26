@@ -4,6 +4,10 @@ export const siteConfig = {
   tagline: "Licensed Bathroom Remodeling in Chandler, AZ",
   description: "Licensed bathroom remodeling in Chandler, Arizona. Walk-in showers, tub-to-shower conversions, tile, vanities, and master bath remodels. ROC338304. Free estimates.",
   foundedYear: 2024,
+  // Set to real values ONLY after a verified Google Business Profile exists.
+  // Kept as 0/empty to avoid emitting fabricated review data in schema.
+  googleReviewsCount: 0,
+  googleRating: 0,
   warranty: "2-Year Workmanship Warranty",
   url: "https://arzhomeremodeling.com",
   googleBusinessLink: "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ",

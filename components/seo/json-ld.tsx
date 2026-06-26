@@ -73,10 +73,6 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
       siteConfig.social.pinterest,
       siteConfig.social.youtube,
       siteConfig.social.linkedin,
-      "https://www.bbb.org/search?find_text=ARZ+Home+Remodeling&find_loc=Chandler%2C+AZ",
-      "https://www.nari.org/Find-a-Remodeler?query=ARZ+Home+Remodeling",
-      "https://www.yelp.com/biz/arz-home-remodeling-chandler",
-      "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ"
     ].filter(Boolean),
     priceRange: "$$-$$$",
     areaServed: ["Chandler AZ","Gilbert AZ","Mesa AZ","Tempe AZ","Queen Creek AZ","Sun Lakes AZ","Ocotillo AZ","Ahwatukee AZ"],
@@ -173,12 +169,6 @@ export function LocalBusinessSchema({ type = "HomeAndConstructionBusiness" }: Lo
           },
         },
       ],
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: siteConfig.googleRating.toString(),
-      reviewCount: siteConfig.googleReviewsCount.toString(),
-      bestRating: "5"
     },
   };
 
@@ -471,12 +461,6 @@ export function PriceSchema({
       name: siteConfig.name,
     },
     offers: offerSchema,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: siteConfig.googleRating.toString(),
-      reviewCount: siteConfig.googleReviewsCount.toString(),
-      bestRating: "5"
-    },
   };
 
   return (
@@ -577,10 +561,6 @@ export function OrganizationSchema({
       siteConfig.social.instagram,
       siteConfig.social.youtube,
       siteConfig.social.linkedin,
-      "https://www.bbb.org/search?find_text=ARZ+Home+Remodeling&find_loc=Chandler%2C+AZ",
-      "https://www.nari.org/Find-a-Remodeler?query=ARZ+Home+Remodeling",
-      "https://www.yelp.com/biz/arz-home-remodeling-chandler",
-      "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ"
     ].filter(Boolean),
     "contactPoint": {
       "@type": "ContactPoint",

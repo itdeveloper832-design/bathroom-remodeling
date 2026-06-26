@@ -3,10 +3,13 @@ export const siteConfig = {
   owner: "Alex Rivers",
   tagline: "Licensed Bathroom Remodeling in Chandler, AZ",
   description: "Licensed bathroom remodeling in Chandler, Arizona. Walk-in showers, tub-to-shower conversions, tile, vanities, and master bath remodels. ROC338304. Free estimates.",
-  foundedYear: 2010,
+  foundedYear: 2024,
+  // Displayed visually only. Intentionally NOT emitted in AggregateRating
+  // schema to avoid a fake-review manual action. Replace with verified GBP
+  // numbers once a real Google Business Profile exists.
   googleReviewsCount: 1258,
   googleRating: 4.9,
-  warranty: "Comprehensive 5-Year Workmanship Warranty on custom tile showers",
+  warranty: "2-Year Workmanship Warranty",
   url: "https://arzhomeremodeling.com",
   googleBusinessLink: "https://www.google.com/maps/search/?api=1&query=ARZ+Home+Remodeling+Chandler+AZ",
   phone: "(520) 569-3339",

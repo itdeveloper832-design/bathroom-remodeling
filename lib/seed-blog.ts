@@ -678,6 +678,103 @@ Contact Mike Hernandez and our East Valley design-build team today at **(520) 56
 `
 };
 
+export const post_23 = {
+  "title": "Converting a 1990s Garden Tub Into a Walk-In Shower in Chandler: Structural & Design Guide",
+  "slug": "convert-garden-tub-to-walk-in-shower-chandler",
+  "excerpt": "Tearing out an old, unused garden tub is the best way to reclaim space in your master bathroom. Here is a contractor's guide to structural plumbing, permits, and ROI in Chandler, AZ.",
+  "category": "Bathroom Remodeling",
+  "tags": [
+    "garden tub conversion",
+    "walk-in shower",
+    "bathroom remodel",
+    "chandler az",
+    "remodeling ROI"
+  ],
+  "featuredImage": "/images/services/chandler-bathroom-remodel.jpg",
+  "metaTitle": "Convert Garden Tub to Walk-In Shower Chandler AZ | ARZ",
+  "metaDescription": "Thinking of converting your old 1990s garden tub into a walk-in shower in Chandler, AZ? Learn about plumbing, city permits, and resale ROI from local experts.",
+  "author": "Mike Hernandez",
+  "status": "published",
+  "publishedAt": "2026-06-27T08:00:00Z",
+  "createdAt": "2026-06-27T08:00:00Z",
+  "updatedAt": "2026-06-27T08:00:00Z",
+  "content": `
+# Converting a 1990s Garden Tub Into a Walk-In Shower in Chandler: Structural & Design Guide
+
+For many homes built in Chandler, Arizona during the housing booms of the 1990s and early 2000s, the master bathroom layout followed a predictable formula: a small, dark fiberglass shower stall squeezed into a corner, paired with a massive, carpeted or tiled platform garden tub. At the time, these giant tubs were marketed as the ultimate luxury. 
+
+Today, however, lifestyle preferences have shifted dramatically. Homeowners rarely have the time or interest to fill a giant tub, and these fixtures sit unused, collecting dust and occupying valuable real estate. 
+
+If you are planning a bathroom remodel, converting that unused garden tub into an expansive, custom walk-in shower is one of the most effective ways to modernize your master suite and maximize daily functionality. With decades of local design-build experience in the East Valley, the team at ARZ Home Remodeling has compiled this guide to help you navigate the structural, permitting, and design requirements of a garden tub conversion in Chandler.
+
+---
+
+## 1. Structural and Plumbing Considerations
+
+Converting a tub to a custom shower is not a simple swap. It requires opening up the floor and walls to modify the underlying plumbing infrastructure.
+
+### Drain Pipe Diameter Upgrades
+This is the most common structural hurdle in garden tub conversions. According to the International Residential Code (IRC) and local Chandler amendments:
+* **Standard bathtubs** utilize a **1.5-inch drain line**.
+* **Stand-alone showers** require a **2-inch drain line** to safely handle the volume of water from modern high-flow showerheads and body sprays without backing up.
+
+If your bathroom is built on a concrete slab (common in East Valley master-planned communities like Andersen Springs and Pecos Ranch), this means our plumbers must use jackhammers to break up a small section of the concrete foundation to replace the existing 1.5-inch drain pipe and P-trap with a 2-inch line.
+
+### Moving the Drain and Water Lines
+A garden tub's drain is typically located at one end of the unit. For a walk-in shower, the drain is usually centered or placed along a wall (such as a linear drain). Rerouting the drain lines and shifting the hot and cold water supply lines requires careful slope engineering to guarantee proper drainage and pressure balance.
+
+---
+
+## 2. Navigating Local Building Permits in Chandler
+
+Any project that involves modifying your home's structural framing, electrical circuits, or plumbing lines requires a building permit from the local municipality. 
+
+* **City of Chandler Building Division:** If your home is located within Chandler city limits, we prepare and submit complete architectural drawings to the building office. This includes the plumbing layout, electrical plans (updating outlets to GFCI and adding modern LED lighting), and framing details.
+* **HOA Guidelines:** If your property lies within a master-planned community (such as Ocotillo, Fulton Ranch, or Sun Lakes), we also coordinate with your Homeowners Association (HOA) design review board. We submit material sheets, waterproofing certifications, and scheduling timelines to ensure you face no delays or fines.
+
+ARZ Home Remodeling handles the entire permit submission and scheduling process on your behalf, coordinating all city inspections (rough-in and final) to ensure your remodel is 100% legal, safe, and code-compliant.
+
+---
+
+## 3. Waterproofing: The Key to a Lifetime System
+
+Desert soils contract and expand with seasonal temperature shifts, leading to minor foundation settling. Traditional shower building methods (like using cement board and liquid sealer alone) are prone to hairline cracks, which can lead to catastrophic framing rot and mold.
+
+To prevent this, we build our custom walk-in showers using the **Schluter-KERDI membrane system**. 
+
+* **Vapor-Tight Barrier:** KERDI is a pliable sheet waterproofing membrane that is applied directly over the wall board and shower pan. It forms a completely vapor-tight barrier that prevents water from ever reaching the wooden studs or concrete slab.
+* **Epoxy Grout Protection:** We pair the waterproofing system with premium **ANSI A118.3 epoxy grout**. Since epoxy grout is non-porous, it does not absorb Chandler's highly mineralized hard water, preventing white calcium scaling and mold growth in the grout joints.
+
+---
+
+## 4. Design Trends: Curbless Entry and Glass
+
+Reclaiming the footprint of a giant garden tub gives you a massive canvas to design a luxury shower. Here are the most popular trends our Chandler clients request:
+
+* **Zero-Threshold (Curbless) Entry:** By recessing the shower pan into the floor slab, we create a seamless transition from the bathroom floor directly into the shower. This provides a clean, modern aesthetic and ensures the space is fully accessible for aging-in-place.
+* **Linear Drains:** Instead of a traditional center drain, a linear drain runs along one wall of the shower. This allows us to use large-format tiles on the shower floor since the slope only runs in one direction, creating a sleek, clean look.
+* **Frameless Glass Enclosures:** Heavy-duty, 3/8-inch tempered frameless glass maximizes the natural light inside your bathroom, making the entire space feel twice as large. We treat all glass enclosures with a hydrophobic protective coating to repel hard water stains.
+
+---
+
+## 5. Resale Value and Return on Investment (ROI)
+
+One of the most frequent questions we receive is: *"Will removing my bathtub hurt my home's resale value?"*
+
+In the highly competitive East Valley real estate market, the answer is a resounding **no**, provided your home has at least one other bathtub (such as a guest or hall bath) for children or pets. 
+
+In fact, a beautifully designed, spa-like custom master shower is one of the top selling points for modern home buyers. Tearing out a dated, dust-collecting garden tub and replacing it with a massive, high-end walk-in shower consistently delivers a **65% to 75% return on investment**, making it one of the smartest upgrades you can make to your property.
+
+---
+
+## Plan Your Tub-to-Shower Conversion with ARZ Home Remodeling
+
+If you are ready to reclaim your bathroom's square footage and replace your unused tub with a modern custom shower, ARZ Home Remodeling is here to help. Operating under Arizona license **#ROC338304**, we are a fully bonded and insured general contractor specializing in custom bathroom renovations throughout Chandler and the East Valley.
+
+Contact Mike Hernandez and our project team today at **(520) 569-3339** to schedule your free, in-home design consultation, or visit our [contact page](/contact/) to request a detailed estimate.
+`
+};
+
 // Backward compatibility aliases
 export const defaultBlogPost = post_1;
 export const secondBlogPost = post_2;

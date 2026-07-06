@@ -303,7 +303,7 @@ export function Footer() {
       <div className="border-t border-background/10 bg-background/5 text-background/60 text-[11px] py-8">
         <div className="container mx-auto px-4 lg:px-8 max-w-6xl text-left">
           <p className="leading-relaxed">
-            ARZ Home Remodeling is a licensed, bonded, and insured residential contractor (ROC #338304) based in Chandler, Arizona. We specialize in custom walk-in showers, tub-to-shower conversions, and complete bathroom renovations across Chandler and the East Valley.
+            ARZ Home Remodeling is a premier licensed bathroom remodel contractor (ROC #338304) based in Chandler, Arizona. If you are looking for a reliable bathroom remodel contractor near me, we specialize in custom walk-in showers, tub-to-shower conversions, accessible shower remodeling, and accessible shower installation services across Chandler, Gilbert, Mesa, Tempe, and the East Valley.
           </p>
         </div>
       </div>

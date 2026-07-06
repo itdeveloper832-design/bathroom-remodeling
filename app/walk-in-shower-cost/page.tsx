@@ -10,7 +10,7 @@ import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/jso
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Info } from "lucide-react";
 
-export const metadata: Metadata = {title: "Walk-In Shower Costs Chandler AZ | Custom Tile Pricing | ARZ",description: "Detailed cost guide for custom walk-in showers in Chandler, AZ. See cost ranges for tile selection, frameless glass, and waterproofing packages.",
+export const metadata: Metadata = {title: "Walk-In Shower Costs Chandler AZ | Custom Tile Pricing",description: "Detailed cost guide for custom walk-in showers in Chandler, AZ. See cost ranges for tile selection, frameless glass, and waterproofing packages.",
   openGraph: {title: "Walk In Shower Cost | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore walk in shower cost, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/walk-in-shower-cost/`,
     type: "website",

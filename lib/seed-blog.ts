@@ -775,6 +775,143 @@ Contact Mike Hernandez and our project team today at **(520) 569-3339** to sched
 `
 };
 
+export const post_24 = {
+  "title": "Small Bathroom Remodeling Ideas to Maximize Space in Chandler Homes",
+  "slug": "small-bathroom-remodel-ideas-chandler-az",
+  "excerpt": "Maximize your space with these smart design layout ideas for small bathrooms in Chandler, AZ. Floating vanities, pocket doors, and curbless tiled walk-in showers.",
+  "category": "Bathroom Remodeling",
+  "tags": [
+    "small bathroom",
+    "bathroom remodeling",
+    "space saving",
+    "design layout"
+  ],
+  "featuredImage": "/images/services/small-bathroom-remodel.jpg",
+  "metaTitle": "Small Bathroom Remodeling Ideas Chandler AZ | ARZ",
+  "metaDescription": "Struggling with a small bath? Maximize space in Chandler, AZ with space-saving custom layout ideas, floating vanities, and curbless walk-in showers.",
+  "author": "Mike Hernandez",
+  "status": "published",
+  "publishedAt": "2026-07-03T08:00:00Z",
+  "createdAt": "2026-07-03T08:00:00Z",
+  "updatedAt": "2026-07-03T08:00:00Z",
+  "content": `
+# Small Bathroom Remodeling Ideas to Maximize Space in Chandler Homes
+
+Having a compact bathroom doesn't mean you have to compromise on style, luxury, or functionality. Many homes in Chandler, Arizona—whether cozy townhomes near downtown Chandler or established family properties in Dobson Ranch—feature secondary guest bathrooms or powder rooms with limited square footage. With the right design layout, smart storage solutions, and premium materials, you can transform a cramped bathroom into a bright, spacious oasis.
+
+Here are the best space-saving design strategies recommended by our licensed crew at ARZ Home Remodeling.
+
+---
+
+## 1. Convert the Bathtub to a Walk-In Shower
+
+Standard alcove bathtubs take up a significant amount of visual and physical space (usually 30" by 60"). In a small bathroom, this can feel like a massive wall closing in the room.
+
+*   **Go Curbless:** By opting for a curbless, zero-threshold entry shower, the bathroom floor flows seamlessly into the shower zone. This lack of visual barriers immediately makes the bathroom feel twice as large.
+*   **Frameless Glass Panels:** Replacing a dark shower curtain or metal-framed sliding doors with a single clear, frameless glass partition allows light to pass through unobstructed.
+*   To learn more about shower conversion costs and options, see our guide on [walk-in shower costs in Chandler](/blog/walk-in-shower-cost-chandler-az/).
+
+---
+
+## 2. Floating Vanities and Wall-Hung Fixtures
+
+In a tight footprint, keeping the floor visible is key to creating an illusion of space. 
+
+*   **Wall-Hung Vanities:** A floating vanity leaves space underneath for air and light to circulate. It also gives you a convenient spot to tuck away bathroom scales or small storage baskets.
+*   **Compact Toilets:** Upgrading to a round-front or wall-mounted toilet can reclaim up to 3 to 4 inches of floor clearance compared to standard elongated models.
+*   For professional installation, check out our [bathroom vanity installation](/bathroom-vanity-installation/) service page.
+
+---
+
+## 3. Utilize Pocket Doors
+
+Traditional bathroom doors swing inward, requiring about 9 to 12 square feet of clear space to open. This often restricts vanity placement or makes the space feel like a bottleneck.
+
+*   **The Pocket Door Solution:** Installing a pocket door that slides into the wall cavity eliminates the swing radius completely. This simple structural change frees up usable space for a larger vanity, open shelving, or hooks.
+
+---
+
+## 4. Light Colors and Large-Format Tiles
+
+Dark colors and busy patterns can make a small bathroom feel closed-in and cave-like.
+
+*   **Monochromatic Palettes:** Soft whites, warm grays, and light sands complement the desert light and keep the room bright.
+*   **Large-Format Tiles:** Using larger tiles (such as 12"x24" or 24"x24" porcelain) means fewer grout lines. Fewer lines create a cleaner, less busy aesthetic. We always use premium non-porous epoxy grout to resist Chandler's hard water mineral stains. Learn more on our [bathroom tile installation](/bathroom-tile-installation/) page.
+
+---
+
+## Start Your Small Bathroom Transformation Today
+
+Ready to maximize your space? At ARZ Home Remodeling, we specialize in high-quality bathroom transformations, including [small bathroom remodeling](/small-bathroom-remodeling/), custom tile work, and curbless showers. 
+
+To plan your renovation, head back to our [homepage](/) or contact Mike Hernandez and our team of licensed professionals at **(520) 569-3339** to schedule your free, itemized estimate.
+`
+};
+
+export const post_25 = {
+  "title": "How to Choose the Best Bathroom Vanity for Your Chandler Remodel",
+  "slug": "choose-best-bathroom-vanity-chandler-az",
+  "excerpt": "A guide to selecting the perfect bathroom vanity for your Chandler renovation. Compare single vs. double options, quartz vs. granite countertops, and style trends.",
+  "category": "Materials",
+  "tags": [
+    "bathroom vanity",
+    "materials",
+    "countertops",
+    "design guide"
+  ],
+  "featuredImage": "/images/services/vanity-countertop-installation.jpg",
+  "metaTitle": "Choosing a Bathroom Vanity in Chandler AZ | Guide",
+  "metaDescription": "Choosing a bathroom vanity in Chandler, AZ? Learn sizing rules, quartz/granite top comparisons, and styles that withstand Arizona dry heat. Read more!",
+  "author": "Mike Hernandez",
+  "status": "published",
+  "publishedAt": "2026-07-03T08:00:00Z",
+  "createdAt": "2026-07-03T08:00:00Z",
+  "updatedAt": "2026-07-03T08:00:00Z",
+  "content": `
+# How to Choose the Best Bathroom Vanity for Your Chandler Remodel
+
+The vanity is the workhorse of your bathroom. It anchors the room's design, provides essential storage for toiletries, and houses the sink and faucet. When remodeling your bathroom in Chandler, Arizona, choosing the right vanity requires balancing aesthetics, storage needs, and durability. 
+
+From managing plumbing logistics to choosing stone countertops that stand up to local water quality, here is a complete guide to selecting the perfect bathroom vanity.
+
+---
+
+## 1. Single vs. Double Vanities: Sizing it Right
+
+Before falling in love with a vanity style, you must measure your space carefully.
+
+*   **Standard Sizing:** Common vanity widths are 24", 30", 36", 48", 60", and 72".
+*   **The Double Vanity Rule:** To comfortably fit two sinks, a vanity should be at least **60 inches wide**. Anything smaller (like a 48-inch double vanity) will result in cramped counter space and crowded elbow room.
+*   For layout planning and budget guidelines, read our [bathroom remodel cost guide](/blog/bathroom-remodel-cost-chandler-az-2025/).
+
+---
+
+## 2. Choosing the Countertop Material
+
+In the East Valley, our municipal water contains high mineral levels. This hard water leaves chalky scale deposits on surfaces. Your choice of vanity countertop will impact how much time you spend cleaning.
+
+*   **Quartz (Recommended):** Quartz countertops are engineered from crushed stone and resins. They are non-porous, stain-resistant, and never require sealing. Quartz stands up beautifully to hard water scaling and chemical cleaners.
+*   **Granite:** Natural granite offers unique patterns but is porous. It must be sealed annually to prevent water rings and cosmetic damage.
+*   **Marble:** While beautiful, marble is soft and highly sensitive to acidic products (like toothpaste or facial cleansers), which can etch the surface.
+
+---
+
+## 3. Style Trends: Floating, Shaker, and Wood Tones
+
+*   **Floating Vanities:** Modern and minimalist, wall-hung vanities expose the floor underneath, making a bathroom feel larger and more open.
+*   **Classic Shaker:** Shaker-style cabinets with recessed panels offer a timeless look that works well in transitional and farmhouse designs.
+*   **Durable Finishes:** Make sure your vanity cabinets are made of solid wood or high-quality furniture-grade plywood. Avoid cheap particleboard, which swell and warp in humid bathroom environments.
+
+---
+
+## Get Professional Vanity Installation in Chandler
+
+Installing a bathroom vanity involves precise plumbing alignment, leveling, and secure wall anchoring. At ARZ Home Remodeling (license **ROC #ROC338304**), we handle everything from vanity demolition to faucet hookups and quartz slab installations. Learn more about our services on our [bathroom vanity installation](/bathroom-vanity-installation/) page.
+
+Are you ready to select the perfect fixtures and transform your bathroom? Visit our [homepage](/) or call Mike Hernandez today at **(520) 569-3339** to schedule your free design consultation.
+`
+};
+
 // Backward compatibility aliases
 export const defaultBlogPost = post_1;
 export const secondBlogPost = post_2;

@@ -124,10 +124,10 @@ export default function BathtubRemodelingPage() {
               Professional Bathtub Remodeling, Removal & Installation
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Whether you are looking for <strong>bathtub remodeling in mesa</strong>, <strong>bathtub remodeling in apache junction</strong>, or are searching for top-tier <strong>bathtub installation chandler az</strong> options, our crew is here. Many homeowners search for **bathroom refinishers near me** or **bathtub repair chandler az** as a quick fix for a stained or damaged tub surround. Resurfacing or cosmetic patches are temporary and fail within 2-3 years due to hard water mineral deposits. A complete, professional tub replacement is the only permanent solution.
+              Whether you need to remodel a bathtub in Mesa, Apache Junction, or require a brand new tub installation in Chandler, our experienced crew is here to help. While homeowners often look for local bath refinishing or quick acrylic liners to mask structural wear, these surface patches are temporary and fail under the East Valley's heavy water mineral deposits. A complete, professional tub replacement is the only permanent solution to ensure long-term durability and cleanliness.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              If you have asked <strong>how to take a bathtub out</strong> or looked for a safe <strong>bathtub removal near me</strong> to swap your tub, you will find that DIY demolition carries a high risk of water and wall damage. Our expert <strong>bathtub removal service</strong> ensures that the old tub is safely disconnected, extracted, and disposed of, protecting your drywall and flooring. We prepare the plumbing substrate and secure a flawless fit.
+              If you are planning a tub removal project, DIY demolition carries a high risk of hidden water leaks and wall damage. Our professional bath extraction team ensures that your old tub is safely disconnected, removed, and hauled away while fully protecting your home's framing and subfloor. We then prepare the plumbing substrate and secure a precise, leak-free fit for your new tub.
             </p>
           </div>
         </section>

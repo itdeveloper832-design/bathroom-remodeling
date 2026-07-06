@@ -54,7 +54,7 @@ export const bathroomRemodelingAreas: Record<string, AreaData> = {
       {
         question: "What is the average cost of a bathroom remodel in Ocotillo?",
         answer:
-          "A complete master bathroom remodel in Ocotillo typically ranges from twenty five thousand to seventy five thousand dollars. The final cost depends on your choice of materials, plumbing relocations, and luxury features. We provide a fully itemized written quote before any demolition starts.",
+          "A complete master bathroom remodel in Ocotillo is based on your specific custom choices and layout. The final cost depends on materials, plumbing relocations, and luxury features. We provide a fully itemized written quote before any demolition starts.",
       },
       {
         question: "Do you protect Ocotillo showers from hard water stains?",
@@ -124,7 +124,7 @@ export const bathroomRemodelingAreas: Record<string, AreaData> = {
       {
         question: "How much does a walk-in shower remodel cost in Sun Lakes?",
         answer:
-          "A tub-to-shower conversion in Sun Lakes typically ranges from six thousand to thirteen thousand dollars depending on your material choices. We offer free, detailed estimates so you can plan your budget with confidence.",
+          "A tub-to-shower conversion in Sun Lakes is priced based on your custom material choices. We offer free, detailed estimates so you can plan your project with confidence.",
       },
       {
         question: "Do you offer slip-resistant flooring options?",
@@ -189,7 +189,7 @@ export const bathroomRemodelingAreas: Record<string, AreaData> = {
       {
         question: "What is the cost of a historic bathroom renovation?",
         answer:
-          "A historic bathroom remodel typically ranges from ten thousand to twenty eight thousand dollars depending on structural needs and material choices. Older homes sometimes require extra structural prep, which we outline clearly in your written estimate.",
+          "A historic bathroom remodel is priced based on structural needs and material choices. Older homes sometimes require extra structural prep, which we outline clearly in your written estimate.",
       },
     ],
     homeStyles: ["Historic Traditional", "Contemporary", "Transitional", "Modern"],
@@ -234,7 +234,7 @@ export const bathroomRemodelingAreas: Record<string, AreaData> = {
       {
         question: "What is the average cost of a master bathroom remodel in Fulton Ranch?",
         answer:
-          "A premium master bathroom remodel in Fulton Ranch typically ranges from twenty five thousand to sixty thousand dollars. Luxury features like custom steam showers, freestanding soaking tubs, and floor-to-ceiling tile panels can adjust this range. We provide a detailed, itemized quote before work begins.",
+          "A premium master bathroom remodel in Fulton Ranch is based on your specific custom choices. Luxury features like custom steam showers, freestanding soaking tubs, and floor-to-ceiling tile panels adjust the project scope. We provide a detailed, itemized quote before work begins.",
       },
       {
         question: "Do you install digital shower control valves?",
@@ -309,7 +309,7 @@ export const bathroomRemodelingAreas: Record<string, AreaData> = {
       {
         question: "How much does a guest bathroom remodel cost in Cooper Commons?",
         answer:
-          "A standard family or guest bathroom remodel in Cooper Commons typically ranges from ten thousand to eighteen thousand dollars. We offer free, detailed estimates so you know exactly what is included.",
+          "A standard family or guest bathroom remodel in Cooper Commons is priced based on your layout and material selections. We offer free, detailed estimates so you know exactly what is included.",
       },
     ],
     homeStyles: ["Contemporary", "Modern", "Transitional", "Farmhouse"],

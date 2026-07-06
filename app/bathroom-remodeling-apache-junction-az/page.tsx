@@ -13,7 +13,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Droplets, Clock } from "lucide-react";
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Apache Junction | Licensed Contractor | ARZ",description: "Top-rated bathroom remodeling in Apache Junction, AZ by ARZ. Specialized in custom walk-in showers, tub conversions, & tile work. Call for a free quote!",
+export const metadata: Metadata = {title: "Bath Remodel Apache Junction | Licensed Pro | ARZ Chandler",description: "Top-rated bathroom remodeling in Apache Junction, AZ by ARZ. Specialized in custom walk-in showers, tub conversions, & tile work. Call for a free quote!",
   openGraph: {title: "Bathroom Remodeling Apache Junction AZ | ARZ",description: "Licensed bathroom remodeling in Apache Junction, AZ. Custom showers, tub conversions & tile. Schluter waterproofing system. Free estimate: (520) 569-3339.",
     url: `${siteConfig.url}/bathroom-remodeling-apache-junction-az/`,
     type: "website",

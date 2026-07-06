@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: "Fulton Ranch Bathroom Remodeling | Free Estimates | ARZ",description: "Looking for a licensed bath remodeler in Fulton Ranch, Chandler? ARZ specializes in custom tile showers, layouts, & fixtures. Call for your free consultation!",
+export const metadata: Metadata = {title: "Fulton Ranch Bathroom Remodeling | Free Estimates | ARZ",description: "Looking for a licensed bath remodeler in Fulton Ranch, Chandler? ARZ specializes in custom tile showers, layouts, & fixtures. Call for your free Call!",
   openGraph: {title: "Fulton Ranch Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore fulton ranch bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-remodeling-fulton-ranch/`,
     type: "website",

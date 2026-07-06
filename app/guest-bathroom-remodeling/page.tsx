@@ -19,7 +19,7 @@ import { Users, Layout, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GoogleMap } from "@/components/services/google-map";
 
-export const metadata: Metadata = {title: "Guest Bathroom Remodeling Chandler AZ | Small Bath Pros | ARZ",description: "Transform your guest bathroom in Chandler, AZ. We specialize in space-saving vanities, curbless walk-in showers, and high-impact updates. Call today!",
+export const metadata: Metadata = {title: "Guest Bath Remodel Chandler AZ | Small Bath Pros | ARZ",description: "Transform your guest bathroom in Chandler, AZ. We specialize in space-saving vanities, curbless walk-in showers, and high-impact updates. Call today!",
   openGraph: {title: "Guest Bath Remodel | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore guest bath remodel, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/guest-bathroom-remodeling/`,
     type: "website",
@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     question: "What is the average cost to remodel a secondary bathroom?",
-    answer: "A high impact guest bathroom cosmetic update including new vanity cabinets, quartz countertops, modern fixtures, porcelain floor tiles, and paint typically ranges from four thousand five hundred to nine thousand dollars. Full gut renovations with tile showers start around twelve thousand dollars."
+    answer: "A high impact guest bathroom cosmetic update including new vanity cabinets, quartz countertops, modern fixtures, porcelain floor tiles, and paint is customized to your specific space. Full gut renovations with tile showers are priced based on the selected layout and materials. We provide a detailed, fixed-price quote before any demolition starts."
   },
   {
     question: "Can you add a walk in shower to a half bath powder room?",

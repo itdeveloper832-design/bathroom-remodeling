@@ -8,7 +8,7 @@ const SLUG = "downtown-chandler";
 
 const meta = getDedicatedAreaMetadata(SLUG, PATH)!;
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Downtown Chandler | Licensed Contractor | ARZ",description: "Top-rated bathroom remodeling in Downtown Chandler by ARZ. Specialized in custom walk-in showers, tub conversions, & tile work. Call for a free quote!",
+export const metadata: Metadata = {title: "Bath Remodel Downtown Chandler | Licensed Pro | ARZ Chandl",description: "Top-rated bathroom remodeling in Downtown Chandler by ARZ. Specialized in custom walk-in showers, tub conversions, & tile work. Call for a free quote!",
   alternates: { canonical: meta.canonical },
   openGraph: {title: "Downtown Chandler Bath | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore downtown chandler bath, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: meta.canonical,

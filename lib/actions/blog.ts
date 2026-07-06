@@ -22,7 +22,9 @@ import {
   post_20,
   post_21,
   post_22,
-  post_23
+  post_23,
+  post_24,
+  post_25
 } from "@/lib/seed-blog";
 import { submitToIndexNow } from "@/lib/indexnow";
 
@@ -65,7 +67,9 @@ const basePosts: BlogPost[] = [
   post_20,
   post_21,
   post_22,
-  post_23
+  post_23,
+  post_24,
+  post_25
 ].map((post, index) => {
   const override = blogOverrides[post.slug];
   return {

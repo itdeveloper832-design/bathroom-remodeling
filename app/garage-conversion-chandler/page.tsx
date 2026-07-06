@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: "Licensed Garage Conversions Chandler AZ | Custom ADUs | ARZ",description: "Convert your garage into a master suite, bedroom, or home office in Chandler, AZ. ROC licensed design-build contractor. Get a free custom estimate!",
+export const metadata: Metadata = {title: "Licensed Garage Conversions Chandler AZ | Custom ADUs",description: "Convert your garage into a master suite, bedroom, or home office in Chandler, AZ. ROC licensed design-build contractor. Get a free custom estimate!",
   openGraph: {title: "Garage Conversion Baths | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore garage conversion baths, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/garage-conversion-chandler/`,
     type: "website",

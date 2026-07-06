@@ -240,7 +240,7 @@ export const serviceContent: Record<string, ServiceContentData> = {
       {
         question: "What is the average small bathroom remodel cost in Chandler?",
         answer:
-          "The average small bathroom remodel cost in Chandler typically ranges from four thousand five hundred to nine thousand dollars for a cosmetic upgrade including a new floating vanity, modern plumbing fixtures, and new floor tiling. A complete structural reconfiguration starts around twelve thousand dollars.",
+          "The average small bathroom remodel cost in Chandler is customized to your project scope, covering options from a cosmetic upgrade (new floating vanity, plumbing fixtures, floor tiling) to a complete layout reconfiguration. We provide a written, fixed-price quote after our in-home consultation.",
       },
       {
         question: "What is the minimum size bathroom you can remodel?",

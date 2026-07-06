@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {title: "ADU & Casita Construction Chandler AZ | Guest Houses",description: "Licensed ADU & casita guest house construction in Chandler, AZ. Design-build services, custom suites, utility hookups, & zoning code compliance. Call today!",
+export const metadata: Metadata = {title: "ADU & Casita Construction Chandler AZ | Guest Houses",description: "Licensed ADU & casita guest house construction in Chandler, AZ. Design-build services, custom suites, utility hookups, & zoning code compliance. Call Call!",
   openGraph: {title: "ADU Bathroom Planning | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore adu bathroom planning, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/adu-casita-construction-chandler/`,
     type: "website",

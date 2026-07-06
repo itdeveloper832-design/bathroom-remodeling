@@ -15,7 +15,7 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
-export const metadata: Metadata = {title: "Bathroom Lighting Contractor Chandler AZ | LED Upgrades | ARZ",description: "Enhance your bath with custom lighting in Chandler, AZ. Recessed LEDs, vanity light fixtures, and safety-compliant GFCI circuits. Schedule a free quote!",
+export const metadata: Metadata = {title: "Bath Lighting Pro Chandler AZ | LED Upgrades | ARZ Chandle",description: "Enhance your bath with custom lighting in Chandler, AZ. Recessed LEDs, vanity light fixtures, and safety-compliant GFCI circuits. Schedule a free quote!",
   openGraph: {title: "Bathroom Lighting Install | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom lighting install, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-lighting-installation/`,
     type: "website",
@@ -112,7 +112,7 @@ export default function BathroomLightingInstallationPage() {
               Professional Bathroom Lighting Contractor & Upgrades
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              When searching for a qualified <strong>bathroom lighting contractor</strong> to manage your electrical needs, you need experience and precision. Our team provides top-tier <strong>bathroom lighting upgrades near me</strong> that enhance both safety and aesthetics. Our <strong>bathroom lighting installation in Chandler AZ</strong> protects your family by executing professional electrical upgrades. Whether you need a brand-new <strong>interior lighting installation chandler az</strong>, a custom <strong>light fixture installation chandler az</strong>, or a quick <strong>light fixture repair chandler az</strong>, our licensed crew handles it all in compliance with strict building codes.
+              When searching for a qualified electrical contractor to manage your bathroom lighting upgrade, experience and precision are paramount. Our team provides high-quality installations that enhance both safety and visual appeal. We handle everything from running dedicated 20-amp circuits to installing modern recessed vanity lights, hanging decorative fixtures, and wiring moisture-proof shower cans. Our certified crews operate in strict compliance with current building codes, protecting your family and your home.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="p-6 bg-secondary/50 rounded-2xl border border-border">

@@ -53,7 +53,7 @@ export default function Hero() {
 
           {/* Main Copy */}
           <p className="text-sm md:text-base text-white/90 mb-4 leading-relaxed font-light max-w-3xl hero-description">
-            Licensed bathroom remodeling contractor (ROC #338304) in Chandler, AZ. We build custom walk-in showers, tub-to-shower conversions, and tile installations designed to withstand desert hard water.
+            Licensed bathroom remodeling contractor (ROC #338304) in Chandler, AZ. If you are searching for a trusted bathroom remodel contractor near me, we build custom walk-in showers, tub-to-shower conversions, and tile installations designed to withstand desert hard water.
           </p>
 
           {/* Action Buttons */}

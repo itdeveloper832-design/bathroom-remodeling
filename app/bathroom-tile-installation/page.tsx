@@ -17,7 +17,7 @@ import { serviceContent } from "@/lib/service-content-data";
 import SubServices from "@/components/sub-services";
 import { bathroomServices, getRelatedServices } from "@/lib/bathroom-services";
 
-export const metadata: Metadata = {title: "Bathroom Tile Installer Chandler AZ | Custom Shower Tiling | ARZ",description: "Premium floor and shower wall tile setting in Chandler, AZ. Epoxy grout, porcelain, ceramic, and custom mosaics with expert installation. Free estimate!",
+export const metadata: Metadata = {title: "Bath Tile Installer Chandler AZ | Custom Shower Tiling",description: "Premium floor and shower wall tile setting in Chandler, AZ. Epoxy grout, porcelain, ceramic, and custom mosaics with expert installation. Free estimate!",
   openGraph: {title: "Bathroom Tile Installation | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom tile installation, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-tile-installation/`,
     type: "website",

@@ -42,7 +42,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Exclusive luxury community in southwest Chandler, famous for its upscale golf course, beautiful lakes, and high end waterfront properties.",
         marketInsight:
-          "Affluent market with strong demand for master bathroom upgrades. Popular choices include frameless heavy glass showers, dual vanity reconfigurations, and luxury freestanding soaking tubs. Project budgets range from twenty five thousand to seventy five thousand dollars.",
+          "Affluent market with strong demand for master bathroom upgrades. Popular choices include frameless heavy glass showers, dual vanity reconfigurations, and luxury freestanding soaking tubs. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: [
           "Spanish Colonial Revival",
           "Mediterranean Villa",
@@ -61,7 +61,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Master planned residential community in southwest Chandler, featuring multi million dollar lakefront estates and spacious executive homes.",
         marketInsight:
-          "Prestigious market with a focus on custom home modernization and luxury master bath renovations. Homeowners seek open walk in showers with dual shower head plumbing loops. Budgets average thirty thousand to sixty thousand dollars.",
+          "Prestigious market with a focus on custom home modernization and luxury master bath renovations. Homeowners seek open walk in showers with dual shower head plumbing loops. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Southwestern Executive", "Contemporary Modern", "Craftsman Estate"],
         customerBehavior:
           "Homeowners value high capacity digital shower valves, modern back lit mirrors, and floating quartz topped double vanities with quiet soft close hardware.",
@@ -75,7 +75,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Established gated community in southwest Chandler, famous for its lush green trees, spacious family homes, and scenic neighborhood park with a lake.",
         marketInsight:
-          "Stable neighborhood with consistent demand for full bathroom updates, tub to shower conversions, and flooring replacements. Average remodel budgets range from fifteen thousand to thirty five thousand dollars.",
+          "Stable neighborhood with consistent demand for full bathroom updates, tub to shower conversions, and flooring replacements. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Traditional Ranch", "Neo Traditional Suburban", "Modern Craftsman"],
         customerBehavior:
           "Homeowners seek durable, easy to clean materials that withstand active family life, including large format porcelain tile and quiet ventilation systems.",
@@ -98,7 +98,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Prestigious luxury custom home community in central Chandler, featuring large estate sized lots, custom horse properties, and premium custom residences.",
         marketInsight:
-          "High net worth market with focus on custom architectural designs and luxury master suite transformations. Homeowners invest forty thousand to eighty thousand dollars in high end bathroom remodeling.",
+          "High net worth market with focus on custom architectural designs and luxury master suite transformations. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Custom Contemporary", "Mediterranean Ranch", "Modern Farmhouse"],
         customerBehavior:
           "Clients select premium natural stone tiling, walk in steam showers, digital shower control systems, and solid hardwood custom double vanities.",
@@ -112,7 +112,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Highly sought after residential community in southeast Chandler, featuring spacious single family homes and quiet, well maintained streets.",
         marketInsight:
-          "Family oriented neighborhood with high demand for dual sink vanity upgrades, tub to shower safety conversions, and guest bathroom updates. Average budgets range from ten thousand to twenty five thousand dollars.",
+          "Family oriented neighborhood with high demand for dual sink vanity upgrades, tub to shower safety conversions, and guest bathroom updates. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Contemporary Southwestern", "Transitional Family", "Modern Ranch"],
         customerBehavior:
           "Homeowners prioritize water efficient EPA WaterSense certified low flow faucets and toilets to reduce utility bills while maintaining excellent pressure.",
@@ -126,7 +126,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Scenic master planned community in southeast Chandler, nestled near the base of the San Tan Mountains, famous for its beautiful parks and trails.",
         marketInsight:
-          "Environmentally conscious market with strong interest in eco friendly remodeling, water conservation, and durable materials. Average budgets range from ten thousand to twenty thousand dollars.",
+          "Environmentally conscious market with strong interest in eco friendly remodeling, water conservation, and durable materials. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Desert Contemporary", "Sustainable Modern", "Transitional Suburban"],
         customerBehavior:
           "Homeowners select sustainable materials, VOC free finishes, high efficiency LED lighting, and low flow shower heads.",
@@ -140,7 +140,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Rural-suburban community in southern Chandler featuring spacious custom estates, horse properties, and stunning desert foothills views.",
         marketInsight:
-          "Premium custom home market with strong demand for full master suite transformations, open-concept kitchen structural reconfigurations, and large walk-in tiled showers. Homeowners invest twenty thousand to sixty thousand dollars in high-end remodeling.",
+          "Premium custom home market with strong demand for full master suite transformations, open-concept kitchen structural reconfigurations, and large walk-in tiled showers. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Custom Ranch", "Modern Farmhouse", "Contemporary Desert", "Transitional"],
         customerBehavior:
           "Homeowners prioritize non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated frameless glass to protect against hard water mineral scale.",
@@ -154,7 +154,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Modern master-planned community in southeast Chandler featuring scenic lakes, streams, parks, and walking paths.",
         marketInsight:
-          "Active home remodel market with demand for modern walk-in tile showers, open-concept kitchen reconfigurations, and quartz updates. Average budgets range from fifteen thousand to forty thousand dollars.",
+          "Active home remodel market with demand for modern walk-in tile showers, open-concept kitchen reconfigurations, and quartz updates. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Contemporary Desert", "Modern Ranch", "Transitional", "Southwestern Suburban"],
         customerBehavior:
           "Homeowners choose non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated glass to counter local hard water.",
@@ -177,7 +177,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Large, highly desirable master planned community featuring gorgeous family neighborhoods, greenbelt parks, and excellent local schools.",
         marketInsight:
-          "Active family market with high demand for kid friendly double vanities, low maintenance tub and shower surrounds, and modern plumbing updates. Budgets range from ten thousand to twenty thousand dollars.",
+          "Active family market with high demand for kid friendly double vanities, low maintenance tub and shower surrounds, and modern plumbing updates. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Southwestern Suburban", "Mediterranean Family", "Contemporary Ranch"],
         customerBehavior:
           "Families look for stain resistant grout, easy to clean quartz countertops, and durable plywood cabinets that resist water damage.",
@@ -191,7 +191,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Established and quiet residential community in north central Chandler, popular for its tree lined streets and well maintained single family homes.",
         marketInsight:
-          "Homeowners seeking to modernize older builder grade bathrooms with walk in tile showers, modern lighting, and quiet ventilation. Average budgets range from ten thousand to eighteen thousand dollars.",
+          "Homeowners seeking to modernize older builder grade bathrooms with walk in tile showers, modern lighting, and quiet ventilation. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Traditional Family", "Transitional Ranch", "Southwestern"],
         customerBehavior:
           "Clients value solid craftsmanship, clear timelines, and functional storage options like recessed medicine cabinets and linen shelves.",
@@ -219,7 +219,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Beautiful lakeside master-planned community in central Chandler featuring greenbelts, scenic lakes, and established custom homes.",
         marketInsight:
-          "Established custom home market with strong demand for full master suite transformations, kitchen updates, and tub-to-shower conversions. Homeowners invest fifteen thousand to forty-five thousand dollars in high-end remodeling.",
+          "Established custom home market with strong demand for full master suite transformations, kitchen updates, and tub-to-shower conversions. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Custom Mediterranean", "Contemporary Desert", "Modern Ranch", "Transitional"],
         customerBehavior:
           "Homeowners prioritize non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated frameless glass to protect against hard water mineral scale.",
@@ -233,7 +233,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Prestigious master-planned community in central-west Chandler featuring beautiful lakes, greenbelts, and spacious custom homes.",
         marketInsight:
-          "Desirable home remodeling market with demand for large walk-in tile showers, open-concept kitchen transformations, and premium updates. Average budgets range from twenty thousand to fifty thousand dollars.",
+          "Desirable home remodeling market with demand for large walk-in tile showers, open-concept kitchen transformations, and premium updates. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Custom Mediterranean", "Contemporary Desert", "Lakeside Estate", "Transitional"],
         customerBehavior:
           "Homeowners choose non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated glass to counter local hard water.",
@@ -256,7 +256,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Historic and urban core of Chandler, blending historic bungalows, Craftsman cottages, and modern urban townhomes within walking distance of dining.",
         marketInsight:
-          "Vibrant market seeking sensitive historic preservation mixed with modern plumbing, subfloor leveling, and space saving layouts. Budgets run ten thousand to twenty eight thousand dollars.",
+          "Vibrant market seeking sensitive historic preservation mixed with modern plumbing, subfloor leveling, and space saving layouts. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Historic Bungalow", "Urban Loft", "Craftsman Cottage", "Modern Minimalist"],
         customerBehavior:
           "Clients value period appropriate hex tile, subway tile, clawfoot tubs, PEX plumbing upgrades, and smart space saving floating vanities.",
@@ -270,7 +270,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Highly popular, mature residential community in central Chandler, featuring tree lined streets and spacious single family homes.",
         marketInsight:
-          "Consistent demand for master bath modernization, tub to shower safety conversions, and tile flooring upgrades. Average budgets range from twelve thousand to thirty thousand dollars.",
+          "Consistent demand for master bath modernization, tub to shower safety conversions, and tile flooring upgrades. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Transitional Suburban", "Contemporary Southwestern", "Traditional Family"],
         customerBehavior:
           "Practical homeowners focus on durably sealed tile shower enclosures, quiet exhaust fans, and water saving EPA WaterSense plumbing fixtures.",
@@ -284,7 +284,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Waterfront master-planned community in central Chandler featuring three large lakes, docks, parks, and custom residential estates.",
         marketInsight:
-          "High-end custom home market with strong demand for full master suite transformations, open-concept kitchen reconfigurations, and large walk-in tiled showers. Homeowners invest twenty-five thousand to sixty thousand dollars in high-end remodeling.",
+          "High-end custom home market with strong demand for full master suite transformations, open-concept kitchen reconfigurations, and large walk-in tiled showers. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Custom Mediterranean", "Contemporary Desert", "Waterfront Townhome", "Transitional"],
         customerBehavior:
           "Homeowners prioritize non-porous porcelain tiling, stain-resistant epoxy grouts, and hydrophobic nano-coated frameless glass to protect against hard water mineral scale.",
@@ -307,7 +307,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Desirable mixed use corridor in northwest Chandler, featuring modern residential neighborhoods and convenient commercial access.",
         marketInsight:
-          "Tech professional demographic with strong interest in smart home automation, digital shower valves, and modern floating vanity designs. Budgets range from fifteen thousand to thirty five thousand dollars.",
+          "Tech professional demographic with strong interest in smart home automation, digital shower valves, and modern floating vanity designs. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Contemporary Modern", "Transitional Tech Suburban", "Minimalist"],
         customerBehavior:
           "Homeowners prioritize sleek European style cabinets, large format porcelain slabs, and voice controlled smart bathroom mirrors.",
@@ -321,7 +321,7 @@ export const chandlerLocations: ZipCodeData[] = [
         description:
           "Unique and exclusive aviation focused community in northwest Chandler, featuring luxury custom estates with private airplane hangars.",
         marketInsight:
-          "Affluent custom home market seeking luxury master suite renovations, high end steam showers, custom stone slab wall panels, and premium finishes. Budgets range from thirty thousand to eighty thousand dollars.",
+          "Affluent custom home market seeking luxury master suite renovations, high end steam showers, custom stone slab wall panels, and premium finishes. Project budgets vary depending on the scope and materials selected.",
         homeStylesCommon: ["Luxury Custom Aviation", "Modern Industrial", "Contemporary Executive"],
         customerBehavior:
           "High net worth clients select custom solid wood vanities, large curbless walk in showers with linear drains, and rainfall shower loops.",

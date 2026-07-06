@@ -9,10 +9,11 @@ import { siteConfig } from "@/lib/site-config";
 import { homeFaqs, faqAnswerPlain } from "@/lib/home-faqs";
 
 import BelowFoldLoader from "@/components/home/below-fold-loader";
+import BlogPreview from "@/components/home/blog-preview";
 
 export const metadata: Metadata = {
   title: "Licensed Bath Remodelers | Chandler AZ Bathroom Remodeling",
-  description: "Upgrade your bathroom with Chandler's trusted remodeling contractor. Custom walk-in showers, vanity installs, and master bath renovations. Call for a free estimate!",
+  description: "Upgrade your bath with Chandler's trusted remodeling pro. Custom walk-in showers, vanity installs, and master bath renovations. Call for a free estimate!",
   openGraph: {
     title: "ARZ Home Remodeling | Bathroom Remodeling Chandler AZ",
     description: "Licensed bathroom remodeling in Chandler & East Valley. Walk-in showers, tub conversions & custom tile. 2-year warranty. Free estimate: (520) 569-3339.",
@@ -50,6 +51,7 @@ export default function HomePage() {
       <main id="main-content" role="main">
         <Hero />
         <BelowFoldLoader />
+        <BlogPreview />
       </main>
       <Footer />
     </>

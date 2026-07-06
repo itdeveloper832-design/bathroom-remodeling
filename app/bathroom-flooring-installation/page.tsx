@@ -15,7 +15,7 @@ import { siteConfig } from "@/lib/site-config";
 import {  ServiceSchema, FAQSchema , BreadcrumbSchema } from "@/components/seo/json-ld";
 import { serviceContent } from "@/lib/service-content-data";
 
-export const metadata: Metadata = {title: "Bathroom Flooring Installation Chandler AZ | Custom Tile | ARZ",description: "Expert bathroom flooring installation in Chandler, AZ. Specialized in waterproof tile, luxury vinyl plank, and slip-resistant floors. Call for a quote!",
+export const metadata: Metadata = {title: "Bath Flooring Installation Chandler AZ | Custom Tile",description: "Expert bathroom flooring installation in Chandler, AZ. Specialized in waterproof tile, luxury vinyl plank, and slip-resistant floors. Call for a quote!",
   openGraph: {title: "Bathroom Flooring Install | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom flooring install, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/bathroom-flooring-installation/`,
     type: "website",
@@ -112,7 +112,7 @@ export default function BathroomFlooringInstallationPage() {
               Professional Bathroom Flooring Installation & Foundation Prep
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              If you have been looking for the most reliable <strong>bathroom floor installation near me</strong>, our crew provides flawless tile and stone work. Our <strong>bathroom flooring installation in Chandler AZ</strong> protects your tile from structural cracking. Clay soil in the East Valley expands and contracts heavily between hot summers and monsoon seasons, causing concrete slabs to shift.
+              If you have been looking for an expert team to handle your bathroom tiling and floor updates, our crews provide flawless tile and stone work. Our flooring preparation process protects your tile from structural cracking. Clay soils in the East Valley expand and contract heavily between hot summers and monsoon seasons, causing concrete slabs to shift. We construct a floating subfloor membrane to absorb this movement and protect your joints.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div className="p-6 bg-secondary/50 rounded-2xl border border-border">

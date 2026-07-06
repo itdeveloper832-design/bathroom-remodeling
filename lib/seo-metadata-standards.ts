@@ -1,7 +1,7 @@
-export const SEO_TITLE_MIN = 50;
-export const SEO_TITLE_MAX = 60;
-export const SEO_DESCRIPTION_MIN = 120;
-export const SEO_DESCRIPTION_MAX = 158;
+export const SEO_TITLE_MIN = 52;
+export const SEO_TITLE_MAX = 58;
+export const SEO_DESCRIPTION_MIN = 125;
+export const SEO_DESCRIPTION_MAX = 155;
 
 const TITLE_SUFFIX = "Chandler AZ Bathroom Remodeling";
 const FALLBACK_DESCRIPTION =

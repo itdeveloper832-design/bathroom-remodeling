@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site-config"
 import BlogContent from "./blog-content"
 import { getPublishedPosts, getCategories } from "@/lib/actions/blog"
 
-export const metadata: Metadata = {title: "Bathroom Remodeling Blog & Design Tips | ARZ",description: "Get expert bathroom design ideas, remodeling tips, and local cost guides from our licensed Chandler, AZ contracting crew. Read our blog!",
+export const metadata: Metadata = {title: "Bathroom Remodeling Blog & Design Tips | ARZ Chandler",description: "Get expert bathroom design ideas, remodeling tips, and local cost guides from our licensed Chandler, AZ contracting crew. Read our blog!",
   openGraph: {title: "Bathroom Remodel Blog | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel blog, custom showers, tile, vanities, clear pricing, and free estimates.",
     url: `${siteConfig.url}/blog/`,
     type: "website",

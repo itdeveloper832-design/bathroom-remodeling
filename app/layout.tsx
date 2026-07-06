@@ -122,6 +122,7 @@ export default function RootLayout({
                   document.head.appendChild(umami);
                   ` : ''}
 
+
                   removeListeners();
                 }
 

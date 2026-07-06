@@ -7,7 +7,7 @@ import { BreadcrumbSchema } from "@/components/seo/json-ld"
 import { ExternalLink, Award, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {title: "Meet Our Licensed Bathroom Contractors | ARZ Chandler AZ",description: "Meet the expert team behind ARZ Home Remodeling. Licensed Arizona contractors specializing in custom bathroom renovations in Chandler with 15+ years of experience.",
+export const metadata: Metadata = {title: "Meet Our Licensed Bathroom Contractors | ARZ Chandler AZ",description: "Meet the expert team behind ARZ Home Remodeling. Licensed AZ pros specializing in custom bath renovations in Chandler with 15+ years of experience.",
   openGraph: {title: "Bathroom Remodel Team | Chandler AZ Bathroom Remodeling",description: "Bathroom remodeling service in Chandler, AZ by ARZ. Explore bathroom remodel team, custom showers, tile, vanities, clear pricing, and free estimates.",
     type: "website",
     url: `${siteConfig.url}/team/`,

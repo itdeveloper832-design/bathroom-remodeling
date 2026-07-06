@@ -44,7 +44,7 @@ const faqs = [
   {
     question: "How much does an accessible bathroom remodel cost in Chandler?",
     answer:
-      "ADA-compliant bathroom remodels in Chandler range from twelve thousand to twenty eight thousand dollars depending on the scope and existing layout. Curbless showers with linear drains and grab bar installation add premium features. We provide detailed written estimates before beginning work."
+      "ADA-compliant bathroom remodels in Chandler are customized depending on the scope and existing layout. Curbless showers with linear drains and grab bar installation add premium features. We provide detailed written estimates before beginning work."
   },
   {
     question: "Can we retrofit an existing bathroom for accessibility?",
@@ -96,10 +96,10 @@ export default function AccessibleBathroomPage() {
               <div>
                 <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-6">Why Choose Accessible Bathroom Design?</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Whether you are aging in place, recovering from an injury, or planning for accessibility needs, an ADA-compliant bathroom provides safety, independence, and dignity. For technical guidelines, you can read our [ADA bathroom requirements Arizona](/blog/ada-bathroom-requirements-arizona/) guide. If you are searching for expert <strong>accessible shower remodeling chandler</strong>, professional <strong>accessible shower installation chandler</strong>, or a custom <strong>handicap accessible shower chandler</strong>, our team has the specialized expertise required.
+                  Whether you are aging in place, recovering from an injury, or planning for long-term accessibility, an ADA-compliant bathroom provides safety, independence, and peace of mind. For detailed building codes, you can read our guide on [ADA bathroom requirements in Arizona](/blog/ada-bathroom-requirements-arizona/). If you are looking to upgrade your home with a custom walk-in shower or specialized safety features in Chandler, our experienced team provides the design-build expertise you need to ensure comfort and compliance.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  We are leading <strong>handicap bathroom remodel contractors</strong> operating across the East Valley. Homeowners look to us for <strong>ada bathroom remodel arizona</strong> projects, as well as <strong>accessible shower remodeling arizona</strong> and <strong>accessible shower remodeling mesa</strong> updates. We also coordinate <strong>accessible shower remodeling gilbert</strong>, <strong>accessible shower installation gilbert</strong>, and <strong>accessible shower remodeling queen creek</strong> projects. Safety and style blend perfectly in our designs.
+                  As trusted local contractors, we specialize in high-quality mobility modifications throughout the East Valley. We design and install curbless showers, structural grab bars, and senior-friendly layouts in Chandler, Mesa, Gilbert, and Queen Creek. We blend safety and premium style seamlessly into every home renovation.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mt-8">
                   <div className="flex gap-4">

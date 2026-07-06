@@ -313,7 +313,7 @@ export function Footer() {
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-background/70 text-sm">
-              © 2026 {siteConfig.name}. All rights reserved. (cPanel Active - Run 3)
+              © 2026 {siteConfig.name}. All rights reserved. (cPanel Active - Run 5)
             </p>
             <nav aria-label="Legal links" className="flex items-center gap-6">
               <Link href="/privacy-policy/" className="text-background/70 hover:text-background transition-colors text-sm no-underline">
